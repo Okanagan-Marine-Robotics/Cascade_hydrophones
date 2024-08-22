@@ -1,0 +1,283 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBF3D0B7BEED7D7AA",
+      "device": "xc7s25csga225-1",
+      "gen_directory": "../../../../xCorr.gen/sources_1/bd/HydroDSP",
+      "name": "HydroDSP",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "dds_compiler_0": "",
+      "dds_compiler_1": "",
+      "clk_wiz_0": "",
+      "clk100khz_0": "",
+      "CrossCorrelation_0": ""
+    },
+    "ports": {
+      "aclk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "xcorr_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "HydroDSP_dds_compiler_0_0",
+        "xci_path": "ip\\HydroDSP_dds_compiler_0_0\\HydroDSP_dds_compiler_0_0.xci",
+        "inst_hier_path": "dds_compiler_0",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "DDS_Clock_Rate": {
+            "value": "100"
+          },
+          "Frequency_Resolution": {
+            "value": "0.4"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Has_TREADY": {
+            "value": "true"
+          },
+          "Latency": {
+            "value": "8"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Mode_of_Operation": {
+            "value": "Standard"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "OUTPUT_FORM": {
+            "value": "Twos_Complement"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "SIN_COS_LUT_only"
+          },
+          "Phase_Width": {
+            "value": "16"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "dds_compiler_1": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "HydroDSP_dds_compiler_1_0",
+        "xci_path": "ip\\HydroDSP_dds_compiler_1_0\\HydroDSP_dds_compiler_1_0.xci",
+        "inst_hier_path": "dds_compiler_1",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Width": {
+            "value": "3"
+          },
+          "PINC1": {
+            "value": "11010"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "Phase_Generator_only"
+          },
+          "Phase_Width": {
+            "value": "16"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "HydroDSP_clk_wiz_0_0",
+        "xci_path": "ip\\HydroDSP_clk_wiz_0_0\\HydroDSP_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "114.829"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "200.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "5.000"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "clk100khz_0": {
+        "vlnv": "xilinx.com:module_ref:clk100khz:1.0",
+        "xci_name": "HydroDSP_clk100khz_0_0",
+        "xci_path": "ip\\HydroDSP_clk100khz_0_0\\HydroDSP_clk100khz_0_0.xci",
+        "inst_hier_path": "clk100khz_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clk100khz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "HydroDSP_aclk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk100k": {
+            "direction": "O"
+          }
+        }
+      },
+      "CrossCorrelation_0": {
+        "vlnv": "xilinx.com:module_ref:CrossCorrelation:1.0",
+        "xci_name": "HydroDSP_CrossCorrelation_0_0",
+        "xci_path": "ip\\HydroDSP_CrossCorrelation_0_0\\HydroDSP_CrossCorrelation_0_0.xci",
+        "inst_hier_path": "CrossCorrelation_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CrossCorrelation",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "waveRef": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "xcorr": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CrossCorrelation_0_xcorr": {
+        "ports": [
+          "CrossCorrelation_0/xcorr",
+          "xcorr_0"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "aclk",
+          "dds_compiler_0/aclk",
+          "dds_compiler_1/aclk",
+          "clk_wiz_0/clk_in1",
+          "clk100khz_0/clk"
+        ]
+      },
+      "clk100khz_0_clk100k": {
+        "ports": [
+          "clk100khz_0/clk100k",
+          "CrossCorrelation_0/clk1Mhz"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "CrossCorrelation_0/clk"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "CrossCorrelation_0/waveRef",
+          "CrossCorrelation_0/wave"
+        ]
+      },
+      "dds_compiler_1_m_axis_phase_tdata": {
+        "ports": [
+          "dds_compiler_1/m_axis_phase_tdata",
+          "dds_compiler_0/s_axis_phase_tdata"
+        ]
+      },
+      "dds_compiler_1_m_axis_phase_tvalid": {
+        "ports": [
+          "dds_compiler_1/m_axis_phase_tvalid",
+          "dds_compiler_0/s_axis_phase_tvalid"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_wiz_0/reset"
+        ]
+      }
+    }
+  }
+}
