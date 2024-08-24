@@ -22,3 +22,4 @@
 # Available Virtual :21935 MB
 #-----------------------------------------------------------
 start_gui
+open_wave_database {C:\Users\JamesWilliamson\Cascade_hydrophones\xCorr.sim\sim_1\behav\xsim\TB_behav.wdb}
