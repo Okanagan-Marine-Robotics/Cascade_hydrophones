@@ -14,17 +14,22 @@
       "dds_compiler_1": "",
       "clk_wiz_0": "",
       "clk100khz_0": "",
-      "CrossCorrelation_0": ""
+      "blk_mem_gen_0": "",
+      "blk_mem_gen_1": "",
+      "blk_mem_gen_2": "",
+      "blk_mem_gen_3": "",
+      "blk_mem_gen_4": "",
+      "blk_mem_gen_5": "",
+      "blk_mem_gen_6": "",
+      "blk_mem_gen_7": "",
+      "xlconstant_0": "",
+      "waveParser_0": "",
+      "CC_0": ""
     },
     "ports": {
       "aclk": {
         "type": "clk",
         "direction": "I"
-      },
-      "xcorr_0": {
-        "direction": "O",
-        "left": "63",
-        "right": "0"
       },
       "reset": {
         "type": "rst",
@@ -34,6 +39,11 @@
             "value": "ACTIVE_HIGH"
           }
         }
+      },
+      "xcorr_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
       }
     },
     "components": {
@@ -189,24 +199,183 @@
           }
         }
       },
-      "CrossCorrelation_0": {
-        "vlnv": "xilinx.com:module_ref:CrossCorrelation:1.0",
-        "xci_name": "HydroDSP_CrossCorrelation_0_0",
-        "xci_path": "ip\\HydroDSP_CrossCorrelation_0_0\\HydroDSP_CrossCorrelation_0_0.xci",
-        "inst_hier_path": "CrossCorrelation_0",
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_0\\HydroDSP_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_1": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_1",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_1\\HydroDSP_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "blk_mem_gen_1",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_2": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_2",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_2\\HydroDSP_blk_mem_gen_0_2.xci",
+        "inst_hier_path": "blk_mem_gen_2",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_3": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_3",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_3\\HydroDSP_blk_mem_gen_0_3.xci",
+        "inst_hier_path": "blk_mem_gen_3",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_4": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_4",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_4\\HydroDSP_blk_mem_gen_0_4.xci",
+        "inst_hier_path": "blk_mem_gen_4",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_5": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_1_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_1_0\\HydroDSP_blk_mem_gen_1_0.xci",
+        "inst_hier_path": "blk_mem_gen_5",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_6": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_2_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_2_0\\HydroDSP_blk_mem_gen_2_0.xci",
+        "inst_hier_path": "blk_mem_gen_6",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_7": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_3_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_3_0\\HydroDSP_blk_mem_gen_3_0.xci",
+        "inst_hier_path": "blk_mem_gen_7",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10000"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "HydroDSP_xlconstant_0_0",
+        "xci_path": "ip\\HydroDSP_xlconstant_0_0\\HydroDSP_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "waveParser_0": {
+        "vlnv": "xilinx.com:module_ref:waveParser:1.0",
+        "xci_name": "HydroDSP_waveParser_0_0",
+        "xci_path": "ip\\HydroDSP_waveParser_0_0\\HydroDSP_waveParser_0_0.xci",
+        "inst_hier_path": "waveParser_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "CrossCorrelation",
+          "ref_name": "waveParser",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "clk1Mhz": {
-            "direction": "I"
-          },
           "waveRef": {
             "direction": "I",
             "left": "15",
@@ -217,7 +386,130 @@
             "left": "15",
             "right": "0"
           },
+          "bufferRef": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "buffer": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "MemoryAddress": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          }
+        }
+      },
+      "CC_0": {
+        "vlnv": "xilinx.com:module_ref:CC:1.0",
+        "xci_name": "HydroDSP_CC_0_0",
+        "xci_path": "ip\\HydroDSP_CC_0_0\\HydroDSP_CC_0_0.xci",
+        "inst_hier_path": "CC_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CC",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "waveRef0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "wave0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "waveRef1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "waveRef2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "wave2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "waveRef3": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "wave3": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "wave0Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "wave1Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "wave2Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "wave3Address": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
           "xcorr": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "product": {
             "direction": "O",
             "left": "63",
             "right": "0"
@@ -226,9 +518,57 @@
       }
     },
     "nets": {
-      "CrossCorrelation_0_xcorr": {
+      "CC_0_wave0Address": {
         "ports": [
-          "CrossCorrelation_0/xcorr",
+          "CC_0/wave0Address",
+          "blk_mem_gen_6/addrb"
+        ]
+      },
+      "CC_0_wave1Address": {
+        "ports": [
+          "CC_0/wave1Address",
+          "blk_mem_gen_7/addrb"
+        ]
+      },
+      "CC_0_wave2Address": {
+        "ports": [
+          "CC_0/wave2Address",
+          "blk_mem_gen_3/addrb"
+        ]
+      },
+      "CC_0_wave3Address": {
+        "ports": [
+          "CC_0/wave3Address",
+          "blk_mem_gen_2/addrb"
+        ]
+      },
+      "CC_0_waveRef0Address": {
+        "ports": [
+          "CC_0/waveRef0Address",
+          "blk_mem_gen_0/addrb"
+        ]
+      },
+      "CC_0_waveRef1Address": {
+        "ports": [
+          "CC_0/waveRef1Address",
+          "blk_mem_gen_1/addrb"
+        ]
+      },
+      "CC_0_waveRef2Address": {
+        "ports": [
+          "CC_0/waveRef2Address",
+          "blk_mem_gen_4/addrb"
+        ]
+      },
+      "CC_0_waveRef3Address": {
+        "ports": [
+          "CC_0/waveRef3Address",
+          "blk_mem_gen_5/addrb"
+        ]
+      },
+      "CC_0_xcorr": {
+        "ports": [
+          "CC_0/xcorr",
           "xcorr_0"
         ]
       },
@@ -241,23 +581,88 @@
           "clk100khz_0/clk"
         ]
       },
+      "blk_mem_gen_0_doutb": {
+        "ports": [
+          "blk_mem_gen_0/doutb",
+          "CC_0/waveRef0"
+        ]
+      },
+      "blk_mem_gen_1_doutb": {
+        "ports": [
+          "blk_mem_gen_1/doutb",
+          "CC_0/waveRef1"
+        ]
+      },
+      "blk_mem_gen_2_doutb": {
+        "ports": [
+          "blk_mem_gen_2/doutb",
+          "CC_0/wave3"
+        ]
+      },
+      "blk_mem_gen_3_doutb": {
+        "ports": [
+          "blk_mem_gen_3/doutb",
+          "CC_0/wave2"
+        ]
+      },
+      "blk_mem_gen_4_doutb": {
+        "ports": [
+          "blk_mem_gen_4/doutb",
+          "CC_0/waveRef2"
+        ]
+      },
+      "blk_mem_gen_5_doutb": {
+        "ports": [
+          "blk_mem_gen_5/doutb",
+          "CC_0/waveRef3"
+        ]
+      },
+      "blk_mem_gen_6_doutb": {
+        "ports": [
+          "blk_mem_gen_6/doutb",
+          "CC_0/wave0"
+        ]
+      },
+      "blk_mem_gen_7_doutb": {
+        "ports": [
+          "blk_mem_gen_7/doutb",
+          "CC_0/wave1"
+        ]
+      },
       "clk100khz_0_clk100k": {
         "ports": [
           "clk100khz_0/clk100k",
-          "CrossCorrelation_0/clk1Mhz"
+          "waveParser_0/clk1Mhz",
+          "CC_0/clk1Mhz"
         ]
       },
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "CrossCorrelation_0/clk"
+          "blk_mem_gen_0/clka",
+          "blk_mem_gen_1/clka",
+          "blk_mem_gen_4/clka",
+          "blk_mem_gen_5/clka",
+          "blk_mem_gen_6/clka",
+          "blk_mem_gen_7/clka",
+          "blk_mem_gen_3/clka",
+          "blk_mem_gen_2/clka",
+          "blk_mem_gen_0/clkb",
+          "blk_mem_gen_1/clkb",
+          "blk_mem_gen_4/clkb",
+          "blk_mem_gen_5/clkb",
+          "blk_mem_gen_6/clkb",
+          "blk_mem_gen_7/clkb",
+          "blk_mem_gen_3/clkb",
+          "blk_mem_gen_2/clkb",
+          "CC_0/clk"
         ]
       },
       "dds_compiler_0_m_axis_data_tdata": {
         "ports": [
           "dds_compiler_0/m_axis_data_tdata",
-          "CrossCorrelation_0/waveRef",
-          "CrossCorrelation_0/wave"
+          "waveParser_0/waveRef",
+          "waveParser_0/wave"
         ]
       },
       "dds_compiler_1_m_axis_phase_tdata": {
@@ -276,6 +681,66 @@
         "ports": [
           "reset",
           "clk_wiz_0/reset"
+        ]
+      },
+      "waveParser_0_MemoryAddress": {
+        "ports": [
+          "waveParser_0/MemoryAddress",
+          "blk_mem_gen_1/addra",
+          "blk_mem_gen_0/addra",
+          "blk_mem_gen_4/addra",
+          "blk_mem_gen_5/addra",
+          "blk_mem_gen_6/addra",
+          "blk_mem_gen_7/addra",
+          "blk_mem_gen_3/addra",
+          "blk_mem_gen_2/addra"
+        ]
+      },
+      "waveParser_0_buffer": {
+        "ports": [
+          "waveParser_0/buffer",
+          "blk_mem_gen_6/dina",
+          "blk_mem_gen_7/dina",
+          "blk_mem_gen_3/dina",
+          "blk_mem_gen_2/dina"
+        ]
+      },
+      "waveParser_0_bufferRef": {
+        "ports": [
+          "waveParser_0/bufferRef",
+          "blk_mem_gen_0/dina",
+          "blk_mem_gen_1/dina",
+          "blk_mem_gen_4/dina",
+          "blk_mem_gen_5/dina"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "blk_mem_gen_0/enb",
+          "blk_mem_gen_0/ena",
+          "blk_mem_gen_0/wea",
+          "blk_mem_gen_1/wea",
+          "blk_mem_gen_1/ena",
+          "blk_mem_gen_1/enb",
+          "blk_mem_gen_2/wea",
+          "blk_mem_gen_2/ena",
+          "blk_mem_gen_6/ena",
+          "blk_mem_gen_6/wea",
+          "blk_mem_gen_6/enb",
+          "blk_mem_gen_4/enb",
+          "blk_mem_gen_4/ena",
+          "blk_mem_gen_4/wea",
+          "blk_mem_gen_5/wea",
+          "blk_mem_gen_5/ena",
+          "blk_mem_gen_5/enb",
+          "blk_mem_gen_7/wea",
+          "blk_mem_gen_7/ena",
+          "blk_mem_gen_7/enb",
+          "blk_mem_gen_3/ena",
+          "blk_mem_gen_3/wea",
+          "blk_mem_gen_3/enb",
+          "blk_mem_gen_2/enb"
         ]
       }
     }

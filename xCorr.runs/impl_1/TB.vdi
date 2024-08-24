@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Aug 24 00:04:28 2024
+# Process ID: 17500
+# Current directory: C:/Users/JamesWilliamson/Xcorr/xCorr.runs/impl_1
+# Command line: vivado.exe -log TB.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TB.tcl -notrace
+# Log file: C:/Users/JamesWilliamson/Xcorr/xCorr.runs/impl_1/TB.vdi
+# Journal file: C:/Users/JamesWilliamson/Xcorr/xCorr.runs/impl_1\vivado.jou
+# Running On: DESKTOP-C8C4U9T, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
+#-----------------------------------------------------------
+source TB.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 453.645 ; gain = 156.750
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+Command: link_design -top TB -part xc7s25csga225-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_CC_0_0/HydroDSP_CC_0_0.dcp' for cell 'DUT/HydroDSP_i/CC_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_0/HydroDSP_blk_mem_gen_0_0.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_1/HydroDSP_blk_mem_gen_0_1.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_2/HydroDSP_blk_mem_gen_0_2.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_3/HydroDSP_blk_mem_gen_0_3.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_4/HydroDSP_blk_mem_gen_0_4.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_1_0/HydroDSP_blk_mem_gen_1_0.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_2_0/HydroDSP_blk_mem_gen_2_0.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_3_0/HydroDSP_blk_mem_gen_3_0.dcp' for cell 'DUT/HydroDSP_i/blk_mem_gen_7'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk100khz_0_0/HydroDSP_clk100khz_0_0.dcp' for cell 'DUT/HydroDSP_i/clk100khz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0.dcp' for cell 'DUT/HydroDSP_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_0_0/HydroDSP_dds_compiler_0_0.dcp' for cell 'DUT/HydroDSP_i/dds_compiler_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/HydroDSP_dds_compiler_1_0.dcp' for cell 'DUT/HydroDSP_i/dds_compiler_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_waveParser_0_0/HydroDSP_waveParser_0_0.dcp' for cell 'DUT/HydroDSP_i/waveParser_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 914.387 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. DUT/HydroDSP_i/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'DUT/HydroDSP_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0_board.xdc] for cell 'DUT/HydroDSP_i/clk_wiz_0/inst'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PART_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0_board.xdc:3]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0_board.xdc] for cell 'DUT/HydroDSP_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0.xdc] for cell 'DUT/HydroDSP_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1467.316 ; gain = 435.516
+Finished Parsing XDC File [c:/Users/JamesWilliamson/Xcorr/xCorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0.xdc] for cell 'DUT/HydroDSP_i/clk_wiz_0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1467.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+25 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.316 ; gain = 974.906
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[0] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[0]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[10] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[10]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[10]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[11] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[11]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[11]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[12] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[12]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[12]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[13] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[13]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[13]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[14] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[14]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[15] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[15]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[15]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[16] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[16]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[16]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[17] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[17]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[17]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[18] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[18]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[18]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[19] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[19]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[19]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[1] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[1]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[1]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[20] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[20]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[20]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[21] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[21]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[21]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[22] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[22]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[22]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[23] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[23]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[23]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[24] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[24]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[24]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[25] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[25]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[25]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[26] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[26]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[26]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[27] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[27]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[27]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[28] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[28]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[28]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[29] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[29]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[29]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[2] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[2]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[30] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[30]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[30]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[31] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[31]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[31]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[32] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[32]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[32]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[33] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[33]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[33]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[34] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[34]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[34]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[35] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[35]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[35]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[36] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[36]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[36]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[37] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[37]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[37]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[38] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[38]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[38]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[39] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[39]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[39]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[3] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[3]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[40] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[40]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[40]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[41] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[41]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[41]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[42] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[42]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[42]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[43] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[43]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[43]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[44] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[44]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[44]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[45] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[45]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[45]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[46] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[46]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[46]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[47] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[47]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[47]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[48] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[48]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[48]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[49] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[49]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[49]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[4] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[4]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[50] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[50]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[50]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[51] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[51]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[51]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[52] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[52]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[52]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[53] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[53]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[53]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[54] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[54]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[54]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[55] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[55]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[55]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[56] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[56]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[56]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[57] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[57]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[57]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[58] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[58]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[58]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[59] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[59]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[59]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[5] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[5]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[60] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[60]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[60]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[61] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[61]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[61]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[62] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[62]__0/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[62]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[63] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[63]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[63]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[6] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[6]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[6]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[7] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[7]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[7]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[8] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[8]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[8]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DUT/HydroDSP_i/CC_0/inst/Q[9] has multiple drivers: DUT/HydroDSP_i/CC_0/inst/product_reg[9]/Q, and DUT/HydroDSP_i/CC_0/inst/product_reg[9]__0/Q.
+INFO: [Project 1-461] DRC finished with 64 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1467.316 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 2 Warnings, 1 Critical Warnings and 65 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 24 00:04:53 2024...

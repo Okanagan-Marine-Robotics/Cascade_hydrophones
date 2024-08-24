@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../xCorr.gen/sources_1/bd/HydroDSP/ipshared/30ef" \
+"../../../../xCorr.srcs/sources_1/new/100khzclk.v" \
+"../../../../xCorr.srcs/sources_1/new/waveParser.v" \
+"../../../../xCorr.srcs/sources_1/new/CC.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0_clk_wiz.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_clk100khz_0_0/sim/HydroDSP_clk100khz_0_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_0/sim/HydroDSP_blk_mem_gen_0_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_1/sim/HydroDSP_blk_mem_gen_0_1.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_2/sim/HydroDSP_blk_mem_gen_0_2.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_3/sim/HydroDSP_blk_mem_gen_0_3.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_0_4/sim/HydroDSP_blk_mem_gen_0_4.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_1_0/sim/HydroDSP_blk_mem_gen_1_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_2_0/sim/HydroDSP_blk_mem_gen_2_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_blk_mem_gen_3_0/sim/HydroDSP_blk_mem_gen_3_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_xlconstant_0_0/sim/HydroDSP_xlconstant_0_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_waveParser_0_0/sim/HydroDSP_waveParser_0_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/ip/HydroDSP_CC_0_0/sim/HydroDSP_CC_0_0.v" \
+"../../../../xCorr.ip_user_files/bd/HydroDSP/sim/HydroDSP.v" \
+"../../../../xCorr.gen/sources_1/bd/HydroDSP/hdl/HydroDSP_wrapper.v" \
+"../../../../xCorr.srcs/sources_1/new/Testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

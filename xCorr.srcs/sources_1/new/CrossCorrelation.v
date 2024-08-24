@@ -12,7 +12,7 @@ module CrossCorrelation(
     reg signed [15:0] frameRef [19999:-9999];
     reg signed [15:0] frame [19999:-9999];
     
-    reg [25:0] frameCounter = 40000000;
+    reg [25:0] frameCounter = 1;
     reg [25:0] subframeCounter = 0;
     reg clkcorr = 0;
     
@@ -21,31 +21,28 @@ module CrossCorrelation(
     reg signed [15:0] count = -9999;
     
     reg signed [15:0] countMulti = 1;
+    reg signed [15:0] MemoryAddress = 10000;
     integer i,j;
-    //initial begin
-   // for ( integer k = -9999; k < 20000; k = k + 1) begin
-       // bufferRef[k] = 16'b0;
-      //  buffer[k] = 16'b0;
-      //  frameRef[k] = 16'b0;
-      //  frame[k] = 16'b0;
-      //  end
-      //  frame[0] = 16'b0;
-      //  frameRef[0] = 16'b0;
-      //  buffer[0] = 16'b0;
-      //  bufferRef[0] = 16'b0;
-   // end
+  // initial begin
+  //  for ( integer k = -9999; k < 20000; k = k + 1) begin
+   //     bufferRef[k] = 16'b0;
+     //   buffer[k] = 16'b0;
+       // frameRef[k] = 16'b0;
+     //   frame[k] = 16'b0;
+     //   end
+     //  frame[0] = 16'b0;
+     //   frameRef[0] = 16'b0;
+    //  buffer[0] = 16'b0;
+    //    bufferRef[0] = 16'b0;
+  //  end
     
     always @(negedge clk1Mhz)begin
-    
-        for (i = 9999; i > 0; i = i - 1) begin
-           
-            bufferRef [i] <= bufferRef [i-1];
-            buffer [i] <= buffer [i-1];
-            
-        end 
+     
+    if (MemoryAddress==1) MemoryAddress<=10000;
+    else MemoryAddress <= MemoryAddress - 1;
         
-       buffer [0] <= wave;
-       bufferRef [0] <= waveRef;
+       buffer [MemoryAddress] <= wave;
+       bufferRef [MemoryAddress] <= waveRef;
        
     end
     
@@ -69,6 +66,19 @@ module CrossCorrelation(
             subframeCounter <= subframeCounter + 1;
             clkcorr <= 0;
         end
+        
+        if (countMulti!=2500)countMulti <= countMulti + 1;
+    else begin
+        xcorr <= product_comp;
+        countMulti <= 1;
+    end    
+       
+            product_sum[0] <= (frame[countMulti+count] * frameRef[countMulti]);
+            product_sum[1] <= (frame[countMulti+2500+count] * frameRef[countMulti+2500]);
+            product_sum[2] <= (frame[countMulti+5000+count] * frameRef[countMulti+5000]);
+            product_sum[3] <= (frame[countMulti+7500+count] * frameRef[countMulti+7500]);
+            product_comp <= product_sum[0] + product_sum[1] + product_sum[2] + product_sum[3] + product_comp;
+        
     end
 
 always @(negedge clkcorr)begin
@@ -84,25 +94,5 @@ always @(negedge clkcorr)begin
     product_comp <= 64'b0;
     
     end
-   
-    
-    always @(negedge clk)begin
-    
-    if (countMulti!=2500)countMulti <= countMulti + 1;
-    else begin
-        xcorr <= product_comp;
-        countMulti <= 1;
-    end    
-       
-            product_sum[0] <= (frame[countMulti+count] * frameRef[countMulti]);
-            product_sum[1] <= (frame[countMulti+2500+count] * frameRef[countMulti+2500]);
-            product_sum[2] <= (frame[countMulti+5000+count] * frameRef[countMulti+5000]);
-            product_sum[3] <= (frame[countMulti+7500+count] * frameRef[countMulti+7500]);
-            product_comp <= product_sum[0] + product_sum[1] + product_sum[2] + product_sum[3] + product_comp;
-        
-            
-    
-    end
-
-
+ 
 endmodule
