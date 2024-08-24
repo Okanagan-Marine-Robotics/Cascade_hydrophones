@@ -20,9 +20,9 @@ input clk,
     output reg [15:0] wave2Address,
     output reg [15:0] waveRef3Address,
     output reg [15:0] wave3Address,  
-    output reg signed [63:0] xcorr,
-    output reg signed [63:0] product
+    output reg signed [63:0] xcorr
     );
+     reg signed [63:0] product = 0;
      reg [25:0] subframeCounter = 0;
      reg signed [15:0] count = -9999;
      reg signed [15:0] countMulti = 1;
@@ -54,8 +54,8 @@ input clk,
             waveRef2Address <= countMulti+5000;
             wave3Address <= ((countMulti+7500+count>=1)&&(countMulti+7500+count<=10000))?countMulti+7500+count:0;
             waveRef3Address <= countMulti+7500;
-            
-            product <= product + wave0*waveRef0+wave1*waveRef1+wave2*waveRef2+wave3*waveRef3;
+            if(clkcorr == 1) product <= 0;
+            else product <= product + wave0*waveRef0+wave1*waveRef1+wave2*waveRef2+wave3*waveRef3;
       end  
 
 
@@ -68,7 +68,7 @@ always @(negedge clkcorr)begin
     else begin
         count <= -9999;
     end
-        product <= 64'b0;
+        
     
     end
 
