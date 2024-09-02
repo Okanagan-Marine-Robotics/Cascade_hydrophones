@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../XCORR.ip_user_files/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/sim/HydroDSP_dds_compiler_1_0.vhd" \
-"../../../../XCORR.ip_user_files/bd/HydroDSP/ip/HydroDSP_dds_compiler_0_0/sim/HydroDSP_dds_compiler_0_0.vhd" \
+"../../../../project_1.ip_user_files/bd/HydroDSP/ip/HydroDSP_dds_compiler_0_0/sim/HydroDSP_dds_compiler_0_0.vhd" \
+"../../../../project_1.ip_user_files/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/sim/HydroDSP_dds_compiler_1_0.vhd" \
 
 # Do not sort compile order
 nosort

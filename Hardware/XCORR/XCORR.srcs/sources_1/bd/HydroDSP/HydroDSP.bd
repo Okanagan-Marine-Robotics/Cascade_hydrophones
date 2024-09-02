@@ -1,0 +1,912 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x71EA7A17B4261F3F",
+      "device": "xc7s25csga225-1",
+      "gen_directory": "../../../../XCORR.gen/sources_1/bd/HydroDSP",
+      "name": "HydroDSP",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "dds_compiler_0": "",
+      "dds_compiler_1": "",
+      "clk_wiz_0": "",
+      "clk100khz_0": "",
+      "blk_mem_gen_0": "",
+      "blk_mem_gen_1": "",
+      "blk_mem_gen_2": "",
+      "blk_mem_gen_3": "",
+      "blk_mem_gen_4": "",
+      "blk_mem_gen_5": "",
+      "blk_mem_gen_6": "",
+      "blk_mem_gen_7": "",
+      "xlconstant_0": "",
+      "clk_wiz_1": "",
+      "xlslice_0": "",
+      "waveParser_0": "",
+      "CC_0": ""
+    },
+    "ports": {
+      "bnt": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "HydroDSP_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "xcorr_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      }
+    },
+    "components": {
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "HydroDSP_dds_compiler_0_0",
+        "xci_path": "ip\\HydroDSP_dds_compiler_0_0\\HydroDSP_dds_compiler_0_0.xci",
+        "inst_hier_path": "dds_compiler_0",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "DDS_Clock_Rate": {
+            "value": "100"
+          },
+          "Frequency_Resolution": {
+            "value": "0.4"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Has_TREADY": {
+            "value": "true"
+          },
+          "Latency": {
+            "value": "8"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Mode_of_Operation": {
+            "value": "Standard"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "OUTPUT_FORM": {
+            "value": "Twos_Complement"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "12"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "SIN_COS_LUT_only"
+          },
+          "Phase_Width": {
+            "value": "12"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "dds_compiler_1": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "HydroDSP_dds_compiler_1_0",
+        "xci_path": "ip\\HydroDSP_dds_compiler_1_0\\HydroDSP_dds_compiler_1_0.xci",
+        "inst_hier_path": "dds_compiler_1",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Width": {
+            "value": "3"
+          },
+          "PINC1": {
+            "value": "1"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "Phase_Generator_only"
+          },
+          "Phase_Width": {
+            "value": "12"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "HydroDSP_clk_wiz_0_0",
+        "xci_path": "ip\\HydroDSP_clk_wiz_0_0\\HydroDSP_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "114.829"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "200.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "5.000"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "clk100khz_0": {
+        "vlnv": "xilinx.com:module_ref:clk100khz:1.0",
+        "xci_name": "HydroDSP_clk100khz_0_0",
+        "xci_path": "ip\\HydroDSP_clk100khz_0_0\\HydroDSP_clk100khz_0_0.xci",
+        "inst_hier_path": "clk100khz_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clk100khz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "HydroDSP_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk100k": {
+            "direction": "O"
+          }
+        }
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_0\\HydroDSP_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10001"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_1": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_1",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_1\\HydroDSP_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "blk_mem_gen_1",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10001"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_2": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_2",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_2\\HydroDSP_blk_mem_gen_0_2.xci",
+        "inst_hier_path": "blk_mem_gen_2",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "2501"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_3": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_3",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_3\\HydroDSP_blk_mem_gen_0_3.xci",
+        "inst_hier_path": "blk_mem_gen_3",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "2501"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_4": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_0_4",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_0_4\\HydroDSP_blk_mem_gen_0_4.xci",
+        "inst_hier_path": "blk_mem_gen_4",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "10001"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_5": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_1_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_1_0\\HydroDSP_blk_mem_gen_1_0.xci",
+        "inst_hier_path": "blk_mem_gen_5",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Operating_Mode_B": {
+            "value": "READ_FIRST"
+          },
+          "Register_PortB_Output_of_Memory_Core": {
+            "value": "true"
+          },
+          "Write_Depth_A": {
+            "value": "10001"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_6": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_2_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_2_0\\HydroDSP_blk_mem_gen_2_0.xci",
+        "inst_hier_path": "blk_mem_gen_6",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "2501"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_7": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HydroDSP_blk_mem_gen_3_0",
+        "xci_path": "ip\\HydroDSP_blk_mem_gen_3_0\\HydroDSP_blk_mem_gen_3_0.xci",
+        "inst_hier_path": "blk_mem_gen_7",
+        "parameters": {
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "2501"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "HydroDSP_xlconstant_0_0",
+        "xci_path": "ip\\HydroDSP_xlconstant_0_0\\HydroDSP_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "HydroDSP_clk_wiz_1_0",
+        "xci_path": "ip\\HydroDSP_clk_wiz_1_0\\HydroDSP_clk_wiz_1_0.xci",
+        "inst_hier_path": "clk_wiz_1",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "101.114"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "400"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "2.500"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "HydroDSP_xlslice_0_0",
+        "xci_path": "ip\\HydroDSP_xlslice_0_0\\HydroDSP_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "11"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "waveParser_0": {
+        "vlnv": "xilinx.com:module_ref:waveParser:1.0",
+        "xci_name": "HydroDSP_waveParser_0_1",
+        "xci_path": "ip\\HydroDSP_waveParser_0_1\\HydroDSP_waveParser_0_1.xci",
+        "inst_hier_path": "waveParser_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "waveParser",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "waveRef": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "bufferRef": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "buffer": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          }
+        }
+      },
+      "CC_0": {
+        "vlnv": "xilinx.com:module_ref:CC:1.0",
+        "xci_name": "HydroDSP_CC_0_0",
+        "xci_path": "ip\\HydroDSP_CC_0_0\\HydroDSP_CC_0_0.xci",
+        "inst_hier_path": "CC_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CC",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "waveRef0": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave0": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "xcorr": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CC_0_wave0Address": {
+        "ports": [
+          "CC_0/wave0Address",
+          "blk_mem_gen_6/addrb"
+        ]
+      },
+      "CC_0_wave1Address": {
+        "ports": [
+          "CC_0/wave1Address",
+          "blk_mem_gen_7/addrb"
+        ]
+      },
+      "CC_0_wave2Address": {
+        "ports": [
+          "CC_0/wave2Address",
+          "blk_mem_gen_3/addrb"
+        ]
+      },
+      "CC_0_wave3Address": {
+        "ports": [
+          "CC_0/wave3Address",
+          "blk_mem_gen_2/addrb"
+        ]
+      },
+      "CC_0_waveRef0Address": {
+        "ports": [
+          "CC_0/waveRef0Address",
+          "blk_mem_gen_0/addrb"
+        ]
+      },
+      "CC_0_waveRef1Address": {
+        "ports": [
+          "CC_0/waveRef1Address",
+          "blk_mem_gen_1/addrb"
+        ]
+      },
+      "CC_0_waveRef2Address": {
+        "ports": [
+          "CC_0/waveRef2Address",
+          "blk_mem_gen_4/addrb"
+        ]
+      },
+      "CC_0_waveRef3Address": {
+        "ports": [
+          "CC_0/waveRef3Address",
+          "blk_mem_gen_5/addrb"
+        ]
+      },
+      "CC_0_xcorr": {
+        "ports": [
+          "CC_0/xcorr",
+          "xcorr_0"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "clk",
+          "dds_compiler_0/aclk",
+          "dds_compiler_1/aclk",
+          "clk_wiz_0/clk_in1",
+          "clk100khz_0/clk",
+          "clk_wiz_1/clk_in1"
+        ]
+      },
+      "blk_mem_gen_0_doutb": {
+        "ports": [
+          "blk_mem_gen_0/doutb",
+          "CC_0/waveRef0"
+        ]
+      },
+      "blk_mem_gen_1_doutb": {
+        "ports": [
+          "blk_mem_gen_1/doutb",
+          "CC_0/waveRef1"
+        ]
+      },
+      "blk_mem_gen_2_doutb": {
+        "ports": [
+          "blk_mem_gen_2/doutb",
+          "CC_0/wave3"
+        ]
+      },
+      "blk_mem_gen_3_doutb": {
+        "ports": [
+          "blk_mem_gen_3/doutb",
+          "CC_0/wave2"
+        ]
+      },
+      "blk_mem_gen_4_doutb": {
+        "ports": [
+          "blk_mem_gen_4/doutb",
+          "CC_0/waveRef2"
+        ]
+      },
+      "blk_mem_gen_5_doutb": {
+        "ports": [
+          "blk_mem_gen_5/doutb",
+          "CC_0/waveRef3"
+        ]
+      },
+      "blk_mem_gen_6_doutb": {
+        "ports": [
+          "blk_mem_gen_6/doutb",
+          "CC_0/wave0"
+        ]
+      },
+      "blk_mem_gen_7_doutb": {
+        "ports": [
+          "blk_mem_gen_7/doutb",
+          "CC_0/wave1"
+        ]
+      },
+      "clk100khz_0_clk100k": {
+        "ports": [
+          "clk100khz_0/clk100k",
+          "waveParser_0/clk1Mhz",
+          "CC_0/clk1Mhz"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "CC_0/clk"
+        ]
+      },
+      "clk_wiz_1_clk_out1": {
+        "ports": [
+          "clk_wiz_1/clk_out1",
+          "blk_mem_gen_0/clka",
+          "blk_mem_gen_0/clkb",
+          "blk_mem_gen_1/clka",
+          "blk_mem_gen_1/clkb",
+          "blk_mem_gen_2/clkb",
+          "blk_mem_gen_2/clka",
+          "blk_mem_gen_3/clkb",
+          "blk_mem_gen_3/clka",
+          "blk_mem_gen_7/clkb",
+          "blk_mem_gen_7/clka",
+          "blk_mem_gen_6/clkb",
+          "blk_mem_gen_6/clka",
+          "blk_mem_gen_5/clkb",
+          "blk_mem_gen_5/clka",
+          "blk_mem_gen_4/clkb",
+          "blk_mem_gen_4/clka"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "xlslice_0/Din"
+        ]
+      },
+      "dds_compiler_1_m_axis_phase_tdata": {
+        "ports": [
+          "dds_compiler_1/m_axis_phase_tdata",
+          "dds_compiler_0/s_axis_phase_tdata"
+        ]
+      },
+      "dds_compiler_1_m_axis_phase_tvalid": {
+        "ports": [
+          "dds_compiler_1/m_axis_phase_tvalid",
+          "dds_compiler_0/s_axis_phase_tvalid"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "bnt",
+          "clk_wiz_0/reset",
+          "clk_wiz_1/reset"
+        ]
+      },
+      "waveParser_0_buffer": {
+        "ports": [
+          "waveParser_0/buffer",
+          "blk_mem_gen_6/dina",
+          "blk_mem_gen_7/dina",
+          "blk_mem_gen_3/dina",
+          "blk_mem_gen_2/dina"
+        ]
+      },
+      "waveParser_0_bufferRef": {
+        "ports": [
+          "waveParser_0/bufferRef",
+          "blk_mem_gen_0/dina",
+          "blk_mem_gen_1/dina",
+          "blk_mem_gen_4/dina",
+          "blk_mem_gen_5/dina"
+        ]
+      },
+      "waveParser_0_wave0Address": {
+        "ports": [
+          "waveParser_0/wave0Address",
+          "blk_mem_gen_6/addra"
+        ]
+      },
+      "waveParser_0_wave1Address": {
+        "ports": [
+          "waveParser_0/wave1Address",
+          "blk_mem_gen_7/addra"
+        ]
+      },
+      "waveParser_0_wave2Address": {
+        "ports": [
+          "waveParser_0/wave2Address",
+          "blk_mem_gen_3/addra"
+        ]
+      },
+      "waveParser_0_wave3Address": {
+        "ports": [
+          "waveParser_0/wave3Address",
+          "blk_mem_gen_2/addra"
+        ]
+      },
+      "waveParser_0_waveRef0Address": {
+        "ports": [
+          "waveParser_0/waveRef0Address",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "waveParser_0_waveRef1Address": {
+        "ports": [
+          "waveParser_0/waveRef1Address",
+          "blk_mem_gen_1/addra"
+        ]
+      },
+      "waveParser_0_waveRef2Address": {
+        "ports": [
+          "waveParser_0/waveRef2Address",
+          "blk_mem_gen_4/addra"
+        ]
+      },
+      "waveParser_0_waveRef3Address": {
+        "ports": [
+          "waveParser_0/waveRef3Address",
+          "blk_mem_gen_5/addra"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "blk_mem_gen_0/enb",
+          "blk_mem_gen_0/ena",
+          "blk_mem_gen_0/wea",
+          "blk_mem_gen_1/wea",
+          "blk_mem_gen_1/ena",
+          "blk_mem_gen_1/enb",
+          "blk_mem_gen_2/wea",
+          "blk_mem_gen_2/ena",
+          "blk_mem_gen_6/ena",
+          "blk_mem_gen_6/wea",
+          "blk_mem_gen_6/enb",
+          "blk_mem_gen_4/enb",
+          "blk_mem_gen_4/ena",
+          "blk_mem_gen_4/wea",
+          "blk_mem_gen_5/wea",
+          "blk_mem_gen_5/ena",
+          "blk_mem_gen_5/enb",
+          "blk_mem_gen_7/wea",
+          "blk_mem_gen_7/ena",
+          "blk_mem_gen_7/enb",
+          "blk_mem_gen_3/ena",
+          "blk_mem_gen_3/wea",
+          "blk_mem_gen_3/enb",
+          "blk_mem_gen_2/enb"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "waveParser_0/waveRef",
+          "waveParser_0/wave"
+        ]
+      }
+    }
+  }
+}

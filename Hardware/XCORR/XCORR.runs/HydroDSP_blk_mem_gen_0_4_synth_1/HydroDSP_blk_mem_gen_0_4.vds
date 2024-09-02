@@ -3,22 +3,22 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Sep  1 04:42:07 2024
-# Process ID: 16976
-# Current directory: C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1
+# Start of session at: Fri Aug 23 16:37:46 2024
+# Process ID: 24596
+# Current directory: C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1
 # Command line: vivado.exe -log HydroDSP_blk_mem_gen_0_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HydroDSP_blk_mem_gen_0_4.tcl
-# Log file: C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4.vds
-# Journal file: C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1\vivado.jou
+# Log file: C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4.vds
+# Journal file: C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1\vivado.jou
 # Running On: DESKTOP-C8C4U9T, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
 #-----------------------------------------------------------
 source HydroDSP_blk_mem_gen_0_4.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 454.578 ; gain = 157.305
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 454.742 ; gain = 160.223
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: HydroDSP_blk_mem_gen_0_4
-INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f7d0585bfbf80068 to dir: C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.cache/ip/2023.1/f/7/f7d0585bfbf80068/HydroDSP_blk_mem_gen_0_1.dcp to C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4.dcp.
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.cache/ip/2023.1/f/7/f7d0585bfbf80068/HydroDSP_blk_mem_gen_0_1_sim_netlist.v to C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_sim_netlist.v.
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.cache/ip/2023.1/f/7/f7d0585bfbf80068/HydroDSP_blk_mem_gen_0_1_sim_netlist.vhdl to C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_sim_netlist.vhdl.
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.cache/ip/2023.1/f/7/f7d0585bfbf80068/HydroDSP_blk_mem_gen_0_1_stub.v to C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_stub.v.
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.cache/ip/2023.1/f/7/f7d0585bfbf80068/HydroDSP_blk_mem_gen_0_1_stub.vhdl to C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_stub.vhdl.
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP HydroDSP_blk_mem_gen_0_4, cache-ID = f7d0585bfbf80068.
-INFO: [Common 17-206] Exiting Vivado at Sun Sep  1 04:42:24 2024...
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d69a290ca51156f9 to dir: C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Xcorr/xCorr.cache/ip/2023.1/d/6/d69a290ca51156f9/HydroDSP_blk_mem_gen_0_0.dcp to C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Xcorr/xCorr.cache/ip/2023.1/d/6/d69a290ca51156f9/HydroDSP_blk_mem_gen_0_0_sim_netlist.v to C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Xcorr/xCorr.cache/ip/2023.1/d/6/d69a290ca51156f9/HydroDSP_blk_mem_gen_0_0_sim_netlist.vhdl to C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Xcorr/xCorr.cache/ip/2023.1/d/6/d69a290ca51156f9/HydroDSP_blk_mem_gen_0_0_stub.v to C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Xcorr/xCorr.cache/ip/2023.1/d/6/d69a290ca51156f9/HydroDSP_blk_mem_gen_0_0_stub.vhdl to C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_blk_mem_gen_0_4_synth_1/HydroDSP_blk_mem_gen_0_4_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP HydroDSP_blk_mem_gen_0_4, cache-ID = d69a290ca51156f9.
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 23 16:37:56 2024...

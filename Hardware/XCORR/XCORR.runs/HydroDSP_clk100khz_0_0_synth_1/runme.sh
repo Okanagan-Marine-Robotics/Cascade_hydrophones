@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_clk100khz_0_0_synth_1'
+HD_PWD='C:/Users/JamesWilliamson/Xcorr/xCorr.runs/HydroDSP_clk100khz_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

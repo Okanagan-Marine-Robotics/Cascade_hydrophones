@@ -1,74 +1,71 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.913134",
-   "Default View_TopLeft":"579,-105",
+   "Default View_ScaleFactor":"0.691834",
+   "Default View_TopLeft":"912,2090",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port port-id_bnt -pg 1 -lvl 0 -x -10 -y -90 -defaultsOSRD
-preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 80 -defaultsOSRD
-preplace port port-id_rx -pg 1 -lvl 0 -x -10 -y -900 -defaultsOSRD
-preplace inst dds_compiler_1 -pg 1 -lvl 2 -x 360 -y 140 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 1120 -y -150 -defaultsOSRD
-preplace inst clk100khz_0 -pg 1 -lvl 4 -x 1120 -y 100 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -x 1630 -y 20 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -x 1630 -y 440 -defaultsOSRD
-preplace inst blk_mem_gen_2 -pg 1 -lvl 5 -x 1630 -y 3000 -defaultsOSRD
-preplace inst blk_mem_gen_3 -pg 1 -lvl 5 -x 1630 -y 2560 -defaultsOSRD
-preplace inst blk_mem_gen_4 -pg 1 -lvl 5 -x 1630 -y 860 -defaultsOSRD
-preplace inst blk_mem_gen_5 -pg 1 -lvl 5 -x 1630 -y 1280 -defaultsOSRD
-preplace inst blk_mem_gen_6 -pg 1 -lvl 5 -x 1630 -y 1700 -defaultsOSRD
-preplace inst blk_mem_gen_7 -pg 1 -lvl 5 -x 1630 -y 2120 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1120 -y 470 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 4 -x 1120 -y -30 -defaultsOSRD
-preplace inst CC_0 -pg 1 -lvl 6 -x 2070 -y -130 -defaultsOSRD
-preplace inst DataCompressor_0 -pg 1 -lvl 7 -x 2500 -y 60 -defaultsOSRD
-preplace inst blk_mem_gen_8 -pg 1 -lvl 8 -x 2810 -y 130 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 7 -x 2500 -y 240 -defaultsOSRD
-preplace inst clk_wiz_2 -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
-preplace inst dds_compiler_0 -pg 1 -lvl 3 -x 720 -y 150 -defaultsOSRD
-preplace inst waveParser_0 -pg 1 -lvl 4 -x 1120 -y 260 -defaultsOSRD
-preplace netloc CC_0_count 1 6 1 2320 -40n
-preplace netloc CC_0_wave0Address 1 4 3 1500 600 NJ 600 2310
-preplace netloc CC_0_wave1Address 1 4 3 1510 610 NJ 610 2300
-preplace netloc CC_0_wave2Address 1 4 3 1530 620 NJ 620 2280
-preplace netloc CC_0_wave3Address 1 4 3 1400 -210 1760J 30 2240
-preplace netloc CC_0_waveRef0Address 1 4 3 1450 -170 1730J 20 2260
-preplace netloc CC_0_waveRef1Address 1 4 3 1510 210 NJ 210 2290
-preplace netloc CC_0_waveRef2Address 1 4 3 1490 200 NJ 200 2250
-preplace netloc CC_0_waveRef3Address 1 4 3 1520 220 NJ 220 2270
-preplace netloc CC_0_xcorr 1 6 1 2330 -60n
-preplace netloc DataCompressor_0_CompressedData 1 7 1 2660 70n
-preplace netloc DataCompressor_0_address 1 7 1 2670 50n
-preplace netloc Net 1 1 3 220 60 510 60 940
-preplace netloc blk_mem_gen_0_doutb 1 4 2 1390 -240 1900
-preplace netloc blk_mem_gen_1_doutb 1 4 2 1410 -230 1890J
-preplace netloc blk_mem_gen_2_doutb 1 4 2 1420 -200 1770J
-preplace netloc blk_mem_gen_3_doutb 1 4 2 1430 -190 1800J
-preplace netloc blk_mem_gen_4_doutb 1 4 2 1440 -180 1790J
-preplace netloc blk_mem_gen_5_doutb 1 4 2 1470 -150 1740J
-preplace netloc blk_mem_gen_6_doutb 1 4 2 1460 -160 NJ
-preplace netloc blk_mem_gen_7_doutb 1 4 2 1480 -140 1750J
-preplace netloc clk100khz_0_clk100k 1 3 3 950 40 1310 180 1780J
-preplace netloc clk_in1_0_1 1 0 1 10 70n
-preplace netloc clk_wiz_1_clk_out1 1 4 1 1300 -40n
-preplace netloc dds_compiler_0_m_axis_data_tdata 1 3 1 930 160n
-preplace netloc dds_compiler_1_m_axis_phase_tdata 1 2 1 N 140
-preplace netloc dds_compiler_1_m_axis_phase_tvalid 1 2 1 N 160
-preplace netloc microblaze_0_Clk 1 4 4 1330 -220 1880 130 NJ 130 N
-preplace netloc reset_1 1 0 4 NJ -90 N -90 NJ -90 930
-preplace netloc waveParser_0_MemoryAddress 1 4 1 1370 -60n
-preplace netloc waveParser_0_buffer 1 4 1 1290J 230n
-preplace netloc waveParser_0_bufferRef 1 4 1 1380 -20n
-preplace netloc xlconstant_0_dout 1 4 4 1360 190 1830 170 N 170 N
-preplace netloc xlconstant_1_dout 1 7 1 2670 190n
-levelinfo -pg 1 -10 110 360 720 1120 1630 2070 2500 2810 3200 3650 3970 4110
-pagesize -pg 1 -db -bbox -sgen -430 -1380 4360 3160
+preplace port port-id_bnt -pg 1 -lvl 0 -x -10 -y 1530 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 1420 -defaultsOSRD
+preplace portBus xcorr_0 -pg 1 -lvl 6 -x 1780 -y 1100 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 2 -x 520 -y 1430 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 1 -x 160 -y 1420 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 850 -y 1650 -defaultsOSRD
+preplace inst clk100khz_0 -pg 1 -lvl 3 -x 850 -y 1540 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -x 1660 -y 190 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -x 1660 -y 550 -defaultsOSRD
+preplace inst blk_mem_gen_2 -pg 1 -lvl 5 -x 1660 -y 2010 -defaultsOSRD
+preplace inst blk_mem_gen_3 -pg 1 -lvl 5 -x 1660 -y 1580 -defaultsOSRD
+preplace inst blk_mem_gen_4 -pg 1 -lvl 5 -x 1660 -y 910 -defaultsOSRD
+preplace inst blk_mem_gen_5 -pg 1 -lvl 5 -x 1660 -y 1280 -defaultsOSRD
+preplace inst blk_mem_gen_6 -pg 1 -lvl 5 -x 1660 -y 2370 -defaultsOSRD
+preplace inst blk_mem_gen_7 -pg 1 -lvl 5 -x 1660 -y 2730 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1210 -y 1680 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 4 -x 1210 -y 1810 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 3 -x 850 -y 1440 -defaultsOSRD
+preplace inst waveParser_0 -pg 1 -lvl 4 -x 1210 -y 1460 -defaultsOSRD
+preplace inst CC_0 -pg 1 -lvl 4 -x 1210 -y 1150 -defaultsOSRD
+preplace netloc CC_0_wave0Address 1 4 1 1520 1090n
+preplace netloc CC_0_wave1Address 1 4 1 1440 1130n
+preplace netloc CC_0_wave2Address 1 4 1 1530 1170n
+preplace netloc CC_0_wave3Address 1 4 1 1470 1210n
+preplace netloc CC_0_waveRef0Address 1 4 1 1380 230n
+preplace netloc CC_0_waveRef1Address 1 4 1 1420 590n
+preplace netloc CC_0_waveRef2Address 1 4 1 1430 950n
+preplace netloc CC_0_waveRef3Address 1 4 1 1540 1190n
+preplace netloc CC_0_xcorr 1 4 2 1460J 1100 NJ
+preplace netloc Net 1 0 4 20 1340 310 1540 750 1790 950
+preplace netloc blk_mem_gen_0_doutb 1 3 2 1040 270 NJ
+preplace netloc blk_mem_gen_1_doutb 1 3 2 1000 630 NJ
+preplace netloc blk_mem_gen_2_doutb 1 3 2 1020 2090 N
+preplace netloc blk_mem_gen_3_doutb 1 3 2 1030 1740 1560
+preplace netloc blk_mem_gen_4_doutb 1 3 2 1020 990 NJ
+preplace netloc blk_mem_gen_5_doutb 1 3 2 1040 1310 1510J
+preplace netloc blk_mem_gen_6_doutb 1 3 2 1010 2450 N
+preplace netloc blk_mem_gen_7_doutb 1 3 2 990 2810 N
+preplace netloc clk100khz_0_clk100k 1 3 1 970 1080n
+preplace netloc clk_wiz_0_clk_out1 1 3 1 950 1060n
+preplace netloc clk_wiz_1_clk_out1 1 4 1 1480 130n
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 2 1 NJ 1440
+preplace netloc dds_compiler_1_m_axis_phase_tdata 1 1 1 N 1420
+preplace netloc dds_compiler_1_m_axis_phase_tvalid 1 1 1 N 1440
+preplace netloc reset_1 1 0 4 NJ 1530 NJ 1530 740 1800 NJ
+preplace netloc waveParser_0_buffer 1 4 1 1410 1390n
+preplace netloc waveParser_0_bufferRef 1 4 1 1410 150n
+preplace netloc waveParser_0_wave0Address 1 4 1 1430 1430n
+preplace netloc waveParser_0_wave1Address 1 4 1 1380 1470n
+preplace netloc waveParser_0_wave2Address 1 4 1 1560 1500n
+preplace netloc waveParser_0_wave3Address 1 4 1 1420 1550n
+preplace netloc waveParser_0_waveRef0Address 1 4 1 1390 110n
+preplace netloc waveParser_0_waveRef1Address 1 4 1 1450 470n
+preplace netloc waveParser_0_waveRef2Address 1 4 1 1500 830n
+preplace netloc waveParser_0_waveRef3Address 1 4 1 1550 1200n
+preplace netloc xlconstant_0_dout 1 4 1 1490 170n
+preplace netloc xlslice_0_Dout 1 3 1 980 1440n
+levelinfo -pg 1 -10 160 520 850 1210 1660 1780
+pagesize -pg 1 -db -bbox -sgen -80 0 1930 2920
 "
 }
 {
-   "da_axi4_cnt":"8",
-   "da_board_cnt":"5",
-   "da_bram_cntlr_cnt":"2",
-   "da_mb_cnt":"10"
+   "da_board_cnt":"3"
 }
