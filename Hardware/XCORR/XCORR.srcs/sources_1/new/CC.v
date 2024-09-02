@@ -20,11 +20,11 @@ input clk,
     output reg [15:0] wave2Address,
     output reg [15:0] waveRef3Address,
     output reg [15:0] wave3Address,  
-    output reg signed [63:0] xcorr
+    output reg signed [63:0] xcorr,
+    output reg signed [15:0] count = -9999
     );
      reg signed [63:0] product = 0;
      reg [25:0] subframeCounter = 0;
-     reg signed [15:0] count = -9999;
      reg signed [15:0] countMulti = 1;
      reg clkcorr = 0;
     

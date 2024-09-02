@@ -60,14 +60,20 @@ module HydroDSP_waveParser_0_0 (
   bufferRef,
   buffer,
   MemoryAddress,
+  MemoryAddress1,
+  MemoryAddress2,
+  MemoryAddress3,
   clk1Mhz
 );
 
 input wire [15 : 0] waveRef;
 input wire [15 : 0] wave;
-output wire [15 : 0] bufferRef;
-output wire [15 : 0] buffer;
+output wire [12 : 0] bufferRef;
+output wire [12 : 0] buffer;
 output wire [15 : 0] MemoryAddress;
+output wire [15 : 0] MemoryAddress1;
+output wire [15 : 0] MemoryAddress2;
+output wire [15 : 0] MemoryAddress3;
 input wire clk1Mhz;
 
   waveParser inst (
@@ -76,6 +82,9 @@ input wire clk1Mhz;
     .bufferRef(bufferRef),
     .buffer(buffer),
     .MemoryAddress(MemoryAddress),
+    .MemoryAddress1(MemoryAddress1),
+    .MemoryAddress2(MemoryAddress2),
+    .MemoryAddress3(MemoryAddress3),
     .clk1Mhz(clk1Mhz)
   );
 endmodule

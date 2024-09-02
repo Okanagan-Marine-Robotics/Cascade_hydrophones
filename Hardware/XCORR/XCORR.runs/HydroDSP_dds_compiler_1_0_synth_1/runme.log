@@ -14,7 +14,7 @@ ECHO is off.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source HydroDSP_dds_compiler_1_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 454.398 ; gain = 159.926
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 455.203 ; gain = 161.051
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: HydroDSP_dds_compiler_1_0
 Command: synth_design -top HydroDSP_dds_compiler_1_0 -part xc7s25csga225-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -23,18 +23,18 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: [Device 21-403] Loading part xc7s25csga225-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14768
+INFO: [Synth 8-7075] Helper process launched with PID 19992
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.758 ; gain = 409.410
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.918 ; gain = 411.871
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'HydroDSP_dds_compiler_1_0' [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:67]
-WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'HydroDSP_dds_compiler_1_0' [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:67]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:70]
 	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
 	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
 	Parameter C_MODULUS bound to: 9 - type: integer 
@@ -82,8 +82,8 @@ WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaratio
 	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
 	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ipshared/a99f/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:176]
-INFO: [Synth 8-256] done synthesizing module 'HydroDSP_dds_compiler_1_0' (0#1) [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:67]
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ipshared/a99f/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:176]
+INFO: [Synth 8-256] done synthesizing module 'HydroDSP_dds_compiler_1_0' (0#1) [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/synth/HydroDSP_dds_compiler_1_0.vhd:67]
 WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
@@ -186,53 +186,53 @@ WARNING: [Synth 8-7129] Port aresetn in module dds_compiler_v6_0_22_viv is eithe
 WARNING: [Synth 8-7129] Port s_axis_phase_tvalid in module dds_compiler_v6_0_22_viv is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.773 ; gain = 561.426
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1416.395 ; gain = 564.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.773 ; gain = 561.426
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1416.395 ; gain = 564.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1413.773 ; gain = 561.426
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1416.395 ; gain = 564.348
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1413.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1416.395 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/HydroDSP_dds_compiler_1_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/JamesWilliamson/Xcorr/Xcorr.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/HydroDSP_dds_compiler_1_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/JamesWilliamson/Xcorr/Xcorr.runs/HydroDSP_dds_compiler_1_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/JamesWilliamson/Xcorr/Xcorr.runs/HydroDSP_dds_compiler_1_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/HydroDSP_dds_compiler_1_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.gen/sources_1/bd/HydroDSP/ip/HydroDSP_dds_compiler_1_0/HydroDSP_dds_compiler_1_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_dds_compiler_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_dds_compiler_1_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1413.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1436.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1414.812 ; gain = 1.039
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1438.895 ; gain = 2.441
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s25csga225-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/JamesWilliamson/Xcorr/Xcorr.runs/HydroDSP_dds_compiler_1_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_dds_compiler_1_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -254,25 +254,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1414.812 ; gain = 562.465
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -290,37 +290,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -341,18 +341,18 @@ Report Cell Usage:
 |3     |FDRE   |    20|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:44 . Memory (MB): peak = 1417.027 ; gain = 563.641
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1417.027 ; gain = 564.680
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:01 . Memory (MB): peak = 1438.895 ; gain = 564.348
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1438.895 ; gain = 586.848
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1426.961 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1438.895 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1435.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1440.113 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -360,10 +360,10 @@ Synth Design complete | Checksum: 559629de
 INFO: [Common 17-83] Releasing license: Synthesis
 20 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:04 . Memory (MB): peak = 1435.859 ; gain = 950.582
-INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Xcorr/Xcorr.runs/HydroDSP_dds_compiler_1_0_synth_1/HydroDSP_dds_compiler_1_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 1440.113 ; gain = 953.746
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_dds_compiler_1_0_synth_1/HydroDSP_dds_compiler_1_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP HydroDSP_dds_compiler_1_0, cache-ID = 786492bcc12cd55f
 INFO: [Coretcl 2-1174] Renamed 10 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Xcorr/Xcorr.runs/HydroDSP_dds_compiler_1_0_synth_1/HydroDSP_dds_compiler_1_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/HydroDSP_dds_compiler_1_0_synth_1/HydroDSP_dds_compiler_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file HydroDSP_dds_compiler_1_0_utilization_synth.rpt -pb HydroDSP_dds_compiler_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Aug 15 21:24:01 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  1 03:45:04 2024...

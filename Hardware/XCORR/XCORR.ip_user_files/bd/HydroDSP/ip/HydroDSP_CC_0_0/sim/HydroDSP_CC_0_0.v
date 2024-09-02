@@ -73,7 +73,8 @@ module HydroDSP_CC_0_0 (
   wave2Address,
   waveRef3Address,
   wave3Address,
-  xcorr
+  xcorr,
+  count
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
@@ -97,6 +98,7 @@ output wire [15 : 0] wave2Address;
 output wire [15 : 0] waveRef3Address;
 output wire [15 : 0] wave3Address;
 output wire [63 : 0] xcorr;
+output wire [15 : 0] count;
 
   CC inst (
     .clk(clk),
@@ -117,6 +119,7 @@ output wire [63 : 0] xcorr;
     .wave2Address(wave2Address),
     .waveRef3Address(waveRef3Address),
     .wave3Address(wave3Address),
-    .xcorr(xcorr)
+    .xcorr(xcorr),
+    .count(count)
   );
 endmodule

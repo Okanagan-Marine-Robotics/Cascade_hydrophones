@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/JamesWilliamson/Xcorr/xCorr.runs/synth_1'
+HD_PWD='C:/Users/JamesWilliamson/Cascade_hydrophones/Hardware/XCORR/XCORR.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log TB.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TB.tcl
+EAStep vivado -log HydroDSP_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HydroDSP_wrapper.tcl

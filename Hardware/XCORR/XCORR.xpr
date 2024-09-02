@@ -60,20 +60,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="cmod-s7-25"/>
-    <Option Name="WTXSimLaunchSim" Val="219"/>
+    <Option Name="WTXSimLaunchSim" Val="225"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="139"/>
-    <Option Name="WTModelSimExportSim" Val="139"/>
-    <Option Name="WTQuestaExportSim" Val="139"/>
+    <Option Name="WTXSimExportSim" Val="143"/>
+    <Option Name="WTModelSimExportSim" Val="143"/>
+    <Option Name="WTQuestaExportSim" Val="143"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="139"/>
-    <Option Name="WTRivieraExportSim" Val="139"/>
-    <Option Name="WTActivehdlExportSim" Val="139"/>
+    <Option Name="WTVcsExportSim" Val="143"/>
+    <Option Name="WTRivieraExportSim" Val="143"/>
+    <Option Name="WTActivehdlExportSim" Val="143"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -91,80 +91,15 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/100khzclk.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xcorr/xCorr.srcs/sources_1/new/100khzclk.v"/>
-          <Attr Name="ImportTime" Val="1721552931"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/waveParser.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xcorr/xCorr.srcs/sources_1/new/waveParser.v"/>
-          <Attr Name="ImportTime" Val="1724466754"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/CC.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xcorr/xCorr.srcs/sources_1/new/CC.v"/>
-          <Attr Name="ImportTime" Val="1725180887"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/bd/HydroDSP/HydroDSP.bd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../HydroPhoneDSP/HydroPhoneDSP.srcs/sources_1/bd/HydroDSP/HydroDSP.bd"/>
           <Attr Name="ImportTime" Val="1721191807"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_dds_compiler_0_0/HydroDSP_dds_compiler_0_0.xci">
-          <Proxy FileSetName="HydroDSP_dds_compiler_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_dds_compiler_1_0/HydroDSP_dds_compiler_1_0.xci">
-          <Proxy FileSetName="HydroDSP_dds_compiler_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_clk100khz_0_0/HydroDSP_clk100khz_0_0.xci">
-          <Proxy FileSetName="HydroDSP_clk100khz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_clk_wiz_0_0/HydroDSP_clk_wiz_0_0.xci">
-          <Proxy FileSetName="HydroDSP_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_waveParser_0_0/HydroDSP_waveParser_0_0.xci">
-          <Proxy FileSetName="HydroDSP_waveParser_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_3_0/HydroDSP_blk_mem_gen_3_0.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_3_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_0_4/HydroDSP_blk_mem_gen_0_4.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_0_4"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_0_3/HydroDSP_blk_mem_gen_0_3.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_0_3"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_1_0/HydroDSP_blk_mem_gen_1_0.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_0_0/HydroDSP_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_2_0/HydroDSP_blk_mem_gen_2_0.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_0_2/HydroDSP_blk_mem_gen_0_2.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_0_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HydroDSP.bd" FileRelPathName="ip/HydroDSP_blk_mem_gen_0_1/HydroDSP_blk_mem_gen_0_1.xci">
-          <Proxy FileSetName="HydroDSP_blk_mem_gen_0_1"/>
-        </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/HydroDSP/hdl/HydroDSP_wrapper.v">
         <FileInfo>
@@ -175,10 +110,39 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Testbench.v">
+      <File Path="$PSRCDIR/sources_1/new/100khzclk.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../HydroPhoneDSP/HydroPhoneDSP.srcs/sources_1/new/Testbench.v"/>
-          <Attr Name="ImportTime" Val="1718430265"/>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xcorr/xCorr.srcs/sources_1/new/100khzclk.v"/>
+          <Attr Name="ImportTime" Val="1721552931"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/CC.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xcorr/xCorr.srcs/sources_1/new/CC.v"/>
+          <Attr Name="ImportTime" Val="1725180887"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/DataCompressor.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/waveParser.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xcorr/xCorr.srcs/sources_1/new/waveParser.v"/>
+          <Attr Name="ImportTime" Val="1724466754"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -216,18 +180,32 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="TB"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopModule" Val="HydroDSP_wrapper"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PPRDIR/../../../Downloads/Cmod-S7-25-Master.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/Testbench.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../HydroPhoneDSP/HydroPhoneDSP.srcs/sources_1/new/Testbench.v"/>
+          <Attr Name="ImportTime" Val="1718430265"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="TB"/>
@@ -258,12 +236,6 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="HydroDSP_dds_compiler_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_dds_compiler_0_0" RelGenDir="$PGENDIR/HydroDSP_dds_compiler_0_0">
-      <Config>
-        <Option Name="TopModule" Val="HydroDSP_dds_compiler_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="HydroDSP_dds_compiler_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_dds_compiler_1_0" RelGenDir="$PGENDIR/HydroDSP_dds_compiler_1_0">
       <Config>
         <Option Name="TopModule" Val="HydroDSP_dds_compiler_1_0"/>
@@ -279,12 +251,6 @@
     <FileSet Name="HydroDSP_clk100khz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_clk100khz_0_0" RelGenDir="$PGENDIR/HydroDSP_clk100khz_0_0">
       <Config>
         <Option Name="TopModule" Val="HydroDSP_clk100khz_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="HydroDSP_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_blk_mem_gen_0_0" RelGenDir="$PGENDIR/HydroDSP_blk_mem_gen_0_0">
-      <Config>
-        <Option Name="TopModule" Val="HydroDSP_blk_mem_gen_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -330,9 +296,45 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="HydroDSP_waveParser_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_waveParser_0_0" RelGenDir="$PGENDIR/HydroDSP_waveParser_0_0">
+    <FileSet Name="HydroDSP_blk_mem_gen_8_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_blk_mem_gen_8_0" RelGenDir="$PGENDIR/HydroDSP_blk_mem_gen_8_0">
       <Config>
-        <Option Name="TopModule" Val="HydroDSP_waveParser_0_0"/>
+        <Option Name="TopModule" Val="HydroDSP_blk_mem_gen_8_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="HydroDSP_clk_wiz_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_clk_wiz_1_0" RelGenDir="$PGENDIR/HydroDSP_clk_wiz_1_0">
+      <Config>
+        <Option Name="TopModule" Val="HydroDSP_clk_wiz_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="HydroDSP_DataCompressor_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_DataCompressor_0_0" RelGenDir="$PGENDIR/HydroDSP_DataCompressor_0_0">
+      <Config>
+        <Option Name="TopModule" Val="HydroDSP_DataCompressor_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="HydroDSP_CC_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_CC_0_0" RelGenDir="$PGENDIR/HydroDSP_CC_0_0">
+      <Config>
+        <Option Name="TopModule" Val="HydroDSP_CC_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="HydroDSP_clk_wiz_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_clk_wiz_2_0" RelGenDir="$PGENDIR/HydroDSP_clk_wiz_2_0">
+      <Config>
+        <Option Name="TopModule" Val="HydroDSP_clk_wiz_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="HydroDSP_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_blk_mem_gen_0_0" RelGenDir="$PGENDIR/HydroDSP_blk_mem_gen_0_0">
+      <Config>
+        <Option Name="TopModule" Val="HydroDSP_blk_mem_gen_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="HydroDSP_dds_compiler_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HydroDSP_dds_compiler_0_0" RelGenDir="$PGENDIR/HydroDSP_dds_compiler_0_0">
+      <Config>
+        <Option Name="TopModule" Val="HydroDSP_dds_compiler_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -366,16 +368,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="HydroDSP_dds_compiler_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_dds_compiler_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_dds_compiler_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_dds_compiler_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="HydroDSP_dds_compiler_1_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_dds_compiler_1_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_dds_compiler_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_dds_compiler_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_1_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
@@ -397,16 +389,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="HydroDSP_clk100khz_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_clk100khz_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_clk100khz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_clk100khz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_clk100khz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_clk100khz_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="HydroDSP_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_blk_mem_gen_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_blk_mem_gen_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
@@ -486,7 +468,67 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="HydroDSP_waveParser_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_waveParser_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_waveParser_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_waveParser_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_waveParser_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_waveParser_0_0_synth_1">
+    <Run Id="HydroDSP_blk_mem_gen_8_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_blk_mem_gen_8_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_blk_mem_gen_8_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_blk_mem_gen_8_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_8_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_8_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_clk_wiz_1_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_clk_wiz_1_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_clk_wiz_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_clk_wiz_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_DataCompressor_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_DataCompressor_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_DataCompressor_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_DataCompressor_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_DataCompressor_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_DataCompressor_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_CC_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_CC_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_CC_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_CC_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_CC_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_CC_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_clk_wiz_2_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_clk_wiz_2_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_clk_wiz_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_clk_wiz_2_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_2_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_2_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_blk_mem_gen_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_blk_mem_gen_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_dds_compiler_0_0_synth_1" Type="Ft3:Synth" SrcSet="HydroDSP_dds_compiler_0_0" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_dds_compiler_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HydroDSP_dds_compiler_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
@@ -510,23 +552,6 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="HydroDSP_dds_compiler_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_dds_compiler_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_dds_compiler_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -566,23 +591,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="HydroDSP_clk100khz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_clk100khz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_clk100khz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_clk100khz_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_clk100khz_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="HydroDSP_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_blk_mem_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
@@ -718,7 +726,109 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="HydroDSP_waveParser_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_waveParser_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_waveParser_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_waveParser_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_waveParser_0_0_impl_1">
+    <Run Id="HydroDSP_blk_mem_gen_8_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_blk_mem_gen_8_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_blk_mem_gen_8_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_8_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_8_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_clk_wiz_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_clk_wiz_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_clk_wiz_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_DataCompressor_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_DataCompressor_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_DataCompressor_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_DataCompressor_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_DataCompressor_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_CC_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_CC_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_CC_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_CC_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_CC_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_clk_wiz_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_clk_wiz_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_clk_wiz_2_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_2_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_clk_wiz_2_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_blk_mem_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_blk_mem_gen_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="HydroDSP_dds_compiler_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HydroDSP_dds_compiler_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HydroDSP_dds_compiler_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HydroDSP_dds_compiler_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
