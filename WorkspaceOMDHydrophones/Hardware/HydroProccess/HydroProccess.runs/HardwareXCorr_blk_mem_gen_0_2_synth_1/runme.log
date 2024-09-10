@@ -1,0 +1,26 @@
+
+*** Running vivado
+    with args -log HardwareXCorr_blk_mem_gen_0_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HardwareXCorr_blk_mem_gen_0_2.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source HardwareXCorr_blk_mem_gen_0_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 455.934 ; gain = 159.855
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: HardwareXCorr_blk_mem_gen_0_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 9568fa84fe96257d to dir: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/HardwareXCorr_blk_mem_gen_0_2_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/9/5/9568fa84fe96257d/HardwareXCorr_blk_mem_gen_0_3.dcp to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/HardwareXCorr_blk_mem_gen_0_2_synth_1/HardwareXCorr_blk_mem_gen_0_2.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/9/5/9568fa84fe96257d/HardwareXCorr_blk_mem_gen_0_3_sim_netlist.v to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/HardwareXCorr_blk_mem_gen_0_2_synth_1/HardwareXCorr_blk_mem_gen_0_2_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/9/5/9568fa84fe96257d/HardwareXCorr_blk_mem_gen_0_3_sim_netlist.vhdl to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/HardwareXCorr_blk_mem_gen_0_2_synth_1/HardwareXCorr_blk_mem_gen_0_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/9/5/9568fa84fe96257d/HardwareXCorr_blk_mem_gen_0_3_stub.v to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/HardwareXCorr_blk_mem_gen_0_2_synth_1/HardwareXCorr_blk_mem_gen_0_2_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/9/5/9568fa84fe96257d/HardwareXCorr_blk_mem_gen_0_3_stub.vhdl to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/HardwareXCorr_blk_mem_gen_0_2_synth_1/HardwareXCorr_blk_mem_gen_0_2_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP HardwareXCorr_blk_mem_gen_0_2, cache-ID = 9568fa84fe96257d.
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 10 01:40:29 2024...

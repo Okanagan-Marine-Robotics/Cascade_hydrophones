@@ -1,0 +1,15 @@
+verilog xil_defaultlib --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/30ef" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_lmb_bram_1/sim/MicroBlaze_lmb_bram_1.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_xbar_1/sim/MicroBlaze_xbar_1.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_xlconstant_0_0/sim/MicroBlaze_xlconstant_0_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_0/sim/MicroBlaze_blk_mem_gen_0_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_Counter_0_0/sim/MicroBlaze_Counter_0_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_HardwareXCorr_wrapper_0_0/sim/MicroBlaze_HardwareXCorr_wrapper_0_0.v" \
+"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

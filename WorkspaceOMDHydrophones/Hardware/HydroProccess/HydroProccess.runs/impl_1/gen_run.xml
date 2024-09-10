@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s25csga225-1" LaunchTime="1725958195">
+  <File Type="ROUTE-PWR" Name="MicroBlaze_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="MicroBlaze_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="MicroBlaze_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="MicroBlaze_wrapper_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="MicroBlaze_wrapper_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="MicroBlaze_wrapper.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MicroBlaze_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="MicroBlaze_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="MicroBlaze_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="MicroBlaze_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MicroBlaze_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="MicroBlaze_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="MicroBlaze_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="MicroBlaze_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="MicroBlaze_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="MicroBlaze_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MicroBlaze_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MicroBlaze_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MicroBlaze_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MicroBlaze_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MicroBlaze_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="MicroBlaze_wrapper.bin"/>
+  <File Type="PLACE-TIMING" Name="MicroBlaze_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="MicroBlaze_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="MicroBlaze_wrapper_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MicroBlaze_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="MicroBlaze_wrapper.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="MicroBlaze_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="MicroBlaze_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="MicroBlaze_wrapper.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MicroBlaze_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MicroBlaze_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MicroBlaze_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MicroBlaze_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MicroBlaze_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="MicroBlaze_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MicroBlaze_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MicroBlaze_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MicroBlaze_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="MicroBlaze_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="MicroBlaze_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MicroBlaze_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MicroBlaze_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MicroBlaze_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MicroBlaze_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="MicroBlaze_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="MicroBlaze_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MicroBlaze_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MicroBlaze_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MicroBlaze_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MicroBlaze_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MicroBlaze_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="HardwareXCorr_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="HardwareXCorr_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="HardwareXCorr_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="HardwareXCorr_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="MicroBlaze_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="HardwareXCorr_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="HardwareXCorr_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="MicroBlaze_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="MicroBlaze_wrapper_bd.bmm"/>
+  <File Type="PDI-FILE" Name="MicroBlaze_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="MicroBlaze_wrapper_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="MicroBlaze_wrapper_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="MicroBlaze_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="MicroBlaze_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="MicroBlaze_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="MicroBlaze_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="MicroBlaze_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="MicroBlaze_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="MicroBlaze_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="MicroBlaze_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="MicroBlaze_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="MicroBlaze_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="MicroBlaze_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="MicroBlaze_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/CC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/100khzclk.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/waveParser.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AddressFixer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/HardwareXCorr/HardwareXCorr.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/HardwareXCorr/hdl/HardwareXCorr_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Compressor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/MicroBlaze/MicroBlaze.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Counter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Bram.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/web.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fip.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TestSwtich.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MicroBlaze_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../Downloads/Cmod-S7-25-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/MicroBlaze_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_4_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_compress_64_to_32_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_4_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_lmb_bram_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_clk100khz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_waveParser_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_4_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_blk_mem_gen_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_dds_compiler_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_CC_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HardwareXCorr_AddressFixer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_HardwareXCorr_wrapper_0_0"/>
+</GenRun>

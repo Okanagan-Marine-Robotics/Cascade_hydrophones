@@ -1,0 +1,90 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_22 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_6 -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/HardwareXCorr/sim/HardwareXCorr.v:171]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_22.dds_compiler_v6_0_22_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_22.pkg_dds_compiler_v6_0_22
+Compiling package dds_compiler_v6_0_22.dds_compiler_v6_0_22_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_22.pkg_betas
+Compiling package dds_compiler_v6_0_22.pkg_alphas
+Compiling module xil_defaultlib.AddressFixer
+Compiling module xil_defaultlib.HardwareXCorr_AddressFixer_0_0
+Compiling module xil_defaultlib.CC
+Compiling module xil_defaultlib.HardwareXCorr_CC_0_0
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="spa...
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_0
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_1
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_2
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_3
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="spa...
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_0
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_1
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_2
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_3
+Compiling module xil_defaultlib.clk100khz
+Compiling module xil_defaultlib.HardwareXCorr_clk100khz_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.HardwareXCorr_clk_wiz_0_0_clk_wi...
+Compiling module xil_defaultlib.HardwareXCorr_clk_wiz_0_0
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_rdy [\dds_compiler_v6_0_22_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.pipe_add [\pipe_add(c_width=12,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.accum [\accum(c_xdevicefamily="spartan7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.sin_cos [\sin_cos(c_xdevicefamily="sparta...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_core [\dds_compiler_v6_0_22_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_viv [\dds_compiler_v6_0_22_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22 [\dds_compiler_v6_0_22(c_xdevicef...]
+Compiling architecture hardwarexcorr_dds_compiler_1_0_arch of entity xil_defaultlib.HardwareXCorr_dds_compiler_1_0 [hardwarexcorr_dds_compiler_1_0_d...]
+Compiling module xil_defaultlib.waveParser
+Compiling module xil_defaultlib.HardwareXCorr_waveParser_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.HardwareXCorr_xlconstant_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.HardwareXCorr_xlslice_0_0
+Compiling module xil_defaultlib.HardwareXCorr
+Compiling module xil_defaultlib.HardwareXCorr_wrapper
+Compiling module xil_defaultlib.TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_behav

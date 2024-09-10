@@ -1,3 +1,3 @@
-Hardware design for Hydrophones SoC and Hardware Accelerator -- Prototype = Halfworking
+Hardware design for Hydrophones SoC and Hardware Accelerator -- Hardware prototype = working, Software prototype = halfworking
 
 
