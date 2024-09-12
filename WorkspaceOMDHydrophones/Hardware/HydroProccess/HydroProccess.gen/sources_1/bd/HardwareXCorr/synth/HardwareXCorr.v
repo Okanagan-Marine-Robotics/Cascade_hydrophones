@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Tue Sep 10 01:37:54 2024
+//Date        : Thu Sep 12 00:55:14 2024
 //Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
 //Command     : generate_target HardwareXCorr.bd
 //Design      : HardwareXCorr
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "HardwareXCorr,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=HardwareXCorr,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=16,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "HardwareXCorr.hwdef" *) 
+(* CORE_GENERATION_INFO = "HardwareXCorr,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=HardwareXCorr,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "HardwareXCorr.hwdef" *) 
 module HardwareXCorr
    (address_0,
     clk_0,
@@ -20,6 +20,14 @@ module HardwareXCorr
   output [63:0]xcorr_0;
 
   wire [15:0]AddressFixer_0_address;
+  wire [11:0]BRAMMUX_0_Ref0;
+  wire [13:0]BRAMMUX_0_Ref0Address;
+  wire [11:0]BRAMMUX_0_Ref1;
+  wire [13:0]BRAMMUX_0_Ref1Address;
+  wire [11:0]BRAMMUX_0_Ref2;
+  wire [13:0]BRAMMUX_0_Ref2Address;
+  wire [11:0]BRAMMUX_0_Ref3;
+  wire [13:0]BRAMMUX_0_Ref3Address;
   wire [15:0]CC_0_count;
   wire [11:0]CC_0_wave0Address;
   wire [11:0]CC_0_wave1Address;
@@ -61,6 +69,24 @@ module HardwareXCorr
   HardwareXCorr_AddressFixer_0_0 AddressFixer_0
        (.address(AddressFixer_0_address),
         .counter(CC_0_count));
+  HardwareXCorr_BRAMMUX_0_0 BRAMMUX_0
+       (.Ref0(BRAMMUX_0_Ref0),
+        .Ref0Address(BRAMMUX_0_Ref0Address),
+        .Ref1(BRAMMUX_0_Ref1),
+        .Ref1Address(BRAMMUX_0_Ref1Address),
+        .Ref2(BRAMMUX_0_Ref2),
+        .Ref2Address(BRAMMUX_0_Ref2Address),
+        .Ref3(BRAMMUX_0_Ref3),
+        .Ref3Address(BRAMMUX_0_Ref3Address),
+        .clk(clk_wiz_0_clk_out1),
+        .waveRef0(blk_mem_gen_0_douta),
+        .waveRef0Address(CC_0_waveRef0Address),
+        .waveRef1(blk_mem_gen_2_douta),
+        .waveRef1Address(CC_0_waveRef1Address),
+        .waveRef2(blk_mem_gen_1_douta),
+        .waveRef2Address(CC_0_waveRef2Address),
+        .waveRef3(blk_mem_gen_3_douta),
+        .waveRef3Address(CC_0_waveRef3Address));
   HardwareXCorr_CC_0_0 CC_0
        (.clk(clk_wiz_0_clk_out1),
         .clk1Mhz(clk100khz_0_clk100k),
@@ -73,18 +99,18 @@ module HardwareXCorr
         .wave2Address(CC_0_wave2Address),
         .wave3(blk_mem_gen_7_doutb),
         .wave3Address(CC_0_wave3Address),
-        .waveRef0(blk_mem_gen_0_douta),
+        .waveRef0(BRAMMUX_0_Ref0),
         .waveRef0Address(CC_0_waveRef0Address),
-        .waveRef1(blk_mem_gen_2_douta),
+        .waveRef1(BRAMMUX_0_Ref1),
         .waveRef1Address(CC_0_waveRef1Address),
-        .waveRef2(blk_mem_gen_1_douta),
+        .waveRef2(BRAMMUX_0_Ref2),
         .waveRef2Address(CC_0_waveRef2Address),
-        .waveRef3(blk_mem_gen_3_douta),
+        .waveRef3(BRAMMUX_0_Ref3),
         .waveRef3Address(CC_0_waveRef3Address),
         .xcorr(CC_0_xcorr));
   HardwareXCorr_blk_mem_gen_0_0 blk_mem_gen_0
-       (.addra(CC_0_waveRef0Address),
-        .addrb(waveParser_0_waveRef0Address),
+       (.addra(BRAMMUX_0_Ref0Address[11:0]),
+        .addrb(waveParser_0_waveRef0Address[11:0]),
         .clka(clk_wiz_0_clk_out1),
         .clkb(clk_wiz_0_clk_out1),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
@@ -93,8 +119,8 @@ module HardwareXCorr
         .wea(1'b0),
         .web(xlconstant_0_dout));
   HardwareXCorr_blk_mem_gen_0_1 blk_mem_gen_1
-       (.addra(CC_0_waveRef2Address),
-        .addrb(waveParser_0_waveRef2Address),
+       (.addra(BRAMMUX_0_Ref2Address[11:0]),
+        .addrb(waveParser_0_waveRef2Address[11:0]),
         .clka(clk_wiz_0_clk_out1),
         .clkb(clk_wiz_0_clk_out1),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
@@ -103,8 +129,8 @@ module HardwareXCorr
         .wea(1'b0),
         .web(xlconstant_0_dout));
   HardwareXCorr_blk_mem_gen_0_2 blk_mem_gen_2
-       (.addra(CC_0_waveRef1Address),
-        .addrb(waveParser_0_waveRef1Address),
+       (.addra(BRAMMUX_0_Ref1Address[11:0]),
+        .addrb(waveParser_0_waveRef1Address[11:0]),
         .clka(clk_wiz_0_clk_out1),
         .clkb(clk_wiz_0_clk_out1),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
@@ -113,8 +139,8 @@ module HardwareXCorr
         .wea(1'b0),
         .web(xlconstant_0_dout));
   HardwareXCorr_blk_mem_gen_0_3 blk_mem_gen_3
-       (.addra(CC_0_waveRef3Address),
-        .addrb(waveParser_0_waveRef3Address),
+       (.addra(BRAMMUX_0_Ref3Address[11:0]),
+        .addrb(waveParser_0_waveRef3Address[11:0]),
         .clka(clk_wiz_0_clk_out1),
         .clkb(clk_wiz_0_clk_out1),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),

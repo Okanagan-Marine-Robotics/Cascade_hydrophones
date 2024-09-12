@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Tue Sep 10 01:37:54 2024
+//Date        : Thu Sep 12 00:55:14 2024
 //Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
 //Command     : generate_target HardwareXCorr_wrapper.bd
 //Design      : HardwareXCorr_wrapper

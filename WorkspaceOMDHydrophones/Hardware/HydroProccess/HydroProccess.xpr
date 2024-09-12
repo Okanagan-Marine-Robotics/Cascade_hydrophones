@@ -4,10 +4,10 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="63" Path="C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.xpr">
+<Project Product="Vivado" Version="7" Minor="63" Path="C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="cb1976c8a8ad4f1ea30243f50bd04b42"/>
+    <Option Name="Id" Val="8bc3c45690194628ab5e4669b183a7db"/>
     <Option Name="Part" Val="xc7s25csga225-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -44,7 +44,7 @@
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="BoardPart" Val="digilentinc.com:cmod-s7-25:part0:1.0"/>
-    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store"/>
+    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../../AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -60,7 +60,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="cmod-s7-25"/>
-    <Option Name="WTXSimLaunchSim" Val="32"/>
+    <Option Name="WTXSimLaunchSim" Val="57"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -91,8 +91,10 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/CC.v">
+      <File Path="$PSRCDIR/sources_1/new/Compressor.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/Compressor.v"/>
+          <Attr Name="ImportTime" Val="1725278030"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -100,6 +102,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/100khzclk.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/100khzclk.v"/>
+          <Attr Name="ImportTime" Val="1724214597"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -107,6 +111,17 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/waveParser.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/waveParser.v"/>
+          <Attr Name="ImportTime" Val="1726121899"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/CC.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/CC.v"/>
+          <Attr Name="ImportTime" Val="1726124894"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -114,6 +129,17 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/AddressFixer.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/AddressFixer.v"/>
+          <Attr Name="ImportTime" Val="1725957279"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/BRAMMUX.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/BRAMMUX.v"/>
+          <Attr Name="ImportTime" Val="1726126641"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -121,62 +147,53 @@
       </File>
       <File Path="$PSRCDIR/sources_1/bd/HardwareXCorr/HardwareXCorr.bd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/HardwareXCorr/HardwareXCorr.bd"/>
+          <Attr Name="ImportTime" Val="1726128134"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_0_3/HardwareXCorr_blk_mem_gen_0_3.xci">
-          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_0_3"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_4_0/HardwareXCorr_blk_mem_gen_4_0.xci">
-          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_4_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0.xci">
-          <Proxy FileSetName="HardwareXCorr_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_4_2/HardwareXCorr_blk_mem_gen_4_2.xci">
           <Proxy FileSetName="HardwareXCorr_blk_mem_gen_4_2"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_0_0/HardwareXCorr_blk_mem_gen_0_0.xci">
           <Proxy FileSetName="HardwareXCorr_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_clk100khz_0_0/HardwareXCorr_clk100khz_0_0.xci">
-          <Proxy FileSetName="HardwareXCorr_clk100khz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_waveParser_0_0/HardwareXCorr_waveParser_0_0.xci">
-          <Proxy FileSetName="HardwareXCorr_waveParser_0_0"/>
+        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_4_0/HardwareXCorr_blk_mem_gen_4_0.xci">
+          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_4_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_0_2/HardwareXCorr_blk_mem_gen_0_2.xci">
           <Proxy FileSetName="HardwareXCorr_blk_mem_gen_0_2"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_0_1/HardwareXCorr_blk_mem_gen_0_1.xci">
+          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_0_3/HardwareXCorr_blk_mem_gen_0_3.xci">
+          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_0_3"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_4_1/HardwareXCorr_blk_mem_gen_4_1.xci">
           <Proxy FileSetName="HardwareXCorr_blk_mem_gen_4_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_4_3/HardwareXCorr_blk_mem_gen_4_3.xci">
-          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_4_3"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_0_1/HardwareXCorr_blk_mem_gen_0_1.xci">
-          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_0_1"/>
+        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0.xci">
+          <Proxy FileSetName="HardwareXCorr_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_dds_compiler_1_0/HardwareXCorr_dds_compiler_1_0.xci">
           <Proxy FileSetName="HardwareXCorr_dds_compiler_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_CC_0_0/HardwareXCorr_CC_0_0.xci">
-          <Proxy FileSetName="HardwareXCorr_CC_0_0"/>
+        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_clk100khz_0_0/HardwareXCorr_clk100khz_0_0.xci">
+          <Proxy FileSetName="HardwareXCorr_clk100khz_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_AddressFixer_0_0/HardwareXCorr_AddressFixer_0_0.xci">
           <Proxy FileSetName="HardwareXCorr_AddressFixer_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="HardwareXCorr.bd" FileRelPathName="ip/HardwareXCorr_blk_mem_gen_4_3/HardwareXCorr_blk_mem_gen_4_3.xci">
+          <Proxy FileSetName="HardwareXCorr_blk_mem_gen_4_3"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/HardwareXCorr/hdl/HardwareXCorr_wrapper.v">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/Compressor.v">
-        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/HardwareXCorr/hdl/HardwareXCorr_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1726127714"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -184,30 +201,29 @@
       </File>
       <File Path="$PSRCDIR/sources_1/bd/MicroBlaze/MicroBlaze.bd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd"/>
+          <Attr Name="ImportTime" Val="1726128137"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_compress_64_to_32_0_0/MicroBlaze_compress_64_to_32_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_compress_64_to_32_0_0"/>
+        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xci">
+          <Proxy FileSetName="MicroBlaze_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_axi_gpio_1_0/MicroBlaze_axi_gpio_1_0.xci">
           <Proxy FileSetName="MicroBlaze_axi_gpio_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_blk_mem_gen_0_0/MicroBlaze_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_HardwareXCorr_wrapper_0_0/MicroBlaze_HardwareXCorr_wrapper_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_HardwareXCorr_wrapper_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0.xci">
           <Proxy FileSetName="MicroBlaze_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_compress_64_to_32_0_0/MicroBlaze_compress_64_to_32_0_0.xci">
+          <Proxy FileSetName="MicroBlaze_compress_64_to_32_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_blk_mem_gen_0_0/MicroBlaze_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="MicroBlaze_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_xbar_1/MicroBlaze_xbar_1.xci">
           <Proxy FileSetName="MicroBlaze_xbar_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_lmb_bram_1/MicroBlaze_lmb_bram_1.xci">
           <Proxy FileSetName="MicroBlaze_lmb_bram_1"/>
@@ -215,6 +231,8 @@
       </File>
       <File Path="$PGENDIR/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1725958191"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -223,6 +241,8 @@
       <File Path="$PSRCDIR/sources_1/new/Counter.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/Counter.v"/>
+          <Attr Name="ImportTime" Val="1725947553"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -231,6 +251,8 @@
       <File Path="$PSRCDIR/sources_1/new/Bram.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/Bram.v"/>
+          <Attr Name="ImportTime" Val="1725783050"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -239,6 +261,8 @@
       <File Path="$PSRCDIR/sources_1/new/web.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/web.v"/>
+          <Attr Name="ImportTime" Val="1725361929"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -247,6 +271,8 @@
       <File Path="$PSRCDIR/sources_1/new/fip.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/fip.sv"/>
+          <Attr Name="ImportTime" Val="1725782446"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -255,6 +281,8 @@
       <File Path="$PSRCDIR/sources_1/new/TestSwtich.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/TestSwtich.v"/>
+          <Attr Name="ImportTime" Val="1721552597"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -267,7 +295,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../../Downloads/Cmod-S7-25-Master.xdc">
+      <File Path="$PPRDIR/../../../../Downloads/Cmod-S7-25-Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -281,6 +309,8 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/TB.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sim_1/new/TB.v"/>
+          <Attr Name="ImportTime" Val="1725952131"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -304,6 +334,8 @@
       <Filter Type="Utils"/>
       <File Path="$PSRCDIR/utils_1/imports/synth_1/MicroBlaze_wrapper.dcp">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/utils_1/imports/synth_1/MicroBlaze_wrapper.dcp"/>
+          <Attr Name="ImportTime" Val="1725958164"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedInSteps" Val="synth_1"/>
@@ -392,12 +424,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="HardwareXCorr_waveParser_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HardwareXCorr_waveParser_0_0" RelGenDir="$PGENDIR/HardwareXCorr_waveParser_0_0">
-      <Config>
-        <Option Name="TopModule" Val="HardwareXCorr_waveParser_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="HardwareXCorr_blk_mem_gen_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HardwareXCorr_blk_mem_gen_0_2" RelGenDir="$PGENDIR/HardwareXCorr_blk_mem_gen_0_2">
       <Config>
         <Option Name="TopModule" Val="HardwareXCorr_blk_mem_gen_0_2"/>
@@ -428,21 +454,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="HardwareXCorr_CC_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HardwareXCorr_CC_0_0" RelGenDir="$PGENDIR/HardwareXCorr_CC_0_0">
-      <Config>
-        <Option Name="TopModule" Val="HardwareXCorr_CC_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="HardwareXCorr_AddressFixer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HardwareXCorr_AddressFixer_0_0" RelGenDir="$PGENDIR/HardwareXCorr_AddressFixer_0_0">
       <Config>
         <Option Name="TopModule" Val="HardwareXCorr_AddressFixer_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_HardwareXCorr_wrapper_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_HardwareXCorr_wrapper_0_0" RelGenDir="$PGENDIR/MicroBlaze_HardwareXCorr_wrapper_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_HardwareXCorr_wrapper_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -538,9 +552,7 @@
     </Run>
     <Run Id="MicroBlaze_compress_64_to_32_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_compress_64_to_32_0_0" Part="xc7s25csga225-1" ConstrsSet="MicroBlaze_compress_64_to_32_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_compress_64_to_32_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_compress_64_to_32_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_compress_64_to_32_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -550,9 +562,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_3_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_0_3" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_0_3_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_3_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_3_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -562,9 +572,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_4_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_4_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -574,9 +582,7 @@
     </Run>
     <Run Id="HardwareXCorr_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_clk_wiz_0_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_clk_wiz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk_wiz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk_wiz_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -586,9 +592,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_2_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_4_2" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_4_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_2_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -598,9 +602,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_0_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -610,21 +612,7 @@
     </Run>
     <Run Id="HardwareXCorr_clk100khz_0_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_clk100khz_0_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_clk100khz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_clk100khz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk100khz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk100khz_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="HardwareXCorr_waveParser_0_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_waveParser_0_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_waveParser_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_waveParser_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_waveParser_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_waveParser_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -634,9 +622,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_2_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_0_2" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_0_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_2_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -646,9 +632,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_1_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_4_1" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_4_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_1_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -658,9 +642,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_3_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_4_3" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_4_3_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_3_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_3_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -670,9 +652,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_1_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_blk_mem_gen_0_1" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_blk_mem_gen_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_1_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -682,21 +662,7 @@
     </Run>
     <Run Id="HardwareXCorr_dds_compiler_1_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_dds_compiler_1_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_dds_compiler_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_dds_compiler_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_dds_compiler_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_dds_compiler_1_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="HardwareXCorr_CC_0_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_CC_0_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_CC_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_CC_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_CC_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_CC_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -706,21 +672,7 @@
     </Run>
     <Run Id="HardwareXCorr_AddressFixer_0_0_synth_1" Type="Ft3:Synth" SrcSet="HardwareXCorr_AddressFixer_0_0" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_AddressFixer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HardwareXCorr_AddressFixer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_AddressFixer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_AddressFixer_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_HardwareXCorr_wrapper_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_HardwareXCorr_wrapper_0_0" Part="xc7s25csga225-1" ConstrsSet="MicroBlaze_HardwareXCorr_wrapper_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_HardwareXCorr_wrapper_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_HardwareXCorr_wrapper_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_HardwareXCorr_wrapper_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -850,9 +802,7 @@
     </Run>
     <Run Id="MicroBlaze_compress_64_to_32_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="MicroBlaze_compress_64_to_32_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_compress_64_to_32_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_compress_64_to_32_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_compress_64_to_32_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -869,9 +819,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_3_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_0_3_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_3_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_3_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -888,9 +836,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_4_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -907,9 +853,7 @@
     </Run>
     <Run Id="HardwareXCorr_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_clk_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_clk_wiz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk_wiz_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk_wiz_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -926,9 +870,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_2_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_4_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_2_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -945,9 +887,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -964,28 +904,7 @@
     </Run>
     <Run Id="HardwareXCorr_clk100khz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_clk100khz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_clk100khz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk100khz_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_clk100khz_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="HardwareXCorr_waveParser_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_waveParser_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_waveParser_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_waveParser_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_waveParser_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1002,9 +921,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_0_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_2_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1021,9 +938,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_1_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_4_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_1_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1040,9 +955,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_4_3_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_4_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_4_3_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_3_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_4_3_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1059,9 +972,7 @@
     </Run>
     <Run Id="HardwareXCorr_blk_mem_gen_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_blk_mem_gen_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_blk_mem_gen_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_blk_mem_gen_0_1_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1078,28 +989,7 @@
     </Run>
     <Run Id="HardwareXCorr_dds_compiler_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_dds_compiler_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_dds_compiler_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_dds_compiler_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_dds_compiler_1_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="HardwareXCorr_CC_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_CC_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_CC_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_CC_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_CC_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1116,28 +1006,7 @@
     </Run>
     <Run Id="HardwareXCorr_AddressFixer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="HardwareXCorr_AddressFixer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HardwareXCorr_AddressFixer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/HardwareXCorr_AddressFixer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/HardwareXCorr_AddressFixer_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_HardwareXCorr_wrapper_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s25csga225-1" ConstrsSet="MicroBlaze_HardwareXCorr_wrapper_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_HardwareXCorr_wrapper_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_HardwareXCorr_wrapper_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_HardwareXCorr_wrapper_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

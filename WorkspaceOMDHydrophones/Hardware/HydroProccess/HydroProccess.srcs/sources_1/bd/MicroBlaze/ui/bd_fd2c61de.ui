@@ -1,13 +1,13 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.415157",
-   "Default View_TopLeft":"53,-217",
+   "Default View_ScaleFactor":"0.830314",
+   "Default View_TopLeft":"70,94",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
 preplace port port-id_clk -pg 1 -lvl 0 -x -300 -y 70 -defaultsOSRD
 preplace port port-id_rx -pg 1 -lvl 0 -x -300 -y 0 -defaultsOSRD
-preplace port port-id_tx -pg 1 -lvl 8 -x 2730 -y -120 -defaultsOSRD
+preplace port port-id_tx -pg 1 -lvl 8 -x 2740 -y -120 -defaultsOSRD
 preplace port port-id_reset -pg 1 -lvl 0 -x -300 -y 120 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -140 -y 60 -defaultsOSRD
 preplace inst axi_uartlite_0 -pg 1 -lvl 7 -x 2590 -y -110 -defaultsOSRD
@@ -30,11 +30,11 @@ preplace netloc blk_mem_gen_0_douta 1 4 1 1640 320n
 preplace netloc clk_in1_0_1 1 0 1 -270 60n
 preplace netloc compress_64_to_32_0_out_data 1 3 2 980J 420 1620
 preplace netloc mdm_1_debug_sys_rst 1 1 1 N -40
-preplace netloc microblaze_0_Clk 1 1 6 170 -170 N -170 1300 230 1650J 230 2160 -110 N
+preplace netloc microblaze_0_Clk 1 1 6 170 -170 N -170 1300 230 1650J 230 2190 -110 N
 preplace netloc reset_0_1 1 0 2 NJ 120 180J
 preplace netloc rst_clk_wiz_0_100M_bus_struct_reset 1 2 2 N -80 990
 preplace netloc rst_clk_wiz_0_100M_mb_reset 1 1 2 190 -160 670
-preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn1 1 2 5 N -20 1310 -260 N -260 2150 -90 N
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn1 1 2 5 N -20 1310 -260 N -260 2180 -90 N
 preplace netloc rx_0_1 1 0 8 -280J 240 NJ 240 NJ 240 N 240 1660 260 N 260 N 260 2700
 preplace netloc xlconstant_0_dout 1 4 1 1660 630n
 preplace netloc microblaze_0_M_AXI_DP 1 2 2 680 -190 N
@@ -44,7 +44,7 @@ preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 2 N -70 1860
 preplace netloc microblaze_0_debug 1 1 1 -30 -60n
 preplace netloc microblaze_0_dlmb_1 1 2 2 NJ 130 980
 preplace netloc microblaze_0_ilmb_1 1 2 2 N 150 1000
-levelinfo -pg 1 -300 -140 430 840 1470 1760 2300 2590 2730
+levelinfo -pg 1 -300 -140 430 840 1470 1760 2300 2590 2740
 pagesize -pg 1 -db -bbox -sgen -400 -500 2870 1170
 "
 }
