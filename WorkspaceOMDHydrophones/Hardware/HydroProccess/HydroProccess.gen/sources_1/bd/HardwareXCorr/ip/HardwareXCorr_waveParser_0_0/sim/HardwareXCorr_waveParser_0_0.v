@@ -57,46 +57,64 @@
 module HardwareXCorr_waveParser_0_0 (
   waveRef,
   wave,
+  wave1,
   bufferRef,
   buffer,
+  buffer1,
   waveRef0Address,
   wave0Address,
+  wave00Address,
   waveRef1Address,
   wave1Address,
+  wave01Address,
   waveRef2Address,
   wave2Address,
+  wave02Address,
   waveRef3Address,
   wave3Address,
+  wave03Address,
   clk1Mhz
 );
 
 input wire [11 : 0] waveRef;
 input wire [11 : 0] wave;
+input wire [11 : 0] wave1;
 output wire [11 : 0] bufferRef;
 output wire [11 : 0] buffer;
+output wire [11 : 0] buffer1;
 output wire [13 : 0] waveRef0Address;
 output wire [11 : 0] wave0Address;
+output wire [11 : 0] wave00Address;
 output wire [13 : 0] waveRef1Address;
 output wire [11 : 0] wave1Address;
+output wire [11 : 0] wave01Address;
 output wire [13 : 0] waveRef2Address;
 output wire [11 : 0] wave2Address;
+output wire [11 : 0] wave02Address;
 output wire [13 : 0] waveRef3Address;
 output wire [11 : 0] wave3Address;
+output wire [11 : 0] wave03Address;
 input wire clk1Mhz;
 
   waveParser inst (
     .waveRef(waveRef),
     .wave(wave),
+    .wave1(wave1),
     .bufferRef(bufferRef),
     .buffer(buffer),
+    .buffer1(buffer1),
     .waveRef0Address(waveRef0Address),
     .wave0Address(wave0Address),
+    .wave00Address(wave00Address),
     .waveRef1Address(waveRef1Address),
     .wave1Address(wave1Address),
+    .wave01Address(wave01Address),
     .waveRef2Address(waveRef2Address),
     .wave2Address(wave2Address),
+    .wave02Address(wave02Address),
     .waveRef3Address(waveRef3Address),
     .wave3Address(wave3Address),
+    .wave03Address(wave03Address),
     .clk1Mhz(clk1Mhz)
   );
 endmodule

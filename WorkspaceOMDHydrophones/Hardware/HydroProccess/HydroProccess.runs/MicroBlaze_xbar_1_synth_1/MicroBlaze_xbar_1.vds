@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Sep 10 01:38:19 2024
-# Process ID: 19760
+# Start of session at: Thu Sep 12 13:32:01 2024
+# Process ID: 19240
 # Current directory: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_xbar_1_synth_1
 # Command line: vivado.exe -log MicroBlaze_xbar_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_xbar_1.tcl
 # Log file: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_xbar_1_synth_1/MicroBlaze_xbar_1.vds
@@ -12,7 +12,7 @@
 # Running On: DESKTOP-C8C4U9T, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
 #-----------------------------------------------------------
 source MicroBlaze_xbar_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 454.883 ; gain = 158.434
+create_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 455.066 ; gain = 159.746
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: MicroBlaze_xbar_1
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b82e2e6fcbb44fd0 to dir: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_xbar_1_synth_1
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/b/8/b82e2e6fcbb44fd0/MicroBlaze_xbar_1.dcp to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_xbar_1_synth_1/MicroBlaze_xbar_1.dcp.
@@ -21,4 +21,4 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/Wor
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/b/8/b82e2e6fcbb44fd0/MicroBlaze_xbar_1_stub.v to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_xbar_1_synth_1/MicroBlaze_xbar_1_stub.v.
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip/2023.1/b/8/b82e2e6fcbb44fd0/MicroBlaze_xbar_1_stub.vhdl to C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_xbar_1_synth_1/MicroBlaze_xbar_1_stub.vhdl.
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP MicroBlaze_xbar_1, cache-ID = b82e2e6fcbb44fd0.
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 10 01:38:43 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 13:32:41 2024...

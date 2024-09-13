@@ -63,6 +63,11 @@
             "value": "ACTIVE_LOW"
           }
         }
+      },
+      "xcorr1_0_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
       }
     },
     "components": {
@@ -941,6 +946,11 @@
           "clk_0": {
             "direction": "I"
           },
+          "xcorr1_0": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
           "xcorr_0": {
             "direction": "O",
             "left": "63",
@@ -998,6 +1008,12 @@
         "ports": [
           "HardwareXCorr_wrapper_0/address_0",
           "blk_mem_gen_0/addrb"
+        ]
+      },
+      "HardwareXCorr_wrapper_0_xcorr1_0": {
+        "ports": [
+          "HardwareXCorr_wrapper_0/xcorr1_0",
+          "xcorr1_0_0"
         ]
       },
       "HardwareXCorr_wrapper_0_xcorr_0": {

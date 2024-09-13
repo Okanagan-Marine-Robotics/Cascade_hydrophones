@@ -1,0 +1,100 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Sep 12 19:01:59 2024
+| Host         : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file HardwareXCorr_wrapper_control_sets_placed.rpt
+| Design       : HardwareXCorr_wrapper
+| Device       : xc7s25
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    22 |
+|    Minimum number of control sets                        |    22 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    22 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     5 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             226 |           75 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             346 |          103 |
+| Yes          | No                    | No                     |             176 |           82 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+-------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                  |                  Enable Signal                  |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------+-------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_0_IBUF_BUFG                               |                                                 | HardwareXCorr_i/clk100khz_0/inst/clear                        |                4 |             11 |         2.75 |
+| ~HardwareXCorr_i/clk100khz_0/inst/clk100k_BUFG |                                                 | HardwareXCorr_i/waveParser_0/inst/waveRef0Address[13]_i_1_n_0 |                3 |             12 |         4.00 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       | HardwareXCorr_i/BRAMMUX_0/inst/Ref0[11]_i_1_n_0 |                                                               |                7 |             12 |         1.71 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       | HardwareXCorr_i/BRAMMUX_0/inst/Ref1[11]_i_1_n_0 |                                                               |                9 |             12 |         1.33 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       | HardwareXCorr_i/BRAMMUX_0/inst/Ref2[11]_i_1_n_0 |                                                               |               11 |             12 |         1.09 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       | HardwareXCorr_i/BRAMMUX_0/inst/Ref3[11]_i_1_n_0 |                                                               |                9 |             12 |         1.33 |
+| ~HardwareXCorr_i/clk100khz_0/inst/clk100k_BUFG |                                                 | HardwareXCorr_i/waveParser_0/inst/p_0_in                      |                5 |             14 |         2.80 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 | HardwareXCorr_i/CC_0/inst/waveRef0Address[13]_i_1_n_0         |                5 |             14 |         2.80 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 | HardwareXCorr_i/CC_0/inst/waveRef1Address[13]_i_1_n_0         |                5 |             14 |         2.80 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 | HardwareXCorr_i/CC_0/inst/waveRef2Address[13]_i_1_n_0         |                5 |             14 |         2.80 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 | HardwareXCorr_i/CC_0/inst/waveRef3Address[13]_i_1_n_0         |                5 |             14 |         2.80 |
+| ~HardwareXCorr_i/CC_0/inst/clkcorr_reg_n_0     |                                                 | HardwareXCorr_i/CC_0/inst/clear                               |                4 |             16 |         4.00 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 | HardwareXCorr_i/CC_0/inst/xcorr[63]_i_1_n_0                   |                4 |             16 |         4.00 |
+| ~HardwareXCorr_i/clk100khz_0/inst/clk100k_BUFG |                                                 | HardwareXCorr_i/waveParser_0/inst/waveRef1Address[13]_i_1_n_0 |                7 |             22 |         3.14 |
+| ~HardwareXCorr_i/clk100khz_0/inst/clk100k_BUFG |                                                 | HardwareXCorr_i/waveParser_0/inst/waveRef2Address[13]_i_1_n_0 |                9 |             22 |         2.44 |
+| ~HardwareXCorr_i/clk100khz_0/inst/clk100k_BUFG |                                                 | HardwareXCorr_i/waveParser_0/inst/waveRef3Address[13]_i_1_n_0 |                7 |             23 |         3.29 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 | HardwareXCorr_i/CC_0/inst/subframeCounter[25]_i_1_n_0         |                8 |             26 |         3.25 |
+|  clk_0_IBUF_BUFG                               |                                                 |                                                               |               15 |             60 |         4.00 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 |                                                               |               32 |             83 |         2.59 |
+|  HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 |                                                               |               28 |             84 |         3.00 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       |                                                 | HardwareXCorr_i/CC_0/inst/clkcorr_reg_n_0                     |               32 |            128 |         4.00 |
+| ~HardwareXCorr_i/clk_wiz_0/inst/clk_out1       | HardwareXCorr_i/CC_0/inst/xcorr[63]_i_1_n_0     |                                                               |               46 |            128 |         2.78 |
++------------------------------------------------+-------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+
+

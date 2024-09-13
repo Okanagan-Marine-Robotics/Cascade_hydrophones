@@ -1,11 +1,11 @@
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_22 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_6 -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_22 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_6 -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/HardwareXCorr/sim/HardwareXCorr.v:171]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/HardwareXCorr/sim/HardwareXCorr.v:263]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -32,6 +32,8 @@ Compiling package dds_compiler_v6_0_22.pkg_betas
 Compiling package dds_compiler_v6_0_22.pkg_alphas
 Compiling module xil_defaultlib.AddressFixer
 Compiling module xil_defaultlib.HardwareXCorr_AddressFixer_0_0
+Compiling module xil_defaultlib.BRAMMUX
+Compiling module xil_defaultlib.HardwareXCorr_BRAMMUX_0_0
 Compiling module xil_defaultlib.CC
 Compiling module xil_defaultlib.HardwareXCorr_CC_0_0
 Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
@@ -41,16 +43,18 @@ Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_regs_fwd_v8_4(C_DATA...
 Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="spa...
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_0
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_1
-Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_2
-Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_3
-Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
-Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
 Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="spa...
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_8_2
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_8_3
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_2
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_0_3
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_0
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_1
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_2
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_3
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_8_0
+Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_8_1
 Compiling module xil_defaultlib.clk100khz
 Compiling module xil_defaultlib.HardwareXCorr_clk100khz_0_0
 Compiling module unisims_ver.IBUF
@@ -85,6 +89,6 @@ Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
 Compiling module xil_defaultlib.HardwareXCorr_xlslice_0_0
 Compiling module xil_defaultlib.HardwareXCorr
 Compiling module xil_defaultlib.HardwareXCorr_wrapper
-Compiling module xil_defaultlib.TB
+Compiling module xil_defaultlib.TestBench
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot TB_behav
+Built simulation snapshot TestBench_behav

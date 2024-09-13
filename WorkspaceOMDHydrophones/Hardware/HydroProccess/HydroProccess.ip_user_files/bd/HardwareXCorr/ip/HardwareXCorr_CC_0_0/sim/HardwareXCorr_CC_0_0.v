@@ -59,21 +59,30 @@ module HardwareXCorr_CC_0_0 (
   clk1Mhz,
   waveRef0,
   wave0,
+  wave00,
   waveRef1,
   wave1,
+  wave01,
   waveRef2,
   wave2,
+  wave02,
   waveRef3,
   wave3,
+  wave03,
   waveRef0Address,
   wave0Address,
+  wave00Address,
   waveRef1Address,
   wave1Address,
+  wave01Address,
   waveRef2Address,
   wave2Address,
+  wave02Address,
   waveRef3Address,
   wave3Address,
+  wave03Address,
   xcorr,
+  xcorr1,
   count
 );
 
@@ -83,21 +92,30 @@ input wire clk;
 input wire clk1Mhz;
 input wire [11 : 0] waveRef0;
 input wire [11 : 0] wave0;
+input wire [11 : 0] wave00;
 input wire [11 : 0] waveRef1;
 input wire [11 : 0] wave1;
+input wire [11 : 0] wave01;
 input wire [11 : 0] waveRef2;
 input wire [11 : 0] wave2;
+input wire [11 : 0] wave02;
 input wire [11 : 0] waveRef3;
 input wire [11 : 0] wave3;
+input wire [11 : 0] wave03;
 output wire [13 : 0] waveRef0Address;
 output wire [11 : 0] wave0Address;
+output wire [11 : 0] wave00Address;
 output wire [13 : 0] waveRef1Address;
 output wire [11 : 0] wave1Address;
+output wire [11 : 0] wave01Address;
 output wire [13 : 0] waveRef2Address;
 output wire [11 : 0] wave2Address;
+output wire [11 : 0] wave02Address;
 output wire [13 : 0] waveRef3Address;
 output wire [11 : 0] wave3Address;
+output wire [11 : 0] wave03Address;
 output wire [63 : 0] xcorr;
+output wire [63 : 0] xcorr1;
 output wire [15 : 0] count;
 
   CC inst (
@@ -105,21 +123,30 @@ output wire [15 : 0] count;
     .clk1Mhz(clk1Mhz),
     .waveRef0(waveRef0),
     .wave0(wave0),
+    .wave00(wave00),
     .waveRef1(waveRef1),
     .wave1(wave1),
+    .wave01(wave01),
     .waveRef2(waveRef2),
     .wave2(wave2),
+    .wave02(wave02),
     .waveRef3(waveRef3),
     .wave3(wave3),
+    .wave03(wave03),
     .waveRef0Address(waveRef0Address),
     .wave0Address(wave0Address),
+    .wave00Address(wave00Address),
     .waveRef1Address(waveRef1Address),
     .wave1Address(wave1Address),
+    .wave01Address(wave01Address),
     .waveRef2Address(waveRef2Address),
     .wave2Address(wave2Address),
+    .wave02Address(wave02Address),
     .waveRef3Address(waveRef3Address),
     .wave3Address(wave3Address),
+    .wave03Address(wave03Address),
     .xcorr(xcorr),
+    .xcorr1(xcorr1),
     .count(count)
   );
 endmodule

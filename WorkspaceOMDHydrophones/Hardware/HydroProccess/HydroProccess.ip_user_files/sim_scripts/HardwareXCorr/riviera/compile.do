@@ -28,11 +28,9 @@ vcom -work xpm -93  -incr \
 "C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/ipshared/30ef" -l xpm -l xil_defaultlib -l xbip_utils_v3_0_10 -l axi_utils_v2_0_6 -l xbip_pipe_v3_0_6 -l xbip_bram18k_v3_0_6 -l mult_gen_v12_0_18 -l xbip_dsp48_wrapper_v3_0_4 -l xbip_dsp48_addsub_v3_0_6 -l xbip_dsp48_multadd_v3_0_6 -l dds_compiler_v6_0_22 -l xlslice_v1_0_2 -l blk_mem_gen_v8_4_6 -l xlconstant_v1_1_7 \
-"../../../bd/HardwareXCorr/ip/HardwareXCorr_CC_0_0/sim/HardwareXCorr_CC_0_0.v" \
 "../../../bd/HardwareXCorr/ip/HardwareXCorr_clk100khz_0_0/sim/HardwareXCorr_clk100khz_0_0.v" \
 "../../../bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0.v" \
-"../../../bd/HardwareXCorr/ip/HardwareXCorr_waveParser_0_0/sim/HardwareXCorr_waveParser_0_0.v" \
 
 vcom -work xbip_utils_v3_0_10 -93  -incr \
 "../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/ipshared/364f/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -89,6 +87,13 @@ vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../HydroProccess.gen/so
 "../../../bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_2/sim/HardwareXCorr_blk_mem_gen_4_2.v" \
 "../../../bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_3/sim/HardwareXCorr_blk_mem_gen_4_3.v" \
 "../../../bd/HardwareXCorr/ip/HardwareXCorr_AddressFixer_0_0/sim/HardwareXCorr_AddressFixer_0_0.v" \
+"../../../bd/HardwareXCorr/ip/HardwareXCorr_BRAMMUX_0_0/sim/HardwareXCorr_BRAMMUX_0_0.v" \
+"../../../bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_0/sim/HardwareXCorr_blk_mem_gen_8_0.v" \
+"../../../bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_1/sim/HardwareXCorr_blk_mem_gen_8_1.v" \
+"../../../bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_2/sim/HardwareXCorr_blk_mem_gen_8_2.v" \
+"../../../bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_3/sim/HardwareXCorr_blk_mem_gen_8_3.v" \
+"../../../bd/HardwareXCorr/ip/HardwareXCorr_CC_0_0/sim/HardwareXCorr_CC_0_0.v" \
+"../../../bd/HardwareXCorr/ip/HardwareXCorr_waveParser_0_0/sim/HardwareXCorr_waveParser_0_0.v" \
 "../../../bd/HardwareXCorr/sim/HardwareXCorr.v" \
 
 vlog -work xil_defaultlib \

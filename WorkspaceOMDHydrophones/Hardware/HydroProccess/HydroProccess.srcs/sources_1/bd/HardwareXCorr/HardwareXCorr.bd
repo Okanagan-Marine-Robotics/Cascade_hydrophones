@@ -1,14 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2BABD88ED73138EE",
+      "boundary_crc": "0x21928E6EA3B85FCC",
       "device": "xc7s25csga225-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr",
       "name": "HardwareXCorr",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.1",
-      "validated": "true"
+      "tool_version": "2023.1"
     },
     "design_tree": {
       "clk100khz_0": "",
@@ -25,36 +24,18 @@
       "blk_mem_gen_6": "",
       "blk_mem_gen_7": "",
       "AddressFixer_0": "",
-      "waveParser_0": "",
+      "blk_mem_gen_8": "",
+      "blk_mem_gen_9": "",
+      "blk_mem_gen_10": "",
+      "blk_mem_gen_11": "",
       "CC_0": "",
+      "waveParser_0": "",
       "BRAMMUX_0": ""
     },
     "ports": {
       "clk_0": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "HardwareXCorr_clk_0",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "xcorr_0": {
         "direction": "O",
@@ -64,6 +45,11 @@
       "address_0": {
         "direction": "O",
         "left": "15",
+        "right": "0"
+      },
+      "xcorr1_0": {
+        "direction": "O",
+        "left": "63",
         "right": "0"
       }
     },
@@ -415,79 +401,119 @@
           }
         }
       },
-      "waveParser_0": {
-        "vlnv": "xilinx.com:module_ref:waveParser:1.0",
-        "xci_name": "HardwareXCorr_waveParser_0_0",
-        "xci_path": "ip\\HardwareXCorr_waveParser_0_0\\HardwareXCorr_waveParser_0_0.xci",
-        "inst_hier_path": "waveParser_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "waveParser",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "waveRef": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
+      "blk_mem_gen_8": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HardwareXCorr_blk_mem_gen_8_0",
+        "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_0\\HardwareXCorr_blk_mem_gen_8_0.xci",
+        "inst_hier_path": "blk_mem_gen_8",
+        "parameters": {
+          "Assume_Synchronous_Clk": {
+            "value": "true"
           },
-          "wave": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
+          "Enable_A": {
+            "value": "Always_Enabled"
           },
-          "bufferRef": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
+          "Enable_B": {
+            "value": "Always_Enabled"
           },
-          "buffer": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
           },
-          "waveRef0Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
+          "Write_Depth_A": {
+            "value": "2501"
           },
-          "wave0Address": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
+          "Write_Width_A": {
+            "value": "12"
           },
-          "waveRef1Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_9": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HardwareXCorr_blk_mem_gen_8_1",
+        "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_1\\HardwareXCorr_blk_mem_gen_8_1.xci",
+        "inst_hier_path": "blk_mem_gen_9",
+        "parameters": {
+          "Assume_Synchronous_Clk": {
+            "value": "true"
           },
-          "wave1Address": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
+          "Enable_A": {
+            "value": "Always_Enabled"
           },
-          "waveRef2Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
+          "Enable_B": {
+            "value": "Always_Enabled"
           },
-          "wave2Address": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
           },
-          "waveRef3Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
+          "Write_Depth_A": {
+            "value": "2501"
           },
-          "wave3Address": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
+          "Write_Width_A": {
+            "value": "12"
           },
-          "clk1Mhz": {
-            "direction": "I"
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_10": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HardwareXCorr_blk_mem_gen_8_2",
+        "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_2\\HardwareXCorr_blk_mem_gen_8_2.xci",
+        "inst_hier_path": "blk_mem_gen_10",
+        "parameters": {
+          "Assume_Synchronous_Clk": {
+            "value": "true"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "2501"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_11": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "HardwareXCorr_blk_mem_gen_8_3",
+        "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_3\\HardwareXCorr_blk_mem_gen_8_3.xci",
+        "inst_hier_path": "blk_mem_gen_11",
+        "parameters": {
+          "Assume_Synchronous_Clk": {
+            "value": "true"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "2501"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
           }
         }
       },
@@ -533,12 +559,22 @@
             "left": "11",
             "right": "0"
           },
+          "wave00": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
           "waveRef1": {
             "direction": "I",
             "left": "11",
             "right": "0"
           },
           "wave1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01": {
             "direction": "I",
             "left": "11",
             "right": "0"
@@ -553,12 +589,22 @@
             "left": "11",
             "right": "0"
           },
+          "wave02": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
           "waveRef3": {
             "direction": "I",
             "left": "11",
             "right": "0"
           },
           "wave3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03": {
             "direction": "I",
             "left": "11",
             "right": "0"
@@ -573,12 +619,22 @@
             "left": "11",
             "right": "0"
           },
+          "wave00Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
           "waveRef1Address": {
             "direction": "O",
             "left": "13",
             "right": "0"
           },
           "wave1Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01Address": {
             "direction": "O",
             "left": "11",
             "right": "0"
@@ -593,6 +649,11 @@
             "left": "11",
             "right": "0"
           },
+          "wave02Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
           "waveRef3Address": {
             "direction": "O",
             "left": "13",
@@ -603,7 +664,17 @@
             "left": "11",
             "right": "0"
           },
+          "wave03Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
           "xcorr": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "xcorr1": {
             "direction": "O",
             "left": "63",
             "right": "0"
@@ -612,6 +683,112 @@
             "direction": "O",
             "left": "15",
             "right": "0"
+          }
+        }
+      },
+      "waveParser_0": {
+        "vlnv": "xilinx.com:module_ref:waveParser:1.0",
+        "xci_name": "HardwareXCorr_waveParser_0_0",
+        "xci_path": "ip\\HardwareXCorr_waveParser_0_0\\HardwareXCorr_waveParser_0_0.xci",
+        "inst_hier_path": "waveParser_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "waveParser",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "waveRef": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "bufferRef": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "buffer": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "buffer1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave0Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave00Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave1Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave2Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave02Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave3Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "clk1Mhz": {
+            "direction": "I"
           }
         }
       },
@@ -708,21 +885,7 @@
           },
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              }
-            }
+            "direction": "I"
           }
         }
       }
@@ -788,6 +951,30 @@
           "AddressFixer_0/counter"
         ]
       },
+      "CC_0_wave00Address": {
+        "ports": [
+          "CC_0/wave00Address",
+          "blk_mem_gen_8/addrb"
+        ]
+      },
+      "CC_0_wave01Address": {
+        "ports": [
+          "CC_0/wave01Address",
+          "blk_mem_gen_9/addrb"
+        ]
+      },
+      "CC_0_wave02Address": {
+        "ports": [
+          "CC_0/wave02Address",
+          "blk_mem_gen_10/addrb"
+        ]
+      },
+      "CC_0_wave03Address": {
+        "ports": [
+          "CC_0/wave03Address",
+          "blk_mem_gen_11/addrb"
+        ]
+      },
       "CC_0_wave0Address": {
         "ports": [
           "CC_0/wave0Address",
@@ -842,10 +1029,28 @@
           "xcorr_0"
         ]
       },
+      "CC_0_xcorr1": {
+        "ports": [
+          "CC_0/xcorr1",
+          "xcorr1_0"
+        ]
+      },
       "blk_mem_gen_0_douta": {
         "ports": [
           "blk_mem_gen_0/douta",
           "BRAMMUX_0/waveRef0"
+        ]
+      },
+      "blk_mem_gen_10_doutb": {
+        "ports": [
+          "blk_mem_gen_10/doutb",
+          "CC_0/wave02"
+        ]
+      },
+      "blk_mem_gen_11_doutb": {
+        "ports": [
+          "blk_mem_gen_11/doutb",
+          "CC_0/wave03"
         ]
       },
       "blk_mem_gen_1_douta": {
@@ -890,11 +1095,23 @@
           "CC_0/wave3"
         ]
       },
+      "blk_mem_gen_8_doutb": {
+        "ports": [
+          "blk_mem_gen_8/doutb",
+          "CC_0/wave00"
+        ]
+      },
+      "blk_mem_gen_9_doutb": {
+        "ports": [
+          "blk_mem_gen_9/doutb",
+          "CC_0/wave01"
+        ]
+      },
       "clk100khz_0_clk100k": {
         "ports": [
           "clk100khz_0/clk100k",
-          "waveParser_0/clk1Mhz",
-          "CC_0/clk1Mhz"
+          "CC_0/clk1Mhz",
+          "waveParser_0/clk1Mhz"
         ]
       },
       "clk_0_1": {
@@ -924,6 +1141,13 @@
           "blk_mem_gen_6/clkb",
           "blk_mem_gen_7/clka",
           "blk_mem_gen_7/clkb",
+          "blk_mem_gen_8/clka",
+          "blk_mem_gen_9/clka",
+          "blk_mem_gen_9/clkb",
+          "blk_mem_gen_8/clkb",
+          "blk_mem_gen_10/clkb",
+          "blk_mem_gen_11/clka",
+          "blk_mem_gen_11/clkb",
           "CC_0/clk",
           "BRAMMUX_0/clk"
         ]
@@ -943,6 +1167,15 @@
           "blk_mem_gen_7/dina"
         ]
       },
+      "waveParser_0_buffer1": {
+        "ports": [
+          "waveParser_0/buffer1",
+          "blk_mem_gen_10/dina",
+          "blk_mem_gen_9/dina",
+          "blk_mem_gen_8/dina",
+          "blk_mem_gen_11/dina"
+        ]
+      },
       "waveParser_0_bufferRef": {
         "ports": [
           "waveParser_0/bufferRef",
@@ -950,6 +1183,30 @@
           "blk_mem_gen_2/dinb",
           "blk_mem_gen_1/dinb",
           "blk_mem_gen_3/dinb"
+        ]
+      },
+      "waveParser_0_wave00Address": {
+        "ports": [
+          "waveParser_0/wave00Address",
+          "blk_mem_gen_8/addra"
+        ]
+      },
+      "waveParser_0_wave01Address": {
+        "ports": [
+          "waveParser_0/wave01Address",
+          "blk_mem_gen_9/addra"
+        ]
+      },
+      "waveParser_0_wave02Address": {
+        "ports": [
+          "waveParser_0/wave02Address",
+          "blk_mem_gen_10/addra"
+        ]
+      },
+      "waveParser_0_wave03Address": {
+        "ports": [
+          "waveParser_0/wave03Address",
+          "blk_mem_gen_11/addra"
         ]
       },
       "waveParser_0_wave0Address": {
@@ -1010,14 +1267,19 @@
           "blk_mem_gen_4/wea",
           "blk_mem_gen_5/wea",
           "blk_mem_gen_6/wea",
-          "blk_mem_gen_7/wea"
+          "blk_mem_gen_7/wea",
+          "blk_mem_gen_8/wea",
+          "blk_mem_gen_9/wea",
+          "blk_mem_gen_10/wea",
+          "blk_mem_gen_11/wea"
         ]
       },
       "xlslice_0_Dout": {
         "ports": [
           "xlslice_0/Dout",
           "waveParser_0/waveRef",
-          "waveParser_0/wave"
+          "waveParser_0/wave",
+          "waveParser_0/wave1"
         ]
       }
     }
