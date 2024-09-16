@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep 16 02:09:02 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep 16 04:00:36 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="spartan7" BOARD="digilentinc.com:cmod-s7-25:part0:1.0" DEVICE="7s25" NAME="HardwareXCorr" PACKAGE="csga225" SPEEDGRADE="-1"/>
 
@@ -3034,8 +3034,8 @@
         </PORT>
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3651,9 +3651,9 @@
             <CONNECTION INSTANCE="blk_mem_gen_10" PORT="clkb"/>
             <CONNECTION INSTANCE="blk_mem_gen_11" PORT="clka"/>
             <CONNECTION INSTANCE="blk_mem_gen_11" PORT="clkb"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Sep 12 19:01:05 2024
-# Process ID: 13052
+# Start of session at: Mon Sep 16 04:18:28 2024
+# Process ID: 13836
 # Current directory: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1
-# Command line: vivado.exe -log HardwareXCorr_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source HardwareXCorr_wrapper.tcl -notrace
-# Log file: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/HardwareXCorr_wrapper.vdi
+# Command line: vivado.exe -log MicroBlaze_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MicroBlaze_wrapper.tcl -notrace
+# Log file: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.vdi
 # Journal file: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1\vivado.jou
 # Running On: DESKTOP-C8C4U9T, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
 #-----------------------------------------------------------
-source HardwareXCorr_wrapper.tcl -notrace
+source MicroBlaze_wrapper.tcl -notrace

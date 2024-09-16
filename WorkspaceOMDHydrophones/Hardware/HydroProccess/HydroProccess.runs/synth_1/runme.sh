@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log HardwareXCorr_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HardwareXCorr_wrapper.tcl
+EAStep vivado -log MicroBlaze_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_wrapper.tcl

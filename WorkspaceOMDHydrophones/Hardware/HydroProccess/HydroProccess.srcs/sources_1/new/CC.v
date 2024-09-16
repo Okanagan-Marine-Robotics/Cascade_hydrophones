@@ -39,6 +39,11 @@ input clk,
  	reg signed [15:0] countMulti = 1;
  	reg clkcorr = 0;
     
+    reg signed [31:0] product_stage1, product_stage2, product_stage3, product_stage4;
+    reg signed [31:0] product1_stage1, product1_stage2, product1_stage3, product1_stage4;
+    reg signed [31:0] temp0, temp1, temp2, temp3;
+    reg signed [31:0] temp00, temp01, temp02, temp03;
+    
  
    always @(negedge clk)begin
      	if (subframeCounter == 2500)begin
@@ -78,8 +83,27 @@ input clk,
                 product1 <= 0;
             end
             else begin
-                product <= product + wave0*waveRef0+wave1*waveRef1+wave2*waveRef2+wave3*waveRef3;
-                product1 <= product1 + wave00*waveRef0+wave01*waveRef1+wave02*waveRef2+wave03*waveRef3;
+                temp0  <= wave0  * waveRef0;
+                temp1  <= wave1  * waveRef1;
+                temp2  <= wave2  * waveRef2;
+                temp3  <= wave3  * waveRef3;
+    
+                temp00 <= wave00 * waveRef0;
+                temp01 <= wave01 * waveRef1;
+                temp02 <= wave02 * waveRef2;
+                temp03 <= wave03 * waveRef3;
+            
+                product_stage1 <= temp0 + temp1;
+                product_stage2 <= temp2 + temp3;
+    
+                product1_stage1 <= temp00 + temp01;
+                product1_stage2 <= temp02 + temp03;
+                
+                product_stage3  <= product_stage1 + product_stage2;
+                product1_stage3 <= product1_stage1 + product1_stage2;
+                
+                product  <= product + product_stage3;
+                product1 <= product1 + product1_stage3;
             end
       end  
 

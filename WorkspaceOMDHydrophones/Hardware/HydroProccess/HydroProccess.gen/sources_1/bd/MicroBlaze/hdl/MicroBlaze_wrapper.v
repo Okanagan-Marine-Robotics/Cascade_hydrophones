@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Thu Sep 12 13:31:37 2024
+//Date        : Mon Sep 16 04:10:15 2024
 //Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze_wrapper.bd
 //Design      : MicroBlaze_wrapper
@@ -12,21 +12,25 @@
 
 module MicroBlaze_wrapper
    (clk,
+    led,
     reset,
     rx,
     tx);
   input clk;
+  output [0:0]led;
   input reset;
   input rx;
   output tx;
 
   wire clk;
+  wire [0:0]led;
   wire reset;
   wire rx;
   wire tx;
 
   MicroBlaze MicroBlaze_i
        (.clk(clk),
+        .led(led),
         .reset(reset),
         .rx(rx),
         .tx(tx));

@@ -6,9 +6,6 @@
 # Block Designs: bd/HardwareXCorr/HardwareXCorr.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr || ORIG_REF_NAME==HardwareXCorr} -quiet] -quiet
 
-# IP: bd/HardwareXCorr/ip/HardwareXCorr_clk100khz_0_0/HardwareXCorr_clk100khz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_clk100khz_0_0 || ORIG_REF_NAME==HardwareXCorr_clk100khz_0_0} -quiet] -quiet
-
 # IP: bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_clk_wiz_0_0 || ORIG_REF_NAME==HardwareXCorr_clk_wiz_0_0} -quiet] -quiet
 
@@ -45,15 +42,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCo
 # IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_3/HardwareXCorr_blk_mem_gen_4_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_4_3 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_4_3} -quiet] -quiet
 
-# IP: bd/HardwareXCorr/ip/HardwareXCorr_AddressFixer_0_0/HardwareXCorr_AddressFixer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_AddressFixer_0_0 || ORIG_REF_NAME==HardwareXCorr_AddressFixer_0_0} -quiet] -quiet
-
-# IP: bd/HardwareXCorr/ip/HardwareXCorr_BRAMMUX_0_0/HardwareXCorr_BRAMMUX_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_BRAMMUX_0_0 || ORIG_REF_NAME==HardwareXCorr_BRAMMUX_0_0} -quiet] -quiet
-
-# IP: bd/HardwareXCorr/ip/HardwareXCorr_waveParser_0_0/HardwareXCorr_waveParser_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_waveParser_0_0 || ORIG_REF_NAME==HardwareXCorr_waveParser_0_0} -quiet] -quiet
-
 # IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_0/HardwareXCorr_blk_mem_gen_8_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_8_0 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_8_0} -quiet] -quiet
 
@@ -66,7 +54,152 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCo
 # IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_3/HardwareXCorr_blk_mem_gen_8_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_8_3 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_8_3} -quiet] -quiet
 
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_BRAMMUX_0_0/HardwareXCorr_BRAMMUX_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_BRAMMUX_0_0 || ORIG_REF_NAME==HardwareXCorr_BRAMMUX_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_clk1Mhz_0_0/HardwareXCorr_clk1Mhz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_clk1Mhz_0_0 || ORIG_REF_NAME==HardwareXCorr_clk1Mhz_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_waveParser_0_0/HardwareXCorr_waveParser_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_waveParser_0_0 || ORIG_REF_NAME==HardwareXCorr_waveParser_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_AddressFixer_0_0/HardwareXCorr_AddressFixer_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_AddressFixer_0_0 || ORIG_REF_NAME==HardwareXCorr_AddressFixer_0_0} -quiet] -quiet
+
 # IP: bd/HardwareXCorr/ip/HardwareXCorr_CC_0_0/HardwareXCorr_CC_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_CC_0_0 || ORIG_REF_NAME==HardwareXCorr_CC_0_0} -quiet] -quiet
 
+# Block Designs: bd/MicroBlaze/MicroBlaze.bd
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze || ORIG_REF_NAME==MicroBlaze} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_clk_wiz_0_0 || ORIG_REF_NAME==MicroBlaze_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_uartlite_0_0 || ORIG_REF_NAME==MicroBlaze_axi_uartlite_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_axi_gpio_1_0/MicroBlaze_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_gpio_1_0 || ORIG_REF_NAME==MicroBlaze_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_microblaze_0_1/MicroBlaze_microblaze_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_microblaze_0_1 || ORIG_REF_NAME==MicroBlaze_microblaze_0_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_dlmb_v10_1/MicroBlaze_dlmb_v10_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_dlmb_v10_1 || ORIG_REF_NAME==MicroBlaze_dlmb_v10_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_ilmb_v10_1/MicroBlaze_ilmb_v10_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_ilmb_v10_1 || ORIG_REF_NAME==MicroBlaze_ilmb_v10_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_dlmb_bram_if_cntlr_1/MicroBlaze_dlmb_bram_if_cntlr_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_dlmb_bram_if_cntlr_1 || ORIG_REF_NAME==MicroBlaze_dlmb_bram_if_cntlr_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_ilmb_bram_if_cntlr_1/MicroBlaze_ilmb_bram_if_cntlr_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_ilmb_bram_if_cntlr_1 || ORIG_REF_NAME==MicroBlaze_ilmb_bram_if_cntlr_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_lmb_bram_1/MicroBlaze_lmb_bram_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_lmb_bram_1 || ORIG_REF_NAME==MicroBlaze_lmb_bram_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_mdm_1_1/MicroBlaze_mdm_1_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_mdm_1_1 || ORIG_REF_NAME==MicroBlaze_mdm_1_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_rst_clk_wiz_0_100M_1/MicroBlaze_rst_clk_wiz_0_100M_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_rst_clk_wiz_0_100M_1 || ORIG_REF_NAME==MicroBlaze_rst_clk_wiz_0_100M_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_xbar_1/MicroBlaze_xbar_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_xbar_1 || ORIG_REF_NAME==MicroBlaze_xbar_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_microblaze_0_axi_periph_1/MicroBlaze_microblaze_0_axi_periph_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_microblaze_0_axi_periph_1 || ORIG_REF_NAME==MicroBlaze_microblaze_0_axi_periph_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_0/MicroBlaze_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_gpio_0_0 || ORIG_REF_NAME==MicroBlaze_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_xlconstant_0_0/MicroBlaze_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_xlconstant_0_0 || ORIG_REF_NAME==MicroBlaze_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_0/MicroBlaze_blk_mem_gen_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_blk_mem_gen_0_0 || ORIG_REF_NAME==MicroBlaze_blk_mem_gen_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_compress_64_to_32_0_0/MicroBlaze_compress_64_to_32_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_compress_64_to_32_0_0 || ORIG_REF_NAME==MicroBlaze_compress_64_to_32_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_compress_64_to_32_1_0/MicroBlaze_compress_64_to_32_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_compress_64_to_32_1_0 || ORIG_REF_NAME==MicroBlaze_compress_64_to_32_1_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_xlconstant_1_0/MicroBlaze_xlconstant_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_xlconstant_1_0 || ORIG_REF_NAME==MicroBlaze_xlconstant_1_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_HardwareXCorr_wrapper_0_0/MicroBlaze_HardwareXCorr_wrapper_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_HardwareXCorr_wrapper_0_0 || ORIG_REF_NAME==MicroBlaze_HardwareXCorr_wrapper_0_0} -quiet] -quiet
+
+# Block Designs: bd/HardwareXCorr/HardwareXCorr.bd
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr || ORIG_REF_NAME==HardwareXCorr} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_clk_wiz_0_0 || ORIG_REF_NAME==HardwareXCorr_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_dds_compiler_1_0/HardwareXCorr_dds_compiler_1_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_dds_compiler_1_0 || ORIG_REF_NAME==HardwareXCorr_dds_compiler_1_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_xlslice_0_0/HardwareXCorr_xlslice_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_xlslice_0_0 || ORIG_REF_NAME==HardwareXCorr_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_0/HardwareXCorr_blk_mem_gen_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_0_0 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_1/HardwareXCorr_blk_mem_gen_0_1.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_0_1 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_0_1} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_2/HardwareXCorr_blk_mem_gen_0_2.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_0_2 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_0_2} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_3/HardwareXCorr_blk_mem_gen_0_3.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_0_3 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_0_3} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_xlconstant_0_0/HardwareXCorr_xlconstant_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_xlconstant_0_0 || ORIG_REF_NAME==HardwareXCorr_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_0/HardwareXCorr_blk_mem_gen_4_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_4_0 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_4_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_1/HardwareXCorr_blk_mem_gen_4_1.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_4_1 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_4_1} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_2/HardwareXCorr_blk_mem_gen_4_2.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_4_2 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_4_2} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_3/HardwareXCorr_blk_mem_gen_4_3.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_4_3 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_4_3} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_0/HardwareXCorr_blk_mem_gen_8_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_8_0 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_8_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_1/HardwareXCorr_blk_mem_gen_8_1.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_8_1 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_8_1} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_2/HardwareXCorr_blk_mem_gen_8_2.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_8_2 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_8_2} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_3/HardwareXCorr_blk_mem_gen_8_3.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_blk_mem_gen_8_3 || ORIG_REF_NAME==HardwareXCorr_blk_mem_gen_8_3} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_BRAMMUX_0_0/HardwareXCorr_BRAMMUX_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_BRAMMUX_0_0 || ORIG_REF_NAME==HardwareXCorr_BRAMMUX_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_clk1Mhz_0_0/HardwareXCorr_clk1Mhz_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_clk1Mhz_0_0 || ORIG_REF_NAME==HardwareXCorr_clk1Mhz_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_waveParser_0_0/HardwareXCorr_waveParser_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_waveParser_0_0 || ORIG_REF_NAME==HardwareXCorr_waveParser_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_AddressFixer_0_0/HardwareXCorr_AddressFixer_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_AddressFixer_0_0 || ORIG_REF_NAME==HardwareXCorr_AddressFixer_0_0} -quiet] -quiet
+
+# IP: bd/HardwareXCorr/ip/HardwareXCorr_CC_0_0/HardwareXCorr_CC_0_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==HardwareXCorr_CC_0_0 || ORIG_REF_NAME==HardwareXCorr_CC_0_0} -quiet] -quiet
+
 # XDC: c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/HardwareXCorr/HardwareXCorr_ooc.xdc
+
+# XDC: c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/HardwareXCorr/HardwareXCorr_ooc.xdc
+
+# XDC: c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze_ooc.xdc

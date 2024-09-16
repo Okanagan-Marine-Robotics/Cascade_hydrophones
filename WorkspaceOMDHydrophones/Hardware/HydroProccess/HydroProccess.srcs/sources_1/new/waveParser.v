@@ -48,7 +48,7 @@ module waveParser(
     
 	assign buffer = wave;
 	assign buffer1 = wave1;
-	assign bufferRef= waveRef;
+	assign bufferRef = waveRef;
     
     
 endmodule

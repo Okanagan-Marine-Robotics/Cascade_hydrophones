@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log HardwareXCorr_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HardwareXCorr_wrapper.tcl" );
+         "-log MicroBlaze_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_wrapper.tcl" );
 
 
 
