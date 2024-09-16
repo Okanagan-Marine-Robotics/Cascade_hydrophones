@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="40">
   <CompositeFile CompositeFileTopName="MicroBlaze" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1726228476"/>
-    <Generation Name="SIMULATION" State="RESET" Timestamp="1726228456"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1726228476"/>
-    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1726228456"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1726478351"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1726478351"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1726478351"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1726478351"/>
     <FileCollection Name="SOURCES" Type="SOURCES"/>
   </CompositeFile>
 </Root>

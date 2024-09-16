@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
-module clk100khz(
+module clk1Mhz(
     input clk,
-    output clk100k
+    output clk1Mhz
     );
     
     reg [10:0] count = 0;
@@ -12,6 +12,6 @@ module clk100khz(
         else count = 0;
     end
     
-    assign clk100k = (count<50)?0:1;
+    assign clk1Mhz = (count<50)?0:1;
     
 endmodule

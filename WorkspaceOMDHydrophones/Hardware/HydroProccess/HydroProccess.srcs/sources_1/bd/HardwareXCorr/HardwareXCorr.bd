@@ -7,10 +7,10 @@
       "name": "HardwareXCorr",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.1"
+      "tool_version": "2023.1",
+      "validated": "true"
     },
     "design_tree": {
-      "clk100khz_0": "",
       "clk_wiz_0": "",
       "dds_compiler_1": "",
       "xlslice_0": "",
@@ -29,13 +29,36 @@
       "blk_mem_gen_10": "",
       "blk_mem_gen_11": "",
       "CC_0": "",
-      "waveParser_0": "",
-      "BRAMMUX_0": ""
+      "BRAMMUX_0": "",
+      "clk1Mhz_0": "",
+      "waveParser_0": ""
     },
     "ports": {
       "clk_0": {
         "type": "clk",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "HardwareXCorr_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
       },
       "xcorr_0": {
         "direction": "O",
@@ -54,32 +77,6 @@
       }
     },
     "components": {
-      "clk100khz_0": {
-        "vlnv": "xilinx.com:module_ref:clk100khz:1.0",
-        "xci_name": "HardwareXCorr_clk100khz_0_0",
-        "xci_path": "ip\\HardwareXCorr_clk100khz_0_0\\HardwareXCorr_clk100khz_0_0.xci",
-        "inst_hier_path": "clk100khz_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "clk100khz",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "HardwareXCorr_clk_0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "clk100k": {
-            "direction": "O"
-          }
-        }
-      },
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
         "xci_name": "HardwareXCorr_clk_wiz_0_0",
@@ -686,6 +683,151 @@
           }
         }
       },
+      "BRAMMUX_0": {
+        "vlnv": "xilinx.com:module_ref:BRAMMUX:1.0",
+        "xci_name": "HardwareXCorr_BRAMMUX_0_0",
+        "xci_path": "ip\\HardwareXCorr_BRAMMUX_0_0\\HardwareXCorr_BRAMMUX_0_0.xci",
+        "inst_hier_path": "BRAMMUX_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BRAMMUX",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "waveRef0": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref0": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref2": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref3": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "clk1Mhz_0": {
+        "vlnv": "xilinx.com:module_ref:clk1Mhz:1.0",
+        "xci_name": "HardwareXCorr_clk1Mhz_0_0",
+        "xci_path": "ip\\HardwareXCorr_clk1Mhz_0_0\\HardwareXCorr_clk1Mhz_0_0.xci",
+        "inst_hier_path": "clk1Mhz_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clk1Mhz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk1Mhz": {
+            "direction": "O"
+          }
+        }
+      },
       "waveParser_0": {
         "vlnv": "xilinx.com:module_ref:waveParser:1.0",
         "xci_name": "HardwareXCorr_waveParser_0_0",
@@ -788,103 +930,6 @@
             "right": "0"
           },
           "clk1Mhz": {
-            "direction": "I"
-          }
-        }
-      },
-      "BRAMMUX_0": {
-        "vlnv": "xilinx.com:module_ref:BRAMMUX:1.0",
-        "xci_name": "HardwareXCorr_BRAMMUX_0_0",
-        "xci_path": "ip\\HardwareXCorr_BRAMMUX_0_0\\HardwareXCorr_BRAMMUX_0_0.xci",
-        "inst_hier_path": "BRAMMUX_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "BRAMMUX",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "waveRef0": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "waveRef1": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "waveRef2": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "waveRef3": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "Ref0": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "Ref1": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "Ref2": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "Ref3": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "waveRef0Address": {
-            "direction": "I",
-            "left": "13",
-            "right": "0"
-          },
-          "waveRef1Address": {
-            "direction": "I",
-            "left": "13",
-            "right": "0"
-          },
-          "waveRef2Address": {
-            "direction": "I",
-            "left": "13",
-            "right": "0"
-          },
-          "waveRef3Address": {
-            "direction": "I",
-            "left": "13",
-            "right": "0"
-          },
-          "Ref0Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
-          },
-          "Ref1Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
-          },
-          "Ref2Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
-          },
-          "Ref3Address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
-          },
-          "clk": {
-            "type": "clk",
             "direction": "I"
           }
         }
@@ -1109,7 +1154,7 @@
       },
       "clk100khz_0_clk100k": {
         "ports": [
-          "clk100khz_0/clk100k",
+          "clk1Mhz_0/clk1Mhz",
           "CC_0/clk1Mhz",
           "waveParser_0/clk1Mhz"
         ]
@@ -1117,7 +1162,6 @@
       "clk_0_1": {
         "ports": [
           "clk_0",
-          "clk100khz_0/clk",
           "clk_wiz_0/clk_in1",
           "dds_compiler_1/aclk"
         ]
@@ -1149,7 +1193,8 @@
           "blk_mem_gen_11/clka",
           "blk_mem_gen_11/clkb",
           "CC_0/clk",
-          "BRAMMUX_0/clk"
+          "BRAMMUX_0/clk",
+          "clk1Mhz_0/clk"
         ]
       },
       "dds_compiler_1_m_axis_data_tdata": {

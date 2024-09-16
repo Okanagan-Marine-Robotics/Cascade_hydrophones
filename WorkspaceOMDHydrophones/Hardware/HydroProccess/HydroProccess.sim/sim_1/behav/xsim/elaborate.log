@@ -55,8 +55,8 @@ Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_2
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_4_3
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_8_0
 Compiling module xil_defaultlib.HardwareXCorr_blk_mem_gen_8_1
-Compiling module xil_defaultlib.clk100khz
-Compiling module xil_defaultlib.HardwareXCorr_clk100khz_0_0
+Compiling module xil_defaultlib.clk1Mhz
+Compiling module xil_defaultlib.HardwareXCorr_clk1Mhz_0_0
 Compiling module unisims_ver.IBUF
 Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
 Compiling module unisims_ver.BUFG

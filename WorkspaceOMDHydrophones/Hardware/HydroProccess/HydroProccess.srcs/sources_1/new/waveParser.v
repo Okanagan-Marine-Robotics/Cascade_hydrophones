@@ -33,13 +33,13 @@ module waveParser(
 	wave00Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
 	waveRef0Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
 	wave1Address <=((MemoryAddress-2500<=2500)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
-	wave01Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
+	wave01Address <=((MemoryAddress-2500<=2500)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
 	waveRef1Address <=((MemoryAddress-2500<=2500)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
 	wave2Address <=((MemoryAddress-5000<=2500)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
-	wave02Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
+	wave02Address <=((MemoryAddress-5000<=2500)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
 	waveRef2Address <=((MemoryAddress-5000<=2500)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
 	wave3Address <=((MemoryAddress-7500<=2500)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
-	wave03Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
+	wave03Address <=((MemoryAddress-7500<=2500)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
 	waveRef3Address <=((MemoryAddress-7500<=2500)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
     
    	 

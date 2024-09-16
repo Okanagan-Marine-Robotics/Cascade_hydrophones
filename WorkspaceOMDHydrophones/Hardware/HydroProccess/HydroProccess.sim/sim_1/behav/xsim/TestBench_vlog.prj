@@ -1,11 +1,10 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  --include "../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/ipshared/30ef" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/30ef" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
-"../../../../HydroProccess.srcs/sources_1/new/100khzclk.v" \
 "../../../../HydroProccess.srcs/sources_1/new/AddressFixer.v" \
 "../../../../HydroProccess.srcs/sources_1/new/CC.v" \
-"../../../../HydroProccess.srcs/sources_1/new/BRAMMUX.v" \
 "../../../../HydroProccess.srcs/sources_1/new/waveParser.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_clk100khz_0_0/sim/HardwareXCorr_clk100khz_0_0.v" \
+"../../../../HydroProccess.srcs/sources_1/new/BRAMMUX.v" \
+"../../../../HydroProccess.srcs/sources_1/new/100khzclk.v" \
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0_clk_wiz.v" \
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0.v" \
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_xlslice_0_0/sim/HardwareXCorr_xlslice_0_0.v" \
@@ -24,8 +23,9 @@ verilog xil_defaultlib  --include "../../../../HydroProccess.gen/sources_1/bd/Ha
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_2/sim/HardwareXCorr_blk_mem_gen_8_2.v" \
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_3/sim/HardwareXCorr_blk_mem_gen_8_3.v" \
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_CC_0_0/sim/HardwareXCorr_CC_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_BRAMMUX_0_0/sim/HardwareXCorr_BRAMMUX_0_0.v" \
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_waveParser_0_0/sim/HardwareXCorr_waveParser_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_BRAMMUX_0_0/sim/HardwareXCorr_BRAMMUX_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_clk1Mhz_0_0/sim/HardwareXCorr_clk1Mhz_0_0.v" \
 "../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/sim/HardwareXCorr.v" \
 "../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/hdl/HardwareXCorr_wrapper.v" \
 "../../../../HydroProccess.srcs/sim_1/new/TestBench.v" \
