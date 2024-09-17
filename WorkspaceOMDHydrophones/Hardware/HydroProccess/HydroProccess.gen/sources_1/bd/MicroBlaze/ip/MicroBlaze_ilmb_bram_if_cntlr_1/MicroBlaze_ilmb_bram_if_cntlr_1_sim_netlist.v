@@ -2,18 +2,18 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Sep  3 02:18:08 2024
+// Date        : Tue Sep 17 16:29:51 2024
 // Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top MicroBlaze_ilmb_bram_if_cntlr_1 -prefix
-//               MicroBlaze_ilmb_bram_if_cntlr_1_ MicroBlaze_ilmb_bram_if_cntlr_0_sim_netlist.v
-// Design      : MicroBlaze_ilmb_bram_if_cntlr_0
+// Command     : write_verilog -force -mode funcsim
+//               c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_ilmb_bram_if_cntlr_1/MicroBlaze_ilmb_bram_if_cntlr_1_sim_netlist.v
+// Design      : MicroBlaze_ilmb_bram_if_cntlr_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7s25csga225-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "MicroBlaze_ilmb_bram_if_cntlr_0,lmb_bram_if_cntlr,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "lmb_bram_if_cntlr,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "MicroBlaze_ilmb_bram_if_cntlr_1,lmb_bram_if_cntlr,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "lmb_bram_if_cntlr,Vivado 2023.1" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_ilmb_bram_if_cntlr_1
    (LMB_Clk,
@@ -36,7 +36,7 @@ module MicroBlaze_ilmb_bram_if_cntlr_1
     BRAM_WEN_A,
     BRAM_Dout_A,
     BRAM_Din_A);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.LMB_Clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.LMB_Clk, ASSOCIATED_BUSIF SLMB:SLMB1:SLMB2:SLMB3:SLMB4:SLMB5:SLMB6:SLMB7, ASSOCIATED_RESET LMB_Rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input LMB_Clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.LMB_Clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.LMB_Clk, ASSOCIATED_BUSIF SLMB:SLMB1:SLMB2:SLMB3:SLMB4:SLMB5:SLMB6:SLMB7, ASSOCIATED_RESET LMB_Rst, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input LMB_Clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 RST.LMB_Rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME RST.LMB_Rst, POLARITY ACTIVE_HIGH, TYPE INTERCONNECT, INSERT_VIP 0" *) input LMB_Rst;
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 SLMB ABUS" *) (* x_interface_parameter = "XIL_INTERFACENAME SLMB, ADDR_WIDTH 32, DATA_WIDTH 32, READ_WRITE_MODE READ_WRITE, PROTOCOL STANDARD" *) input [0:31]LMB_ABus;
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 SLMB WRITEDBUS" *) input [0:31]LMB_WriteDBus;
@@ -293,7 +293,7 @@ endmodule
 (* C_MASK5 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_MASK6 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_MASK7 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) 
 (* C_NUM_LMB = "1" *) (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) (* C_S_AXI_CTRL_BASEADDR = "32'b11111111111111111111111111111111" *) 
 (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) (* C_S_AXI_CTRL_HIGHADDR = "32'b00000000000000000000000000000000" *) (* C_UE_FAILING_REGISTERS = "0" *) 
-(* C_WRITE_ACCESS = "2" *) 
+(* C_WRITE_ACCESS = "2" *) (* ORIG_REF_NAME = "lmb_bram_if_cntlr" *) 
 module MicroBlaze_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr
    (LMB_Clk,
     LMB_Rst,

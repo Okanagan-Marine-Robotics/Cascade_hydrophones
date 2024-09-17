@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1'
+HD_PWD='C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

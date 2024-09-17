@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Mon Sep 16 04:10:14 2024
+//Date        : Tue Sep 17 16:20:40 2024
 //Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=25,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=4,da_bram_cntlr_cnt=1,da_clkrst_cnt=15,da_mb_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=30,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=4,da_bram_cntlr_cnt=1,da_clkrst_cnt=15,da_mb_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (clk,
     led,
@@ -23,14 +23,45 @@ module MicroBlaze
   input rx;
   output tx;
 
-  wire [15:0]HardwareXCorr_wrapper_0_address_0;
-  wire [63:0]HardwareXCorr_wrapper_0_xcorr1_0;
-  wire [63:0]HardwareXCorr_wrapper_0_xcorr_0;
+  wire [11:0]BRAMMUX_0_Ref0;
+  wire [13:0]BRAMMUX_0_Ref0Address;
+  wire [11:0]BRAMMUX_0_Ref1;
+  wire [13:0]BRAMMUX_0_Ref1Address;
+  wire [11:0]BRAMMUX_0_Ref2;
+  wire [13:0]BRAMMUX_0_Ref2Address;
+  wire [11:0]BRAMMUX_0_Ref3;
+  wire [13:0]BRAMMUX_0_Ref3Address;
+  wire [11:0]BlockRam_0_wave0;
+  wire [11:0]BlockRam_0_wave00;
+  wire [11:0]BlockRam_0_wave01;
+  wire [11:0]BlockRam_0_wave02;
+  wire [11:0]BlockRam_0_wave03;
+  wire [11:0]BlockRam_0_wave1;
+  wire [11:0]BlockRam_0_wave2;
+  wire [11:0]BlockRam_0_wave3;
+  wire [11:0]BlockRam_0_waveRef0;
+  wire [11:0]BlockRam_0_waveRef1;
+  wire [11:0]BlockRam_0_waveRef2;
+  wire [11:0]BlockRam_0_waveRef3;
+  wire [11:0]CC_0_wave00Address;
+  wire [11:0]CC_0_wave01Address;
+  wire [11:0]CC_0_wave02Address;
+  wire [11:0]CC_0_wave03Address;
+  wire [11:0]CC_0_wave0Address;
+  wire [11:0]CC_0_wave1Address;
+  wire [11:0]CC_0_wave2Address;
+  wire [11:0]CC_0_wave3Address;
+  wire [13:0]CC_0_waveRef0Address;
+  wire [13:0]CC_0_waveRef1Address;
+  wire [13:0]CC_0_waveRef2Address;
+  wire [13:0]CC_0_waveRef3Address;
   wire [9:0]axi_gpio_1_gpio2_io_o;
   wire axi_uartlite_0_tx;
   wire [31:0]blk_mem_gen_0_douta;
+  wire clk1Mhz_0_clk1Mhz;
   wire clk_in1_0_1;
   wire [31:0]compress_64_to_32_0_out_data;
+  wire [15:0]dds_compiler_0_m_axis_data_tdata;
   wire mdm_1_debug_sys_rst;
   wire microblaze_0_Clk;
   wire [31:0]microblaze_0_M_AXI_DP_ARADDR;
@@ -136,6 +167,21 @@ module MicroBlaze
   wire rst_clk_wiz_0_100M_mb_reset;
   wire [0:0]rst_clk_wiz_0_100M_peripheral_aresetn1;
   wire rx_0_1;
+  wire [11:0]waveParser_0_buffer;
+  wire [11:0]waveParser_0_buffer1;
+  wire [11:0]waveParser_0_bufferRef;
+  wire [11:0]waveParser_0_wave00Address;
+  wire [11:0]waveParser_0_wave01Address;
+  wire [11:0]waveParser_0_wave02Address;
+  wire [11:0]waveParser_0_wave03Address;
+  wire [11:0]waveParser_0_wave0Address;
+  wire [11:0]waveParser_0_wave1Address;
+  wire [11:0]waveParser_0_wave2Address;
+  wire [11:0]waveParser_0_wave3Address;
+  wire [13:0]waveParser_0_waveRef0Address;
+  wire [13:0]waveParser_0_waveRef1Address;
+  wire [13:0]waveParser_0_waveRef2Address;
+  wire [13:0]waveParser_0_waveRef3Address;
   wire [0:0]xlconstant_0_dout;
   wire [0:0]xlconstant_1_dout;
 
@@ -144,11 +190,93 @@ module MicroBlaze
   assign reset_0_1 = reset;
   assign rx_0_1 = rx;
   assign tx = axi_uartlite_0_tx;
-  MicroBlaze_HardwareXCorr_wrapper_0_0 HardwareXCorr_wrapper_0
-       (.address_0(HardwareXCorr_wrapper_0_address_0),
-        .clk_0(microblaze_0_Clk),
-        .xcorr1_0(HardwareXCorr_wrapper_0_xcorr1_0),
-        .xcorr_0(HardwareXCorr_wrapper_0_xcorr_0));
+  MicroBlaze_BRAMMUX_0_0 BRAMMUX_0
+       (.Ref0(BRAMMUX_0_Ref0),
+        .Ref0Address(BRAMMUX_0_Ref0Address),
+        .Ref1(BRAMMUX_0_Ref1),
+        .Ref1Address(BRAMMUX_0_Ref1Address),
+        .Ref2(BRAMMUX_0_Ref2),
+        .Ref2Address(BRAMMUX_0_Ref2Address),
+        .Ref3(BRAMMUX_0_Ref3),
+        .Ref3Address(BRAMMUX_0_Ref3Address),
+        .clk(microblaze_0_Clk),
+        .waveRef0(BlockRam_0_waveRef0),
+        .waveRef0Address(CC_0_waveRef0Address),
+        .waveRef1(BlockRam_0_waveRef1),
+        .waveRef1Address(CC_0_waveRef1Address),
+        .waveRef2(BlockRam_0_waveRef2),
+        .waveRef2Address(CC_0_waveRef2Address),
+        .waveRef3(BlockRam_0_waveRef3),
+        .waveRef3Address(CC_0_waveRef3Address));
+  MicroBlaze_BlockRam_0_0 BlockRam_0
+       (.clk(microblaze_0_Clk),
+        .clk1Mhz(clk1Mhz_0_clk1Mhz),
+        .inWave1(waveParser_0_bufferRef),
+        .inWave2(waveParser_0_buffer),
+        .inWave3(waveParser_0_buffer1),
+        .wave0(BlockRam_0_wave0),
+        .wave00(BlockRam_0_wave00),
+        .wave00Address(waveParser_0_wave00Address),
+        .wave00AddressB(CC_0_wave00Address),
+        .wave01(BlockRam_0_wave01),
+        .wave01Address(waveParser_0_wave01Address),
+        .wave01AddressB(CC_0_wave01Address),
+        .wave02(BlockRam_0_wave02),
+        .wave02Address(waveParser_0_wave02Address),
+        .wave02AddressB(CC_0_wave02Address),
+        .wave03(BlockRam_0_wave03),
+        .wave03Address(waveParser_0_wave03Address),
+        .wave03AddressB(CC_0_wave03Address),
+        .wave0Address(waveParser_0_wave0Address),
+        .wave0AddressB(CC_0_wave0Address),
+        .wave1(BlockRam_0_wave1),
+        .wave1Address(waveParser_0_wave1Address),
+        .wave1AddressB(CC_0_wave1Address),
+        .wave2(BlockRam_0_wave2),
+        .wave2Address(waveParser_0_wave2Address),
+        .wave2AddressB(CC_0_wave2Address),
+        .wave3(BlockRam_0_wave3),
+        .wave3Address(waveParser_0_wave3Address),
+        .wave3AddressB(CC_0_wave3Address),
+        .waveRef0(BlockRam_0_waveRef0),
+        .waveRef0Address(waveParser_0_waveRef0Address),
+        .waveRef0AddressB(BRAMMUX_0_Ref0Address[11:0]),
+        .waveRef1(BlockRam_0_waveRef1),
+        .waveRef1Address(waveParser_0_waveRef1Address[11:0]),
+        .waveRef1AddressB(BRAMMUX_0_Ref1Address[11:0]),
+        .waveRef2(BlockRam_0_waveRef2),
+        .waveRef2Address(waveParser_0_waveRef2Address[11:0]),
+        .waveRef2AddressB(BRAMMUX_0_Ref2Address[11:0]),
+        .waveRef3(BlockRam_0_waveRef3),
+        .waveRef3Address(waveParser_0_waveRef3Address[11:0]),
+        .waveRef3AddressB(BRAMMUX_0_Ref3Address[11:0]));
+  MicroBlaze_CC_0_0 CC_0
+       (.clk(microblaze_0_Clk),
+        .clk1Mhz(clk1Mhz_0_clk1Mhz),
+        .wave0(BlockRam_0_wave0),
+        .wave00(BlockRam_0_wave00),
+        .wave00Address(CC_0_wave00Address),
+        .wave01(BlockRam_0_wave01),
+        .wave01Address(CC_0_wave01Address),
+        .wave02(BlockRam_0_wave02),
+        .wave02Address(CC_0_wave02Address),
+        .wave03(BlockRam_0_wave03),
+        .wave03Address(CC_0_wave03Address),
+        .wave0Address(CC_0_wave0Address),
+        .wave1(BlockRam_0_wave1),
+        .wave1Address(CC_0_wave1Address),
+        .wave2(BlockRam_0_wave2),
+        .wave2Address(CC_0_wave2Address),
+        .wave3(BlockRam_0_wave3),
+        .wave3Address(CC_0_wave3Address),
+        .waveRef0(BRAMMUX_0_Ref0),
+        .waveRef0Address(CC_0_waveRef0Address),
+        .waveRef1(BRAMMUX_0_Ref1),
+        .waveRef1Address(CC_0_waveRef1Address),
+        .waveRef2(BRAMMUX_0_Ref2),
+        .waveRef2Address(CC_0_waveRef2Address),
+        .waveRef3(BRAMMUX_0_Ref3),
+        .waveRef3Address(CC_0_waveRef3Address));
   MicroBlaze_axi_gpio_0_0 axi_gpio_0
        (.gpio_io_i(1'b0),
         .s_axi_aclk(microblaze_0_Clk),
@@ -216,7 +344,7 @@ module MicroBlaze
         .tx(axi_uartlite_0_tx));
   MicroBlaze_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra(axi_gpio_1_gpio2_io_o),
-        .addrb(HardwareXCorr_wrapper_0_address_0[9:0]),
+        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .clka(microblaze_0_Clk),
         .clkb(microblaze_0_Clk),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
@@ -224,14 +352,20 @@ module MicroBlaze
         .douta(blk_mem_gen_0_douta),
         .wea(1'b0),
         .web(xlconstant_0_dout));
+  MicroBlaze_clk1Mhz_0_0 clk1Mhz_0
+       (.clk(microblaze_0_Clk),
+        .clk1Mhz(clk1Mhz_0_clk1Mhz));
   MicroBlaze_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(clk_in1_0_1),
         .clk_out1(microblaze_0_Clk));
   MicroBlaze_compress_64_to_32_0_0 compress_64_to_32_0
-       (.in_data(HardwareXCorr_wrapper_0_xcorr_0),
+       (.in_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .out_data(compress_64_to_32_0_out_data));
   MicroBlaze_compress_64_to_32_1_0 compress_64_to_32_1
-       (.in_data(HardwareXCorr_wrapper_0_xcorr1_0));
+       (.in_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
+  MicroBlaze_dds_compiler_0_0 dds_compiler_0
+       (.aclk(microblaze_0_Clk),
+        .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
   MicroBlaze_mdm_1_1 mdm_1
        (.Dbg_Capture_0(microblaze_0_debug_CAPTURE),
         .Dbg_Clk_0(microblaze_0_debug_CLK),
@@ -409,6 +543,26 @@ module MicroBlaze
         .mb_reset(rst_clk_wiz_0_100M_mb_reset),
         .peripheral_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn1),
         .slowest_sync_clk(microblaze_0_Clk));
+  MicroBlaze_waveParser_0_0 waveParser_0
+       (.buffer(waveParser_0_buffer),
+        .buffer1(waveParser_0_buffer1),
+        .bufferRef(waveParser_0_bufferRef),
+        .clk1Mhz(clk1Mhz_0_clk1Mhz),
+        .wave(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .wave00Address(waveParser_0_wave00Address),
+        .wave01Address(waveParser_0_wave01Address),
+        .wave02Address(waveParser_0_wave02Address),
+        .wave03Address(waveParser_0_wave03Address),
+        .wave0Address(waveParser_0_wave0Address),
+        .wave1(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .wave1Address(waveParser_0_wave1Address),
+        .wave2Address(waveParser_0_wave2Address),
+        .wave3Address(waveParser_0_wave3Address),
+        .waveRef(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .waveRef0Address(waveParser_0_waveRef0Address),
+        .waveRef1Address(waveParser_0_waveRef1Address),
+        .waveRef2Address(waveParser_0_waveRef2Address),
+        .waveRef3Address(waveParser_0_waveRef3Address));
   MicroBlaze_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
   MicroBlaze_xlconstant_1_0 xlconstant_1

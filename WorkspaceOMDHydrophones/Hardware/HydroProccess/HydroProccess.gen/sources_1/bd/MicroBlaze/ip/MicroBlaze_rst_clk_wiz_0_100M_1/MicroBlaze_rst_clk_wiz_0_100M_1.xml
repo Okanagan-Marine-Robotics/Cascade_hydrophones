@@ -30,7 +30,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>Slowest Sync clock frequency</spirit:displayName>
           <spirit:description>Slowest Synchronous clock frequency</spirit:description>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLOCK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLOCK.FREQ_HZ">200000000</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
@@ -398,11 +398,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Sep 08 11:34:01 UTC 2024</spirit:value>
+            <spirit:value>Tue Sep 17 23:29:50 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e1bf3167</spirit:value>
+            <spirit:value>9:899788f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -416,11 +416,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Sep 08 11:33:58 UTC 2024</spirit:value>
+            <spirit:value>Tue Sep 17 23:28:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e1bf3167</spirit:value>
+            <spirit:value>9:899788f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -434,11 +434,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Sep 08 11:33:58 UTC 2024</spirit:value>
+            <spirit:value>Tue Sep 17 23:28:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e1bf3167</spirit:value>
+            <spirit:value>9:899788f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -461,7 +461,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:db7cbefa</spirit:value>
+            <spirit:value>9:0ca83bf8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -477,11 +477,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Sep 08 11:33:58 UTC 2024</spirit:value>
+            <spirit:value>Tue Sep 17 22:47:09 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:db7cbefa</spirit:value>
+            <spirit:value>9:0ca83bf8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -500,11 +500,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Sep 08 11:33:58 UTC 2024</spirit:value>
+            <spirit:value>Tue Sep 17 23:28:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e1bf3167</spirit:value>
+            <spirit:value>9:899788f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -520,11 +520,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Sep 08 11:33:58 UTC 2024</spirit:value>
+            <spirit:value>Tue Sep 17 23:28:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e1bf3167</spirit:value>
+            <spirit:value>9:899788f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -766,6 +766,18 @@
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>MicroBlaze_rst_clk_wiz_0_100M_1_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>MicroBlaze_rst_clk_wiz_0_100M_1_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>MicroBlaze_rst_clk_wiz_0_100M_1_sim_netlist.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
@@ -777,18 +789,6 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>MicroBlaze_rst_clk_wiz_0_100M_1_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>MicroBlaze_rst_clk_wiz_0_100M_1_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>

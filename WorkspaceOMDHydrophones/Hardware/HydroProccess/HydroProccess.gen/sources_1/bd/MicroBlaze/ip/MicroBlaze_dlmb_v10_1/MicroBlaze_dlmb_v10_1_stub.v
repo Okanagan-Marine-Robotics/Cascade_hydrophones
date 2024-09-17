@@ -2,11 +2,11 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Sep  3 02:18:05 2024
+// Date        : Tue Sep 17 16:29:47 2024
 // Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top MicroBlaze_dlmb_v10_1 -prefix
-//               MicroBlaze_dlmb_v10_1_ MicroBlaze_dlmb_v10_0_stub.v
-// Design      : MicroBlaze_dlmb_v10_0
+//               MicroBlaze_dlmb_v10_1_ MicroBlaze_ilmb_v10_1_stub.v
+// Design      : MicroBlaze_ilmb_v10_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s25csga225-1
 // --------------------------------------------------------------------------------

@@ -37,7 +37,12 @@
       "compress_64_to_32_0": "",
       "compress_64_to_32_1": "",
       "xlconstant_1": "",
-      "HardwareXCorr_wrapper_0": ""
+      "BlockRam_0": "",
+      "CC_0": "",
+      "BRAMMUX_0": "",
+      "waveParser_0": "",
+      "dds_compiler_0": "",
+      "clk1Mhz_0": ""
     },
     "ports": {
       "clk": {
@@ -104,10 +109,13 @@
             "value": "833.33"
           },
           "CLKOUT1_JITTER": {
-            "value": "479.872"
+            "value": "441.867"
           },
           "CLKOUT1_PHASE_ERROR": {
             "value": "668.310"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "200.000"
           },
           "MMCM_CLKFBOUT_MULT_F": {
             "value": "62.500"
@@ -119,7 +127,7 @@
             "value": "10.0"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "7.500"
+            "value": "3.750"
           },
           "PRIM_IN_FREQ": {
             "value": "12"
@@ -976,48 +984,631 @@
         "xci_path": "ip\\MicroBlaze_xlconstant_1_0\\MicroBlaze_xlconstant_1_0.xci",
         "inst_hier_path": "xlconstant_1"
       },
-      "HardwareXCorr_wrapper_0": {
-        "vlnv": "xilinx.com:module_ref:HardwareXCorr_wrapper:1.0",
-        "xci_name": "MicroBlaze_HardwareXCorr_wrapper_0_0",
-        "xci_path": "ip\\MicroBlaze_HardwareXCorr_wrapper_0_0\\MicroBlaze_HardwareXCorr_wrapper_0_0.xci",
-        "inst_hier_path": "HardwareXCorr_wrapper_0",
+      "BlockRam_0": {
+        "vlnv": "xilinx.com:module_ref:BlockRam:1.0",
+        "xci_name": "MicroBlaze_BlockRam_0_0",
+        "xci_path": "ip\\MicroBlaze_BlockRam_0_0\\MicroBlaze_BlockRam_0_0.xci",
+        "inst_hier_path": "BlockRam_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "HardwareXCorr_wrapper",
+          "ref_name": "BlockRam",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "address_0": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "inWave1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "inWave2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "inWave3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "wave0Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave00Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave2Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave02Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave3Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03Address": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave0": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave00": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave2": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave02": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave3": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave0AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave00AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave2AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave02AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave3AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03AddressB": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "CC_0": {
+        "vlnv": "xilinx.com:module_ref:CC:1.0",
+        "xci_name": "MicroBlaze_CC_0_0",
+        "xci_path": "ip\\MicroBlaze_CC_0_0\\MicroBlaze_CC_0_0.xci",
+        "inst_hier_path": "CC_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CC",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "waveRef0": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave0": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave00": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave02": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave0Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave00Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave1Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave2Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave02Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave3Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "xcorr": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "xcorr1": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "count": {
             "direction": "O",
             "left": "15",
             "right": "0"
-          },
-          "clk_0": {
+          }
+        }
+      },
+      "BRAMMUX_0": {
+        "vlnv": "xilinx.com:module_ref:BRAMMUX:1.0",
+        "xci_name": "MicroBlaze_BRAMMUX_0_0",
+        "xci_path": "ip\\MicroBlaze_BRAMMUX_0_0\\MicroBlaze_BRAMMUX_0_0.xci",
+        "inst_hier_path": "BRAMMUX_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BRAMMUX",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "waveRef0": {
             "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "xcorr1_0": {
-            "direction": "O",
-            "left": "63",
+            "left": "11",
             "right": "0"
           },
-          "xcorr_0": {
-            "direction": "O",
-            "left": "63",
+          "waveRef1": {
+            "direction": "I",
+            "left": "11",
             "right": "0"
+          },
+          "waveRef2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref0": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref2": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Ref3": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "Ref3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          }
+        }
+      },
+      "waveParser_0": {
+        "vlnv": "xilinx.com:module_ref:waveParser:1.0",
+        "xci_name": "MicroBlaze_waveParser_0_0",
+        "xci_path": "ip\\MicroBlaze_waveParser_0_0\\MicroBlaze_waveParser_0_0.xci",
+        "inst_hier_path": "waveParser_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "waveParser",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "waveRef": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "bufferRef": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "buffer": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "buffer1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef0Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave0Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave00Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef1Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave1Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave01Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef2Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave2Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave02Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef3Address": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "wave3Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave03Address": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          }
+        }
+      },
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "MicroBlaze_dds_compiler_0_0",
+        "xci_path": "ip\\MicroBlaze_dds_compiler_0_0\\MicroBlaze_dds_compiler_0_0.xci",
+        "inst_hier_path": "dds_compiler_0",
+        "parameters": {
+          "DDS_Clock_Rate": {
+            "value": "200"
+          },
+          "Latency": {
+            "value": "7"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "12"
+          },
+          "PINC1": {
+            "value": "1"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Width": {
+            "value": "12"
+          }
+        }
+      },
+      "clk1Mhz_0": {
+        "vlnv": "xilinx.com:module_ref:clk1Mhz:1.0",
+        "xci_name": "MicroBlaze_clk1Mhz_0_0",
+        "xci_path": "ip\\MicroBlaze_clk1Mhz_0_0\\MicroBlaze_clk1Mhz_0_0.xci",
+        "inst_hier_path": "clk1Mhz_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clk1Mhz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clk1Mhz": {
+            "direction": "O"
           }
         }
       }
@@ -1067,22 +1658,196 @@
       }
     },
     "nets": {
-      "HardwareXCorr_wrapper_0_address_0": {
+      "BRAMMUX_0_Ref0": {
         "ports": [
-          "HardwareXCorr_wrapper_0/address_0",
-          "blk_mem_gen_0/addrb"
+          "BRAMMUX_0/Ref0",
+          "CC_0/waveRef0"
         ]
       },
-      "HardwareXCorr_wrapper_0_xcorr1_0": {
+      "BRAMMUX_0_Ref0Address": {
         "ports": [
-          "HardwareXCorr_wrapper_0/xcorr1_0",
-          "compress_64_to_32_1/in_data"
+          "BRAMMUX_0/Ref0Address",
+          "BlockRam_0/waveRef0AddressB"
         ]
       },
-      "HardwareXCorr_wrapper_0_xcorr_0": {
+      "BRAMMUX_0_Ref1": {
         "ports": [
-          "HardwareXCorr_wrapper_0/xcorr_0",
-          "compress_64_to_32_0/in_data"
+          "BRAMMUX_0/Ref1",
+          "CC_0/waveRef1"
+        ]
+      },
+      "BRAMMUX_0_Ref1Address": {
+        "ports": [
+          "BRAMMUX_0/Ref1Address",
+          "BlockRam_0/waveRef1AddressB"
+        ]
+      },
+      "BRAMMUX_0_Ref2": {
+        "ports": [
+          "BRAMMUX_0/Ref2",
+          "CC_0/waveRef2"
+        ]
+      },
+      "BRAMMUX_0_Ref2Address": {
+        "ports": [
+          "BRAMMUX_0/Ref2Address",
+          "BlockRam_0/waveRef2AddressB"
+        ]
+      },
+      "BRAMMUX_0_Ref3": {
+        "ports": [
+          "BRAMMUX_0/Ref3",
+          "CC_0/waveRef3"
+        ]
+      },
+      "BRAMMUX_0_Ref3Address": {
+        "ports": [
+          "BRAMMUX_0/Ref3Address",
+          "BlockRam_0/waveRef3AddressB"
+        ]
+      },
+      "BlockRam_0_wave00": {
+        "ports": [
+          "BlockRam_0/wave00",
+          "CC_0/wave00"
+        ]
+      },
+      "BlockRam_0_wave0": {
+        "ports": [
+          "BlockRam_0/wave0",
+          "CC_0/wave0"
+        ]
+      },
+      "BlockRam_0_wave01": {
+        "ports": [
+          "BlockRam_0/wave01",
+          "CC_0/wave01"
+        ]
+      },
+      "BlockRam_0_wave1": {
+        "ports": [
+          "BlockRam_0/wave1",
+          "CC_0/wave1"
+        ]
+      },
+      "BlockRam_0_wave02": {
+        "ports": [
+          "BlockRam_0/wave02",
+          "CC_0/wave02"
+        ]
+      },
+      "BlockRam_0_wave2": {
+        "ports": [
+          "BlockRam_0/wave2",
+          "CC_0/wave2"
+        ]
+      },
+      "BlockRam_0_wave03": {
+        "ports": [
+          "BlockRam_0/wave03",
+          "CC_0/wave03"
+        ]
+      },
+      "BlockRam_0_wave3": {
+        "ports": [
+          "BlockRam_0/wave3",
+          "CC_0/wave3"
+        ]
+      },
+      "BlockRam_0_waveRef0": {
+        "ports": [
+          "BlockRam_0/waveRef0",
+          "BRAMMUX_0/waveRef0"
+        ]
+      },
+      "BlockRam_0_waveRef1": {
+        "ports": [
+          "BlockRam_0/waveRef1",
+          "BRAMMUX_0/waveRef1"
+        ]
+      },
+      "BlockRam_0_waveRef2": {
+        "ports": [
+          "BlockRam_0/waveRef2",
+          "BRAMMUX_0/waveRef2"
+        ]
+      },
+      "BlockRam_0_waveRef3": {
+        "ports": [
+          "BlockRam_0/waveRef3",
+          "BRAMMUX_0/waveRef3"
+        ]
+      },
+      "CC_0_wave00Address": {
+        "ports": [
+          "CC_0/wave00Address",
+          "BlockRam_0/wave00AddressB"
+        ]
+      },
+      "CC_0_wave01Address": {
+        "ports": [
+          "CC_0/wave01Address",
+          "BlockRam_0/wave01AddressB"
+        ]
+      },
+      "CC_0_wave02Address": {
+        "ports": [
+          "CC_0/wave02Address",
+          "BlockRam_0/wave02AddressB"
+        ]
+      },
+      "CC_0_wave03Address": {
+        "ports": [
+          "CC_0/wave03Address",
+          "BlockRam_0/wave03AddressB"
+        ]
+      },
+      "CC_0_wave0Address": {
+        "ports": [
+          "CC_0/wave0Address",
+          "BlockRam_0/wave0AddressB"
+        ]
+      },
+      "CC_0_wave1Address": {
+        "ports": [
+          "CC_0/wave1Address",
+          "BlockRam_0/wave1AddressB"
+        ]
+      },
+      "CC_0_wave2Address": {
+        "ports": [
+          "CC_0/wave2Address",
+          "BlockRam_0/wave2AddressB"
+        ]
+      },
+      "CC_0_wave3Address": {
+        "ports": [
+          "CC_0/wave3Address",
+          "BlockRam_0/wave3AddressB"
+        ]
+      },
+      "CC_0_waveRef0Address": {
+        "ports": [
+          "CC_0/waveRef0Address",
+          "BRAMMUX_0/waveRef0Address"
+        ]
+      },
+      "CC_0_waveRef1Address": {
+        "ports": [
+          "CC_0/waveRef1Address",
+          "BRAMMUX_0/waveRef1Address"
+        ]
+      },
+      "CC_0_waveRef2Address": {
+        "ports": [
+          "CC_0/waveRef2Address",
+          "BRAMMUX_0/waveRef2Address"
+        ]
+      },
+      "CC_0_waveRef3Address": {
+        "ports": [
+          "CC_0/waveRef3Address",
+          "BRAMMUX_0/waveRef3Address"
         ]
       },
       "axi_gpio_1_gpio2_io_o": {
@@ -1103,6 +1868,14 @@
           "axi_gpio_1/gpio_io_i"
         ]
       },
+      "clk1Mhz_0_clk1Mhz": {
+        "ports": [
+          "clk1Mhz_0/clk1Mhz",
+          "BlockRam_0/clk1Mhz",
+          "CC_0/clk1Mhz",
+          "waveParser_0/clk1Mhz"
+        ]
+      },
       "clk_in1_0_1": {
         "ports": [
           "clk",
@@ -1113,6 +1886,14 @@
         "ports": [
           "compress_64_to_32_0/out_data",
           "blk_mem_gen_0/dinb"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "waveParser_0/wave",
+          "waveParser_0/waveRef",
+          "waveParser_0/wave1"
         ]
       },
       "mdm_1_debug_sys_rst": {
@@ -1137,7 +1918,11 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "blk_mem_gen_0/clkb",
           "blk_mem_gen_0/clka",
-          "HardwareXCorr_wrapper_0/clk_0"
+          "BlockRam_0/clk",
+          "BRAMMUX_0/clk",
+          "CC_0/clk",
+          "dds_compiler_0/aclk",
+          "clk1Mhz_0/clk"
         ]
       },
       "reset_0_1": {
@@ -1175,6 +1960,96 @@
         "ports": [
           "rx",
           "axi_uartlite_0/rx"
+        ]
+      },
+      "waveParser_0_buffer": {
+        "ports": [
+          "waveParser_0/buffer",
+          "BlockRam_0/inWave2"
+        ]
+      },
+      "waveParser_0_buffer1": {
+        "ports": [
+          "waveParser_0/buffer1",
+          "BlockRam_0/inWave3"
+        ]
+      },
+      "waveParser_0_bufferRef": {
+        "ports": [
+          "waveParser_0/bufferRef",
+          "BlockRam_0/inWave1"
+        ]
+      },
+      "waveParser_0_wave00Address": {
+        "ports": [
+          "waveParser_0/wave00Address",
+          "BlockRam_0/wave00Address"
+        ]
+      },
+      "waveParser_0_wave01Address": {
+        "ports": [
+          "waveParser_0/wave01Address",
+          "BlockRam_0/wave01Address"
+        ]
+      },
+      "waveParser_0_wave02Address": {
+        "ports": [
+          "waveParser_0/wave02Address",
+          "BlockRam_0/wave02Address"
+        ]
+      },
+      "waveParser_0_wave03Address": {
+        "ports": [
+          "waveParser_0/wave03Address",
+          "BlockRam_0/wave03Address"
+        ]
+      },
+      "waveParser_0_wave0Address": {
+        "ports": [
+          "waveParser_0/wave0Address",
+          "BlockRam_0/wave0Address"
+        ]
+      },
+      "waveParser_0_wave1Address": {
+        "ports": [
+          "waveParser_0/wave1Address",
+          "BlockRam_0/wave1Address"
+        ]
+      },
+      "waveParser_0_wave2Address": {
+        "ports": [
+          "waveParser_0/wave2Address",
+          "BlockRam_0/wave2Address"
+        ]
+      },
+      "waveParser_0_wave3Address": {
+        "ports": [
+          "waveParser_0/wave3Address",
+          "BlockRam_0/wave3Address"
+        ]
+      },
+      "waveParser_0_waveRef0Address": {
+        "ports": [
+          "waveParser_0/waveRef0Address",
+          "BlockRam_0/waveRef0Address"
+        ]
+      },
+      "waveParser_0_waveRef1Address": {
+        "ports": [
+          "waveParser_0/waveRef1Address",
+          "BlockRam_0/waveRef1Address"
+        ]
+      },
+      "waveParser_0_waveRef2Address": {
+        "ports": [
+          "waveParser_0/waveRef2Address",
+          "BlockRam_0/waveRef2Address"
+        ]
+      },
+      "waveParser_0_waveRef3Address": {
+        "ports": [
+          "waveParser_0/waveRef3Address",
+          "BlockRam_0/waveRef3Address"
         ]
       },
       "xlconstant_0_dout": {

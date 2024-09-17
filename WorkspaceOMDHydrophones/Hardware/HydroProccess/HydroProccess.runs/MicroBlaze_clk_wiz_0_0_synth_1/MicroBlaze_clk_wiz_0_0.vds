@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Sep  3 02:16:49 2024
-# Process ID: 5608
-# Current directory: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1
+# Start of session at: Tue Sep 17 16:28:17 2024
+# Process ID: 17316
+# Current directory: C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1
 # Command line: vivado.exe -log MicroBlaze_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_clk_wiz_0_0.tcl
-# Log file: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/MicroBlaze_clk_wiz_0_0.vds
-# Journal file: C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1\vivado.jou
+# Log file: C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/MicroBlaze_clk_wiz_0_0.vds
+# Journal file: C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1\vivado.jou
 # Running On: DESKTOP-C8C4U9T, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
 #-----------------------------------------------------------
 source MicroBlaze_clk_wiz_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 455.441 ; gain = 161.785
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 456.285 ; gain = 162.883
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: MicroBlaze_clk_wiz_0_0
 Command: synth_design -top MicroBlaze_clk_wiz_0_0 -part xc7s25csga225-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,12 +21,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: [Device 21-403] Loading part xc7s25csga225-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19764
+INFO: [Synth 8-7075] Helper process launched with PID 10708
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1266.180 ; gain = 410.566
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1265.352 ; gain = 410.664
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk_wiz_0_0' [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.v:68]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk_wiz_0_0_clk_wiz' [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk_wiz_0_0' [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk_wiz_0_0_clk_wiz' [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
 INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
@@ -35,7 +35,7 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.1/s
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
 	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter CLKIN1_PERIOD bound to: 83.333000 - type: double 
-	Parameter CLKOUT0_DIVIDE_F bound to: 7.500000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 3.750000 - type: double 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
 	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
@@ -46,65 +46,65 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.1/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk_wiz_0_0_clk_wiz' (0#1) [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk_wiz_0_0' (0#1) [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk_wiz_0_0_clk_wiz' (0#1) [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk_wiz_0_0' (0#1) [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.v:68]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1358.145 ; gain = 503.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1358.145 ; gain = 503.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1358.145 ; gain = 503.457
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1358.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1358.145 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_board.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_board.xdc] for cell 'inst'
-Parsing XDC File [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MicroBlaze_clk_wiz_0_0_propImpl.xdc].
+Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MicroBlaze_clk_wiz_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/MicroBlaze_clk_wiz_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1358.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.336 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1358.059 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1375.379 ; gain = 0.043
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s25csga225-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -127,25 +127,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -163,37 +163,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -214,18 +214,18 @@ Report Cell Usage:
 |3     |IBUF       |     1|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1358.059 ; gain = 502.445
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1358.059 ; gain = 502.445
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 1375.379 ; gain = 503.457
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1375.379 ; gain = 520.691
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1358.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.379 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1366.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.379 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -233,9 +233,9 @@ Synth Design complete | Checksum: 8a865d8f
 INFO: [Common 17-83] Releasing license: Synthesis
 30 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1366.996 ; gain = 876.875
-INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/MicroBlaze_clk_wiz_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP MicroBlaze_clk_wiz_0_0, cache-ID = 073c0d2fd46ab62b
-INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/MicroBlaze_clk_wiz_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1375.379 ; gain = 884.402
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/MicroBlaze_clk_wiz_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP MicroBlaze_clk_wiz_0_0, cache-ID = a7370b91e05e9f17
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_clk_wiz_0_0_synth_1/MicroBlaze_clk_wiz_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file MicroBlaze_clk_wiz_0_0_utilization_synth.rpt -pb MicroBlaze_clk_wiz_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Sep  3 02:18:10 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 17 16:29:47 2024...

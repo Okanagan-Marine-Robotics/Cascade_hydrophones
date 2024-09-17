@@ -2,11 +2,11 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Sep  3 02:53:11 2024
+-- Date        : Tue Sep 17 16:29:50 2024
 -- Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top MicroBlaze_dlmb_bram_if_cntlr_1 -prefix
---               MicroBlaze_dlmb_bram_if_cntlr_1_ MicroBlaze_dlmb_bram_if_cntlr_0_sim_netlist.vhdl
--- Design      : MicroBlaze_dlmb_bram_if_cntlr_0
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dlmb_bram_if_cntlr_1/MicroBlaze_dlmb_bram_if_cntlr_1_sim_netlist.vhdl
+-- Design      : MicroBlaze_dlmb_bram_if_cntlr_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7s25csga225-1
@@ -199,6 +199,8 @@ entity MicroBlaze_dlmb_bram_if_cntlr_1_lmb_bram_if_cntlr is
   attribute C_UE_FAILING_REGISTERS of MicroBlaze_dlmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is 0;
   attribute C_WRITE_ACCESS : integer;
   attribute C_WRITE_ACCESS of MicroBlaze_dlmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is 2;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of MicroBlaze_dlmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is "lmb_bram_if_cntlr";
 end MicroBlaze_dlmb_bram_if_cntlr_1_lmb_bram_if_cntlr;
 
 architecture STRUCTURE of MicroBlaze_dlmb_bram_if_cntlr_1_lmb_bram_if_cntlr is
@@ -648,7 +650,7 @@ entity MicroBlaze_dlmb_bram_if_cntlr_1 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of MicroBlaze_dlmb_bram_if_cntlr_1 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of MicroBlaze_dlmb_bram_if_cntlr_1 : entity is "MicroBlaze_dlmb_bram_if_cntlr_0,lmb_bram_if_cntlr,{}";
+  attribute CHECK_LICENSE_TYPE of MicroBlaze_dlmb_bram_if_cntlr_1 : entity is "MicroBlaze_dlmb_bram_if_cntlr_1,lmb_bram_if_cntlr,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of MicroBlaze_dlmb_bram_if_cntlr_1 : entity is "yes";
   attribute x_core_info : string;
@@ -777,7 +779,7 @@ architecture STRUCTURE of MicroBlaze_dlmb_bram_if_cntlr_1 is
   attribute x_interface_parameter of BRAM_Rst_A : signal is "XIL_INTERFACENAME BRAM_PORT, MEM_SIZE 65536, MASTER_TYPE BRAM_CTRL, MEM_WIDTH 32, MEM_ECC NONE, READ_LATENCY 1";
   attribute x_interface_info of LMB_AddrStrobe : signal is "xilinx.com:interface:lmb:1.0 SLMB ADDRSTROBE";
   attribute x_interface_info of LMB_Clk : signal is "xilinx.com:signal:clock:1.0 CLK.LMB_Clk CLK";
-  attribute x_interface_parameter of LMB_Clk : signal is "XIL_INTERFACENAME CLK.LMB_Clk, ASSOCIATED_BUSIF SLMB:SLMB1:SLMB2:SLMB3:SLMB4:SLMB5:SLMB6:SLMB7, ASSOCIATED_RESET LMB_Rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of LMB_Clk : signal is "XIL_INTERFACENAME CLK.LMB_Clk, ASSOCIATED_BUSIF SLMB:SLMB1:SLMB2:SLMB3:SLMB4:SLMB5:SLMB6:SLMB7, ASSOCIATED_RESET LMB_Rst, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   attribute x_interface_info of LMB_ReadStrobe : signal is "xilinx.com:interface:lmb:1.0 SLMB READSTROBE";
   attribute x_interface_info of LMB_Rst : signal is "xilinx.com:signal:reset:1.0 RST.LMB_Rst RST";
   attribute x_interface_parameter of LMB_Rst : signal is "XIL_INTERFACENAME RST.LMB_Rst, POLARITY ACTIVE_HIGH, TYPE INTERCONNECT, INSERT_VIP 0";

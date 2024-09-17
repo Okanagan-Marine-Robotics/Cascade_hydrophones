@@ -2,15 +2,15 @@
 
 module TestBench;
 
-// Clock period for 100 MHz clock: 10 ns (1/100MHz = 10ns)
-parameter CLOCK_PERIOD = 10;
+// Clock period for 12 MHz clock: ~83.33 ns (1/12MHz = 83.33ns)
+parameter CLOCK_PERIOD = 83.33;
 
 // DUT inputs
 reg clk;
 
 // Instantiate the DUT
-HardwareXCorr_wrapper DUT (
-    .clk_0(clk)
+MicroBlaze_wrapper DUT (
+    .clk(clk)
 );
 
 // Clock generation

@@ -1,33 +1,27 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/ipshared/30ef" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/30ef" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
-"../../../../HydroProccess.srcs/sources_1/new/BRAMMUX.v" \
-"../../../../HydroProccess.srcs/sources_1/new/100khzclk.v" \
-"../../../../HydroProccess.srcs/sources_1/new/waveParser.v" \
-"../../../../HydroProccess.srcs/sources_1/new/AddressFixer.v" \
+verilog xil_defaultlib  --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/30ef" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" --include "../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/ipshared/30ef" \
+"../../../../HydroProccess.srcs/sources_1/new/Compressor.v" \
+"../../../../HydroProccess.srcs/sources_1/new/BlockRam.v" \
 "../../../../HydroProccess.srcs/sources_1/new/CC.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0_clk_wiz.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_clk_wiz_0_0/HardwareXCorr_clk_wiz_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_xlslice_0_0/sim/HardwareXCorr_xlslice_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_0/sim/HardwareXCorr_blk_mem_gen_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_1/sim/HardwareXCorr_blk_mem_gen_0_1.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_2/sim/HardwareXCorr_blk_mem_gen_0_2.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_0_3/sim/HardwareXCorr_blk_mem_gen_0_3.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_xlconstant_0_0/sim/HardwareXCorr_xlconstant_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_0/sim/HardwareXCorr_blk_mem_gen_4_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_1/sim/HardwareXCorr_blk_mem_gen_4_1.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_2/sim/HardwareXCorr_blk_mem_gen_4_2.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_4_3/sim/HardwareXCorr_blk_mem_gen_4_3.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_0/sim/HardwareXCorr_blk_mem_gen_8_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_1/sim/HardwareXCorr_blk_mem_gen_8_1.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_2/sim/HardwareXCorr_blk_mem_gen_8_2.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_blk_mem_gen_8_3/sim/HardwareXCorr_blk_mem_gen_8_3.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_BRAMMUX_0_0/sim/HardwareXCorr_BRAMMUX_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_clk1Mhz_0_0/sim/HardwareXCorr_clk1Mhz_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_waveParser_0_0/sim/HardwareXCorr_waveParser_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_AddressFixer_0_0/sim/HardwareXCorr_AddressFixer_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/ip/HardwareXCorr_CC_0_0/sim/HardwareXCorr_CC_0_0.v" \
-"../../../../HydroProccess.ip_user_files/bd/HardwareXCorr/sim/HardwareXCorr.v" \
-"../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/hdl/HardwareXCorr_wrapper.v" \
+"../../../../HydroProccess.srcs/sources_1/new/BRAMMUX.v" \
+"../../../../HydroProccess.srcs/sources_1/new/waveParser.v" \
+"../../../../HydroProccess.srcs/sources_1/new/100khzclk.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_clk_wiz.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_lmb_bram_1/sim/MicroBlaze_lmb_bram_1.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_xbar_1/sim/MicroBlaze_xbar_1.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_xlconstant_0_0/sim/MicroBlaze_xlconstant_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_0/sim/MicroBlaze_blk_mem_gen_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_compress_64_to_32_0_0/sim/MicroBlaze_compress_64_to_32_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_compress_64_to_32_1_0/sim/MicroBlaze_compress_64_to_32_1_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_xlconstant_1_0/sim/MicroBlaze_xlconstant_1_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/sim/MicroBlaze_BlockRam_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/sim/MicroBlaze_CC_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/sim/MicroBlaze_BRAMMUX_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/sim/MicroBlaze_waveParser_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/sim/MicroBlaze_clk1Mhz_0_0.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v" \
+"../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v" \
 "../../../../HydroProccess.srcs/sim_1/new/TestBench.v" \
 
 # compile glbl module
