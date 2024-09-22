@@ -1,12 +1,12 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Sep 10 01:39:53 2024
--- Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top MicroBlaze_compress_64_to_32_1_0 -prefix
---               MicroBlaze_compress_64_to_32_1_0_ MicroBlaze_compress_64_to_32_0_0_stub.vhdl
--- Design      : MicroBlaze_compress_64_to_32_0_0
+-- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+-- Date        : Sat Sep 21 21:07:34 2024
+-- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_compress_64_to_32_1_0/MicroBlaze_compress_64_to_32_1_0_stub.vhdl
+-- Design      : MicroBlaze_compress_64_to_32_1_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s25csga225-1
 -- --------------------------------------------------------------------------------
@@ -27,6 +27,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "in_data[63:0],out_data[31:0]";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "compress_64_to_32,Vivado 2023.1";
+attribute X_CORE_INFO of stub : architecture is "compress_64_to_32,Vivado 2023.2";
 begin
 end;

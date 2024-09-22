@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Sep 17 16:29:48 2024
--- Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+-- Date        : Sat Sep 21 22:51:37 2024
+-- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_stub.vhdl
+--               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_stub.vhdl
 -- Design      : MicroBlaze_clk1Mhz_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s25csga225-1
@@ -27,6 +27,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "clk,clk1Mhz";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "clk1Mhz,Vivado 2023.1";
+attribute X_CORE_INFO of stub : architecture is "clk1Mhz,Vivado 2023.2";
 begin
 end;

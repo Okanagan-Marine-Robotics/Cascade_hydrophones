@@ -7,7 +7,7 @@
       "name": "HardwareXCorr",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.1"
+      "tool_version": "2023.2"
     },
     "design_tree": {
       "clk_wiz_0": "",
@@ -56,6 +56,7 @@
     "components": {
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "13",
         "xci_name": "HardwareXCorr_clk_wiz_0_0",
         "xci_path": "ip\\HardwareXCorr_clk_wiz_0_0\\HardwareXCorr_clk_wiz_0_0.xci",
         "inst_hier_path": "clk_wiz_0",
@@ -79,6 +80,7 @@
       },
       "dds_compiler_1": {
         "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "ip_revision": "23",
         "xci_name": "HardwareXCorr_dds_compiler_1_0",
         "xci_path": "ip\\HardwareXCorr_dds_compiler_1_0\\HardwareXCorr_dds_compiler_1_0.xci",
         "inst_hier_path": "dds_compiler_1",
@@ -126,6 +128,7 @@
       },
       "xlslice_0": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
         "xci_name": "HardwareXCorr_xlslice_0_0",
         "xci_path": "ip\\HardwareXCorr_xlslice_0_0\\HardwareXCorr_xlslice_0_0.xci",
         "inst_hier_path": "xlslice_0",
@@ -135,15 +138,22 @@
           },
           "DIN_WIDTH": {
             "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "12"
           }
         }
       },
       "blk_mem_gen_0": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_0_0",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_0_0\\HardwareXCorr_blk_mem_gen_0_0.xci",
         "inst_hier_path": "blk_mem_gen_0",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -153,10 +163,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -166,10 +206,14 @@
       },
       "blk_mem_gen_1": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_0_1",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_0_1\\HardwareXCorr_blk_mem_gen_0_1.xci",
         "inst_hier_path": "blk_mem_gen_1",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -179,10 +223,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -192,10 +266,14 @@
       },
       "blk_mem_gen_2": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_0_2",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_0_2\\HardwareXCorr_blk_mem_gen_0_2.xci",
         "inst_hier_path": "blk_mem_gen_2",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -205,10 +283,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -218,10 +326,14 @@
       },
       "blk_mem_gen_3": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_0_3",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_0_3\\HardwareXCorr_blk_mem_gen_0_3.xci",
         "inst_hier_path": "blk_mem_gen_3",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -231,10 +343,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -244,16 +386,21 @@
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
         "xci_name": "HardwareXCorr_xlconstant_0_0",
         "xci_path": "ip\\HardwareXCorr_xlconstant_0_0\\HardwareXCorr_xlconstant_0_0.xci",
         "inst_hier_path": "xlconstant_0"
       },
       "blk_mem_gen_4": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_4_0",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_4_0\\HardwareXCorr_blk_mem_gen_4_0.xci",
         "inst_hier_path": "blk_mem_gen_4",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -263,10 +410,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -276,10 +453,14 @@
       },
       "blk_mem_gen_5": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_4_1",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_4_1\\HardwareXCorr_blk_mem_gen_4_1.xci",
         "inst_hier_path": "blk_mem_gen_5",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -289,10 +470,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -302,10 +513,14 @@
       },
       "blk_mem_gen_6": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_4_2",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_4_2\\HardwareXCorr_blk_mem_gen_4_2.xci",
         "inst_hier_path": "blk_mem_gen_6",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -315,10 +530,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -328,10 +573,14 @@
       },
       "blk_mem_gen_7": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_4_3",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_4_3\\HardwareXCorr_blk_mem_gen_4_3.xci",
         "inst_hier_path": "blk_mem_gen_7",
         "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
           "Enable_A": {
             "value": "Always_Enabled"
           },
@@ -341,10 +590,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -354,12 +633,16 @@
       },
       "blk_mem_gen_8": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_8_0",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_0\\HardwareXCorr_blk_mem_gen_8_0.xci",
         "inst_hier_path": "blk_mem_gen_8",
         "parameters": {
           "Assume_Synchronous_Clk": {
             "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
           },
           "Enable_A": {
             "value": "Always_Enabled"
@@ -370,10 +653,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -383,12 +696,16 @@
       },
       "blk_mem_gen_9": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_8_1",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_1\\HardwareXCorr_blk_mem_gen_8_1.xci",
         "inst_hier_path": "blk_mem_gen_9",
         "parameters": {
           "Assume_Synchronous_Clk": {
             "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
           },
           "Enable_A": {
             "value": "Always_Enabled"
@@ -399,10 +716,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -412,12 +759,16 @@
       },
       "blk_mem_gen_10": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_8_2",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_2\\HardwareXCorr_blk_mem_gen_8_2.xci",
         "inst_hier_path": "blk_mem_gen_10",
         "parameters": {
           "Assume_Synchronous_Clk": {
             "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
           },
           "Enable_A": {
             "value": "Always_Enabled"
@@ -428,10 +779,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -441,12 +822,16 @@
       },
       "blk_mem_gen_11": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "HardwareXCorr_blk_mem_gen_8_3",
         "xci_path": "ip\\HardwareXCorr_blk_mem_gen_8_3\\HardwareXCorr_blk_mem_gen_8_3.xci",
         "inst_hier_path": "blk_mem_gen_11",
         "parameters": {
           "Assume_Synchronous_Clk": {
             "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
           },
           "Enable_A": {
             "value": "Always_Enabled"
@@ -457,10 +842,40 @@
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Read_Width_A": {
+            "value": "12"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "2501"
           },
           "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
             "value": "12"
           },
           "use_bram_block": {
@@ -470,6 +885,7 @@
       },
       "BRAMMUX_0": {
         "vlnv": "xilinx.com:module_ref:BRAMMUX:1.0",
+        "ip_revision": "1",
         "xci_name": "HardwareXCorr_BRAMMUX_0_0",
         "xci_path": "ip\\HardwareXCorr_BRAMMUX_0_0\\HardwareXCorr_BRAMMUX_0_0.xci",
         "inst_hier_path": "BRAMMUX_0",
@@ -561,26 +977,13 @@
           },
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              }
-            }
+            "direction": "I"
           }
         }
       },
       "AddressFixer_0": {
         "vlnv": "xilinx.com:module_ref:AddressFixer:1.0",
+        "ip_revision": "1",
         "xci_name": "HardwareXCorr_AddressFixer_0_0",
         "xci_path": "ip\\HardwareXCorr_AddressFixer_0_0\\HardwareXCorr_AddressFixer_0_0.xci",
         "inst_hier_path": "AddressFixer_0",
@@ -597,13 +1000,14 @@
           },
           "address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           }
         }
       },
       "waveParser_0": {
         "vlnv": "xilinx.com:module_ref:waveParser:1.0",
+        "ip_revision": "1",
         "xci_name": "HardwareXCorr_waveParser_0_0",
         "xci_path": "ip\\HardwareXCorr_waveParser_0_0\\HardwareXCorr_waveParser_0_0.xci",
         "inst_hier_path": "waveParser_0",
@@ -710,6 +1114,7 @@
       },
       "CC_0": {
         "vlnv": "xilinx.com:module_ref:CC:1.0",
+        "ip_revision": "1",
         "xci_name": "HardwareXCorr_CC_0_0",
         "xci_path": "ip\\HardwareXCorr_CC_0_0\\HardwareXCorr_CC_0_0.xci",
         "inst_hier_path": "CC_0",
@@ -721,21 +1126,7 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              }
-            }
+            "direction": "I"
           },
           "clk1Mhz": {
             "direction": "I"
@@ -879,6 +1270,7 @@
       },
       "clk1Mhz_0": {
         "vlnv": "xilinx.com:module_ref:clk1Mhz:1.0",
+        "ip_revision": "1",
         "xci_name": "HardwareXCorr_clk1Mhz_0_0",
         "xci_path": "ip\\HardwareXCorr_clk1Mhz_0_0\\HardwareXCorr_clk1Mhz_0_0.xci",
         "inst_hier_path": "clk1Mhz_0",
@@ -1132,13 +1524,15 @@
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
+          "BRAMMUX_0/clk",
+          "CC_0/clk",
           "blk_mem_gen_0/clka",
-          "blk_mem_gen_2/clka",
-          "blk_mem_gen_1/clka",
-          "blk_mem_gen_3/clka",
           "blk_mem_gen_0/clkb",
-          "blk_mem_gen_2/clkb",
+          "blk_mem_gen_1/clka",
           "blk_mem_gen_1/clkb",
+          "blk_mem_gen_2/clka",
+          "blk_mem_gen_2/clkb",
+          "blk_mem_gen_3/clka",
           "blk_mem_gen_3/clkb",
           "blk_mem_gen_4/clka",
           "blk_mem_gen_4/clkb",
@@ -1149,14 +1543,12 @@
           "blk_mem_gen_7/clka",
           "blk_mem_gen_7/clkb",
           "blk_mem_gen_8/clka",
+          "blk_mem_gen_8/clkb",
           "blk_mem_gen_9/clka",
           "blk_mem_gen_9/clkb",
-          "blk_mem_gen_8/clkb",
           "blk_mem_gen_10/clkb",
           "blk_mem_gen_11/clka",
           "blk_mem_gen_11/clkb",
-          "BRAMMUX_0/clk",
-          "CC_0/clk",
           "clk1Mhz_0/clk"
         ]
       },
@@ -1178,9 +1570,9 @@
       "waveParser_0_buffer1": {
         "ports": [
           "waveParser_0/buffer1",
-          "blk_mem_gen_10/dina",
-          "blk_mem_gen_9/dina",
           "blk_mem_gen_8/dina",
+          "blk_mem_gen_9/dina",
+          "blk_mem_gen_10/dina",
           "blk_mem_gen_11/dina"
         ]
       },
@@ -1188,8 +1580,8 @@
         "ports": [
           "waveParser_0/bufferRef",
           "blk_mem_gen_0/dinb",
-          "blk_mem_gen_2/dinb",
           "blk_mem_gen_1/dinb",
+          "blk_mem_gen_2/dinb",
           "blk_mem_gen_3/dinb"
         ]
       },
@@ -1269,8 +1661,8 @@
         "ports": [
           "xlconstant_0/dout",
           "blk_mem_gen_0/web",
-          "blk_mem_gen_2/web",
           "blk_mem_gen_1/web",
+          "blk_mem_gen_2/web",
           "blk_mem_gen_3/web",
           "blk_mem_gen_4/wea",
           "blk_mem_gen_5/wea",

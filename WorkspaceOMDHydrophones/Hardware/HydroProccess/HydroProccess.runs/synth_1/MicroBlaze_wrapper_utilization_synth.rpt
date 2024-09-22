@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Sep 17 16:31:11 2024
-| Host         : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sat Sep 21 23:12:56 2024
+| Host         : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 | Command      : report_utilization -file MicroBlaze_wrapper_utilization_synth.rpt -pb MicroBlaze_wrapper_utilization_synth.pb
 | Design       : MicroBlaze_wrapper
 | Device       : xc7s25csga225-1
@@ -160,14 +160,14 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------------------------------+------+
 | MicroBlaze_xbar_1                |    1 |
 | MicroBlaze_waveParser_0_0        |    1 |
-| MicroBlaze_rst_clk_wiz_0_100M_1  |    1 |
-| MicroBlaze_microblaze_0_1        |    1 |
-| MicroBlaze_mdm_1_1               |    1 |
-| MicroBlaze_lmb_bram_1            |    1 |
-| MicroBlaze_ilmb_v10_1            |    1 |
-| MicroBlaze_ilmb_bram_if_cntlr_1  |    1 |
-| MicroBlaze_dlmb_v10_1            |    1 |
-| MicroBlaze_dlmb_bram_if_cntlr_1  |    1 |
+| MicroBlaze_rst_clk_wiz_0_200M_0  |    1 |
+| MicroBlaze_microblaze_0_2        |    1 |
+| MicroBlaze_mdm_1_2               |    1 |
+| MicroBlaze_lmb_bram_2            |    1 |
+| MicroBlaze_ilmb_v10_2            |    1 |
+| MicroBlaze_ilmb_bram_if_cntlr_2  |    1 |
+| MicroBlaze_dlmb_v10_2            |    1 |
+| MicroBlaze_dlmb_bram_if_cntlr_2  |    1 |
 | MicroBlaze_dds_compiler_0_0      |    1 |
 | MicroBlaze_compress_64_to_32_1_0 |    1 |
 | MicroBlaze_compress_64_to_32_0_0 |    1 |
@@ -180,6 +180,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | MicroBlaze_CC_0_0                |    1 |
 | MicroBlaze_BlockRam_0_0          |    1 |
 | MicroBlaze_BRAMMUX_0_0           |    1 |
+| MicroBlaze_AddressFixer_0_0      |    1 |
 +----------------------------------+------+
 
 

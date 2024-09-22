@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Sep 17 16:29:48 2024
--- Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+-- Date        : Sat Sep 21 22:51:37 2024
+-- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_sim_netlist.vhdl
+--               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_sim_netlist.vhdl
 -- Design      : MicroBlaze_clk1Mhz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -33,26 +33,25 @@ architecture STRUCTURE of MicroBlaze_clk1Mhz_0_0_clk1Mhz is
   signal count_reg : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal p_0_in : STD_LOGIC_VECTOR ( 10 downto 0 );
   attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \count[10]_i_3\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \count[3]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \count[4]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \count[6]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \count[7]_i_1\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \count[8]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \count[9]_i_1\ : label is "soft_lutpair0";
 begin
-clk1Mhz_INST_0: unisim.vcomponents.LUT6
+clk1Mhz_INST_0: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFFFEFFFFFFFF"
+      INIT => X"FFFEFFFF"
     )
         port map (
-      I0 => count_reg(8),
-      I1 => count_reg(7),
-      I2 => count_reg(10),
-      I3 => count_reg(9),
-      I4 => count_reg(6),
-      I5 => clk1Mhz_INST_0_i_1_n_0,
+      I0 => count_reg(9),
+      I1 => count_reg(10),
+      I2 => count_reg(7),
+      I3 => count_reg(8),
+      I4 => clk1Mhz_INST_0_i_1_n_0,
       O => clk1Mhz
     );
 clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
@@ -60,11 +59,11 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
       INIT => X"01FFFFFF"
     )
         port map (
-      I0 => count_reg(1),
-      I1 => count_reg(2),
-      I2 => count_reg(3),
-      I3 => count_reg(5),
-      I4 => count_reg(4),
+      I0 => count_reg(2),
+      I1 => count_reg(3),
+      I2 => count_reg(4),
+      I3 => count_reg(6),
+      I4 => count_reg(5),
       O => clk1Mhz_INST_0_i_1_n_0
     );
 \count[0]_i_1\: unisim.vcomponents.LUT1
@@ -82,7 +81,7 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
         port map (
       I0 => count_reg(1),
       I1 => count_reg(0),
-      I2 => count_reg(6),
+      I2 => count_reg(7),
       I3 => \count[10]_i_3_n_0\,
       I4 => \count[10]_i_4_n_0\,
       O => clear
@@ -105,10 +104,10 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
       INIT => X"EFFF"
     )
         port map (
-      I0 => count_reg(10),
-      I1 => count_reg(3),
-      I2 => count_reg(5),
-      I3 => count_reg(2),
+      I0 => count_reg(2),
+      I1 => count_reg(10),
+      I2 => count_reg(6),
+      I3 => count_reg(3),
       O => \count[10]_i_3_n_0\
     );
 \count[10]_i_4\: unisim.vcomponents.LUT4
@@ -116,10 +115,10 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
       INIT => X"FFFE"
     )
         port map (
-      I0 => count_reg(7),
+      I0 => count_reg(8),
       I1 => count_reg(9),
       I2 => count_reg(4),
-      I3 => count_reg(8),
+      I3 => count_reg(5),
       O => \count[10]_i_4_n_0\
     );
 \count[10]_i_5\: unisim.vcomponents.LUT6
@@ -232,7 +231,7 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
       I4 => count_reg(9),
       O => p_0_in(9)
     );
-\count_reg[0]\: unisim.vcomponents.FDRE
+\count_reg[0]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0'
     )
@@ -241,7 +240,7 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
       CE => '1',
       D => p_0_in(0),
       Q => count_reg(0),
-      R => clear
+      S => clear
     );
 \count_reg[10]\: unisim.vcomponents.FDRE
     generic map(
@@ -372,7 +371,7 @@ entity MicroBlaze_clk1Mhz_0_0 is
   attribute IP_DEFINITION_SOURCE : string;
   attribute IP_DEFINITION_SOURCE of MicroBlaze_clk1Mhz_0_0 : entity is "module_ref";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of MicroBlaze_clk1Mhz_0_0 : entity is "clk1Mhz,Vivado 2023.1";
+  attribute X_CORE_INFO of MicroBlaze_clk1Mhz_0_0 : entity is "clk1Mhz,Vivado 2023.2";
 end MicroBlaze_clk1Mhz_0_0;
 
 architecture STRUCTURE of MicroBlaze_clk1Mhz_0_0 is

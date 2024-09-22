@@ -8,10 +8,10 @@ module clk1Mhz(
     reg [10:0] count = 0;
     
     always @(posedge clk) begin
-        if (count != 100) count = count + 1; 
-        else count = 0;
+        if (count != 200) count = count + 1; 
+        else count = 1;
     end
     
-    assign clk1Mhz = (count<50)?0:1;
+    assign clk1Mhz = (count<100)?0:1;
     
 endmodule

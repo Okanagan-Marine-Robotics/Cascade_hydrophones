@@ -4,7 +4,7 @@
     "xci_name": "HardwareXCorr_xlslice_0_0",
     "cell_name": "xlslice_0",
     "component_reference": "xilinx.com:ip:xlslice:1.0",
-    "ip_revision": "2",
+    "ip_revision": "3",
     "gen_directory": "../../../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/ip/HardwareXCorr_xlslice_0_0",
     "parameters": {
       "component_parameters": {
@@ -12,7 +12,7 @@
         "DIN_TO": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "DIN_FROM": [ { "value": "11", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "DIN_WIDTH": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "DOUT_WIDTH": [ { "value": "12", "resolve_type": "user", "format": "long", "usage": "all" } ]
+        "DOUT_WIDTH": [ { "value": "12", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "DIN_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -21,7 +21,7 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "spartan7" } ],
-        "BASE_BOARD_PART": [ { "value": "digilentinc.com:cmod-s7-25:part0:1.0" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7s25" } ],
         "PACKAGE": [ { "value": "csga225" } ],
@@ -34,12 +34,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2" } ],
+        "IPREVISION": [ { "value": "3" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../HydroProccess.gen/sources_1/bd/HardwareXCorr/ip/HardwareXCorr_xlslice_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

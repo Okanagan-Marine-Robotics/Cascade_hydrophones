@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Sep 17 16:29:52 2024
--- Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+-- Date        : Sat Sep 21 21:07:12 2024
+-- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0_sim_netlist.vhdl
+--               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0_sim_netlist.vhdl
 -- Design      : MicroBlaze_axi_uartlite_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -3195,8 +3195,8 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity MicroBlaze_axi_uartlite_0_0_uartlite_tx is
   port (
-    tx : out STD_LOGIC;
     FIFO_Full_reg : out STD_LOGIC;
+    tx : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     Interrupt0 : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
@@ -3241,8 +3241,6 @@ architecture STRUCTURE of MicroBlaze_axi_uartlite_0_0_uartlite_tx is
   signal tx_Data_Enable_i_1_n_0 : STD_LOGIC;
   signal tx_Data_Enable_reg_n_0 : STD_LOGIC;
   signal tx_Start : STD_LOGIC;
-  attribute KEEP : string;
-  attribute KEEP of TX_reg : label is "yes";
   attribute srl_bus_name : string;
   attribute srl_bus_name of \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg ";
   attribute srl_name : string;
@@ -3479,9 +3477,9 @@ use UNISIM.VCOMPONENTS.ALL;
 entity MicroBlaze_axi_uartlite_0_0_uartlite_core is
   port (
     bus2ip_reset : out STD_LOGIC;
-    tx : out STD_LOGIC;
     rx_Buffer_Full : out STD_LOGIC;
     tx_Buffer_Full : out STD_LOGIC;
+    tx : out STD_LOGIC;
     interrupt : out STD_LOGIC;
     status_reg : out STD_LOGIC_VECTOR ( 1 downto 0 );
     enable_interrupts : out STD_LOGIC;
@@ -3887,7 +3885,7 @@ entity MicroBlaze_axi_uartlite_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of MicroBlaze_axi_uartlite_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of MicroBlaze_axi_uartlite_0_0 : entity is "axi_uartlite,Vivado 2023.1";
+  attribute x_core_info of MicroBlaze_axi_uartlite_0_0 : entity is "axi_uartlite,Vivado 2023.2";
 end MicroBlaze_axi_uartlite_0_0;
 
 architecture STRUCTURE of MicroBlaze_axi_uartlite_0_0 is

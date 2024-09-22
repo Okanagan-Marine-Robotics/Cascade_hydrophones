@@ -1,6 +1,0 @@
-21:55:59 **** Incremental Build of configuration Debug for project iotest_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
-
-21:55:59 Build Finished (took 103ms)
-

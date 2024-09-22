@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -469,8 +469,8 @@ void MicroBlaze_xbar_1::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "1");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "1");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -1257,8 +1257,8 @@ void MicroBlaze_xbar_1::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "1");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "1");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -2045,8 +2045,8 @@ void MicroBlaze_xbar_1::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "1");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "1");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -2635,8 +2635,8 @@ MicroBlaze_xbar_1::MicroBlaze_xbar_1(const sc_core::sc_module_name& nm) : MicroB
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "1");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "1");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -3421,8 +3421,8 @@ MicroBlaze_xbar_1::MicroBlaze_xbar_1(const sc_core::sc_module_name& nm) : MicroB
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "1");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "1");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");

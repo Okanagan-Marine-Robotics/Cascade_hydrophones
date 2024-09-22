@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Sep 17 16:29:48 2024
-// Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+// Date        : Sat Sep 21 22:51:37 2024
+// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_sim_netlist.v
+//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_sim_netlist.v
 // Design      : MicroBlaze_clk1Mhz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "MicroBlaze_clk1Mhz_0_0,clk1Mhz,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "clk1Mhz,Vivado 2023.1" *) 
+(* X_CORE_INFO = "clk1Mhz,Vivado 2023.2" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_clk1Mhz_0_0
    (clk,
@@ -47,24 +47,23 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
   wire [10:0]count_reg;
   wire [10:0]p_0_in;
 
-  LUT6 #(
-    .INIT(64'hFFFFFFFEFFFFFFFF)) 
+  LUT5 #(
+    .INIT(32'hFFFEFFFF)) 
     clk1Mhz_INST_0
-       (.I0(count_reg[8]),
-        .I1(count_reg[7]),
-        .I2(count_reg[10]),
-        .I3(count_reg[9]),
-        .I4(count_reg[6]),
-        .I5(clk1Mhz_INST_0_i_1_n_0),
+       (.I0(count_reg[9]),
+        .I1(count_reg[10]),
+        .I2(count_reg[7]),
+        .I3(count_reg[8]),
+        .I4(clk1Mhz_INST_0_i_1_n_0),
         .O(clk1Mhz));
   LUT5 #(
     .INIT(32'h01FFFFFF)) 
     clk1Mhz_INST_0_i_1
-       (.I0(count_reg[1]),
-        .I1(count_reg[2]),
-        .I2(count_reg[3]),
-        .I3(count_reg[5]),
-        .I4(count_reg[4]),
+       (.I0(count_reg[2]),
+        .I1(count_reg[3]),
+        .I2(count_reg[4]),
+        .I3(count_reg[6]),
+        .I4(count_reg[5]),
         .O(clk1Mhz_INST_0_i_1_n_0));
   LUT1 #(
     .INIT(2'h1)) 
@@ -76,7 +75,7 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
     \count[10]_i_1 
        (.I0(count_reg[1]),
         .I1(count_reg[0]),
-        .I2(count_reg[6]),
+        .I2(count_reg[7]),
         .I3(\count[10]_i_3_n_0 ),
         .I4(\count[10]_i_4_n_0 ),
         .O(clear));
@@ -90,21 +89,22 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .I4(count_reg[9]),
         .I5(count_reg[10]),
         .O(p_0_in[10]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'hEFFF)) 
     \count[10]_i_3 
-       (.I0(count_reg[10]),
-        .I1(count_reg[3]),
-        .I2(count_reg[5]),
-        .I3(count_reg[2]),
+       (.I0(count_reg[2]),
+        .I1(count_reg[10]),
+        .I2(count_reg[6]),
+        .I3(count_reg[3]),
         .O(\count[10]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \count[10]_i_4 
-       (.I0(count_reg[7]),
+       (.I0(count_reg[8]),
         .I1(count_reg[9]),
         .I2(count_reg[4]),
-        .I3(count_reg[8]),
+        .I3(count_reg[5]),
         .O(\count[10]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'h8000000000000000)) 
@@ -167,7 +167,6 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
        (.I0(\count[10]_i_5_n_0 ),
         .I1(count_reg[6]),
         .O(p_0_in[6]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[7]_i_1 
@@ -194,14 +193,14 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .I3(count_reg[8]),
         .I4(count_reg[9]),
         .O(p_0_in[9]));
-  FDRE #(
+  FDSE #(
     .INIT(1'b0)) 
     \count_reg[0] 
        (.C(clk),
         .CE(1'b1),
         .D(p_0_in[0]),
         .Q(count_reg[0]),
-        .R(clear));
+        .S(clear));
   FDRE #(
     .INIT(1'b0)) 
     \count_reg[10] 

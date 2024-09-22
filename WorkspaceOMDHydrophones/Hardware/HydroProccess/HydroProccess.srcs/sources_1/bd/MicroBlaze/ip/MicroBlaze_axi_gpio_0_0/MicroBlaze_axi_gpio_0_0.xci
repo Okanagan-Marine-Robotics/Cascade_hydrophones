@@ -4,7 +4,7 @@
     "xci_name": "MicroBlaze_axi_gpio_0_0",
     "cell_name": "axi_gpio_0",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
-    "ip_revision": "30",
+    "ip_revision": "31",
     "gen_directory": "../../../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_0",
     "parameters": {
       "component_parameters": {
@@ -15,7 +15,7 @@
         "C_ALL_INPUTS": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_TRI_DEFAULT_2": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_DOUT_DEFAULT_2": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
-        "C_DOUT_DEFAULT": [ { "value": "0x00000001", "value_src": "user", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
+        "C_DOUT_DEFAULT": [ { "value": "0x00000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_ALL_INPUTS_2": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_INTERRUPT_PRESENT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "MicroBlaze_axi_gpio_0_0", "resolve_type": "user", "usage": "all" } ],
@@ -36,7 +36,7 @@
         "C_ALL_OUTPUTS": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ALL_OUTPUTS_2": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_INTERRUPT_PRESENT": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_DOUT_DEFAULT": [ { "value": "0x00000001", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_DOUT_DEFAULT": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_TRI_DEFAULT": [ { "value": "0xFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_IS_DUAL": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_DOUT_DEFAULT_2": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
@@ -44,7 +44,7 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "spartan7" } ],
-        "BASE_BOARD_PART": [ { "value": "digilentinc.com:cmod-s7-25:part0:1.0" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7s25" } ],
         "PACKAGE": [ { "value": "csga225" } ],
@@ -57,12 +57,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "30" } ],
+        "IPREVISION": [ { "value": "31" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },

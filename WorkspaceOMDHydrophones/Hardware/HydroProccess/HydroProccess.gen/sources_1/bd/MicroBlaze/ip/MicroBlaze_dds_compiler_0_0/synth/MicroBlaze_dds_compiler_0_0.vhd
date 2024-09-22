@@ -11,7 +11,7 @@
 -- otherwise provided in a valid license issued to you by
 -- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:dds_compiler:6.0
--- IP Revision: 22
+-- IP Revision: 23
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY dds_compiler_v6_0_22;
-USE dds_compiler_v6_0_22.dds_compiler_v6_0_22;
+LIBRARY dds_compiler_v6_0_23;
+USE dds_compiler_v6_0_23.dds_compiler_v6_0_23;
 
 ENTITY MicroBlaze_dds_compiler_0_0 IS
   PORT (
@@ -69,7 +69,7 @@ END MicroBlaze_dds_compiler_0_0;
 ARCHITECTURE MicroBlaze_dds_compiler_0_0_arch OF MicroBlaze_dds_compiler_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF MicroBlaze_dds_compiler_0_0_arch: ARCHITECTURE IS "yes";
-  COMPONENT dds_compiler_v6_0_22 IS
+  COMPONENT dds_compiler_v6_0_23 IS
     GENERIC (
       C_XDEVICEFAMILY : STRING;
       C_MODE_OF_OPERATION : INTEGER;
@@ -151,13 +151,13 @@ ARCHITECTURE MicroBlaze_dds_compiler_0_0_arch OF MicroBlaze_dds_compiler_0_0 IS
       event_s_config_tlast_missing : OUT STD_LOGIC;
       event_s_config_tlast_unexpected : OUT STD_LOGIC
     );
-  END COMPONENT dds_compiler_v6_0_22;
+  END COMPONENT dds_compiler_v6_0_23;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF MicroBlaze_dds_compiler_0_0_arch: ARCHITECTURE IS "dds_compiler_v6_0_22,Vivado 2023.1";
+  ATTRIBUTE X_CORE_INFO OF MicroBlaze_dds_compiler_0_0_arch: ARCHITECTURE IS "dds_compiler_v6_0_23,Vivado 2023.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
-  ATTRIBUTE CHECK_LICENSE_TYPE OF MicroBlaze_dds_compiler_0_0_arch : ARCHITECTURE IS "MicroBlaze_dds_compiler_0_0,dds_compiler_v6_0_22,{}";
+  ATTRIBUTE CHECK_LICENSE_TYPE OF MicroBlaze_dds_compiler_0_0_arch : ARCHITECTURE IS "MicroBlaze_dds_compiler_0_0,dds_compiler_v6_0_23,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF MicroBlaze_dds_compiler_0_0_arch: ARCHITECTURE IS "MicroBlaze_dds_compiler_0_0,dds_compiler_v6_0_22,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=dds_compiler,x_ipVersion=6.0,x_ipCoreRevision=22,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_XDEVICEFAMILY=spartan7,C_MODE_OF_OPERATION=0,C_MODULUS=9,C_ACCUMULATOR_WIDTH=12,C_CHANNELS=1,C_HAS_PHASE_OUT=1,C_HAS_PHASEGEN=1,C_HAS_SINCOS=1,C_LATENCY=7,C_MEM_TYPE=1,C_NEGATIVE_COSINE=0,C_NEGATIVE_SINE=0,C_NOISE_SHAPING=0,C_OUTPUTS_REQUIRED=0,C_OUTPUT_FORM=0,C_OUTPUT_WIDTH=12,C_PHA" & 
+  ATTRIBUTE CORE_GENERATION_INFO OF MicroBlaze_dds_compiler_0_0_arch: ARCHITECTURE IS "MicroBlaze_dds_compiler_0_0,dds_compiler_v6_0_23,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=dds_compiler,x_ipVersion=6.0,x_ipCoreRevision=23,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_XDEVICEFAMILY=spartan7,C_MODE_OF_OPERATION=0,C_MODULUS=9,C_ACCUMULATOR_WIDTH=12,C_CHANNELS=1,C_HAS_PHASE_OUT=1,C_HAS_PHASEGEN=1,C_HAS_SINCOS=1,C_LATENCY=7,C_MEM_TYPE=1,C_NEGATIVE_COSINE=0,C_NEGATIVE_SINE=0,C_NOISE_SHAPING=0,C_OUTPUTS_REQUIRED=0,C_OUTPUT_FORM=0,C_OUTPUT_WIDTH=12,C_PHA" & 
 "SE_ANGLE_WIDTH=12,C_PHASE_INCREMENT=2,C_PHASE_INCREMENT_VALUE=1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0,C_RESYNC=0,C_PHASE_OFFSET=0,C_PHASE_OFFSET_VALUE=0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0,C_OPTIMISE_GOAL=0,C_USE_DSP48=0,C_POR_MODE=0,C_AMPLITUDE=0,C_HAS_ACLKEN=0,C_HAS_ARESETN=0,C_HAS_TLAST=0,C_HAS_TREADY=0,C_HAS_S_PHASE=0,C_S_PHASE_TDATA_WIDTH=1,C_S_PHASE_HAS_TUSER=0,C_S_PHASE_TUSER_WIDTH=1,C_HAS_S_CONFIG=0,C_S_CONFIG_SYNC_MODE=0,C_S_CONFIG_TDATA_WIDTH=1,C_HAS_M_DATA=1,C_M_DATA_TDATA_WIDTH=16,C_M_DATA_HAS_TUS" & 
 "ER=0,C_M_DATA_TUSER_WIDTH=1,C_HAS_M_PHASE=1,C_M_PHASE_TDATA_WIDTH=16,C_M_PHASE_HAS_TUSER=0,C_M_PHASE_TUSER_WIDTH=1,C_DEBUG_INTERFACE=0,C_CHAN_WIDTH=1}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -186,7 +186,7 @@ ARCHITECTURE MicroBlaze_dds_compiler_0_0_arch OF MicroBlaze_dds_compiler_0_0 IS
 " dependency user_offset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0}, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_phase_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_PHASE TVALID";
 BEGIN
-  U0 : dds_compiler_v6_0_22
+  U0 : dds_compiler_v6_0_23
     GENERIC MAP (
       C_XDEVICEFAMILY => "spartan7",
       C_MODE_OF_OPERATION => 0,

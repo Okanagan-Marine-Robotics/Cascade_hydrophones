@@ -4,7 +4,7 @@
     "xci_name": "MicroBlaze_xlconstant_1_0",
     "cell_name": "xlconstant_1",
     "component_reference": "xilinx.com:ip:xlconstant:1.1",
-    "ip_revision": "7",
+    "ip_revision": "8",
     "gen_directory": "../../../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_xlconstant_1_0",
     "parameters": {
       "component_parameters": {
@@ -18,7 +18,7 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "spartan7" } ],
-        "BASE_BOARD_PART": [ { "value": "digilentinc.com:cmod-s7-25:part0:1.0" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7s25" } ],
         "PACKAGE": [ { "value": "csga225" } ],
@@ -31,12 +31,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "7" } ],
+        "IPREVISION": [ { "value": "8" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_xlconstant_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

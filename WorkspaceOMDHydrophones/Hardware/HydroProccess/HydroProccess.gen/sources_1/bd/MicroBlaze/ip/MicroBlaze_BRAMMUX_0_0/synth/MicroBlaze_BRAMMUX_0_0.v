@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:BRAMMUX:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "BRAMMUX,Vivado 2023.1" *)
+(* X_CORE_INFO = "BRAMMUX,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "MicroBlaze_BRAMMUX_0_0,BRAMMUX,{}" *)
-(* CORE_GENERATION_INFO = "MicroBlaze_BRAMMUX_0_0,BRAMMUX,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=BRAMMUX,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "MicroBlaze_BRAMMUX_0_0,BRAMMUX,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=BRAMMUX,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module MicroBlaze_BRAMMUX_0_0 (

@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Sep 17 16:29:52 2024
-// Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+// Date        : Sat Sep 21 21:07:12 2024
+// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0_sim_netlist.v
+//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0_sim_netlist.v
 // Design      : MicroBlaze_axi_uartlite_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "MicroBlaze_axi_uartlite_0_0,axi_uartlite,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_uartlite,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "MicroBlaze_axi_uartlite_0_0,axi_uartlite,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_uartlite,Vivado 2023.2" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_axi_uartlite_0_0
    (s_axi_aclk,
@@ -63,7 +63,7 @@ module MicroBlaze_axi_uartlite_0_0
 
   wire \<const0> ;
   wire interrupt;
-  (* RTL_KEEP = "yes" *) (* x_interface_info = "xilinx.com:interface:uart:1.0 UART RxD" *) (* x_interface_parameter = "XIL_INTERFACENAME UART, BOARD.ASSOCIATED_PARAM UARTLITE_BOARD_INTERFACE" *) wire rx;
+  wire rx;
   wire s_axi_aclk;
   wire [3:0]s_axi_araddr;
   wire s_axi_aresetn;
@@ -2784,9 +2784,9 @@ endmodule
 (* ORIG_REF_NAME = "uartlite_core" *) 
 module MicroBlaze_axi_uartlite_0_0_uartlite_core
    (bus2ip_reset,
-    tx,
     rx_Buffer_Full,
     tx_Buffer_Full,
+    tx,
     interrupt,
     status_reg,
     enable_interrupts,
@@ -2809,9 +2809,9 @@ module MicroBlaze_axi_uartlite_0_0_uartlite_core
     rx,
     s_axi_wdata);
   output bus2ip_reset;
-  output tx;
   output rx_Buffer_Full;
   output tx_Buffer_Full;
+  output tx;
   output interrupt;
   output [1:0]status_reg;
   output enable_interrupts;
@@ -3493,8 +3493,8 @@ endmodule
 
 (* ORIG_REF_NAME = "uartlite_tx" *) 
 module MicroBlaze_axi_uartlite_0_0_uartlite_tx
-   (tx,
-    FIFO_Full_reg,
+   (FIFO_Full_reg,
+    tx,
     Q,
     Interrupt0,
     s_axi_aclk,
@@ -3511,8 +3511,8 @@ module MicroBlaze_axi_uartlite_0_0_uartlite_tx
     \INFERRED_GEN.cnt_i_reg[0] ,
     s_axi_aresetn,
     s_axi_wdata);
-  output tx;
   output FIFO_Full_reg;
+  output tx;
   output [0:0]Q;
   output Interrupt0;
   input s_axi_aclk;
@@ -3563,7 +3563,7 @@ module MicroBlaze_axi_uartlite_0_0_uartlite_tx
   wire s_axi_aresetn;
   wire [7:0]s_axi_wdata;
   wire serial_Data;
-  (* RTL_KEEP = "yes" *) wire tx;
+  wire tx;
   wire tx_Buffer_Empty_Pre;
   wire tx_DataBits;
   wire tx_DataBits0;
@@ -3602,7 +3602,6 @@ module MicroBlaze_axi_uartlite_0_0_uartlite_tx
         .I1(serial_Data),
         .I2(tx_Start),
         .O(TX0));
-  (* KEEP = "yes" *) 
   FDSE TX_reg
        (.C(s_axi_aclk),
         .CE(1'b1),

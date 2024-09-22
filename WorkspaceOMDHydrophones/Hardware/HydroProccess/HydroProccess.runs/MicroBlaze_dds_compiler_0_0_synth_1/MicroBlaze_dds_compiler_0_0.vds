@@ -1,18 +1,18 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Sep 17 16:28:18 2024
-# Process ID: 1172
-# Current directory: C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Sep 21 21:07:24 2024
+# Process ID: 16044
+# Current directory: C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1
 # Command line: vivado.exe -log MicroBlaze_dds_compiler_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_dds_compiler_0_0.tcl
-# Log file: C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/MicroBlaze_dds_compiler_0_0.vds
-# Journal file: C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1\vivado.jou
-# Running On: DESKTOP-C8C4U9T, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
+# Log file: C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/MicroBlaze_dds_compiler_0_0.vds
+# Journal file: C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-NOLS2CR, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
 #-----------------------------------------------------------
 source MicroBlaze_dds_compiler_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 456.035 ; gain = 161.688
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 564.613 ; gain = 180.949
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: MicroBlaze_dds_compiler_0_0
 Command: synth_design -top MicroBlaze_dds_compiler_0_0 -part xc7s25csga225-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,18 +21,18 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: [Device 21-403] Loading part xc7s25csga225-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7796
+INFO: [Synth 8-7075] Helper process launched with PID 3344
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.430 ; gain = 410.910
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1389.375 ; gain = 438.637
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'MicroBlaze_dds_compiler_0_0' [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:69]
-WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
-WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
-WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
-WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
-WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
-WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
-WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'MicroBlaze_dds_compiler_0_0' [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:69]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:72]
 	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
 	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
 	Parameter C_MODULUS bound to: 9 - type: integer 
@@ -80,44 +80,44 @@ WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaratio
 	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
 	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/a99f/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:189]
-INFO: [Synth 8-256] done synthesizing module 'MicroBlaze_dds_compiler_0_0' (0#1) [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:69]
-WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_23' declared at 'c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/daca/hdl/dds_compiler_v6_0_vh_rfs.vhd:46995' bound to instance 'U0' of component 'dds_compiler_v6_0_23' [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:189]
+INFO: [Synth 8-256] done synthesizing module 'MicroBlaze_dds_compiler_0_0' (0#1) [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/synth/MicroBlaze_dds_compiler_0_0.vhd:69]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module sin_cos is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port chan_addr[0] in module accum is either unconnected or has no load
 WARNING: [Synth 8-7129] Port chan_addr_del2[0] in module accum is either unconnected or has no load
 WARNING: [Synth 8-7129] Port chan_addr_del3[0] in module accum is either unconnected or has no load
@@ -151,87 +151,87 @@ WARNING: [Synth 8-7129] Port data_i[3] in module accum is either unconnected or 
 WARNING: [Synth 8-7129] Port data_i[2] in module accum is either unconnected or has no load
 WARNING: [Synth 8-7129] Port data_i[1] in module accum is either unconnected or has no load
 WARNING: [Synth 8-7129] Port data_i[0] in module accum is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RFD in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CHANNEL[0] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[11] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[10] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[9] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[8] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[7] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[6] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[5] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[4] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[3] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[2] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[1] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port COSINE[0] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDR[0] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REG_SELECT in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[11] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[10] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[9] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[8] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[7] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[6] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[5] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[4] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[3] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[2] in module dds_compiler_v6_0_22_core is either unconnected or has no load
-WARNING: [Synth 8-7129] Port PHASE_IN[1] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RFD in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CHANNEL[0] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[11] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[10] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[9] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[8] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[7] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[6] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[5] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[4] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[3] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[2] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[1] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[0] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REG_SELECT in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[11] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[10] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[9] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[8] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[7] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[6] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[5] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[4] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[3] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[2] in module dds_compiler_v6_0_23_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PHASE_IN[1] in module dds_compiler_v6_0_23_core is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1420.477 ; gain = 566.957
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1563.457 ; gain = 612.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1420.477 ; gain = 566.957
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1563.457 ; gain = 612.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1420.477 ; gain = 566.957
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1563.457 ; gain = 612.719
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1420.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1563.457 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/MicroBlaze_dds_compiler_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/MicroBlaze_dds_compiler_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/MicroBlaze_dds_compiler_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_0/MicroBlaze_dds_compiler_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1450.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1573.332 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1455.117 ; gain = 5.098
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1577.668 ; gain = 4.336
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s25csga225-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_sin.i_addr_mod_stage1.mod_sin_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -253,25 +253,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:59 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -289,37 +289,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:21 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:21 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:21 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:21 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:21 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:21 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -344,29 +344,31 @@ Report Cell Usage:
 |7     |FDRE     |   118|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:21 . Memory (MB): peak = 1577.668 ; gain = 626.930
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:06 . Memory (MB): peak = 1455.117 ; gain = 566.957
-Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1455.117 ; gain = 601.598
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1577.668 ; gain = 612.719
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:22 . Memory (MB): peak = 1577.668 ; gain = 626.930
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1455.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1577.668 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1455.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.789 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: b4d02d17
+Synth Design complete | Checksum: 5c4911e8
 INFO: [Common 17-83] Releasing license: Synthesis
 20 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 1455.117 ; gain = 967.508
-INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/MicroBlaze_dds_compiler_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP MicroBlaze_dds_compiler_0_0, cache-ID = 764ebf6070755b76
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:33 . Memory (MB): peak = 1577.789 ; gain = 1004.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1577.789 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/MicroBlaze_dds_compiler_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP MicroBlaze_dds_compiler_0_0, cache-ID = c7d2f733fbae8dd4
 INFO: [Coretcl 2-1174] Renamed 16 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/MicroBlaze_dds_compiler_0_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1577.789 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_dds_compiler_0_0_synth_1/MicroBlaze_dds_compiler_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file MicroBlaze_dds_compiler_0_0_utilization_synth.rpt -pb MicroBlaze_dds_compiler_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 17 16:30:00 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 21 21:09:33 2024...

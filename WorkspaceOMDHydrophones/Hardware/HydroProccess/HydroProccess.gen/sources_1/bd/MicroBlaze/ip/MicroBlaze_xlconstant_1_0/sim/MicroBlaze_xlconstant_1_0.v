@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:xlconstant:1.1
-// IP Revision: 7
+// IP Revision: 8
 
 `timescale 1ns/1ps
 
@@ -59,7 +59,7 @@ module MicroBlaze_xlconstant_1_0 (
 
 output wire [0 : 0] dout;
 
-  xlconstant_v1_1_7_xlconstant #(
+  xlconstant_v1_1_8_xlconstant #(
     .CONST_WIDTH(1),
     .CONST_VAL(1'H1)
   ) inst (

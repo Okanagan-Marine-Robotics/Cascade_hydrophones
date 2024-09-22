@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Cmod S7 210376B8540EA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Cmod S7-210376B8540EA-037c4093-0&quot;}}]}"/>
-	<item key="iotest_system-bitFile" value="C:\Users\JamesWilliamson\WorkspaceOMDHydrophones\Software\Test\hw\MicroBlaze_wrapper.bit"/>
-	<item key="iotest_system-bmmFile" value="C:\Users\JamesWilliamson\WorkspaceOMDHydrophones\Software\Test\hw\MicroBlaze_wrapper.mmi"/>
-	<item key="iotest_system-target" value="Local"/>
-	<item key="iotest_system-device" value="Auto Detect"/>
-	<item key="iotest_system-partial_bit" value="false"/>
-	<item key="iotest_system-skip_rev_check" value="false"/>
-	<item key="programfpga.sdxproject" value="iotest_system"/>
-	<item key="iotest_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="HelloWorld_system-bitFile" value="${project_loc:HelloWorld}/_ide/bitstream/MicroBlaze_wrapper.bit"/>
+	<item key="HelloWorld_system-bmmFile" value="${project_loc:HelloWorld}/_ide/bitstream/MicroBlaze_wrapper.mmi"/>
+	<item key="HelloWorld_system-target" value="Local"/>
+	<item key="HelloWorld_system-device" value="Auto Detect"/>
+	<item key="HelloWorld_system-partial_bit" value="false"/>
+	<item key="HelloWorld_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="HelloWorld_system"/>
+	<item key="HelloWorld_system-microblaze_0-initElf" value="bootloop"/>
 </section>
