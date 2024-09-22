@@ -13,10 +13,10 @@ module BRAMMUX(
 	input [13:0] waveRef1Address,
 	input [13:0] waveRef2Address,
 	input [13:0] waveRef3Address,
-	output reg [13:0] Ref0Address,
-	output reg [13:0] Ref1Address,
-	output reg [13:0] Ref2Address,
-	output reg [13:0] Ref3Address,
+	output reg [15:0] Ref0Address,
+	output reg [15:0] Ref1Address,
+	output reg [15:0] Ref2Address,
+	output reg [15:0] Ref3Address,
 	input clk
     );
     

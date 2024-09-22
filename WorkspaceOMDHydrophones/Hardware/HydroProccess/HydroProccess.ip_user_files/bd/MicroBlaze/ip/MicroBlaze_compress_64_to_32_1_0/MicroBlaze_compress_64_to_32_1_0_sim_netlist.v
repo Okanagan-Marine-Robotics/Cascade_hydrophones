@@ -1,20 +1,20 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Sep 10 01:39:53 2024
-// Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top MicroBlaze_compress_64_to_32_1_0 -prefix
-//               MicroBlaze_compress_64_to_32_1_0_ MicroBlaze_compress_64_to_32_0_0_sim_netlist.v
-// Design      : MicroBlaze_compress_64_to_32_0_0
+// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+// Date        : Sat Sep 21 21:07:34 2024
+// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_compress_64_to_32_1_0/MicroBlaze_compress_64_to_32_1_0_sim_netlist.v
+// Design      : MicroBlaze_compress_64_to_32_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7s25csga225-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "MicroBlaze_compress_64_to_32_0_0,compress_64_to_32,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "compress_64_to_32,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "MicroBlaze_compress_64_to_32_1_0,compress_64_to_32,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
+(* X_CORE_INFO = "compress_64_to_32,Vivado 2023.2" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_compress_64_to_32_1_0
    (in_data,
@@ -30,6 +30,7 @@ module MicroBlaze_compress_64_to_32_1_0
         .out_data(out_data));
 endmodule
 
+(* ORIG_REF_NAME = "compress_64_to_32" *) 
 module MicroBlaze_compress_64_to_32_1_0_compress_64_to_32
    (out_data,
     in_data);

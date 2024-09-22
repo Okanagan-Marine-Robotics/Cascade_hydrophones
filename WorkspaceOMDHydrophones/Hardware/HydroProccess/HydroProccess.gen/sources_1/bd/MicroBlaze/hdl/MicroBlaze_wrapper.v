@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sat Sep 21 23:10:22 2024
+//Date        : Sat Sep 21 23:38:06 2024
 //Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze_wrapper.bd
 //Design      : MicroBlaze_wrapper
@@ -12,17 +12,20 @@
 
 module MicroBlaze_wrapper
    (clk,
+    gpio_rtl_0_tri_i,
     led,
     reset,
     rx,
     tx);
   input clk;
+  input [0:0]gpio_rtl_0_tri_i;
   output [0:0]led;
   input reset;
   input rx;
   output tx;
 
   wire clk;
+  wire [0:0]gpio_rtl_0_tri_i;
   wire [0:0]led;
   wire reset;
   wire rx;
@@ -30,6 +33,7 @@ module MicroBlaze_wrapper
 
   MicroBlaze MicroBlaze_i
        (.clk(clk),
+        .gpio_rtl_0_tri_i(gpio_rtl_0_tri_i),
         .led(led),
         .reset(reset),
         .rx(rx),

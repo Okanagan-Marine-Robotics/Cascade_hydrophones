@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF4EBD59B70675ABB",
+      "boundary_crc": "0xE753566C23EB35CE",
       "device": "xc7s25csga225-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze",
       "name": "MicroBlaze",
@@ -12,7 +12,6 @@
     },
     "design_tree": {
       "clk_wiz_0": "",
-      "axi_uartlite_0": "",
       "axi_gpio_1": "",
       "axi_gpio_0": "",
       "xlconstant_0": "",
@@ -43,6 +42,22 @@
         "m00_couplers": {},
         "m01_couplers": {},
         "m02_couplers": {}
+      },
+      "axi_uartlite_0": ""
+    },
+    "interface_ports": {
+      "gpio_rtl_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
+        "port_maps": {
+          "TRI_I": {
+            "physical_name": "gpio_rtl_0_tri_i",
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          }
+        }
       }
     },
     "ports": {
@@ -74,9 +89,6 @@
           }
         }
       },
-      "rx": {
-        "direction": "I"
-      },
       "tx": {
         "direction": "O"
       },
@@ -97,6 +109,9 @@
         "direction": "O",
         "left": "0",
         "right": "0"
+      },
+      "rx": {
+        "direction": "I"
       }
     },
     "components": {
@@ -139,27 +154,6 @@
           },
           "USE_RESET": {
             "value": "false"
-          }
-        }
-      },
-      "axi_uartlite_0": {
-        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
-        "ip_revision": "33",
-        "xci_name": "MicroBlaze_axi_uartlite_0_0",
-        "xci_path": "ip\\MicroBlaze_axi_uartlite_0_0\\MicroBlaze_axi_uartlite_0_0.xci",
-        "inst_hier_path": "axi_uartlite_0",
-        "parameters": {
-          "C_BAUDRATE": {
-            "value": "115200"
-          },
-          "C_S_AXI_ACLK_FREQ_HZ": {
-            "value": "200000000"
-          },
-          "UARTLITE_BOARD_INTERFACE": {
-            "value": "Custom"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
           }
         }
       },
@@ -1679,9 +1673,22 @@
             ]
           }
         }
+      },
+      "axi_uartlite_0": {
+        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
+        "ip_revision": "33",
+        "xci_name": "MicroBlaze_axi_uartlite_0_1",
+        "xci_path": "ip\\MicroBlaze_axi_uartlite_0_1\\MicroBlaze_axi_uartlite_0_1.xci",
+        "inst_hier_path": "axi_uartlite_0"
       }
     },
     "interface_nets": {
+      "axi_gpio_0_GPIO": {
+        "interface_ports": [
+          "gpio_rtl_0",
+          "axi_gpio_0/GPIO"
+        ]
+      },
       "microblaze_0_M_AXI_DP": {
         "interface_ports": [
           "microblaze_0/M_AXI_DP",
@@ -1996,7 +2003,6 @@
           "BRAMMUX_0/clk",
           "axi_gpio_0/s_axi_aclk",
           "axi_gpio_1/s_axi_aclk",
-          "axi_uartlite_0/s_axi_aclk",
           "blk_mem_gen_0/clka",
           "blk_mem_gen_0/clkb",
           "dds_compiler_0/aclk",
@@ -2008,7 +2014,8 @@
           "microblaze_0_axi_periph/M00_ACLK",
           "microblaze_0_axi_periph/M01_ACLK",
           "microblaze_0_axi_periph/M02_ACLK",
-          "clk1Mhz_0/clk"
+          "clk1Mhz_0/clk",
+          "axi_uartlite_0/s_axi_aclk"
         ]
       },
       "reset_1": {
@@ -2035,11 +2042,11 @@
           "microblaze_0_axi_periph/S00_ARESETN",
           "axi_gpio_0/s_axi_aresetn",
           "axi_gpio_1/s_axi_aresetn",
-          "axi_uartlite_0/s_axi_aresetn",
           "microblaze_0_axi_periph/M00_ARESETN",
           "microblaze_0_axi_periph/ARESETN",
           "microblaze_0_axi_periph/M01_ARESETN",
-          "microblaze_0_axi_periph/M02_ARESETN"
+          "microblaze_0_axi_periph/M02_ARESETN",
+          "axi_uartlite_0/s_axi_aresetn"
         ]
       },
       "rx_0_1": {

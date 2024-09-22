@@ -1,28 +1,31 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Tue Sep 17 16:20:40 2024
-//Host        : DESKTOP-C8C4U9T running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+//Date        : Sat Sep 21 23:38:06 2024
+//Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=30,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=4,da_bram_cntlr_cnt=1,da_clkrst_cnt=15,da_mb_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=31,numReposBlks=25,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=7,da_bram_cntlr_cnt=1,da_clkrst_cnt=15,da_mb_cnt=3,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (clk,
+    gpio_rtl_0_tri_i,
     led,
     reset,
     rx,
     tx);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_RESET reset, CLK_DOMAIN MicroBlaze_clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_rtl_0 TRI_I" *) input [0:0]gpio_rtl_0_tri_i;
   output [0:0]led;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   input rx;
   output tx;
 
+  wire [13:0]AddressFixer_0_address;
   wire [11:0]BRAMMUX_0_Ref0;
   wire [13:0]BRAMMUX_0_Ref0Address;
   wire [11:0]BRAMMUX_0_Ref1;
@@ -43,6 +46,7 @@ module MicroBlaze
   wire [11:0]BlockRam_0_waveRef1;
   wire [11:0]BlockRam_0_waveRef2;
   wire [11:0]BlockRam_0_waveRef3;
+  wire [15:0]CC_0_count;
   wire [11:0]CC_0_wave00Address;
   wire [11:0]CC_0_wave01Address;
   wire [11:0]CC_0_wave02Address;
@@ -55,7 +59,9 @@ module MicroBlaze
   wire [13:0]CC_0_waveRef1Address;
   wire [13:0]CC_0_waveRef2Address;
   wire [13:0]CC_0_waveRef3Address;
-  wire [9:0]axi_gpio_1_gpio2_io_o;
+  wire [63:0]CC_0_xcorr;
+  wire [0:0]axi_gpio_0_GPIO_TRI_I;
+  wire [13:0]axi_gpio_1_gpio2_io_o;
   wire axi_uartlite_0_tx;
   wire [31:0]blk_mem_gen_0_douta;
   wire clk1Mhz_0_clk1Mhz;
@@ -162,10 +168,10 @@ module MicroBlaze
   wire microblaze_0_ilmb_1_READY;
   wire microblaze_0_ilmb_1_UE;
   wire microblaze_0_ilmb_1_WAIT;
-  wire reset_0_1;
-  wire [0:0]rst_clk_wiz_0_100M_bus_struct_reset;
-  wire rst_clk_wiz_0_100M_mb_reset;
-  wire [0:0]rst_clk_wiz_0_100M_peripheral_aresetn1;
+  wire reset_1;
+  wire [0:0]rst_clk_wiz_0_200M_bus_struct_reset;
+  wire rst_clk_wiz_0_200M_mb_reset;
+  wire [0:0]rst_clk_wiz_0_200M_peripheral_aresetn;
   wire rx_0_1;
   wire [11:0]waveParser_0_buffer;
   wire [11:0]waveParser_0_buffer1;
@@ -185,11 +191,15 @@ module MicroBlaze
   wire [0:0]xlconstant_0_dout;
   wire [0:0]xlconstant_1_dout;
 
+  assign axi_gpio_0_GPIO_TRI_I = gpio_rtl_0_tri_i[0];
   assign clk_in1_0_1 = clk;
   assign led[0] = xlconstant_1_dout;
-  assign reset_0_1 = reset;
+  assign reset_1 = reset;
   assign rx_0_1 = rx;
   assign tx = axi_uartlite_0_tx;
+  MicroBlaze_AddressFixer_0_0 AddressFixer_0
+       (.address(AddressFixer_0_address),
+        .counter(CC_0_count));
   MicroBlaze_BRAMMUX_0_0 BRAMMUX_0
        (.Ref0(BRAMMUX_0_Ref0),
         .Ref0Address(BRAMMUX_0_Ref0Address),
@@ -253,6 +263,7 @@ module MicroBlaze
   MicroBlaze_CC_0_0 CC_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(clk1Mhz_0_clk1Mhz),
+        .count(CC_0_count),
         .wave0(BlockRam_0_wave0),
         .wave00(BlockRam_0_wave00),
         .wave00Address(CC_0_wave00Address),
@@ -276,34 +287,13 @@ module MicroBlaze
         .waveRef2(BRAMMUX_0_Ref2),
         .waveRef2Address(CC_0_waveRef2Address),
         .waveRef3(BRAMMUX_0_Ref3),
-        .waveRef3Address(CC_0_waveRef3Address));
+        .waveRef3Address(CC_0_waveRef3Address),
+        .xcorr(CC_0_xcorr));
   MicroBlaze_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_i(1'b0),
-        .s_axi_aclk(microblaze_0_Clk),
-        .s_axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[8:0]),
-        .s_axi_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn1),
-        .s_axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
-        .s_axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
-        .s_axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[8:0]),
-        .s_axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
-        .s_axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),
-        .s_axi_bready(microblaze_0_axi_periph_M02_AXI_BREADY),
-        .s_axi_bresp(microblaze_0_axi_periph_M02_AXI_BRESP),
-        .s_axi_bvalid(microblaze_0_axi_periph_M02_AXI_BVALID),
-        .s_axi_rdata(microblaze_0_axi_periph_M02_AXI_RDATA),
-        .s_axi_rready(microblaze_0_axi_periph_M02_AXI_RREADY),
-        .s_axi_rresp(microblaze_0_axi_periph_M02_AXI_RRESP),
-        .s_axi_rvalid(microblaze_0_axi_periph_M02_AXI_RVALID),
-        .s_axi_wdata(microblaze_0_axi_periph_M02_AXI_WDATA),
-        .s_axi_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
-        .s_axi_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
-        .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID));
-  MicroBlaze_axi_gpio_1_0 axi_gpio_1
-       (.gpio2_io_o(axi_gpio_1_gpio2_io_o),
-        .gpio_io_i(blk_mem_gen_0_douta),
+       (.gpio_io_i(axi_gpio_0_GPIO_TRI_I),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(microblaze_0_axi_periph_M00_AXI_ARADDR[8:0]),
-        .s_axi_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .s_axi_aresetn(rst_clk_wiz_0_200M_peripheral_aresetn),
         .s_axi_arready(microblaze_0_axi_periph_M00_AXI_ARREADY),
         .s_axi_arvalid(microblaze_0_axi_periph_M00_AXI_ARVALID),
         .s_axi_awaddr(microblaze_0_axi_periph_M00_AXI_AWADDR[8:0]),
@@ -320,14 +310,15 @@ module MicroBlaze
         .s_axi_wready(microblaze_0_axi_periph_M00_AXI_WREADY),
         .s_axi_wstrb(microblaze_0_axi_periph_M00_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M00_AXI_WVALID));
-  MicroBlaze_axi_uartlite_0_0 axi_uartlite_0
-       (.rx(rx_0_1),
+  MicroBlaze_axi_gpio_1_0 axi_gpio_1
+       (.gpio2_io_o(axi_gpio_1_gpio2_io_o),
+        .gpio_io_i(blk_mem_gen_0_douta),
         .s_axi_aclk(microblaze_0_Clk),
-        .s_axi_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR[3:0]),
-        .s_axi_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .s_axi_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR[8:0]),
+        .s_axi_aresetn(rst_clk_wiz_0_200M_peripheral_aresetn),
         .s_axi_arready(microblaze_0_axi_periph_M01_AXI_ARREADY),
         .s_axi_arvalid(microblaze_0_axi_periph_M01_AXI_ARVALID),
-        .s_axi_awaddr(microblaze_0_axi_periph_M01_AXI_AWADDR[3:0]),
+        .s_axi_awaddr(microblaze_0_axi_periph_M01_AXI_AWADDR[8:0]),
         .s_axi_awready(microblaze_0_axi_periph_M01_AXI_AWREADY),
         .s_axi_awvalid(microblaze_0_axi_periph_M01_AXI_AWVALID),
         .s_axi_bready(microblaze_0_axi_periph_M01_AXI_BREADY),
@@ -340,11 +331,32 @@ module MicroBlaze
         .s_axi_wdata(microblaze_0_axi_periph_M01_AXI_WDATA),
         .s_axi_wready(microblaze_0_axi_periph_M01_AXI_WREADY),
         .s_axi_wstrb(microblaze_0_axi_periph_M01_AXI_WSTRB),
-        .s_axi_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID),
+        .s_axi_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID));
+  MicroBlaze_axi_uartlite_0_1 axi_uartlite_0
+       (.rx(rx_0_1),
+        .s_axi_aclk(microblaze_0_Clk),
+        .s_axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[3:0]),
+        .s_axi_aresetn(rst_clk_wiz_0_200M_peripheral_aresetn),
+        .s_axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
+        .s_axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
+        .s_axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[3:0]),
+        .s_axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
+        .s_axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),
+        .s_axi_bready(microblaze_0_axi_periph_M02_AXI_BREADY),
+        .s_axi_bresp(microblaze_0_axi_periph_M02_AXI_BRESP),
+        .s_axi_bvalid(microblaze_0_axi_periph_M02_AXI_BVALID),
+        .s_axi_rdata(microblaze_0_axi_periph_M02_AXI_RDATA),
+        .s_axi_rready(microblaze_0_axi_periph_M02_AXI_RREADY),
+        .s_axi_rresp(microblaze_0_axi_periph_M02_AXI_RRESP),
+        .s_axi_rvalid(microblaze_0_axi_periph_M02_AXI_RVALID),
+        .s_axi_wdata(microblaze_0_axi_periph_M02_AXI_WDATA),
+        .s_axi_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
+        .s_axi_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
+        .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
         .tx(axi_uartlite_0_tx));
   MicroBlaze_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra(axi_gpio_1_gpio2_io_o),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .addrb(AddressFixer_0_address),
         .clka(microblaze_0_Clk),
         .clkb(microblaze_0_Clk),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
@@ -359,14 +371,14 @@ module MicroBlaze
        (.clk_in1(clk_in1_0_1),
         .clk_out1(microblaze_0_Clk));
   MicroBlaze_compress_64_to_32_0_0 compress_64_to_32_0
-       (.in_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+       (.in_data(CC_0_xcorr),
         .out_data(compress_64_to_32_0_out_data));
   MicroBlaze_compress_64_to_32_1_0 compress_64_to_32_1
        (.in_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
   MicroBlaze_dds_compiler_0_0 dds_compiler_0
        (.aclk(microblaze_0_Clk),
         .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
-  MicroBlaze_mdm_1_1 mdm_1
+  MicroBlaze_mdm_1_2 mdm_1
        (.Dbg_Capture_0(microblaze_0_debug_CAPTURE),
         .Dbg_Clk_0(microblaze_0_debug_CLK),
         .Dbg_Disable_0(microblaze_0_debug_DISABLE),
@@ -379,7 +391,7 @@ module MicroBlaze
         .Debug_SYS_Rst(mdm_1_debug_sys_rst));
   (* BMM_INFO_PROCESSOR = "microblaze-le > MicroBlaze microblaze_0_local_memory/dlmb_bram_if_cntlr" *) 
   (* KEEP_HIERARCHY = "yes" *) 
-  MicroBlaze_microblaze_0_1 microblaze_0
+  MicroBlaze_microblaze_0_2 microblaze_0
        (.Byte_Enable(microblaze_0_dlmb_1_BE),
         .Clk(microblaze_0_Clk),
         .DCE(microblaze_0_dlmb_1_CE),
@@ -429,13 +441,13 @@ module MicroBlaze
         .M_AXI_DP_WSTRB(microblaze_0_M_AXI_DP_WSTRB),
         .M_AXI_DP_WVALID(microblaze_0_M_AXI_DP_WVALID),
         .Read_Strobe(microblaze_0_dlmb_1_READSTROBE),
-        .Reset(rst_clk_wiz_0_100M_mb_reset),
+        .Reset(rst_clk_wiz_0_200M_mb_reset),
         .Write_Strobe(microblaze_0_dlmb_1_WRITESTROBE));
-  MicroBlaze_microblaze_0_axi_periph_1 microblaze_0_axi_periph
+  MicroBlaze_microblaze_0_axi_periph_2 microblaze_0_axi_periph
        (.ACLK(microblaze_0_Clk),
-        .ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .ARESETN(rst_clk_wiz_0_200M_peripheral_aresetn),
         .M00_ACLK(microblaze_0_Clk),
-        .M00_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .M00_ARESETN(rst_clk_wiz_0_200M_peripheral_aresetn),
         .M00_AXI_araddr(microblaze_0_axi_periph_M00_AXI_ARADDR),
         .M00_AXI_arready(microblaze_0_axi_periph_M00_AXI_ARREADY),
         .M00_AXI_arvalid(microblaze_0_axi_periph_M00_AXI_ARVALID),
@@ -454,7 +466,7 @@ module MicroBlaze
         .M00_AXI_wstrb(microblaze_0_axi_periph_M00_AXI_WSTRB),
         .M00_AXI_wvalid(microblaze_0_axi_periph_M00_AXI_WVALID),
         .M01_ACLK(microblaze_0_Clk),
-        .M01_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .M01_ARESETN(rst_clk_wiz_0_200M_peripheral_aresetn),
         .M01_AXI_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR),
         .M01_AXI_arready(microblaze_0_axi_periph_M01_AXI_ARREADY),
         .M01_AXI_arvalid(microblaze_0_axi_periph_M01_AXI_ARVALID),
@@ -473,7 +485,7 @@ module MicroBlaze
         .M01_AXI_wstrb(microblaze_0_axi_periph_M01_AXI_WSTRB),
         .M01_AXI_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID),
         .M02_ACLK(microblaze_0_Clk),
-        .M02_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .M02_ARESETN(rst_clk_wiz_0_200M_peripheral_aresetn),
         .M02_AXI_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR),
         .M02_AXI_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
         .M02_AXI_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
@@ -492,7 +504,7 @@ module MicroBlaze
         .M02_AXI_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
         .M02_AXI_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
         .S00_ACLK(microblaze_0_Clk),
-        .S00_ARESETN(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .S00_ARESETN(rst_clk_wiz_0_200M_peripheral_aresetn),
         .S00_AXI_araddr(microblaze_0_M_AXI_DP_ARADDR),
         .S00_AXI_arprot(microblaze_0_M_AXI_DP_ARPROT),
         .S00_AXI_arready(microblaze_0_M_AXI_DP_ARREADY),
@@ -533,15 +545,15 @@ module MicroBlaze
         .ILMB_ue(microblaze_0_ilmb_1_UE),
         .ILMB_wait(microblaze_0_ilmb_1_WAIT),
         .LMB_Clk(microblaze_0_Clk),
-        .SYS_Rst(rst_clk_wiz_0_100M_bus_struct_reset));
-  MicroBlaze_rst_clk_wiz_0_100M_1 rst_clk_wiz_0_100M
+        .SYS_Rst(rst_clk_wiz_0_200M_bus_struct_reset));
+  MicroBlaze_rst_clk_wiz_0_200M_0 rst_clk_wiz_0_200M
        (.aux_reset_in(1'b1),
-        .bus_struct_reset(rst_clk_wiz_0_100M_bus_struct_reset),
+        .bus_struct_reset(rst_clk_wiz_0_200M_bus_struct_reset),
         .dcm_locked(1'b1),
-        .ext_reset_in(reset_0_1),
+        .ext_reset_in(reset_1),
         .mb_debug_sys_rst(mdm_1_debug_sys_rst),
-        .mb_reset(rst_clk_wiz_0_100M_mb_reset),
-        .peripheral_aresetn(rst_clk_wiz_0_100M_peripheral_aresetn1),
+        .mb_reset(rst_clk_wiz_0_200M_mb_reset),
+        .peripheral_aresetn(rst_clk_wiz_0_200M_peripheral_aresetn),
         .slowest_sync_clk(microblaze_0_Clk));
   MicroBlaze_waveParser_0_0 waveParser_0
        (.buffer(waveParser_0_buffer),
@@ -569,7 +581,7 @@ module MicroBlaze
        (.dout(xlconstant_1_dout));
 endmodule
 
-module MicroBlaze_microblaze_0_axi_periph_1
+module MicroBlaze_microblaze_0_axi_periph_2
    (ACLK,
     ARESETN,
     M00_ACLK,
@@ -1668,7 +1680,7 @@ module microblaze_0_local_memory_imp_1D6OQ4J
   assign microblaze_0_ilmb_READSTROBE = ILMB_readstrobe;
   (* BMM_INFO_ADDRESS_SPACE = "byte  0x00000000 32 > MicroBlaze microblaze_0_local_memory/lmb_bram" *) 
   (* KEEP_HIERARCHY = "yes" *) 
-  MicroBlaze_dlmb_bram_if_cntlr_1 dlmb_bram_if_cntlr
+  MicroBlaze_dlmb_bram_if_cntlr_2 dlmb_bram_if_cntlr
        (.BRAM_Addr_A(microblaze_0_dlmb_cntlr_ADDR),
         .BRAM_Clk_A(microblaze_0_dlmb_cntlr_CLK),
         .BRAM_Din_A({microblaze_0_dlmb_cntlr_DOUT[31],microblaze_0_dlmb_cntlr_DOUT[30],microblaze_0_dlmb_cntlr_DOUT[29],microblaze_0_dlmb_cntlr_DOUT[28],microblaze_0_dlmb_cntlr_DOUT[27],microblaze_0_dlmb_cntlr_DOUT[26],microblaze_0_dlmb_cntlr_DOUT[25],microblaze_0_dlmb_cntlr_DOUT[24],microblaze_0_dlmb_cntlr_DOUT[23],microblaze_0_dlmb_cntlr_DOUT[22],microblaze_0_dlmb_cntlr_DOUT[21],microblaze_0_dlmb_cntlr_DOUT[20],microblaze_0_dlmb_cntlr_DOUT[19],microblaze_0_dlmb_cntlr_DOUT[18],microblaze_0_dlmb_cntlr_DOUT[17],microblaze_0_dlmb_cntlr_DOUT[16],microblaze_0_dlmb_cntlr_DOUT[15],microblaze_0_dlmb_cntlr_DOUT[14],microblaze_0_dlmb_cntlr_DOUT[13],microblaze_0_dlmb_cntlr_DOUT[12],microblaze_0_dlmb_cntlr_DOUT[11],microblaze_0_dlmb_cntlr_DOUT[10],microblaze_0_dlmb_cntlr_DOUT[9],microblaze_0_dlmb_cntlr_DOUT[8],microblaze_0_dlmb_cntlr_DOUT[7],microblaze_0_dlmb_cntlr_DOUT[6],microblaze_0_dlmb_cntlr_DOUT[5],microblaze_0_dlmb_cntlr_DOUT[4],microblaze_0_dlmb_cntlr_DOUT[3],microblaze_0_dlmb_cntlr_DOUT[2],microblaze_0_dlmb_cntlr_DOUT[1],microblaze_0_dlmb_cntlr_DOUT[0]}),
@@ -1689,7 +1701,7 @@ module microblaze_0_local_memory_imp_1D6OQ4J
         .Sl_Ready(microblaze_0_dlmb_bus_READY),
         .Sl_UE(microblaze_0_dlmb_bus_UE),
         .Sl_Wait(microblaze_0_dlmb_bus_WAIT));
-  MicroBlaze_dlmb_v10_1 dlmb_v10
+  MicroBlaze_dlmb_v10_2 dlmb_v10
        (.LMB_ABus(microblaze_0_dlmb_bus_ABUS),
         .LMB_AddrStrobe(microblaze_0_dlmb_bus_ADDRSTROBE),
         .LMB_BE(microblaze_0_dlmb_bus_BE),
@@ -1714,7 +1726,7 @@ module microblaze_0_local_memory_imp_1D6OQ4J
         .Sl_Ready(microblaze_0_dlmb_bus_READY),
         .Sl_UE(microblaze_0_dlmb_bus_UE),
         .Sl_Wait(microblaze_0_dlmb_bus_WAIT));
-  MicroBlaze_ilmb_bram_if_cntlr_1 ilmb_bram_if_cntlr
+  MicroBlaze_ilmb_bram_if_cntlr_2 ilmb_bram_if_cntlr
        (.BRAM_Addr_A(microblaze_0_ilmb_cntlr_ADDR),
         .BRAM_Clk_A(microblaze_0_ilmb_cntlr_CLK),
         .BRAM_Din_A({microblaze_0_ilmb_cntlr_DOUT[31],microblaze_0_ilmb_cntlr_DOUT[30],microblaze_0_ilmb_cntlr_DOUT[29],microblaze_0_ilmb_cntlr_DOUT[28],microblaze_0_ilmb_cntlr_DOUT[27],microblaze_0_ilmb_cntlr_DOUT[26],microblaze_0_ilmb_cntlr_DOUT[25],microblaze_0_ilmb_cntlr_DOUT[24],microblaze_0_ilmb_cntlr_DOUT[23],microblaze_0_ilmb_cntlr_DOUT[22],microblaze_0_ilmb_cntlr_DOUT[21],microblaze_0_ilmb_cntlr_DOUT[20],microblaze_0_ilmb_cntlr_DOUT[19],microblaze_0_ilmb_cntlr_DOUT[18],microblaze_0_ilmb_cntlr_DOUT[17],microblaze_0_ilmb_cntlr_DOUT[16],microblaze_0_ilmb_cntlr_DOUT[15],microblaze_0_ilmb_cntlr_DOUT[14],microblaze_0_ilmb_cntlr_DOUT[13],microblaze_0_ilmb_cntlr_DOUT[12],microblaze_0_ilmb_cntlr_DOUT[11],microblaze_0_ilmb_cntlr_DOUT[10],microblaze_0_ilmb_cntlr_DOUT[9],microblaze_0_ilmb_cntlr_DOUT[8],microblaze_0_ilmb_cntlr_DOUT[7],microblaze_0_ilmb_cntlr_DOUT[6],microblaze_0_ilmb_cntlr_DOUT[5],microblaze_0_ilmb_cntlr_DOUT[4],microblaze_0_ilmb_cntlr_DOUT[3],microblaze_0_ilmb_cntlr_DOUT[2],microblaze_0_ilmb_cntlr_DOUT[1],microblaze_0_ilmb_cntlr_DOUT[0]}),
@@ -1735,7 +1747,7 @@ module microblaze_0_local_memory_imp_1D6OQ4J
         .Sl_Ready(microblaze_0_ilmb_bus_READY),
         .Sl_UE(microblaze_0_ilmb_bus_UE),
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
-  MicroBlaze_ilmb_v10_1 ilmb_v10
+  MicroBlaze_ilmb_v10_2 ilmb_v10
        (.LMB_ABus(microblaze_0_ilmb_bus_ABUS),
         .LMB_AddrStrobe(microblaze_0_ilmb_bus_ADDRSTROBE),
         .LMB_BE(microblaze_0_ilmb_bus_BE),
@@ -1760,7 +1772,7 @@ module microblaze_0_local_memory_imp_1D6OQ4J
         .Sl_Ready(microblaze_0_ilmb_bus_READY),
         .Sl_UE(microblaze_0_ilmb_bus_UE),
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
-  MicroBlaze_lmb_bram_1 lmb_bram
+  MicroBlaze_lmb_bram_2 lmb_bram
        (.addra({microblaze_0_dlmb_cntlr_ADDR[0],microblaze_0_dlmb_cntlr_ADDR[1],microblaze_0_dlmb_cntlr_ADDR[2],microblaze_0_dlmb_cntlr_ADDR[3],microblaze_0_dlmb_cntlr_ADDR[4],microblaze_0_dlmb_cntlr_ADDR[5],microblaze_0_dlmb_cntlr_ADDR[6],microblaze_0_dlmb_cntlr_ADDR[7],microblaze_0_dlmb_cntlr_ADDR[8],microblaze_0_dlmb_cntlr_ADDR[9],microblaze_0_dlmb_cntlr_ADDR[10],microblaze_0_dlmb_cntlr_ADDR[11],microblaze_0_dlmb_cntlr_ADDR[12],microblaze_0_dlmb_cntlr_ADDR[13],microblaze_0_dlmb_cntlr_ADDR[14],microblaze_0_dlmb_cntlr_ADDR[15],microblaze_0_dlmb_cntlr_ADDR[16],microblaze_0_dlmb_cntlr_ADDR[17],microblaze_0_dlmb_cntlr_ADDR[18],microblaze_0_dlmb_cntlr_ADDR[19],microblaze_0_dlmb_cntlr_ADDR[20],microblaze_0_dlmb_cntlr_ADDR[21],microblaze_0_dlmb_cntlr_ADDR[22],microblaze_0_dlmb_cntlr_ADDR[23],microblaze_0_dlmb_cntlr_ADDR[24],microblaze_0_dlmb_cntlr_ADDR[25],microblaze_0_dlmb_cntlr_ADDR[26],microblaze_0_dlmb_cntlr_ADDR[27],microblaze_0_dlmb_cntlr_ADDR[28],microblaze_0_dlmb_cntlr_ADDR[29],microblaze_0_dlmb_cntlr_ADDR[30],microblaze_0_dlmb_cntlr_ADDR[31]}),
         .addrb({microblaze_0_ilmb_cntlr_ADDR[0],microblaze_0_ilmb_cntlr_ADDR[1],microblaze_0_ilmb_cntlr_ADDR[2],microblaze_0_ilmb_cntlr_ADDR[3],microblaze_0_ilmb_cntlr_ADDR[4],microblaze_0_ilmb_cntlr_ADDR[5],microblaze_0_ilmb_cntlr_ADDR[6],microblaze_0_ilmb_cntlr_ADDR[7],microblaze_0_ilmb_cntlr_ADDR[8],microblaze_0_ilmb_cntlr_ADDR[9],microblaze_0_ilmb_cntlr_ADDR[10],microblaze_0_ilmb_cntlr_ADDR[11],microblaze_0_ilmb_cntlr_ADDR[12],microblaze_0_ilmb_cntlr_ADDR[13],microblaze_0_ilmb_cntlr_ADDR[14],microblaze_0_ilmb_cntlr_ADDR[15],microblaze_0_ilmb_cntlr_ADDR[16],microblaze_0_ilmb_cntlr_ADDR[17],microblaze_0_ilmb_cntlr_ADDR[18],microblaze_0_ilmb_cntlr_ADDR[19],microblaze_0_ilmb_cntlr_ADDR[20],microblaze_0_ilmb_cntlr_ADDR[21],microblaze_0_ilmb_cntlr_ADDR[22],microblaze_0_ilmb_cntlr_ADDR[23],microblaze_0_ilmb_cntlr_ADDR[24],microblaze_0_ilmb_cntlr_ADDR[25],microblaze_0_ilmb_cntlr_ADDR[26],microblaze_0_ilmb_cntlr_ADDR[27],microblaze_0_ilmb_cntlr_ADDR[28],microblaze_0_ilmb_cntlr_ADDR[29],microblaze_0_ilmb_cntlr_ADDR[30],microblaze_0_ilmb_cntlr_ADDR[31]}),
         .clka(microblaze_0_dlmb_cntlr_CLK),
