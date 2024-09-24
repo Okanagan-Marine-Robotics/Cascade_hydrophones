@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Sep 21 23:38:07 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Sep 22 04:43:39 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s25" NAME="MicroBlaze" PACKAGE="csga225" SPEEDGRADE="-1"/>
 
@@ -77,7 +77,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref0Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref0Address">
+        <PORT DIR="O" LEFT="15" NAME="Ref0Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref0Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef0AddressB"/>
           </CONNECTIONS>
@@ -87,7 +87,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref1Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref1Address">
+        <PORT DIR="O" LEFT="15" NAME="Ref1Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref1Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef1AddressB"/>
           </CONNECTIONS>
@@ -97,7 +97,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref2Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref2Address">
+        <PORT DIR="O" LEFT="15" NAME="Ref2Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref2Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef2AddressB"/>
           </CONNECTIONS>
@@ -107,7 +107,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef3"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref3Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref3Address">
+        <PORT DIR="O" LEFT="15" NAME="Ref3Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref3Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef3AddressB"/>
           </CONNECTIONS>
@@ -482,7 +482,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef0Address">
+        <PORT DIR="O" LEFT="15" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef0Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef0Address"/>
           </CONNECTIONS>
@@ -492,7 +492,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef1Address">
+        <PORT DIR="O" LEFT="15" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef1Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef1Address"/>
           </CONNECTIONS>
@@ -502,7 +502,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef2Address">
+        <PORT DIR="O" LEFT="15" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef2Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef2Address"/>
           </CONNECTIONS>
@@ -512,7 +512,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref3"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef3Address">
+        <PORT DIR="O" LEFT="15" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef3Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef3Address"/>
           </CONNECTIONS>
@@ -1857,8 +1857,8 @@
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2452,8 +2452,6 @@
         <PORT CLKFREQUENCY="200000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
-            <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
@@ -2472,6 +2470,8 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
+            <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

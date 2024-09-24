@@ -4,6 +4,6 @@ module compress_64_to_32 (
     output signed [31:0] out_data  
 );
 
-    assign out_data = in_data / 2500;
+    assign out_data = in_data / 10;
 
 endmodule

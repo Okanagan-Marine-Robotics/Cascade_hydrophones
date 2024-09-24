@@ -612,7 +612,7 @@
           },
           "waveRef0Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave0Address": {
@@ -627,7 +627,7 @@
           },
           "waveRef1Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave1Address": {
@@ -642,7 +642,7 @@
           },
           "waveRef2Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave2Address": {
@@ -657,7 +657,7 @@
           },
           "waveRef3Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave3Address": {
@@ -761,22 +761,22 @@
           },
           "Ref0Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "Ref1Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "Ref2Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "Ref3Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "clk": {
@@ -1965,8 +1965,8 @@
         "ports": [
           "clk1Mhz_0/clk1Mhz",
           "BlockRam_0/clk1Mhz",
-          "CC_0/clk1Mhz",
-          "waveParser_0/clk1Mhz"
+          "waveParser_0/clk1Mhz",
+          "CC_0/clk1Mhz"
         ]
       },
       "clk_in1_0_1": {
@@ -1999,8 +1999,6 @@
         "ports": [
           "clk_wiz_0/clk_out1",
           "BlockRam_0/clk",
-          "CC_0/clk",
-          "BRAMMUX_0/clk",
           "axi_gpio_0/s_axi_aclk",
           "axi_gpio_1/s_axi_aclk",
           "blk_mem_gen_0/clka",
@@ -2015,7 +2013,9 @@
           "microblaze_0_axi_periph/M01_ACLK",
           "microblaze_0_axi_periph/M02_ACLK",
           "clk1Mhz_0/clk",
-          "axi_uartlite_0/s_axi_aclk"
+          "axi_uartlite_0/s_axi_aclk",
+          "CC_0/clk",
+          "BRAMMUX_0/clk"
         ]
       },
       "reset_1": {

@@ -66,5 +66,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/JamesWilliamson/Documents/
 INFO: [VRFC 10-311] analyzing module MicroBlaze_wrapper
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sim_1/new/TestBench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TestBench
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

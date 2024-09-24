@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sat Sep 21 23:38:06 2024
+//Date        : Sun Sep 22 04:43:38 2024
 //Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -27,13 +27,13 @@ module MicroBlaze
 
   wire [13:0]AddressFixer_0_address;
   wire [11:0]BRAMMUX_0_Ref0;
-  wire [13:0]BRAMMUX_0_Ref0Address;
+  wire [15:0]BRAMMUX_0_Ref0Address;
   wire [11:0]BRAMMUX_0_Ref1;
-  wire [13:0]BRAMMUX_0_Ref1Address;
+  wire [15:0]BRAMMUX_0_Ref1Address;
   wire [11:0]BRAMMUX_0_Ref2;
-  wire [13:0]BRAMMUX_0_Ref2Address;
+  wire [15:0]BRAMMUX_0_Ref2Address;
   wire [11:0]BRAMMUX_0_Ref3;
-  wire [13:0]BRAMMUX_0_Ref3Address;
+  wire [15:0]BRAMMUX_0_Ref3Address;
   wire [11:0]BlockRam_0_wave0;
   wire [11:0]BlockRam_0_wave00;
   wire [11:0]BlockRam_0_wave01;
@@ -55,10 +55,10 @@ module MicroBlaze
   wire [11:0]CC_0_wave1Address;
   wire [11:0]CC_0_wave2Address;
   wire [11:0]CC_0_wave3Address;
-  wire [13:0]CC_0_waveRef0Address;
-  wire [13:0]CC_0_waveRef1Address;
-  wire [13:0]CC_0_waveRef2Address;
-  wire [13:0]CC_0_waveRef3Address;
+  wire [15:0]CC_0_waveRef0Address;
+  wire [15:0]CC_0_waveRef1Address;
+  wire [15:0]CC_0_waveRef2Address;
+  wire [15:0]CC_0_waveRef3Address;
   wire [63:0]CC_0_xcorr;
   wire [0:0]axi_gpio_0_GPIO_TRI_I;
   wire [13:0]axi_gpio_1_gpio2_io_o;
@@ -211,13 +211,13 @@ module MicroBlaze
         .Ref3Address(BRAMMUX_0_Ref3Address),
         .clk(microblaze_0_Clk),
         .waveRef0(BlockRam_0_waveRef0),
-        .waveRef0Address(CC_0_waveRef0Address),
+        .waveRef0Address(CC_0_waveRef0Address[13:0]),
         .waveRef1(BlockRam_0_waveRef1),
-        .waveRef1Address(CC_0_waveRef1Address),
+        .waveRef1Address(CC_0_waveRef1Address[13:0]),
         .waveRef2(BlockRam_0_waveRef2),
-        .waveRef2Address(CC_0_waveRef2Address),
+        .waveRef2Address(CC_0_waveRef2Address[13:0]),
         .waveRef3(BlockRam_0_waveRef3),
-        .waveRef3Address(CC_0_waveRef3Address));
+        .waveRef3Address(CC_0_waveRef3Address[13:0]));
   MicroBlaze_BlockRam_0_0 BlockRam_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(clk1Mhz_0_clk1Mhz),

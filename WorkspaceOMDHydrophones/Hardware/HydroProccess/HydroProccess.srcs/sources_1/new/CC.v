@@ -39,8 +39,8 @@ input clk,
  	reg signed [15:0] countMulti = 1;
  	reg clkcorr = 0;
     
-    reg signed [31:0] product_stage1, product_stage2, product_stage3, product_stage4;
-    reg signed [31:0] product1_stage1, product1_stage2, product1_stage3, product1_stage4;
+    reg signed [31:0] product_stage1, product_stage2, product_stage3;
+    reg signed [31:0] product1_stage1, product1_stage2, product1_stage3;
     reg signed [31:0] temp0, temp1, temp2, temp3;
     reg signed [31:0] temp00, temp01, temp02, temp03;
     
@@ -109,7 +109,7 @@ input clk,
 
 
 always @(negedge clkcorr)begin
-	if (count < 10000) begin
+	if (count <= 10000) begin
     
     	count <= count + 1;
    	 

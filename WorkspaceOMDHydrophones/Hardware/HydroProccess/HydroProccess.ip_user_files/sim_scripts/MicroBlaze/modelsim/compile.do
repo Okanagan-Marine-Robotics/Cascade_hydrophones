@@ -206,7 +206,6 @@ vlog -work axi_crossbar_v2_1_30  -incr -mfcu  "+incdir+../../../../HydroProccess
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xbar_1/sim/MicroBlaze_xbar_1.v" \
-"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 
 vcom -work lib_pkg_v1_0_3  -93  \
 "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/56d9/hdl/lib_pkg_v1_0_rfs.vhd" \
@@ -219,6 +218,9 @@ vcom -work axi_uartlite_v2_0_33  -93  \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_1/sim/MicroBlaze_axi_uartlite_0_1.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
+"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

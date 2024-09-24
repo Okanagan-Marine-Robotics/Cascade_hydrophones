@@ -957,22 +957,22 @@
           },
           "Ref0Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "Ref1Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "Ref2Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "Ref3Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "clk": {
@@ -1193,7 +1193,7 @@
           },
           "waveRef0Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave0Address": {
@@ -1208,7 +1208,7 @@
           },
           "waveRef1Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave1Address": {
@@ -1223,7 +1223,7 @@
           },
           "waveRef2Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave2Address": {
@@ -1238,7 +1238,7 @@
           },
           "waveRef3Address": {
             "direction": "O",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "wave3Address": {
@@ -1524,8 +1524,6 @@
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "BRAMMUX_0/clk",
-          "CC_0/clk",
           "blk_mem_gen_0/clka",
           "blk_mem_gen_0/clkb",
           "blk_mem_gen_1/clka",
@@ -1549,7 +1547,9 @@
           "blk_mem_gen_10/clkb",
           "blk_mem_gen_11/clka",
           "blk_mem_gen_11/clkb",
-          "clk1Mhz_0/clk"
+          "clk1Mhz_0/clk",
+          "BRAMMUX_0/clk",
+          "CC_0/clk"
         ]
       },
       "dds_compiler_1_m_axis_data_tdata": {

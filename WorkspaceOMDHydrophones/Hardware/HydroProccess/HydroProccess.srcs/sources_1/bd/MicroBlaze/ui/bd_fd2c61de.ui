@@ -5,15 +5,15 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port gpio_rtl_0 -pg 1 -lvl 10 -x 3820 -y 200 -defaultsOSRD
+preplace port gpio_rtl_0 -pg 1 -lvl 10 -x 3840 -y 200 -defaultsOSRD
 preplace port port-id_clk -pg 1 -lvl 0 -x -300 -y 70 -defaultsOSRD
-preplace port port-id_tx -pg 1 -lvl 10 -x 3820 -y -120 -defaultsOSRD
+preplace port port-id_tx -pg 1 -lvl 10 -x 3840 -y -120 -defaultsOSRD
 preplace port port-id_reset -pg 1 -lvl 0 -x -300 -y 120 -defaultsOSRD
 preplace port port-id_rx -pg 1 -lvl 0 -x -300 -y -10 -defaultsOSRD
-preplace portBus led -pg 1 -lvl 10 -x 3820 -y 470 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 10 -x 3840 -y 470 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -140 -y 60 -defaultsOSRD
 preplace inst axi_gpio_1 -pg 1 -lvl 6 -x 2470 -y 330 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 9 -x 3680 -y 200 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 9 -x 3690 -y 200 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 6 -x 2470 -y 760 -defaultsOSRD
 preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -x 2870 -y 600 -defaultsOSRD
 preplace inst compress_64_to_32_0 -pg 1 -lvl 5 -x 2000 -y 370 -defaultsOSRD
@@ -31,8 +31,8 @@ preplace inst microblaze_0_local_memory -pg 1 -lvl 4 -x 1550 -y 110 -defaultsOSR
 preplace inst mdm_1 -pg 1 -lvl 1 -x -140 -y 210 -defaultsOSRD
 preplace inst rst_clk_wiz_0_200M -pg 1 -lvl 2 -x 710 -y 100 -defaultsOSRD
 preplace inst microblaze_0_axi_periph -pg 1 -lvl 4 -x 1550 -y 350 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 9 -x 3680 -y -100 -defaultsOSRD
-preplace netloc AddressFixer_0_address 1 6 1 2680 600n
+preplace inst axi_uartlite_0 -pg 1 -lvl 9 -x 3690 -y -100 -defaultsOSRD
+preplace netloc AddressFixer_0_address 1 6 1 2670 600n
 preplace netloc BRAMMUX_0_Ref0 1 6 2 NJ 1310 N
 preplace netloc BRAMMUX_0_Ref0Address 1 4 3 1720 930 NJ 930 2660
 preplace netloc BRAMMUX_0_Ref1 1 6 2 NJ 1330 3000
@@ -45,7 +45,7 @@ preplace netloc BlockRam_0_wave00 1 5 3 2180J 1190 NJ 1190 3030
 preplace netloc BlockRam_0_wave0 1 5 3 2190J 1240 NJ 1240 3020
 preplace netloc BlockRam_0_wave01 1 5 3 2220J 1210 NJ 1210 3010
 preplace netloc BlockRam_0_wave1 1 5 3 2170J 1170 NJ 1170 3060
-preplace netloc BlockRam_0_wave02 1 5 3 2210J 1530 2690J 1510 3010
+preplace netloc BlockRam_0_wave02 1 5 3 2210J 1530 2700J 1510 3010
 preplace netloc BlockRam_0_wave2 1 5 3 2210J 1180 NJ 1180 2990
 preplace netloc BlockRam_0_wave03 1 5 3 2170J 1540 NJ 1540 2970
 preplace netloc BlockRam_0_wave3 1 5 3 2180J 1520 NJ 1520 3080
@@ -67,18 +67,20 @@ preplace netloc CC_0_waveRef1Address 1 5 4 2270 1220 NJ 1220 3000J 1180 3490
 preplace netloc CC_0_waveRef2Address 1 5 4 2280 1230 NJ 1230 3050J 1200 3500
 preplace netloc CC_0_waveRef3Address 1 5 4 2280 1600 NJ 1600 NJ 1600 3470
 preplace netloc CC_0_xcorr 1 4 5 1830 300 2270J 420 2660J 410 NJ 410 3480
-preplace netloc axi_gpio_1_gpio2_io_o 1 6 1 2670 360n
-preplace netloc blk_mem_gen_0_douta 1 6 1 2680 320n
+preplace netloc axi_gpio_1_gpio2_io_o 1 6 1 2760 360n
+preplace netloc axi_uartlite_0_tx 1 9 1 3810 -120n
+preplace netloc blk_mem_gen_0_douta 1 6 1 2770 320n
 preplace netloc clk1Mhz_0_clk1Mhz 1 2 6 920 1100 N 1100 1690 1030 N 1030 N 1030 3070
 preplace netloc clk_in1_0_1 1 0 1 -280 60n
 preplace netloc compress_64_to_32_0_out_data 1 5 2 2170J 430 2660
 preplace netloc dds_compiler_0_m_axis_data_tdata 1 2 1 880 1270n
 preplace netloc mdm_1_debug_sys_rst 1 1 1 540 120n
-preplace netloc microblaze_0_Clk 1 1 8 530 210 890 20 1400 770 1710 770 2250 440 2770J 430 3110 200 3500
+preplace netloc microblaze_0_Clk 1 1 8 530 210 890 20 1400 770 1710 770 2250 460 2750J 460 3110 200 3510
 preplace netloc reset_1 1 0 2 NJ 120 -30
 preplace netloc rst_clk_wiz_0_200M_bus_struct_reset 1 2 2 880 30 1410J
 preplace netloc rst_clk_wiz_0_200M_mb_reset 1 2 1 920 60n
-preplace netloc rst_clk_wiz_0_200M_peripheral_aresetn 1 2 7 900J 210 1410 190 NJ 190 2280 190 NJ 190 NJ 190 3570
+preplace netloc rst_clk_wiz_0_200M_peripheral_aresetn 1 2 7 900J 210 1410 190 NJ 190 2280 190 NJ 190 NJ 190 3580
+preplace netloc rx_0_1 1 0 10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 3800
 preplace netloc waveParser_0_buffer 1 3 2 1410 1170 N
 preplace netloc waveParser_0_buffer1 1 3 2 1380 1190 N
 preplace netloc waveParser_0_bufferRef 1 3 2 1380 1150 N
@@ -94,19 +96,17 @@ preplace netloc waveParser_0_waveRef0Address 1 3 2 1410 1210 N
 preplace netloc waveParser_0_waveRef1Address 1 3 2 1410 1270 N
 preplace netloc waveParser_0_waveRef2Address 1 3 2 1380 1330 N
 preplace netloc waveParser_0_waveRef3Address 1 3 2 1380 1390 N
-preplace netloc xlconstant_0_dout 1 6 1 2660 710n
+preplace netloc xlconstant_0_dout 1 6 1 2700 680n
 preplace netloc xlconstant_1_dout 1 8 2 NJ 470 NJ
-preplace netloc axi_uartlite_0_tx 1 9 1 3800 -120n
-preplace netloc rx_0_1 1 0 10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 3790
+preplace netloc axi_gpio_0_GPIO 1 9 1 N 200
 preplace netloc microblaze_0_M_AXI_DP 1 3 1 1380 140n
 preplace netloc microblaze_0_axi_periph_M00_AXI 1 4 5 1700 180 NJ 180 NJ 180 NJ 180 NJ
 preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 2 1810 310 NJ
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 5 1800 -120 NJ -120 NJ -120 NJ -120 NJ
 preplace netloc microblaze_0_debug 1 1 2 N 200 910J
 preplace netloc microblaze_0_dlmb_1 1 3 1 1380J 80n
 preplace netloc microblaze_0_ilmb_1 1 3 1 1390 100n
-preplace netloc axi_gpio_0_GPIO 1 9 1 N 200
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 5 1800 -120 NJ -120 NJ -120 NJ -120 NJ
-levelinfo -pg 1 -300 -140 710 1150 1550 2000 2470 2870 3280 3680 3820
+levelinfo -pg 1 -300 -140 710 1150 1550 2000 2470 2870 3280 3690 3840
 pagesize -pg 1 -db -bbox -sgen -400 -550 4150 1730
 "
 }
