@@ -1,4 +1,4 @@
-23:41:00 **** Build of configuration Debug for project HelloWorld ****
+03:21:54 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -22,5 +22,5 @@ mb-size HelloWorld.elf  |tee "HelloWorld.elf.size"
 'Finished building: HelloWorld.elf.size'
 ' '
 
-23:41:01 Build Finished (took 614ms)
+03:21:55 Build Finished (took 865ms)
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Sep 22 04:43:39 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 24 03:27:55 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s25" NAME="MicroBlaze" PACKAGE="csga225" SPEEDGRADE="-1"/>
 
@@ -7,16 +7,6 @@
     <PORT CLKFREQUENCY="12000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="gpio_rtl_0_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
@@ -29,6 +19,11 @@
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="rx"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" LEFT="0" NAME="three" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="O" NAME="tx" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
@@ -36,13 +31,7 @@
     </PORT>
   </EXTERNALPORTS>
 
-  <EXTERNALINTERFACES>
-    <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO" NAME="gpio_rtl_0" TYPE="INITIATOR">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_rtl_0_tri_i"/>
-      </PORTMAPS>
-    </BUSINTERFACE>
-  </EXTERNALINTERFACES>
+  <EXTERNALINTERFACES/>
 
   <MODULES>
     <MODULE COREREVISION="1" FULLNAME="/AddressFixer_0" HWVERSION="1.0" INSTANCE="AddressFixer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AddressFixer" VLNV="xilinx.com:module_ref:AddressFixer:1.0">
@@ -721,11 +710,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4000FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="MicroBlaze_imp" PORT="gpio_rtl_0_tri_i"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="gpio_io_i" RIGHT="0" SIGIS="undef"/>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
@@ -875,7 +860,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO" NAME="GPIO" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_io_i"/>
           </PORTMAPS>
@@ -1429,7 +1414,7 @@
         </ADDRESSBLOCK>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="C_BAUDRATE" VALUE="9600"/>
+        <PARAMETER NAME="C_BAUDRATE" VALUE="115200"/>
         <PARAMETER NAME="C_DATA_BITS" VALUE="8"/>
         <PARAMETER NAME="C_FAMILY" VALUE="spartan7"/>
         <PARAMETER NAME="C_ODD_PARITY" VALUE="0"/>
@@ -5428,7 +5413,7 @@
       <PORTS>
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="three"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

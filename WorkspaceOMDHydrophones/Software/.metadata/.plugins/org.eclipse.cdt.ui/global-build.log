@@ -1,6 +1,6 @@
 Nothing to build in platform 'MicroBlaze_wrapper'
 
-23:41:00 **** Build of configuration Debug for project HelloWorld ****
+03:21:54 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'

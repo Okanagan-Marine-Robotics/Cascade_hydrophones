@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sun Sep 22 04:43:38 2024
+//Date        : Tue Sep 24 03:27:54 2024
 //Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -13,16 +13,14 @@
 (* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=31,numReposBlks=25,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=7,da_bram_cntlr_cnt=1,da_clkrst_cnt=15,da_mb_cnt=3,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (clk,
-    gpio_rtl_0_tri_i,
-    led,
     reset,
     rx,
+    three,
     tx);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_RESET reset, CLK_DOMAIN MicroBlaze_clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_rtl_0 TRI_I" *) input [0:0]gpio_rtl_0_tri_i;
-  output [0:0]led;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   input rx;
+  output [0:0]three;
   output tx;
 
   wire [13:0]AddressFixer_0_address;
@@ -60,7 +58,6 @@ module MicroBlaze
   wire [15:0]CC_0_waveRef2Address;
   wire [15:0]CC_0_waveRef3Address;
   wire [63:0]CC_0_xcorr;
-  wire [0:0]axi_gpio_0_GPIO_TRI_I;
   wire [13:0]axi_gpio_1_gpio2_io_o;
   wire axi_uartlite_0_tx;
   wire [31:0]blk_mem_gen_0_douta;
@@ -191,11 +188,10 @@ module MicroBlaze
   wire [0:0]xlconstant_0_dout;
   wire [0:0]xlconstant_1_dout;
 
-  assign axi_gpio_0_GPIO_TRI_I = gpio_rtl_0_tri_i[0];
   assign clk_in1_0_1 = clk;
-  assign led[0] = xlconstant_1_dout;
   assign reset_1 = reset;
   assign rx_0_1 = rx;
+  assign three[0] = xlconstant_1_dout;
   assign tx = axi_uartlite_0_tx;
   MicroBlaze_AddressFixer_0_0 AddressFixer_0
        (.address(AddressFixer_0_address),
@@ -290,7 +286,7 @@ module MicroBlaze
         .waveRef3Address(CC_0_waveRef3Address),
         .xcorr(CC_0_xcorr));
   MicroBlaze_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_i(axi_gpio_0_GPIO_TRI_I),
+       (.gpio_io_i(1'b0),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(microblaze_0_axi_periph_M00_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_clk_wiz_0_200M_peripheral_aresetn),

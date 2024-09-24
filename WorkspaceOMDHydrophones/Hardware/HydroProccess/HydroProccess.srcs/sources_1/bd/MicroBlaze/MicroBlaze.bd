@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE753566C23EB35CE",
+      "boundary_crc": "0x5F218D02B7A2B39D",
       "device": "xc7s25csga225-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze",
       "name": "MicroBlaze",
@@ -44,21 +44,6 @@
         "m02_couplers": {}
       },
       "axi_uartlite_0": ""
-    },
-    "interface_ports": {
-      "gpio_rtl_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
-        "port_maps": {
-          "TRI_I": {
-            "physical_name": "gpio_rtl_0_tri_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          }
-        }
-      }
     },
     "ports": {
       "clk": {
@@ -105,7 +90,7 @@
           }
         }
       },
-      "led": {
+      "three": {
         "direction": "O",
         "left": "0",
         "right": "0"
@@ -1679,16 +1664,15 @@
         "ip_revision": "33",
         "xci_name": "MicroBlaze_axi_uartlite_0_1",
         "xci_path": "ip\\MicroBlaze_axi_uartlite_0_1\\MicroBlaze_axi_uartlite_0_1.xci",
-        "inst_hier_path": "axi_uartlite_0"
+        "inst_hier_path": "axi_uartlite_0",
+        "parameters": {
+          "C_BAUDRATE": {
+            "value": "115200"
+          }
+        }
       }
     },
     "interface_nets": {
-      "axi_gpio_0_GPIO": {
-        "interface_ports": [
-          "gpio_rtl_0",
-          "axi_gpio_0/GPIO"
-        ]
-      },
       "microblaze_0_M_AXI_DP": {
         "interface_ports": [
           "microblaze_0/M_AXI_DP",
@@ -2154,7 +2138,7 @@
       "xlconstant_1_dout": {
         "ports": [
           "xlconstant_1/dout",
-          "led"
+          "three"
         ]
       }
     },

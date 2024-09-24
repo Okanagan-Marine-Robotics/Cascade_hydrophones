@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
-set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s25csga225-1
 
@@ -94,9 +93,6 @@ add_files C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/Workspac
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_1_0/MicroBlaze_axi_gpio_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_1_0/MicroBlaze_axi_gpio_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_1_0/MicroBlaze_axi_gpio_1_0.xdc]
@@ -119,6 +115,9 @@ set_property used_in_implementation false [get_files -all c:/Users/JamesWilliams
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_rst_clk_wiz_0_200M_0/MicroBlaze_rst_clk_wiz_0_200M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_rst_clk_wiz_0_200M_0/MicroBlaze_rst_clk_wiz_0_200M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_xbar_1/MicroBlaze_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_1/MicroBlaze_axi_uartlite_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_1/MicroBlaze_axi_uartlite_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_1/MicroBlaze_axi_uartlite_0_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_microblaze_0_2/data/mb_bootloop_le.elf]
 

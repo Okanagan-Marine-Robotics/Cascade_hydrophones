@@ -9,9 +9,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze 
 # IP: bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_clk_wiz_0_0 || ORIG_REF_NAME==MicroBlaze_clk_wiz_0_0} -quiet] -quiet
 
-# IP: bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/MicroBlaze_axi_uartlite_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_uartlite_0_0 || ORIG_REF_NAME==MicroBlaze_axi_uartlite_0_0} -quiet] -quiet
-
 # IP: bd/MicroBlaze/ip/MicroBlaze_axi_gpio_1_0/MicroBlaze_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_gpio_1_0 || ORIG_REF_NAME==MicroBlaze_axi_gpio_1_0} -quiet] -quiet
 
@@ -83,5 +80,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_
 
 # IP: bd/MicroBlaze/ip/MicroBlaze_microblaze_0_axi_periph_2/MicroBlaze_microblaze_0_axi_periph_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_microblaze_0_axi_periph_2 || ORIG_REF_NAME==MicroBlaze_microblaze_0_axi_periph_2} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_1/MicroBlaze_axi_uartlite_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_uartlite_0_1 || ORIG_REF_NAME==MicroBlaze_axi_uartlite_0_1} -quiet] -quiet
 
 # XDC: c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze_ooc.xdc
