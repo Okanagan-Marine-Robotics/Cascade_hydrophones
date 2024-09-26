@@ -28,20 +28,20 @@ input clk,
 	output reg [15:0] waveRef3Address,
 	output reg [11:0] wave3Address,
 	output reg [11:0] wave03Address,  
-	output reg signed [63:0] xcorr,
-	output reg signed [63:0] xcorr1,
+	output reg signed [35:0] xcorr,
+	output reg signed [35:0] xcorr1,
 	output reg clkcorr = 0,
 	output reg signed [15:0] count = -9999
 	);
- 	reg signed [63:0] product = 0;
- 	reg signed [63:0] product1 = 0;
+ 	reg signed [35:0] product = 0;
+ 	reg signed [35:0] product1 = 0;
 	 
  	reg signed [15:0] countMulti = 1;
     
-    reg signed [31:0] product_stage1, product_stage2, product_stage3;
-    reg signed [31:0] product1_stage1, product1_stage2, product1_stage3;
-    reg signed [31:0] temp0, temp1, temp2, temp3;
-    reg signed [31:0] temp00, temp01, temp02, temp03;
+    reg signed [35:0] product_stage1, product_stage2, product_stage3;
+    reg signed [35:0] product1_stage1, product1_stage2, product1_stage3;
+    reg signed [35:0] temp0, temp1, temp2, temp3;
+    reg signed [35:0] temp00, temp01, temp02, temp03;
     
  
    always @(negedge clk)begin

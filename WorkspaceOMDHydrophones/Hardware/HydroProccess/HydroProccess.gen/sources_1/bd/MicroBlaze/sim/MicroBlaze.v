@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Sep 25 21:05:06 2024
+//Date        : Thu Sep 26 01:25:19 2024
 //Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -49,11 +49,11 @@ module MicroBlaze
   wire [15:0]CC_0_waveRef1Address;
   wire [15:0]CC_0_waveRef2Address;
   wire [15:0]CC_0_waveRef3Address;
-  wire [63:0]CC_0_xcorr;
-  wire [63:0]CC_0_xcorr1;
+  wire [35:0]CC_0_xcorr1;
   wire Net;
   wire Net1;
   wire clk_1;
+  wire [31:0]compress_64_to_32_0_out_data;
   wire [15:0]dds_compiler_0_m_axis_data_tdata;
   wire [11:0]waveParser_0_buffer;
   wire [11:0]waveParser_0_buffer1;
@@ -163,7 +163,6 @@ module MicroBlaze
         .waveRef2Address(CC_0_waveRef2Address),
         .waveRef3(BRAMMUX_0_Ref3),
         .waveRef3Address(CC_0_waveRef3Address),
-        .xcorr(CC_0_xcorr),
         .xcorr1(CC_0_xcorr1));
   MicroBlaze_clk1Mhz_0_0 clk1Mhz_0
        (.clk(Net),
@@ -172,13 +171,14 @@ module MicroBlaze
        (.clk_in1(clk_1),
         .clk_out1(Net));
   MicroBlaze_compress_64_to_32_0_0 compress_64_to_32_0
-       (.in_data(CC_0_xcorr1));
+       (.in_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,CC_0_xcorr1}),
+        .out_data(compress_64_to_32_0_out_data));
   MicroBlaze_dds_compiler_0_1 dds_compiler_1
        (.aclk(Net),
         .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
   MicroBlaze_ila_0_0 ila_0
        (.clk(Net),
-        .probe0(CC_0_xcorr),
+        .probe0(compress_64_to_32_0_out_data),
         .probe1(CC_0_clkcorr));
   MicroBlaze_waveParser_0_0 waveParser_0
        (.buffer(waveParser_0_buffer),

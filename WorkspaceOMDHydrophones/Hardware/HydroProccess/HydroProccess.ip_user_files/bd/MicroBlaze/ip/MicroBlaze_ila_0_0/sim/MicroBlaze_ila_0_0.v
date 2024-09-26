@@ -50,13 +50,15 @@ module MicroBlaze_ila_0_0 (
 clk,
 
 
-probe0
+probe0,
+probe1
 );
 
 input clk;
 
 
 input [63 : 0] probe0;
+input [0 : 0] probe1;
 
 
 endmodule

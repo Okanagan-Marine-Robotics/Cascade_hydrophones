@@ -527,12 +527,12 @@
           },
           "xcorr": {
             "direction": "O",
-            "left": "63",
+            "left": "35",
             "right": "0"
           },
           "xcorr1": {
             "direction": "O",
-            "left": "63",
+            "left": "35",
             "right": "0"
           },
           "clkcorr": {
@@ -870,7 +870,7 @@
             "value": "true"
           },
           "C_DATA_DEPTH": {
-            "value": "16384"
+            "value": "32768"
           },
           "C_EN_STRG_QUAL": {
             "value": "1"
@@ -888,7 +888,7 @@
             "value": "1"
           },
           "C_PROBE0_WIDTH": {
-            "value": "64"
+            "value": "32"
           },
           "C_PROBE1_TYPE": {
             "value": "2"
@@ -1101,12 +1101,6 @@
           "BRAMMUX_0/waveRef3Address"
         ]
       },
-      "CC_0_xcorr": {
-        "ports": [
-          "CC_0/xcorr",
-          "ila_0/probe0"
-        ]
-      },
       "CC_0_xcorr1": {
         "ports": [
           "CC_0/xcorr1",
@@ -1116,26 +1110,32 @@
       "Net": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "CC_0/clk",
           "BRAMMUX_0/clk",
           "dds_compiler_1/aclk",
           "clk1Mhz_0/clk",
           "BlockRam_0/clk",
-          "ila_0/clk"
+          "ila_0/clk",
+          "CC_0/clk"
         ]
       },
       "Net1": {
         "ports": [
           "clk1Mhz_0/clk1Mhz",
-          "CC_0/clk1Mhz",
           "BlockRam_0/clk1Mhz",
-          "waveParser_0/clk1Mhz"
+          "waveParser_0/clk1Mhz",
+          "CC_0/clk1Mhz"
         ]
       },
       "clk_1": {
         "ports": [
           "clk",
           "clk_wiz_0/clk_in1"
+        ]
+      },
+      "compress_64_to_32_0_out_data": {
+        "ports": [
+          "compress_64_to_32_0/out_data",
+          "ila_0/probe0"
         ]
       },
       "dds_compiler_0_m_axis_data_tdata": {

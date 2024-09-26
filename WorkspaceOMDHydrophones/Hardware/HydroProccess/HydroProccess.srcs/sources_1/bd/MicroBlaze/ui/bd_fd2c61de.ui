@@ -1,9 +1,9 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.948683",
-   "Default View_TopLeft":"3623,1328",
+   "Default View_ScaleFactor":"0.670821",
+   "Default View_TopLeft":"2974,1252",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
 preplace port port-id_clk -pg 1 -lvl 0 -x -300 -y 100 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -140 -y 60 -defaultsOSRD
@@ -51,8 +51,8 @@ preplace netloc CC_0_waveRef0Address 1 5 4 2720 1180 NJ 1180 3490J 1170 4070
 preplace netloc CC_0_waveRef1Address 1 5 4 2730 1190 NJ 1190 3500J 1180 4110
 preplace netloc CC_0_waveRef2Address 1 5 4 2740 1200 NJ 1200 3470J 1150 4120
 preplace netloc CC_0_waveRef3Address 1 5 4 2750 1210 NJ 1210 3510J 1190 4060
-preplace netloc CC_0_xcorr1 1 4 5 2260 430 NJ 430 NJ 430 NJ 430 4090
-preplace netloc Net 1 1 8 600 830 N 830 1780 890 2160 1050 2690 1220 NJ 1220 3720 1160 4170
+preplace netloc CC_0_xcorr1 1 4 5 2260 460 NJ 460 NJ 460 NJ 460 4090
+preplace netloc Net 1 1 8 600 830 N 830 1780 890 2160 1050 2690 1220 NJ 1220 3720 1160 4160
 preplace netloc Net1 1 2 6 1030 1130 N 1130 2250 1040 NJ 1040 NJ 1040 3540
 preplace netloc clk_1 1 0 1 -280 60n
 preplace netloc dds_compiler_0_m_axis_data_tdata 1 2 1 1020 1290n
@@ -71,7 +71,7 @@ preplace netloc waveParser_0_waveRef0Address 1 3 2 1380 1210 N
 preplace netloc waveParser_0_waveRef1Address 1 3 2 1410 1270 N
 preplace netloc waveParser_0_waveRef2Address 1 3 2 1440 1330 N
 preplace netloc waveParser_0_waveRef3Address 1 3 2 1470 1390 N
-preplace netloc CC_0_xcorr 1 8 1 4160 1460n
+preplace netloc compress_64_to_32_0_out_data 1 5 4 NJ 370 NJ 370 NJ 370 4170
 levelinfo -pg 1 -300 -140 730 1190 2020 2430 2930 3410 3890 4420 4520
 pagesize -pg 1 -db -bbox -sgen -420 -550 4520 2150
 "

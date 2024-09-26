@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Tue Sep 24 22:21:12 2024
+//Date        : Wed Sep 25 22:25:30 2024
 //Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,12 +10,11 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=10,da_bram_cntlr_cnt=1,da_clkrst_cnt=15,da_mb_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=10,da_bram_cntlr_cnt=1,da_clkrst_cnt=16,da_mb_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (clk);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_RESET reset, CLK_DOMAIN MicroBlaze_clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
 
-  wire [13:0]AddressFixer_0_address;
   wire [11:0]BRAMMUX_0_Ref0;
   wire [15:0]BRAMMUX_0_Ref0Address;
   wire [11:0]BRAMMUX_0_Ref1;
@@ -36,6 +35,7 @@ module MicroBlaze
   wire [11:0]BlockRam_0_waveRef1;
   wire [11:0]BlockRam_0_waveRef2;
   wire [11:0]BlockRam_0_waveRef3;
+  wire CC_0_clkcorr;
   wire [15:0]CC_0_count;
   wire [11:0]CC_0_wave00Address;
   wire [11:0]CC_0_wave01Address;
@@ -49,11 +49,11 @@ module MicroBlaze
   wire [15:0]CC_0_waveRef1Address;
   wire [15:0]CC_0_waveRef2Address;
   wire [15:0]CC_0_waveRef3Address;
-  wire [63:0]CC_0_xcorr;
+  wire [35:0]CC_0_xcorr;
+  wire [35:0]CC_0_xcorr1;
   wire Net;
-  wire clk1Mhz_0_clk1Mhz;
-  wire clk_in1_0_1;
-  wire [31:0]compress_64_to_32_0_out_data;
+  wire Net1;
+  wire clk_1;
   wire [15:0]dds_compiler_0_m_axis_data_tdata;
   wire [11:0]waveParser_0_buffer;
   wire [11:0]waveParser_0_buffer1;
@@ -70,12 +70,10 @@ module MicroBlaze
   wire [13:0]waveParser_0_waveRef1Address;
   wire [13:0]waveParser_0_waveRef2Address;
   wire [13:0]waveParser_0_waveRef3Address;
-  wire [0:0]xlconstant_0_dout;
 
-  assign clk_in1_0_1 = clk;
+  assign clk_1 = clk;
   MicroBlaze_AddressFixer_0_0 AddressFixer_0
-       (.address(AddressFixer_0_address),
-        .counter(CC_0_count));
+       (.counter(CC_0_count));
   MicroBlaze_BRAMMUX_0_0 BRAMMUX_0
        (.Ref0(BRAMMUX_0_Ref0),
         .Ref0Address(BRAMMUX_0_Ref0Address),
@@ -96,7 +94,7 @@ module MicroBlaze
         .waveRef3Address(CC_0_waveRef3Address[13:0]));
   MicroBlaze_BlockRam_0_0 BlockRam_0
        (.clk(Net),
-        .clk1Mhz(clk1Mhz_0_clk1Mhz),
+        .clk1Mhz(Net1),
         .inWave1(waveParser_0_bufferRef),
         .inWave2(waveParser_0_buffer),
         .inWave3(waveParser_0_buffer1),
@@ -138,7 +136,8 @@ module MicroBlaze
         .waveRef3AddressB(BRAMMUX_0_Ref3Address[11:0]));
   MicroBlaze_CC_0_0 CC_0
        (.clk(Net),
-        .clk1Mhz(clk1Mhz_0_clk1Mhz),
+        .clk1Mhz(Net1),
+        .clkcorr(CC_0_clkcorr),
         .count(CC_0_count),
         .wave0(BlockRam_0_wave0),
         .wave00(BlockRam_0_wave00),
@@ -164,27 +163,28 @@ module MicroBlaze
         .waveRef2Address(CC_0_waveRef2Address),
         .waveRef3(BRAMMUX_0_Ref3),
         .waveRef3Address(CC_0_waveRef3Address),
-        .xcorr(CC_0_xcorr));
+        .xcorr(CC_0_xcorr),
+        .xcorr1(CC_0_xcorr1));
   MicroBlaze_clk1Mhz_0_0 clk1Mhz_0
        (.clk(Net),
-        .clk1Mhz(clk1Mhz_0_clk1Mhz));
+        .clk1Mhz(Net1));
   MicroBlaze_clk_wiz_0_0 clk_wiz_0
-       (.clk_in1(clk_in1_0_1),
+       (.clk_in1(clk_1),
         .clk_out1(Net));
   MicroBlaze_compress_64_to_32_0_0 compress_64_to_32_0
-       (.in_data(CC_0_xcorr),
-        .out_data(compress_64_to_32_0_out_data));
+       (.in_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,CC_0_xcorr1}));
   MicroBlaze_dds_compiler_0_1 dds_compiler_1
        (.aclk(Net),
         .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
   MicroBlaze_ila_0_0 ila_0
        (.clk(Net),
-        .probe0(CC_0_xcorr));
+        .probe0({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,CC_0_xcorr}),
+        .probe1(CC_0_clkcorr));
   MicroBlaze_waveParser_0_0 waveParser_0
        (.buffer(waveParser_0_buffer),
         .buffer1(waveParser_0_buffer1),
         .bufferRef(waveParser_0_bufferRef),
-        .clk1Mhz(clk1Mhz_0_clk1Mhz),
+        .clk1Mhz(Net1),
         .wave(dds_compiler_0_m_axis_data_tdata[11:0]),
         .wave00Address(waveParser_0_wave00Address),
         .wave01Address(waveParser_0_wave01Address),
@@ -201,5 +201,5 @@ module MicroBlaze
         .waveRef2Address(waveParser_0_waveRef2Address),
         .waveRef3Address(waveParser_0_waveRef3Address));
   MicroBlaze_xlconstant_0_0 xlconstant_0
-       (.dout(xlconstant_0_dout));
+       ();
 endmodule

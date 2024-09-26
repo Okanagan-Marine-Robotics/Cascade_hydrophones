@@ -116,8 +116,8 @@ output wire [11 : 0] wave02Address;
 output wire [15 : 0] waveRef3Address;
 output wire [11 : 0] wave3Address;
 output wire [11 : 0] wave03Address;
-output wire [63 : 0] xcorr;
-output wire [63 : 0] xcorr1;
+output wire [35 : 0] xcorr;
+output wire [35 : 0] xcorr1;
 output wire clkcorr;
 output wire [15 : 0] count;
 
