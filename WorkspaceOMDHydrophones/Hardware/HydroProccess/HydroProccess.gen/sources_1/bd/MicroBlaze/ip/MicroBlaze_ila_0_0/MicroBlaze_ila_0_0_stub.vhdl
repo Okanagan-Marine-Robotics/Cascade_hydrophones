@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Sep 25 00:41:41 2024
+-- Date        : Wed Sep 25 01:51:22 2024
 -- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top MicroBlaze_ila_0_0 -prefix
 --               MicroBlaze_ila_0_0_ MicroBlaze_ila_0_0_stub.vhdl
@@ -16,7 +16,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity MicroBlaze_ila_0_0 is
   Port ( 
     clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    probe0 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
 
@@ -26,7 +26,7 @@ architecture stub of MicroBlaze_ila_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,probe0[63:0],probe1[0:0]";
+attribute black_box_pad_pin of stub : architecture is "clk,probe0[31:0],probe1[0:0]";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "ila,Vivado 2023.2";
 begin

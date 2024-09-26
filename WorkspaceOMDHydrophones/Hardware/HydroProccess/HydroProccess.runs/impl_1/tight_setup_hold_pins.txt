@@ -1,0 +1,41 @@
++=================================+===================================+================================================================================================+
+| Launch Setup Clock              | Launch Hold Clock                 | Pin                                                                                            |
++=================================+===================================+================================================================================================+
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/ADV_TRIG.u_adv_trig/FLAG2_O_reg/D                        |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/BRAMMUX_0/inst/Ref2Address_reg[0]/D                                               |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/BRAMMUX_0/inst/Ref2Address_reg[1]/D                                               |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/BRAMMUX_0/inst/Ref2Address_reg[2]/D                                               |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[6]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[5]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[7]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[12]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[8]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[9]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[16]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[1]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[0]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/ADV_TRIG.u_adv_trig/FLAG3_O_reg/D                        |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/ADV_TRIG.u_adv_trig/FLAG0_O_reg/D                        |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[14]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER/counter_reg[4]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[13]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[11]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[3].U_COUNTER/counter_reg[3]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[3].U_COUNTER/counter_reg[0]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[15]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[3].U_COUNTER/counter_reg[16]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[1].U_COUNTER/counter_reg[5]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0_1 | MicroBlaze_i/ila_0/inst/ila_core_inst/ADV_TRIG.u_adv_trig/CAPTURE_O_reg/D                      |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[16]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[1].U_COUNTER/counter_reg[16]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/ADV_TRIG.u_adv_trig/current_state_reg[1]/D               |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[1].U_COUNTER/counter_reg[12]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[1]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[2]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[3].U_COUNTER/counter_reg[10]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/ADV_TRIG.u_adv_trig/trigger_reg/D                        |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[3].U_COUNTER/counter_reg[13]/D |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[1].U_COUNTER/counter_reg[0]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER/counter_reg[0]/D  |
+| clk_out1_MicroBlaze_clk_wiz_0_0 | clk_out1_MicroBlaze_clk_wiz_0_0   | MicroBlaze_i/ila_0/inst/ila_core_inst/ADV_TRIG.u_adv_trig/current_state_reg[2]/D               |
++---------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------+

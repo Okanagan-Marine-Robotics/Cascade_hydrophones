@@ -13,6 +13,7 @@ vlib questa_lib/msim/xbip_dsp48_wrapper_v3_0_5
 vlib questa_lib/msim/xbip_dsp48_addsub_v3_0_7
 vlib questa_lib/msim/xbip_dsp48_multadd_v3_0_7
 vlib questa_lib/msim/dds_compiler_v6_0_23
+vlib questa_lib/msim/xlslice_v1_0_3
 
 vmap xpm questa_lib/msim/xpm
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
@@ -26,6 +27,7 @@ vmap xbip_dsp48_wrapper_v3_0_5 questa_lib/msim/xbip_dsp48_wrapper_v3_0_5
 vmap xbip_dsp48_addsub_v3_0_7 questa_lib/msim/xbip_dsp48_addsub_v3_0_7
 vmap xbip_dsp48_multadd_v3_0_7 questa_lib/msim/xbip_dsp48_multadd_v3_0_7
 vmap dds_compiler_v6_0_23 questa_lib/msim/dds_compiler_v6_0_23
+vmap xlslice_v1_0_3 questa_lib/msim/xlslice_v1_0_3
 
 vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/e2ba/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/a29c/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ae90/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0e59/hdl/verilog" \
 "C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -84,6 +86,12 @@ vcom -work xil_defaultlib  -93  \
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/e2ba/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/a29c/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ae90/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0e59/hdl/verilog" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_ila_0_0/sim/MicroBlaze_ila_0_0.v" \
 "../../../bd/MicroBlaze/sim/MicroBlaze.v" \
+
+vlog -work xlslice_v1_0_3  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/e2ba/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/a29c/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ae90/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0e59/hdl/verilog" \
+"../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/e2ba/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/a29c/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ae90/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0e59/hdl/verilog" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/sim/MicroBlaze_xlslice_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

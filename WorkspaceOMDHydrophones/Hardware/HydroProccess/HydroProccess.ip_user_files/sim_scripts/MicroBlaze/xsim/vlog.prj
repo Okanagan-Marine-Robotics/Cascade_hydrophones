@@ -11,6 +11,7 @@ verilog xil_defaultlib --include "../../../../HydroProccess.gen/sources_1/bd/Mic
 "../../../bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/sim/MicroBlaze_AddressFixer_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_ila_0_0/sim/MicroBlaze_ila_0_0.v" \
 "../../../bd/MicroBlaze/sim/MicroBlaze.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/sim/MicroBlaze_xlslice_0_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 

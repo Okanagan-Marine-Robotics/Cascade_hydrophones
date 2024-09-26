@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Sep 25 22:25:30 2024
+//Date        : Thu Sep 26 01:58:11 2024
 //Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=10,da_bram_cntlr_cnt=1,da_clkrst_cnt=16,da_mb_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=10,da_bram_cntlr_cnt=1,da_clkrst_cnt=16,da_mb_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (clk);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_RESET reset, CLK_DOMAIN MicroBlaze_clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
@@ -70,6 +70,7 @@ module MicroBlaze
   wire [13:0]waveParser_0_waveRef1Address;
   wire [13:0]waveParser_0_waveRef2Address;
   wire [13:0]waveParser_0_waveRef3Address;
+  wire [31:0]xlslice_0_Dout;
 
   assign clk_1 = clk;
   MicroBlaze_AddressFixer_0_0 AddressFixer_0
@@ -178,7 +179,7 @@ module MicroBlaze
         .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
   MicroBlaze_ila_0_0 ila_0
        (.clk(Net),
-        .probe0({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,CC_0_xcorr}),
+        .probe0(xlslice_0_Dout),
         .probe1(CC_0_clkcorr));
   MicroBlaze_waveParser_0_0 waveParser_0
        (.buffer(waveParser_0_buffer),
@@ -202,4 +203,7 @@ module MicroBlaze
         .waveRef3Address(waveParser_0_waveRef3Address));
   MicroBlaze_xlconstant_0_0 xlconstant_0
        ();
+  MicroBlaze_xlslice_0_0 xlslice_0
+       (.Din(CC_0_xcorr),
+        .Dout(xlslice_0_Dout));
 endmodule

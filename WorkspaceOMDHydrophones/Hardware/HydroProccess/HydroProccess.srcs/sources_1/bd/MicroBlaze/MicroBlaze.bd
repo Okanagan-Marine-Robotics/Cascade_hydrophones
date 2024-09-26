@@ -21,7 +21,8 @@
       "clk1Mhz_0": "",
       "AddressFixer_0": "",
       "dds_compiler_1": "",
-      "ila_0": ""
+      "ila_0": "",
+      "xlslice_0": ""
     },
     "ports": {
       "clk": {
@@ -894,6 +895,24 @@
             "value": "2"
           }
         }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "MicroBlaze_xlslice_0_0",
+        "xci_path": "ip\\MicroBlaze_xlslice_0_0\\MicroBlaze_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "35"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "36"
+          }
+        }
       }
     },
     "nets": {
@@ -1101,6 +1120,12 @@
           "BRAMMUX_0/waveRef3Address"
         ]
       },
+      "CC_0_xcorr": {
+        "ports": [
+          "CC_0/xcorr",
+          "xlslice_0/Din"
+        ]
+      },
       "CC_0_xcorr1": {
         "ports": [
           "CC_0/xcorr1",
@@ -1130,12 +1155,6 @@
         "ports": [
           "clk",
           "clk_wiz_0/clk_in1"
-        ]
-      },
-      "compress_64_to_32_0_out_data": {
-        "ports": [
-          "compress_64_to_32_0/out_data",
-          "ila_0/probe0"
         ]
       },
       "dds_compiler_0_m_axis_data_tdata": {
@@ -1234,6 +1253,12 @@
         "ports": [
           "waveParser_0/waveRef3Address",
           "BlockRam_0/waveRef3Address"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "ila_0/probe0"
         ]
       }
     }

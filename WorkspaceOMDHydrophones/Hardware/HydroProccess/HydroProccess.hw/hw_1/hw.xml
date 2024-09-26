@@ -25,7 +25,7 @@
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
       <Properties Property="CONTROL.TRIGGER_MODE" value="BASIC_ONLY"/>
       <Properties Property="CONTROL.TRIGGER_POSITION" value="0"/>
-      <Properties Property="CONTROL.WINDOW_COUNT" value="8192"/>
+      <Properties Property="CONTROL.WINDOW_COUNT" value="16384"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
   </ObjectList>
@@ -56,7 +56,7 @@
         <net name="MicroBlaze_i/CC_0_clkcorr"/>
       </nets>
     </probe>
-    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+    <probe type="ila_data" busType="net" source="netlist" spec="ILA_DATA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
@@ -141,7 +141,7 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
@@ -149,7 +149,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+        <Option Id="WAVEFORM_STYLE" value="Analog"/>
       </probeOptions>
       <nets>
         <net name="MicroBlaze_i/compress_64_to_32_0_out_data[31]"/>
@@ -184,6 +184,55 @@
         <net name="MicroBlaze_i/compress_64_to_32_0_out_data[2]"/>
         <net name="MicroBlaze_i/compress_64_to_32_0_out_data[1]"/>
         <net name="MicroBlaze_i/compress_64_to_32_0_out_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="WAVEFORM_STYLE" value="Analog"/>
+      </probeOptions>
+      <nets>
+        <net name="MicroBlaze_i/xlslice_0_Dout[31]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[30]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[29]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[28]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[27]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[26]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[25]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[24]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[23]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[22]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[21]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[20]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[19]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[18]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[17]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[16]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[15]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[14]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[13]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[12]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[11]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[10]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[9]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[8]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[7]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[6]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[5]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[4]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[3]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[2]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[1]"/>
+        <net name="MicroBlaze_i/xlslice_0_Dout[0]"/>
       </nets>
     </probe>
   </probeset>

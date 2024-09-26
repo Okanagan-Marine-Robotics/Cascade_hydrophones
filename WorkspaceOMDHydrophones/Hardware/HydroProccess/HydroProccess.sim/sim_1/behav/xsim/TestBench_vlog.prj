@@ -19,6 +19,7 @@ verilog xil_defaultlib  --include "../../../../HydroProccess.gen/sources_1/bd/Mi
 "../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/sim/MicroBlaze_AddressFixer_0_0.v" \
 "../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_ila_0_0/sim/MicroBlaze_ila_0_0.v" \
 "../../../../HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/sim/MicroBlaze_xlslice_0_0.v" \
 "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v" \
 "../../../../HydroProccess.srcs/sim_1/new/TestBench.v" \
 
