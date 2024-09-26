@@ -1,5 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/HardwareXCorr/ip/HardwareXCorr_dds_compiler_1_0/sim/HardwareXCorr_dds_compiler_1_0.vhd" \
-
-# Do not sort compile order
-nosort

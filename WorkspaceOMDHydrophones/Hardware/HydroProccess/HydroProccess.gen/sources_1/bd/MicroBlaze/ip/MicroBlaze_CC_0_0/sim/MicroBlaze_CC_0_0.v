@@ -83,6 +83,7 @@ module MicroBlaze_CC_0_0 (
   wave03Address,
   xcorr,
   xcorr1,
+  clkcorr,
   count
 );
 
@@ -116,6 +117,7 @@ output wire [11 : 0] wave3Address;
 output wire [11 : 0] wave03Address;
 output wire [63 : 0] xcorr;
 output wire [63 : 0] xcorr1;
+output wire clkcorr;
 output wire [15 : 0] count;
 
   CC inst (
@@ -147,6 +149,7 @@ output wire [15 : 0] count;
     .wave03Address(wave03Address),
     .xcorr(xcorr),
     .xcorr1(xcorr1),
+    .clkcorr(clkcorr),
     .count(count)
   );
 endmodule

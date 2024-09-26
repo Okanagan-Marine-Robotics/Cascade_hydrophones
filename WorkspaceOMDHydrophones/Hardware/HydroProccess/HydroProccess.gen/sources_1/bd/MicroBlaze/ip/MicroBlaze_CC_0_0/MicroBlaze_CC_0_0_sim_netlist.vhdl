@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Tue Sep 24 03:03:54 2024
+-- Date        : Tue Sep 24 22:50:30 2024
 -- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.vhdl
+--               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.vhdl
 -- Design      : MicroBlaze_CC_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,6 +17,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity MicroBlaze_CC_0_0_CC is
   port (
+    clkcorr : out STD_LOGIC;
     count : out STD_LOGIC_VECTOR ( 15 downto 0 );
     waveRef0Address : out STD_LOGIC_VECTOR ( 15 downto 0 );
     wave03Address : out STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -45,9 +46,7 @@ entity MicroBlaze_CC_0_0_CC is
 end MicroBlaze_CC_0_0_CC;
 
 architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
-  signal CEM : STD_LOGIC;
   signal clear : STD_LOGIC;
-  signal clkcorr_reg_n_0 : STD_LOGIC;
   signal \^count\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal count1 : STD_LOGIC;
   signal \count1_carry__0_i_1_n_0\ : STD_LOGIC;
@@ -102,7 +101,9 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \countMulti_reg[8]_i_1_n_6\ : STD_LOGIC;
   signal \countMulti_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal \countMulti_reg__0\ : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal \count[15]_i_1_n_0\ : STD_LOGIC;
   signal \count[3]_i_2_n_0\ : STD_LOGIC;
+  signal count_0 : STD_LOGIC;
   signal \count_reg[11]_i_1_n_0\ : STD_LOGIC;
   signal \count_reg[11]_i_1_n_1\ : STD_LOGIC;
   signal \count_reg[11]_i_1_n_2\ : STD_LOGIC;
@@ -111,13 +112,13 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \count_reg[11]_i_1_n_5\ : STD_LOGIC;
   signal \count_reg[11]_i_1_n_6\ : STD_LOGIC;
   signal \count_reg[11]_i_1_n_7\ : STD_LOGIC;
-  signal \count_reg[15]_i_1_n_1\ : STD_LOGIC;
-  signal \count_reg[15]_i_1_n_2\ : STD_LOGIC;
-  signal \count_reg[15]_i_1_n_3\ : STD_LOGIC;
-  signal \count_reg[15]_i_1_n_4\ : STD_LOGIC;
-  signal \count_reg[15]_i_1_n_5\ : STD_LOGIC;
-  signal \count_reg[15]_i_1_n_6\ : STD_LOGIC;
-  signal \count_reg[15]_i_1_n_7\ : STD_LOGIC;
+  signal \count_reg[15]_i_3_n_1\ : STD_LOGIC;
+  signal \count_reg[15]_i_3_n_2\ : STD_LOGIC;
+  signal \count_reg[15]_i_3_n_3\ : STD_LOGIC;
+  signal \count_reg[15]_i_3_n_4\ : STD_LOGIC;
+  signal \count_reg[15]_i_3_n_5\ : STD_LOGIC;
+  signal \count_reg[15]_i_3_n_6\ : STD_LOGIC;
+  signal \count_reg[15]_i_3_n_7\ : STD_LOGIC;
   signal \count_reg[3]_i_1_n_0\ : STD_LOGIC;
   signal \count_reg[3]_i_1_n_1\ : STD_LOGIC;
   signal \count_reg[3]_i_1_n_2\ : STD_LOGIC;
@@ -134,7 +135,7 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \count_reg[7]_i_1_n_5\ : STD_LOGIC;
   signal \count_reg[7]_i_1_n_6\ : STD_LOGIC;
   signal \count_reg[7]_i_1_n_7\ : STD_LOGIC;
-  signal p_1_in : STD_LOGIC_VECTOR ( 25 downto 0 );
+  signal p_1_in : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \product1[0]_i_2_n_0\ : STD_LOGIC;
   signal \product1[0]_i_3_n_0\ : STD_LOGIC;
   signal \product1[0]_i_4_n_0\ : STD_LOGIC;
@@ -681,37 +682,7 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal product_stage2_reg_n_152 : STD_LOGIC;
   signal product_stage2_reg_n_153 : STD_LOGIC;
   signal \product_stage3_reg__0\ : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal subframeCounter : STD_LOGIC_VECTOR ( 25 downto 0 );
-  signal \subframeCounter0_carry__0_n_0\ : STD_LOGIC;
-  signal \subframeCounter0_carry__0_n_1\ : STD_LOGIC;
-  signal \subframeCounter0_carry__0_n_2\ : STD_LOGIC;
-  signal \subframeCounter0_carry__0_n_3\ : STD_LOGIC;
-  signal \subframeCounter0_carry__1_n_0\ : STD_LOGIC;
-  signal \subframeCounter0_carry__1_n_1\ : STD_LOGIC;
-  signal \subframeCounter0_carry__1_n_2\ : STD_LOGIC;
-  signal \subframeCounter0_carry__1_n_3\ : STD_LOGIC;
-  signal \subframeCounter0_carry__2_n_0\ : STD_LOGIC;
-  signal \subframeCounter0_carry__2_n_1\ : STD_LOGIC;
-  signal \subframeCounter0_carry__2_n_2\ : STD_LOGIC;
-  signal \subframeCounter0_carry__2_n_3\ : STD_LOGIC;
-  signal \subframeCounter0_carry__3_n_0\ : STD_LOGIC;
-  signal \subframeCounter0_carry__3_n_1\ : STD_LOGIC;
-  signal \subframeCounter0_carry__3_n_2\ : STD_LOGIC;
-  signal \subframeCounter0_carry__3_n_3\ : STD_LOGIC;
-  signal \subframeCounter0_carry__4_n_0\ : STD_LOGIC;
-  signal \subframeCounter0_carry__4_n_1\ : STD_LOGIC;
-  signal \subframeCounter0_carry__4_n_2\ : STD_LOGIC;
-  signal \subframeCounter0_carry__4_n_3\ : STD_LOGIC;
-  signal subframeCounter0_carry_n_0 : STD_LOGIC;
-  signal subframeCounter0_carry_n_1 : STD_LOGIC;
-  signal subframeCounter0_carry_n_2 : STD_LOGIC;
-  signal subframeCounter0_carry_n_3 : STD_LOGIC;
-  signal \subframeCounter[25]_i_1_n_0\ : STD_LOGIC;
-  signal \subframeCounter[25]_i_2_n_0\ : STD_LOGIC;
-  signal \subframeCounter[25]_i_3_n_0\ : STD_LOGIC;
-  signal \subframeCounter[25]_i_4_n_0\ : STD_LOGIC;
-  signal \subframeCounter[25]_i_5_n_0\ : STD_LOGIC;
-  signal \subframeCounter[25]_i_6_n_0\ : STD_LOGIC;
+  signal temp0 : STD_LOGIC;
   signal temp00_reg_n_100 : STD_LOGIC;
   signal temp00_reg_n_101 : STD_LOGIC;
   signal temp00_reg_n_102 : STD_LOGIC;
@@ -928,6 +899,7 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal temp0_reg_n_97 : STD_LOGIC;
   signal temp0_reg_n_98 : STD_LOGIC;
   signal temp0_reg_n_99 : STD_LOGIC;
+  signal temp2_reg_i_3_n_0 : STD_LOGIC;
   signal temp2_reg_n_100 : STD_LOGIC;
   signal temp2_reg_n_101 : STD_LOGIC;
   signal temp2_reg_n_102 : STD_LOGIC;
@@ -1054,10 +1026,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef0Address4__0_carry__0_n_1\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__0_n_2\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__0_n_3\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__0_n_4\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__0_n_5\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__0_n_6\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__0_n_7\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__10_i_1_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__10_i_2_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__10_i_3_n_0\ : STD_LOGIC;
@@ -1076,6 +1044,7 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef0Address4__0_carry__11_i_2_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__11_i_3_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__11_i_4_n_0\ : STD_LOGIC;
+  signal \waveRef0Address4__0_carry__11_i_5_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__11_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__11_n_1\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__11_n_2\ : STD_LOGIC;
@@ -1137,10 +1106,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef0Address4__0_carry__1_n_1\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__1_n_2\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__1_n_3\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__1_n_4\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__1_n_5\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__1_n_6\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__1_n_7\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__2_i_1_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__2_i_2_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__2_i_3_n_0\ : STD_LOGIC;
@@ -1148,14 +1113,11 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef0Address4__0_carry__2_n_1\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__2_n_2\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__2_n_3\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__2_n_4\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__2_n_5\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__2_n_6\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry__2_n_7\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__3_i_1_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__3_i_2_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__3_i_3_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__3_i_4_n_0\ : STD_LOGIC;
+  signal \waveRef0Address4__0_carry__3_i_5_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__3_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__3_n_1\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__3_n_2\ : STD_LOGIC;
@@ -1213,6 +1175,7 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef0Address4__0_carry__7_i_2_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__7_i_3_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__7_i_4_n_0\ : STD_LOGIC;
+  signal \waveRef0Address4__0_carry__7_i_5_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__7_n_0\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__7_n_1\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry__7_n_2\ : STD_LOGIC;
@@ -1259,9 +1222,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef0Address4__0_carry_n_1\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry_n_2\ : STD_LOGIC;
   signal \waveRef0Address4__0_carry_n_3\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry_n_4\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry_n_5\ : STD_LOGIC;
-  signal \waveRef0Address4__0_carry_n_6\ : STD_LOGIC;
   signal \waveRef0Address4_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \waveRef0Address4_carry__0_i_2_n_0\ : STD_LOGIC;
   signal \waveRef0Address4_carry__0_i_3_n_0\ : STD_LOGIC;
@@ -1295,7 +1255,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal waveRef0Address4_carry_n_1 : STD_LOGIC;
   signal waveRef0Address4_carry_n_2 : STD_LOGIC;
   signal waveRef0Address4_carry_n_3 : STD_LOGIC;
-  signal \waveRef0Address[0]_i_1_n_0\ : STD_LOGIC;
   signal \waveRef0Address[15]_i_1_n_0\ : STD_LOGIC;
   signal waveRef1Address3 : STD_LOGIC;
   signal waveRef1Address32_in : STD_LOGIC;
@@ -1402,11 +1361,13 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef1Address4_carry__2_n_2\ : STD_LOGIC;
   signal \waveRef1Address4_carry__2_n_3\ : STD_LOGIC;
   signal \waveRef1Address4_carry__3_i_1_n_0\ : STD_LOGIC;
+  signal \waveRef1Address4_carry__3_i_2_n_0\ : STD_LOGIC;
   signal \waveRef1Address4_carry__3_n_2\ : STD_LOGIC;
   signal waveRef1Address4_carry_i_1_n_0 : STD_LOGIC;
   signal waveRef1Address4_carry_i_2_n_0 : STD_LOGIC;
   signal waveRef1Address4_carry_i_3_n_0 : STD_LOGIC;
   signal waveRef1Address4_carry_i_4_n_0 : STD_LOGIC;
+  signal waveRef1Address4_carry_i_5_n_0 : STD_LOGIC;
   signal waveRef1Address4_carry_n_0 : STD_LOGIC;
   signal waveRef1Address4_carry_n_1 : STD_LOGIC;
   signal waveRef1Address4_carry_n_2 : STD_LOGIC;
@@ -1516,11 +1477,13 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef2Address4_carry__2_n_2\ : STD_LOGIC;
   signal \waveRef2Address4_carry__2_n_3\ : STD_LOGIC;
   signal \waveRef2Address4_carry__3_i_1_n_0\ : STD_LOGIC;
+  signal \waveRef2Address4_carry__3_i_2_n_0\ : STD_LOGIC;
   signal \waveRef2Address4_carry__3_n_2\ : STD_LOGIC;
   signal waveRef2Address4_carry_i_1_n_0 : STD_LOGIC;
   signal waveRef2Address4_carry_i_2_n_0 : STD_LOGIC;
   signal waveRef2Address4_carry_i_3_n_0 : STD_LOGIC;
   signal waveRef2Address4_carry_i_4_n_0 : STD_LOGIC;
+  signal waveRef2Address4_carry_i_5_n_0 : STD_LOGIC;
   signal waveRef2Address4_carry_n_0 : STD_LOGIC;
   signal waveRef2Address4_carry_n_1 : STD_LOGIC;
   signal waveRef2Address4_carry_n_2 : STD_LOGIC;
@@ -1631,24 +1594,25 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \waveRef3Address4_carry__2_n_2\ : STD_LOGIC;
   signal \waveRef3Address4_carry__2_n_3\ : STD_LOGIC;
   signal \waveRef3Address4_carry__3_i_1_n_0\ : STD_LOGIC;
+  signal \waveRef3Address4_carry__3_i_2_n_0\ : STD_LOGIC;
   signal \waveRef3Address4_carry__3_n_2\ : STD_LOGIC;
   signal waveRef3Address4_carry_i_1_n_0 : STD_LOGIC;
   signal waveRef3Address4_carry_i_2_n_0 : STD_LOGIC;
   signal waveRef3Address4_carry_i_3_n_0 : STD_LOGIC;
   signal waveRef3Address4_carry_i_4_n_0 : STD_LOGIC;
+  signal waveRef3Address4_carry_i_5_n_0 : STD_LOGIC;
   signal waveRef3Address4_carry_n_0 : STD_LOGIC;
   signal waveRef3Address4_carry_n_1 : STD_LOGIC;
   signal waveRef3Address4_carry_n_2 : STD_LOGIC;
   signal waveRef3Address4_carry_n_3 : STD_LOGIC;
   signal \waveRef3Address[15]_i_1_n_0\ : STD_LOGIC;
-  signal \xcorr[63]_i_1_n_0\ : STD_LOGIC;
   signal \xcorr[63]_i_2_n_0\ : STD_LOGIC;
   signal \xcorr[63]_i_3_n_0\ : STD_LOGIC;
   signal NLW_count1_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_count1_carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_count1_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \NLW_count1_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_countMulti_reg[12]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_count_reg[15]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_count_reg[15]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_product1_reg[60]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal NLW_product1_stage1_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_product1_stage1_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -1715,8 +1679,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal NLW_product_stage3_reg_CARRYOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_product_stage3_reg_P_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 32 );
   signal NLW_product_stage3_reg_PCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 0 );
-  signal \NLW_subframeCounter0_carry__5_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_subframeCounter0_carry__5_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   signal NLW_temp00_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_temp00_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_temp00_reg_OVERFLOW_UNCONNECTED : STD_LOGIC;
@@ -1809,13 +1771,16 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal NLW_waveRef3Address4_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \NLW_waveRef3Address4_carry__3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_waveRef3Address4_carry__3_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  attribute COMPARATOR_THRESHOLD : integer;
+  attribute COMPARATOR_THRESHOLD of count1_carry : label is 11;
+  attribute COMPARATOR_THRESHOLD of \count1_carry__0\ : label is 11;
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of \countMulti_reg[0]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \countMulti_reg[12]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \countMulti_reg[4]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \countMulti_reg[8]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \count_reg[11]_i_1\ : label is 11;
-  attribute ADDER_THRESHOLD of \count_reg[15]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \count_reg[15]_i_3\ : label is 11;
   attribute ADDER_THRESHOLD of \count_reg[3]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \count_reg[7]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \product1_reg[0]_i_1\ : label is 11;
@@ -1864,16 +1829,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   attribute OPT_MODIFIED of product_stage2_reg : label is "MLO";
   attribute METHODOLOGY_DRC_VIOS of product_stage3_reg : label is "{SYNTH-12 {cell *THIS*}}";
   attribute OPT_MODIFIED of product_stage3_reg : label is "MLO";
-  attribute ADDER_THRESHOLD of subframeCounter0_carry : label is 35;
-  attribute ADDER_THRESHOLD of \subframeCounter0_carry__0\ : label is 35;
-  attribute ADDER_THRESHOLD of \subframeCounter0_carry__1\ : label is 35;
-  attribute ADDER_THRESHOLD of \subframeCounter0_carry__2\ : label is 35;
-  attribute ADDER_THRESHOLD of \subframeCounter0_carry__3\ : label is 35;
-  attribute ADDER_THRESHOLD of \subframeCounter0_carry__4\ : label is 35;
-  attribute ADDER_THRESHOLD of \subframeCounter0_carry__5\ : label is 35;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \subframeCounter[0]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \subframeCounter[25]_i_2\ : label is "soft_lutpair0";
   attribute METHODOLOGY_DRC_VIOS of temp00_reg : label is "{SYNTH-12 {cell *THIS*}}";
   attribute OPT_MODIFIED of temp00_reg : label is "MLO";
   attribute METHODOLOGY_DRC_VIOS of temp02_reg : label is "{SYNTH-12 {cell *THIS*}}";
@@ -1882,7 +1837,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   attribute OPT_MODIFIED of temp0_reg : label is "MLO";
   attribute METHODOLOGY_DRC_VIOS of temp2_reg : label is "{SYNTH-12 {cell *THIS*}}";
   attribute OPT_MODIFIED of temp2_reg : label is "MLO";
-  attribute COMPARATOR_THRESHOLD : integer;
   attribute COMPARATOR_THRESHOLD of \waveRef0Address3__7_carry\ : label is 11;
   attribute COMPARATOR_THRESHOLD of \waveRef0Address3__7_carry__0\ : label is 11;
   attribute COMPARATOR_THRESHOLD of \waveRef0Address3__7_carry__1\ : label is 11;
@@ -1938,8 +1892,8 @@ clkcorr_reg: unisim.vcomponents.FDRE
         port map (
       C => clk,
       CE => '1',
-      D => \subframeCounter[25]_i_1_n_0\,
-      Q => clkcorr_reg_n_0,
+      D => clear,
+      Q => clkcorr,
       R => '0'
     );
 count1_carry: unisim.vcomponents.CARRY4
@@ -1972,9 +1926,8 @@ count1_carry: unisim.vcomponents.CARRY4
       DI(2) => \^count\(15),
       DI(1) => \count1_carry__0_i_1_n_0\,
       DI(0) => \count1_carry__0_i_2_n_0\,
-      O(3) => clear,
-      O(2 downto 0) => \NLW_count1_carry__0_O_UNCONNECTED\(2 downto 0),
-      S(3) => '1',
+      O(3 downto 0) => \NLW_count1_carry__0_O_UNCONNECTED\(3 downto 0),
+      S(3) => '0',
       S(2) => \count1_carry__0_i_3_n_0\,
       S(1) => \count1_carry__0_i_4_n_0\,
       S(0) => \count1_carry__0_i_5_n_0\
@@ -2104,7 +2057,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[0]_i_1_n_7\,
       Q => \countMulti_reg__0\(0),
-      S => \xcorr[63]_i_1_n_0\
+      S => clear
     );
 \countMulti_reg[0]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -2132,7 +2085,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[8]_i_1_n_5\,
       Q => \countMulti_reg__0\(10),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[11]\: unisim.vcomponents.FDRE
     generic map(
@@ -2144,7 +2097,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[8]_i_1_n_4\,
       Q => \countMulti_reg__0\(11),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -2156,7 +2109,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[12]_i_1_n_7\,
       Q => countMulti_reg(12),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[12]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -2183,7 +2136,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[12]_i_1_n_6\,
       Q => countMulti_reg(13),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[14]\: unisim.vcomponents.FDRE
     generic map(
@@ -2195,7 +2148,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[12]_i_1_n_5\,
       Q => countMulti_reg(14),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[15]\: unisim.vcomponents.FDRE
     generic map(
@@ -2207,7 +2160,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[12]_i_1_n_4\,
       Q => countMulti_reg(15),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -2219,7 +2172,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[0]_i_1_n_6\,
       Q => \countMulti_reg__0\(1),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -2231,7 +2184,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[0]_i_1_n_5\,
       Q => \countMulti_reg__0\(2),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -2243,7 +2196,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[0]_i_1_n_4\,
       Q => \countMulti_reg__0\(3),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -2255,7 +2208,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[4]_i_1_n_7\,
       Q => \countMulti_reg__0\(4),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[4]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -2282,7 +2235,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[4]_i_1_n_6\,
       Q => \countMulti_reg__0\(5),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -2294,7 +2247,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[4]_i_1_n_5\,
       Q => \countMulti_reg__0\(6),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[7]\: unisim.vcomponents.FDRE
     generic map(
@@ -2306,7 +2259,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[4]_i_1_n_4\,
       Q => \countMulti_reg__0\(7),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -2318,7 +2271,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[8]_i_1_n_7\,
       Q => \countMulti_reg__0\(8),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
     );
 \countMulti_reg[8]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -2345,7 +2298,24 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \countMulti_reg[8]_i_1_n_6\,
       Q => \countMulti_reg__0\(9),
-      R => \xcorr[63]_i_1_n_0\
+      R => clear
+    );
+\count[15]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => temp0,
+      I1 => count1,
+      O => \count[15]_i_1_n_0\
+    );
+\count[15]_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => temp0,
+      O => count_0
     );
 \count[3]_i_2\: unisim.vcomponents.LUT1
     generic map(
@@ -2361,11 +2331,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[3]_i_1_n_7\,
       Q => \^count\(0),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[10]\: unisim.vcomponents.FDRE
     generic map(
@@ -2373,11 +2343,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[11]_i_1_n_5\,
       Q => \^count\(10),
-      R => clear
+      R => \count[15]_i_1_n_0\
     );
 \count_reg[11]\: unisim.vcomponents.FDSE
     generic map(
@@ -2385,11 +2355,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[11]_i_1_n_4\,
       Q => \^count\(11),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[11]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -2412,11 +2382,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
-      D => \count_reg[15]_i_1_n_7\,
+      C => clk,
+      CE => count_0,
+      D => \count_reg[15]_i_3_n_7\,
       Q => \^count\(12),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[13]\: unisim.vcomponents.FDRE
     generic map(
@@ -2424,11 +2394,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
-      D => \count_reg[15]_i_1_n_6\,
+      C => clk,
+      CE => count_0,
+      D => \count_reg[15]_i_3_n_6\,
       Q => \^count\(13),
-      R => clear
+      R => \count[15]_i_1_n_0\
     );
 \count_reg[14]\: unisim.vcomponents.FDSE
     generic map(
@@ -2436,11 +2406,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
-      D => \count_reg[15]_i_1_n_5\,
+      C => clk,
+      CE => count_0,
+      D => \count_reg[15]_i_3_n_5\,
       Q => \^count\(14),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[15]\: unisim.vcomponents.FDSE
     generic map(
@@ -2448,25 +2418,25 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
-      D => \count_reg[15]_i_1_n_4\,
+      C => clk,
+      CE => count_0,
+      D => \count_reg[15]_i_3_n_4\,
       Q => \^count\(15),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
-\count_reg[15]_i_1\: unisim.vcomponents.CARRY4
+\count_reg[15]_i_3\: unisim.vcomponents.CARRY4
      port map (
       CI => \count_reg[11]_i_1_n_0\,
-      CO(3) => \NLW_count_reg[15]_i_1_CO_UNCONNECTED\(3),
-      CO(2) => \count_reg[15]_i_1_n_1\,
-      CO(1) => \count_reg[15]_i_1_n_2\,
-      CO(0) => \count_reg[15]_i_1_n_3\,
+      CO(3) => \NLW_count_reg[15]_i_3_CO_UNCONNECTED\(3),
+      CO(2) => \count_reg[15]_i_3_n_1\,
+      CO(1) => \count_reg[15]_i_3_n_2\,
+      CO(0) => \count_reg[15]_i_3_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \count_reg[15]_i_1_n_4\,
-      O(2) => \count_reg[15]_i_1_n_5\,
-      O(1) => \count_reg[15]_i_1_n_6\,
-      O(0) => \count_reg[15]_i_1_n_7\,
+      O(3) => \count_reg[15]_i_3_n_4\,
+      O(2) => \count_reg[15]_i_3_n_5\,
+      O(1) => \count_reg[15]_i_3_n_6\,
+      O(0) => \count_reg[15]_i_3_n_7\,
       S(3 downto 0) => \^count\(15 downto 12)
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
@@ -2475,11 +2445,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[3]_i_1_n_6\,
       Q => \^count\(1),
-      R => clear
+      R => \count[15]_i_1_n_0\
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -2487,11 +2457,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[3]_i_1_n_5\,
       Q => \^count\(2),
-      R => clear
+      R => \count[15]_i_1_n_0\
     );
 \count_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -2499,11 +2469,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[3]_i_1_n_4\,
       Q => \^count\(3),
-      R => clear
+      R => \count[15]_i_1_n_0\
     );
 \count_reg[3]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -2527,11 +2497,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[7]_i_1_n_7\,
       Q => \^count\(4),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[5]\: unisim.vcomponents.FDSE
     generic map(
@@ -2539,11 +2509,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[7]_i_1_n_6\,
       Q => \^count\(5),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[6]\: unisim.vcomponents.FDSE
     generic map(
@@ -2551,11 +2521,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[7]_i_1_n_5\,
       Q => \^count\(6),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[7]\: unisim.vcomponents.FDSE
     generic map(
@@ -2563,11 +2533,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[7]_i_1_n_4\,
       Q => \^count\(7),
-      S => clear
+      S => \count[15]_i_1_n_0\
     );
 \count_reg[7]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -2590,11 +2560,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[11]_i_1_n_7\,
       Q => \^count\(8),
-      R => clear
+      R => \count[15]_i_1_n_0\
     );
 \count_reg[9]\: unisim.vcomponents.FDRE
     generic map(
@@ -2602,11 +2572,11 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clkcorr_reg_n_0,
-      CE => '1',
+      C => clk,
+      CE => count_0,
       D => \count_reg[11]_i_1_n_6\,
       Q => \^count\(9),
-      R => clear
+      R => \count[15]_i_1_n_0\
     );
 \product1[0]_i_2\: unisim.vcomponents.LUT2
     generic map(
@@ -3194,7 +3164,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[0]_i_1_n_7\,
       Q => product1_reg(0),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[0]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3224,7 +3194,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[8]_i_1_n_5\,
       Q => product1_reg(10),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[11]\: unisim.vcomponents.FDRE
     generic map(
@@ -3236,7 +3206,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[8]_i_1_n_4\,
       Q => product1_reg(11),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -3248,7 +3218,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[12]_i_1_n_7\,
       Q => product1_reg(12),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[12]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3278,7 +3248,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[12]_i_1_n_6\,
       Q => product1_reg(13),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[14]\: unisim.vcomponents.FDRE
     generic map(
@@ -3290,7 +3260,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[12]_i_1_n_5\,
       Q => product1_reg(14),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[15]\: unisim.vcomponents.FDRE
     generic map(
@@ -3302,7 +3272,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[12]_i_1_n_4\,
       Q => product1_reg(15),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[16]\: unisim.vcomponents.FDRE
     generic map(
@@ -3314,7 +3284,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[16]_i_1_n_7\,
       Q => product1_reg(16),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[16]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3344,7 +3314,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[16]_i_1_n_6\,
       Q => product1_reg(17),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[18]\: unisim.vcomponents.FDRE
     generic map(
@@ -3356,7 +3326,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[16]_i_1_n_5\,
       Q => product1_reg(18),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[19]\: unisim.vcomponents.FDRE
     generic map(
@@ -3368,7 +3338,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[16]_i_1_n_4\,
       Q => product1_reg(19),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -3380,7 +3350,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[0]_i_1_n_6\,
       Q => product1_reg(1),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[20]\: unisim.vcomponents.FDRE
     generic map(
@@ -3392,7 +3362,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[20]_i_1_n_7\,
       Q => product1_reg(20),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[20]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3422,7 +3392,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[20]_i_1_n_6\,
       Q => product1_reg(21),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[22]\: unisim.vcomponents.FDRE
     generic map(
@@ -3434,7 +3404,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[20]_i_1_n_5\,
       Q => product1_reg(22),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[23]\: unisim.vcomponents.FDRE
     generic map(
@@ -3446,7 +3416,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[20]_i_1_n_4\,
       Q => product1_reg(23),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[24]\: unisim.vcomponents.FDRE
     generic map(
@@ -3458,7 +3428,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[24]_i_1_n_7\,
       Q => product1_reg(24),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[24]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3488,7 +3458,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[24]_i_1_n_6\,
       Q => product1_reg(25),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[26]\: unisim.vcomponents.FDRE
     generic map(
@@ -3500,7 +3470,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[24]_i_1_n_5\,
       Q => product1_reg(26),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[27]\: unisim.vcomponents.FDRE
     generic map(
@@ -3512,7 +3482,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[24]_i_1_n_4\,
       Q => product1_reg(27),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[28]\: unisim.vcomponents.FDRE
     generic map(
@@ -3524,7 +3494,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[28]_i_1_n_7\,
       Q => product1_reg(28),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[28]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3554,7 +3524,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[28]_i_1_n_6\,
       Q => product1_reg(29),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -3566,7 +3536,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[0]_i_1_n_5\,
       Q => product1_reg(2),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[30]\: unisim.vcomponents.FDRE
     generic map(
@@ -3578,7 +3548,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[28]_i_1_n_5\,
       Q => product1_reg(30),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[31]\: unisim.vcomponents.FDRE
     generic map(
@@ -3590,7 +3560,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[28]_i_1_n_4\,
       Q => product1_reg(31),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[32]\: unisim.vcomponents.FDRE
     generic map(
@@ -3602,7 +3572,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[32]_i_1_n_7\,
       Q => product1_reg(32),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[32]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3635,7 +3605,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[32]_i_1_n_6\,
       Q => product1_reg(33),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[34]\: unisim.vcomponents.FDRE
     generic map(
@@ -3647,7 +3617,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[32]_i_1_n_5\,
       Q => product1_reg(34),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[35]\: unisim.vcomponents.FDRE
     generic map(
@@ -3659,7 +3629,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[32]_i_1_n_4\,
       Q => product1_reg(35),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[36]\: unisim.vcomponents.FDRE
     generic map(
@@ -3671,7 +3641,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[36]_i_1_n_7\,
       Q => product1_reg(36),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[36]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3704,7 +3674,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[36]_i_1_n_6\,
       Q => product1_reg(37),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[38]\: unisim.vcomponents.FDRE
     generic map(
@@ -3716,7 +3686,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[36]_i_1_n_5\,
       Q => product1_reg(38),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[39]\: unisim.vcomponents.FDRE
     generic map(
@@ -3728,7 +3698,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[36]_i_1_n_4\,
       Q => product1_reg(39),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -3740,7 +3710,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[0]_i_1_n_4\,
       Q => product1_reg(3),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[40]\: unisim.vcomponents.FDRE
     generic map(
@@ -3752,7 +3722,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[40]_i_1_n_7\,
       Q => product1_reg(40),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[40]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3785,7 +3755,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[40]_i_1_n_6\,
       Q => product1_reg(41),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[42]\: unisim.vcomponents.FDRE
     generic map(
@@ -3797,7 +3767,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[40]_i_1_n_5\,
       Q => product1_reg(42),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[43]\: unisim.vcomponents.FDRE
     generic map(
@@ -3809,7 +3779,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[40]_i_1_n_4\,
       Q => product1_reg(43),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[44]\: unisim.vcomponents.FDRE
     generic map(
@@ -3821,7 +3791,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[44]_i_1_n_7\,
       Q => product1_reg(44),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[44]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3854,7 +3824,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[44]_i_1_n_6\,
       Q => product1_reg(45),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[46]\: unisim.vcomponents.FDRE
     generic map(
@@ -3866,7 +3836,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[44]_i_1_n_5\,
       Q => product1_reg(46),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[47]\: unisim.vcomponents.FDRE
     generic map(
@@ -3878,7 +3848,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[44]_i_1_n_4\,
       Q => product1_reg(47),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[48]\: unisim.vcomponents.FDRE
     generic map(
@@ -3890,7 +3860,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[48]_i_1_n_7\,
       Q => product1_reg(48),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[48]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3923,7 +3893,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[48]_i_1_n_6\,
       Q => product1_reg(49),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -3935,7 +3905,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[4]_i_1_n_7\,
       Q => product1_reg(4),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[4]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3965,7 +3935,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[48]_i_1_n_5\,
       Q => product1_reg(50),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[51]\: unisim.vcomponents.FDRE
     generic map(
@@ -3977,7 +3947,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[48]_i_1_n_4\,
       Q => product1_reg(51),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[52]\: unisim.vcomponents.FDRE
     generic map(
@@ -3989,7 +3959,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[52]_i_1_n_7\,
       Q => product1_reg(52),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[52]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -4022,7 +3992,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[52]_i_1_n_6\,
       Q => product1_reg(53),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[54]\: unisim.vcomponents.FDRE
     generic map(
@@ -4034,7 +4004,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[52]_i_1_n_5\,
       Q => product1_reg(54),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[55]\: unisim.vcomponents.FDRE
     generic map(
@@ -4046,7 +4016,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[52]_i_1_n_4\,
       Q => product1_reg(55),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[56]\: unisim.vcomponents.FDRE
     generic map(
@@ -4058,7 +4028,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[56]_i_1_n_7\,
       Q => product1_reg(56),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[56]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -4091,7 +4061,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[56]_i_1_n_6\,
       Q => product1_reg(57),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[58]\: unisim.vcomponents.FDRE
     generic map(
@@ -4103,7 +4073,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[56]_i_1_n_5\,
       Q => product1_reg(58),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[59]\: unisim.vcomponents.FDRE
     generic map(
@@ -4115,7 +4085,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[56]_i_1_n_4\,
       Q => product1_reg(59),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -4127,7 +4097,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[4]_i_1_n_6\,
       Q => product1_reg(5),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[60]\: unisim.vcomponents.FDRE
     generic map(
@@ -4139,7 +4109,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[60]_i_1_n_7\,
       Q => product1_reg(60),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[60]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -4172,7 +4142,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[60]_i_1_n_6\,
       Q => product1_reg(61),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[62]\: unisim.vcomponents.FDRE
     generic map(
@@ -4184,7 +4154,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[60]_i_1_n_5\,
       Q => product1_reg(62),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[63]\: unisim.vcomponents.FDRE
     generic map(
@@ -4196,7 +4166,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[60]_i_1_n_4\,
       Q => product1_reg(63),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -4208,7 +4178,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[4]_i_1_n_5\,
       Q => product1_reg(6),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[7]\: unisim.vcomponents.FDRE
     generic map(
@@ -4220,7 +4190,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[4]_i_1_n_4\,
       Q => product1_reg(7),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -4232,7 +4202,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[8]_i_1_n_7\,
       Q => product1_reg(8),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product1_reg[8]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -4262,7 +4232,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       CE => '1',
       D => \product1_reg[8]_i_1_n_6\,
       Q => product1_reg(9),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 product1_stage1_reg: unisim.vcomponents.DSP48E1
     generic map(
@@ -4342,8 +4312,8 @@ product1_stage1_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => CEM,
-      CEP => CEM,
+      CEM => temp0,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -4525,8 +4495,8 @@ product1_stage2_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => CEM,
-      CEP => CEM,
+      CEM => temp0,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -4746,7 +4716,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => CEM,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -5405,7 +5375,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[0]_i_1_n_7\,
       Q => product_reg(0),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[0]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5435,7 +5405,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[8]_i_1_n_5\,
       Q => product_reg(10),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[11]\: unisim.vcomponents.FDRE
     generic map(
@@ -5447,7 +5417,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[8]_i_1_n_4\,
       Q => product_reg(11),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -5459,7 +5429,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[12]_i_1_n_7\,
       Q => product_reg(12),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[12]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5489,7 +5459,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[12]_i_1_n_6\,
       Q => product_reg(13),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[14]\: unisim.vcomponents.FDRE
     generic map(
@@ -5501,7 +5471,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[12]_i_1_n_5\,
       Q => product_reg(14),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[15]\: unisim.vcomponents.FDRE
     generic map(
@@ -5513,7 +5483,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[12]_i_1_n_4\,
       Q => product_reg(15),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[16]\: unisim.vcomponents.FDRE
     generic map(
@@ -5525,7 +5495,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[16]_i_1_n_7\,
       Q => product_reg(16),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[16]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5555,7 +5525,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[16]_i_1_n_6\,
       Q => product_reg(17),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[18]\: unisim.vcomponents.FDRE
     generic map(
@@ -5567,7 +5537,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[16]_i_1_n_5\,
       Q => product_reg(18),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[19]\: unisim.vcomponents.FDRE
     generic map(
@@ -5579,7 +5549,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[16]_i_1_n_4\,
       Q => product_reg(19),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -5591,7 +5561,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[0]_i_1_n_6\,
       Q => product_reg(1),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[20]\: unisim.vcomponents.FDRE
     generic map(
@@ -5603,7 +5573,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[20]_i_1_n_7\,
       Q => product_reg(20),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[20]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5633,7 +5603,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[20]_i_1_n_6\,
       Q => product_reg(21),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[22]\: unisim.vcomponents.FDRE
     generic map(
@@ -5645,7 +5615,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[20]_i_1_n_5\,
       Q => product_reg(22),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[23]\: unisim.vcomponents.FDRE
     generic map(
@@ -5657,7 +5627,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[20]_i_1_n_4\,
       Q => product_reg(23),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[24]\: unisim.vcomponents.FDRE
     generic map(
@@ -5669,7 +5639,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[24]_i_1_n_7\,
       Q => product_reg(24),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[24]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5699,7 +5669,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[24]_i_1_n_6\,
       Q => product_reg(25),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[26]\: unisim.vcomponents.FDRE
     generic map(
@@ -5711,7 +5681,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[24]_i_1_n_5\,
       Q => product_reg(26),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[27]\: unisim.vcomponents.FDRE
     generic map(
@@ -5723,7 +5693,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[24]_i_1_n_4\,
       Q => product_reg(27),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[28]\: unisim.vcomponents.FDRE
     generic map(
@@ -5735,7 +5705,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[28]_i_1_n_7\,
       Q => product_reg(28),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[28]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5765,7 +5735,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[28]_i_1_n_6\,
       Q => product_reg(29),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -5777,7 +5747,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[0]_i_1_n_5\,
       Q => product_reg(2),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[30]\: unisim.vcomponents.FDRE
     generic map(
@@ -5789,7 +5759,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[28]_i_1_n_5\,
       Q => product_reg(30),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[31]\: unisim.vcomponents.FDRE
     generic map(
@@ -5801,7 +5771,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[28]_i_1_n_4\,
       Q => product_reg(31),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[32]\: unisim.vcomponents.FDRE
     generic map(
@@ -5813,7 +5783,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[32]_i_1_n_7\,
       Q => product_reg(32),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[32]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5846,7 +5816,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[32]_i_1_n_6\,
       Q => product_reg(33),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[34]\: unisim.vcomponents.FDRE
     generic map(
@@ -5858,7 +5828,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[32]_i_1_n_5\,
       Q => product_reg(34),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[35]\: unisim.vcomponents.FDRE
     generic map(
@@ -5870,7 +5840,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[32]_i_1_n_4\,
       Q => product_reg(35),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[36]\: unisim.vcomponents.FDRE
     generic map(
@@ -5882,7 +5852,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[36]_i_1_n_7\,
       Q => product_reg(36),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[36]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5915,7 +5885,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[36]_i_1_n_6\,
       Q => product_reg(37),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[38]\: unisim.vcomponents.FDRE
     generic map(
@@ -5927,7 +5897,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[36]_i_1_n_5\,
       Q => product_reg(38),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[39]\: unisim.vcomponents.FDRE
     generic map(
@@ -5939,7 +5909,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[36]_i_1_n_4\,
       Q => product_reg(39),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -5951,7 +5921,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[0]_i_1_n_4\,
       Q => product_reg(3),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[40]\: unisim.vcomponents.FDRE
     generic map(
@@ -5963,7 +5933,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[40]_i_1_n_7\,
       Q => product_reg(40),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[40]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -5996,7 +5966,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[40]_i_1_n_6\,
       Q => product_reg(41),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[42]\: unisim.vcomponents.FDRE
     generic map(
@@ -6008,7 +5978,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[40]_i_1_n_5\,
       Q => product_reg(42),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[43]\: unisim.vcomponents.FDRE
     generic map(
@@ -6020,7 +5990,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[40]_i_1_n_4\,
       Q => product_reg(43),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[44]\: unisim.vcomponents.FDRE
     generic map(
@@ -6032,7 +6002,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[44]_i_1_n_7\,
       Q => product_reg(44),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[44]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -6065,7 +6035,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[44]_i_1_n_6\,
       Q => product_reg(45),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[46]\: unisim.vcomponents.FDRE
     generic map(
@@ -6077,7 +6047,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[44]_i_1_n_5\,
       Q => product_reg(46),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[47]\: unisim.vcomponents.FDRE
     generic map(
@@ -6089,7 +6059,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[44]_i_1_n_4\,
       Q => product_reg(47),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[48]\: unisim.vcomponents.FDRE
     generic map(
@@ -6101,7 +6071,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[48]_i_1_n_7\,
       Q => product_reg(48),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[48]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -6134,7 +6104,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[48]_i_1_n_6\,
       Q => product_reg(49),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -6146,7 +6116,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[4]_i_1_n_7\,
       Q => product_reg(4),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[4]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -6176,7 +6146,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[48]_i_1_n_5\,
       Q => product_reg(50),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[51]\: unisim.vcomponents.FDRE
     generic map(
@@ -6188,7 +6158,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[48]_i_1_n_4\,
       Q => product_reg(51),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[52]\: unisim.vcomponents.FDRE
     generic map(
@@ -6200,7 +6170,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[52]_i_1_n_7\,
       Q => product_reg(52),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[52]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -6233,7 +6203,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[52]_i_1_n_6\,
       Q => product_reg(53),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[54]\: unisim.vcomponents.FDRE
     generic map(
@@ -6245,7 +6215,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[52]_i_1_n_5\,
       Q => product_reg(54),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[55]\: unisim.vcomponents.FDRE
     generic map(
@@ -6257,7 +6227,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[52]_i_1_n_4\,
       Q => product_reg(55),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[56]\: unisim.vcomponents.FDRE
     generic map(
@@ -6269,7 +6239,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[56]_i_1_n_7\,
       Q => product_reg(56),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[56]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -6302,7 +6272,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[56]_i_1_n_6\,
       Q => product_reg(57),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[58]\: unisim.vcomponents.FDRE
     generic map(
@@ -6314,7 +6284,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[56]_i_1_n_5\,
       Q => product_reg(58),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[59]\: unisim.vcomponents.FDRE
     generic map(
@@ -6326,7 +6296,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[56]_i_1_n_4\,
       Q => product_reg(59),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -6338,7 +6308,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[4]_i_1_n_6\,
       Q => product_reg(5),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[60]\: unisim.vcomponents.FDRE
     generic map(
@@ -6350,7 +6320,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[60]_i_1_n_7\,
       Q => product_reg(60),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[60]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -6383,7 +6353,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[60]_i_1_n_6\,
       Q => product_reg(61),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[62]\: unisim.vcomponents.FDRE
     generic map(
@@ -6395,7 +6365,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[60]_i_1_n_5\,
       Q => product_reg(62),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[63]\: unisim.vcomponents.FDRE
     generic map(
@@ -6407,7 +6377,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[60]_i_1_n_4\,
       Q => product_reg(63),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -6419,7 +6389,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[4]_i_1_n_5\,
       Q => product_reg(6),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[7]\: unisim.vcomponents.FDRE
     generic map(
@@ -6431,7 +6401,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[4]_i_1_n_4\,
       Q => product_reg(7),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -6443,7 +6413,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[8]_i_1_n_7\,
       Q => product_reg(8),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 \product_reg[8]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -6473,7 +6443,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CE => '1',
       D => \product_reg[8]_i_1_n_6\,
       Q => product_reg(9),
-      R => clkcorr_reg_n_0
+      R => count_0
     );
 product_stage1_reg: unisim.vcomponents.DSP48E1
     generic map(
@@ -6553,8 +6523,8 @@ product_stage1_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => CEM,
-      CEP => CEM,
+      CEM => temp0,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -6736,8 +6706,8 @@ product_stage2_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => CEM,
-      CEP => CEM,
+      CEM => temp0,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -6957,7 +6927,7 @@ product_stage3_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => CEM,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -7029,482 +6999,6 @@ product_stage3_reg: unisim.vcomponents.DSP48E1
       RSTM => '0',
       RSTP => '0',
       UNDERFLOW => NLW_product_stage3_reg_UNDERFLOW_UNCONNECTED
-    );
-subframeCounter0_carry: unisim.vcomponents.CARRY4
-     port map (
-      CI => '0',
-      CO(3) => subframeCounter0_carry_n_0,
-      CO(2) => subframeCounter0_carry_n_1,
-      CO(1) => subframeCounter0_carry_n_2,
-      CO(0) => subframeCounter0_carry_n_3,
-      CYINIT => subframeCounter(0),
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => p_1_in(4 downto 1),
-      S(3 downto 0) => subframeCounter(4 downto 1)
-    );
-\subframeCounter0_carry__0\: unisim.vcomponents.CARRY4
-     port map (
-      CI => subframeCounter0_carry_n_0,
-      CO(3) => \subframeCounter0_carry__0_n_0\,
-      CO(2) => \subframeCounter0_carry__0_n_1\,
-      CO(1) => \subframeCounter0_carry__0_n_2\,
-      CO(0) => \subframeCounter0_carry__0_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => p_1_in(8 downto 5),
-      S(3 downto 0) => subframeCounter(8 downto 5)
-    );
-\subframeCounter0_carry__1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \subframeCounter0_carry__0_n_0\,
-      CO(3) => \subframeCounter0_carry__1_n_0\,
-      CO(2) => \subframeCounter0_carry__1_n_1\,
-      CO(1) => \subframeCounter0_carry__1_n_2\,
-      CO(0) => \subframeCounter0_carry__1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => p_1_in(12 downto 9),
-      S(3 downto 0) => subframeCounter(12 downto 9)
-    );
-\subframeCounter0_carry__2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \subframeCounter0_carry__1_n_0\,
-      CO(3) => \subframeCounter0_carry__2_n_0\,
-      CO(2) => \subframeCounter0_carry__2_n_1\,
-      CO(1) => \subframeCounter0_carry__2_n_2\,
-      CO(0) => \subframeCounter0_carry__2_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => p_1_in(16 downto 13),
-      S(3 downto 0) => subframeCounter(16 downto 13)
-    );
-\subframeCounter0_carry__3\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \subframeCounter0_carry__2_n_0\,
-      CO(3) => \subframeCounter0_carry__3_n_0\,
-      CO(2) => \subframeCounter0_carry__3_n_1\,
-      CO(1) => \subframeCounter0_carry__3_n_2\,
-      CO(0) => \subframeCounter0_carry__3_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => p_1_in(20 downto 17),
-      S(3 downto 0) => subframeCounter(20 downto 17)
-    );
-\subframeCounter0_carry__4\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \subframeCounter0_carry__3_n_0\,
-      CO(3) => \subframeCounter0_carry__4_n_0\,
-      CO(2) => \subframeCounter0_carry__4_n_1\,
-      CO(1) => \subframeCounter0_carry__4_n_2\,
-      CO(0) => \subframeCounter0_carry__4_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => p_1_in(24 downto 21),
-      S(3 downto 0) => subframeCounter(24 downto 21)
-    );
-\subframeCounter0_carry__5\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \subframeCounter0_carry__4_n_0\,
-      CO(3 downto 0) => \NLW_subframeCounter0_carry__5_CO_UNCONNECTED\(3 downto 0),
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 1) => \NLW_subframeCounter0_carry__5_O_UNCONNECTED\(3 downto 1),
-      O(0) => p_1_in(25),
-      S(3 downto 1) => B"000",
-      S(0) => subframeCounter(25)
-    );
-\subframeCounter[0]_i_1\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => subframeCounter(0),
-      O => p_1_in(0)
-    );
-\subframeCounter[25]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000100"
-    )
-        port map (
-      I0 => \subframeCounter[25]_i_2_n_0\,
-      I1 => subframeCounter(3),
-      I2 => subframeCounter(13),
-      I3 => subframeCounter(7),
-      I4 => subframeCounter(4),
-      I5 => \subframeCounter[25]_i_3_n_0\,
-      O => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter[25]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFB"
-    )
-        port map (
-      I0 => subframeCounter(0),
-      I1 => subframeCounter(6),
-      I2 => subframeCounter(16),
-      I3 => subframeCounter(21),
-      I4 => \subframeCounter[25]_i_4_n_0\,
-      O => \subframeCounter[25]_i_2_n_0\
-    );
-\subframeCounter[25]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-        port map (
-      I0 => \subframeCounter[25]_i_5_n_0\,
-      I1 => \subframeCounter[25]_i_6_n_0\,
-      I2 => subframeCounter(1),
-      I3 => subframeCounter(5),
-      I4 => subframeCounter(15),
-      I5 => subframeCounter(14),
-      O => \subframeCounter[25]_i_3_n_0\
-    );
-\subframeCounter[25]_i_4\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFF7"
-    )
-        port map (
-      I0 => subframeCounter(11),
-      I1 => subframeCounter(2),
-      I2 => subframeCounter(23),
-      I3 => subframeCounter(12),
-      O => \subframeCounter[25]_i_4_n_0\
-    );
-\subframeCounter[25]_i_5\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFD"
-    )
-        port map (
-      I0 => subframeCounter(8),
-      I1 => subframeCounter(22),
-      I2 => subframeCounter(10),
-      I3 => subframeCounter(18),
-      I4 => subframeCounter(19),
-      I5 => subframeCounter(24),
-      O => \subframeCounter[25]_i_5_n_0\
-    );
-\subframeCounter[25]_i_6\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => subframeCounter(25),
-      I1 => subframeCounter(9),
-      I2 => subframeCounter(20),
-      I3 => subframeCounter(17),
-      O => \subframeCounter[25]_i_6_n_0\
-    );
-\subframeCounter_reg[0]\: unisim.vcomponents.FDSE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(0),
-      Q => subframeCounter(0),
-      S => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[10]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(10),
-      Q => subframeCounter(10),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[11]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(11),
-      Q => subframeCounter(11),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[12]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(12),
-      Q => subframeCounter(12),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[13]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(13),
-      Q => subframeCounter(13),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[14]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(14),
-      Q => subframeCounter(14),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[15]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(15),
-      Q => subframeCounter(15),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[16]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(16),
-      Q => subframeCounter(16),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[17]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(17),
-      Q => subframeCounter(17),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[18]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(18),
-      Q => subframeCounter(18),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[19]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(19),
-      Q => subframeCounter(19),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(1),
-      Q => subframeCounter(1),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[20]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(20),
-      Q => subframeCounter(20),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[21]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(21),
-      Q => subframeCounter(21),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[22]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(22),
-      Q => subframeCounter(22),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[23]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(23),
-      Q => subframeCounter(23),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[24]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(24),
-      Q => subframeCounter(24),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[25]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(25),
-      Q => subframeCounter(25),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[2]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(2),
-      Q => subframeCounter(2),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[3]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(3),
-      Q => subframeCounter(3),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(4),
-      Q => subframeCounter(4),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(5),
-      Q => subframeCounter(5),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(6),
-      Q => subframeCounter(6),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[7]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(7),
-      Q => subframeCounter(7),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[8]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(8),
-      Q => subframeCounter(8),
-      R => \subframeCounter[25]_i_1_n_0\
-    );
-\subframeCounter_reg[9]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0',
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk,
-      CE => '1',
-      D => p_1_in(9),
-      Q => subframeCounter(9),
-      R => \subframeCounter[25]_i_1_n_0\
     );
 temp00_reg: unisim.vcomponents.DSP48E1
     generic map(
@@ -7585,7 +7079,7 @@ temp00_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => CEM,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -7760,7 +7254,7 @@ temp02_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => CEM,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -7935,7 +7429,7 @@ temp0_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => CEM,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -8110,7 +7604,7 @@ temp2_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => CEM,
+      CEP => temp0,
       CLK => product_stage3_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -8206,13 +7700,31 @@ temp2_reg: unisim.vcomponents.DSP48E1
       RSTP => '0',
       UNDERFLOW => NLW_temp2_reg_UNDERFLOW_UNCONNECTED
     );
-temp2_reg_i_1: unisim.vcomponents.LUT1
+temp2_reg_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"1"
+      INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
-      I0 => clkcorr_reg_n_0,
-      O => CEM
+      I0 => temp2_reg_i_3_n_0,
+      I1 => \countMulti_reg__0\(5),
+      I2 => \countMulti_reg__0\(4),
+      I3 => \countMulti_reg__0\(10),
+      I4 => \countMulti_reg__0\(9),
+      I5 => \xcorr[63]_i_3_n_0\,
+      O => temp0
+    );
+temp2_reg_i_3: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFEFFFF"
+    )
+        port map (
+      I0 => \countMulti_reg__0\(8),
+      I1 => \countMulti_reg__0\(11),
+      I2 => \countMulti_reg__0\(6),
+      I3 => \countMulti_reg__0\(7),
+      I4 => \countMulti_reg__0\(0),
+      I5 => \countMulti_reg__0\(2),
+      O => temp2_reg_i_3_n_0
     );
 \wave0Address_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -8698,9 +8210,7 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       CO(0) => \waveRef0Address4__0_carry_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => \countMulti_reg__0\(3 downto 0),
-      O(3) => \waveRef0Address4__0_carry_n_4\,
-      O(2) => \waveRef0Address4__0_carry_n_5\,
-      O(1) => \waveRef0Address4__0_carry_n_6\,
+      O(3 downto 1) => p_1_in(3 downto 1),
       O(0) => \NLW_waveRef0Address4__0_carry_O_UNCONNECTED\(0),
       S(3) => \waveRef0Address4__0_carry_i_1_n_0\,
       S(2) => \waveRef0Address4__0_carry_i_2_n_0\,
@@ -8716,10 +8226,7 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       CO(0) => \waveRef0Address4__0_carry__0_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => \countMulti_reg__0\(7 downto 4),
-      O(3) => \waveRef0Address4__0_carry__0_n_4\,
-      O(2) => \waveRef0Address4__0_carry__0_n_5\,
-      O(1) => \waveRef0Address4__0_carry__0_n_6\,
-      O(0) => \waveRef0Address4__0_carry__0_n_7\,
+      O(3 downto 0) => p_1_in(7 downto 4),
       S(3) => \waveRef0Address4__0_carry__0_i_1_n_0\,
       S(2) => \waveRef0Address4__0_carry__0_i_2_n_0\,
       S(1) => \waveRef0Address4__0_carry__0_i_3_n_0\,
@@ -8770,10 +8277,7 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       CO(0) => \waveRef0Address4__0_carry__1_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => \countMulti_reg__0\(11 downto 8),
-      O(3) => \waveRef0Address4__0_carry__1_n_4\,
-      O(2) => \waveRef0Address4__0_carry__1_n_5\,
-      O(1) => \waveRef0Address4__0_carry__1_n_6\,
-      O(0) => \waveRef0Address4__0_carry__1_n_7\,
+      O(3 downto 0) => p_1_in(11 downto 8),
       S(3) => \waveRef0Address4__0_carry__1_i_1_n_0\,
       S(2) => \waveRef0Address4__0_carry__1_i_2_n_0\,
       S(1) => \waveRef0Address4__0_carry__1_i_3_n_0\,
@@ -8880,17 +8384,26 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       CO(0) => \waveRef0Address4__0_carry__11_n_3\,
       CYINIT => '0',
       DI(3) => \^count\(2),
-      DI(2 downto 0) => \countMulti_reg__0\(2 downto 0),
+      DI(2) => \waveRef0Address4__0_carry__11_i_1_n_0\,
+      DI(1 downto 0) => \countMulti_reg__0\(1 downto 0),
       O(3) => \waveRef0Address4__0_carry__11_n_4\,
       O(2) => \waveRef0Address4__0_carry__11_n_5\,
       O(1) => \waveRef0Address4__0_carry__11_n_6\,
       O(0) => \NLW_waveRef0Address4__0_carry__11_O_UNCONNECTED\(0),
-      S(3) => \waveRef0Address4__0_carry__11_i_1_n_0\,
-      S(2) => \waveRef0Address4__0_carry__11_i_2_n_0\,
-      S(1) => \waveRef0Address4__0_carry__11_i_3_n_0\,
-      S(0) => \waveRef0Address4__0_carry__11_i_4_n_0\
+      S(3) => \waveRef0Address4__0_carry__11_i_2_n_0\,
+      S(2) => \waveRef0Address4__0_carry__11_i_3_n_0\,
+      S(1) => \waveRef0Address4__0_carry__11_i_4_n_0\,
+      S(0) => \waveRef0Address4__0_carry__11_i_5_n_0\
     );
-\waveRef0Address4__0_carry__11_i_1\: unisim.vcomponents.LUT3
+\waveRef0Address4__0_carry__11_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^count\(2),
+      O => \waveRef0Address4__0_carry__11_i_1_n_0\
+    );
+\waveRef0Address4__0_carry__11_i_2\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"69"
     )
@@ -8898,24 +8411,15 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       I0 => \countMulti_reg__0\(3),
       I1 => \^count\(3),
       I2 => \^count\(2),
-      O => \waveRef0Address4__0_carry__11_i_1_n_0\
+      O => \waveRef0Address4__0_carry__11_i_2_n_0\
     );
-\waveRef0Address4__0_carry__11_i_2\: unisim.vcomponents.LUT2
+\waveRef0Address4__0_carry__11_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^count\(2),
       I1 => \countMulti_reg__0\(2),
-      O => \waveRef0Address4__0_carry__11_i_2_n_0\
-    );
-\waveRef0Address4__0_carry__11_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \countMulti_reg__0\(1),
-      I1 => \^count\(1),
       O => \waveRef0Address4__0_carry__11_i_3_n_0\
     );
 \waveRef0Address4__0_carry__11_i_4\: unisim.vcomponents.LUT2
@@ -8923,9 +8427,18 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
+      I0 => \countMulti_reg__0\(1),
+      I1 => \^count\(1),
+      O => \waveRef0Address4__0_carry__11_i_4_n_0\
+    );
+\waveRef0Address4__0_carry__11_i_5\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
       I0 => \countMulti_reg__0\(0),
       I1 => \^count\(0),
-      O => \waveRef0Address4__0_carry__11_i_4_n_0\
+      O => \waveRef0Address4__0_carry__11_i_5_n_0\
     );
 \waveRef0Address4__0_carry__12\: unisim.vcomponents.CARRY4
      port map (
@@ -9267,10 +8780,7 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       CYINIT => '0',
       DI(3) => '0',
       DI(2 downto 0) => countMulti_reg(14 downto 12),
-      O(3) => \waveRef0Address4__0_carry__2_n_4\,
-      O(2) => \waveRef0Address4__0_carry__2_n_5\,
-      O(1) => \waveRef0Address4__0_carry__2_n_6\,
-      O(0) => \waveRef0Address4__0_carry__2_n_7\,
+      O(3 downto 0) => p_1_in(15 downto 12),
       S(3) => \waveRef0Address4__0_carry__2_i_1_n_0\,
       S(2) => \waveRef0Address4__0_carry__2_i_2_n_0\,
       S(1) => \waveRef0Address4__0_carry__2_i_3_n_0\,
@@ -9321,17 +8831,26 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       CO(0) => \waveRef0Address4__0_carry__3_n_3\,
       CYINIT => '0',
       DI(3) => \^count\(2),
-      DI(2 downto 0) => \countMulti_reg__0\(2 downto 0),
+      DI(2) => \waveRef0Address4__0_carry__3_i_1_n_0\,
+      DI(1 downto 0) => \countMulti_reg__0\(1 downto 0),
       O(3) => \waveRef0Address4__0_carry__3_n_4\,
       O(2) => \waveRef0Address4__0_carry__3_n_5\,
       O(1) => \waveRef0Address4__0_carry__3_n_6\,
       O(0) => \NLW_waveRef0Address4__0_carry__3_O_UNCONNECTED\(0),
-      S(3) => \waveRef0Address4__0_carry__3_i_1_n_0\,
-      S(2) => \waveRef0Address4__0_carry__3_i_2_n_0\,
-      S(1) => \waveRef0Address4__0_carry__3_i_3_n_0\,
-      S(0) => \waveRef0Address4__0_carry__3_i_4_n_0\
+      S(3) => \waveRef0Address4__0_carry__3_i_2_n_0\,
+      S(2) => \waveRef0Address4__0_carry__3_i_3_n_0\,
+      S(1) => \waveRef0Address4__0_carry__3_i_4_n_0\,
+      S(0) => \waveRef0Address4__0_carry__3_i_5_n_0\
     );
-\waveRef0Address4__0_carry__3_i_1\: unisim.vcomponents.LUT3
+\waveRef0Address4__0_carry__3_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^count\(2),
+      O => \waveRef0Address4__0_carry__3_i_1_n_0\
+    );
+\waveRef0Address4__0_carry__3_i_2\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"96"
     )
@@ -9339,24 +8858,15 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       I0 => \^count\(2),
       I1 => \^count\(3),
       I2 => \countMulti_reg__0\(3),
-      O => \waveRef0Address4__0_carry__3_i_1_n_0\
+      O => \waveRef0Address4__0_carry__3_i_2_n_0\
     );
-\waveRef0Address4__0_carry__3_i_2\: unisim.vcomponents.LUT2
+\waveRef0Address4__0_carry__3_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^count\(2),
       I1 => \countMulti_reg__0\(2),
-      O => \waveRef0Address4__0_carry__3_i_2_n_0\
-    );
-\waveRef0Address4__0_carry__3_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \countMulti_reg__0\(1),
-      I1 => \^count\(1),
       O => \waveRef0Address4__0_carry__3_i_3_n_0\
     );
 \waveRef0Address4__0_carry__3_i_4\: unisim.vcomponents.LUT2
@@ -9364,9 +8874,18 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
+      I0 => \countMulti_reg__0\(1),
+      I1 => \^count\(1),
+      O => \waveRef0Address4__0_carry__3_i_4_n_0\
+    );
+\waveRef0Address4__0_carry__3_i_5\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
       I0 => \countMulti_reg__0\(0),
       I1 => \^count\(0),
-      O => \waveRef0Address4__0_carry__3_i_4_n_0\
+      O => \waveRef0Address4__0_carry__3_i_5_n_0\
     );
 \waveRef0Address4__0_carry__4\: unisim.vcomponents.CARRY4
      port map (
@@ -9670,32 +9189,32 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       CO(1) => \waveRef0Address4__0_carry__7_n_2\,
       CO(0) => \waveRef0Address4__0_carry__7_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => \countMulti_reg__0\(3 downto 0),
+      DI(3) => \waveRef0Address4__0_carry__7_i_1_n_0\,
+      DI(2 downto 0) => \countMulti_reg__0\(2 downto 0),
       O(3) => \waveRef0Address4__0_carry__7_n_4\,
       O(2) => \waveRef0Address4__0_carry__7_n_5\,
       O(1) => \waveRef0Address4__0_carry__7_n_6\,
       O(0) => \NLW_waveRef0Address4__0_carry__7_O_UNCONNECTED\(0),
-      S(3) => \waveRef0Address4__0_carry__7_i_1_n_0\,
-      S(2) => \waveRef0Address4__0_carry__7_i_2_n_0\,
-      S(1) => \waveRef0Address4__0_carry__7_i_3_n_0\,
-      S(0) => \waveRef0Address4__0_carry__7_i_4_n_0\
+      S(3) => \waveRef0Address4__0_carry__7_i_2_n_0\,
+      S(2) => \waveRef0Address4__0_carry__7_i_3_n_0\,
+      S(1) => \waveRef0Address4__0_carry__7_i_4_n_0\,
+      S(0) => \waveRef0Address4__0_carry__7_i_5_n_0\
     );
-\waveRef0Address4__0_carry__7_i_1\: unisim.vcomponents.LUT2
+\waveRef0Address4__0_carry__7_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^count\(3),
+      O => \waveRef0Address4__0_carry__7_i_1_n_0\
+    );
+\waveRef0Address4__0_carry__7_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^count\(3),
       I1 => \countMulti_reg__0\(3),
-      O => \waveRef0Address4__0_carry__7_i_1_n_0\
-    );
-\waveRef0Address4__0_carry__7_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \countMulti_reg__0\(2),
-      I1 => \^count\(2),
       O => \waveRef0Address4__0_carry__7_i_2_n_0\
     );
 \waveRef0Address4__0_carry__7_i_3\: unisim.vcomponents.LUT2
@@ -9703,8 +9222,8 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
-      I0 => \countMulti_reg__0\(1),
-      I1 => \^count\(1),
+      I0 => \countMulti_reg__0\(2),
+      I1 => \^count\(2),
       O => \waveRef0Address4__0_carry__7_i_3_n_0\
     );
 \waveRef0Address4__0_carry__7_i_4\: unisim.vcomponents.LUT2
@@ -9712,9 +9231,18 @@ waveRef0Address3_carry_i_7: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
+      I0 => \countMulti_reg__0\(1),
+      I1 => \^count\(1),
+      O => \waveRef0Address4__0_carry__7_i_4_n_0\
+    );
+\waveRef0Address4__0_carry__7_i_5\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
       I0 => \countMulti_reg__0\(0),
       I1 => \^count\(0),
-      O => \waveRef0Address4__0_carry__7_i_4_n_0\
+      O => \waveRef0Address4__0_carry__7_i_5_n_0\
     );
 \waveRef0Address4__0_carry__8\: unisim.vcomponents.CARRY4
      port map (
@@ -10082,7 +9610,7 @@ waveRef0Address4_carry: unisim.vcomponents.CARRY4
       INIT => X"1"
     )
         port map (
-      I0 => countMulti_reg(15),
+      I0 => \^count\(15),
       O => \waveRef0Address4_carry__2_i_1_n_0\
     );
 \waveRef0Address4_carry__2_i_2\: unisim.vcomponents.LUT2
@@ -10164,7 +9692,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       I0 => \countMulti_reg__0\(0),
       I1 => \^count\(0),
-      O => \waveRef0Address[0]_i_1_n_0\
+      O => p_1_in(0)
     );
 \waveRef0Address[15]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -10182,7 +9710,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address[0]_i_1_n_0\,
+      D => p_1_in(0),
       Q => waveRef0Address(0),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10193,7 +9721,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__1_n_5\,
+      D => p_1_in(10),
       Q => waveRef0Address(10),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10204,7 +9732,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__1_n_4\,
+      D => p_1_in(11),
       Q => waveRef0Address(11),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10215,7 +9743,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__2_n_7\,
+      D => p_1_in(12),
       Q => waveRef0Address(12),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10226,7 +9754,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__2_n_6\,
+      D => p_1_in(13),
       Q => waveRef0Address(13),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10237,7 +9765,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__2_n_5\,
+      D => p_1_in(14),
       Q => waveRef0Address(14),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10248,7 +9776,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__2_n_4\,
+      D => p_1_in(15),
       Q => waveRef0Address(15),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10259,7 +9787,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry_n_6\,
+      D => p_1_in(1),
       Q => waveRef0Address(1),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10270,7 +9798,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry_n_5\,
+      D => p_1_in(2),
       Q => waveRef0Address(2),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10281,7 +9809,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry_n_4\,
+      D => p_1_in(3),
       Q => waveRef0Address(3),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10292,7 +9820,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__0_n_7\,
+      D => p_1_in(4),
       Q => waveRef0Address(4),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10303,7 +9831,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__0_n_6\,
+      D => p_1_in(5),
       Q => waveRef0Address(5),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10314,7 +9842,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__0_n_5\,
+      D => p_1_in(6),
       Q => waveRef0Address(6),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10325,7 +9853,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__0_n_4\,
+      D => p_1_in(7),
       Q => waveRef0Address(7),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10336,7 +9864,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__1_n_7\,
+      D => p_1_in(8),
       Q => waveRef0Address(8),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10347,7 +9875,7 @@ waveRef0Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address4__0_carry__1_n_6\,
+      D => p_1_in(9),
       Q => waveRef0Address(9),
       R => \waveRef0Address[15]_i_1_n_0\
     );
@@ -10826,13 +10354,14 @@ waveRef1Address4_carry: unisim.vcomponents.CARRY4
       CO(0) => waveRef1Address4_carry_n_3,
       CYINIT => '0',
       DI(3) => \^count\(2),
-      DI(2 downto 0) => \countMulti_reg__0\(2 downto 0),
+      DI(2) => waveRef1Address4_carry_i_1_n_0,
+      DI(1 downto 0) => \countMulti_reg__0\(1 downto 0),
       O(3 downto 1) => waveRef1Address4(3 downto 1),
       O(0) => NLW_waveRef1Address4_carry_O_UNCONNECTED(0),
-      S(3) => waveRef1Address4_carry_i_1_n_0,
-      S(2) => waveRef1Address4_carry_i_2_n_0,
-      S(1) => waveRef1Address4_carry_i_3_n_0,
-      S(0) => waveRef1Address4_carry_i_4_n_0
+      S(3) => waveRef1Address4_carry_i_2_n_0,
+      S(2) => waveRef1Address4_carry_i_3_n_0,
+      S(1) => waveRef1Address4_carry_i_4_n_0,
+      S(0) => waveRef1Address4_carry_i_5_n_0
     );
 \waveRef1Address4_carry__0\: unisim.vcomponents.CARRY4
      port map (
@@ -11135,22 +10664,40 @@ waveRef1Address4_carry: unisim.vcomponents.CARRY4
       CO(1) => \waveRef1Address4_carry__3_n_2\,
       CO(0) => \NLW_waveRef1Address4_carry__3_CO_UNCONNECTED\(0),
       CYINIT => '0',
-      DI(3 downto 0) => B"0001",
+      DI(3 downto 1) => B"000",
+      DI(0) => \waveRef1Address4_carry__3_i_1_n_0\,
       O(3 downto 1) => \NLW_waveRef1Address4_carry__3_O_UNCONNECTED\(3 downto 1),
       O(0) => waveRef1Address4(16),
       S(3 downto 1) => B"001",
-      S(0) => \waveRef1Address4_carry__3_i_1_n_0\
+      S(0) => \waveRef1Address4_carry__3_i_2_n_0\
     );
 \waveRef1Address4_carry__3_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"E"
+      INIT => X"1"
     )
         port map (
       I0 => \^count\(15),
       I1 => countMulti_reg(15),
       O => \waveRef1Address4_carry__3_i_1_n_0\
     );
-waveRef1Address4_carry_i_1: unisim.vcomponents.LUT3
+\waveRef1Address4_carry__3_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => countMulti_reg(15),
+      I1 => \^count\(15),
+      O => \waveRef1Address4_carry__3_i_2_n_0\
+    );
+waveRef1Address4_carry_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^count\(2),
+      O => waveRef1Address4_carry_i_1_n_0
+    );
+waveRef1Address4_carry_i_2: unisim.vcomponents.LUT3
     generic map(
       INIT => X"96"
     )
@@ -11158,24 +10705,15 @@ waveRef1Address4_carry_i_1: unisim.vcomponents.LUT3
       I0 => \^count\(2),
       I1 => \^count\(3),
       I2 => \countMulti_reg__0\(3),
-      O => waveRef1Address4_carry_i_1_n_0
+      O => waveRef1Address4_carry_i_2_n_0
     );
-waveRef1Address4_carry_i_2: unisim.vcomponents.LUT2
+waveRef1Address4_carry_i_3: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^count\(2),
       I1 => \countMulti_reg__0\(2),
-      O => waveRef1Address4_carry_i_2_n_0
-    );
-waveRef1Address4_carry_i_3: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \countMulti_reg__0\(1),
-      I1 => \^count\(1),
       O => waveRef1Address4_carry_i_3_n_0
     );
 waveRef1Address4_carry_i_4: unisim.vcomponents.LUT2
@@ -11183,9 +10721,18 @@ waveRef1Address4_carry_i_4: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
+      I0 => \countMulti_reg__0\(1),
+      I1 => \^count\(1),
+      O => waveRef1Address4_carry_i_4_n_0
+    );
+waveRef1Address4_carry_i_5: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
       I0 => \countMulti_reg__0\(0),
       I1 => \^count\(0),
-      O => waveRef1Address4_carry_i_4_n_0
+      O => waveRef1Address4_carry_i_5_n_0
     );
 \waveRef1Address[15]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -11203,7 +10750,7 @@ waveRef1Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address[0]_i_1_n_0\,
+      D => p_1_in(0),
       Q => waveRef1Address(0),
       R => \waveRef1Address[15]_i_1_n_0\
     );
@@ -11846,13 +11393,14 @@ waveRef2Address4_carry: unisim.vcomponents.CARRY4
       CO(1) => waveRef2Address4_carry_n_2,
       CO(0) => waveRef2Address4_carry_n_3,
       CYINIT => '0',
-      DI(3 downto 0) => \countMulti_reg__0\(3 downto 0),
+      DI(3) => waveRef2Address4_carry_i_1_n_0,
+      DI(2 downto 0) => \countMulti_reg__0\(2 downto 0),
       O(3 downto 1) => waveRef2Address4(3 downto 1),
       O(0) => NLW_waveRef2Address4_carry_O_UNCONNECTED(0),
-      S(3) => waveRef2Address4_carry_i_1_n_0,
-      S(2) => waveRef2Address4_carry_i_2_n_0,
-      S(1) => waveRef2Address4_carry_i_3_n_0,
-      S(0) => waveRef2Address4_carry_i_4_n_0
+      S(3) => waveRef2Address4_carry_i_2_n_0,
+      S(2) => waveRef2Address4_carry_i_3_n_0,
+      S(1) => waveRef2Address4_carry_i_4_n_0,
+      S(0) => waveRef2Address4_carry_i_5_n_0
     );
 \waveRef2Address4_carry__0\: unisim.vcomponents.CARRY4
      port map (
@@ -12145,37 +11693,46 @@ waveRef2Address4_carry: unisim.vcomponents.CARRY4
       CO(1) => \waveRef2Address4_carry__3_n_2\,
       CO(0) => \NLW_waveRef2Address4_carry__3_CO_UNCONNECTED\(0),
       CYINIT => '0',
-      DI(3 downto 0) => B"0001",
+      DI(3 downto 1) => B"000",
+      DI(0) => \waveRef2Address4_carry__3_i_1_n_0\,
       O(3 downto 1) => \NLW_waveRef2Address4_carry__3_O_UNCONNECTED\(3 downto 1),
       O(0) => waveRef2Address4(16),
       S(3 downto 1) => B"001",
-      S(0) => \waveRef2Address4_carry__3_i_1_n_0\
+      S(0) => \waveRef2Address4_carry__3_i_2_n_0\
     );
 \waveRef2Address4_carry__3_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"E"
+      INIT => X"1"
     )
         port map (
       I0 => \^count\(15),
       I1 => countMulti_reg(15),
       O => \waveRef2Address4_carry__3_i_1_n_0\
     );
-waveRef2Address4_carry_i_1: unisim.vcomponents.LUT2
+\waveRef2Address4_carry__3_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => countMulti_reg(15),
+      I1 => \^count\(15),
+      O => \waveRef2Address4_carry__3_i_2_n_0\
+    );
+waveRef2Address4_carry_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^count\(3),
+      O => waveRef2Address4_carry_i_1_n_0
+    );
+waveRef2Address4_carry_i_2: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^count\(3),
       I1 => \countMulti_reg__0\(3),
-      O => waveRef2Address4_carry_i_1_n_0
-    );
-waveRef2Address4_carry_i_2: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \countMulti_reg__0\(2),
-      I1 => \^count\(2),
       O => waveRef2Address4_carry_i_2_n_0
     );
 waveRef2Address4_carry_i_3: unisim.vcomponents.LUT2
@@ -12183,8 +11740,8 @@ waveRef2Address4_carry_i_3: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
-      I0 => \countMulti_reg__0\(1),
-      I1 => \^count\(1),
+      I0 => \countMulti_reg__0\(2),
+      I1 => \^count\(2),
       O => waveRef2Address4_carry_i_3_n_0
     );
 waveRef2Address4_carry_i_4: unisim.vcomponents.LUT2
@@ -12192,9 +11749,18 @@ waveRef2Address4_carry_i_4: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
+      I0 => \countMulti_reg__0\(1),
+      I1 => \^count\(1),
+      O => waveRef2Address4_carry_i_4_n_0
+    );
+waveRef2Address4_carry_i_5: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
       I0 => \countMulti_reg__0\(0),
       I1 => \^count\(0),
-      O => waveRef2Address4_carry_i_4_n_0
+      O => waveRef2Address4_carry_i_5_n_0
     );
 \waveRef2Address[15]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -12212,7 +11778,7 @@ waveRef2Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address[0]_i_1_n_0\,
+      D => p_1_in(0),
       Q => waveRef2Address(0),
       R => \waveRef2Address[15]_i_1_n_0\
     );
@@ -12856,13 +12422,14 @@ waveRef3Address4_carry: unisim.vcomponents.CARRY4
       CO(0) => waveRef3Address4_carry_n_3,
       CYINIT => '0',
       DI(3) => \^count\(2),
-      DI(2 downto 0) => \countMulti_reg__0\(2 downto 0),
+      DI(2) => waveRef3Address4_carry_i_1_n_0,
+      DI(1 downto 0) => \countMulti_reg__0\(1 downto 0),
       O(3 downto 1) => waveRef3Address4(3 downto 1),
       O(0) => NLW_waveRef3Address4_carry_O_UNCONNECTED(0),
-      S(3) => waveRef3Address4_carry_i_1_n_0,
-      S(2) => waveRef3Address4_carry_i_2_n_0,
-      S(1) => waveRef3Address4_carry_i_3_n_0,
-      S(0) => waveRef3Address4_carry_i_4_n_0
+      S(3) => waveRef3Address4_carry_i_2_n_0,
+      S(2) => waveRef3Address4_carry_i_3_n_0,
+      S(1) => waveRef3Address4_carry_i_4_n_0,
+      S(0) => waveRef3Address4_carry_i_5_n_0
     );
 \waveRef3Address4_carry__0\: unisim.vcomponents.CARRY4
      port map (
@@ -13165,22 +12732,40 @@ waveRef3Address4_carry: unisim.vcomponents.CARRY4
       CO(1) => \waveRef3Address4_carry__3_n_2\,
       CO(0) => \NLW_waveRef3Address4_carry__3_CO_UNCONNECTED\(0),
       CYINIT => '0',
-      DI(3 downto 0) => B"0001",
+      DI(3 downto 1) => B"000",
+      DI(0) => \waveRef3Address4_carry__3_i_1_n_0\,
       O(3 downto 1) => \NLW_waveRef3Address4_carry__3_O_UNCONNECTED\(3 downto 1),
       O(0) => waveRef3Address4(16),
       S(3 downto 1) => B"001",
-      S(0) => \waveRef3Address4_carry__3_i_1_n_0\
+      S(0) => \waveRef3Address4_carry__3_i_2_n_0\
     );
 \waveRef3Address4_carry__3_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"E"
+      INIT => X"1"
     )
         port map (
       I0 => \^count\(15),
       I1 => countMulti_reg(15),
       O => \waveRef3Address4_carry__3_i_1_n_0\
     );
-waveRef3Address4_carry_i_1: unisim.vcomponents.LUT3
+\waveRef3Address4_carry__3_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => countMulti_reg(15),
+      I1 => \^count\(15),
+      O => \waveRef3Address4_carry__3_i_2_n_0\
+    );
+waveRef3Address4_carry_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \^count\(2),
+      O => waveRef3Address4_carry_i_1_n_0
+    );
+waveRef3Address4_carry_i_2: unisim.vcomponents.LUT3
     generic map(
       INIT => X"69"
     )
@@ -13188,24 +12773,15 @@ waveRef3Address4_carry_i_1: unisim.vcomponents.LUT3
       I0 => \countMulti_reg__0\(3),
       I1 => \^count\(3),
       I2 => \^count\(2),
-      O => waveRef3Address4_carry_i_1_n_0
+      O => waveRef3Address4_carry_i_2_n_0
     );
-waveRef3Address4_carry_i_2: unisim.vcomponents.LUT2
+waveRef3Address4_carry_i_3: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^count\(2),
       I1 => \countMulti_reg__0\(2),
-      O => waveRef3Address4_carry_i_2_n_0
-    );
-waveRef3Address4_carry_i_3: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \countMulti_reg__0\(1),
-      I1 => \^count\(1),
       O => waveRef3Address4_carry_i_3_n_0
     );
 waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
@@ -13213,9 +12789,18 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
       INIT => X"6"
     )
         port map (
+      I0 => \countMulti_reg__0\(1),
+      I1 => \^count\(1),
+      O => waveRef3Address4_carry_i_4_n_0
+    );
+waveRef3Address4_carry_i_5: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
       I0 => \countMulti_reg__0\(0),
       I1 => \^count\(0),
-      O => waveRef3Address4_carry_i_4_n_0
+      O => waveRef3Address4_carry_i_5_n_0
     );
 \waveRef3Address[15]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -13233,7 +12818,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
         port map (
       C => clk,
       CE => '1',
-      D => \waveRef0Address[0]_i_1_n_0\,
+      D => p_1_in(0),
       Q => waveRef3Address(0),
       R => \waveRef3Address[15]_i_1_n_0\
     );
@@ -13408,7 +12993,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(0),
       Q => xcorr1(0),
       R => '0'
@@ -13419,7 +13004,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(10),
       Q => xcorr1(10),
       R => '0'
@@ -13430,7 +13015,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(11),
       Q => xcorr1(11),
       R => '0'
@@ -13441,7 +13026,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(12),
       Q => xcorr1(12),
       R => '0'
@@ -13452,7 +13037,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(13),
       Q => xcorr1(13),
       R => '0'
@@ -13463,7 +13048,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(14),
       Q => xcorr1(14),
       R => '0'
@@ -13474,7 +13059,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(15),
       Q => xcorr1(15),
       R => '0'
@@ -13485,7 +13070,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(16),
       Q => xcorr1(16),
       R => '0'
@@ -13496,7 +13081,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(17),
       Q => xcorr1(17),
       R => '0'
@@ -13507,7 +13092,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(18),
       Q => xcorr1(18),
       R => '0'
@@ -13518,7 +13103,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(19),
       Q => xcorr1(19),
       R => '0'
@@ -13529,7 +13114,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(1),
       Q => xcorr1(1),
       R => '0'
@@ -13540,7 +13125,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(20),
       Q => xcorr1(20),
       R => '0'
@@ -13551,7 +13136,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(21),
       Q => xcorr1(21),
       R => '0'
@@ -13562,7 +13147,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(22),
       Q => xcorr1(22),
       R => '0'
@@ -13573,7 +13158,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(23),
       Q => xcorr1(23),
       R => '0'
@@ -13584,7 +13169,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(24),
       Q => xcorr1(24),
       R => '0'
@@ -13595,7 +13180,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(25),
       Q => xcorr1(25),
       R => '0'
@@ -13606,7 +13191,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(26),
       Q => xcorr1(26),
       R => '0'
@@ -13617,7 +13202,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(27),
       Q => xcorr1(27),
       R => '0'
@@ -13628,7 +13213,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(28),
       Q => xcorr1(28),
       R => '0'
@@ -13639,7 +13224,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(29),
       Q => xcorr1(29),
       R => '0'
@@ -13650,7 +13235,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(2),
       Q => xcorr1(2),
       R => '0'
@@ -13661,7 +13246,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(30),
       Q => xcorr1(30),
       R => '0'
@@ -13672,7 +13257,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(31),
       Q => xcorr1(31),
       R => '0'
@@ -13683,7 +13268,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(32),
       Q => xcorr1(32),
       R => '0'
@@ -13694,7 +13279,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(33),
       Q => xcorr1(33),
       R => '0'
@@ -13705,7 +13290,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(34),
       Q => xcorr1(34),
       R => '0'
@@ -13716,7 +13301,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(35),
       Q => xcorr1(35),
       R => '0'
@@ -13727,7 +13312,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(36),
       Q => xcorr1(36),
       R => '0'
@@ -13738,7 +13323,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(37),
       Q => xcorr1(37),
       R => '0'
@@ -13749,7 +13334,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(38),
       Q => xcorr1(38),
       R => '0'
@@ -13760,7 +13345,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(39),
       Q => xcorr1(39),
       R => '0'
@@ -13771,7 +13356,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(3),
       Q => xcorr1(3),
       R => '0'
@@ -13782,7 +13367,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(40),
       Q => xcorr1(40),
       R => '0'
@@ -13793,7 +13378,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(41),
       Q => xcorr1(41),
       R => '0'
@@ -13804,7 +13389,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(42),
       Q => xcorr1(42),
       R => '0'
@@ -13815,7 +13400,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(43),
       Q => xcorr1(43),
       R => '0'
@@ -13826,7 +13411,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(44),
       Q => xcorr1(44),
       R => '0'
@@ -13837,7 +13422,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(45),
       Q => xcorr1(45),
       R => '0'
@@ -13848,7 +13433,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(46),
       Q => xcorr1(46),
       R => '0'
@@ -13859,7 +13444,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(47),
       Q => xcorr1(47),
       R => '0'
@@ -13870,7 +13455,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(48),
       Q => xcorr1(48),
       R => '0'
@@ -13881,7 +13466,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(49),
       Q => xcorr1(49),
       R => '0'
@@ -13892,7 +13477,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(4),
       Q => xcorr1(4),
       R => '0'
@@ -13903,7 +13488,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(50),
       Q => xcorr1(50),
       R => '0'
@@ -13914,7 +13499,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(51),
       Q => xcorr1(51),
       R => '0'
@@ -13925,7 +13510,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(52),
       Q => xcorr1(52),
       R => '0'
@@ -13936,7 +13521,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(53),
       Q => xcorr1(53),
       R => '0'
@@ -13947,7 +13532,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(54),
       Q => xcorr1(54),
       R => '0'
@@ -13958,7 +13543,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(55),
       Q => xcorr1(55),
       R => '0'
@@ -13969,7 +13554,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(56),
       Q => xcorr1(56),
       R => '0'
@@ -13980,7 +13565,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(57),
       Q => xcorr1(57),
       R => '0'
@@ -13991,7 +13576,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(58),
       Q => xcorr1(58),
       R => '0'
@@ -14002,7 +13587,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(59),
       Q => xcorr1(59),
       R => '0'
@@ -14013,7 +13598,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(5),
       Q => xcorr1(5),
       R => '0'
@@ -14024,7 +13609,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(60),
       Q => xcorr1(60),
       R => '0'
@@ -14035,7 +13620,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(61),
       Q => xcorr1(61),
       R => '0'
@@ -14046,7 +13631,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(62),
       Q => xcorr1(62),
       R => '0'
@@ -14057,7 +13642,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(63),
       Q => xcorr1(63),
       R => '0'
@@ -14068,7 +13653,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(6),
       Q => xcorr1(6),
       R => '0'
@@ -14079,7 +13664,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(7),
       Q => xcorr1(7),
       R => '0'
@@ -14090,7 +13675,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(8),
       Q => xcorr1(8),
       R => '0'
@@ -14101,48 +13686,48 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product1_reg(9),
       Q => xcorr1(9),
       R => '0'
     );
 \xcorr[63]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000000001"
+      INIT => X"0000000000000002"
     )
         port map (
-      I0 => countMulti_reg(13),
-      I1 => countMulti_reg(14),
-      I2 => countMulti_reg(12),
-      I3 => \xcorr[63]_i_2_n_0\,
-      I4 => \xcorr[63]_i_3_n_0\,
-      I5 => countMulti_reg(15),
-      O => \xcorr[63]_i_1_n_0\
+      I0 => \xcorr[63]_i_2_n_0\,
+      I1 => \countMulti_reg__0\(5),
+      I2 => \countMulti_reg__0\(4),
+      I3 => \countMulti_reg__0\(10),
+      I4 => \countMulti_reg__0\(9),
+      I5 => \xcorr[63]_i_3_n_0\,
+      O => clear
     );
 \xcorr[63]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFFFFFFFFFB"
-    )
-        port map (
-      I0 => \countMulti_reg__0\(1),
-      I1 => \countMulti_reg__0\(2),
-      I2 => \countMulti_reg__0\(0),
-      I3 => \countMulti_reg__0\(4),
-      I4 => \countMulti_reg__0\(5),
-      I5 => \countMulti_reg__0\(3),
-      O => \xcorr[63]_i_2_n_0\
-    );
-\xcorr[63]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFF7FFFFF"
+      INIT => X"0080000000000000"
     )
         port map (
       I0 => \countMulti_reg__0\(6),
       I1 => \countMulti_reg__0\(7),
-      I2 => \countMulti_reg__0\(8),
-      I3 => \countMulti_reg__0\(10),
+      I2 => \countMulti_reg__0\(2),
+      I3 => \countMulti_reg__0\(0),
       I4 => \countMulti_reg__0\(11),
-      I5 => \countMulti_reg__0\(9),
+      I5 => \countMulti_reg__0\(8),
+      O => \xcorr[63]_i_2_n_0\
+    );
+\xcorr[63]_i_3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => countMulti_reg(14),
+      I1 => countMulti_reg(15),
+      I2 => countMulti_reg(12),
+      I3 => countMulti_reg(13),
+      I4 => \countMulti_reg__0\(3),
+      I5 => \countMulti_reg__0\(1),
       O => \xcorr[63]_i_3_n_0\
     );
 \xcorr_reg[0]\: unisim.vcomponents.FDRE
@@ -14151,7 +13736,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(0),
       Q => xcorr(0),
       R => '0'
@@ -14162,7 +13747,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(10),
       Q => xcorr(10),
       R => '0'
@@ -14173,7 +13758,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(11),
       Q => xcorr(11),
       R => '0'
@@ -14184,7 +13769,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(12),
       Q => xcorr(12),
       R => '0'
@@ -14195,7 +13780,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(13),
       Q => xcorr(13),
       R => '0'
@@ -14206,7 +13791,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(14),
       Q => xcorr(14),
       R => '0'
@@ -14217,7 +13802,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(15),
       Q => xcorr(15),
       R => '0'
@@ -14228,7 +13813,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(16),
       Q => xcorr(16),
       R => '0'
@@ -14239,7 +13824,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(17),
       Q => xcorr(17),
       R => '0'
@@ -14250,7 +13835,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(18),
       Q => xcorr(18),
       R => '0'
@@ -14261,7 +13846,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(19),
       Q => xcorr(19),
       R => '0'
@@ -14272,7 +13857,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(1),
       Q => xcorr(1),
       R => '0'
@@ -14283,7 +13868,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(20),
       Q => xcorr(20),
       R => '0'
@@ -14294,7 +13879,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(21),
       Q => xcorr(21),
       R => '0'
@@ -14305,7 +13890,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(22),
       Q => xcorr(22),
       R => '0'
@@ -14316,7 +13901,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(23),
       Q => xcorr(23),
       R => '0'
@@ -14327,7 +13912,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(24),
       Q => xcorr(24),
       R => '0'
@@ -14338,7 +13923,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(25),
       Q => xcorr(25),
       R => '0'
@@ -14349,7 +13934,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(26),
       Q => xcorr(26),
       R => '0'
@@ -14360,7 +13945,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(27),
       Q => xcorr(27),
       R => '0'
@@ -14371,7 +13956,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(28),
       Q => xcorr(28),
       R => '0'
@@ -14382,7 +13967,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(29),
       Q => xcorr(29),
       R => '0'
@@ -14393,7 +13978,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(2),
       Q => xcorr(2),
       R => '0'
@@ -14404,7 +13989,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(30),
       Q => xcorr(30),
       R => '0'
@@ -14415,7 +14000,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(31),
       Q => xcorr(31),
       R => '0'
@@ -14426,7 +14011,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(32),
       Q => xcorr(32),
       R => '0'
@@ -14437,7 +14022,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(33),
       Q => xcorr(33),
       R => '0'
@@ -14448,7 +14033,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(34),
       Q => xcorr(34),
       R => '0'
@@ -14459,7 +14044,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(35),
       Q => xcorr(35),
       R => '0'
@@ -14470,7 +14055,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(36),
       Q => xcorr(36),
       R => '0'
@@ -14481,7 +14066,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(37),
       Q => xcorr(37),
       R => '0'
@@ -14492,7 +14077,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(38),
       Q => xcorr(38),
       R => '0'
@@ -14503,7 +14088,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(39),
       Q => xcorr(39),
       R => '0'
@@ -14514,7 +14099,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(3),
       Q => xcorr(3),
       R => '0'
@@ -14525,7 +14110,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(40),
       Q => xcorr(40),
       R => '0'
@@ -14536,7 +14121,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(41),
       Q => xcorr(41),
       R => '0'
@@ -14547,7 +14132,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(42),
       Q => xcorr(42),
       R => '0'
@@ -14558,7 +14143,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(43),
       Q => xcorr(43),
       R => '0'
@@ -14569,7 +14154,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(44),
       Q => xcorr(44),
       R => '0'
@@ -14580,7 +14165,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(45),
       Q => xcorr(45),
       R => '0'
@@ -14591,7 +14176,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(46),
       Q => xcorr(46),
       R => '0'
@@ -14602,7 +14187,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(47),
       Q => xcorr(47),
       R => '0'
@@ -14613,7 +14198,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(48),
       Q => xcorr(48),
       R => '0'
@@ -14624,7 +14209,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(49),
       Q => xcorr(49),
       R => '0'
@@ -14635,7 +14220,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(4),
       Q => xcorr(4),
       R => '0'
@@ -14646,7 +14231,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(50),
       Q => xcorr(50),
       R => '0'
@@ -14657,7 +14242,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(51),
       Q => xcorr(51),
       R => '0'
@@ -14668,7 +14253,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(52),
       Q => xcorr(52),
       R => '0'
@@ -14679,7 +14264,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(53),
       Q => xcorr(53),
       R => '0'
@@ -14690,7 +14275,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(54),
       Q => xcorr(54),
       R => '0'
@@ -14701,7 +14286,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(55),
       Q => xcorr(55),
       R => '0'
@@ -14712,7 +14297,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(56),
       Q => xcorr(56),
       R => '0'
@@ -14723,7 +14308,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(57),
       Q => xcorr(57),
       R => '0'
@@ -14734,7 +14319,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(58),
       Q => xcorr(58),
       R => '0'
@@ -14745,7 +14330,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(59),
       Q => xcorr(59),
       R => '0'
@@ -14756,7 +14341,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(5),
       Q => xcorr(5),
       R => '0'
@@ -14767,7 +14352,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(60),
       Q => xcorr(60),
       R => '0'
@@ -14778,7 +14363,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(61),
       Q => xcorr(61),
       R => '0'
@@ -14789,7 +14374,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(62),
       Q => xcorr(62),
       R => '0'
@@ -14800,7 +14385,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(63),
       Q => xcorr(63),
       R => '0'
@@ -14811,7 +14396,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(6),
       Q => xcorr(6),
       R => '0'
@@ -14822,7 +14407,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(7),
       Q => xcorr(7),
       R => '0'
@@ -14833,7 +14418,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(8),
       Q => xcorr(8),
       R => '0'
@@ -14844,7 +14429,7 @@ waveRef3Address4_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       C => clk,
-      CE => \xcorr[63]_i_1_n_0\,
+      CE => clear,
       D => product_reg(9),
       Q => xcorr(9),
       R => '0'
@@ -14884,6 +14469,7 @@ entity MicroBlaze_CC_0_0 is
     wave03Address : out STD_LOGIC_VECTOR ( 11 downto 0 );
     xcorr : out STD_LOGIC_VECTOR ( 63 downto 0 );
     xcorr1 : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    clkcorr : out STD_LOGIC;
     count : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
@@ -14916,6 +14502,7 @@ begin
 inst: entity work.MicroBlaze_CC_0_0_CC
      port map (
       clk => clk,
+      clkcorr => clkcorr,
       count(15 downto 0) => count(15 downto 0),
       product_stage3_reg_0 => clk,
       wave0(11 downto 0) => wave0(11 downto 0),

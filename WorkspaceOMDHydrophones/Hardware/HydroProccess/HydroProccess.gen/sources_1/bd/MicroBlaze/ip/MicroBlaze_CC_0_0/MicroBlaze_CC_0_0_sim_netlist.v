@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Tue Sep 24 03:03:54 2024
+// Date        : Tue Sep 24 22:50:29 2024
 // Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.v
+//               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.v
 // Design      : MicroBlaze_CC_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -45,6 +45,7 @@ module MicroBlaze_CC_0_0
     wave03Address,
     xcorr,
     xcorr1,
+    clkcorr,
     count);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
   input clk1Mhz;
@@ -74,9 +75,11 @@ module MicroBlaze_CC_0_0
   output [11:0]wave03Address;
   output [63:0]xcorr;
   output [63:0]xcorr1;
+  output clkcorr;
   output [15:0]count;
 
   wire clk;
+  wire clkcorr;
   wire [15:0]count;
   wire [11:0]wave0;
   wire [11:0]wave00;
@@ -107,6 +110,7 @@ module MicroBlaze_CC_0_0
   assign wave3Address[11:0] = wave03Address;
   MicroBlaze_CC_0_0_CC inst
        (.clk(clk),
+        .clkcorr(clkcorr),
         .count(count),
         .product_stage3_reg_0(clk),
         .wave0(wave0),
@@ -132,7 +136,8 @@ endmodule
 
 (* ORIG_REF_NAME = "CC" *) 
 module MicroBlaze_CC_0_0_CC
-   (count,
+   (clkcorr,
+    count,
     waveRef0Address,
     wave03Address,
     waveRef1Address,
@@ -154,6 +159,7 @@ module MicroBlaze_CC_0_0_CC
     wave00,
     wave01,
     clk);
+  output clkcorr;
   output [15:0]count;
   output [15:0]waveRef0Address;
   output [11:0]wave03Address;
@@ -177,10 +183,9 @@ module MicroBlaze_CC_0_0_CC
   input [11:0]wave01;
   input clk;
 
-  wire CEM;
   wire clear;
   wire clk;
-  wire clkcorr_reg_n_0;
+  wire clkcorr;
   wire [15:0]count;
   wire count1;
   wire count1_carry__0_i_1_n_0;
@@ -235,7 +240,9 @@ module MicroBlaze_CC_0_0_CC
   wire \countMulti_reg[8]_i_1_n_6 ;
   wire \countMulti_reg[8]_i_1_n_7 ;
   wire [11:0]countMulti_reg__0;
+  wire \count[15]_i_1_n_0 ;
   wire \count[3]_i_2_n_0 ;
+  wire count_0;
   wire \count_reg[11]_i_1_n_0 ;
   wire \count_reg[11]_i_1_n_1 ;
   wire \count_reg[11]_i_1_n_2 ;
@@ -244,13 +251,13 @@ module MicroBlaze_CC_0_0_CC
   wire \count_reg[11]_i_1_n_5 ;
   wire \count_reg[11]_i_1_n_6 ;
   wire \count_reg[11]_i_1_n_7 ;
-  wire \count_reg[15]_i_1_n_1 ;
-  wire \count_reg[15]_i_1_n_2 ;
-  wire \count_reg[15]_i_1_n_3 ;
-  wire \count_reg[15]_i_1_n_4 ;
-  wire \count_reg[15]_i_1_n_5 ;
-  wire \count_reg[15]_i_1_n_6 ;
-  wire \count_reg[15]_i_1_n_7 ;
+  wire \count_reg[15]_i_3_n_1 ;
+  wire \count_reg[15]_i_3_n_2 ;
+  wire \count_reg[15]_i_3_n_3 ;
+  wire \count_reg[15]_i_3_n_4 ;
+  wire \count_reg[15]_i_3_n_5 ;
+  wire \count_reg[15]_i_3_n_6 ;
+  wire \count_reg[15]_i_3_n_7 ;
   wire \count_reg[3]_i_1_n_0 ;
   wire \count_reg[3]_i_1_n_1 ;
   wire \count_reg[3]_i_1_n_2 ;
@@ -267,7 +274,7 @@ module MicroBlaze_CC_0_0_CC
   wire \count_reg[7]_i_1_n_5 ;
   wire \count_reg[7]_i_1_n_6 ;
   wire \count_reg[7]_i_1_n_7 ;
-  wire [25:0]p_1_in;
+  wire [15:0]p_1_in;
   wire \product1[0]_i_2_n_0 ;
   wire \product1[0]_i_3_n_0 ;
   wire \product1[0]_i_4_n_0 ;
@@ -815,37 +822,7 @@ module MicroBlaze_CC_0_0_CC
   wire product_stage2_reg_n_153;
   wire product_stage3_reg_0;
   wire [31:0]product_stage3_reg__0;
-  wire [25:0]subframeCounter;
-  wire subframeCounter0_carry__0_n_0;
-  wire subframeCounter0_carry__0_n_1;
-  wire subframeCounter0_carry__0_n_2;
-  wire subframeCounter0_carry__0_n_3;
-  wire subframeCounter0_carry__1_n_0;
-  wire subframeCounter0_carry__1_n_1;
-  wire subframeCounter0_carry__1_n_2;
-  wire subframeCounter0_carry__1_n_3;
-  wire subframeCounter0_carry__2_n_0;
-  wire subframeCounter0_carry__2_n_1;
-  wire subframeCounter0_carry__2_n_2;
-  wire subframeCounter0_carry__2_n_3;
-  wire subframeCounter0_carry__3_n_0;
-  wire subframeCounter0_carry__3_n_1;
-  wire subframeCounter0_carry__3_n_2;
-  wire subframeCounter0_carry__3_n_3;
-  wire subframeCounter0_carry__4_n_0;
-  wire subframeCounter0_carry__4_n_1;
-  wire subframeCounter0_carry__4_n_2;
-  wire subframeCounter0_carry__4_n_3;
-  wire subframeCounter0_carry_n_0;
-  wire subframeCounter0_carry_n_1;
-  wire subframeCounter0_carry_n_2;
-  wire subframeCounter0_carry_n_3;
-  wire \subframeCounter[25]_i_1_n_0 ;
-  wire \subframeCounter[25]_i_2_n_0 ;
-  wire \subframeCounter[25]_i_3_n_0 ;
-  wire \subframeCounter[25]_i_4_n_0 ;
-  wire \subframeCounter[25]_i_5_n_0 ;
-  wire \subframeCounter[25]_i_6_n_0 ;
+  wire temp0;
   wire temp00_reg_n_100;
   wire temp00_reg_n_101;
   wire temp00_reg_n_102;
@@ -1062,6 +1039,7 @@ module MicroBlaze_CC_0_0_CC
   wire temp0_reg_n_97;
   wire temp0_reg_n_98;
   wire temp0_reg_n_99;
+  wire temp2_reg_i_3_n_0;
   wire temp2_reg_n_100;
   wire temp2_reg_n_101;
   wire temp2_reg_n_102;
@@ -1199,10 +1177,6 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address4__0_carry__0_n_1;
   wire waveRef0Address4__0_carry__0_n_2;
   wire waveRef0Address4__0_carry__0_n_3;
-  wire waveRef0Address4__0_carry__0_n_4;
-  wire waveRef0Address4__0_carry__0_n_5;
-  wire waveRef0Address4__0_carry__0_n_6;
-  wire waveRef0Address4__0_carry__0_n_7;
   wire waveRef0Address4__0_carry__10_i_1_n_0;
   wire waveRef0Address4__0_carry__10_i_2_n_0;
   wire waveRef0Address4__0_carry__10_i_3_n_0;
@@ -1221,6 +1195,7 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address4__0_carry__11_i_2_n_0;
   wire waveRef0Address4__0_carry__11_i_3_n_0;
   wire waveRef0Address4__0_carry__11_i_4_n_0;
+  wire waveRef0Address4__0_carry__11_i_5_n_0;
   wire waveRef0Address4__0_carry__11_n_0;
   wire waveRef0Address4__0_carry__11_n_1;
   wire waveRef0Address4__0_carry__11_n_2;
@@ -1282,10 +1257,6 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address4__0_carry__1_n_1;
   wire waveRef0Address4__0_carry__1_n_2;
   wire waveRef0Address4__0_carry__1_n_3;
-  wire waveRef0Address4__0_carry__1_n_4;
-  wire waveRef0Address4__0_carry__1_n_5;
-  wire waveRef0Address4__0_carry__1_n_6;
-  wire waveRef0Address4__0_carry__1_n_7;
   wire waveRef0Address4__0_carry__2_i_1_n_0;
   wire waveRef0Address4__0_carry__2_i_2_n_0;
   wire waveRef0Address4__0_carry__2_i_3_n_0;
@@ -1293,14 +1264,11 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address4__0_carry__2_n_1;
   wire waveRef0Address4__0_carry__2_n_2;
   wire waveRef0Address4__0_carry__2_n_3;
-  wire waveRef0Address4__0_carry__2_n_4;
-  wire waveRef0Address4__0_carry__2_n_5;
-  wire waveRef0Address4__0_carry__2_n_6;
-  wire waveRef0Address4__0_carry__2_n_7;
   wire waveRef0Address4__0_carry__3_i_1_n_0;
   wire waveRef0Address4__0_carry__3_i_2_n_0;
   wire waveRef0Address4__0_carry__3_i_3_n_0;
   wire waveRef0Address4__0_carry__3_i_4_n_0;
+  wire waveRef0Address4__0_carry__3_i_5_n_0;
   wire waveRef0Address4__0_carry__3_n_0;
   wire waveRef0Address4__0_carry__3_n_1;
   wire waveRef0Address4__0_carry__3_n_2;
@@ -1358,6 +1326,7 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address4__0_carry__7_i_2_n_0;
   wire waveRef0Address4__0_carry__7_i_3_n_0;
   wire waveRef0Address4__0_carry__7_i_4_n_0;
+  wire waveRef0Address4__0_carry__7_i_5_n_0;
   wire waveRef0Address4__0_carry__7_n_0;
   wire waveRef0Address4__0_carry__7_n_1;
   wire waveRef0Address4__0_carry__7_n_2;
@@ -1404,9 +1373,6 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address4__0_carry_n_1;
   wire waveRef0Address4__0_carry_n_2;
   wire waveRef0Address4__0_carry_n_3;
-  wire waveRef0Address4__0_carry_n_4;
-  wire waveRef0Address4__0_carry_n_5;
-  wire waveRef0Address4__0_carry_n_6;
   wire waveRef0Address4_carry__0_i_1_n_0;
   wire waveRef0Address4_carry__0_i_2_n_0;
   wire waveRef0Address4_carry__0_i_3_n_0;
@@ -1440,7 +1406,6 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address4_carry_n_1;
   wire waveRef0Address4_carry_n_2;
   wire waveRef0Address4_carry_n_3;
-  wire \waveRef0Address[0]_i_1_n_0 ;
   wire \waveRef0Address[15]_i_1_n_0 ;
   wire [11:0]waveRef1;
   wire [15:0]waveRef1Address;
@@ -1549,11 +1514,13 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef1Address4_carry__2_n_2;
   wire waveRef1Address4_carry__2_n_3;
   wire waveRef1Address4_carry__3_i_1_n_0;
+  wire waveRef1Address4_carry__3_i_2_n_0;
   wire waveRef1Address4_carry__3_n_2;
   wire waveRef1Address4_carry_i_1_n_0;
   wire waveRef1Address4_carry_i_2_n_0;
   wire waveRef1Address4_carry_i_3_n_0;
   wire waveRef1Address4_carry_i_4_n_0;
+  wire waveRef1Address4_carry_i_5_n_0;
   wire waveRef1Address4_carry_n_0;
   wire waveRef1Address4_carry_n_1;
   wire waveRef1Address4_carry_n_2;
@@ -1665,11 +1632,13 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef2Address4_carry__2_n_2;
   wire waveRef2Address4_carry__2_n_3;
   wire waveRef2Address4_carry__3_i_1_n_0;
+  wire waveRef2Address4_carry__3_i_2_n_0;
   wire waveRef2Address4_carry__3_n_2;
   wire waveRef2Address4_carry_i_1_n_0;
   wire waveRef2Address4_carry_i_2_n_0;
   wire waveRef2Address4_carry_i_3_n_0;
   wire waveRef2Address4_carry_i_4_n_0;
+  wire waveRef2Address4_carry_i_5_n_0;
   wire waveRef2Address4_carry_n_0;
   wire waveRef2Address4_carry_n_1;
   wire waveRef2Address4_carry_n_2;
@@ -1782,11 +1751,13 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef3Address4_carry__2_n_2;
   wire waveRef3Address4_carry__2_n_3;
   wire waveRef3Address4_carry__3_i_1_n_0;
+  wire waveRef3Address4_carry__3_i_2_n_0;
   wire waveRef3Address4_carry__3_n_2;
   wire waveRef3Address4_carry_i_1_n_0;
   wire waveRef3Address4_carry_i_2_n_0;
   wire waveRef3Address4_carry_i_3_n_0;
   wire waveRef3Address4_carry_i_4_n_0;
+  wire waveRef3Address4_carry_i_5_n_0;
   wire waveRef3Address4_carry_n_0;
   wire waveRef3Address4_carry_n_1;
   wire waveRef3Address4_carry_n_2;
@@ -1794,14 +1765,13 @@ module MicroBlaze_CC_0_0_CC
   wire \waveRef3Address[15]_i_1_n_0 ;
   wire [63:0]xcorr;
   wire [63:0]xcorr1;
-  wire \xcorr[63]_i_1_n_0 ;
   wire \xcorr[63]_i_2_n_0 ;
   wire \xcorr[63]_i_3_n_0 ;
   wire [3:0]NLW_count1_carry_O_UNCONNECTED;
   wire [3:3]NLW_count1_carry__0_CO_UNCONNECTED;
-  wire [2:0]NLW_count1_carry__0_O_UNCONNECTED;
+  wire [3:0]NLW_count1_carry__0_O_UNCONNECTED;
   wire [3:3]\NLW_countMulti_reg[12]_i_1_CO_UNCONNECTED ;
-  wire [3:3]\NLW_count_reg[15]_i_1_CO_UNCONNECTED ;
+  wire [3:3]\NLW_count_reg[15]_i_3_CO_UNCONNECTED ;
   wire [3:3]\NLW_product1_reg[60]_i_1_CO_UNCONNECTED ;
   wire NLW_product1_stage1_reg_CARRYCASCOUT_UNCONNECTED;
   wire NLW_product1_stage1_reg_MULTSIGNOUT_UNCONNECTED;
@@ -1868,8 +1838,6 @@ module MicroBlaze_CC_0_0_CC
   wire [3:0]NLW_product_stage3_reg_CARRYOUT_UNCONNECTED;
   wire [47:32]NLW_product_stage3_reg_P_UNCONNECTED;
   wire [47:0]NLW_product_stage3_reg_PCOUT_UNCONNECTED;
-  wire [3:0]NLW_subframeCounter0_carry__5_CO_UNCONNECTED;
-  wire [3:1]NLW_subframeCounter0_carry__5_O_UNCONNECTED;
   wire NLW_temp00_reg_CARRYCASCOUT_UNCONNECTED;
   wire NLW_temp00_reg_MULTSIGNOUT_UNCONNECTED;
   wire NLW_temp00_reg_OVERFLOW_UNCONNECTED;
@@ -1969,9 +1937,10 @@ module MicroBlaze_CC_0_0_CC
     clkcorr_reg
        (.C(clk),
         .CE(1'b1),
-        .D(\subframeCounter[25]_i_1_n_0 ),
-        .Q(clkcorr_reg_n_0),
+        .D(clear),
+        .Q(clkcorr),
         .R(1'b0));
+  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 count1_carry
        (.CI(1'b0),
         .CO({count1_carry_n_0,count1_carry_n_1,count1_carry_n_2,count1_carry_n_3}),
@@ -1979,13 +1948,14 @@ module MicroBlaze_CC_0_0_CC
         .DI({count1_carry_i_2_n_0,1'b0,count1_carry_i_3_n_0,1'b0}),
         .O(NLW_count1_carry_O_UNCONNECTED[3:0]),
         .S({count1_carry_i_4_n_0,count1_carry_i_5_n_0,count1_carry_i_6_n_0,count1_carry_i_7_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 count1_carry__0
        (.CI(count1_carry_n_0),
         .CO({NLW_count1_carry__0_CO_UNCONNECTED[3],count1,count1_carry__0_n_2,count1_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,count[15],count1_carry__0_i_1_n_0,count1_carry__0_i_2_n_0}),
-        .O({clear,NLW_count1_carry__0_O_UNCONNECTED[2:0]}),
-        .S({1'b1,count1_carry__0_i_3_n_0,count1_carry__0_i_4_n_0,count1_carry__0_i_5_n_0}));
+        .O(NLW_count1_carry__0_O_UNCONNECTED[3:0]),
+        .S({1'b0,count1_carry__0_i_3_n_0,count1_carry__0_i_4_n_0,count1_carry__0_i_5_n_0}));
   LUT1 #(
     .INIT(2'h1)) 
     count1_carry__0_i_1
@@ -2070,7 +2040,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[0]_i_1_n_7 ),
         .Q(countMulti_reg__0[0]),
-        .S(\xcorr[63]_i_1_n_0 ));
+        .S(clear));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \countMulti_reg[0]_i_1 
        (.CI(1'b0),
@@ -2087,7 +2057,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[8]_i_1_n_5 ),
         .Q(countMulti_reg__0[10]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2096,7 +2066,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[8]_i_1_n_4 ),
         .Q(countMulti_reg__0[11]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2105,7 +2075,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[12]_i_1_n_7 ),
         .Q(countMulti_reg[12]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \countMulti_reg[12]_i_1 
        (.CI(\countMulti_reg[8]_i_1_n_0 ),
@@ -2122,7 +2092,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[12]_i_1_n_6 ),
         .Q(countMulti_reg[13]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2131,7 +2101,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[12]_i_1_n_5 ),
         .Q(countMulti_reg[14]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2140,7 +2110,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[12]_i_1_n_4 ),
         .Q(countMulti_reg[15]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2149,7 +2119,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[0]_i_1_n_6 ),
         .Q(countMulti_reg__0[1]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2158,7 +2128,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[0]_i_1_n_5 ),
         .Q(countMulti_reg__0[2]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2167,7 +2137,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[0]_i_1_n_4 ),
         .Q(countMulti_reg__0[3]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2176,7 +2146,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[4]_i_1_n_7 ),
         .Q(countMulti_reg__0[4]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \countMulti_reg[4]_i_1 
        (.CI(\countMulti_reg[0]_i_1_n_0 ),
@@ -2193,7 +2163,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[4]_i_1_n_6 ),
         .Q(countMulti_reg__0[5]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2202,7 +2172,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[4]_i_1_n_5 ),
         .Q(countMulti_reg__0[6]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2211,7 +2181,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[4]_i_1_n_4 ),
         .Q(countMulti_reg__0[7]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2220,7 +2190,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[8]_i_1_n_7 ),
         .Q(countMulti_reg__0[8]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \countMulti_reg[8]_i_1 
        (.CI(\countMulti_reg[4]_i_1_n_0 ),
@@ -2237,7 +2207,18 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\countMulti_reg[8]_i_1_n_6 ),
         .Q(countMulti_reg__0[9]),
-        .R(\xcorr[63]_i_1_n_0 ));
+        .R(clear));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \count[15]_i_1 
+       (.I0(temp0),
+        .I1(count1),
+        .O(\count[15]_i_1_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \count[15]_i_2 
+       (.I0(temp0),
+        .O(count_0));
   LUT1 #(
     .INIT(2'h1)) 
     \count[3]_i_2 
@@ -2247,29 +2228,29 @@ module MicroBlaze_CC_0_0_CC
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[0] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[3]_i_1_n_7 ),
         .Q(count[0]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[10] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[11]_i_1_n_5 ),
         .Q(count[10]),
-        .R(clear));
+        .R(\count[15]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[11] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[11]_i_1_n_4 ),
         .Q(count[11]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \count_reg[11]_i_1 
        (.CI(\count_reg[7]_i_1_n_0 ),
@@ -2282,73 +2263,73 @@ module MicroBlaze_CC_0_0_CC
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[12] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
-        .D(\count_reg[15]_i_1_n_7 ),
+       (.C(clk),
+        .CE(count_0),
+        .D(\count_reg[15]_i_3_n_7 ),
         .Q(count[12]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[13] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
-        .D(\count_reg[15]_i_1_n_6 ),
+       (.C(clk),
+        .CE(count_0),
+        .D(\count_reg[15]_i_3_n_6 ),
         .Q(count[13]),
-        .R(clear));
+        .R(\count[15]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[14] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
-        .D(\count_reg[15]_i_1_n_5 ),
+       (.C(clk),
+        .CE(count_0),
+        .D(\count_reg[15]_i_3_n_5 ),
         .Q(count[14]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[15] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
-        .D(\count_reg[15]_i_1_n_4 ),
+       (.C(clk),
+        .CE(count_0),
+        .D(\count_reg[15]_i_3_n_4 ),
         .Q(count[15]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   (* ADDER_THRESHOLD = "11" *) 
-  CARRY4 \count_reg[15]_i_1 
+  CARRY4 \count_reg[15]_i_3 
        (.CI(\count_reg[11]_i_1_n_0 ),
-        .CO({\NLW_count_reg[15]_i_1_CO_UNCONNECTED [3],\count_reg[15]_i_1_n_1 ,\count_reg[15]_i_1_n_2 ,\count_reg[15]_i_1_n_3 }),
+        .CO({\NLW_count_reg[15]_i_3_CO_UNCONNECTED [3],\count_reg[15]_i_3_n_1 ,\count_reg[15]_i_3_n_2 ,\count_reg[15]_i_3_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\count_reg[15]_i_1_n_4 ,\count_reg[15]_i_1_n_5 ,\count_reg[15]_i_1_n_6 ,\count_reg[15]_i_1_n_7 }),
+        .O({\count_reg[15]_i_3_n_4 ,\count_reg[15]_i_3_n_5 ,\count_reg[15]_i_3_n_6 ,\count_reg[15]_i_3_n_7 }),
         .S(count[15:12]));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[1] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[3]_i_1_n_6 ),
         .Q(count[1]),
-        .R(clear));
+        .R(\count[15]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[2] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[3]_i_1_n_5 ),
         .Q(count[2]),
-        .R(clear));
+        .R(\count[15]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[3] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[3]_i_1_n_4 ),
         .Q(count[3]),
-        .R(clear));
+        .R(\count[15]_i_1_n_0 ));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \count_reg[3]_i_1 
        (.CI(1'b0),
@@ -2361,38 +2342,38 @@ module MicroBlaze_CC_0_0_CC
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[4] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[7]_i_1_n_7 ),
         .Q(count[4]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[5] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[7]_i_1_n_6 ),
         .Q(count[5]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[6] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[7]_i_1_n_5 ),
         .Q(count[6]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[7] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[7]_i_1_n_4 ),
         .Q(count[7]),
-        .S(clear));
+        .S(\count[15]_i_1_n_0 ));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \count_reg[7]_i_1 
        (.CI(\count_reg[3]_i_1_n_0 ),
@@ -2405,20 +2386,20 @@ module MicroBlaze_CC_0_0_CC
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[8] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[11]_i_1_n_7 ),
         .Q(count[8]),
-        .R(clear));
+        .R(\count[15]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \count_reg[9] 
-       (.C(clkcorr_reg_n_0),
-        .CE(1'b1),
+       (.C(clk),
+        .CE(count_0),
         .D(\count_reg[11]_i_1_n_6 ),
         .Q(count[9]),
-        .R(clear));
+        .R(\count[15]_i_1_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \product1[0]_i_2 
@@ -2811,7 +2792,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[0]_i_1_n_7 ),
         .Q(product1_reg[0]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[0]_i_1 
        (.CI(1'b0),
@@ -2828,7 +2809,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[8]_i_1_n_5 ),
         .Q(product1_reg[10]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2837,7 +2818,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[8]_i_1_n_4 ),
         .Q(product1_reg[11]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2846,7 +2827,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[12]_i_1_n_7 ),
         .Q(product1_reg[12]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[12]_i_1 
        (.CI(\product1_reg[8]_i_1_n_0 ),
@@ -2863,7 +2844,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[12]_i_1_n_6 ),
         .Q(product1_reg[13]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2872,7 +2853,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[12]_i_1_n_5 ),
         .Q(product1_reg[14]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2881,7 +2862,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[12]_i_1_n_4 ),
         .Q(product1_reg[15]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2890,7 +2871,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[16]_i_1_n_7 ),
         .Q(product1_reg[16]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[16]_i_1 
        (.CI(\product1_reg[12]_i_1_n_0 ),
@@ -2907,7 +2888,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[16]_i_1_n_6 ),
         .Q(product1_reg[17]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2916,7 +2897,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[16]_i_1_n_5 ),
         .Q(product1_reg[18]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2925,7 +2906,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[16]_i_1_n_4 ),
         .Q(product1_reg[19]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2934,7 +2915,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[0]_i_1_n_6 ),
         .Q(product1_reg[1]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2943,7 +2924,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[20]_i_1_n_7 ),
         .Q(product1_reg[20]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[20]_i_1 
        (.CI(\product1_reg[16]_i_1_n_0 ),
@@ -2960,7 +2941,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[20]_i_1_n_6 ),
         .Q(product1_reg[21]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2969,7 +2950,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[20]_i_1_n_5 ),
         .Q(product1_reg[22]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2978,7 +2959,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[20]_i_1_n_4 ),
         .Q(product1_reg[23]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -2987,7 +2968,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[24]_i_1_n_7 ),
         .Q(product1_reg[24]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[24]_i_1 
        (.CI(\product1_reg[20]_i_1_n_0 ),
@@ -3004,7 +2985,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[24]_i_1_n_6 ),
         .Q(product1_reg[25]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3013,7 +2994,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[24]_i_1_n_5 ),
         .Q(product1_reg[26]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3022,7 +3003,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[24]_i_1_n_4 ),
         .Q(product1_reg[27]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3031,7 +3012,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[28]_i_1_n_7 ),
         .Q(product1_reg[28]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[28]_i_1 
        (.CI(\product1_reg[24]_i_1_n_0 ),
@@ -3048,7 +3029,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[28]_i_1_n_6 ),
         .Q(product1_reg[29]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3057,7 +3038,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[0]_i_1_n_5 ),
         .Q(product1_reg[2]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3066,7 +3047,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[28]_i_1_n_5 ),
         .Q(product1_reg[30]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3075,7 +3056,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[28]_i_1_n_4 ),
         .Q(product1_reg[31]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3084,7 +3065,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[32]_i_1_n_7 ),
         .Q(product1_reg[32]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[32]_i_1 
        (.CI(\product1_reg[28]_i_1_n_0 ),
@@ -3101,7 +3082,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[32]_i_1_n_6 ),
         .Q(product1_reg[33]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3110,7 +3091,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[32]_i_1_n_5 ),
         .Q(product1_reg[34]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3119,7 +3100,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[32]_i_1_n_4 ),
         .Q(product1_reg[35]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3128,7 +3109,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[36]_i_1_n_7 ),
         .Q(product1_reg[36]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[36]_i_1 
        (.CI(\product1_reg[32]_i_1_n_0 ),
@@ -3145,7 +3126,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[36]_i_1_n_6 ),
         .Q(product1_reg[37]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3154,7 +3135,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[36]_i_1_n_5 ),
         .Q(product1_reg[38]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3163,7 +3144,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[36]_i_1_n_4 ),
         .Q(product1_reg[39]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3172,7 +3153,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[0]_i_1_n_4 ),
         .Q(product1_reg[3]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3181,7 +3162,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[40]_i_1_n_7 ),
         .Q(product1_reg[40]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[40]_i_1 
        (.CI(\product1_reg[36]_i_1_n_0 ),
@@ -3198,7 +3179,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[40]_i_1_n_6 ),
         .Q(product1_reg[41]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3207,7 +3188,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[40]_i_1_n_5 ),
         .Q(product1_reg[42]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3216,7 +3197,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[40]_i_1_n_4 ),
         .Q(product1_reg[43]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3225,7 +3206,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[44]_i_1_n_7 ),
         .Q(product1_reg[44]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[44]_i_1 
        (.CI(\product1_reg[40]_i_1_n_0 ),
@@ -3242,7 +3223,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[44]_i_1_n_6 ),
         .Q(product1_reg[45]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3251,7 +3232,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[44]_i_1_n_5 ),
         .Q(product1_reg[46]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3260,7 +3241,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[44]_i_1_n_4 ),
         .Q(product1_reg[47]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3269,7 +3250,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[48]_i_1_n_7 ),
         .Q(product1_reg[48]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[48]_i_1 
        (.CI(\product1_reg[44]_i_1_n_0 ),
@@ -3286,7 +3267,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[48]_i_1_n_6 ),
         .Q(product1_reg[49]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3295,7 +3276,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[4]_i_1_n_7 ),
         .Q(product1_reg[4]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[4]_i_1 
        (.CI(\product1_reg[0]_i_1_n_0 ),
@@ -3312,7 +3293,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[48]_i_1_n_5 ),
         .Q(product1_reg[50]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3321,7 +3302,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[48]_i_1_n_4 ),
         .Q(product1_reg[51]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3330,7 +3311,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[52]_i_1_n_7 ),
         .Q(product1_reg[52]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[52]_i_1 
        (.CI(\product1_reg[48]_i_1_n_0 ),
@@ -3347,7 +3328,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[52]_i_1_n_6 ),
         .Q(product1_reg[53]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3356,7 +3337,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[52]_i_1_n_5 ),
         .Q(product1_reg[54]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3365,7 +3346,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[52]_i_1_n_4 ),
         .Q(product1_reg[55]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3374,7 +3355,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[56]_i_1_n_7 ),
         .Q(product1_reg[56]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[56]_i_1 
        (.CI(\product1_reg[52]_i_1_n_0 ),
@@ -3391,7 +3372,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[56]_i_1_n_6 ),
         .Q(product1_reg[57]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3400,7 +3381,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[56]_i_1_n_5 ),
         .Q(product1_reg[58]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3409,7 +3390,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[56]_i_1_n_4 ),
         .Q(product1_reg[59]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3418,7 +3399,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[4]_i_1_n_6 ),
         .Q(product1_reg[5]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3427,7 +3408,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[60]_i_1_n_7 ),
         .Q(product1_reg[60]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[60]_i_1 
        (.CI(\product1_reg[56]_i_1_n_0 ),
@@ -3444,7 +3425,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[60]_i_1_n_6 ),
         .Q(product1_reg[61]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3453,7 +3434,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[60]_i_1_n_5 ),
         .Q(product1_reg[62]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3462,7 +3443,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[60]_i_1_n_4 ),
         .Q(product1_reg[63]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3471,7 +3452,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[4]_i_1_n_5 ),
         .Q(product1_reg[6]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3480,7 +3461,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[4]_i_1_n_4 ),
         .Q(product1_reg[7]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -3489,7 +3470,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[8]_i_1_n_7 ),
         .Q(product1_reg[8]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product1_reg[8]_i_1 
        (.CI(\product1_reg[4]_i_1_n_0 ),
@@ -3506,7 +3487,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product1_reg[8]_i_1_n_6 ),
         .Q(product1_reg[9]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-12 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   DSP48E1 #(
@@ -3561,8 +3542,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(CEM),
-        .CEP(CEM),
+        .CEM(temp0),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3640,8 +3621,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(CEM),
-        .CEP(CEM),
+        .CEM(temp0),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3720,7 +3701,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(CEM),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -4136,7 +4117,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[0]_i_1_n_7 ),
         .Q(product_reg[0]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[0]_i_1 
        (.CI(1'b0),
@@ -4153,7 +4134,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[8]_i_1_n_5 ),
         .Q(product_reg[10]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4162,7 +4143,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[8]_i_1_n_4 ),
         .Q(product_reg[11]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4171,7 +4152,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[12]_i_1_n_7 ),
         .Q(product_reg[12]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[12]_i_1 
        (.CI(\product_reg[8]_i_1_n_0 ),
@@ -4188,7 +4169,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[12]_i_1_n_6 ),
         .Q(product_reg[13]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4197,7 +4178,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[12]_i_1_n_5 ),
         .Q(product_reg[14]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4206,7 +4187,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[12]_i_1_n_4 ),
         .Q(product_reg[15]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4215,7 +4196,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[16]_i_1_n_7 ),
         .Q(product_reg[16]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[16]_i_1 
        (.CI(\product_reg[12]_i_1_n_0 ),
@@ -4232,7 +4213,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[16]_i_1_n_6 ),
         .Q(product_reg[17]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4241,7 +4222,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[16]_i_1_n_5 ),
         .Q(product_reg[18]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4250,7 +4231,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[16]_i_1_n_4 ),
         .Q(product_reg[19]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4259,7 +4240,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[0]_i_1_n_6 ),
         .Q(product_reg[1]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4268,7 +4249,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[20]_i_1_n_7 ),
         .Q(product_reg[20]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[20]_i_1 
        (.CI(\product_reg[16]_i_1_n_0 ),
@@ -4285,7 +4266,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[20]_i_1_n_6 ),
         .Q(product_reg[21]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4294,7 +4275,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[20]_i_1_n_5 ),
         .Q(product_reg[22]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4303,7 +4284,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[20]_i_1_n_4 ),
         .Q(product_reg[23]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4312,7 +4293,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[24]_i_1_n_7 ),
         .Q(product_reg[24]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[24]_i_1 
        (.CI(\product_reg[20]_i_1_n_0 ),
@@ -4329,7 +4310,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[24]_i_1_n_6 ),
         .Q(product_reg[25]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4338,7 +4319,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[24]_i_1_n_5 ),
         .Q(product_reg[26]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4347,7 +4328,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[24]_i_1_n_4 ),
         .Q(product_reg[27]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4356,7 +4337,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[28]_i_1_n_7 ),
         .Q(product_reg[28]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[28]_i_1 
        (.CI(\product_reg[24]_i_1_n_0 ),
@@ -4373,7 +4354,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[28]_i_1_n_6 ),
         .Q(product_reg[29]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4382,7 +4363,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[0]_i_1_n_5 ),
         .Q(product_reg[2]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4391,7 +4372,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[28]_i_1_n_5 ),
         .Q(product_reg[30]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4400,7 +4381,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[28]_i_1_n_4 ),
         .Q(product_reg[31]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4409,7 +4390,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[32]_i_1_n_7 ),
         .Q(product_reg[32]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[32]_i_1 
        (.CI(\product_reg[28]_i_1_n_0 ),
@@ -4426,7 +4407,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[32]_i_1_n_6 ),
         .Q(product_reg[33]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4435,7 +4416,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[32]_i_1_n_5 ),
         .Q(product_reg[34]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4444,7 +4425,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[32]_i_1_n_4 ),
         .Q(product_reg[35]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4453,7 +4434,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[36]_i_1_n_7 ),
         .Q(product_reg[36]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[36]_i_1 
        (.CI(\product_reg[32]_i_1_n_0 ),
@@ -4470,7 +4451,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[36]_i_1_n_6 ),
         .Q(product_reg[37]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4479,7 +4460,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[36]_i_1_n_5 ),
         .Q(product_reg[38]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4488,7 +4469,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[36]_i_1_n_4 ),
         .Q(product_reg[39]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4497,7 +4478,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[0]_i_1_n_4 ),
         .Q(product_reg[3]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4506,7 +4487,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[40]_i_1_n_7 ),
         .Q(product_reg[40]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[40]_i_1 
        (.CI(\product_reg[36]_i_1_n_0 ),
@@ -4523,7 +4504,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[40]_i_1_n_6 ),
         .Q(product_reg[41]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4532,7 +4513,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[40]_i_1_n_5 ),
         .Q(product_reg[42]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4541,7 +4522,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[40]_i_1_n_4 ),
         .Q(product_reg[43]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4550,7 +4531,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[44]_i_1_n_7 ),
         .Q(product_reg[44]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[44]_i_1 
        (.CI(\product_reg[40]_i_1_n_0 ),
@@ -4567,7 +4548,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[44]_i_1_n_6 ),
         .Q(product_reg[45]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4576,7 +4557,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[44]_i_1_n_5 ),
         .Q(product_reg[46]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4585,7 +4566,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[44]_i_1_n_4 ),
         .Q(product_reg[47]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4594,7 +4575,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[48]_i_1_n_7 ),
         .Q(product_reg[48]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[48]_i_1 
        (.CI(\product_reg[44]_i_1_n_0 ),
@@ -4611,7 +4592,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[48]_i_1_n_6 ),
         .Q(product_reg[49]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4620,7 +4601,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[4]_i_1_n_7 ),
         .Q(product_reg[4]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[4]_i_1 
        (.CI(\product_reg[0]_i_1_n_0 ),
@@ -4637,7 +4618,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[48]_i_1_n_5 ),
         .Q(product_reg[50]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4646,7 +4627,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[48]_i_1_n_4 ),
         .Q(product_reg[51]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4655,7 +4636,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[52]_i_1_n_7 ),
         .Q(product_reg[52]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[52]_i_1 
        (.CI(\product_reg[48]_i_1_n_0 ),
@@ -4672,7 +4653,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[52]_i_1_n_6 ),
         .Q(product_reg[53]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4681,7 +4662,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[52]_i_1_n_5 ),
         .Q(product_reg[54]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4690,7 +4671,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[52]_i_1_n_4 ),
         .Q(product_reg[55]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4699,7 +4680,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[56]_i_1_n_7 ),
         .Q(product_reg[56]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[56]_i_1 
        (.CI(\product_reg[52]_i_1_n_0 ),
@@ -4716,7 +4697,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[56]_i_1_n_6 ),
         .Q(product_reg[57]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4725,7 +4706,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[56]_i_1_n_5 ),
         .Q(product_reg[58]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4734,7 +4715,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[56]_i_1_n_4 ),
         .Q(product_reg[59]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4743,7 +4724,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[4]_i_1_n_6 ),
         .Q(product_reg[5]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4752,7 +4733,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[60]_i_1_n_7 ),
         .Q(product_reg[60]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[60]_i_1 
        (.CI(\product_reg[56]_i_1_n_0 ),
@@ -4769,7 +4750,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[60]_i_1_n_6 ),
         .Q(product_reg[61]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4778,7 +4759,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[60]_i_1_n_5 ),
         .Q(product_reg[62]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4787,7 +4768,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[60]_i_1_n_4 ),
         .Q(product_reg[63]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4796,7 +4777,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[4]_i_1_n_5 ),
         .Q(product_reg[6]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4805,7 +4786,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[4]_i_1_n_4 ),
         .Q(product_reg[7]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -4814,7 +4795,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[8]_i_1_n_7 ),
         .Q(product_reg[8]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \product_reg[8]_i_1 
        (.CI(\product_reg[4]_i_1_n_0 ),
@@ -4831,7 +4812,7 @@ module MicroBlaze_CC_0_0_CC
         .CE(1'b1),
         .D(\product_reg[8]_i_1_n_6 ),
         .Q(product_reg[9]),
-        .R(clkcorr_reg_n_0));
+        .R(count_0));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-12 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   DSP48E1 #(
@@ -4886,8 +4867,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(CEM),
-        .CEP(CEM),
+        .CEM(temp0),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -4965,8 +4946,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(CEM),
-        .CEP(CEM),
+        .CEM(temp0),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -5045,7 +5026,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(CEM),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -5069,358 +5050,6 @@ module MicroBlaze_CC_0_0_CC
         .RSTM(1'b0),
         .RSTP(1'b0),
         .UNDERFLOW(NLW_product_stage3_reg_UNDERFLOW_UNCONNECTED));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 subframeCounter0_carry
-       (.CI(1'b0),
-        .CO({subframeCounter0_carry_n_0,subframeCounter0_carry_n_1,subframeCounter0_carry_n_2,subframeCounter0_carry_n_3}),
-        .CYINIT(subframeCounter[0]),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(p_1_in[4:1]),
-        .S(subframeCounter[4:1]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 subframeCounter0_carry__0
-       (.CI(subframeCounter0_carry_n_0),
-        .CO({subframeCounter0_carry__0_n_0,subframeCounter0_carry__0_n_1,subframeCounter0_carry__0_n_2,subframeCounter0_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(p_1_in[8:5]),
-        .S(subframeCounter[8:5]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 subframeCounter0_carry__1
-       (.CI(subframeCounter0_carry__0_n_0),
-        .CO({subframeCounter0_carry__1_n_0,subframeCounter0_carry__1_n_1,subframeCounter0_carry__1_n_2,subframeCounter0_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(p_1_in[12:9]),
-        .S(subframeCounter[12:9]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 subframeCounter0_carry__2
-       (.CI(subframeCounter0_carry__1_n_0),
-        .CO({subframeCounter0_carry__2_n_0,subframeCounter0_carry__2_n_1,subframeCounter0_carry__2_n_2,subframeCounter0_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(p_1_in[16:13]),
-        .S(subframeCounter[16:13]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 subframeCounter0_carry__3
-       (.CI(subframeCounter0_carry__2_n_0),
-        .CO({subframeCounter0_carry__3_n_0,subframeCounter0_carry__3_n_1,subframeCounter0_carry__3_n_2,subframeCounter0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(p_1_in[20:17]),
-        .S(subframeCounter[20:17]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 subframeCounter0_carry__4
-       (.CI(subframeCounter0_carry__3_n_0),
-        .CO({subframeCounter0_carry__4_n_0,subframeCounter0_carry__4_n_1,subframeCounter0_carry__4_n_2,subframeCounter0_carry__4_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(p_1_in[24:21]),
-        .S(subframeCounter[24:21]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 subframeCounter0_carry__5
-       (.CI(subframeCounter0_carry__4_n_0),
-        .CO(NLW_subframeCounter0_carry__5_CO_UNCONNECTED[3:0]),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({NLW_subframeCounter0_carry__5_O_UNCONNECTED[3:1],p_1_in[25]}),
-        .S({1'b0,1'b0,1'b0,subframeCounter[25]}));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT1 #(
-    .INIT(2'h1)) 
-    \subframeCounter[0]_i_1 
-       (.I0(subframeCounter[0]),
-        .O(p_1_in[0]));
-  LUT6 #(
-    .INIT(64'h0000000000000100)) 
-    \subframeCounter[25]_i_1 
-       (.I0(\subframeCounter[25]_i_2_n_0 ),
-        .I1(subframeCounter[3]),
-        .I2(subframeCounter[13]),
-        .I3(subframeCounter[7]),
-        .I4(subframeCounter[4]),
-        .I5(\subframeCounter[25]_i_3_n_0 ),
-        .O(\subframeCounter[25]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'hFFFFFFFB)) 
-    \subframeCounter[25]_i_2 
-       (.I0(subframeCounter[0]),
-        .I1(subframeCounter[6]),
-        .I2(subframeCounter[16]),
-        .I3(subframeCounter[21]),
-        .I4(\subframeCounter[25]_i_4_n_0 ),
-        .O(\subframeCounter[25]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \subframeCounter[25]_i_3 
-       (.I0(\subframeCounter[25]_i_5_n_0 ),
-        .I1(\subframeCounter[25]_i_6_n_0 ),
-        .I2(subframeCounter[1]),
-        .I3(subframeCounter[5]),
-        .I4(subframeCounter[15]),
-        .I5(subframeCounter[14]),
-        .O(\subframeCounter[25]_i_3_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFF7)) 
-    \subframeCounter[25]_i_4 
-       (.I0(subframeCounter[11]),
-        .I1(subframeCounter[2]),
-        .I2(subframeCounter[23]),
-        .I3(subframeCounter[12]),
-        .O(\subframeCounter[25]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFD)) 
-    \subframeCounter[25]_i_5 
-       (.I0(subframeCounter[8]),
-        .I1(subframeCounter[22]),
-        .I2(subframeCounter[10]),
-        .I3(subframeCounter[18]),
-        .I4(subframeCounter[19]),
-        .I5(subframeCounter[24]),
-        .O(\subframeCounter[25]_i_5_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \subframeCounter[25]_i_6 
-       (.I0(subframeCounter[25]),
-        .I1(subframeCounter[9]),
-        .I2(subframeCounter[20]),
-        .I3(subframeCounter[17]),
-        .O(\subframeCounter[25]_i_6_n_0 ));
-  FDSE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[0]),
-        .Q(subframeCounter[0]),
-        .S(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[10]),
-        .Q(subframeCounter[10]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[11]),
-        .Q(subframeCounter[11]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[12]),
-        .Q(subframeCounter[12]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[13]),
-        .Q(subframeCounter[13]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[14]),
-        .Q(subframeCounter[14]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[15]),
-        .Q(subframeCounter[15]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[16]),
-        .Q(subframeCounter[16]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[17]),
-        .Q(subframeCounter[17]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[18] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[18]),
-        .Q(subframeCounter[18]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[19] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[19]),
-        .Q(subframeCounter[19]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[1]),
-        .Q(subframeCounter[1]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[20] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[20]),
-        .Q(subframeCounter[20]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[21] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[21]),
-        .Q(subframeCounter[21]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[22] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[22]),
-        .Q(subframeCounter[22]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[23] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[23]),
-        .Q(subframeCounter[23]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[24] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[24]),
-        .Q(subframeCounter[24]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[25] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[25]),
-        .Q(subframeCounter[25]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[2]),
-        .Q(subframeCounter[2]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[3]),
-        .Q(subframeCounter[3]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[4]),
-        .Q(subframeCounter[4]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[5]),
-        .Q(subframeCounter[5]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[6]),
-        .Q(subframeCounter[6]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[7]),
-        .Q(subframeCounter[7]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[8]),
-        .Q(subframeCounter[8]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \subframeCounter_reg[9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(p_1_in[9]),
-        .Q(subframeCounter[9]),
-        .R(\subframeCounter[25]_i_1_n_0 ));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-12 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   DSP48E1 #(
@@ -5476,7 +5105,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(CEM),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -5555,7 +5184,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(CEM),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -5634,7 +5263,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(CEM),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -5713,7 +5342,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(CEM),
+        .CEP(temp0),
         .CLK(product_stage3_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -5737,11 +5366,26 @@ module MicroBlaze_CC_0_0_CC
         .RSTM(1'b0),
         .RSTP(1'b0),
         .UNDERFLOW(NLW_temp2_reg_UNDERFLOW_UNCONNECTED));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
     temp2_reg_i_1
-       (.I0(clkcorr_reg_n_0),
-        .O(CEM));
+       (.I0(temp2_reg_i_3_n_0),
+        .I1(countMulti_reg__0[5]),
+        .I2(countMulti_reg__0[4]),
+        .I3(countMulti_reg__0[10]),
+        .I4(countMulti_reg__0[9]),
+        .I5(\xcorr[63]_i_3_n_0 ),
+        .O(temp0));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFEFFFF)) 
+    temp2_reg_i_3
+       (.I0(countMulti_reg__0[8]),
+        .I1(countMulti_reg__0[11]),
+        .I2(countMulti_reg__0[6]),
+        .I3(countMulti_reg__0[7]),
+        .I4(countMulti_reg__0[0]),
+        .I5(countMulti_reg__0[2]),
+        .O(temp2_reg_i_3_n_0));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \wave0Address_reg[0] 
@@ -6057,7 +5701,7 @@ module MicroBlaze_CC_0_0_CC
         .CO({waveRef0Address4__0_carry_n_0,waveRef0Address4__0_carry_n_1,waveRef0Address4__0_carry_n_2,waveRef0Address4__0_carry_n_3}),
         .CYINIT(1'b0),
         .DI(countMulti_reg__0[3:0]),
-        .O({waveRef0Address4__0_carry_n_4,waveRef0Address4__0_carry_n_5,waveRef0Address4__0_carry_n_6,NLW_waveRef0Address4__0_carry_O_UNCONNECTED[0]}),
+        .O({p_1_in[3:1],NLW_waveRef0Address4__0_carry_O_UNCONNECTED[0]}),
         .S({waveRef0Address4__0_carry_i_1_n_0,waveRef0Address4__0_carry_i_2_n_0,waveRef0Address4__0_carry_i_3_n_0,waveRef0Address4__0_carry_i_4_n_0}));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 waveRef0Address4__0_carry__0
@@ -6065,7 +5709,7 @@ module MicroBlaze_CC_0_0_CC
         .CO({waveRef0Address4__0_carry__0_n_0,waveRef0Address4__0_carry__0_n_1,waveRef0Address4__0_carry__0_n_2,waveRef0Address4__0_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI(countMulti_reg__0[7:4]),
-        .O({waveRef0Address4__0_carry__0_n_4,waveRef0Address4__0_carry__0_n_5,waveRef0Address4__0_carry__0_n_6,waveRef0Address4__0_carry__0_n_7}),
+        .O(p_1_in[7:4]),
         .S({waveRef0Address4__0_carry__0_i_1_n_0,waveRef0Address4__0_carry__0_i_2_n_0,waveRef0Address4__0_carry__0_i_3_n_0,waveRef0Address4__0_carry__0_i_4_n_0}));
   LUT2 #(
     .INIT(4'h6)) 
@@ -6097,7 +5741,7 @@ module MicroBlaze_CC_0_0_CC
         .CO({waveRef0Address4__0_carry__1_n_0,waveRef0Address4__0_carry__1_n_1,waveRef0Address4__0_carry__1_n_2,waveRef0Address4__0_carry__1_n_3}),
         .CYINIT(1'b0),
         .DI(countMulti_reg__0[11:8]),
-        .O({waveRef0Address4__0_carry__1_n_4,waveRef0Address4__0_carry__1_n_5,waveRef0Address4__0_carry__1_n_6,waveRef0Address4__0_carry__1_n_7}),
+        .O(p_1_in[11:8]),
         .S({waveRef0Address4__0_carry__1_i_1_n_0,waveRef0Address4__0_carry__1_i_2_n_0,waveRef0Address4__0_carry__1_i_3_n_0,waveRef0Address4__0_carry__1_i_4_n_0}));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 waveRef0Address4__0_carry__10
@@ -6162,34 +5806,39 @@ module MicroBlaze_CC_0_0_CC
        (.CI(1'b0),
         .CO({waveRef0Address4__0_carry__11_n_0,waveRef0Address4__0_carry__11_n_1,waveRef0Address4__0_carry__11_n_2,waveRef0Address4__0_carry__11_n_3}),
         .CYINIT(1'b0),
-        .DI({count[2],countMulti_reg__0[2:0]}),
+        .DI({count[2],waveRef0Address4__0_carry__11_i_1_n_0,countMulti_reg__0[1:0]}),
         .O({waveRef0Address4__0_carry__11_n_4,waveRef0Address4__0_carry__11_n_5,waveRef0Address4__0_carry__11_n_6,NLW_waveRef0Address4__0_carry__11_O_UNCONNECTED[0]}),
-        .S({waveRef0Address4__0_carry__11_i_1_n_0,waveRef0Address4__0_carry__11_i_2_n_0,waveRef0Address4__0_carry__11_i_3_n_0,waveRef0Address4__0_carry__11_i_4_n_0}));
+        .S({waveRef0Address4__0_carry__11_i_2_n_0,waveRef0Address4__0_carry__11_i_3_n_0,waveRef0Address4__0_carry__11_i_4_n_0,waveRef0Address4__0_carry__11_i_5_n_0}));
+  LUT1 #(
+    .INIT(2'h1)) 
+    waveRef0Address4__0_carry__11_i_1
+       (.I0(count[2]),
+        .O(waveRef0Address4__0_carry__11_i_1_n_0));
   LUT3 #(
     .INIT(8'h69)) 
-    waveRef0Address4__0_carry__11_i_1
+    waveRef0Address4__0_carry__11_i_2
        (.I0(countMulti_reg__0[3]),
         .I1(count[3]),
         .I2(count[2]),
-        .O(waveRef0Address4__0_carry__11_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    waveRef0Address4__0_carry__11_i_2
-       (.I0(count[2]),
-        .I1(countMulti_reg__0[2]),
         .O(waveRef0Address4__0_carry__11_i_2_n_0));
   LUT2 #(
-    .INIT(4'h6)) 
+    .INIT(4'h9)) 
     waveRef0Address4__0_carry__11_i_3
-       (.I0(countMulti_reg__0[1]),
-        .I1(count[1]),
+       (.I0(count[2]),
+        .I1(countMulti_reg__0[2]),
         .O(waveRef0Address4__0_carry__11_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef0Address4__0_carry__11_i_4
+       (.I0(countMulti_reg__0[1]),
+        .I1(count[1]),
+        .O(waveRef0Address4__0_carry__11_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    waveRef0Address4__0_carry__11_i_5
        (.I0(countMulti_reg__0[0]),
         .I1(count[0]),
-        .O(waveRef0Address4__0_carry__11_i_4_n_0));
+        .O(waveRef0Address4__0_carry__11_i_5_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 waveRef0Address4__0_carry__12
        (.CI(waveRef0Address4__0_carry__11_n_0),
@@ -6406,7 +6055,7 @@ module MicroBlaze_CC_0_0_CC
         .CO({NLW_waveRef0Address4__0_carry__2_CO_UNCONNECTED[3],waveRef0Address4__0_carry__2_n_1,waveRef0Address4__0_carry__2_n_2,waveRef0Address4__0_carry__2_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,countMulti_reg[14:12]}),
-        .O({waveRef0Address4__0_carry__2_n_4,waveRef0Address4__0_carry__2_n_5,waveRef0Address4__0_carry__2_n_6,waveRef0Address4__0_carry__2_n_7}),
+        .O(p_1_in[15:12]),
         .S({waveRef0Address4__0_carry__2_i_1_n_0,waveRef0Address4__0_carry__2_i_2_n_0,waveRef0Address4__0_carry__2_i_3_n_0,waveRef0Address4__0_carry__2_i_4_n_0}));
   LUT2 #(
     .INIT(4'h6)) 
@@ -6437,34 +6086,39 @@ module MicroBlaze_CC_0_0_CC
        (.CI(1'b0),
         .CO({waveRef0Address4__0_carry__3_n_0,waveRef0Address4__0_carry__3_n_1,waveRef0Address4__0_carry__3_n_2,waveRef0Address4__0_carry__3_n_3}),
         .CYINIT(1'b0),
-        .DI({count[2],countMulti_reg__0[2:0]}),
+        .DI({count[2],waveRef0Address4__0_carry__3_i_1_n_0,countMulti_reg__0[1:0]}),
         .O({waveRef0Address4__0_carry__3_n_4,waveRef0Address4__0_carry__3_n_5,waveRef0Address4__0_carry__3_n_6,NLW_waveRef0Address4__0_carry__3_O_UNCONNECTED[0]}),
-        .S({waveRef0Address4__0_carry__3_i_1_n_0,waveRef0Address4__0_carry__3_i_2_n_0,waveRef0Address4__0_carry__3_i_3_n_0,waveRef0Address4__0_carry__3_i_4_n_0}));
+        .S({waveRef0Address4__0_carry__3_i_2_n_0,waveRef0Address4__0_carry__3_i_3_n_0,waveRef0Address4__0_carry__3_i_4_n_0,waveRef0Address4__0_carry__3_i_5_n_0}));
+  LUT1 #(
+    .INIT(2'h1)) 
+    waveRef0Address4__0_carry__3_i_1
+       (.I0(count[2]),
+        .O(waveRef0Address4__0_carry__3_i_1_n_0));
   LUT3 #(
     .INIT(8'h96)) 
-    waveRef0Address4__0_carry__3_i_1
+    waveRef0Address4__0_carry__3_i_2
        (.I0(count[2]),
         .I1(count[3]),
         .I2(countMulti_reg__0[3]),
-        .O(waveRef0Address4__0_carry__3_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    waveRef0Address4__0_carry__3_i_2
-       (.I0(count[2]),
-        .I1(countMulti_reg__0[2]),
         .O(waveRef0Address4__0_carry__3_i_2_n_0));
   LUT2 #(
-    .INIT(4'h6)) 
+    .INIT(4'h9)) 
     waveRef0Address4__0_carry__3_i_3
-       (.I0(countMulti_reg__0[1]),
-        .I1(count[1]),
+       (.I0(count[2]),
+        .I1(countMulti_reg__0[2]),
         .O(waveRef0Address4__0_carry__3_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef0Address4__0_carry__3_i_4
+       (.I0(countMulti_reg__0[1]),
+        .I1(count[1]),
+        .O(waveRef0Address4__0_carry__3_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    waveRef0Address4__0_carry__3_i_5
        (.I0(countMulti_reg__0[0]),
         .I1(count[0]),
-        .O(waveRef0Address4__0_carry__3_i_4_n_0));
+        .O(waveRef0Address4__0_carry__3_i_5_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 waveRef0Address4__0_carry__4
        (.CI(waveRef0Address4__0_carry__3_n_0),
@@ -6656,33 +6310,38 @@ module MicroBlaze_CC_0_0_CC
        (.CI(1'b0),
         .CO({waveRef0Address4__0_carry__7_n_0,waveRef0Address4__0_carry__7_n_1,waveRef0Address4__0_carry__7_n_2,waveRef0Address4__0_carry__7_n_3}),
         .CYINIT(1'b0),
-        .DI(countMulti_reg__0[3:0]),
+        .DI({waveRef0Address4__0_carry__7_i_1_n_0,countMulti_reg__0[2:0]}),
         .O({waveRef0Address4__0_carry__7_n_4,waveRef0Address4__0_carry__7_n_5,waveRef0Address4__0_carry__7_n_6,NLW_waveRef0Address4__0_carry__7_O_UNCONNECTED[0]}),
-        .S({waveRef0Address4__0_carry__7_i_1_n_0,waveRef0Address4__0_carry__7_i_2_n_0,waveRef0Address4__0_carry__7_i_3_n_0,waveRef0Address4__0_carry__7_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
+        .S({waveRef0Address4__0_carry__7_i_2_n_0,waveRef0Address4__0_carry__7_i_3_n_0,waveRef0Address4__0_carry__7_i_4_n_0,waveRef0Address4__0_carry__7_i_5_n_0}));
+  LUT1 #(
+    .INIT(2'h1)) 
     waveRef0Address4__0_carry__7_i_1
        (.I0(count[3]),
-        .I1(countMulti_reg__0[3]),
         .O(waveRef0Address4__0_carry__7_i_1_n_0));
   LUT2 #(
-    .INIT(4'h6)) 
+    .INIT(4'h9)) 
     waveRef0Address4__0_carry__7_i_2
-       (.I0(countMulti_reg__0[2]),
-        .I1(count[2]),
+       (.I0(count[3]),
+        .I1(countMulti_reg__0[3]),
         .O(waveRef0Address4__0_carry__7_i_2_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef0Address4__0_carry__7_i_3
-       (.I0(countMulti_reg__0[1]),
-        .I1(count[1]),
+       (.I0(countMulti_reg__0[2]),
+        .I1(count[2]),
         .O(waveRef0Address4__0_carry__7_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef0Address4__0_carry__7_i_4
+       (.I0(countMulti_reg__0[1]),
+        .I1(count[1]),
+        .O(waveRef0Address4__0_carry__7_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    waveRef0Address4__0_carry__7_i_5
        (.I0(countMulti_reg__0[0]),
         .I1(count[0]),
-        .O(waveRef0Address4__0_carry__7_i_4_n_0));
+        .O(waveRef0Address4__0_carry__7_i_5_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 waveRef0Address4__0_carry__8
        (.CI(waveRef0Address4__0_carry__7_n_0),
@@ -6907,7 +6566,7 @@ module MicroBlaze_CC_0_0_CC
   LUT1 #(
     .INIT(2'h1)) 
     waveRef0Address4_carry__2_i_1
-       (.I0(countMulti_reg[15]),
+       (.I0(count[15]),
         .O(waveRef0Address4_carry__2_i_1_n_0));
   LUT2 #(
     .INIT(4'h6)) 
@@ -6962,7 +6621,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address[0]_i_1 
        (.I0(countMulti_reg__0[0]),
         .I1(count[0]),
-        .O(\waveRef0Address[0]_i_1_n_0 ));
+        .O(p_1_in[0]));
   LUT2 #(
     .INIT(4'h7)) 
     \waveRef0Address[15]_i_1 
@@ -6974,7 +6633,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .D(\waveRef0Address[0]_i_1_n_0 ),
+        .D(p_1_in[0]),
         .Q(waveRef0Address[0]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -6982,7 +6641,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[10] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__1_n_5),
+        .D(p_1_in[10]),
         .Q(waveRef0Address[10]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -6990,7 +6649,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[11] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__1_n_4),
+        .D(p_1_in[11]),
         .Q(waveRef0Address[11]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -6998,7 +6657,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[12] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__2_n_7),
+        .D(p_1_in[12]),
         .Q(waveRef0Address[12]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7006,7 +6665,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[13] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__2_n_6),
+        .D(p_1_in[13]),
         .Q(waveRef0Address[13]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7014,7 +6673,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[14] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__2_n_5),
+        .D(p_1_in[14]),
         .Q(waveRef0Address[14]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7022,7 +6681,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[15] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__2_n_4),
+        .D(p_1_in[15]),
         .Q(waveRef0Address[15]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7030,7 +6689,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry_n_6),
+        .D(p_1_in[1]),
         .Q(waveRef0Address[1]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7038,7 +6697,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry_n_5),
+        .D(p_1_in[2]),
         .Q(waveRef0Address[2]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7046,7 +6705,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry_n_4),
+        .D(p_1_in[3]),
         .Q(waveRef0Address[3]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7054,7 +6713,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__0_n_7),
+        .D(p_1_in[4]),
         .Q(waveRef0Address[4]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7062,7 +6721,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__0_n_6),
+        .D(p_1_in[5]),
         .Q(waveRef0Address[5]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7070,7 +6729,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__0_n_5),
+        .D(p_1_in[6]),
         .Q(waveRef0Address[6]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7078,7 +6737,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__0_n_4),
+        .D(p_1_in[7]),
         .Q(waveRef0Address[7]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7086,7 +6745,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__1_n_7),
+        .D(p_1_in[8]),
         .Q(waveRef0Address[8]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   FDRE #(
@@ -7094,7 +6753,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef0Address_reg[9] 
        (.C(clk),
         .CE(1'b1),
-        .D(waveRef0Address4__0_carry__1_n_6),
+        .D(p_1_in[9]),
         .Q(waveRef0Address[9]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   (* COMPARATOR_THRESHOLD = "11" *) 
@@ -7381,9 +7040,9 @@ module MicroBlaze_CC_0_0_CC
        (.CI(1'b0),
         .CO({waveRef1Address4_carry_n_0,waveRef1Address4_carry_n_1,waveRef1Address4_carry_n_2,waveRef1Address4_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({count[2],countMulti_reg__0[2:0]}),
+        .DI({count[2],waveRef1Address4_carry_i_1_n_0,countMulti_reg__0[1:0]}),
         .O({waveRef1Address4[3:1],NLW_waveRef1Address4_carry_O_UNCONNECTED[0]}),
-        .S({waveRef1Address4_carry_i_1_n_0,waveRef1Address4_carry_i_2_n_0,waveRef1Address4_carry_i_3_n_0,waveRef1Address4_carry_i_4_n_0}));
+        .S({waveRef1Address4_carry_i_2_n_0,waveRef1Address4_carry_i_3_n_0,waveRef1Address4_carry_i_4_n_0,waveRef1Address4_carry_i_5_n_0}));
   CARRY4 waveRef1Address4_carry__0
        (.CI(waveRef1Address4_carry_n_0),
         .CO({waveRef1Address4_carry__0_n_0,waveRef1Address4_carry__0_n_1,waveRef1Address4_carry__0_n_2,waveRef1Address4_carry__0_n_3}),
@@ -7577,40 +7236,51 @@ module MicroBlaze_CC_0_0_CC
        (.CI(waveRef1Address4_carry__2_n_0),
         .CO({NLW_waveRef1Address4_carry__3_CO_UNCONNECTED[3:2],waveRef1Address4_carry__3_n_2,NLW_waveRef1Address4_carry__3_CO_UNCONNECTED[0]}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b1}),
+        .DI({1'b0,1'b0,1'b0,waveRef1Address4_carry__3_i_1_n_0}),
         .O({NLW_waveRef1Address4_carry__3_O_UNCONNECTED[3:1],waveRef1Address4[16]}),
-        .S({1'b0,1'b0,1'b1,waveRef1Address4_carry__3_i_1_n_0}));
+        .S({1'b0,1'b0,1'b1,waveRef1Address4_carry__3_i_2_n_0}));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     waveRef1Address4_carry__3_i_1
        (.I0(count[15]),
         .I1(countMulti_reg[15]),
         .O(waveRef1Address4_carry__3_i_1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    waveRef1Address4_carry__3_i_2
+       (.I0(countMulti_reg[15]),
+        .I1(count[15]),
+        .O(waveRef1Address4_carry__3_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    waveRef1Address4_carry_i_1
+       (.I0(count[2]),
+        .O(waveRef1Address4_carry_i_1_n_0));
   LUT3 #(
     .INIT(8'h96)) 
-    waveRef1Address4_carry_i_1
+    waveRef1Address4_carry_i_2
        (.I0(count[2]),
         .I1(count[3]),
         .I2(countMulti_reg__0[3]),
-        .O(waveRef1Address4_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    waveRef1Address4_carry_i_2
-       (.I0(count[2]),
-        .I1(countMulti_reg__0[2]),
         .O(waveRef1Address4_carry_i_2_n_0));
   LUT2 #(
-    .INIT(4'h6)) 
+    .INIT(4'h9)) 
     waveRef1Address4_carry_i_3
-       (.I0(countMulti_reg__0[1]),
-        .I1(count[1]),
+       (.I0(count[2]),
+        .I1(countMulti_reg__0[2]),
         .O(waveRef1Address4_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef1Address4_carry_i_4
+       (.I0(countMulti_reg__0[1]),
+        .I1(count[1]),
+        .O(waveRef1Address4_carry_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    waveRef1Address4_carry_i_5
        (.I0(countMulti_reg__0[0]),
         .I1(count[0]),
-        .O(waveRef1Address4_carry_i_4_n_0));
+        .O(waveRef1Address4_carry_i_5_n_0));
   LUT2 #(
     .INIT(4'h7)) 
     \waveRef1Address[15]_i_1 
@@ -7622,7 +7292,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef1Address_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .D(\waveRef0Address[0]_i_1_n_0 ),
+        .D(p_1_in[0]),
         .Q(waveRef1Address[0]),
         .R(\waveRef1Address[15]_i_1_n_0 ));
   FDRE #(
@@ -8029,9 +7699,9 @@ module MicroBlaze_CC_0_0_CC
        (.CI(1'b0),
         .CO({waveRef2Address4_carry_n_0,waveRef2Address4_carry_n_1,waveRef2Address4_carry_n_2,waveRef2Address4_carry_n_3}),
         .CYINIT(1'b0),
-        .DI(countMulti_reg__0[3:0]),
+        .DI({waveRef2Address4_carry_i_1_n_0,countMulti_reg__0[2:0]}),
         .O({waveRef2Address4[3:1],NLW_waveRef2Address4_carry_O_UNCONNECTED[0]}),
-        .S({waveRef2Address4_carry_i_1_n_0,waveRef2Address4_carry_i_2_n_0,waveRef2Address4_carry_i_3_n_0,waveRef2Address4_carry_i_4_n_0}));
+        .S({waveRef2Address4_carry_i_2_n_0,waveRef2Address4_carry_i_3_n_0,waveRef2Address4_carry_i_4_n_0,waveRef2Address4_carry_i_5_n_0}));
   CARRY4 waveRef2Address4_carry__0
        (.CI(waveRef2Address4_carry_n_0),
         .CO({waveRef2Address4_carry__0_n_0,waveRef2Address4_carry__0_n_1,waveRef2Address4_carry__0_n_2,waveRef2Address4_carry__0_n_3}),
@@ -8218,39 +7888,50 @@ module MicroBlaze_CC_0_0_CC
        (.CI(waveRef2Address4_carry__2_n_0),
         .CO({NLW_waveRef2Address4_carry__3_CO_UNCONNECTED[3:2],waveRef2Address4_carry__3_n_2,NLW_waveRef2Address4_carry__3_CO_UNCONNECTED[0]}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b1}),
+        .DI({1'b0,1'b0,1'b0,waveRef2Address4_carry__3_i_1_n_0}),
         .O({NLW_waveRef2Address4_carry__3_O_UNCONNECTED[3:1],waveRef2Address4[16]}),
-        .S({1'b0,1'b0,1'b1,waveRef2Address4_carry__3_i_1_n_0}));
+        .S({1'b0,1'b0,1'b1,waveRef2Address4_carry__3_i_2_n_0}));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     waveRef2Address4_carry__3_i_1
        (.I0(count[15]),
         .I1(countMulti_reg[15]),
         .O(waveRef2Address4_carry__3_i_1_n_0));
   LUT2 #(
-    .INIT(4'h9)) 
+    .INIT(4'hE)) 
+    waveRef2Address4_carry__3_i_2
+       (.I0(countMulti_reg[15]),
+        .I1(count[15]),
+        .O(waveRef2Address4_carry__3_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
     waveRef2Address4_carry_i_1
        (.I0(count[3]),
-        .I1(countMulti_reg__0[3]),
         .O(waveRef2Address4_carry_i_1_n_0));
   LUT2 #(
-    .INIT(4'h6)) 
+    .INIT(4'h9)) 
     waveRef2Address4_carry_i_2
-       (.I0(countMulti_reg__0[2]),
-        .I1(count[2]),
+       (.I0(count[3]),
+        .I1(countMulti_reg__0[3]),
         .O(waveRef2Address4_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef2Address4_carry_i_3
-       (.I0(countMulti_reg__0[1]),
-        .I1(count[1]),
+       (.I0(countMulti_reg__0[2]),
+        .I1(count[2]),
         .O(waveRef2Address4_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef2Address4_carry_i_4
+       (.I0(countMulti_reg__0[1]),
+        .I1(count[1]),
+        .O(waveRef2Address4_carry_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    waveRef2Address4_carry_i_5
        (.I0(countMulti_reg__0[0]),
         .I1(count[0]),
-        .O(waveRef2Address4_carry_i_4_n_0));
+        .O(waveRef2Address4_carry_i_5_n_0));
   LUT2 #(
     .INIT(4'h7)) 
     \waveRef2Address[15]_i_1 
@@ -8262,7 +7943,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef2Address_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .D(\waveRef0Address[0]_i_1_n_0 ),
+        .D(p_1_in[0]),
         .Q(waveRef2Address[0]),
         .R(\waveRef2Address[15]_i_1_n_0 ));
   FDRE #(
@@ -8669,9 +8350,9 @@ module MicroBlaze_CC_0_0_CC
        (.CI(1'b0),
         .CO({waveRef3Address4_carry_n_0,waveRef3Address4_carry_n_1,waveRef3Address4_carry_n_2,waveRef3Address4_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({count[2],countMulti_reg__0[2:0]}),
+        .DI({count[2],waveRef3Address4_carry_i_1_n_0,countMulti_reg__0[1:0]}),
         .O({waveRef3Address4[3:1],NLW_waveRef3Address4_carry_O_UNCONNECTED[0]}),
-        .S({waveRef3Address4_carry_i_1_n_0,waveRef3Address4_carry_i_2_n_0,waveRef3Address4_carry_i_3_n_0,waveRef3Address4_carry_i_4_n_0}));
+        .S({waveRef3Address4_carry_i_2_n_0,waveRef3Address4_carry_i_3_n_0,waveRef3Address4_carry_i_4_n_0,waveRef3Address4_carry_i_5_n_0}));
   CARRY4 waveRef3Address4_carry__0
        (.CI(waveRef3Address4_carry_n_0),
         .CO({waveRef3Address4_carry__0_n_0,waveRef3Address4_carry__0_n_1,waveRef3Address4_carry__0_n_2,waveRef3Address4_carry__0_n_3}),
@@ -8865,40 +8546,51 @@ module MicroBlaze_CC_0_0_CC
        (.CI(waveRef3Address4_carry__2_n_0),
         .CO({NLW_waveRef3Address4_carry__3_CO_UNCONNECTED[3:2],waveRef3Address4_carry__3_n_2,NLW_waveRef3Address4_carry__3_CO_UNCONNECTED[0]}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b1}),
+        .DI({1'b0,1'b0,1'b0,waveRef3Address4_carry__3_i_1_n_0}),
         .O({NLW_waveRef3Address4_carry__3_O_UNCONNECTED[3:1],waveRef3Address4[16]}),
-        .S({1'b0,1'b0,1'b1,waveRef3Address4_carry__3_i_1_n_0}));
+        .S({1'b0,1'b0,1'b1,waveRef3Address4_carry__3_i_2_n_0}));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     waveRef3Address4_carry__3_i_1
        (.I0(count[15]),
         .I1(countMulti_reg[15]),
         .O(waveRef3Address4_carry__3_i_1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    waveRef3Address4_carry__3_i_2
+       (.I0(countMulti_reg[15]),
+        .I1(count[15]),
+        .O(waveRef3Address4_carry__3_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    waveRef3Address4_carry_i_1
+       (.I0(count[2]),
+        .O(waveRef3Address4_carry_i_1_n_0));
   LUT3 #(
     .INIT(8'h69)) 
-    waveRef3Address4_carry_i_1
+    waveRef3Address4_carry_i_2
        (.I0(countMulti_reg__0[3]),
         .I1(count[3]),
         .I2(count[2]),
-        .O(waveRef3Address4_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    waveRef3Address4_carry_i_2
-       (.I0(count[2]),
-        .I1(countMulti_reg__0[2]),
         .O(waveRef3Address4_carry_i_2_n_0));
   LUT2 #(
-    .INIT(4'h6)) 
+    .INIT(4'h9)) 
     waveRef3Address4_carry_i_3
-       (.I0(countMulti_reg__0[1]),
-        .I1(count[1]),
+       (.I0(count[2]),
+        .I1(countMulti_reg__0[2]),
         .O(waveRef3Address4_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     waveRef3Address4_carry_i_4
+       (.I0(countMulti_reg__0[1]),
+        .I1(count[1]),
+        .O(waveRef3Address4_carry_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    waveRef3Address4_carry_i_5
        (.I0(countMulti_reg__0[0]),
         .I1(count[0]),
-        .O(waveRef3Address4_carry_i_4_n_0));
+        .O(waveRef3Address4_carry_i_5_n_0));
   LUT2 #(
     .INIT(4'h7)) 
     \waveRef3Address[15]_i_1 
@@ -8910,7 +8602,7 @@ module MicroBlaze_CC_0_0_CC
     \waveRef3Address_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .D(\waveRef0Address[0]_i_1_n_0 ),
+        .D(p_1_in[0]),
         .Q(waveRef3Address[0]),
         .R(\waveRef3Address[15]_i_1_n_0 ));
   FDRE #(
@@ -9037,7 +8729,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[0] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[0]),
         .Q(xcorr1[0]),
         .R(1'b0));
@@ -9045,7 +8737,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[10] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[10]),
         .Q(xcorr1[10]),
         .R(1'b0));
@@ -9053,7 +8745,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[11] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[11]),
         .Q(xcorr1[11]),
         .R(1'b0));
@@ -9061,7 +8753,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[12] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[12]),
         .Q(xcorr1[12]),
         .R(1'b0));
@@ -9069,7 +8761,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[13] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[13]),
         .Q(xcorr1[13]),
         .R(1'b0));
@@ -9077,7 +8769,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[14] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[14]),
         .Q(xcorr1[14]),
         .R(1'b0));
@@ -9085,7 +8777,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[15] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[15]),
         .Q(xcorr1[15]),
         .R(1'b0));
@@ -9093,7 +8785,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[16] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[16]),
         .Q(xcorr1[16]),
         .R(1'b0));
@@ -9101,7 +8793,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[17] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[17]),
         .Q(xcorr1[17]),
         .R(1'b0));
@@ -9109,7 +8801,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[18] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[18]),
         .Q(xcorr1[18]),
         .R(1'b0));
@@ -9117,7 +8809,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[19] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[19]),
         .Q(xcorr1[19]),
         .R(1'b0));
@@ -9125,7 +8817,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[1] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[1]),
         .Q(xcorr1[1]),
         .R(1'b0));
@@ -9133,7 +8825,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[20] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[20]),
         .Q(xcorr1[20]),
         .R(1'b0));
@@ -9141,7 +8833,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[21] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[21]),
         .Q(xcorr1[21]),
         .R(1'b0));
@@ -9149,7 +8841,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[22] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[22]),
         .Q(xcorr1[22]),
         .R(1'b0));
@@ -9157,7 +8849,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[23] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[23]),
         .Q(xcorr1[23]),
         .R(1'b0));
@@ -9165,7 +8857,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[24] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[24]),
         .Q(xcorr1[24]),
         .R(1'b0));
@@ -9173,7 +8865,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[25] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[25]),
         .Q(xcorr1[25]),
         .R(1'b0));
@@ -9181,7 +8873,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[26] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[26]),
         .Q(xcorr1[26]),
         .R(1'b0));
@@ -9189,7 +8881,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[27] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[27]),
         .Q(xcorr1[27]),
         .R(1'b0));
@@ -9197,7 +8889,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[28] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[28]),
         .Q(xcorr1[28]),
         .R(1'b0));
@@ -9205,7 +8897,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[29] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[29]),
         .Q(xcorr1[29]),
         .R(1'b0));
@@ -9213,7 +8905,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[2] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[2]),
         .Q(xcorr1[2]),
         .R(1'b0));
@@ -9221,7 +8913,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[30] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[30]),
         .Q(xcorr1[30]),
         .R(1'b0));
@@ -9229,7 +8921,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[31] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[31]),
         .Q(xcorr1[31]),
         .R(1'b0));
@@ -9237,7 +8929,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[32] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[32]),
         .Q(xcorr1[32]),
         .R(1'b0));
@@ -9245,7 +8937,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[33] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[33]),
         .Q(xcorr1[33]),
         .R(1'b0));
@@ -9253,7 +8945,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[34] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[34]),
         .Q(xcorr1[34]),
         .R(1'b0));
@@ -9261,7 +8953,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[35] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[35]),
         .Q(xcorr1[35]),
         .R(1'b0));
@@ -9269,7 +8961,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[36] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[36]),
         .Q(xcorr1[36]),
         .R(1'b0));
@@ -9277,7 +8969,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[37] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[37]),
         .Q(xcorr1[37]),
         .R(1'b0));
@@ -9285,7 +8977,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[38] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[38]),
         .Q(xcorr1[38]),
         .R(1'b0));
@@ -9293,7 +8985,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[39] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[39]),
         .Q(xcorr1[39]),
         .R(1'b0));
@@ -9301,7 +8993,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[3] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[3]),
         .Q(xcorr1[3]),
         .R(1'b0));
@@ -9309,7 +9001,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[40] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[40]),
         .Q(xcorr1[40]),
         .R(1'b0));
@@ -9317,7 +9009,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[41] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[41]),
         .Q(xcorr1[41]),
         .R(1'b0));
@@ -9325,7 +9017,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[42] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[42]),
         .Q(xcorr1[42]),
         .R(1'b0));
@@ -9333,7 +9025,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[43] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[43]),
         .Q(xcorr1[43]),
         .R(1'b0));
@@ -9341,7 +9033,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[44] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[44]),
         .Q(xcorr1[44]),
         .R(1'b0));
@@ -9349,7 +9041,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[45] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[45]),
         .Q(xcorr1[45]),
         .R(1'b0));
@@ -9357,7 +9049,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[46] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[46]),
         .Q(xcorr1[46]),
         .R(1'b0));
@@ -9365,7 +9057,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[47] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[47]),
         .Q(xcorr1[47]),
         .R(1'b0));
@@ -9373,7 +9065,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[48] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[48]),
         .Q(xcorr1[48]),
         .R(1'b0));
@@ -9381,7 +9073,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[49] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[49]),
         .Q(xcorr1[49]),
         .R(1'b0));
@@ -9389,7 +9081,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[4] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[4]),
         .Q(xcorr1[4]),
         .R(1'b0));
@@ -9397,7 +9089,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[50] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[50]),
         .Q(xcorr1[50]),
         .R(1'b0));
@@ -9405,7 +9097,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[51] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[51]),
         .Q(xcorr1[51]),
         .R(1'b0));
@@ -9413,7 +9105,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[52] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[52]),
         .Q(xcorr1[52]),
         .R(1'b0));
@@ -9421,7 +9113,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[53] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[53]),
         .Q(xcorr1[53]),
         .R(1'b0));
@@ -9429,7 +9121,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[54] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[54]),
         .Q(xcorr1[54]),
         .R(1'b0));
@@ -9437,7 +9129,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[55] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[55]),
         .Q(xcorr1[55]),
         .R(1'b0));
@@ -9445,7 +9137,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[56] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[56]),
         .Q(xcorr1[56]),
         .R(1'b0));
@@ -9453,7 +9145,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[57] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[57]),
         .Q(xcorr1[57]),
         .R(1'b0));
@@ -9461,7 +9153,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[58] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[58]),
         .Q(xcorr1[58]),
         .R(1'b0));
@@ -9469,7 +9161,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[59] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[59]),
         .Q(xcorr1[59]),
         .R(1'b0));
@@ -9477,7 +9169,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[5] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[5]),
         .Q(xcorr1[5]),
         .R(1'b0));
@@ -9485,7 +9177,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[60] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[60]),
         .Q(xcorr1[60]),
         .R(1'b0));
@@ -9493,7 +9185,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[61] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[61]),
         .Q(xcorr1[61]),
         .R(1'b0));
@@ -9501,7 +9193,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[62] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[62]),
         .Q(xcorr1[62]),
         .R(1'b0));
@@ -9509,7 +9201,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[63] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[63]),
         .Q(xcorr1[63]),
         .R(1'b0));
@@ -9517,7 +9209,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[6] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[6]),
         .Q(xcorr1[6]),
         .R(1'b0));
@@ -9525,7 +9217,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[7] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[7]),
         .Q(xcorr1[7]),
         .R(1'b0));
@@ -9533,7 +9225,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[8] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[8]),
         .Q(xcorr1[8]),
         .R(1'b0));
@@ -9541,45 +9233,45 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr1_reg[9] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product1_reg[9]),
         .Q(xcorr1[9]),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'h0000000000000001)) 
+    .INIT(64'h0000000000000002)) 
     \xcorr[63]_i_1 
-       (.I0(countMulti_reg[13]),
-        .I1(countMulti_reg[14]),
-        .I2(countMulti_reg[12]),
-        .I3(\xcorr[63]_i_2_n_0 ),
-        .I4(\xcorr[63]_i_3_n_0 ),
-        .I5(countMulti_reg[15]),
-        .O(\xcorr[63]_i_1_n_0 ));
+       (.I0(\xcorr[63]_i_2_n_0 ),
+        .I1(countMulti_reg__0[5]),
+        .I2(countMulti_reg__0[4]),
+        .I3(countMulti_reg__0[10]),
+        .I4(countMulti_reg__0[9]),
+        .I5(\xcorr[63]_i_3_n_0 ),
+        .O(clear));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFB)) 
+    .INIT(64'h0080000000000000)) 
     \xcorr[63]_i_2 
-       (.I0(countMulti_reg__0[1]),
-        .I1(countMulti_reg__0[2]),
-        .I2(countMulti_reg__0[0]),
-        .I3(countMulti_reg__0[4]),
-        .I4(countMulti_reg__0[5]),
-        .I5(countMulti_reg__0[3]),
-        .O(\xcorr[63]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFF7FFFFF)) 
-    \xcorr[63]_i_3 
        (.I0(countMulti_reg__0[6]),
         .I1(countMulti_reg__0[7]),
-        .I2(countMulti_reg__0[8]),
-        .I3(countMulti_reg__0[10]),
+        .I2(countMulti_reg__0[2]),
+        .I3(countMulti_reg__0[0]),
         .I4(countMulti_reg__0[11]),
-        .I5(countMulti_reg__0[9]),
+        .I5(countMulti_reg__0[8]),
+        .O(\xcorr[63]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \xcorr[63]_i_3 
+       (.I0(countMulti_reg[14]),
+        .I1(countMulti_reg[15]),
+        .I2(countMulti_reg[12]),
+        .I3(countMulti_reg[13]),
+        .I4(countMulti_reg__0[3]),
+        .I5(countMulti_reg__0[1]),
         .O(\xcorr[63]_i_3_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[0] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[0]),
         .Q(xcorr[0]),
         .R(1'b0));
@@ -9587,7 +9279,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[10] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[10]),
         .Q(xcorr[10]),
         .R(1'b0));
@@ -9595,7 +9287,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[11] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[11]),
         .Q(xcorr[11]),
         .R(1'b0));
@@ -9603,7 +9295,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[12] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[12]),
         .Q(xcorr[12]),
         .R(1'b0));
@@ -9611,7 +9303,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[13] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[13]),
         .Q(xcorr[13]),
         .R(1'b0));
@@ -9619,7 +9311,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[14] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[14]),
         .Q(xcorr[14]),
         .R(1'b0));
@@ -9627,7 +9319,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[15] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[15]),
         .Q(xcorr[15]),
         .R(1'b0));
@@ -9635,7 +9327,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[16] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[16]),
         .Q(xcorr[16]),
         .R(1'b0));
@@ -9643,7 +9335,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[17] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[17]),
         .Q(xcorr[17]),
         .R(1'b0));
@@ -9651,7 +9343,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[18] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[18]),
         .Q(xcorr[18]),
         .R(1'b0));
@@ -9659,7 +9351,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[19] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[19]),
         .Q(xcorr[19]),
         .R(1'b0));
@@ -9667,7 +9359,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[1] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[1]),
         .Q(xcorr[1]),
         .R(1'b0));
@@ -9675,7 +9367,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[20] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[20]),
         .Q(xcorr[20]),
         .R(1'b0));
@@ -9683,7 +9375,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[21] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[21]),
         .Q(xcorr[21]),
         .R(1'b0));
@@ -9691,7 +9383,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[22] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[22]),
         .Q(xcorr[22]),
         .R(1'b0));
@@ -9699,7 +9391,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[23] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[23]),
         .Q(xcorr[23]),
         .R(1'b0));
@@ -9707,7 +9399,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[24] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[24]),
         .Q(xcorr[24]),
         .R(1'b0));
@@ -9715,7 +9407,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[25] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[25]),
         .Q(xcorr[25]),
         .R(1'b0));
@@ -9723,7 +9415,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[26] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[26]),
         .Q(xcorr[26]),
         .R(1'b0));
@@ -9731,7 +9423,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[27] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[27]),
         .Q(xcorr[27]),
         .R(1'b0));
@@ -9739,7 +9431,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[28] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[28]),
         .Q(xcorr[28]),
         .R(1'b0));
@@ -9747,7 +9439,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[29] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[29]),
         .Q(xcorr[29]),
         .R(1'b0));
@@ -9755,7 +9447,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[2] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[2]),
         .Q(xcorr[2]),
         .R(1'b0));
@@ -9763,7 +9455,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[30] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[30]),
         .Q(xcorr[30]),
         .R(1'b0));
@@ -9771,7 +9463,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[31] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[31]),
         .Q(xcorr[31]),
         .R(1'b0));
@@ -9779,7 +9471,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[32] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[32]),
         .Q(xcorr[32]),
         .R(1'b0));
@@ -9787,7 +9479,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[33] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[33]),
         .Q(xcorr[33]),
         .R(1'b0));
@@ -9795,7 +9487,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[34] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[34]),
         .Q(xcorr[34]),
         .R(1'b0));
@@ -9803,7 +9495,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[35] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[35]),
         .Q(xcorr[35]),
         .R(1'b0));
@@ -9811,7 +9503,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[36] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[36]),
         .Q(xcorr[36]),
         .R(1'b0));
@@ -9819,7 +9511,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[37] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[37]),
         .Q(xcorr[37]),
         .R(1'b0));
@@ -9827,7 +9519,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[38] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[38]),
         .Q(xcorr[38]),
         .R(1'b0));
@@ -9835,7 +9527,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[39] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[39]),
         .Q(xcorr[39]),
         .R(1'b0));
@@ -9843,7 +9535,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[3] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[3]),
         .Q(xcorr[3]),
         .R(1'b0));
@@ -9851,7 +9543,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[40] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[40]),
         .Q(xcorr[40]),
         .R(1'b0));
@@ -9859,7 +9551,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[41] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[41]),
         .Q(xcorr[41]),
         .R(1'b0));
@@ -9867,7 +9559,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[42] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[42]),
         .Q(xcorr[42]),
         .R(1'b0));
@@ -9875,7 +9567,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[43] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[43]),
         .Q(xcorr[43]),
         .R(1'b0));
@@ -9883,7 +9575,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[44] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[44]),
         .Q(xcorr[44]),
         .R(1'b0));
@@ -9891,7 +9583,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[45] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[45]),
         .Q(xcorr[45]),
         .R(1'b0));
@@ -9899,7 +9591,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[46] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[46]),
         .Q(xcorr[46]),
         .R(1'b0));
@@ -9907,7 +9599,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[47] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[47]),
         .Q(xcorr[47]),
         .R(1'b0));
@@ -9915,7 +9607,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[48] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[48]),
         .Q(xcorr[48]),
         .R(1'b0));
@@ -9923,7 +9615,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[49] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[49]),
         .Q(xcorr[49]),
         .R(1'b0));
@@ -9931,7 +9623,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[4] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[4]),
         .Q(xcorr[4]),
         .R(1'b0));
@@ -9939,7 +9631,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[50] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[50]),
         .Q(xcorr[50]),
         .R(1'b0));
@@ -9947,7 +9639,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[51] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[51]),
         .Q(xcorr[51]),
         .R(1'b0));
@@ -9955,7 +9647,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[52] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[52]),
         .Q(xcorr[52]),
         .R(1'b0));
@@ -9963,7 +9655,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[53] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[53]),
         .Q(xcorr[53]),
         .R(1'b0));
@@ -9971,7 +9663,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[54] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[54]),
         .Q(xcorr[54]),
         .R(1'b0));
@@ -9979,7 +9671,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[55] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[55]),
         .Q(xcorr[55]),
         .R(1'b0));
@@ -9987,7 +9679,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[56] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[56]),
         .Q(xcorr[56]),
         .R(1'b0));
@@ -9995,7 +9687,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[57] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[57]),
         .Q(xcorr[57]),
         .R(1'b0));
@@ -10003,7 +9695,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[58] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[58]),
         .Q(xcorr[58]),
         .R(1'b0));
@@ -10011,7 +9703,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[59] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[59]),
         .Q(xcorr[59]),
         .R(1'b0));
@@ -10019,7 +9711,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[5] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[5]),
         .Q(xcorr[5]),
         .R(1'b0));
@@ -10027,7 +9719,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[60] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[60]),
         .Q(xcorr[60]),
         .R(1'b0));
@@ -10035,7 +9727,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[61] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[61]),
         .Q(xcorr[61]),
         .R(1'b0));
@@ -10043,7 +9735,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[62] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[62]),
         .Q(xcorr[62]),
         .R(1'b0));
@@ -10051,7 +9743,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[63] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[63]),
         .Q(xcorr[63]),
         .R(1'b0));
@@ -10059,7 +9751,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[6] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[6]),
         .Q(xcorr[6]),
         .R(1'b0));
@@ -10067,7 +9759,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[7] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[7]),
         .Q(xcorr[7]),
         .R(1'b0));
@@ -10075,7 +9767,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[8] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[8]),
         .Q(xcorr[8]),
         .R(1'b0));
@@ -10083,7 +9775,7 @@ module MicroBlaze_CC_0_0_CC
     .IS_C_INVERTED(1'b1)) 
     \xcorr_reg[9] 
        (.C(clk),
-        .CE(\xcorr[63]_i_1_n_0 ),
+        .CE(clear),
         .D(product_reg[9]),
         .Q(xcorr[9]),
         .R(1'b0));

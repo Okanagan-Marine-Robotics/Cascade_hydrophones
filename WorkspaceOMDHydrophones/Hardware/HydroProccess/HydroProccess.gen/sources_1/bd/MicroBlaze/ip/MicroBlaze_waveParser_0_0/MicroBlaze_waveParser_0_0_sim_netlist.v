@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Sat Sep 21 21:07:08 2024
+// Date        : Tue Sep 24 21:40:49 2024
 // Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.v
@@ -152,8 +152,6 @@ module MicroBlaze_waveParser_0_0_waveParser
   wire MemoryAddress0_carry_n_1;
   wire MemoryAddress0_carry_n_2;
   wire MemoryAddress0_carry_n_3;
-  wire \MemoryAddress[13]_i_2_n_0 ;
-  wire \MemoryAddress[13]_i_3_n_0 ;
   wire \MemoryAddress_reg_n_0_[0] ;
   wire \MemoryAddress_reg_n_0_[10] ;
   wire \MemoryAddress_reg_n_0_[11] ;
@@ -501,31 +499,11 @@ module MicroBlaze_waveParser_0_0_waveParser
     .INIT(16'h0004)) 
     \MemoryAddress[13]_i_1 
        (.I0(\MemoryAddress_reg_n_0_[12] ),
-        .I1(\MemoryAddress[13]_i_2_n_0 ),
+        .I1(\waveRef0Address[13]_i_3_n_0 ),
         .I2(\MemoryAddress_reg_n_0_[11] ),
         .I3(\MemoryAddress_reg_n_0_[13] ),
         .O(p_0_in));
-  LUT6 #(
-    .INIT(64'h0000000000000010)) 
-    \MemoryAddress[13]_i_2 
-       (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .I1(\MemoryAddress_reg_n_0_[7] ),
-        .I2(\MemoryAddress[13]_i_3_n_0 ),
-        .I3(\MemoryAddress_reg_n_0_[6] ),
-        .I4(\MemoryAddress_reg_n_0_[8] ),
-        .I5(\MemoryAddress_reg_n_0_[10] ),
-        .O(\MemoryAddress[13]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000010)) 
-    \MemoryAddress[13]_i_3 
-       (.I0(\MemoryAddress_reg_n_0_[4] ),
-        .I1(\MemoryAddress_reg_n_0_[2] ),
-        .I2(\MemoryAddress_reg_n_0_[0] ),
-        .I3(\MemoryAddress_reg_n_0_[1] ),
-        .I4(\MemoryAddress_reg_n_0_[3] ),
-        .I5(\MemoryAddress_reg_n_0_[5] ),
-        .O(\MemoryAddress[13]_i_3_n_0 ));
-  FDSE #(
+  FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[0] 
@@ -533,7 +511,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[0]),
         .Q(\MemoryAddress_reg_n_0_[0] ),
-        .S(p_0_in));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 

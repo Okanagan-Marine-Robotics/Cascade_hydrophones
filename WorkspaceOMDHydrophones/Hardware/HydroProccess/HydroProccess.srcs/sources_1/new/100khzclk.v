@@ -5,9 +5,9 @@ module clk1Mhz(
     output clk1Mhz
     );
     
-    reg [10:0] count = 0;
+    reg [10:0] count = 1;
     
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         if (count != 200) count = count + 1; 
         else count = 1;
     end

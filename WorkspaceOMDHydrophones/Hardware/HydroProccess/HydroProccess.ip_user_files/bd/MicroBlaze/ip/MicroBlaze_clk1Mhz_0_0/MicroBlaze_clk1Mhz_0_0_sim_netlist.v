@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Sat Sep 21 22:51:37 2024
+// Date        : Tue Sep 24 20:49:50 2024
 // Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_sim_netlist.v
@@ -194,7 +194,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .I4(count_reg[9]),
         .O(p_0_in[9]));
   FDSE #(
-    .INIT(1'b0)) 
+    .INIT(1'b1),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[0] 
        (.C(clk),
         .CE(1'b1),
@@ -202,7 +203,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[0]),
         .S(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[10] 
        (.C(clk),
         .CE(1'b1),
@@ -210,7 +212,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[10]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[1] 
        (.C(clk),
         .CE(1'b1),
@@ -218,7 +221,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[1]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[2] 
        (.C(clk),
         .CE(1'b1),
@@ -226,7 +230,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[2]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[3] 
        (.C(clk),
         .CE(1'b1),
@@ -234,7 +239,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[3]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[4] 
        (.C(clk),
         .CE(1'b1),
@@ -242,7 +248,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[4]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[5] 
        (.C(clk),
         .CE(1'b1),
@@ -250,7 +257,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[5]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[6] 
        (.C(clk),
         .CE(1'b1),
@@ -258,7 +266,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[6]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[7] 
        (.C(clk),
         .CE(1'b1),
@@ -266,7 +275,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[7]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[8] 
        (.C(clk),
         .CE(1'b1),
@@ -274,7 +284,8 @@ module MicroBlaze_clk1Mhz_0_0_clk1Mhz
         .Q(count_reg[8]),
         .R(clear));
   FDRE #(
-    .INIT(1'b0)) 
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
     \count_reg[9] 
        (.C(clk),
         .CE(1'b1),

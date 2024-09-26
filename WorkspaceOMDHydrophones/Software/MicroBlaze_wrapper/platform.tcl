@@ -32,3 +32,12 @@ platform generate -domains
 platform active {MicroBlaze_wrapper}
 platform config -updatehw {C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
 platform generate -domains 
+platform active {MicroBlaze_wrapper}
+platform config -updatehw {C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
+platform generate -domains 
+platform active {MicroBlaze_wrapper}
+platform config -updatehw {C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
+platform generate -domains 
+platform active {MicroBlaze_wrapper}
+platform config -updatehw {C:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
+platform generate -domains 

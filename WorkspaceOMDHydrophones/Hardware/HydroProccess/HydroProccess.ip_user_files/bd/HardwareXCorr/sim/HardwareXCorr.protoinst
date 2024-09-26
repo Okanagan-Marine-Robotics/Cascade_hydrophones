@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"HardwareXCorr": {
-			"proto_instances": {
-			}
-		}
-	}
-}

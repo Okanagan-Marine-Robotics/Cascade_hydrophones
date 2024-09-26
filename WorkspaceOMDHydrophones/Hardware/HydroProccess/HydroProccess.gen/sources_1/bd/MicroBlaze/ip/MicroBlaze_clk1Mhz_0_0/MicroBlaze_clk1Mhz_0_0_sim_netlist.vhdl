@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Sat Sep 21 22:51:37 2024
+-- Date        : Tue Sep 24 20:49:50 2024
 -- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0_sim_netlist.vhdl
@@ -233,7 +233,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[0]\: unisim.vcomponents.FDSE
     generic map(
-      INIT => '0'
+      INIT => '1',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -244,7 +245,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[10]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -255,7 +257,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -266,7 +269,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -277,7 +281,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[3]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -288,7 +293,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[4]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -299,7 +305,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[5]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -310,7 +317,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[6]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -321,7 +329,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[7]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -332,7 +341,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[8]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,
@@ -343,7 +353,8 @@ clk1Mhz_INST_0_i_1: unisim.vcomponents.LUT5
     );
 \count_reg[9]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0'
+      INIT => '0',
+      IS_C_INVERTED => '1'
     )
         port map (
       C => clk,

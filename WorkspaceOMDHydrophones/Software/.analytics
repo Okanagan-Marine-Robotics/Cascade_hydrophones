@@ -28,3 +28,25 @@ timestamp=[2024-09-24 03:21:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.684, d
 timestamp=[2024-09-24 03:21:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.372, duration_ms=1372, data={}
 timestamp=[2024-09-24 03:21:46], mode=PLATFORM_GENERATION, duration=0:00:05.954, duration_ms=5954, data={name=MicroBlaze_wrapper}
 timestamp=[2024-09-24 03:21:55], mode=BUILD, duration=0:00:00.880, duration_ms=880, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-09-24 03:38:25], mode=WORKBENCH_START, duration=0:00:05.317, duration_ms=5317, data={}
+timestamp=[2024-09-24 03:38:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.777, duration_ms=777, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-09-24 03:38:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.082, duration_ms=1082, data={}
+timestamp=[2024-09-24 03:39:25], mode=PLATFORM_GENERATION, duration=0:00:04.838, duration_ms=4838, data={name=MicroBlaze_wrapper}
+timestamp=[2024-09-24 03:39:26], mode=BUILD, duration=0:00:00.641, duration_ms=641, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-09-24 03:51:36], mode=WORKBENCH_START, duration=0:00:06.545, duration_ms=6545, data={}
+timestamp=[2024-09-24 03:51:37], mode=WORKBENCH_UI_INIT, duration=0:00:00.868, duration_ms=868, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-09-24 03:51:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.207, duration_ms=1207, data={}
+timestamp=[2024-09-24 03:51:44], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-09-24 19:24:17], mode=WORKBENCH_START, duration=0:00:06.554, duration_ms=6554, data={}
+timestamp=[2024-09-24 19:24:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.471, duration_ms=471, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-09-24 19:24:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.111, duration_ms=1111, data={}
+timestamp=[2024-09-24 19:24:42], mode=BUILD, duration=0:00:01.481, duration_ms=1481, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-09-24 19:32:36], mode=BUILD, duration=0:00:00.488, duration_ms=488, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-09-24 20:33:02], mode=WORKBENCH_START, duration=0:00:05.568, duration_ms=5568, data={}
+timestamp=[2024-09-24 20:33:02], mode=WORKBENCH_UI_INIT, duration=0:00:00.809, duration_ms=809, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-09-24 20:33:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.195, duration_ms=1195, data={}
+timestamp=[2024-09-24 20:34:50], mode=PLATFORM_GENERATION, duration=0:00:05.430, duration_ms=5430, data={name=MicroBlaze_wrapper}
+timestamp=[2024-09-24 21:50:05], mode=WORKBENCH_START, duration=0:00:05.708, duration_ms=5708, data={}
+timestamp=[2024-09-24 21:50:06], mode=WORKBENCH_UI_INIT, duration=0:00:00.543, duration_ms=543, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-09-24 21:50:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.137, duration_ms=1137, data={}
+timestamp=[2024-09-24 21:50:29], mode=PLATFORM_GENERATION, duration=0:00:05.009, duration_ms=5009, data={name=MicroBlaze_wrapper}

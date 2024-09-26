@@ -30,14 +30,13 @@ input clk,
 	output reg [11:0] wave03Address,  
 	output reg signed [63:0] xcorr,
 	output reg signed [63:0] xcorr1,
+	output reg clkcorr = 0,
 	output reg signed [15:0] count = -9999
 	);
  	reg signed [63:0] product = 0;
  	reg signed [63:0] product1 = 0;
- 	reg [25:0] subframeCounter = 0;
 	 
  	reg signed [15:0] countMulti = 1;
- 	reg clkcorr = 0;
     
     reg signed [31:0] product_stage1, product_stage2, product_stage3;
     reg signed [31:0] product1_stage1, product1_stage2, product1_stage3;
@@ -46,23 +45,30 @@ input clk,
     
  
    always @(negedge clk)begin
-     	if (subframeCounter == 2500)begin
-        	subframeCounter <= 1;
-        	clkcorr <= 1;
-    	end
-    	else begin
-        	subframeCounter <= subframeCounter + 1;
-        	clkcorr <= 0;
-    	end
+
     	if (countMulti!=2500)begin
         	countMulti <= countMulti + 1;
-       	 
+        	clkcorr = 0;
     	end
     	else begin
          	xcorr <= product;
          	xcorr1 <= product1;
          	countMulti <= 1;
+         	clkcorr = 1;
     	end
+    	
+    	if (countMulti==1)begin
+	if (count <= 10000) begin
+    
+    	count <= count + 1;
+   	 
+	end
+	else begin
+    	count <= -9999;
+	end
+   	 
+    
+	end
    	 
 
             waveRef0Address <= ((countMulti+count>=1)&&(countMulti+count<=10000))?countMulti+count:0;
@@ -78,7 +84,7 @@ input clk,
             wave3Address <= countMulti;
             wave03Address <= countMulti;
 
-            if(clkcorr == 1)begin
+            if(countMulti == 1)begin
                 product <= 0;
                 product1 <= 0;
             end
@@ -106,19 +112,5 @@ input clk,
                 product1 <= product1 + product1_stage3;
             end
       end  
-
-
-always @(negedge clkcorr)begin
-	if (count <= 10000) begin
-    
-    	count <= count + 1;
-   	 
-	end
-	else begin
-    	count <= -9999;
-	end
-   	 
-    
-	end
 
 endmodule
