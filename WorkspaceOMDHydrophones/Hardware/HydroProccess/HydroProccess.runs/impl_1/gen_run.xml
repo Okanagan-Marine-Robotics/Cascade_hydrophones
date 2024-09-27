@@ -4,67 +4,60 @@
   <File Type="PA-TCL" Name="MicroBlaze_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="MicroBlaze_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="MicroBlaze_wrapper_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="MicroBlaze_wrapper_rqa_opted.pb"/>
+  <File Type="BITSTR-MSK" Name="MicroBlaze_wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="MicroBlaze_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="MicroBlaze_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MicroBlaze_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="MicroBlaze_wrapper.bit"/>
+  <File Type="BG-DRC" Name="MicroBlaze_wrapper.drc"/>
+  <File Type="BG-BGN" Name="MicroBlaze_wrapper.bgn"/>
+  <File Type="BG-BIN" Name="MicroBlaze_wrapper.bin"/>
+  <File Type="BITSTR-RBT" Name="MicroBlaze_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="MicroBlaze_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="MicroBlaze_wrapper_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="MicroBlaze_wrapper.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="MicroBlaze_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="MicroBlaze_wrapper_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="MicroBlaze_wrapper_opt.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MicroBlaze_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="MicroBlaze_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="MicroBlaze_wrapper.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="MicroBlaze_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="MicroBlaze_wrapper.hwdef"/>
-  <File Type="PWROPT-DCP" Name="MicroBlaze_wrapper_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="MicroBlaze_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="MicroBlaze_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="MicroBlaze_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="MicroBlaze_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="MicroBlaze_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="MicroBlaze_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="MicroBlaze_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="MicroBlaze_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="MicroBlaze_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="MicroBlaze_wrapper.bin"/>
-  <File Type="PLACE-TIMING" Name="MicroBlaze_wrapper_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="MicroBlaze_wrapper_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="MicroBlaze_wrapper_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="MicroBlaze_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="MicroBlaze_wrapper.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="MicroBlaze_wrapper_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="MicroBlaze_wrapper_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="MicroBlaze_wrapper.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="MicroBlaze_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="MicroBlaze_wrapper_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="MicroBlaze_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="MicroBlaze_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="MicroBlaze_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="MicroBlaze_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="MicroBlaze_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MicroBlaze_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MicroBlaze_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="MicroBlaze_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="MicroBlaze_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="MicroBlaze_wrapper_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="MicroBlaze_wrapper_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="MicroBlaze_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MicroBlaze_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MicroBlaze_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="MicroBlaze_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="MicroBlaze_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="MicroBlaze_wrapper_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="MicroBlaze_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="MicroBlaze_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="MicroBlaze_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="MicroBlaze_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="MicroBlaze_wrapper_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="MicroBlaze_wrapper_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="MicroBlaze_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="MicroBlaze_wrapper_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MicroBlaze_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="MicroBlaze_wrapper_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="MicroBlaze_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MicroBlaze_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MicroBlaze_wrapper_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MicroBlaze_wrapper_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MicroBlaze_wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MicroBlaze_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="MicroBlaze_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MicroBlaze_wrapper_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MicroBlaze_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="MicroBlaze_wrapper.nky"/>
-  <File Type="BITSTR-BMM" Name="MicroBlaze_wrapper_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MicroBlaze_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="MicroBlaze_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MicroBlaze_wrapper_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="MicroBlaze_wrapper.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="MicroBlaze_wrapper_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="MicroBlaze_wrapper_pld.pdi"/>
@@ -73,13 +66,6 @@
   <File Type="RNPI_FILE" Name="MicroBlaze_wrapper.rnpi"/>
   <File Type="NPI_FILE" Name="MicroBlaze_wrapper.npi"/>
   <File Type="RBD_FILE" Name="MicroBlaze_wrapper.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="MicroBlaze_wrapper.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="MicroBlaze_wrapper.sysdef"/>
-  <File Type="BG-BGN" Name="MicroBlaze_wrapper.bgn"/>
-  <File Type="BG-DRC" Name="MicroBlaze_wrapper.drc"/>
-  <File Type="RDI-RDI" Name="MicroBlaze_wrapper.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="MicroBlaze_wrapper_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="MicroBlaze_wrapper_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -259,13 +245,14 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_AddressFixer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BRAMMUX_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_compress_64_to_32_0_0"/>
 </GenRun>
