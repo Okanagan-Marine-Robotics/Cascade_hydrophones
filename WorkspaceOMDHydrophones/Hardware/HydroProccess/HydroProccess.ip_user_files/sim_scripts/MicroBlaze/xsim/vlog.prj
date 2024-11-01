@@ -1,17 +1,13 @@
-verilog xil_defaultlib --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/e2ba/hdl/verilog" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/a29c/hdl/verilog" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ae90/hdl/verilog" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0e59/hdl/verilog" \
+verilog xil_defaultlib --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_xlconstant_0_0/sim/MicroBlaze_xlconstant_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_compress_64_to_32_0_0/sim/MicroBlaze_compress_64_to_32_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/sim/MicroBlaze_BlockRam_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_CC_0_0/sim/MicroBlaze_CC_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/sim/MicroBlaze_BRAMMUX_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/sim/MicroBlaze_waveParser_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/sim/MicroBlaze_clk1Mhz_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/sim/MicroBlaze_AddressFixer_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_ila_0_0/sim/MicroBlaze_ila_0_0.v" \
-"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/sim/MicroBlaze_xlslice_0_0.v" \
+"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 
 verilog xil_defaultlib "glbl.v"
 

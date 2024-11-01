@@ -174,12 +174,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_AddressFixer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_AddressFixer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BRAMMUX_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_compress_64_to_32_0_0"/>
 </GenRun>

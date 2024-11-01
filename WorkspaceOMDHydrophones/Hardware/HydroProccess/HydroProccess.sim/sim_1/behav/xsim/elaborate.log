@@ -1,11 +1,11 @@
 Vivado Simulator v2023.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_8 -L xbip_utils_v3_0_11 -L axi_utils_v2_0_7 -L xbip_pipe_v3_0_7 -L xbip_bram18k_v3_0_7 -L mult_gen_v12_0_19 -L xbip_dsp48_wrapper_v3_0_5 -L xbip_dsp48_addsub_v3_0_7 -L xbip_dsp48_multadd_v3_0_7 -L dds_compiler_v6_0_23 -L xlslice_v1_0_3 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_11 -L axi_utils_v2_0_7 -L xbip_pipe_v3_0_7 -L xbip_bram18k_v3_0_7 -L mult_gen_v12_0_19 -L xbip_dsp48_wrapper_v3_0_5 -L xbip_dsp48_addsub_v3_0_7 -L xbip_dsp48_multadd_v3_0_7 -L dds_compiler_v6_0_23 -L xlslice_v1_0_3 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:177]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:166]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -30,8 +30,6 @@ Compiling package unisim.vcomponents
 Compiling package ieee.std_logic_unsigned
 Compiling package dds_compiler_v6_0_23.pkg_betas
 Compiling package dds_compiler_v6_0_23.pkg_alphas
-Compiling module xil_defaultlib.AddressFixer
-Compiling module xil_defaultlib.MicroBlaze_AddressFixer_0_0
 Compiling module xil_defaultlib.BRAMMUX
 Compiling module xil_defaultlib.MicroBlaze_BRAMMUX_0_0
 Compiling module xil_defaultlib.BlockRam
@@ -45,8 +43,6 @@ Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=62.5,...
 Compiling module unisims_ver.BUFG
 Compiling module xil_defaultlib.MicroBlaze_clk_wiz_0_0_clk_wiz
 Compiling module xil_defaultlib.MicroBlaze_clk_wiz_0_0
-Compiling module xil_defaultlib.compress_64_to_32
-Compiling module xil_defaultlib.MicroBlaze_compress_64_to_32_0_0
 Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
 Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
 Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23_rdy [\dds_compiler_v6_0_23_rdy(c_has_...]
@@ -66,11 +62,8 @@ Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23
 Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23_viv [\dds_compiler_v6_0_23_viv(c_xdev...]
 Compiling architecture xilinx of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23 [\dds_compiler_v6_0_23(c_xdevicef...]
 Compiling architecture microblaze_dds_compiler_0_1_arch of entity xil_defaultlib.MicroBlaze_dds_compiler_0_1 [microblaze_dds_compiler_0_1_defa...]
-Compiling module xil_defaultlib.MicroBlaze_ila_0_0
 Compiling module xil_defaultlib.waveParser
 Compiling module xil_defaultlib.MicroBlaze_waveParser_0_0
-Compiling module xlconstant_v1_1_8.xlconstant_v1_1_8_xlconstant(CON...
-Compiling module xil_defaultlib.MicroBlaze_xlconstant_0_0
 Compiling module xlslice_v1_0_3.xlslice_v1_0_3_xlslice(DIN_WIDTH...
 Compiling module xil_defaultlib.MicroBlaze_xlslice_0_0
 Compiling module xil_defaultlib.MicroBlaze
