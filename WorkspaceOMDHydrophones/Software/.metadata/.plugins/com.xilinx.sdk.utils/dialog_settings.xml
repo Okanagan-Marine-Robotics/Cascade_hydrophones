@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="scw_hwspec" value="C:\Users\JamesWilliamson\Documents\GitHub\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess"/>
-	<item key="scw_hwspec_file_selection" value="C:\Users\JamesWilliamson\Documents\GitHub\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess"/>
-	<item key="debug_files_selection" value="C:\Users\JamesWilliamson\Documents\GitHub\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess"/>
+	<item key="scw_hwspec" value="C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess"/>
 </section>

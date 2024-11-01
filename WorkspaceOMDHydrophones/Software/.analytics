@@ -1,52 +1,6 @@
-timestamp=[2024-09-21 21:49:21], mode=WORKBENCH_START, duration=0:00:04.088, duration_ms=4088, data={}
-timestamp=[2024-09-21 21:49:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.298, duration_ms=298, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
-timestamp=[2024-09-21 21:49:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.014, duration_ms=1014, data={}
-timestamp=[2024-09-21 21:49:43], mode=WORKBENCH_START, duration=0:00:04.196, duration_ms=4196, data={}
-timestamp=[2024-09-21 21:49:44], mode=WORKBENCH_UI_INIT, duration=0:00:00.440, duration_ms=440, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
-timestamp=[2024-09-21 21:49:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.406, duration_ms=1406, data={}
-timestamp=[2024-09-21 21:53:17], mode=APP_CREATION, duration=0:00:04.505, duration_ms=4505, data={name=HelloWorld, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=MicroBlaze_wrapper, application_type=application}
-timestamp=[2024-09-21 21:53:37], mode=PLATFORM_GENERATION, duration=0:00:04.081, duration_ms=4081, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-21 21:53:38], mode=BUILD, duration=0:00:01.054, duration_ms=1054, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-21 21:55:09], mode=BUILD, duration=0:00:00.125, duration_ms=125, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-21 22:04:31], mode=PLATFORM_GENERATION, duration=0:00:04.735, duration_ms=4735, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-21 22:23:37], mode=PLATFORM_GENERATION, duration=0:00:04.792, duration_ms=4792, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-21 22:59:32], mode=WORKBENCH_START, duration=0:00:08.501, duration_ms=8501, data={}
-timestamp=[2024-09-21 22:59:33], mode=WORKBENCH_UI_INIT, duration=0:00:00.872, duration_ms=872, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-21 22:59:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.772, duration_ms=1772, data={}
-timestamp=[2024-09-21 23:00:03], mode=PLATFORM_GENERATION, duration=0:00:06.804, duration_ms=6804, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-21 23:05:32], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-21 23:23:11], mode=WORKBENCH_START, duration=0:00:05.220, duration_ms=5220, data={}
-timestamp=[2024-09-21 23:23:12], mode=WORKBENCH_UI_INIT, duration=0:00:00.466, duration_ms=466, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-21 23:23:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.020, duration_ms=1020, data={}
-timestamp=[2024-09-21 23:24:02], mode=PLATFORM_GENERATION, duration=0:00:05.656, duration_ms=5656, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-21 23:38:35], mode=WORKBENCH_START, duration=0:00:06.439, duration_ms=6439, data={}
-timestamp=[2024-09-21 23:38:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.814, duration_ms=814, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-21 23:38:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.276, duration_ms=1276, data={}
-timestamp=[2024-09-21 23:41:01], mode=BUILD, duration=0:00:00.643, duration_ms=643, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-24 03:21:18], mode=WORKBENCH_START, duration=0:00:07.038, duration_ms=7038, data={}
-timestamp=[2024-09-24 03:21:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.684, duration_ms=684, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-24 03:21:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.372, duration_ms=1372, data={}
-timestamp=[2024-09-24 03:21:46], mode=PLATFORM_GENERATION, duration=0:00:05.954, duration_ms=5954, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-24 03:21:55], mode=BUILD, duration=0:00:00.880, duration_ms=880, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-24 03:38:25], mode=WORKBENCH_START, duration=0:00:05.317, duration_ms=5317, data={}
-timestamp=[2024-09-24 03:38:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.777, duration_ms=777, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-24 03:38:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.082, duration_ms=1082, data={}
-timestamp=[2024-09-24 03:39:25], mode=PLATFORM_GENERATION, duration=0:00:04.838, duration_ms=4838, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-24 03:39:26], mode=BUILD, duration=0:00:00.641, duration_ms=641, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-24 03:51:36], mode=WORKBENCH_START, duration=0:00:06.545, duration_ms=6545, data={}
-timestamp=[2024-09-24 03:51:37], mode=WORKBENCH_UI_INIT, duration=0:00:00.868, duration_ms=868, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-24 03:51:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.207, duration_ms=1207, data={}
-timestamp=[2024-09-24 03:51:44], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-24 19:24:17], mode=WORKBENCH_START, duration=0:00:06.554, duration_ms=6554, data={}
-timestamp=[2024-09-24 19:24:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.471, duration_ms=471, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-24 19:24:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.111, duration_ms=1111, data={}
-timestamp=[2024-09-24 19:24:42], mode=BUILD, duration=0:00:01.481, duration_ms=1481, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-24 19:32:36], mode=BUILD, duration=0:00:00.488, duration_ms=488, data={name=HelloWorld, configuration=Debug, clean_build=false}
-timestamp=[2024-09-24 20:33:02], mode=WORKBENCH_START, duration=0:00:05.568, duration_ms=5568, data={}
-timestamp=[2024-09-24 20:33:02], mode=WORKBENCH_UI_INIT, duration=0:00:00.809, duration_ms=809, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-24 20:33:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.195, duration_ms=1195, data={}
-timestamp=[2024-09-24 20:34:50], mode=PLATFORM_GENERATION, duration=0:00:05.430, duration_ms=5430, data={name=MicroBlaze_wrapper}
-timestamp=[2024-09-24 21:50:05], mode=WORKBENCH_START, duration=0:00:05.708, duration_ms=5708, data={}
-timestamp=[2024-09-24 21:50:06], mode=WORKBENCH_UI_INIT, duration=0:00:00.543, duration_ms=543, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
-timestamp=[2024-09-24 21:50:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.137, duration_ms=1137, data={}
-timestamp=[2024-09-24 21:50:29], mode=PLATFORM_GENERATION, duration=0:00:05.009, duration_ms=5009, data={name=MicroBlaze_wrapper}
+timestamp=[2024-11-01 16:01:12], mode=WORKBENCH_START, duration=0:00:03.760, duration_ms=3760, data={}
+timestamp=[2024-11-01 16:01:13], mode=WORKBENCH_UI_INIT, duration=0:00:00.258, duration_ms=258, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-11-01 16:01:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.943, duration_ms=943, data={}
+timestamp=[2024-11-01 16:05:45], mode=APP_CREATION, duration=0:00:04.831, duration_ms=4831, data={name=HelloWorld, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=MicroBlaze_wrapper, application_type=application}
+timestamp=[2024-11-01 16:15:14], mode=PLATFORM_GENERATION, duration=0:00:04.132, duration_ms=4132, data={name=MicroBlaze_wrapper}
+timestamp=[2024-11-01 16:15:15], mode=BUILD, duration=0:00:01.125, duration_ms=1125, data={name=HelloWorld, configuration=Debug, clean_build=false}

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov  1 06:13:37 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov  1 16:16:23 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s25" NAME="MicroBlaze" PACKAGE="csga225" SPEEDGRADE="-1"/>
 
@@ -9,7 +9,7 @@
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+    <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
       <CONNECTIONS>
         <CONNECTION INSTANCE="rst_clk_wiz_0_200M" PORT="ext_reset_in"/>
       </CONNECTIONS>
@@ -4719,7 +4719,7 @@
       <PARAMETERS>
         <PARAMETER NAME="C_AUX_RESET_HIGH" VALUE="0"/>
         <PARAMETER NAME="C_AUX_RST_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_EXT_RESET_HIGH" VALUE="0"/>
+        <PARAMETER NAME="C_EXT_RESET_HIGH" VALUE="1"/>
         <PARAMETER NAME="C_EXT_RST_WIDTH" VALUE="4"/>
         <PARAMETER NAME="C_FAMILY" VALUE="spartan7"/>
         <PARAMETER NAME="C_NUM_BUS_RST" VALUE="1"/>
@@ -4742,7 +4742,7 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="dcm_locked" SIGIS="undef"/>
-        <PORT DIR="I" NAME="ext_reset_in" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+        <PORT DIR="I" NAME="ext_reset_in" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
           </CONNECTIONS>

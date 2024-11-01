@@ -1,7 +1,6 @@
-2024-09-24T21:50:24.256222300255-21:50:24 **** Incremental Build of project MicroBlaze_wrapper ****
-000-buildplatform.bat 59097 MicroBlaze_wrapper no_domain_build 
+2024-11-01T16:15:10.010675500255-16:15:10 **** Build of project MicroBlaze_wrapper ****
+000-buildplatform.bat 57129 MicroBlaze_wrapper  
 000-XSDB Server Channel: tcfchan#1
-000-C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
 000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 000-make --no-print-directory seq_libs
 000-
@@ -104,5 +103,5 @@
 000-'Finished building libraries'
 000-
 00255-
-21:50:29 Build Finished (took 4s.937ms)
+16:15:14 Build Finished (took 3s.994ms)
 
