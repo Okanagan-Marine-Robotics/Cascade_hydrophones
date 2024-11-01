@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+// Vivado v2023.2 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Friday November 01, 2024 - 06:13:42 am, from:
+//
+//     Map file     - c:\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess\HydroProccess.gen\sources_1\bd\MicroBlaze\MicroBlaze.bmm
+//     Data file(s) - c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'DUT_MicroBlaze_i_microblaze_0.DUT_MicroBlaze_i_microblaze_0_local_memory_lmb_bram_64K_1_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000
