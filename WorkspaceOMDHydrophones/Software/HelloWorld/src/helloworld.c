@@ -45,17 +45,35 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
-#include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_types.h"
+#include "sleep.h"
 
 
 int main()
 {
-    init_platform();
+init_platform();
+
+    XGpio Gpio;
+    xil_printf("helloworld");
+    XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+int i=0;
+
+    while(i<10000){
+
+
+    	XGpio_DiscreteWrite(&Gpio, 2 , i);
+    	int data = XGpio_DiscreteRead(&Gpio ,1);
+    	xil_printf("%d\n",data);
+    	i++;
+    }
 
     print("Hello World\n\r");
     print("Successfully ran Hello World application");
-    cleanup_platform();
-    return 0;
+cleanup_platform();
+return 0;
 }

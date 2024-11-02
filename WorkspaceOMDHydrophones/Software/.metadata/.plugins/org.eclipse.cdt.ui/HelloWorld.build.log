@@ -1,8 +1,12 @@
-16:15:14 **** Build of configuration Debug for project HelloWorld ****
+00:32:06 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:11: warning: unused variable 'Gpio0' [-Wunused-variable]
+   62 |     XGpio Gpio0;
+      |           ^~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
@@ -18,9 +22,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydroph
 'Invoking: MicroBlaze Print Size'
 mb-size HelloWorld.elf  |tee "HelloWorld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2524	    268	   3112	   5904	   1710	HelloWorld.elf
+   7100	    288	   3116	  10504	   2908	HelloWorld.elf
 'Finished building: HelloWorld.elf.size'
 ' '
 
-16:15:15 Build Finished (took 1s.105ms)
+00:32:07 Build Finished (took 953ms)
 
