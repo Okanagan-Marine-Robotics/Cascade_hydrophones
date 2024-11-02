@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sat Nov  2 01:08:33 2024
+| Date         : Sat Nov  2 01:47:42 2024
 | Host         : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file MicroBlaze_wrapper_clock_utilization_routed.rpt
 | Design       : MicroBlaze_wrapper
@@ -51,11 +51,11 @@ Table of Contents
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                        | Driver Pin                                                            | Net                                                             |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 4 |        1908 |               0 |        5.000 | clk_out1_MicroBlaze_clk_wiz_0_0_1                            | MicroBlaze_i/clk_wiz_0/inst/clkout1_buf/O                             | MicroBlaze_i/clk_wiz_0/inst/clk_out1                            |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 4 |        1909 |               0 |        5.000 | clk_out1_MicroBlaze_clk_wiz_0_0                              | MicroBlaze_i/clk_wiz_0/inst/clkout1_buf/O                             | MicroBlaze_i/clk_wiz_0/inst/clk_out1                            |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 4 |         232 |               0 |       33.333 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0     |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 2 |          78 |               0 |              |                                                              | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_BUFG_inst/O                       | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_BUFG                        |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 1 |          38 |               1 |       33.333 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst/O         | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG          |
-| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 1 |           1 |               0 |       83.330 | clkfbout_MicroBlaze_clk_wiz_0_0_1                            | MicroBlaze_i/clk_wiz_0/inst/clkf_buf/O                                | MicroBlaze_i/clk_wiz_0/inst/clkfbout_buf_MicroBlaze_clk_wiz_0_0 |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 2 |          38 |               1 |       33.333 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst/O         | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG          |
+| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 1 |           1 |               0 |       83.333 | clkfbout_MicroBlaze_clk_wiz_0_0                              | MicroBlaze_i/clk_wiz_0/inst/clkf_buf/O                                | MicroBlaze_i/clk_wiz_0/inst/clkfbout_buf_MicroBlaze_clk_wiz_0_0 |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -71,7 +71,7 @@ Table of Contents
 | src1      | g1        | BSCANE2/DRCK        | None       | BSCAN_X0Y1      | X0Y0         |           1 |               0 |              33.333 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/DRCK                   |
 | src2      | g2        | LUT5/O              | None       | SLICE_X16Y46    | X1Y0         |           1 |               0 |                     |                                                              | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_INST_0/O                 | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz                         |
 | src3      | g3        | BSCANE2/UPDATE      | None       | BSCAN_X0Y1      | X0Y0         |           1 |               0 |              33.333 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0           |
-| src4      | g4        | MMCME2_ADV/CLKFBOUT | None       | MMCME2_ADV_X0Y0 | X0Y0         |           1 |               0 |              83.330 | Multiple                                                     | MicroBlaze_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT           | MicroBlaze_i/clk_wiz_0/inst/clkfbout_MicroBlaze_clk_wiz_0_0 |
+| src4      | g4        | MMCME2_ADV/CLKFBOUT | None       | MMCME2_ADV_X0Y0 | X0Y0         |           1 |               0 |              83.333 | Multiple                                                     | MicroBlaze_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT           | MicroBlaze_i/clk_wiz_0/inst/clkfbout_MicroBlaze_clk_wiz_0_0 |
 +-----------+-----------+---------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+--------------------------------------------------------------+--------------------------------------------------------------+-------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -85,10 +85,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  515 |   800 |  260 |   300 |    3 |    20 |    7 |    10 |    2 |    20 |
-| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1293 |  1300 |  444 |   400 |    4 |    40 |   15 |    20 |    4 |    20 |
-| X0Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  194 |   800 |  108 |   300 |    0 |    20 |    7 |    10 |    0 |    20 |
-| X1Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |   52 |   750 |   19 |   250 |    0 |    10 |    2 |     5 |    0 |    20 |
+| X0Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  427 |   800 |  208 |   300 |    2 |    20 |    8 |    10 |    2 |    20 |
+| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1244 |  1300 |  400 |   400 |    5 |    40 |   15 |    20 |    4 |    20 |
+| X0Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  228 |   800 |  140 |   300 |    0 |    20 |    7 |    10 |    0 |    20 |
+| X1Y1              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |  156 |   750 |   31 |   250 |    0 |    10 |    1 |     5 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -111,7 +111,7 @@ All Modules
 +-----------+-----------------+-------------------+----------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock    | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                  |
 +-----------+-----------------+-------------------+----------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------+
-| g0        | BUFG/O          | n/a               | Multiple |       5.000 | {0.000 2.500} |        1892 |        0 |              0 |        0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1 |
+| g0        | BUFG/O          | n/a               | Multiple |       5.000 | {0.000 2.500} |        1893 |        0 |              0 |        0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1 |
 +-----------+-----------------+-------------------+----------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -122,8 +122,8 @@ All Modules
 +----+------+-------+-----------------------+
 |    | X0   | X1    | HORIZONTAL PROG DELAY |
 +----+------+-------+-----------------------+
-| Y1 |  192 |    20 |                     0 |
-| Y0 |  572 |  1108 |                     0 |
+| Y1 |  236 |    99 |                     0 |
+| Y0 |  463 |  1095 |                     0 |
 +----+------+-------+-----------------------+
 
 
@@ -144,8 +144,8 @@ All Modules
 +----+-----+------+-----------------------+
 |    | X0  | X1   | HORIZONTAL PROG DELAY |
 +----+-----+------+-----------------------+
-| Y1 |  26 |   37 |                     0 |
-| Y0 |   2 |  167 |                     0 |
+| Y1 |  44 |   43 |                     0 |
+| Y0 |   2 |  143 |                     0 |
 +----+-----+------+-----------------------+
 
 
@@ -188,8 +188,8 @@ All Modules
 +----+----+-----+-----------------------+
 |    | X0 | X1  | HORIZONTAL PROG DELAY |
 +----+----+-----+-----------------------+
-| Y1 |  0 |   0 |                     - |
-| Y0 |  0 |  39 |                     0 |
+| Y1 |  0 |  16 |                     0 |
+| Y0 |  0 |  23 |                     0 |
 +----+----+-----+-----------------------+
 
 
@@ -199,7 +199,7 @@ All Modules
 +-----------+-----------------+-------------------+----------+-------------+----------------+-------------+----------+----------------+----------+-----------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock    | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                             |
 +-----------+-----------------+-------------------+----------+-------------+----------------+-------------+----------+----------------+----------+-----------------------------------------------------------------+
-| g4        | BUFG/O          | n/a               | Multiple |      83.330 | {0.000 41.665} |           0 |        0 |              1 |        0 | MicroBlaze_i/clk_wiz_0/inst/clkfbout_buf_MicroBlaze_clk_wiz_0_0 |
+| g4        | BUFG/O          | n/a               | Multiple |      83.333 | {0.000 41.667} |           0 |        0 |              1 |        0 | MicroBlaze_i/clk_wiz_0/inst/clkfbout_buf_MicroBlaze_clk_wiz_0_0 |
 +-----------+-----------------+-------------------+----------+-------------+----------------+-------------+----------+----------------+----------+-----------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -221,9 +221,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         572 |               0 | 513 |          44 |   10 |   2 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                            |
-| g1        | n/a   | BUFG/O          | None       |           2 |               0 |   2 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0     |
-| g2        | n/a   | BUFG/O          | None       |           9 |               0 |   0 |           0 |    6 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_BUFG                        |
+| g0        | n/a   | BUFG/O          | None       |         463 |               0 | 425 |          24 |   10 |   2 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                            |
+| g1        | n/a   | BUFG/O          | None       |           2 |               0 |   0 |           2 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0     |
+| g2        | n/a   | BUFG/O          | None       |           9 |               0 |   2 |           0 |    5 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_BUFG                        |
 | g4        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |           0 |    0 |   0 |  0 |    1 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clkfbout_buf_MicroBlaze_clk_wiz_0_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
@@ -237,10 +237,10 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1108 |               0 | 1045 |          36 |   19 |   4 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                        |
-| g1        | n/a   | BUFG/O          | None       |         167 |               0 |  148 |          19 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
-| g2        | n/a   | BUFG/O          | None       |          69 |               0 |   62 |           0 |    6 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_BUFG                    |
-| g3        | n/a   | BUFG/O          | None       |          38 |               1 |   38 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG      |
+| g0        | n/a   | BUFG/O          | None       |        1095 |               0 | 1038 |          28 |   20 |   4 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                        |
+| g1        | n/a   | BUFG/O          | None       |         143 |               0 |  123 |          20 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
+| g2        | n/a   | BUFG/O          | None       |          69 |               0 |   60 |           0 |    6 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_BUFG                    |
+| g3        | n/a   | BUFG/O          | None       |          23 |               0 |   23 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG      |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -253,8 +253,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         192 |               0 | 168 |          17 |    7 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                        |
-| g1        | n/a   | BUFG/O          | None       |          26 |               0 |  26 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
+| g0        | n/a   | BUFG/O          | None       |         236 |               0 | 184 |          45 |    7 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                        |
+| g1        | n/a   | BUFG/O          | None       |          44 |               0 |  44 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -267,8 +267,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          20 |               0 | 18 |           0 |    2 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                        |
-| g1        | n/a   | BUFG/O          | None       |          37 |               0 | 34 |           3 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
+| g0        | n/a   | BUFG/O          | None       |          99 |               0 | 98 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/clk_wiz_0/inst/clk_out1                        |
+| g1        | n/a   | BUFG/O          | None       |          43 |               0 | 43 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
+| g3        | n/a   | BUFG/O          | None       |          15 |               1 | 15 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG      |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -292,7 +293,7 @@ set_property LOC IOB_X0Y24 [get_ports clk]
 #startgroup
 create_pblock {CLKAG_MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_MicroBlaze_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0" driven by instance "MicroBlaze_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native" located at site "BUFGCTRL_X0Y1"

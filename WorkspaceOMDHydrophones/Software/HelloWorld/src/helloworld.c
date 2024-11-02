@@ -63,7 +63,7 @@ init_platform();
     XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
 int i=0;
 
-    while(i<10000){
+    while(i<1000){
 
 
     	XGpio_DiscreteWrite(&Gpio, 1 , i);
