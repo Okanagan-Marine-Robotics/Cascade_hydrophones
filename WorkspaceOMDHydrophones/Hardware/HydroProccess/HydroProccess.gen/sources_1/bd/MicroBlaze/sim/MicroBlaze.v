@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Fri Nov  1 16:16:22 2024
+//Date        : Sat Nov  2 01:03:37 2024
 //Host        : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,13 +10,15 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=18,da_board_cnt=14,da_bram_cntlr_cnt=1,da_clkrst_cnt=16,da_mb_cnt=6,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=18,da_board_cnt=14,da_bram_cntlr_cnt=1,da_clkrst_cnt=16,da_mb_cnt=6,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (clk,
+    led,
     reset,
     rx,
     tx);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_RESET reset, CLK_DOMAIN MicroBlaze_clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
+  output [0:0]led;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   input rx;
   output tx;
@@ -166,9 +168,11 @@ module MicroBlaze
   wire [13:0]waveParser_0_waveRef2Address;
   wire [13:0]waveParser_0_waveRef3Address;
   wire [0:0]xlconstant_0_dout;
+  wire [0:0]xlconstant_1_dout;
   wire [31:0]xlslice_0_Dout;
 
   assign clk_1 = clk;
+  assign led[0] = xlconstant_1_dout;
   assign reset_rtl_0_1 = reset;
   assign rx_0_1 = rx;
   assign tx = axi_uartlite_0_tx;
@@ -311,13 +315,11 @@ module MicroBlaze
   MicroBlaze_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra(axi_gpio_0_gpio_io_o[13:0]),
         .addrb(AddressFixer_0_address),
-        .clka(1'b0),
+        .clka(microblaze_0_Clk),
         .clkb(microblaze_0_Clk),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
         .dinb(xlslice_0_Dout),
         .douta(blk_mem_gen_0_douta),
-        .ena(xlconstant_0_dout),
-        .enb(xlconstant_0_dout),
         .wea(1'b0),
         .web(xlconstant_0_dout));
   MicroBlaze_clk1Mhz_0_0 clk1Mhz_0
@@ -509,6 +511,8 @@ module MicroBlaze
         .waveRef3Address(waveParser_0_waveRef3Address));
   MicroBlaze_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
+  MicroBlaze_xlconstant_1_0 xlconstant_1
+       (.dout(xlconstant_1_dout));
   MicroBlaze_xlslice_0_0 xlslice_0
        (.Din(CC_0_xcorr),
         .Dout(xlslice_0_Dout));

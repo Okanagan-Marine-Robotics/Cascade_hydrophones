@@ -55,13 +55,11 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module MicroBlaze_blk_mem_gen_0_0 (
   clka,
-  ena,
   wea,
   addra,
   dina,
   douta,
   clkb,
-  enb,
   web,
   addrb,
   dinb,
@@ -70,8 +68,6 @@ module MicroBlaze_blk_mem_gen_0_0 (
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *)
 input wire clka;
-(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA EN" *)
-input wire ena;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA WE" *)
 input wire [0 : 0] wea;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *)
@@ -83,8 +79,6 @@ input wire [31 : 0] dina;
 output wire [31 : 0] douta;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB CLK" *)
 input wire clkb;
-(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB EN" *)
-input wire enb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB WE" *)
 input wire [0 : 0] web;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB ADDR" *)
@@ -120,7 +114,7 @@ output wire [31 : 0] doutb;
     .C_RST_PRIORITY_A("CE"),
     .C_RSTRAM_A(0),
     .C_INITA_VAL("0"),
-    .C_HAS_ENA(1),
+    .C_HAS_ENA(0),
     .C_HAS_REGCEA(0),
     .C_USE_BYTE_WEA(0),
     .C_WEA_WIDTH(1),
@@ -134,7 +128,7 @@ output wire [31 : 0] doutb;
     .C_RST_PRIORITY_B("CE"),
     .C_RSTRAM_B(0),
     .C_INITB_VAL("0"),
-    .C_HAS_ENB(1),
+    .C_HAS_ENB(0),
     .C_HAS_REGCEB(0),
     .C_USE_BYTE_WEB(0),
     .C_WEB_WIDTH(1),
@@ -174,7 +168,7 @@ output wire [31 : 0] doutb;
   ) inst (
     .clka(clka),
     .rsta(1'D0),
-    .ena(ena),
+    .ena(1'D0),
     .regcea(1'D0),
     .wea(wea),
     .addra(addra),
@@ -182,7 +176,7 @@ output wire [31 : 0] doutb;
     .douta(douta),
     .clkb(clkb),
     .rstb(1'D0),
-    .enb(enb),
+    .enb(1'D0),
     .regceb(1'D0),
     .web(web),
     .addrb(addrb),

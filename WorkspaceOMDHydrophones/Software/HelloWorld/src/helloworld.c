@@ -66,8 +66,8 @@ int i=0;
     while(i<10000){
 
 
-    	XGpio_DiscreteWrite(&Gpio, 2 , i);
-    	int data = XGpio_DiscreteRead(&Gpio ,1);
+    	XGpio_DiscreteWrite(&Gpio, 1 , i);
+    	int data = XGpio_DiscreteRead(&Gpio ,2);
     	xil_printf("%d\n",data);
     	i++;
     }

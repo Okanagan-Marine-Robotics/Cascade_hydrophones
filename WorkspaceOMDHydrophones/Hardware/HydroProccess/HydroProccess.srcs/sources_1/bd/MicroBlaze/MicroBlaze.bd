@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x125A2FC706EFCE61",
+      "boundary_crc": "0xF4EBD59B70675ABB",
       "device": "xc7s25csga225-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze",
       "name": "MicroBlaze",
@@ -39,7 +39,8 @@
         "s00_couplers": {},
         "m00_couplers": {},
         "m01_couplers": {}
-      }
+      },
+      "xlconstant_1": ""
     },
     "ports": {
       "clk": {
@@ -88,6 +89,11 @@
       },
       "tx": {
         "direction": "O"
+      },
+      "led": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -834,6 +840,12 @@
         "xci_path": "ip\\MicroBlaze_blk_mem_gen_0_0\\MicroBlaze_blk_mem_gen_0_0.xci",
         "inst_hier_path": "blk_mem_gen_0",
         "parameters": {
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
@@ -1488,6 +1500,13 @@
             ]
           }
         }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "MicroBlaze_xlconstant_1_0",
+        "xci_path": "ip\\MicroBlaze_xlconstant_1_0\\MicroBlaze_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1"
       }
     },
     "interface_nets": {
@@ -1802,7 +1821,8 @@
           "microblaze_0_axi_periph/M00_ACLK",
           "microblaze_0_axi_periph/ACLK",
           "axi_uartlite_0/s_axi_aclk",
-          "microblaze_0_axi_periph/M01_ACLK"
+          "microblaze_0_axi_periph/M01_ACLK",
+          "blk_mem_gen_0/clka"
         ]
       },
       "reset_rtl_0_1": {
@@ -1933,9 +1953,13 @@
       "xlconstant_0_dout": {
         "ports": [
           "xlconstant_0/dout",
-          "blk_mem_gen_0/enb",
-          "blk_mem_gen_0/web",
-          "blk_mem_gen_0/ena"
+          "blk_mem_gen_0/web"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "led"
         ]
       },
       "xlslice_0_Dout": {

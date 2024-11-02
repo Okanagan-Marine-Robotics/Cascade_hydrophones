@@ -13,3 +13,16 @@ timestamp=[2024-11-02 00:26:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.869, d
 timestamp=[2024-11-02 00:26:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.328, duration_ms=1328, data={}
 timestamp=[2024-11-02 00:30:59], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=HelloWorld, configuration=Debug, clean_build=false}
 timestamp=[2024-11-02 00:32:07], mode=BUILD, duration=0:00:00.959, duration_ms=959, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-11-02 01:11:04], mode=WORKBENCH_START, duration=0:00:06.399, duration_ms=6399, data={}
+timestamp=[2024-11-02 01:11:05], mode=WORKBENCH_UI_INIT, duration=0:00:00.593, duration_ms=593, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-11-02 01:11:06], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.337, duration_ms=1337, data={}
+timestamp=[2024-11-02 01:11:32], mode=PLATFORM_GENERATION, duration=0:00:05.376, duration_ms=5376, data={name=MicroBlaze_wrapper}
+timestamp=[2024-11-02 01:11:33], mode=BUILD, duration=0:00:00.786, duration_ms=786, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-11-02 01:11:36], mode=BUILD, duration=0:00:00.413, duration_ms=413, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-11-02 01:13:07], mode=WORKBENCH_START, duration=0:00:05.342, duration_ms=5342, data={}
+timestamp=[2024-11-02 01:13:07], mode=WORKBENCH_UI_INIT, duration=0:00:00.407, duration_ms=407, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-11-02 01:13:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.034, duration_ms=1034, data={}
+timestamp=[2024-11-02 01:13:51], mode=PLATFORM_GENERATION, duration=0:00:04.321, duration_ms=4321, data={name=MicroBlaze_wrapper}
+timestamp=[2024-11-02 01:13:51], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=HelloWorld, configuration=Debug, clean_build=true}
+timestamp=[2024-11-02 01:13:52], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-11-02 01:14:25], mode=BUILD, duration=0:00:00.429, duration_ms=429, data={name=HelloWorld, configuration=Debug, clean_build=false}
