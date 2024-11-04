@@ -1482,7 +1482,12 @@
         "ip_revision": "8",
         "xci_name": "MicroBlaze_xlconstant_1_0",
         "xci_path": "ip\\MicroBlaze_xlconstant_1_0\\MicroBlaze_xlconstant_1_0.xci",
-        "inst_hier_path": "xlconstant_1"
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
       },
       "blk_mem_gen_0": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",

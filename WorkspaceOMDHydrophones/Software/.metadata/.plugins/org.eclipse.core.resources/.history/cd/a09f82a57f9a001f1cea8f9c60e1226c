@@ -1,0 +1,33 @@
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_types.h"
+#include "sleep.h"
+
+int main() {
+    init_platform();
+
+    XGpio Gpio;
+    xil_printf("helloworld\n");
+    XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+
+    int i = 0;
+    int data = 0;
+
+    while (i < 1000) {
+        XGpio_DiscreteWrite(&Gpio, 1, 10);
+
+        int data = XGpio_DiscreteRead(&Gpio, 2);
+
+            xil_printf("%d\n", data);
+
+        i++;
+
+        // Add a sleep delay here
+        usleep(100000);  // Sleep for 100 milliseconds (100000 microseconds)
+    }
+
+    cleanup_platform();
+    return 0;
+}

@@ -1,6 +1,6 @@
 Nothing to build in platform 'MicroBlaze_wrapper'
 
-22:39:04 **** Incremental Build of configuration Debug for project HelloWorld ****
+00:40:45 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -15,6 +15,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydroph
 'Invoking: MicroBlaze Print Size'
 mb-size HelloWorld.elf  |tee "HelloWorld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   6616	    288	   3112	  10016	   2720	HelloWorld.elf
+   6932	    288	   3116	  10336	   2860	HelloWorld.elf
 'Finished building: HelloWorld.elf.size'
 ' '
