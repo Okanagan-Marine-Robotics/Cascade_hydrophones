@@ -2604,3 +2604,12 @@ con
 
 01:50:50 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
 01:55:49 INFO  : Disconnected from the channel tcfchan#2.
+02:02:00 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
+02:02:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
+02:02:02 INFO  : XSCT server has started successfully.
+02:02:02 INFO  : plnx-install-location is set to ''
+02:02:02 INFO  : Successfully done setting XSCT server connection channel  
+02:02:02 INFO  : Successfully done setting workspace for the tool. 
+02:02:03 INFO  : Successfully done query RDI_DATADIR 
+02:02:03 INFO  : Registering command handlers for Vitis TCF services
+02:02:04 INFO  : Platform repository initialization has completed.

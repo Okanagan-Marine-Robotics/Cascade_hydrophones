@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon Nov  4 01:04:23 2024
+| Date         : Mon Nov  4 02:02:33 2024
 | Host         : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 | Command      : report_utilization -file MicroBlaze_wrapper_utilization_synth.rpt -pb MicroBlaze_wrapper_utilization_synth.pb
 | Design       : MicroBlaze_wrapper
@@ -171,8 +171,10 @@ Warning! LUT value is adjusted to account for LUT combining.
 | MicroBlaze_dds_compiler_0_1     |    1 |
 | MicroBlaze_clk_wiz_0_0          |    1 |
 | MicroBlaze_clk1Mhz_0_0          |    1 |
+| MicroBlaze_blk_mem_gen_0_1      |    1 |
 | MicroBlaze_blk_mem_gen_0_0      |    1 |
 | MicroBlaze_axi_uartlite_0_0     |    1 |
+| MicroBlaze_axi_gpio_0_1         |    1 |
 | MicroBlaze_axi_gpio_0_0         |    1 |
 | MicroBlaze_CC_0_0               |    1 |
 | MicroBlaze_BlockRam_0_0         |    1 |

@@ -104,3 +104,6 @@ timestamp=[2024-11-04 01:32:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00
 timestamp=[2024-11-04 01:50:06], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=HelloWorld, configuration=Debug, clean_build=false}
 timestamp=[2024-11-04 01:50:25], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=HelloWorld, configuration=Debug, clean_build=false}
 timestamp=[2024-11-04 01:50:40], mode=BUILD, duration=0:00:00.415, duration_ms=415, data={name=HelloWorld, configuration=Debug, clean_build=false}
+timestamp=[2024-11-04 02:02:02], mode=WORKBENCH_START, duration=0:00:05.851, duration_ms=5851, data={}
+timestamp=[2024-11-04 02:02:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.684, duration_ms=684, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HelloWorld,HelloWorld_system,MicroBlaze_wrapper,RemoteSystemsTempFiles}
+timestamp=[2024-11-04 02:02:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.113, duration_ms=1113, data={}
