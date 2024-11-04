@@ -6678,3 +6678,1172 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:30:03.548
 !MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-266
+!SESSION 2024-11-04 01:32:08.024 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-11-04 01:32:14.496
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-04 01:32:17.693
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-04 01:32:17.694
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-04 01:32:17.694
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:18.365
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:18.365
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:18.381
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:18.381
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:18.383
+!MESSAGE XSCT Command: [setws C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:18.385
+!MESSAGE XSCT command with result: [setws C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:18.810
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:19.041
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:19.042
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:32:19.043
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.262
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.392
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.397
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.400
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.400
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.403
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-11-04 01:50:06.405
+!MESSAGE Generating MD5 hash for file: C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\MicroBlaze_wrapper\export\MicroBlaze_wrapper\sw\MicroBlaze_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.408
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:06.409
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-11-04 01:50:06.611
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.586
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.588
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Result: [null, {"device": "7s25",
+"family": "spartan7",
+"timestamp": "Mon Nov  4 01:03:00 2024",
+"vivado_version": "2023.2",
+"part": "xc7s25csga225-1",
+}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.589
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.593
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Result: [null, {"AddressFixer_0": {"hier_name": "AddressFixer_0",
+"type": "AddressFixer",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"BRAMMUX_0": {"hier_name": "BRAMMUX_0",
+"type": "BRAMMUX",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"BlockRam_0": {"hier_name": "BlockRam_0",
+"type": "BlockRam",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"CC_0": {"hier_name": "CC_0",
+"type": "CC",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"blk_mem_gen_0": {"hier_name": "blk_mem_gen_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"clk1Mhz_0": {"hier_name": "clk1Mhz_0",
+"type": "clk1Mhz",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"dds_compiler_1": {"hier_name": "dds_compiler_1",
+"type": "dds_compiler",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_0_200M": {"hier_name": "rst_clk_wiz_0_200M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"waveParser_0": {"hier_name": "waveParser_0",
+"type": "waveParser",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlslice_0": {"hier_name": "xlslice_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.655
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.658
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Result: [null, {}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.658
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.666
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0], Result: [null, {"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741824,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741828,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741832,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741836,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742108,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742120,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742112,
+},
+},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033280,
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033284,
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033292,
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033288,
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.668
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.670
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x0000FFFF",
+"size": "65536",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.671
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.672
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.673
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.674
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.677
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.678
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, 1]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.679
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.679
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.680
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_FREQ], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.681
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_FREQ], Result: [null, 200000000]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.681
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.682
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0 C_CPU_CLK_FREQ_HZ], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.682
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.708
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.710
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa mdm_1], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.713
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa mdm_1], Result: [null, {}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.713
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa mdm_1], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.714
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.715
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa mdm_1], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.716
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.717
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.738
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:08.740
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:11.785
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:14.798
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:14.802
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod S7 210376B8540EA]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:14.803
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:14.804
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:14.805
+!MESSAGE XSCT Command: [version], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:14.805
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.257
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.261
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod S7 210376B8540EA]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.261
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.273
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.276
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.281
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod S7 210376B8540EA]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.281
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.292
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.293
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.297
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod S7 210376B8540EA]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.298
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.309
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.309
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.313
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod S7 210376B8540EA]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.314
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.332
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.333
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.337
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod S7 210376B8540EA]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.337
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.348
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.349
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cmod S7 210376B8540EA" && level == 0}], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.360
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cmod S7 210376B8540EA" && level == 0}], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.361
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.379
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.380
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.381
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa microblaze_0], Result: [null, {"Clk": "200000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.394
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.398
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.399
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.411
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.416
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.554
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:16.555
+!MESSAGE XSCT Command: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.405
+!MESSAGE XSCT command with result: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.420
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.431
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.433
+!MESSAGE XSCT Command: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.447
+!MESSAGE XSCT command with result: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs], Result: [null, MicroBlaze_wrapper]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.448
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.449
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.449
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.460
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.461
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.466
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:17.467
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.470
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.472
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.605
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.605
+!MESSAGE XSCT Command: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.652
+!MESSAGE XSCT command with result: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.729
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.746
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.747
+!MESSAGE XSCT Command: [con], Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:20.753
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-11-04 01:50:20.756
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:25.585
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:25.588
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:25.589
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:25.591
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-11-04 01:50:25.591
+!MESSAGE Generating MD5 hash for file: C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\MicroBlaze_wrapper\export\MicroBlaze_wrapper\sw\MicroBlaze_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:25.592
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:25.593
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-11-04 01:50:25.764
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:39.828
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:39.830
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:39.830
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:39.833
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-11-04 01:50:39.833
+!MESSAGE Generating MD5 hash for file: C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\MicroBlaze_wrapper\export\MicroBlaze_wrapper\sw\MicroBlaze_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:39.833
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:39.835
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:44.115
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-184
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:44.120
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-184
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.126
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.129
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.129
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.136
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.136
+!MESSAGE XSCT Command: [version -server], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.137
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.2]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.137
+!MESSAGE XSCT Command: [version], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:45.138
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.119
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.123
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.123
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.135
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.136
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.140
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.140
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.153
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.153
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.157
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.158
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.169
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.170
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.174
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.174
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.185
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.186
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.192
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.192
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.204
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.204
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cmod S7 210376B8540EA" && level == 0}], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.216
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cmod S7 210376B8540EA" && level == 0}], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.216
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.218
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.232
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.236
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod S7 210376B8540EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.236
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.247
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==1}], Result: [null,      2  xc7s25 (idcode 037c4093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.248
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.278
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:46.279
+!MESSAGE XSCT Command: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.034
+!MESSAGE XSCT command with result: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.062
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.074
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.075
+!MESSAGE XSCT Command: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.220
+!MESSAGE XSCT command with result: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs], Result: [null, MicroBlaze_wrapper_0]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.221
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.223
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.223
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.234
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.234
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.236
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:47.236
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.240
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.242
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.265
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.266
+!MESSAGE XSCT Command: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.325
+!MESSAGE XSCT command with result: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.383
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.396
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.397
+!MESSAGE XSCT Command: [con], Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 01:50:50.405
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-10: Launching Debugger_HelloWorld-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-11-04 01:50:50.407
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
