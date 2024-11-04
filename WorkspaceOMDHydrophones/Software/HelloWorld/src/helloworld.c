@@ -62,18 +62,31 @@ init_platform();
     xil_printf("helloworld");
     XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
 int i=0;
+int j;
+int data =0;
+while(1){
 
-    while(i<1000){
+    while(i<4000){
 
 
     	XGpio_DiscreteWrite(&Gpio, 1 , i);
-    	int data = XGpio_DiscreteRead(&Gpio ,2);
-    	xil_printf("%d\n",data);
+
+
+    	int readData = XGpio_DiscreteRead(&Gpio, 2);
+    	            if (readData > data) {
+    	                data = readData;
+    	                j = i;
+    	            }
+
+    	//int data = XGpio_DiscreteRead(&Gpio ,2);
+    	//xil_printf("%d\n",data);
     	i++;
     }
-
-    print("Hello World\n\r");
-    print("Successfully ran Hello World application");
+    xil_printf("%d\n",data);
+    xil_printf("%d\n",j);
+    data=0;
+    i=0;
+}
 cleanup_platform();
 return 0;
 }

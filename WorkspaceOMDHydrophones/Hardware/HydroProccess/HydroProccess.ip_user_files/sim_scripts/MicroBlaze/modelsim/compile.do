@@ -13,11 +13,11 @@ vlib modelsim_lib/msim/xbip_dsp48_addsub_v3_0_7
 vlib modelsim_lib/msim/xbip_dsp48_multadd_v3_0_7
 vlib modelsim_lib/msim/dds_compiler_v6_0_23
 vlib modelsim_lib/msim/xlslice_v1_0_3
-vlib modelsim_lib/msim/blk_mem_gen_v8_4_7
 vlib modelsim_lib/msim/xlconstant_v1_1_8
 vlib modelsim_lib/msim/microblaze_v11_0_12
 vlib modelsim_lib/msim/lmb_v10_v3_0_13
 vlib modelsim_lib/msim/lmb_bram_if_cntlr_v4_0_23
+vlib modelsim_lib/msim/blk_mem_gen_v8_4_7
 vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vlib modelsim_lib/msim/mdm_v3_2_25
 vlib modelsim_lib/msim/lib_cdc_v1_0_2
@@ -46,11 +46,11 @@ vmap xbip_dsp48_addsub_v3_0_7 modelsim_lib/msim/xbip_dsp48_addsub_v3_0_7
 vmap xbip_dsp48_multadd_v3_0_7 modelsim_lib/msim/xbip_dsp48_multadd_v3_0_7
 vmap dds_compiler_v6_0_23 modelsim_lib/msim/dds_compiler_v6_0_23
 vmap xlslice_v1_0_3 modelsim_lib/msim/xlslice_v1_0_3
-vmap blk_mem_gen_v8_4_7 modelsim_lib/msim/blk_mem_gen_v8_4_7
 vmap xlconstant_v1_1_8 modelsim_lib/msim/xlconstant_v1_1_8
 vmap microblaze_v11_0_12 modelsim_lib/msim/microblaze_v11_0_12
 vmap lmb_v10_v3_0_13 modelsim_lib/msim/lmb_v10_v3_0_13
 vmap lmb_bram_if_cntlr_v4_0_23 modelsim_lib/msim/lmb_bram_if_cntlr_v4_0_23
+vmap blk_mem_gen_v8_4_7 modelsim_lib/msim/blk_mem_gen_v8_4_7
 vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vmap mdm_v3_2_25 modelsim_lib/msim/mdm_v3_2_25
 vmap lib_cdc_v1_0_2 modelsim_lib/msim/lib_cdc_v1_0_2
@@ -118,14 +118,7 @@ vlog -work xlslice_v1_0_3  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/s
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/sim/MicroBlaze_xlslice_0_0.v" \
-"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/sim/MicroBlaze_AddressFixer_0_0.v" \
-
-vlog -work blk_mem_gen_v8_4_7  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
-"../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3c0c/simulation/blk_mem_gen_v8_4.v" \
-
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_0/sim/MicroBlaze_blk_mem_gen_0_0.v" \
 
 vlog -work xlconstant_v1_1_8  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
 "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v" \
@@ -152,6 +145,9 @@ vcom -work lmb_bram_if_cntlr_v4_0_23  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/MicroBlaze/ip/MicroBlaze_dlmb_bram_if_cntlr_0/sim/MicroBlaze_dlmb_bram_if_cntlr_0.vhd" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_ilmb_bram_if_cntlr_0/sim/MicroBlaze_ilmb_bram_if_cntlr_0.vhd" \
+
+vlog -work blk_mem_gen_v8_4_7  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
+"../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3c0c/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_lmb_bram_0/sim/MicroBlaze_lmb_bram_0.v" \
@@ -221,6 +217,9 @@ vlog -work axi_crossbar_v2_1_30  -incr -mfcu  "+incdir+../../../../HydroProccess
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xbar_0/sim/MicroBlaze_xbar_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_xlconstant_1_0/sim/MicroBlaze_xlconstant_1_0.v" \
+"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_0/sim/MicroBlaze_blk_mem_gen_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

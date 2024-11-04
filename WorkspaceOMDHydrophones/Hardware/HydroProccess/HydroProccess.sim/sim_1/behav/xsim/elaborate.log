@@ -1,17 +1,17 @@
 Vivado Simulator v2023.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_11 -L axi_utils_v2_0_7 -L xbip_pipe_v3_0_7 -L xbip_bram18k_v3_0_7 -L mult_gen_v12_0_19 -L xbip_dsp48_wrapper_v3_0_5 -L xbip_dsp48_addsub_v3_0_7 -L xbip_dsp48_multadd_v3_0_7 -L dds_compiler_v6_0_23 -L xlslice_v1_0_3 -L blk_mem_gen_v8_4_7 -L xlconstant_v1_1_8 -L microblaze_v11_0_12 -L lmb_v10_v3_0_13 -L lmb_bram_if_cntlr_v4_0_23 -L axi_lite_ipif_v3_0_4 -L mdm_v3_2_25 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_14 -L lib_pkg_v1_0_3 -L lib_srl_fifo_v1_0_3 -L axi_uartlite_v2_0_33 -L interrupt_control_v3_1_5 -L axi_gpio_v2_0_31 -L generic_baseblocks_v2_1_1 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_29 -L fifo_generator_v13_2_9 -L axi_data_fifo_v2_1_28 -L axi_crossbar_v2_1_30 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_11 -L axi_utils_v2_0_7 -L xbip_pipe_v3_0_7 -L xbip_bram18k_v3_0_7 -L mult_gen_v12_0_19 -L xbip_dsp48_wrapper_v3_0_5 -L xbip_dsp48_addsub_v3_0_7 -L xbip_dsp48_multadd_v3_0_7 -L dds_compiler_v6_0_23 -L xlslice_v1_0_3 -L xlconstant_v1_1_8 -L microblaze_v11_0_12 -L lmb_v10_v3_0_13 -L lmb_bram_if_cntlr_v4_0_23 -L blk_mem_gen_v8_4_7 -L axi_lite_ipif_v3_0_4 -L mdm_v3_2_25 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_14 -L lib_pkg_v1_0_3 -L lib_srl_fifo_v1_0_3 -L axi_uartlite_v2_0_33 -L interrupt_control_v3_1_5 -L axi_gpio_v2_0_31 -L generic_baseblocks_v2_1_1 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_29 -L fifo_generator_v13_2_9 -L axi_data_fifo_v2_1_28 -L axi_crossbar_v2_1_30 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sim_1/new/TestBench.v:12]
-WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:289]
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:329]
-WARNING: [VRFC 10-5021] port 'interrupt_ack' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:343]
-WARNING: [VRFC 10-5021] port 'peripheral_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:481]
-WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1377]
-WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1423]
+WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:293]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:331]
+WARNING: [VRFC 10-5021] port 'interrupt_ack' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:345]
+WARNING: [VRFC 10-5021] port 'peripheral_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:483]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1381]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1427]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -274,6 +274,7 @@ Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_23.lmb_bram_if_cntlr
 Compiling architecture microblaze_ilmb_bram_if_cntlr_0_arch of entity xil_defaultlib.MicroBlaze_ilmb_bram_if_cntlr_0 [microblaze_ilmb_bram_if_cntlr_0_...]
 Compiling architecture microblaze_ilmb_v10_0_arch of entity xil_defaultlib.MicroBlaze_ilmb_v10_0 [microblaze_ilmb_v10_0_default]
 Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_output_stage(...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_softecc_outpu...
 Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7(C_FAMILY="spa...
 Compiling module xil_defaultlib.MicroBlaze_lmb_bram_0
@@ -289,8 +290,9 @@ Compiling architecture imp of entity proc_sys_reset_v5_0_14.proc_sys_reset [\pro
 Compiling architecture microblaze_rst_clk_wiz_0_200m_0_arch of entity xil_defaultlib.MicroBlaze_rst_clk_wiz_0_200M_0 [microblaze_rst_clk_wiz_0_200m_0_...]
 Compiling module xil_defaultlib.waveParser
 Compiling module xil_defaultlib.MicroBlaze_waveParser_0_0
-Compiling module xlconstant_v1_1_8.xlconstant_v1_1_8_xlconstant(CON...
+Compiling module xlconstant_v1_1_8.xlconstant_v1_1_8_xlconstant
 Compiling module xil_defaultlib.MicroBlaze_xlconstant_0_0
+Compiling module xil_defaultlib.MicroBlaze_xlconstant_1_0
 Compiling module xlslice_v1_0_3.xlslice_v1_0_3_xlslice(DIN_WIDTH...
 Compiling module xil_defaultlib.MicroBlaze_xlslice_0_0
 Compiling module xil_defaultlib.MicroBlaze

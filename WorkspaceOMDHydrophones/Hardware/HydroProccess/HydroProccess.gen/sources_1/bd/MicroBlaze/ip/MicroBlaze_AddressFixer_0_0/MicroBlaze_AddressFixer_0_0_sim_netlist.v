@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Sat Nov  2 01:43:54 2024
+// Date        : Sun Nov  3 22:06:58 2024
 // Host        : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/MicroBlaze_AddressFixer_0_0_sim_netlist.v
@@ -59,6 +59,7 @@ module MicroBlaze_AddressFixer_0_0_AddressFixer
   wire address2__15_carry_i_5_n_0;
   wire address2__15_carry_i_6_n_0;
   wire address2__15_carry_i_7_n_0;
+  wire address2__15_carry_i_8_n_0;
   wire address2__15_carry_n_0;
   wire address2__15_carry_n_1;
   wire address2__15_carry_n_2;
@@ -68,9 +69,6 @@ module MicroBlaze_AddressFixer_0_0_AddressFixer
   wire address2_carry__0_i_3_n_0;
   wire address2_carry__0_i_4_n_0;
   wire address2_carry__0_i_5_n_0;
-  wire address2_carry__0_i_6_n_0;
-  wire address2_carry__0_i_7_n_0;
-  wire address2_carry__0_i_8_n_0;
   wire address2_carry__0_n_0;
   wire address2_carry__0_n_1;
   wire address2_carry__0_n_2;
@@ -97,7 +95,6 @@ module MicroBlaze_AddressFixer_0_0_AddressFixer
   wire address2_carry_i_5_n_0;
   wire address2_carry_i_6_n_0;
   wire address2_carry_i_7_n_0;
-  wire address2_carry_i_8_n_0;
   wire address2_carry_n_0;
   wire address2_carry_n_1;
   wire address2_carry_n_2;
@@ -165,9 +162,9 @@ module MicroBlaze_AddressFixer_0_0_AddressFixer
        (.CI(1'b0),
         .CO({address2__15_carry_n_0,address2__15_carry_n_1,address2__15_carry_n_2,address2__15_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({address2__15_carry_i_1_n_0,address2__15_carry_i_2_n_0,1'b0,address2__15_carry_i_3_n_0}),
+        .DI({address2__15_carry_i_1_n_0,address2__15_carry_i_2_n_0,address2__15_carry_i_3_n_0,address2__15_carry_i_4_n_0}),
         .O(NLW_address2__15_carry_O_UNCONNECTED[3:0]),
-        .S({address2__15_carry_i_4_n_0,address2__15_carry_i_5_n_0,address2__15_carry_i_6_n_0,address2__15_carry_i_7_n_0}));
+        .S({address2__15_carry_i_5_n_0,address2__15_carry_i_6_n_0,address2__15_carry_i_7_n_0,address2__15_carry_i_8_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 address2__15_carry__0
        (.CI(address2__15_carry_n_0),
@@ -215,63 +212,67 @@ module MicroBlaze_AddressFixer_0_0_AddressFixer
        (.I0(address3_carry__2_n_0),
         .O(address3[31]));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h7)) 
     address2__15_carry_i_1
        (.I0(address3[10]),
         .I1(address3[11]),
         .O(address2__15_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h7)) 
+  LUT1 #(
+    .INIT(2'h1)) 
     address2__15_carry_i_2
-       (.I0(address3[8]),
-        .I1(address3[9]),
+       (.I0(address3[9]),
         .O(address2__15_carry_i_2_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h7)) 
     address2__15_carry_i_3
-       (.I0(address3[4]),
-        .I1(address3[5]),
+       (.I0(address3[6]),
+        .I1(address3[7]),
         .O(address2__15_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
+  LUT1 #(
+    .INIT(2'h1)) 
     address2__15_carry_i_4
-       (.I0(address3[10]),
-        .I1(address3[11]),
+       (.I0(address3[5]),
         .O(address2__15_carry_i_4_n_0));
   LUT2 #(
     .INIT(4'h8)) 
     address2__15_carry_i_5
-       (.I0(address3[8]),
-        .I1(address3[9]),
+       (.I0(address3[10]),
+        .I1(address3[11]),
         .O(address2__15_carry_i_5_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h2)) 
     address2__15_carry_i_6
-       (.I0(address3[6]),
-        .I1(address3[7]),
+       (.I0(address3[9]),
+        .I1(address3[8]),
         .O(address2__15_carry_i_6_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h8)) 
     address2__15_carry_i_7
-       (.I0(address3[4]),
-        .I1(address3[5]),
+       (.I0(address3[6]),
+        .I1(address3[7]),
         .O(address2__15_carry_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    address2__15_carry_i_8
+       (.I0(address3[5]),
+        .I1(address3[4]),
+        .O(address2__15_carry_i_8_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 address2_carry
        (.CI(1'b0),
         .CO({address2_carry_n_0,address2_carry_n_1,address2_carry_n_2,address2_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({address2_carry_i_1_n_0,address2_carry_i_2_n_0,address2_carry_i_3_n_0,address2_carry_i_4_n_0}),
+        .DI({address3[7],address2_carry_i_1_n_0,address2_carry_i_2_n_0,address2_carry_i_3_n_0}),
         .O(NLW_address2_carry_O_UNCONNECTED[3:0]),
-        .S({address2_carry_i_5_n_0,address2_carry_i_6_n_0,address2_carry_i_7_n_0,address2_carry_i_8_n_0}));
+        .S({address2_carry_i_4_n_0,address2_carry_i_5_n_0,address2_carry_i_6_n_0,address2_carry_i_7_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 address2_carry__0
        (.CI(address2_carry_n_0),
         .CO({address2_carry__0_n_0,address2_carry__0_n_1,address2_carry__0_n_2,address2_carry__0_n_3}),
         .CYINIT(1'b0),
-        .DI({address2_carry__0_i_1_n_0,address2_carry__0_i_2_n_0,address2_carry__0_i_3_n_0,address2_carry__0_i_4_n_0}),
+        .DI({address2_carry__0_i_1_n_0,address3[13],1'b0,1'b0}),
         .O(NLW_address2_carry__0_O_UNCONNECTED[3:0]),
-        .S({address2_carry__0_i_5_n_0,address2_carry__0_i_6_n_0,address2_carry__0_i_7_n_0,address2_carry__0_i_8_n_0}));
+        .S({address2_carry__0_i_2_n_0,address2_carry__0_i_3_n_0,address2_carry__0_i_4_n_0,address2_carry__0_i_5_n_0}));
   LUT2 #(
     .INIT(4'hE)) 
     address2_carry__0_i_1
@@ -279,47 +280,29 @@ module MicroBlaze_AddressFixer_0_0_AddressFixer
         .I1(address3[15]),
         .O(address2_carry__0_i_1_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    address2_carry__0_i_2
-       (.I0(address3[12]),
-        .I1(address3[13]),
-        .O(address2_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    address2_carry__0_i_3
-       (.I0(address3[10]),
-        .I1(address3[11]),
-        .O(address2_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    address2_carry__0_i_4
-       (.I0(address3[8]),
-        .I1(address3[9]),
-        .O(address2_carry__0_i_4_n_0));
-  LUT2 #(
     .INIT(4'h1)) 
-    address2_carry__0_i_5
+    address2_carry__0_i_2
        (.I0(address3[14]),
         .I1(address3[15]),
-        .O(address2_carry__0_i_5_n_0));
+        .O(address2_carry__0_i_2_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
-    address2_carry__0_i_6
+    .INIT(4'h2)) 
+    address2_carry__0_i_3
        (.I0(address3[12]),
         .I1(address3[13]),
-        .O(address2_carry__0_i_6_n_0));
+        .O(address2_carry__0_i_3_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
-    address2_carry__0_i_7
+    .INIT(4'h8)) 
+    address2_carry__0_i_4
        (.I0(address3[10]),
         .I1(address3[11]),
-        .O(address2_carry__0_i_7_n_0));
+        .O(address2_carry__0_i_4_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
-    address2_carry__0_i_8
+    .INIT(4'h8)) 
+    address2_carry__0_i_5
        (.I0(address3[8]),
         .I1(address3[9]),
-        .O(address2_carry__0_i_8_n_0));
+        .O(address2_carry__0_i_5_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 address2_carry__1
        (.CI(address2_carry__0_n_0),
@@ -374,51 +357,45 @@ module MicroBlaze_AddressFixer_0_0_AddressFixer
   LUT2 #(
     .INIT(4'hE)) 
     address2_carry_i_1
-       (.I0(address3[6]),
-        .I1(address3[7]),
+       (.I0(address3[4]),
+        .I1(address3[5]),
         .O(address2_carry_i_1_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     address2_carry_i_2
-       (.I0(address3[4]),
-        .I1(address3[5]),
-        .O(address2_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    address2_carry_i_3
        (.I0(address3[2]),
         .I1(address3[3]),
-        .O(address2_carry_i_3_n_0));
+        .O(address2_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'hD)) 
-    address2_carry_i_4
+    address2_carry_i_3
        (.I0(counter[0]),
         .I1(address3[1]),
+        .O(address2_carry_i_3_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    address2_carry_i_4
+       (.I0(address3[6]),
+        .I1(address3[7]),
         .O(address2_carry_i_4_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     address2_carry_i_5
-       (.I0(address3[6]),
-        .I1(address3[7]),
+       (.I0(address3[4]),
+        .I1(address3[5]),
         .O(address2_carry_i_5_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     address2_carry_i_6
-       (.I0(address3[4]),
-        .I1(address3[5]),
-        .O(address2_carry_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    address2_carry_i_7
        (.I0(address3[2]),
         .I1(address3[3]),
-        .O(address2_carry_i_7_n_0));
+        .O(address2_carry_i_6_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    address2_carry_i_8
+    address2_carry_i_7
        (.I0(counter[0]),
         .I1(address3[1]),
-        .O(address2_carry_i_8_n_0));
+        .O(address2_carry_i_7_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 address3__0_carry
        (.CI(1'b0),

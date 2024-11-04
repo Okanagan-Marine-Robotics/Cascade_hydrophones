@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sat Nov  2 01:43:12 2024
+//Date        : Sun Nov  3 22:58:28 2024
 //Host        : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -313,8 +313,8 @@ module MicroBlaze
         .s_axi_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID),
         .tx(axi_uartlite_0_tx));
   MicroBlaze_blk_mem_gen_0_0 blk_mem_gen_0
-       (.addra(axi_gpio_0_gpio_io_o[13:0]),
-        .addrb(AddressFixer_0_address),
+       (.addra(axi_gpio_0_gpio_io_o[11:0]),
+        .addrb(AddressFixer_0_address[11:0]),
         .clka(microblaze_0_Clk),
         .clkb(microblaze_0_Clk),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),

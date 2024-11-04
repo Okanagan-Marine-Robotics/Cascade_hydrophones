@@ -20,7 +20,6 @@
       "dds_compiler_1": "",
       "xlslice_0": "",
       "AddressFixer_0": "",
-      "blk_mem_gen_0": "",
       "xlconstant_0": "",
       "microblaze_0": "",
       "microblaze_0_local_memory": {
@@ -40,7 +39,8 @@
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "xlconstant_1": ""
+      "xlconstant_1": "",
+      "blk_mem_gen_0": ""
     },
     "ports": {
       "clk": {
@@ -833,30 +833,6 @@
           }
         }
       },
-      "blk_mem_gen_0": {
-        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
-        "ip_revision": "7",
-        "xci_name": "MicroBlaze_blk_mem_gen_0_0",
-        "xci_path": "ip\\MicroBlaze_blk_mem_gen_0_0\\MicroBlaze_blk_mem_gen_0_0.xci",
-        "inst_hier_path": "blk_mem_gen_0",
-        "parameters": {
-          "Enable_A": {
-            "value": "Always_Enabled"
-          },
-          "Enable_B": {
-            "value": "Always_Enabled"
-          },
-          "Memory_Type": {
-            "value": "True_Dual_Port_RAM"
-          },
-          "Write_Depth_A": {
-            "value": "10000"
-          },
-          "use_bram_block": {
-            "value": "Stand_Alone"
-          }
-        }
-      },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "ip_revision": "8",
@@ -1507,6 +1483,33 @@
         "xci_name": "MicroBlaze_xlconstant_1_0",
         "xci_path": "ip\\MicroBlaze_xlconstant_1_0\\MicroBlaze_xlconstant_1_0.xci",
         "inst_hier_path": "xlconstant_1"
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "MicroBlaze_blk_mem_gen_0_0",
+        "xci_path": "ip\\MicroBlaze_blk_mem_gen_0_0\\MicroBlaze_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Assume_Synchronous_Clk": {
+            "value": "true"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Write_Depth_A": {
+            "value": "4001"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1812,7 +1815,6 @@
           "clk1Mhz_0/clk",
           "BlockRam_0/clk",
           "CC_0/clk",
-          "blk_mem_gen_0/clkb",
           "microblaze_0/Clk",
           "microblaze_0_local_memory/LMB_Clk",
           "rst_clk_wiz_0_200M/slowest_sync_clk",
@@ -1822,6 +1824,7 @@
           "microblaze_0_axi_periph/ACLK",
           "axi_uartlite_0/s_axi_aclk",
           "microblaze_0_axi_periph/M01_ACLK",
+          "blk_mem_gen_0/clkb",
           "blk_mem_gen_0/clka"
         ]
       },
