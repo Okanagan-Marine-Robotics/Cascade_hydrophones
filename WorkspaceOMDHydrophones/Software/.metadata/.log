@@ -5330,3 +5330,9 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9: Launch
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-11-04 00:40:54.520
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 00:54:51.463
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-04 00:54:51.466
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-213

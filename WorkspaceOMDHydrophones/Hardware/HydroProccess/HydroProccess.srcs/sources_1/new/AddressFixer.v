@@ -4,6 +4,6 @@ module AddressFixer(
     output [13:0] address
     );
     
-assign address = (counter + 8000 < 4000&&counter + 8000 > 0)?counter + 8000:0;
+assign address = (counter + 2000 < 4000&&counter + 2000 > 0)?counter + 2000:0;
     
 endmodule
