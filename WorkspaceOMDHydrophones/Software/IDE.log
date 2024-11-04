@@ -2442,3 +2442,79 @@ con
 ----------------End of Script----------------
 
 01:17:40 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:28:41 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
+01:28:45 INFO  : Disconnected from the channel tcfchan#2.
+01:28:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:28:46 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:28:49 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:28:49 INFO  : 'jtag frequency' command is executed.
+01:28:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:28:49 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:28:50 INFO  : Context for processor 'microblaze_0' is selected.
+01:28:50 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:28:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:28:50 INFO  : Context for processor 'microblaze_0' is selected.
+01:28:50 INFO  : System reset is completed.
+01:28:53 INFO  : 'after 3000' command is executed.
+01:28:53 INFO  : Context for processor 'microblaze_0' is selected.
+01:28:53 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:28:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
+----------------End of Script----------------
+
+01:28:53 INFO  : Context for processor 'microblaze_0' is selected.
+01:28:53 INFO  : 'con' command is executed.
+01:28:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:28:53 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:29:29 INFO  : Disconnected from the channel tcfchan#3.
+01:29:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:29:30 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:29:32 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:29:32 INFO  : 'jtag frequency' command is executed.
+01:29:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:29:33 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+01:29:33 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:29:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+01:29:33 INFO  : System reset is completed.
+01:29:36 INFO  : 'after 3000' command is executed.
+01:29:36 INFO  : Context for processor 'microblaze_0' is selected.
+01:29:36 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:29:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
+----------------End of Script----------------
+
+01:29:36 INFO  : Context for processor 'microblaze_0' is selected.
+01:29:36 INFO  : 'con' command is executed.
+01:29:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:29:36 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:30:03 INFO  : Disconnected from the channel tcfchan#4.

@@ -22,7 +22,7 @@ while(1){
          data = XGpio_DiscreteRead(&Gpio, 2);
 
          if (data > MaxSignal){
-        	 maxTime = i-2002;
+        	 maxTime = i;
         	 MaxSignal = data;
 
          }
