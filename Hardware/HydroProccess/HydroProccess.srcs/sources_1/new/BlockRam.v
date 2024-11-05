@@ -96,19 +96,19 @@ module BlockRam(
         Ram12[wave3Address]<=inWave3;
     end
     always @(negedge clk)begin
-        waveRef0<=Ram1[waveRef0AddressB];
-        waveRef1<=Ram2[waveRef1AddressB];
-        waveRef2<=Ram3[waveRef2AddressB];
-        waveRef3<=Ram4[waveRef3AddressB];
+        waveRef0<=Ram5[waveRef0AddressB];
+        waveRef1<=Ram6[waveRef1AddressB];
+        waveRef2<=Ram7[waveRef2AddressB];
+        waveRef3<=Ram8[waveRef3AddressB];
         
         wave0<=Ram1[wave0AddressB];
         wave1<=Ram2[wave1AddressB];
         wave2<=Ram3[wave2AddressB];
         wave3<=Ram4[wave3AddressB];
         
-        wave00<=Ram1[wave00AddressB];
-        wave01<=Ram2[wave01AddressB];
-        wave02<=Ram3[wave02AddressB];
-        wave03<=Ram4[wave03AddressB];
+        wave00<=Ram9[wave00AddressB];
+        wave01<=Ram10[wave01AddressB];
+        wave02<=Ram11[wave02AddressB];
+        wave03<=Ram12[wave03AddressB];
     end
  endmodule

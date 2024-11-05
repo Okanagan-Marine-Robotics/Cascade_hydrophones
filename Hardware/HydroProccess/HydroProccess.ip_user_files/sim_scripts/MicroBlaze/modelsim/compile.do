@@ -218,8 +218,16 @@ vlog -work axi_crossbar_v2_1_30  -incr -mfcu  "+incdir+../../../../HydroProccess
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xbar_0/sim/MicroBlaze_xbar_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlconstant_1_0/sim/MicroBlaze_xlconstant_1_0.v" \
-"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_0/sim/MicroBlaze_blk_mem_gen_0_0.v" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_1/sim/MicroBlaze_axi_gpio_0_1.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_1/sim/MicroBlaze_blk_mem_gen_0_1.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_1/sim/MicroBlaze_xlslice_0_1.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_delayTest_0_0/sim/MicroBlaze_delayTest_0_0.v" \
+"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov  4 02:01:46 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  5 02:03:05 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s25" NAME="MicroBlaze" PACKAGE="csga225" SPEEDGRADE="-1"/>
 
@@ -2088,9 +2088,10 @@
         </PORT>
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="delayTest_0" PORT="clk"/>
+            <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2686,7 +2687,6 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
             <CONNECTION INSTANCE="dds_compiler_1" PORT="aclk"/>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
-            <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="microblaze_0" PORT="Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_Clk"/>
@@ -2706,6 +2706,7 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
+            <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2878,7 +2879,7 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
-            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
+            <CONNECTION INSTANCE="delayTest_0" PORT="data_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_data_tvalid" SIGIS="undef"/>
@@ -2925,6 +2926,31 @@
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/delayTest_0" HWVERSION="1.0" INSTANCE="delayTest_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="delayTest" VLNV="xilinx.com:module_ref:delayTest:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_delayTest_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk1Mhz_0_clk1Mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_1_m_axis_data_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dds_compiler_1" PORT="m_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="delayTest_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
     </MODULE>
     <MODULE COREREVISION="25" FULLNAME="/mdm_1" HWVERSION="3.2" INSTANCE="mdm_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="DEBUG" MODTYPE="mdm" VLNV="xilinx.com:ip:mdm:3.2">
       <DOCUMENTS>
@@ -5554,9 +5580,9 @@
             <CONNECTION INSTANCE="BlockRam_0" PORT="wave0Address"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_1_m_axis_data_tdata">
+        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="delayTest_0_data_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds_compiler_1" PORT="m_axis_data_tdata"/>
+            <CONNECTION INSTANCE="delayTest_0" PORT="data_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave1Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser_0_wave1Address">

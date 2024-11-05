@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Mon Nov  4 02:01:45 2024
+//Date        : Tue Nov  5 02:03:05 2024
 //Host        : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=26,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=19,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=16,da_mb_cnt=6,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=19,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=16,da_mb_cnt=6,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (clk,
     led,
@@ -59,14 +59,15 @@ module MicroBlaze
   wire [15:0]CC_0_waveRef3Address;
   wire [35:0]CC_0_xcorr;
   wire [35:0]CC_0_xcorr1;
-  wire Net1;
+  wire Net;
   wire [31:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
   wire axi_uartlite_0_tx;
   wire [31:0]blk_mem_gen_0_douta;
   wire [31:0]blk_mem_gen_1_douta;
   wire clk_1;
-  wire [15:0]dds_compiler_0_m_axis_data_tdata;
+  wire [15:0]dds_compiler_1_m_axis_data_tdata;
+  wire [11:0]delayTest_0_data_out;
   wire mdm_1_debug_sys_rst;
   wire microblaze_0_Clk;
   wire [31:0]microblaze_0_M_AXI_DP_ARADDR;
@@ -220,7 +221,7 @@ module MicroBlaze
         .waveRef3Address(CC_0_waveRef3Address[13:0]));
   MicroBlaze_BlockRam_0_0 BlockRam_0
        (.clk(microblaze_0_Clk),
-        .clk1Mhz(Net1),
+        .clk1Mhz(Net),
         .inWave1(waveParser_0_bufferRef),
         .inWave2(waveParser_0_buffer),
         .inWave3(waveParser_0_buffer1),
@@ -262,7 +263,7 @@ module MicroBlaze
         .waveRef3AddressB(BRAMMUX_0_Ref3Address[11:0]));
   MicroBlaze_CC_0_0 CC_0
        (.clk(microblaze_0_Clk),
-        .clk1Mhz(Net1),
+        .clk1Mhz(Net),
         .count(CC_0_count),
         .wave0(BlockRam_0_wave0),
         .wave00(BlockRam_0_wave00),
@@ -378,13 +379,17 @@ module MicroBlaze
         .web(xlconstant_0_dout));
   MicroBlaze_clk1Mhz_0_0 clk1Mhz_0
        (.clk(microblaze_0_Clk),
-        .clk1Mhz(Net1));
+        .clk1Mhz(Net));
   MicroBlaze_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(clk_1),
         .clk_out1(microblaze_0_Clk));
   MicroBlaze_dds_compiler_0_1 dds_compiler_1
        (.aclk(microblaze_0_Clk),
-        .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
+        .m_axis_data_tdata(dds_compiler_1_m_axis_data_tdata));
+  MicroBlaze_delayTest_0_0 delayTest_0
+       (.clk(Net),
+        .data_in(dds_compiler_1_m_axis_data_tdata[11:0]),
+        .data_out(delayTest_0_data_out));
   MicroBlaze_mdm_1_0 mdm_1
        (.Dbg_Capture_0(microblaze_0_debug_CAPTURE),
         .Dbg_Clk_0(microblaze_0_debug_CLK),
@@ -566,18 +571,18 @@ module MicroBlaze
        (.buffer(waveParser_0_buffer),
         .buffer1(waveParser_0_buffer1),
         .bufferRef(waveParser_0_bufferRef),
-        .clk1Mhz(Net1),
-        .wave(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .clk1Mhz(Net),
+        .wave(dds_compiler_1_m_axis_data_tdata[11:0]),
         .wave00Address(waveParser_0_wave00Address),
         .wave01Address(waveParser_0_wave01Address),
         .wave02Address(waveParser_0_wave02Address),
         .wave03Address(waveParser_0_wave03Address),
         .wave0Address(waveParser_0_wave0Address),
-        .wave1(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .wave1(delayTest_0_data_out),
         .wave1Address(waveParser_0_wave1Address),
         .wave2Address(waveParser_0_wave2Address),
         .wave3Address(waveParser_0_wave3Address),
-        .waveRef(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .waveRef(dds_compiler_1_m_axis_data_tdata[11:0]),
         .waveRef0Address(waveParser_0_waveRef0Address),
         .waveRef1Address(waveParser_0_waveRef1Address),
         .waveRef2Address(waveParser_0_waveRef2Address),
