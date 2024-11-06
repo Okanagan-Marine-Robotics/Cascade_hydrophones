@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov  4 02:01:46 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov  6 01:52:08 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s25" NAME="MicroBlaze" PACKAGE="csga225" SPEEDGRADE="-1"/>
 
@@ -2088,9 +2088,9 @@
         </PORT>
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2686,7 +2686,6 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
             <CONNECTION INSTANCE="dds_compiler_1" PORT="aclk"/>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
-            <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="microblaze_0" PORT="Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_Clk"/>
@@ -2706,6 +2705,7 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
+            <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5623,7 +5623,7 @@
     <MODULE COREREVISION="8" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>

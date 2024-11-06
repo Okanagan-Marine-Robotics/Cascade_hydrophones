@@ -1583,7 +1583,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -1943,9 +1943,9 @@
       "Net1": {
         "ports": [
           "clk1Mhz_0/clk1Mhz",
-          "BlockRam_0/clk1Mhz",
           "waveParser_0/clk1Mhz",
-          "CC_0/clk1Mhz"
+          "CC_0/clk1Mhz",
+          "BlockRam_0/clk1Mhz"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
@@ -2004,7 +2004,6 @@
           "BRAMMUX_0/clk",
           "dds_compiler_1/aclk",
           "clk1Mhz_0/clk",
-          "BlockRam_0/clk",
           "CC_0/clk",
           "microblaze_0/Clk",
           "microblaze_0_local_memory/LMB_Clk",
@@ -2020,7 +2019,8 @@
           "axi_gpio_1/s_axi_aclk",
           "microblaze_0_axi_periph/M02_ACLK",
           "blk_mem_gen_1/clka",
-          "blk_mem_gen_1/clkb"
+          "blk_mem_gen_1/clkb",
+          "BlockRam_0/clk"
         ]
       },
       "reset_rtl_0_1": {

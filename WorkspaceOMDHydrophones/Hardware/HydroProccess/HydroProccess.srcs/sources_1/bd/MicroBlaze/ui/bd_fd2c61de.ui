@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.441942",
-   "Default View_TopLeft":"640,1093",
+   "Default View_TopLeft":"640,122",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
@@ -41,18 +41,18 @@ preplace netloc BRAMMUX_0_Ref2 1 3 1 1150 680n
 preplace netloc BRAMMUX_0_Ref2Address 1 3 2 NJ 960 1880
 preplace netloc BRAMMUX_0_Ref3 1 3 1 1160 740n
 preplace netloc BRAMMUX_0_Ref3Address 1 3 2 NJ 980 1890
-preplace netloc BlockRam_0_wave00 1 3 3 1190 930 NJ 930 2300
-preplace netloc BlockRam_0_wave0 1 3 3 1250 860 NJ 860 2280
-preplace netloc BlockRam_0_wave01 1 3 3 1200 910 NJ 910 2290
-preplace netloc BlockRam_0_wave1 1 3 3 1180 420 1640J 90 2230
-preplace netloc BlockRam_0_wave02 1 3 3 1210 900 NJ 900 2260
-preplace netloc BlockRam_0_wave2 1 3 3 1240 870 NJ 870 2240
-preplace netloc BlockRam_0_wave03 1 3 3 1230 880 NJ 880 2230
+preplace netloc BlockRam_0_wave00 1 3 3 1190 930 NJ 930 2310
+preplace netloc BlockRam_0_wave0 1 3 3 1250 860 NJ 860 2290
+preplace netloc BlockRam_0_wave01 1 3 3 1200 910 NJ 910 2300
+preplace netloc BlockRam_0_wave1 1 3 3 1180 420 1640J 90 2240
+preplace netloc BlockRam_0_wave02 1 3 3 1210 900 NJ 900 2270
+preplace netloc BlockRam_0_wave2 1 3 3 1240 870 NJ 870 2230
+preplace netloc BlockRam_0_wave03 1 3 3 1230 880 NJ 880 2240
 preplace netloc BlockRam_0_wave3 1 3 3 1220 890 NJ 890 2250
-preplace netloc BlockRam_0_waveRef0 1 2 4 590 -20 NJ -20 NJ -20 2240
-preplace netloc BlockRam_0_waveRef1 1 2 4 600 -10 NJ -10 NJ -10 2290
-preplace netloc BlockRam_0_waveRef2 1 2 4 640 400 NJ 400 1620J 100 2260
-preplace netloc BlockRam_0_waveRef3 1 2 4 620 0 NJ 0 NJ 0 2270
+preplace netloc BlockRam_0_waveRef0 1 2 4 590 -20 NJ -20 NJ -20 2230
+preplace netloc BlockRam_0_waveRef1 1 2 4 600 -10 NJ -10 NJ -10 2300
+preplace netloc BlockRam_0_waveRef2 1 2 4 640 400 NJ 400 1620J 100 2270
+preplace netloc BlockRam_0_waveRef3 1 2 4 620 0 NJ 0 NJ 0 2280
 preplace netloc CC_0_count 1 4 1 1750 800n
 preplace netloc CC_0_wave00Address 1 4 1 N 540
 preplace netloc CC_0_wave01Address 1 4 1 N 600
@@ -67,14 +67,17 @@ preplace netloc CC_0_waveRef1Address 1 2 3 650 440 NJ 440 1600
 preplace netloc CC_0_waveRef2Address 1 2 3 620 1060 NJ 1060 1600
 preplace netloc CC_0_waveRef3Address 1 2 3 640 1050 NJ 1050 1590
 preplace netloc CC_0_xcorr 1 4 1 1770 740n
+preplace netloc CC_0_xcorr1 1 4 1 1740 760n
 preplace netloc Net1 1 3 2 1130 410 1670
 preplace netloc axi_gpio_0_gpio_io_o 1 5 1 2240 1030n
-preplace netloc axi_uartlite_0_tx 1 5 2 NJ 2220 2540J
-preplace netloc blk_mem_gen_0_douta 1 5 1 2340 1070n
+preplace netloc axi_gpio_1_gpio_io_o 1 5 1 2340 1540n
+preplace netloc axi_uartlite_0_tx 1 5 2 2310J 1980 NJ
+preplace netloc blk_mem_gen_0_douta 1 5 1 2320 1070n
+preplace netloc blk_mem_gen_1_douta 1 5 1 2300 1580n
 preplace netloc clk_1 1 0 1 NJ 1570
 preplace netloc dds_compiler_0_m_axis_data_tdata 1 3 1 1110 170n
 preplace netloc mdm_1_debug_sys_rst 1 1 2 230 1550 570
-preplace netloc microblaze_0_Clk 1 1 5 220 1540 610 630 1170 970 1830 1150 2310
+preplace netloc microblaze_0_Clk 1 1 5 220 1540 610 630 1170 970 1830 1150 2290
 preplace netloc reset_rtl_0_1 1 0 2 NJ 1630 NJ
 preplace netloc rst_clk_wiz_0_200M_bus_struct_reset 1 2 2 NJ 1630 1180
 preplace netloc rst_clk_wiz_0_200M_mb_reset 1 2 1 640 1560n
@@ -95,22 +98,19 @@ preplace netloc waveParser_0_waveRef0Address 1 4 1 1870 120n
 preplace netloc waveParser_0_waveRef1Address 1 4 1 1650 180n
 preplace netloc waveParser_0_waveRef2Address 1 4 1 1590 240n
 preplace netloc waveParser_0_waveRef3Address 1 4 1 1660 300n
-preplace netloc xlconstant_0_dout 1 5 1 2300 990n
-preplace netloc xlconstant_1_dout 1 6 1 2550 2070n
-preplace netloc xlslice_0_Dout 1 5 1 2320 1150n
-preplace netloc axi_gpio_1_gpio_io_o 1 5 1 2340 1540n
-preplace netloc blk_mem_gen_1_douta 1 5 1 2320 1580n
-preplace netloc CC_0_xcorr1 1 4 1 1740 760n
-preplace netloc xlslice_1_Dout 1 5 1 2250 1690n
+preplace netloc xlconstant_0_dout 1 5 1 2280 990n
+preplace netloc xlconstant_1_dout 1 6 1 2540 2070n
+preplace netloc xlslice_0_Dout 1 5 1 2300 1150n
+preplace netloc xlslice_1_Dout 1 5 1 2240 1690n
 preplace netloc microblaze_0_M_AXI_DP 1 3 1 1110 1230n
 preplace netloc microblaze_0_axi_periph_M00_AXI 1 4 1 1730 1310n
 preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 1 1590 1330n
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 1 1730 1350n
 preplace netloc microblaze_0_debug 1 2 1 580 1460n
 preplace netloc microblaze_0_dlmb_1 1 3 1 1130 1510n
 preplace netloc microblaze_0_ilmb_1 1 3 1 1120 1530n
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 1 1730 1350n
 levelinfo -pg 1 -20 110 400 880 1420 2060 2440 2570
-pagesize -pg 1 -db -bbox -sgen -100 -30 2670 2350
+pagesize -pg 1 -db -bbox -sgen -110 -30 2680 2350
 "
 }
 {
