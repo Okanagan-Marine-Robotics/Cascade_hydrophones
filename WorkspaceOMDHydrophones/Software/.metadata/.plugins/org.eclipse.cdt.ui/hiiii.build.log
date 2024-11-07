@@ -1,21 +1,13 @@
-11:35:31 **** Incremental Build of configuration Debug for project hiiii ****
+03:11:52 **** Incremental Build of configuration Debug for project hiiii ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:16:19: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
-   16 |         maxTime = delayGetter(maxTime);
+../src/helloworld.c:17:19: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
+   17 |         maxTime = delayGetter(maxTime);
       |                   ^~~~~~~~~~~
-../src/helloworld.c:16:19: warning: 'maxTime' is used uninitialized [-Wuninitialized]
-   16 |         maxTime = delayGetter(maxTime);
-      |                   ^~~~~~~~~~~~~~~~~~~~
 'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
 ' '
 'Building target: hiiii.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -25,9 +17,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydroph
 'Invoking: MicroBlaze Print Size'
 mb-size hiiii.elf  |tee "hiiii.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   7140	    304	   3116	  10560	   2940	hiiii.elf
+   6740	    304	   3116	  10160	   27b0	hiiii.elf
 'Finished building: hiiii.elf.size'
 ' '
 
-11:35:32 Build Finished (took 790ms)
+03:11:53 Build Finished (took 545ms)
 

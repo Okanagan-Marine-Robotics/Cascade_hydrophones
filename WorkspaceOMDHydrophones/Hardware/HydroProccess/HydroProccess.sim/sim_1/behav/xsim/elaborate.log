@@ -6,12 +6,12 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sim_1/new/TestBench.v:12]
-WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:293]
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:331]
-WARNING: [VRFC 10-5021] port 'interrupt_ack' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:345]
-WARNING: [VRFC 10-5021] port 'peripheral_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:483]
-WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1381]
-WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1427]
+WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:338]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:386]
+WARNING: [VRFC 10-5021] port 'interrupt_ack' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:404]
+WARNING: [VRFC 10-5021] port 'peripheral_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:561]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1722]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1768]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -69,6 +69,7 @@ Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sy
 Compiling architecture imp of entity axi_gpio_v2_0_31.GPIO_Core [\GPIO_Core(c_aw=9,c_is_dual=1,c_...]
 Compiling architecture imp of entity axi_gpio_v2_0_31.axi_gpio [\axi_gpio(c_family="spartan7",c_...]
 Compiling architecture microblaze_axi_gpio_0_0_arch of entity xil_defaultlib.MicroBlaze_axi_gpio_0_0 [microblaze_axi_gpio_0_0_default]
+Compiling architecture microblaze_axi_gpio_0_1_arch of entity xil_defaultlib.MicroBlaze_axi_gpio_0_1 [microblaze_axi_gpio_0_1_default]
 Compiling architecture rtl of entity axi_uartlite_v2_0_33.baudrate [\baudrate(c_ratio=109)\]
 Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
 Compiling architecture imp of entity lib_srl_fifo_v1_0_3.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
@@ -89,6 +90,7 @@ Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_7.blk_mem_axi_regs_fwd_v8_4(C_DATA...
 Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7(C_FAMILY="spa...
 Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_0
+Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_1
 Compiling module xil_defaultlib.clk1Mhz
 Compiling module xil_defaultlib.MicroBlaze_clk1Mhz_0_0
 Compiling module unisims_ver.IBUF
@@ -115,6 +117,8 @@ Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23
 Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23_viv [\dds_compiler_v6_0_23_viv(c_xdev...]
 Compiling architecture xilinx of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23 [\dds_compiler_v6_0_23(c_xdevicef...]
 Compiling architecture microblaze_dds_compiler_0_1_arch of entity xil_defaultlib.MicroBlaze_dds_compiler_0_1 [microblaze_dds_compiler_0_1_defa...]
+Compiling module xil_defaultlib.delayTest
+Compiling module xil_defaultlib.MicroBlaze_delayTest_0_0
 Compiling architecture bscane2_v of entity unisim.BSCANE2 [\BSCANE2(jtag_chain=2)(1,5)\]
 Compiling architecture imp of entity mdm_v3_2_25.MB_BSCANE2 [\MB_BSCANE2(c_target=spartan7,jt...]
 Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="10")(0,1)\]
@@ -244,9 +248,11 @@ Compiling architecture imp of entity microblaze_v11_0_12.MicroBlaze [\MicroBlaze
 Compiling architecture microblaze_microblaze_0_0_arch of entity xil_defaultlib.MicroBlaze_microblaze_0_0 [microblaze_microblaze_0_0_defaul...]
 Compiling module xil_defaultlib.m00_couplers_imp_10RI9FT
 Compiling module xil_defaultlib.m01_couplers_imp_1QOHDSF
+Compiling module xil_defaultlib.m02_couplers_imp_LQ6KZP
 Compiling module xil_defaultlib.s00_couplers_imp_1S13O20
 Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_addr_arbite...
 Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_carry_...
+Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_compar...
 Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_compar...
 Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_compar...
 Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_addr_decode...
@@ -295,6 +301,7 @@ Compiling module xil_defaultlib.MicroBlaze_xlconstant_0_0
 Compiling module xil_defaultlib.MicroBlaze_xlconstant_1_0
 Compiling module xlslice_v1_0_3.xlslice_v1_0_3_xlslice(DIN_WIDTH...
 Compiling module xil_defaultlib.MicroBlaze_xlslice_0_0
+Compiling module xil_defaultlib.MicroBlaze_xlslice_0_1
 Compiling module xil_defaultlib.MicroBlaze
 Compiling module xil_defaultlib.MicroBlaze_wrapper
 Compiling module xil_defaultlib.TestBench

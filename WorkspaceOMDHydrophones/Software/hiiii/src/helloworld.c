@@ -12,11 +12,12 @@ int main() {
     int maxTime;
 
 
+while(1){
 
 	maxTime = delayGetter(maxTime);
 
     xil_printf("%d\n", maxTime);
-
+}
     cleanup_platform();
     return 0;
 }
@@ -24,7 +25,7 @@ int main() {
 int delayGetter (int delay){
 
     XGpio Gpio;
-    XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+    XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_1_DEVICE_ID);
 
     int i = 1;
     int maxTime;
@@ -34,7 +35,7 @@ int delayGetter (int delay){
         XGpio_DiscreteWrite(&Gpio, 1, i);
 
          data = XGpio_DiscreteRead(&Gpio, 2);
-         xil_printf("%d\n", data);
+
          if (data > MaxSignal){
         	 maxTime = i-2002;
         	 MaxSignal = data;
@@ -43,6 +44,8 @@ int delayGetter (int delay){
         i++;
 
     }
-    xil_printf("%d\n", i);
+    xil_printf("%d\n", MaxSignal);
 	return maxTime;
 }
+
+

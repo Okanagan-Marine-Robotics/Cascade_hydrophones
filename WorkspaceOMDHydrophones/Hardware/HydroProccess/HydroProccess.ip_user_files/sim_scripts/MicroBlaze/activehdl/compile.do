@@ -221,8 +221,16 @@ vlog -work axi_crossbar_v2_1_30  -v2k5 "+incdir+../../../../HydroProccess.gen/so
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" -l xpm -l xil_defaultlib -l xbip_utils_v3_0_11 -l axi_utils_v2_0_7 -l xbip_pipe_v3_0_7 -l xbip_bram18k_v3_0_7 -l mult_gen_v12_0_19 -l xbip_dsp48_wrapper_v3_0_5 -l xbip_dsp48_addsub_v3_0_7 -l xbip_dsp48_multadd_v3_0_7 -l dds_compiler_v6_0_23 -l xlslice_v1_0_3 -l xlconstant_v1_1_8 -l microblaze_v11_0_12 -l lmb_v10_v3_0_13 -l lmb_bram_if_cntlr_v4_0_23 -l blk_mem_gen_v8_4_7 -l axi_lite_ipif_v3_0_4 -l mdm_v3_2_25 -l lib_cdc_v1_0_2 -l proc_sys_reset_v5_0_14 -l lib_pkg_v1_0_3 -l lib_srl_fifo_v1_0_3 -l axi_uartlite_v2_0_33 -l interrupt_control_v3_1_5 -l axi_gpio_v2_0_31 -l generic_baseblocks_v2_1_1 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xbar_0/sim/MicroBlaze_xbar_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlconstant_1_0/sim/MicroBlaze_xlconstant_1_0.v" \
-"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_0/sim/MicroBlaze_blk_mem_gen_0_0.v" \
+
+vcom -work xil_defaultlib -93  \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_1/sim/MicroBlaze_axi_gpio_0_1.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/c2c6" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" -l xpm -l xil_defaultlib -l xbip_utils_v3_0_11 -l axi_utils_v2_0_7 -l xbip_pipe_v3_0_7 -l xbip_bram18k_v3_0_7 -l mult_gen_v12_0_19 -l xbip_dsp48_wrapper_v3_0_5 -l xbip_dsp48_addsub_v3_0_7 -l xbip_dsp48_multadd_v3_0_7 -l dds_compiler_v6_0_23 -l xlslice_v1_0_3 -l xlconstant_v1_1_8 -l microblaze_v11_0_12 -l lmb_v10_v3_0_13 -l lmb_bram_if_cntlr_v4_0_23 -l blk_mem_gen_v8_4_7 -l axi_lite_ipif_v3_0_4 -l mdm_v3_2_25 -l lib_cdc_v1_0_2 -l proc_sys_reset_v5_0_14 -l lib_pkg_v1_0_3 -l lib_srl_fifo_v1_0_3 -l axi_uartlite_v2_0_33 -l interrupt_control_v3_1_5 -l axi_gpio_v2_0_31 -l generic_baseblocks_v2_1_1 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 \
+"../../../bd/MicroBlaze/ip/MicroBlaze_blk_mem_gen_0_1/sim/MicroBlaze_blk_mem_gen_0_1.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_1/sim/MicroBlaze_xlslice_0_1.v" \
+"../../../bd/MicroBlaze/sim/MicroBlaze.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_delayTest_0_0/sim/MicroBlaze_delayTest_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

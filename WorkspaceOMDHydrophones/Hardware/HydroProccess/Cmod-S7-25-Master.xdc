@@ -18,7 +18,7 @@ set_property -dict { PACKAGE_PIN F2    IOSTANDARD LVCMOS33 } [get_ports { led0_r
 
 # 4 LEDs
 set_property -dict { PACKAGE_PIN E2    IOSTANDARD LVCMOS33 } [get_ports { led }]; #IO_L8P_T1_34 Sch=led[1]
-set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { led[1] }]; #IO_L16P_T2_34 Sch=led[2]
+set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { led1 }]; #IO_L16P_T2_34 Sch=led[2]
 set_property -dict { PACKAGE_PIN J1    IOSTANDARD LVCMOS33 } [get_ports { led[2] }]; #IO_L16N_T2_34 Sch=led[3]
 set_property -dict { PACKAGE_PIN E1    IOSTANDARD LVCMOS33 } [get_ports { led[3] }]; #IO_L8N_T1_34 Sch=led[4]
 
