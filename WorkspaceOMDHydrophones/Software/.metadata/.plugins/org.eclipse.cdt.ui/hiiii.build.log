@@ -1,4 +1,4 @@
-02:02:14 **** Build of configuration Debug for project hiiii ****
+11:35:31 **** Incremental Build of configuration Debug for project hiiii ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -29,5 +29,5 @@ mb-size hiiii.elf  |tee "hiiii.elf.size"
 'Finished building: hiiii.elf.size'
 ' '
 
-02:02:15 Build Finished (took 846ms)
+11:35:32 Build Finished (took 790ms)
 

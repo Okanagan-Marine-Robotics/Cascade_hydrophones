@@ -43,6 +43,6 @@ int delayGetter (int delay){
         i++;
 
     }
-    xil_printf("%d\n", MaxSignal);
+    xil_printf("%d\n", i);
 	return maxTime;
 }

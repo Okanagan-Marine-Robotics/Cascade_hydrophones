@@ -106,9 +106,9 @@ module BlockRam(
         wave2<=Ram7[wave2AddressB];
         wave3<=Ram8[wave3AddressB];
         
-        wave00<=Ram1[wave00AddressB];
-        wave01<=Ram2[wave01AddressB];
-        wave02<=Ram3[wave02AddressB];
-        wave03<=Ram4[wave03AddressB];
+        wave00<=Ram9[wave00AddressB];
+        wave01<=Ram10[wave01AddressB];
+        wave02<=Ram11[wave02AddressB];
+        wave03<=Ram12[wave03AddressB];
     end
  endmodule
