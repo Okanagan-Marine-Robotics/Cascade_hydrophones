@@ -1,6 +1,6 @@
 Nothing to build in platform 'MicroBlaze_wrapper'
 
-03:11:52 **** Incremental Build of configuration Debug for project hiiii ****
+18:16:16 **** Incremental Build of configuration Debug for project hiiii ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -19,6 +19,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydroph
 'Invoking: MicroBlaze Print Size'
 mb-size hiiii.elf  |tee "hiiii.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   6740	    304	   3116	  10160	   27b0	hiiii.elf
+   6716	    304	   3116	  10136	   2798	hiiii.elf
 'Finished building: hiiii.elf.size'
 ' '

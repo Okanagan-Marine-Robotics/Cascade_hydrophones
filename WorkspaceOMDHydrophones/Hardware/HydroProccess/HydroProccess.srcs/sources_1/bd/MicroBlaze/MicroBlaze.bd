@@ -826,6 +826,10 @@
           "boundary_crc": "0x0"
         },
         "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
           "counter": {
             "direction": "I",
             "left": "15",
@@ -2056,7 +2060,8 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "blk_mem_gen_1/clka",
           "blk_mem_gen_1/clkb",
-          "BlockRam_0/clk"
+          "BlockRam_0/clk",
+          "AddressFixer_0/clk"
         ]
       },
       "reset_rtl_0_1": {
