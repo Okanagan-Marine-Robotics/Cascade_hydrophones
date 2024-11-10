@@ -24,6 +24,3 @@ platform generate -domains
 platform active {MicroBlaze_wrapper}
 platform config -updatehw {C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
 platform generate -domains standalone_microblaze_0 
-platform active {MicroBlaze_wrapper}
-platform config -updatehw {C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
-platform generate -domains standalone_microblaze_0 

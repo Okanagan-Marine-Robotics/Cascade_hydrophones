@@ -25,7 +25,7 @@ while(1){
 int delayGetter (int delay){
 
     XGpio Gpio;
-    XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+    XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_1_DEVICE_ID);
 
     int i = 1;
     int maxTime;
@@ -44,7 +44,7 @@ int delayGetter (int delay){
         i++;
 
     }
-    //xil_printf("%d\n", MaxSignal);
+    xil_printf("%d\n", MaxSignal);
 	return maxTime;
 }
 
