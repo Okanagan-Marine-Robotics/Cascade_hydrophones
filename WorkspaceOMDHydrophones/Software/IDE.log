@@ -1,37 +1,38 @@
-02:00:00 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
-02:00:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
-02:00:05 INFO  : XSCT server has started successfully.
-02:00:05 INFO  : Successfully done setting XSCT server connection channel  
-02:00:05 INFO  : plnx-install-location is set to ''
-02:00:05 INFO  : Successfully done setting workspace for the tool. 
-02:00:12 INFO  : Registering command handlers for Vitis TCF services
-02:00:12 INFO  : Successfully done query RDI_DATADIR 
-02:00:13 INFO  : Platform repository initialization has completed.
-02:01:00 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
-02:01:00 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
-02:01:00 WARN  : An unexpected exception occurred in the module 'platform project logging'
-02:01:01 INFO  : Platform 'MicroBlaze_wrapper' is added to custom repositories.
-02:01:03 INFO  : Platform 'MicroBlaze_wrapper' is added to custom repositories.
-02:02:13 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
-02:02:13 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
-02:02:14 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-02:02:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-02:02:33 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-02:02:33 INFO  : 'jtag frequency' command is executed.
-02:02:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-02:02:34 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-02:02:34 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:34 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-02:02:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-02:02:34 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:34 INFO  : System reset is completed.
-02:02:37 INFO  : 'after 3000' command is executed.
-02:02:37 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:37 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-02:02:37 INFO  : ----------------XSDB Script----------------
+01:07:54 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
+01:07:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
+01:07:56 INFO  : Registering command handlers for Vitis TCF services
+01:07:57 INFO  : Platform repository initialization has completed.
+01:07:59 INFO  : XSCT server has started successfully.
+01:08:02 INFO  : Successfully done setting XSCT server connection channel  
+01:08:02 INFO  : plnx-install-location is set to ''
+01:08:02 INFO  : Successfully done query RDI_DATADIR 
+01:08:02 INFO  : Successfully done setting workspace for the tool. 
+01:08:54 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+01:08:54 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:08:54 WARN  : An unexpected exception occurred in the module 'platform project logging'
+01:08:55 INFO  : Platform 'MicroBlaze_wrapper' is added to custom repositories.
+01:08:58 INFO  : Platform 'MicroBlaze_wrapper' is added to custom repositories.
+01:11:15 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+01:11:15 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:11:16 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
+01:11:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:11:25 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:11:26 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:11:26 INFO  : 'jtag frequency' command is executed.
+01:11:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:11:27 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:11:27 INFO  : Context for processor 'microblaze_0' is selected.
+01:11:27 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:11:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:11:27 INFO  : Context for processor 'microblaze_0' is selected.
+01:11:27 INFO  : System reset is completed.
+01:11:30 INFO  : 'after 3000' command is executed.
+01:11:30 INFO  : Context for processor 'microblaze_0' is selected.
+01:11:30 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:11:30 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
 configparams mdm-detect-bscan-mask 2
@@ -39,35 +40,46 @@ targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 rst -system
 after 3000
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
 ----------------End of Script----------------
 
-02:02:37 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:37 INFO  : 'con' command is executed.
-02:02:37 INFO  : ----------------XSDB Script (After Launch)----------------
+01:11:31 INFO  : Context for processor 'microblaze_0' is selected.
+01:11:31 INFO  : 'con' command is executed.
+01:11:31 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 con
 ----------------End of Script----------------
 
-02:02:37 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-02:02:41 INFO  : Disconnected from the channel tcfchan#2.
-02:02:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-02:02:42 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-02:02:42 INFO  : 'jtag frequency' command is executed.
-02:02:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-02:02:43 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-02:02:43 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:43 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-02:02:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-02:02:43 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:43 INFO  : System reset is completed.
-02:02:46 INFO  : 'after 3000' command is executed.
-02:02:46 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:46 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-02:02:46 INFO  : ----------------XSDB Script----------------
+01:11:31 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:28:58 INFO  : Disconnected from the channel tcfchan#2.
+01:43:00 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
+01:43:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
+01:43:02 INFO  : XSCT server has started successfully.
+01:43:03 INFO  : Successfully done setting XSCT server connection channel  
+01:43:03 INFO  : plnx-install-location is set to ''
+01:43:03 INFO  : Successfully done setting workspace for the tool. 
+01:43:03 INFO  : Successfully done query RDI_DATADIR 
+01:43:03 INFO  : Registering command handlers for Vitis TCF services
+01:43:04 INFO  : Platform repository initialization has completed.
+01:43:10 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
+01:43:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:43:14 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:43:15 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:43:15 INFO  : 'jtag frequency' command is executed.
+01:43:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:43:16 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:43:16 INFO  : Context for processor 'microblaze_0' is selected.
+01:43:16 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:43:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:43:16 INFO  : Context for processor 'microblaze_0' is selected.
+01:43:16 INFO  : System reset is completed.
+01:43:19 INFO  : 'after 3000' command is executed.
+01:43:19 INFO  : Context for processor 'microblaze_0' is selected.
+01:43:19 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:43:19 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
 configparams mdm-detect-bscan-mask 2
@@ -75,52 +87,39 @@ targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 rst -system
 after 3000
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
 ----------------End of Script----------------
 
-02:02:47 INFO  : Context for processor 'microblaze_0' is selected.
-02:02:47 INFO  : 'con' command is executed.
-02:02:47 INFO  : ----------------XSDB Script (After Launch)----------------
+01:43:19 INFO  : Context for processor 'microblaze_0' is selected.
+01:43:19 INFO  : 'con' command is executed.
+01:43:19 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 con
 ----------------End of Script----------------
 
-02:02:47 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-02:06:32 INFO  : Disconnected from the channel tcfchan#3.
-11:33:39 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
-11:33:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
-11:33:42 INFO  : Registering command handlers for Vitis TCF services
-11:33:43 INFO  : Platform repository initialization has completed.
-11:33:44 INFO  : XSCT server has started successfully.
-11:33:44 INFO  : plnx-install-location is set to ''
-11:33:44 INFO  : Successfully done setting XSCT server connection channel  
-11:33:47 INFO  : Successfully done setting workspace for the tool. 
-11:33:47 INFO  : Successfully done query RDI_DATADIR 
-11:34:14 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
-11:34:24 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
-11:34:24 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
-11:35:06 INFO  : The hardware specification used by project 'hiiii' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
-11:35:06 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
-11:35:06 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream\MicroBlaze_wrapper.mmi' stored in project is removed.
-11:35:06 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream' in project 'hiiii'.
-11:35:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-11:35:06 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-11:35:07 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-11:35:07 INFO  : 'jtag frequency' command is executed.
-11:35:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-11:35:08 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-11:35:08 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:08 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-11:35:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-11:35:08 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:08 INFO  : System reset is completed.
-11:35:11 INFO  : 'after 3000' command is executed.
-11:35:11 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:11 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-11:35:11 INFO  : ----------------XSDB Script----------------
+01:43:19 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:45:56 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
+01:46:08 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+01:46:08 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:46:13 INFO  : Disconnected from the channel tcfchan#1.
+01:46:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:46:14 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:46:15 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:46:15 INFO  : 'jtag frequency' command is executed.
+01:46:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:46:16 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:46:16 INFO  : Context for processor 'microblaze_0' is selected.
+01:46:16 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:46:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:46:16 INFO  : Context for processor 'microblaze_0' is selected.
+01:46:16 INFO  : System reset is completed.
+01:46:19 INFO  : 'after 3000' command is executed.
+01:46:19 INFO  : Context for processor 'microblaze_0' is selected.
+01:46:19 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:46:19 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
 configparams mdm-detect-bscan-mask 2
@@ -128,36 +127,46 @@ targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 rst -system
 after 3000
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
 ----------------End of Script----------------
 
-11:35:12 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:12 INFO  : 'con' command is executed.
-11:35:12 INFO  : ----------------XSDB Script (After Launch)----------------
+01:46:19 INFO  : Context for processor 'microblaze_0' is selected.
+01:46:19 INFO  : 'con' command is executed.
+01:46:19 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 con
 ----------------End of Script----------------
 
-11:35:12 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-11:35:17 INFO  : Disconnected from the channel tcfchan#2.
-11:35:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-11:35:18 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-11:35:21 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-11:35:21 INFO  : 'jtag frequency' command is executed.
-11:35:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-11:35:22 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-11:35:22 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:22 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-11:35:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-11:35:22 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:22 INFO  : System reset is completed.
-11:35:25 INFO  : 'after 3000' command is executed.
-11:35:25 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:25 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-11:35:25 INFO  : ----------------XSDB Script----------------
+01:46:19 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:47:43 INFO  : Disconnected from the channel tcfchan#3.
+01:55:55 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
+01:55:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
+01:55:57 INFO  : XSCT server has started successfully.
+01:55:58 INFO  : Successfully done setting XSCT server connection channel  
+01:55:58 INFO  : plnx-install-location is set to ''
+01:55:58 INFO  : Successfully done query RDI_DATADIR 
+01:55:58 INFO  : Successfully done setting workspace for the tool. 
+01:55:58 INFO  : Registering command handlers for Vitis TCF services
+01:55:59 INFO  : Platform repository initialization has completed.
+01:56:00 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
+01:56:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:56:15 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:56:17 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:56:17 INFO  : 'jtag frequency' command is executed.
+01:56:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:56:18 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:56:18 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:18 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:56:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:56:18 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:18 INFO  : System reset is completed.
+01:56:21 INFO  : 'after 3000' command is executed.
+01:56:21 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:21 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:56:21 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
 configparams mdm-detect-bscan-mask 2
@@ -165,37 +174,43 @@ targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 rst -system
 after 3000
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
 ----------------End of Script----------------
 
-11:35:25 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:25 INFO  : 'con' command is executed.
-11:35:25 INFO  : ----------------XSDB Script (After Launch)----------------
+01:56:21 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:21 INFO  : 'con' command is executed.
+01:56:21 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 con
 ----------------End of Script----------------
 
-11:35:25 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-11:35:31 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-11:35:36 INFO  : Disconnected from the channel tcfchan#3.
-11:35:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-11:35:37 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-11:35:38 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-11:35:38 INFO  : 'jtag frequency' command is executed.
-11:35:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-11:35:39 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-11:35:39 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:39 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-11:35:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-11:35:39 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:39 INFO  : System reset is completed.
-11:35:42 INFO  : 'after 3000' command is executed.
-11:35:42 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:42 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-11:35:42 INFO  : ----------------XSDB Script----------------
+01:56:21 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:56:27 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
+01:56:40 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+01:56:40 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:56:43 INFO  : Disconnected from the channel tcfchan#1.
+01:56:44 INFO  : The hardware specification used by project 'HelloWorld' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:56:44 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
+01:56:44 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld\_ide\bitstream\MicroBlaze_wrapper.mmi' stored in project is removed.
+01:56:44 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld\_ide\bitstream' in project 'HelloWorld'.
+01:56:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:56:44 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:56:45 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:56:45 INFO  : 'jtag frequency' command is executed.
+01:56:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:56:46 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:56:46 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:46 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:56:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:56:46 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:46 INFO  : System reset is completed.
+01:56:49 INFO  : 'after 3000' command is executed.
+01:56:49 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:49 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:56:49 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
 configparams mdm-detect-bscan-mask 2
@@ -203,53 +218,37 @@ targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 rst -system
 after 3000
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
 ----------------End of Script----------------
 
-11:35:42 INFO  : Context for processor 'microblaze_0' is selected.
-11:35:42 INFO  : 'con' command is executed.
-11:35:42 INFO  : ----------------XSDB Script (After Launch)----------------
+01:56:49 INFO  : Context for processor 'microblaze_0' is selected.
+01:56:49 INFO  : 'con' command is executed.
+01:56:49 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 con
 ----------------End of Script----------------
 
-11:35:42 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-11:36:45 INFO  : Disconnected from the channel tcfchan#4.
-03:00:59 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
-03:01:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
-03:01:04 INFO  : Registering command handlers for Vitis TCF services
-03:01:05 INFO  : Platform repository initialization has completed.
-03:01:06 INFO  : XSCT server has started successfully.
-03:01:09 INFO  : Successfully done setting XSCT server connection channel  
-03:01:09 INFO  : plnx-install-location is set to ''
-03:01:09 INFO  : Successfully done query RDI_DATADIR 
-03:01:09 INFO  : Successfully done setting workspace for the tool. 
-03:01:32 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
-03:01:48 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
-03:01:48 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
-03:01:49 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-03:01:54 INFO  : The hardware specification used by project 'hiiii' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
-03:01:54 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
-03:01:54 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream\MicroBlaze_wrapper.mmi' stored in project is removed.
-03:01:54 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream' in project 'hiiii'.
-03:01:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-03:01:54 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-03:01:56 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-03:01:56 INFO  : 'jtag frequency' command is executed.
-03:01:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-03:01:57 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-03:01:57 INFO  : Context for processor 'microblaze_0' is selected.
-03:01:57 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-03:01:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-03:01:57 INFO  : Context for processor 'microblaze_0' is selected.
-03:01:57 INFO  : System reset is completed.
-03:02:00 INFO  : 'after 3000' command is executed.
-03:02:00 INFO  : Context for processor 'microblaze_0' is selected.
-03:02:00 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-03:02:00 INFO  : ----------------XSDB Script----------------
+01:56:49 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:59:01 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
+01:59:04 INFO  : Disconnected from the channel tcfchan#3.
+01:59:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:59:05 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
+01:59:06 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
+01:59:06 INFO  : 'jtag frequency' command is executed.
+01:59:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
+01:59:07 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:59:07 INFO  : Context for processor 'microblaze_0' is selected.
+01:59:07 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:59:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:59:07 INFO  : Context for processor 'microblaze_0' is selected.
+01:59:07 INFO  : System reset is completed.
+01:59:10 INFO  : 'after 3000' command is executed.
+01:59:10 INFO  : Context for processor 'microblaze_0' is selected.
+01:59:10 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'microblaze_0'.
+01:59:10 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/_ide/bitstream/MicroBlaze_wrapper.bit
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
 configparams mdm-detect-bscan-mask 2
@@ -257,322 +256,15 @@ targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 rst -system
 after 3000
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/HelloWorld/Debug/HelloWorld.elf
 ----------------End of Script----------------
 
-03:02:00 INFO  : Context for processor 'microblaze_0' is selected.
-03:02:00 INFO  : 'con' command is executed.
-03:02:00 INFO  : ----------------XSDB Script (After Launch)----------------
+01:59:10 INFO  : Context for processor 'microblaze_0' is selected.
+01:59:10 INFO  : 'con' command is executed.
+01:59:10 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 con
 ----------------End of Script----------------
 
-03:02:00 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-03:09:37 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-03:09:49 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-03:09:52 INFO  : Disconnected from the channel tcfchan#2.
-03:09:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-03:09:53 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-03:09:54 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-03:09:54 INFO  : 'jtag frequency' command is executed.
-03:09:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-03:09:55 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-03:09:55 INFO  : Context for processor 'microblaze_0' is selected.
-03:09:55 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-03:09:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-03:09:55 INFO  : Context for processor 'microblaze_0' is selected.
-03:09:55 INFO  : System reset is completed.
-03:09:58 INFO  : 'after 3000' command is executed.
-03:09:58 INFO  : Context for processor 'microblaze_0' is selected.
-03:09:58 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-03:09:58 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
-----------------End of Script----------------
-
-03:09:58 INFO  : Context for processor 'microblaze_0' is selected.
-03:09:58 INFO  : 'con' command is executed.
-03:09:58 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-03:09:58 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-03:10:38 INFO  : Disconnected from the channel tcfchan#3.
-03:10:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-03:10:39 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-03:10:40 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-03:10:40 INFO  : 'jtag frequency' command is executed.
-03:10:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-03:10:41 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-03:10:41 INFO  : Context for processor 'microblaze_0' is selected.
-03:10:41 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-03:10:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-03:10:41 INFO  : Context for processor 'microblaze_0' is selected.
-03:10:41 INFO  : System reset is completed.
-03:10:44 INFO  : 'after 3000' command is executed.
-03:10:44 INFO  : Context for processor 'microblaze_0' is selected.
-03:10:44 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-03:10:44 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
-----------------End of Script----------------
-
-03:10:45 INFO  : Context for processor 'microblaze_0' is selected.
-03:10:45 INFO  : 'con' command is executed.
-03:10:45 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-03:10:45 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-03:11:52 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-03:11:56 INFO  : Disconnected from the channel tcfchan#4.
-03:11:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-03:11:57 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-03:11:58 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-03:11:58 INFO  : 'jtag frequency' command is executed.
-03:11:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-03:11:59 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-03:11:59 INFO  : Context for processor 'microblaze_0' is selected.
-03:11:59 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-03:11:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-03:11:59 INFO  : Context for processor 'microblaze_0' is selected.
-03:11:59 INFO  : System reset is completed.
-03:12:02 INFO  : 'after 3000' command is executed.
-03:12:02 INFO  : Context for processor 'microblaze_0' is selected.
-03:12:02 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-03:12:02 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
-----------------End of Script----------------
-
-03:12:02 INFO  : Context for processor 'microblaze_0' is selected.
-03:12:02 INFO  : 'con' command is executed.
-03:12:02 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-03:12:02 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-03:12:46 INFO  : Disconnected from the channel tcfchan#5.
-18:13:02 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/IDE.log'.
-18:13:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\temp_xsdb_launch_script.tcl
-18:13:08 INFO  : Registering command handlers for Vitis TCF services
-18:13:09 INFO  : Platform repository initialization has completed.
-18:13:10 INFO  : XSCT server has started successfully.
-18:13:10 INFO  : Successfully done setting XSCT server connection channel  
-18:13:14 INFO  : plnx-install-location is set to ''
-18:13:14 INFO  : Successfully done setting workspace for the tool. 
-18:13:14 INFO  : Successfully done query RDI_DATADIR 
-18:13:34 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
-18:13:51 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
-18:13:51 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
-18:14:06 INFO  : The hardware specification used by project 'hiiii' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
-18:14:06 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
-18:14:06 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream\MicroBlaze_wrapper.mmi' stored in project is removed.
-18:14:06 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii\_ide\bitstream' in project 'hiiii'.
-18:14:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-18:14:07 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-18:14:08 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-18:14:08 INFO  : 'jtag frequency' command is executed.
-18:14:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-18:14:09 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-18:14:09 INFO  : Context for processor 'microblaze_0' is selected.
-18:14:09 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-18:14:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-18:14:09 INFO  : Context for processor 'microblaze_0' is selected.
-18:14:09 INFO  : System reset is completed.
-18:14:12 INFO  : 'after 3000' command is executed.
-18:14:12 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-----------------End of Script----------------
-
-18:14:12 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-18:14:57 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-18:15:09 INFO  : Disconnected from the channel tcfchan#2.
-18:15:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-18:15:10 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-18:15:12 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-18:15:12 INFO  : 'jtag frequency' command is executed.
-18:15:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-18:15:12 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-18:15:13 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:13 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-18:15:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-18:15:13 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:13 INFO  : System reset is completed.
-18:15:16 INFO  : 'after 3000' command is executed.
-18:15:16 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:16 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-18:15:16 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
-----------------End of Script----------------
-
-18:15:16 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:16 INFO  : 'con' command is executed.
-18:15:16 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-18:15:16 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-18:15:40 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-18:15:45 INFO  : Disconnected from the channel tcfchan#3.
-18:15:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-18:15:46 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-18:15:48 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-18:15:48 INFO  : 'jtag frequency' command is executed.
-18:15:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-18:15:49 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-18:15:49 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:49 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-18:15:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-18:15:49 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:49 INFO  : System reset is completed.
-18:15:52 INFO  : 'after 3000' command is executed.
-18:15:52 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:52 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-18:15:52 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
-----------------End of Script----------------
-
-18:15:52 INFO  : Context for processor 'microblaze_0' is selected.
-18:15:52 INFO  : 'con' command is executed.
-18:15:52 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-18:15:52 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-18:16:03 INFO  : Disconnected from the channel tcfchan#4.
-18:16:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-18:16:04 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-18:16:06 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-18:16:06 INFO  : 'jtag frequency' command is executed.
-18:16:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-18:16:07 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-18:16:07 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:07 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-18:16:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-18:16:07 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:07 INFO  : System reset is completed.
-18:16:10 INFO  : 'after 3000' command is executed.
-18:16:10 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:10 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-18:16:10 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
-----------------End of Script----------------
-
-18:16:10 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:10 INFO  : 'con' command is executed.
-18:16:10 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-18:16:10 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-18:16:16 INFO  : Checking for BSP changes to sync application flags for project 'hiiii'...
-18:16:21 INFO  : Disconnected from the channel tcfchan#5.
-18:16:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-18:16:22 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2023.2'. Some debug features may not work.
-18:16:24 INFO  : Jtag cable 'Digilent Cmod S7 210376B8540EA' is selected.
-18:16:24 INFO  : 'jtag frequency' command is executed.
-18:16:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}' command is executed.
-18:16:25 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit"
-18:16:25 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:25 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
-18:16:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-18:16:25 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:25 INFO  : System reset is completed.
-18:16:28 INFO  : 'after 3000' command is executed.
-18:16:28 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:28 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf' is downloaded to processor 'microblaze_0'.
-18:16:28 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent Cmod S7 210376B8540EA" && level==0 && jtag_device_ctx=="jsn-Cmod S7-210376B8540EA-037c4093-0"}
-fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/_ide/bitstream/MicroBlaze_wrapper.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Software/hiiii/Debug/hiiii.elf
-----------------End of Script----------------
-
-18:16:28 INFO  : Context for processor 'microblaze_0' is selected.
-18:16:28 INFO  : 'con' command is executed.
-18:16:28 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-18:16:28 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\hiiii_system\_ide\scripts\debugger_hiiii-default.tcl'
-18:16:40 INFO  : Disconnected from the channel tcfchan#6.
+01:59:10 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Software\HelloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+01:59:49 INFO  : Disconnected from the channel tcfchan#4.

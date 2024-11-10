@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCCB9898FF75325C8",
+      "boundary_crc": "0xF4EBD59B70675ABB",
       "device": "xc7s25csga225-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze",
       "name": "MicroBlaze",
@@ -44,8 +44,7 @@
       "blk_mem_gen_0": "",
       "axi_gpio_1": "",
       "blk_mem_gen_1": "",
-      "xlslice_1": "",
-      "delayTest_0": ""
+      "xlslice_1": ""
     },
     "ports": {
       "clk": {
@@ -95,7 +94,7 @@
       "tx": {
         "direction": "O"
       },
-      "led1": {
+      "led": {
         "direction": "O",
         "left": "0",
         "right": "0"
@@ -1681,34 +1680,6 @@
             "value": "36"
           }
         }
-      },
-      "delayTest_0": {
-        "vlnv": "xilinx.com:module_ref:delayTest:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_delayTest_0_0",
-        "xci_path": "ip\\MicroBlaze_delayTest_0_0\\MicroBlaze_delayTest_0_0.xci",
-        "inst_hier_path": "delayTest_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "delayTest",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "data_in": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -1976,10 +1947,9 @@
       "Net1": {
         "ports": [
           "clk1Mhz_0/clk1Mhz",
-          "waveParser_0/clk1Mhz",
-          "CC_0/clk1Mhz",
           "BlockRam_0/clk1Mhz",
-          "delayTest_0/clk"
+          "waveParser_0/clk1Mhz",
+          "CC_0/clk1Mhz"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
@@ -2023,12 +1993,6 @@
           "dds_compiler_1/m_axis_data_tdata",
           "waveParser_0/waveRef",
           "waveParser_0/wave",
-          "delayTest_0/data_in"
-        ]
-      },
-      "delayTest_0_data_out": {
-        "ports": [
-          "delayTest_0/data_out",
           "waveParser_0/wave1"
         ]
       },
@@ -2044,6 +2008,7 @@
           "BRAMMUX_0/clk",
           "dds_compiler_1/aclk",
           "clk1Mhz_0/clk",
+          "BlockRam_0/clk",
           "CC_0/clk",
           "microblaze_0/Clk",
           "microblaze_0_local_memory/LMB_Clk",
@@ -2060,7 +2025,6 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "blk_mem_gen_1/clka",
           "blk_mem_gen_1/clkb",
-          "BlockRam_0/clk",
           "AddressFixer_0/clk"
         ]
       },
@@ -2201,7 +2165,7 @@
       "xlconstant_1_dout": {
         "ports": [
           "xlconstant_1/dout",
-          "led1"
+          "led"
         ]
       },
       "xlslice_0_Dout": {
