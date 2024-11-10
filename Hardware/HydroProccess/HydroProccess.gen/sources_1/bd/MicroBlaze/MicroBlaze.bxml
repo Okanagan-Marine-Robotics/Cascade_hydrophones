@@ -2,7 +2,6 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="MicroBlaze" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-<<<<<<< HEAD:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze.bxml
 <<<<<<< HEAD:WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze.bxml
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1731031333"/>
     <Generation Name="SIMULATION" State="GENERATED" Timestamp="1731031333"/>
@@ -14,12 +13,6 @@
     <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1730800985"/>
     <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1730800985"/>
 >>>>>>> main:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze.bxml
-=======
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1730976857"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1730976857"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1730976857"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1730976857"/>
->>>>>>> parent of 6f67856 (Fix address desync):WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze.bxml
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\MicroBlaze.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

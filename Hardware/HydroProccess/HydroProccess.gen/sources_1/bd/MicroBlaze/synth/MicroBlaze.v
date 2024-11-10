@@ -2,15 +2,11 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-<<<<<<< HEAD:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v
 <<<<<<< HEAD:WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v
 //Date        : Thu Nov  7 18:02:12 2024
 =======
 //Date        : Tue Nov  5 02:03:05 2024
 >>>>>>> main:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v
-=======
-//Date        : Thu Nov  7 02:26:00 2024
->>>>>>> parent of 6f67856 (Fix address desync):WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v
 //Host        : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -212,6 +208,7 @@ module MicroBlaze
   assign tx = axi_uartlite_0_tx;
   MicroBlaze_AddressFixer_0_0 AddressFixer_0
        (.address(AddressFixer_0_address),
+        .clk(microblaze_0_Clk),
         .counter(CC_0_count));
   MicroBlaze_BRAMMUX_0_0 BRAMMUX_0
        (.Ref0(BRAMMUX_0_Ref0),

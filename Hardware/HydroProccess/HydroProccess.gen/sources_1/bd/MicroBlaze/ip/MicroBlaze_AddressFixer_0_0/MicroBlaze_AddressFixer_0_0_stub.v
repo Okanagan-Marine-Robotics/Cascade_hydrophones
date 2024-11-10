@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Mon Nov  4 01:03:42 2024
+// Date        : Thu Nov  7 18:03:07 2024
 // Host        : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/MicroBlaze_AddressFixer_0_0_stub.v
@@ -15,8 +15,10 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "AddressFixer,Vivado 2023.2" *)
-module MicroBlaze_AddressFixer_0_0(counter, address)
-/* synthesis syn_black_box black_box_pad_pin="counter[15:0],address[13:0]" */;
+module MicroBlaze_AddressFixer_0_0(clk, counter, address)
+/* synthesis syn_black_box black_box_pad_pin="counter[15:0],address[13:0]" */
+/* synthesis syn_force_seq_prim="clk" */;
+  input clk /* synthesis syn_isclock = 1 */;
   input [15:0]counter;
   output [13:0]address;
 endmodule

@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Nov  4 01:03:42 2024
+-- Date        : Thu Nov  7 18:03:07 2024
 -- Host        : DESKTOP-6IC8QHR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/MicroBlaze_AddressFixer_0_0_sim_netlist.vhdl
@@ -18,14 +18,14 @@ use UNISIM.VCOMPONENTS.ALL;
 entity MicroBlaze_AddressFixer_0_0_AddressFixer is
   port (
     address : out STD_LOGIC_VECTOR ( 13 downto 0 );
-    counter : in STD_LOGIC_VECTOR ( 15 downto 0 )
+    counter : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of MicroBlaze_AddressFixer_0_0_AddressFixer : entity is "AddressFixer";
 end MicroBlaze_AddressFixer_0_0_AddressFixer;
 
 architecture STRUCTURE of MicroBlaze_AddressFixer_0_0_AddressFixer is
-  signal address0 : STD_LOGIC_VECTOR ( 13 downto 3 );
   signal \address2__15_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \address2__15_carry__0_i_2_n_0\ : STD_LOGIC;
   signal \address2__15_carry__0_n_0\ : STD_LOGIC;
@@ -109,22 +109,24 @@ architecture STRUCTURE of MicroBlaze_AddressFixer_0_0_AddressFixer is
   signal address3_carry_n_1 : STD_LOGIC;
   signal address3_carry_n_2 : STD_LOGIC;
   signal address3_carry_n_3 : STD_LOGIC;
-  signal \address[10]_INST_0_i_1_n_0\ : STD_LOGIC;
-  signal \address[10]_INST_0_i_1_n_1\ : STD_LOGIC;
-  signal \address[10]_INST_0_i_1_n_2\ : STD_LOGIC;
-  signal \address[10]_INST_0_i_1_n_3\ : STD_LOGIC;
-  signal \address[10]_INST_0_i_2_n_0\ : STD_LOGIC;
-  signal \address[10]_INST_0_i_3_n_0\ : STD_LOGIC;
-  signal \address[10]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \address[10]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \address[13]_INST_0_i_1_n_2\ : STD_LOGIC;
-  signal \address[13]_INST_0_i_1_n_3\ : STD_LOGIC;
-  signal \address[6]_INST_0_i_1_n_0\ : STD_LOGIC;
-  signal \address[6]_INST_0_i_1_n_1\ : STD_LOGIC;
-  signal \address[6]_INST_0_i_1_n_2\ : STD_LOGIC;
-  signal \address[6]_INST_0_i_1_n_3\ : STD_LOGIC;
-  signal \address[6]_INST_0_i_2_n_0\ : STD_LOGIC;
-  signal \address[6]_INST_0_i_3_n_0\ : STD_LOGIC;
+  signal \address[10]_i_2_n_0\ : STD_LOGIC;
+  signal \address[10]_i_3_n_0\ : STD_LOGIC;
+  signal \address[10]_i_4_n_0\ : STD_LOGIC;
+  signal \address[10]_i_5_n_0\ : STD_LOGIC;
+  signal \address[13]_i_1_n_0\ : STD_LOGIC;
+  signal \address[6]_i_2_n_0\ : STD_LOGIC;
+  signal \address[6]_i_3_n_0\ : STD_LOGIC;
+  signal \address_reg[10]_i_1_n_0\ : STD_LOGIC;
+  signal \address_reg[10]_i_1_n_1\ : STD_LOGIC;
+  signal \address_reg[10]_i_1_n_2\ : STD_LOGIC;
+  signal \address_reg[10]_i_1_n_3\ : STD_LOGIC;
+  signal \address_reg[13]_i_2_n_2\ : STD_LOGIC;
+  signal \address_reg[13]_i_2_n_3\ : STD_LOGIC;
+  signal \address_reg[6]_i_1_n_0\ : STD_LOGIC;
+  signal \address_reg[6]_i_1_n_1\ : STD_LOGIC;
+  signal \address_reg[6]_i_1_n_2\ : STD_LOGIC;
+  signal \address_reg[6]_i_1_n_3\ : STD_LOGIC;
+  signal p_1_in : STD_LOGIC_VECTOR ( 13 downto 3 );
   signal \NLW_address2__15_carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_address2__15_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_address2__15_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -136,9 +138,9 @@ architecture STRUCTURE of MicroBlaze_AddressFixer_0_0_AddressFixer is
   signal \NLW_address2_carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_address3_carry__2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_address3_carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal \NLW_address[13]_INST_0_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
-  signal \NLW_address[13]_INST_0_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_address[6]_INST_0_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \NLW_address_reg[13]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
+  signal \NLW_address_reg[13]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_address_reg[6]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute COMPARATOR_THRESHOLD : integer;
   attribute COMPARATOR_THRESHOLD of \address2__15_carry\ : label is 11;
   attribute COMPARATOR_THRESHOLD of \address2__15_carry__0\ : label is 11;
@@ -148,25 +150,10 @@ architecture STRUCTURE of MicroBlaze_AddressFixer_0_0_AddressFixer is
   attribute COMPARATOR_THRESHOLD of \address2_carry__0\ : label is 11;
   attribute COMPARATOR_THRESHOLD of \address2_carry__1\ : label is 11;
   attribute COMPARATOR_THRESHOLD of \address2_carry__2\ : label is 11;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \address[0]_INST_0\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \address[10]_INST_0\ : label is "soft_lutpair1";
   attribute ADDER_THRESHOLD : integer;
-  attribute ADDER_THRESHOLD of \address[10]_INST_0_i_1\ : label is 35;
-  attribute SOFT_HLUTNM of \address[11]_INST_0\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \address[12]_INST_0\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \address[13]_INST_0\ : label is "soft_lutpair0";
-  attribute ADDER_THRESHOLD of \address[13]_INST_0_i_1\ : label is 35;
-  attribute SOFT_HLUTNM of \address[1]_INST_0\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \address[2]_INST_0\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \address[3]_INST_0\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \address[4]_INST_0\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \address[5]_INST_0\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \address[6]_INST_0\ : label is "soft_lutpair3";
-  attribute ADDER_THRESHOLD of \address[6]_INST_0_i_1\ : label is 35;
-  attribute SOFT_HLUTNM of \address[7]_INST_0\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \address[8]_INST_0\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \address[9]_INST_0\ : label is "soft_lutpair2";
+  attribute ADDER_THRESHOLD of \address_reg[10]_i_1\ : label is 35;
+  attribute ADDER_THRESHOLD of \address_reg[13]_i_2\ : label is 35;
+  attribute ADDER_THRESHOLD of \address_reg[6]_i_1\ : label is 35;
 begin
 \address2__15_carry\: unisim.vcomponents.CARRY4
      port map (
@@ -612,7 +599,7 @@ address3_carry: unisim.vcomponents.CARRY4
       DI(1) => counter(4),
       DI(0) => '0',
       O(3 downto 1) => address3(6 downto 4),
-      O(0) => address0(3),
+      O(0) => p_1_in(3),
       S(3) => address3_carry_i_1_n_0,
       S(2) => counter(5),
       S(1) => address3_carry_i_2_n_0,
@@ -706,240 +693,221 @@ address3_carry_i_2: unisim.vcomponents.LUT1
       I0 => counter(4),
       O => address3_carry_i_2_n_0
     );
-\address[0]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => counter(0),
-      O => address(0)
-    );
-\address[10]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(10),
-      O => address(10)
-    );
-\address[10]_INST_0_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \address[6]_INST_0_i_1_n_0\,
-      CO(3) => \address[10]_INST_0_i_1_n_0\,
-      CO(2) => \address[10]_INST_0_i_1_n_1\,
-      CO(1) => \address[10]_INST_0_i_1_n_2\,
-      CO(0) => \address[10]_INST_0_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => counter(10 downto 7),
-      O(3 downto 0) => address0(10 downto 7),
-      S(3) => \address[10]_INST_0_i_2_n_0\,
-      S(2) => \address[10]_INST_0_i_3_n_0\,
-      S(1) => \address[10]_INST_0_i_4_n_0\,
-      S(0) => \address[10]_INST_0_i_5_n_0\
-    );
-\address[10]_INST_0_i_2\: unisim.vcomponents.LUT1
+\address[10]_i_2\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => counter(10),
-      O => \address[10]_INST_0_i_2_n_0\
+      O => \address[10]_i_2_n_0\
     );
-\address[10]_INST_0_i_3\: unisim.vcomponents.LUT1
+\address[10]_i_3\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => counter(9),
-      O => \address[10]_INST_0_i_3_n_0\
+      O => \address[10]_i_3_n_0\
     );
-\address[10]_INST_0_i_4\: unisim.vcomponents.LUT1
+\address[10]_i_4\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => counter(8),
-      O => \address[10]_INST_0_i_4_n_0\
+      O => \address[10]_i_4_n_0\
     );
-\address[10]_INST_0_i_5\: unisim.vcomponents.LUT1
+\address[10]_i_5\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => counter(7),
-      O => \address[10]_INST_0_i_5_n_0\
+      O => \address[10]_i_5_n_0\
     );
-\address[11]_INST_0\: unisim.vcomponents.LUT3
+\address[13]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"80"
+      INIT => X"7"
     )
         port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(11),
-      O => address(11)
+      I0 => \address2__15_carry__2_n_2\,
+      I1 => \address2_carry__2_n_0\,
+      O => \address[13]_i_1_n_0\
     );
-\address[12]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(12),
-      O => address(12)
-    );
-\address[13]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(13),
-      O => address(13)
-    );
-\address[13]_INST_0_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \address[10]_INST_0_i_1_n_0\,
-      CO(3 downto 2) => \NLW_address[13]_INST_0_i_1_CO_UNCONNECTED\(3 downto 2),
-      CO(1) => \address[13]_INST_0_i_1_n_2\,
-      CO(0) => \address[13]_INST_0_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \NLW_address[13]_INST_0_i_1_O_UNCONNECTED\(3),
-      O(2 downto 0) => address0(13 downto 11),
-      S(3) => '0',
-      S(2 downto 0) => counter(13 downto 11)
-    );
-\address[1]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => counter(1),
-      O => address(1)
-    );
-\address[2]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => counter(2),
-      O => address(2)
-    );
-\address[3]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(3),
-      O => address(3)
-    );
-\address[4]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(4),
-      O => address(4)
-    );
-\address[5]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(5),
-      O => address(5)
-    );
-\address[6]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(6),
-      O => address(6)
-    );
-\address[6]_INST_0_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => '0',
-      CO(3) => \address[6]_INST_0_i_1_n_0\,
-      CO(2) => \address[6]_INST_0_i_1_n_1\,
-      CO(1) => \address[6]_INST_0_i_1_n_2\,
-      CO(0) => \address[6]_INST_0_i_1_n_3\,
-      CYINIT => '0',
-      DI(3) => counter(6),
-      DI(2) => '0',
-      DI(1) => counter(4),
-      DI(0) => '0',
-      O(3 downto 1) => address0(6 downto 4),
-      O(0) => \NLW_address[6]_INST_0_i_1_O_UNCONNECTED\(0),
-      S(3) => \address[6]_INST_0_i_2_n_0\,
-      S(2) => counter(5),
-      S(1) => \address[6]_INST_0_i_3_n_0\,
-      S(0) => counter(3)
-    );
-\address[6]_INST_0_i_2\: unisim.vcomponents.LUT1
+\address[6]_i_2\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => counter(6),
-      O => \address[6]_INST_0_i_2_n_0\
+      O => \address[6]_i_2_n_0\
     );
-\address[6]_INST_0_i_3\: unisim.vcomponents.LUT1
+\address[6]_i_3\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => counter(4),
-      O => \address[6]_INST_0_i_3_n_0\
+      O => \address[6]_i_3_n_0\
     );
-\address[7]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(7),
-      O => address(7)
+\address_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => counter(0),
+      Q => address(0),
+      R => \address[13]_i_1_n_0\
     );
-\address[8]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(8),
-      O => address(8)
+\address_reg[10]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(10),
+      Q => address(10),
+      R => \address[13]_i_1_n_0\
     );
-\address[9]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \address2_carry__2_n_0\,
-      I1 => \address2__15_carry__2_n_2\,
-      I2 => address0(9),
-      O => address(9)
+\address_reg[10]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \address_reg[6]_i_1_n_0\,
+      CO(3) => \address_reg[10]_i_1_n_0\,
+      CO(2) => \address_reg[10]_i_1_n_1\,
+      CO(1) => \address_reg[10]_i_1_n_2\,
+      CO(0) => \address_reg[10]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => counter(10 downto 7),
+      O(3 downto 0) => p_1_in(10 downto 7),
+      S(3) => \address[10]_i_2_n_0\,
+      S(2) => \address[10]_i_3_n_0\,
+      S(1) => \address[10]_i_4_n_0\,
+      S(0) => \address[10]_i_5_n_0\
+    );
+\address_reg[11]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(11),
+      Q => address(11),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[12]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(12),
+      Q => address(12),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[13]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(13),
+      Q => address(13),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[13]_i_2\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \address_reg[10]_i_1_n_0\,
+      CO(3 downto 2) => \NLW_address_reg[13]_i_2_CO_UNCONNECTED\(3 downto 2),
+      CO(1) => \address_reg[13]_i_2_n_2\,
+      CO(0) => \address_reg[13]_i_2_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \NLW_address_reg[13]_i_2_O_UNCONNECTED\(3),
+      O(2 downto 0) => p_1_in(13 downto 11),
+      S(3) => '0',
+      S(2 downto 0) => counter(13 downto 11)
+    );
+\address_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => counter(1),
+      Q => address(1),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => counter(2),
+      Q => address(2),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(3),
+      Q => address(3),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[4]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(4),
+      Q => address(4),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[5]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(5),
+      Q => address(5),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[6]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(6),
+      Q => address(6),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[6]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => \address_reg[6]_i_1_n_0\,
+      CO(2) => \address_reg[6]_i_1_n_1\,
+      CO(1) => \address_reg[6]_i_1_n_2\,
+      CO(0) => \address_reg[6]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3) => counter(6),
+      DI(2) => '0',
+      DI(1) => counter(4),
+      DI(0) => '0',
+      O(3 downto 1) => p_1_in(6 downto 4),
+      O(0) => \NLW_address_reg[6]_i_1_O_UNCONNECTED\(0),
+      S(3) => \address[6]_i_2_n_0\,
+      S(2) => counter(5),
+      S(1) => \address[6]_i_3_n_0\,
+      S(0) => counter(3)
+    );
+\address_reg[7]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(7),
+      Q => address(7),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[8]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(8),
+      Q => address(8),
+      R => \address[13]_i_1_n_0\
+    );
+\address_reg[9]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in(9),
+      Q => address(9),
+      R => \address[13]_i_1_n_0\
     );
 end STRUCTURE;
 library IEEE;
@@ -948,6 +916,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity MicroBlaze_AddressFixer_0_0 is
   port (
+    clk : in STD_LOGIC;
     counter : in STD_LOGIC_VECTOR ( 15 downto 0 );
     address : out STD_LOGIC_VECTOR ( 13 downto 0 )
   );
@@ -964,10 +933,15 @@ entity MicroBlaze_AddressFixer_0_0 is
 end MicroBlaze_AddressFixer_0_0;
 
 architecture STRUCTURE of MicroBlaze_AddressFixer_0_0 is
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
 begin
 inst: entity work.MicroBlaze_AddressFixer_0_0_AddressFixer
      port map (
       address(13 downto 0) => address(13 downto 0),
+      clk => clk,
       counter(15 downto 0) => counter(15 downto 0)
     );
 end STRUCTURE;

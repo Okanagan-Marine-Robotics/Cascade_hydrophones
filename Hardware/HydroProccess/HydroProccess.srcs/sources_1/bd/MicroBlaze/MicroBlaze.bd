@@ -826,6 +826,10 @@
           "boundary_crc": "0x0"
         },
         "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
           "counter": {
             "direction": "I",
             "left": "15",
@@ -2061,16 +2065,12 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "blk_mem_gen_1/clka",
           "blk_mem_gen_1/clkb",
-<<<<<<< HEAD:Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd
 <<<<<<< HEAD:WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd
           "BlockRam_0/clk",
           "AddressFixer_0/clk"
 =======
           "BlockRam_0/clk"
 >>>>>>> main:Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd
-=======
-          "BlockRam_0/clk"
->>>>>>> parent of 6f67856 (Fix address desync):WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd
         ]
       },
       "reset_rtl_0_1": {

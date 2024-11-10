@@ -56,14 +56,19 @@
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module MicroBlaze_AddressFixer_0_0 (
+  clk,
   counter,
   address
 );
 
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
+input wire clk;
 input wire [15 : 0] counter;
 output wire [13 : 0] address;
 
   AddressFixer inst (
+    .clk(clk),
     .counter(counter),
     .address(address)
   );

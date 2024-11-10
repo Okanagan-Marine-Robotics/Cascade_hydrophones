@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<<<<<<< HEAD:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
 <<<<<<< HEAD:WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
 <EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov  7 18:02:13 2024" VIVADOVERSION="2023.2">
 =======
 <EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  5 02:03:05 2024" VIVADOVERSION="2023.2">
 >>>>>>> main:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
-=======
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov  7 02:26:01 2024" VIVADOVERSION="2023.2">
->>>>>>> parent of 6f67856 (Fix address desync):WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s25" NAME="MicroBlaze" PACKAGE="csga225" SPEEDGRADE="-1"/>
 
@@ -53,6 +49,11 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addrb"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="15" NAME="counter" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_count">
@@ -2720,13 +2721,10 @@
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
-<<<<<<< HEAD:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
 <<<<<<< HEAD:WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
             <CONNECTION INSTANCE="AddressFixer_0" PORT="clk"/>
 =======
 >>>>>>> main:Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
-=======
->>>>>>> parent of 6f67856 (Fix address desync):WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hw_handoff/MicroBlaze.hwh
           </CONNECTIONS>
         </PORT>
       </PORTS>
