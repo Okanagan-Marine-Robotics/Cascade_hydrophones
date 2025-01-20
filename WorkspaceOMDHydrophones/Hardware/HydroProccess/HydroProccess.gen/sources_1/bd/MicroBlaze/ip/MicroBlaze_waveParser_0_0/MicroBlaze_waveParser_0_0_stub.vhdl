@@ -1,14 +1,14 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Tue Sep 24 21:40:49 2024
--- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+-- Date        : Mon Jan 20 02:22:32 2025
+-- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_stub.vhdl
+--               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_stub.vhdl
 -- Design      : MicroBlaze_waveParser_0_0
 -- Purpose     : Stub declaration of top-level module interface
--- Device      : xc7s25csga225-1
+-- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -36,14 +36,22 @@ entity MicroBlaze_waveParser_0_0 is
     clk1Mhz : in STD_LOGIC
   );
 
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of MicroBlaze_waveParser_0_0 : entity is "MicroBlaze_waveParser_0_0,waveParser,{}";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of MicroBlaze_waveParser_0_0 : entity is "MicroBlaze_waveParser_0_0,waveParser,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=waveParser,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of MicroBlaze_waveParser_0_0 : entity is "yes";
+  attribute IP_DEFINITION_SOURCE : string;
+  attribute IP_DEFINITION_SOURCE of MicroBlaze_waveParser_0_0 : entity is "module_ref";
 end MicroBlaze_waveParser_0_0;
 
 architecture stub of MicroBlaze_waveParser_0_0 is
-attribute syn_black_box : boolean;
-attribute black_box_pad_pin : string;
-attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "waveRef[11:0],wave[11:0],wave1[11:0],bufferRef[11:0],\buffer\[11:0],buffer1[11:0],waveRef0Address[13:0],wave0Address[11:0],wave00Address[11:0],waveRef1Address[13:0],wave1Address[11:0],wave01Address[11:0],waveRef2Address[13:0],wave2Address[11:0],wave02Address[11:0],waveRef3Address[13:0],wave3Address[11:0],wave03Address[11:0],clk1Mhz";
-attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "waveParser,Vivado 2023.2";
+  attribute syn_black_box : boolean;
+  attribute black_box_pad_pin : string;
+  attribute syn_black_box of stub : architecture is true;
+  attribute black_box_pad_pin of stub : architecture is "waveRef[11:0],wave[11:0],wave1[11:0],bufferRef[11:0],\buffer\[11:0],buffer1[11:0],waveRef0Address[13:0],wave0Address[11:0],wave00Address[11:0],waveRef1Address[13:0],wave1Address[11:0],wave01Address[11:0],waveRef2Address[13:0],wave2Address[11:0],wave02Address[11:0],waveRef3Address[13:0],wave3Address[11:0],wave03Address[11:0],clk1Mhz";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of stub : architecture is "waveParser,Vivado 2024.2";
 begin
 end;

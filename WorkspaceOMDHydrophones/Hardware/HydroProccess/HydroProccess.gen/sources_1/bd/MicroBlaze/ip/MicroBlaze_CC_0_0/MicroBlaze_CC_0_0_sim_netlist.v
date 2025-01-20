@@ -1,20 +1,20 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Thu Sep 26 01:26:38 2024
-// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Mon Jan 20 02:22:39 2025
+// Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.v
 // Design      : MicroBlaze_CC_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7s25csga225-1
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "MicroBlaze_CC_0_0,CC,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "CC,Vivado 2023.2" *) 
+(* X_CORE_INFO = "CC,Vivado 2024.2" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_CC_0_0
    (clk,
@@ -47,7 +47,7 @@ module MicroBlaze_CC_0_0
     xcorr1,
     clkcorr,
     count);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   input clk1Mhz;
   input [11:0]waveRef0;
   input [11:0]wave0;
@@ -274,6 +274,87 @@ module MicroBlaze_CC_0_0_CC
   wire \count_reg[7]_i_1_n_5 ;
   wire \count_reg[7]_i_1_n_6 ;
   wire \count_reg[7]_i_1_n_7 ;
+  wire i__carry__0_i_1__0_n_0;
+  wire i__carry__0_i_1__1_n_0;
+  wire i__carry__0_i_1__2_n_0;
+  wire i__carry__0_i_1_n_0;
+  wire i__carry__0_i_2__0_n_0;
+  wire i__carry__0_i_2__1_n_0;
+  wire i__carry__0_i_2__2_n_0;
+  wire i__carry__0_i_2_n_0;
+  wire i__carry__0_i_3__0_n_0;
+  wire i__carry__0_i_3__1_n_0;
+  wire i__carry__0_i_3__2_n_0;
+  wire i__carry__0_i_3_n_0;
+  wire i__carry__0_i_4__0_n_0;
+  wire i__carry__0_i_4__1_n_0;
+  wire i__carry__0_i_4__2_n_0;
+  wire i__carry__0_i_4_n_0;
+  wire i__carry__0_i_5__0_n_0;
+  wire i__carry__0_i_5__1_n_0;
+  wire i__carry__0_i_5__2_n_0;
+  wire i__carry__0_i_5_n_0;
+  wire i__carry__0_i_6__0_n_0;
+  wire i__carry__0_i_6__1_n_0;
+  wire i__carry__0_i_6__2_n_0;
+  wire i__carry__0_i_6_n_0;
+  wire i__carry__0_i_7__0_n_0;
+  wire i__carry__0_i_7__1_n_0;
+  wire i__carry__0_i_7__2_n_0;
+  wire i__carry__0_i_7_n_0;
+  wire i__carry__0_i_8__0_n_0;
+  wire i__carry__0_i_8__1_n_0;
+  wire i__carry__0_i_8__2_n_0;
+  wire i__carry__0_i_8_n_0;
+  wire i__carry__1_i_1__0_n_0;
+  wire i__carry__1_i_1__1_n_0;
+  wire i__carry__1_i_1_n_0;
+  wire i__carry__1_i_2__0_n_0;
+  wire i__carry__1_i_2__1_n_0;
+  wire i__carry__1_i_2_n_0;
+  wire i__carry__1_i_3__0_n_0;
+  wire i__carry__1_i_3__1_n_0;
+  wire i__carry__1_i_3_n_0;
+  wire i__carry__1_i_4__0_n_0;
+  wire i__carry__1_i_4__1_n_0;
+  wire i__carry__1_i_4_n_0;
+  wire i__carry__1_i_5__0_n_0;
+  wire i__carry__1_i_5__1_n_0;
+  wire i__carry__1_i_5_n_0;
+  wire i__carry__2_i_2__0_n_0;
+  wire i__carry__2_i_2__1_n_0;
+  wire i__carry__2_i_2_n_0;
+  wire i__carry__2_i_3__0_n_0;
+  wire i__carry__2_i_3__1_n_0;
+  wire i__carry__2_i_3_n_0;
+  wire i__carry_i_1__0_n_0;
+  wire i__carry_i_1__1_n_0;
+  wire i__carry_i_1__2_n_0;
+  wire i__carry_i_1_n_0;
+  wire i__carry_i_2__0_n_0;
+  wire i__carry_i_2__1_n_0;
+  wire i__carry_i_2__2_n_0;
+  wire i__carry_i_2_n_0;
+  wire i__carry_i_3__0_n_0;
+  wire i__carry_i_3__1_n_0;
+  wire i__carry_i_3__2_n_0;
+  wire i__carry_i_3_n_0;
+  wire i__carry_i_4__0_n_0;
+  wire i__carry_i_4__1_n_0;
+  wire i__carry_i_4__2_n_0;
+  wire i__carry_i_4_n_0;
+  wire i__carry_i_5__0_n_0;
+  wire i__carry_i_5__1_n_0;
+  wire i__carry_i_5__2_n_0;
+  wire i__carry_i_5_n_0;
+  wire i__carry_i_6__0_n_0;
+  wire i__carry_i_6__1_n_0;
+  wire i__carry_i_6__2_n_0;
+  wire i__carry_i_6_n_0;
+  wire i__carry_i_7__0_n_0;
+  wire i__carry_i_7__1_n_0;
+  wire i__carry_i_7__2_n_0;
+  wire i__carry_i_7_n_0;
   wire [15:0]p_1_in;
   wire product1_reg_n_100;
   wire product1_reg_n_101;
@@ -987,29 +1068,6 @@ module MicroBlaze_CC_0_0_CC
   wire [15:0]waveRef0Address;
   wire waveRef0Address3;
   wire waveRef0Address33_in;
-  wire waveRef0Address3__7_carry__0_i_1_n_0;
-  wire waveRef0Address3__7_carry__0_i_2_n_0;
-  wire waveRef0Address3__7_carry__0_i_3_n_0;
-  wire waveRef0Address3__7_carry__0_i_4_n_0;
-  wire waveRef0Address3__7_carry__0_i_5_n_0;
-  wire waveRef0Address3__7_carry__0_i_6_n_0;
-  wire waveRef0Address3__7_carry__0_i_7_n_0;
-  wire waveRef0Address3__7_carry__0_i_8_n_0;
-  wire waveRef0Address3__7_carry__0_n_0;
-  wire waveRef0Address3__7_carry__0_n_1;
-  wire waveRef0Address3__7_carry__0_n_2;
-  wire waveRef0Address3__7_carry__0_n_3;
-  wire waveRef0Address3__7_carry_i_1_n_0;
-  wire waveRef0Address3__7_carry_i_2_n_0;
-  wire waveRef0Address3__7_carry_i_3_n_0;
-  wire waveRef0Address3__7_carry_i_4_n_0;
-  wire waveRef0Address3__7_carry_i_5_n_0;
-  wire waveRef0Address3__7_carry_i_6_n_0;
-  wire waveRef0Address3__7_carry_i_7_n_0;
-  wire waveRef0Address3__7_carry_n_0;
-  wire waveRef0Address3__7_carry_n_1;
-  wire waveRef0Address3__7_carry_n_2;
-  wire waveRef0Address3__7_carry_n_3;
   wire waveRef0Address3_carry__0_i_2_n_0;
   wire waveRef0Address3_carry__0_i_3_n_0;
   wire waveRef0Address3_carry__0_i_4_n_3;
@@ -1030,6 +1088,14 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef0Address3_carry_n_1;
   wire waveRef0Address3_carry_n_2;
   wire waveRef0Address3_carry_n_3;
+  wire \waveRef0Address3_inferred__0/i__carry__0_n_0 ;
+  wire \waveRef0Address3_inferred__0/i__carry__0_n_1 ;
+  wire \waveRef0Address3_inferred__0/i__carry__0_n_2 ;
+  wire \waveRef0Address3_inferred__0/i__carry__0_n_3 ;
+  wire \waveRef0Address3_inferred__0/i__carry_n_0 ;
+  wire \waveRef0Address3_inferred__0/i__carry_n_1 ;
+  wire \waveRef0Address3_inferred__0/i__carry_n_2 ;
+  wire \waveRef0Address3_inferred__0/i__carry_n_3 ;
   wire [16:0]waveRef0Address4;
   wire waveRef0Address4__0_carry__0_i_1_n_0;
   wire waveRef0Address4__0_carry__0_i_2_n_0;
@@ -1273,43 +1339,6 @@ module MicroBlaze_CC_0_0_CC
   wire [15:0]waveRef1Address;
   wire waveRef1Address3;
   wire waveRef1Address32_in;
-  wire waveRef1Address3__14_carry__0_i_1_n_0;
-  wire waveRef1Address3__14_carry__0_i_2_n_0;
-  wire waveRef1Address3__14_carry__0_i_3_n_0;
-  wire waveRef1Address3__14_carry__0_i_4_n_0;
-  wire waveRef1Address3__14_carry__0_i_5_n_0;
-  wire waveRef1Address3__14_carry__0_i_6_n_0;
-  wire waveRef1Address3__14_carry__0_i_7_n_0;
-  wire waveRef1Address3__14_carry__0_i_8_n_0;
-  wire waveRef1Address3__14_carry__0_n_0;
-  wire waveRef1Address3__14_carry__0_n_1;
-  wire waveRef1Address3__14_carry__0_n_2;
-  wire waveRef1Address3__14_carry__0_n_3;
-  wire waveRef1Address3__14_carry__1_i_1_n_0;
-  wire waveRef1Address3__14_carry__1_i_2_n_0;
-  wire waveRef1Address3__14_carry__1_i_3_n_0;
-  wire waveRef1Address3__14_carry__1_i_4_n_0;
-  wire waveRef1Address3__14_carry__1_i_5_n_0;
-  wire waveRef1Address3__14_carry__1_n_0;
-  wire waveRef1Address3__14_carry__1_n_1;
-  wire waveRef1Address3__14_carry__1_n_2;
-  wire waveRef1Address3__14_carry__1_n_3;
-  wire waveRef1Address3__14_carry__2_i_2_n_0;
-  wire waveRef1Address3__14_carry__2_i_3_n_0;
-  wire waveRef1Address3__14_carry__2_n_1;
-  wire waveRef1Address3__14_carry__2_n_2;
-  wire waveRef1Address3__14_carry__2_n_3;
-  wire waveRef1Address3__14_carry_i_1_n_0;
-  wire waveRef1Address3__14_carry_i_2_n_0;
-  wire waveRef1Address3__14_carry_i_3_n_0;
-  wire waveRef1Address3__14_carry_i_4_n_0;
-  wire waveRef1Address3__14_carry_i_5_n_0;
-  wire waveRef1Address3__14_carry_i_6_n_0;
-  wire waveRef1Address3__14_carry_i_7_n_0;
-  wire waveRef1Address3__14_carry_n_0;
-  wire waveRef1Address3__14_carry_n_1;
-  wire waveRef1Address3__14_carry_n_2;
-  wire waveRef1Address3__14_carry_n_3;
   wire waveRef1Address3_carry__0_i_1_n_0;
   wire waveRef1Address3_carry__0_i_2_n_0;
   wire waveRef1Address3_carry__0_i_3_n_0;
@@ -1338,6 +1367,21 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef1Address3_carry_n_1;
   wire waveRef1Address3_carry_n_2;
   wire waveRef1Address3_carry_n_3;
+  wire \waveRef1Address3_inferred__0/i__carry__0_n_0 ;
+  wire \waveRef1Address3_inferred__0/i__carry__0_n_1 ;
+  wire \waveRef1Address3_inferred__0/i__carry__0_n_2 ;
+  wire \waveRef1Address3_inferred__0/i__carry__0_n_3 ;
+  wire \waveRef1Address3_inferred__0/i__carry__1_n_0 ;
+  wire \waveRef1Address3_inferred__0/i__carry__1_n_1 ;
+  wire \waveRef1Address3_inferred__0/i__carry__1_n_2 ;
+  wire \waveRef1Address3_inferred__0/i__carry__1_n_3 ;
+  wire \waveRef1Address3_inferred__0/i__carry__2_n_1 ;
+  wire \waveRef1Address3_inferred__0/i__carry__2_n_2 ;
+  wire \waveRef1Address3_inferred__0/i__carry__2_n_3 ;
+  wire \waveRef1Address3_inferred__0/i__carry_n_0 ;
+  wire \waveRef1Address3_inferred__0/i__carry_n_1 ;
+  wire \waveRef1Address3_inferred__0/i__carry_n_2 ;
+  wire \waveRef1Address3_inferred__0/i__carry_n_3 ;
   wire [31:1]waveRef1Address4;
   wire waveRef1Address4_carry__0_i_1_n_0;
   wire waveRef1Address4_carry__0_i_2_n_0;
@@ -1392,43 +1436,6 @@ module MicroBlaze_CC_0_0_CC
   wire [15:0]waveRef2Address;
   wire waveRef2Address3;
   wire waveRef2Address31_in;
-  wire waveRef2Address3__14_carry__0_i_1_n_0;
-  wire waveRef2Address3__14_carry__0_i_2_n_0;
-  wire waveRef2Address3__14_carry__0_i_3_n_0;
-  wire waveRef2Address3__14_carry__0_i_4_n_0;
-  wire waveRef2Address3__14_carry__0_i_5_n_0;
-  wire waveRef2Address3__14_carry__0_i_6_n_0;
-  wire waveRef2Address3__14_carry__0_i_7_n_0;
-  wire waveRef2Address3__14_carry__0_i_8_n_0;
-  wire waveRef2Address3__14_carry__0_n_0;
-  wire waveRef2Address3__14_carry__0_n_1;
-  wire waveRef2Address3__14_carry__0_n_2;
-  wire waveRef2Address3__14_carry__0_n_3;
-  wire waveRef2Address3__14_carry__1_i_1_n_0;
-  wire waveRef2Address3__14_carry__1_i_2_n_0;
-  wire waveRef2Address3__14_carry__1_i_3_n_0;
-  wire waveRef2Address3__14_carry__1_i_4_n_0;
-  wire waveRef2Address3__14_carry__1_i_5_n_0;
-  wire waveRef2Address3__14_carry__1_n_0;
-  wire waveRef2Address3__14_carry__1_n_1;
-  wire waveRef2Address3__14_carry__1_n_2;
-  wire waveRef2Address3__14_carry__1_n_3;
-  wire waveRef2Address3__14_carry__2_i_2_n_0;
-  wire waveRef2Address3__14_carry__2_i_3_n_0;
-  wire waveRef2Address3__14_carry__2_n_1;
-  wire waveRef2Address3__14_carry__2_n_2;
-  wire waveRef2Address3__14_carry__2_n_3;
-  wire waveRef2Address3__14_carry_i_1_n_0;
-  wire waveRef2Address3__14_carry_i_2_n_0;
-  wire waveRef2Address3__14_carry_i_3_n_0;
-  wire waveRef2Address3__14_carry_i_4_n_0;
-  wire waveRef2Address3__14_carry_i_5_n_0;
-  wire waveRef2Address3__14_carry_i_6_n_0;
-  wire waveRef2Address3__14_carry_i_7_n_0;
-  wire waveRef2Address3__14_carry_n_0;
-  wire waveRef2Address3__14_carry_n_1;
-  wire waveRef2Address3__14_carry_n_2;
-  wire waveRef2Address3__14_carry_n_3;
   wire waveRef2Address3_carry__0_i_1_n_0;
   wire waveRef2Address3_carry__0_i_2_n_0;
   wire waveRef2Address3_carry__0_i_3_n_0;
@@ -1457,6 +1464,21 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef2Address3_carry_n_1;
   wire waveRef2Address3_carry_n_2;
   wire waveRef2Address3_carry_n_3;
+  wire \waveRef2Address3_inferred__0/i__carry__0_n_0 ;
+  wire \waveRef2Address3_inferred__0/i__carry__0_n_1 ;
+  wire \waveRef2Address3_inferred__0/i__carry__0_n_2 ;
+  wire \waveRef2Address3_inferred__0/i__carry__0_n_3 ;
+  wire \waveRef2Address3_inferred__0/i__carry__1_n_0 ;
+  wire \waveRef2Address3_inferred__0/i__carry__1_n_1 ;
+  wire \waveRef2Address3_inferred__0/i__carry__1_n_2 ;
+  wire \waveRef2Address3_inferred__0/i__carry__1_n_3 ;
+  wire \waveRef2Address3_inferred__0/i__carry__2_n_1 ;
+  wire \waveRef2Address3_inferred__0/i__carry__2_n_2 ;
+  wire \waveRef2Address3_inferred__0/i__carry__2_n_3 ;
+  wire \waveRef2Address3_inferred__0/i__carry_n_0 ;
+  wire \waveRef2Address3_inferred__0/i__carry_n_1 ;
+  wire \waveRef2Address3_inferred__0/i__carry_n_2 ;
+  wire \waveRef2Address3_inferred__0/i__carry_n_3 ;
   wire [31:1]waveRef2Address4;
   wire waveRef2Address4_carry__0_i_1_n_0;
   wire waveRef2Address4_carry__0_i_2_n_0;
@@ -1510,43 +1532,6 @@ module MicroBlaze_CC_0_0_CC
   wire [15:0]waveRef3Address;
   wire waveRef3Address3;
   wire waveRef3Address30_in;
-  wire waveRef3Address3__14_carry__0_i_1_n_0;
-  wire waveRef3Address3__14_carry__0_i_2_n_0;
-  wire waveRef3Address3__14_carry__0_i_3_n_0;
-  wire waveRef3Address3__14_carry__0_i_4_n_0;
-  wire waveRef3Address3__14_carry__0_i_5_n_0;
-  wire waveRef3Address3__14_carry__0_i_6_n_0;
-  wire waveRef3Address3__14_carry__0_i_7_n_0;
-  wire waveRef3Address3__14_carry__0_i_8_n_0;
-  wire waveRef3Address3__14_carry__0_n_0;
-  wire waveRef3Address3__14_carry__0_n_1;
-  wire waveRef3Address3__14_carry__0_n_2;
-  wire waveRef3Address3__14_carry__0_n_3;
-  wire waveRef3Address3__14_carry__1_i_1_n_0;
-  wire waveRef3Address3__14_carry__1_i_2_n_0;
-  wire waveRef3Address3__14_carry__1_i_3_n_0;
-  wire waveRef3Address3__14_carry__1_i_4_n_0;
-  wire waveRef3Address3__14_carry__1_i_5_n_0;
-  wire waveRef3Address3__14_carry__1_n_0;
-  wire waveRef3Address3__14_carry__1_n_1;
-  wire waveRef3Address3__14_carry__1_n_2;
-  wire waveRef3Address3__14_carry__1_n_3;
-  wire waveRef3Address3__14_carry__2_i_2_n_0;
-  wire waveRef3Address3__14_carry__2_i_3_n_0;
-  wire waveRef3Address3__14_carry__2_n_1;
-  wire waveRef3Address3__14_carry__2_n_2;
-  wire waveRef3Address3__14_carry__2_n_3;
-  wire waveRef3Address3__14_carry_i_1_n_0;
-  wire waveRef3Address3__14_carry_i_2_n_0;
-  wire waveRef3Address3__14_carry_i_3_n_0;
-  wire waveRef3Address3__14_carry_i_4_n_0;
-  wire waveRef3Address3__14_carry_i_5_n_0;
-  wire waveRef3Address3__14_carry_i_6_n_0;
-  wire waveRef3Address3__14_carry_i_7_n_0;
-  wire waveRef3Address3__14_carry_n_0;
-  wire waveRef3Address3__14_carry_n_1;
-  wire waveRef3Address3__14_carry_n_2;
-  wire waveRef3Address3__14_carry_n_3;
   wire waveRef3Address3_carry__0_i_1_n_0;
   wire waveRef3Address3_carry__0_i_2_n_0;
   wire waveRef3Address3_carry__0_i_3_n_0;
@@ -1575,6 +1560,21 @@ module MicroBlaze_CC_0_0_CC
   wire waveRef3Address3_carry_n_1;
   wire waveRef3Address3_carry_n_2;
   wire waveRef3Address3_carry_n_3;
+  wire \waveRef3Address3_inferred__0/i__carry__0_n_0 ;
+  wire \waveRef3Address3_inferred__0/i__carry__0_n_1 ;
+  wire \waveRef3Address3_inferred__0/i__carry__0_n_2 ;
+  wire \waveRef3Address3_inferred__0/i__carry__0_n_3 ;
+  wire \waveRef3Address3_inferred__0/i__carry__1_n_0 ;
+  wire \waveRef3Address3_inferred__0/i__carry__1_n_1 ;
+  wire \waveRef3Address3_inferred__0/i__carry__1_n_2 ;
+  wire \waveRef3Address3_inferred__0/i__carry__1_n_3 ;
+  wire \waveRef3Address3_inferred__0/i__carry__2_n_1 ;
+  wire \waveRef3Address3_inferred__0/i__carry__2_n_2 ;
+  wire \waveRef3Address3_inferred__0/i__carry__2_n_3 ;
+  wire \waveRef3Address3_inferred__0/i__carry_n_0 ;
+  wire \waveRef3Address3_inferred__0/i__carry_n_1 ;
+  wire \waveRef3Address3_inferred__0/i__carry_n_2 ;
+  wire \waveRef3Address3_inferred__0/i__carry_n_3 ;
   wire [31:1]waveRef3Address4;
   wire waveRef3Address4_carry__0_i_1_n_0;
   wire waveRef3Address4_carry__0_i_2_n_0;
@@ -1758,14 +1758,14 @@ module MicroBlaze_CC_0_0_CC
   wire [17:0]NLW_temp2_reg_BCOUT_UNCONNECTED;
   wire [3:0]NLW_temp2_reg_CARRYOUT_UNCONNECTED;
   wire [47:24]NLW_temp2_reg_P_UNCONNECTED;
-  wire [3:0]NLW_waveRef0Address3__7_carry_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef0Address3__7_carry__0_O_UNCONNECTED;
-  wire [3:1]NLW_waveRef0Address3__7_carry__1_CO_UNCONNECTED;
-  wire [3:0]NLW_waveRef0Address3__7_carry__1_O_UNCONNECTED;
   wire [3:0]NLW_waveRef0Address3_carry_O_UNCONNECTED;
   wire [3:0]NLW_waveRef0Address3_carry__0_O_UNCONNECTED;
   wire [3:1]NLW_waveRef0Address3_carry__0_i_4_CO_UNCONNECTED;
   wire [3:0]NLW_waveRef0Address3_carry__0_i_4_O_UNCONNECTED;
+  wire [3:0]\NLW_waveRef0Address3_inferred__0/i__carry_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef0Address3_inferred__0/i__carry__0_O_UNCONNECTED ;
+  wire [3:1]\NLW_waveRef0Address3_inferred__0/i__carry__1_CO_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef0Address3_inferred__0/i__carry__1_O_UNCONNECTED ;
   wire [0:0]NLW_waveRef0Address4__0_carry_O_UNCONNECTED;
   wire [3:3]NLW_waveRef0Address4__0_carry__10_CO_UNCONNECTED;
   wire [0:0]NLW_waveRef0Address4__0_carry__11_O_UNCONNECTED;
@@ -1774,39 +1774,39 @@ module MicroBlaze_CC_0_0_CC
   wire [0:0]NLW_waveRef0Address4__0_carry__3_O_UNCONNECTED;
   wire [3:3]NLW_waveRef0Address4__0_carry__6_CO_UNCONNECTED;
   wire [0:0]NLW_waveRef0Address4__0_carry__7_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef1Address3__14_carry_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef1Address3__14_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef1Address3__14_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef1Address3__14_carry__2_O_UNCONNECTED;
   wire [3:0]NLW_waveRef1Address3_carry_O_UNCONNECTED;
   wire [3:0]NLW_waveRef1Address3_carry__0_O_UNCONNECTED;
   wire [3:0]NLW_waveRef1Address3_carry__1_O_UNCONNECTED;
   wire [3:3]NLW_waveRef1Address3_carry__2_CO_UNCONNECTED;
   wire [3:0]NLW_waveRef1Address3_carry__2_O_UNCONNECTED;
+  wire [3:0]\NLW_waveRef1Address3_inferred__0/i__carry_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef1Address3_inferred__0/i__carry__0_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef1Address3_inferred__0/i__carry__1_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef1Address3_inferred__0/i__carry__2_O_UNCONNECTED ;
   wire [0:0]NLW_waveRef1Address4_carry_O_UNCONNECTED;
   wire [3:0]NLW_waveRef1Address4_carry__3_CO_UNCONNECTED;
   wire [3:1]NLW_waveRef1Address4_carry__3_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef2Address3__14_carry_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef2Address3__14_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef2Address3__14_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef2Address3__14_carry__2_O_UNCONNECTED;
   wire [3:0]NLW_waveRef2Address3_carry_O_UNCONNECTED;
   wire [3:0]NLW_waveRef2Address3_carry__0_O_UNCONNECTED;
   wire [3:0]NLW_waveRef2Address3_carry__1_O_UNCONNECTED;
   wire [3:3]NLW_waveRef2Address3_carry__2_CO_UNCONNECTED;
   wire [3:0]NLW_waveRef2Address3_carry__2_O_UNCONNECTED;
+  wire [3:0]\NLW_waveRef2Address3_inferred__0/i__carry_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef2Address3_inferred__0/i__carry__0_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef2Address3_inferred__0/i__carry__1_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef2Address3_inferred__0/i__carry__2_O_UNCONNECTED ;
   wire [0:0]NLW_waveRef2Address4_carry_O_UNCONNECTED;
   wire [3:0]NLW_waveRef2Address4_carry__3_CO_UNCONNECTED;
   wire [3:1]NLW_waveRef2Address4_carry__3_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef3Address3__14_carry_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef3Address3__14_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef3Address3__14_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_waveRef3Address3__14_carry__2_O_UNCONNECTED;
   wire [3:0]NLW_waveRef3Address3_carry_O_UNCONNECTED;
   wire [3:0]NLW_waveRef3Address3_carry__0_O_UNCONNECTED;
   wire [3:0]NLW_waveRef3Address3_carry__1_O_UNCONNECTED;
   wire [3:3]NLW_waveRef3Address3_carry__2_CO_UNCONNECTED;
   wire [3:0]NLW_waveRef3Address3_carry__2_O_UNCONNECTED;
+  wire [3:0]\NLW_waveRef3Address3_inferred__0/i__carry_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef3Address3_inferred__0/i__carry__0_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef3Address3_inferred__0/i__carry__1_O_UNCONNECTED ;
+  wire [3:0]\NLW_waveRef3Address3_inferred__0/i__carry__2_O_UNCONNECTED ;
   wire [0:0]NLW_waveRef3Address4_carry_O_UNCONNECTED;
   wire [3:0]NLW_waveRef3Address4_carry__3_CO_UNCONNECTED;
   wire [3:1]NLW_waveRef3Address4_carry__3_O_UNCONNECTED;
@@ -2280,6 +2280,495 @@ module MicroBlaze_CC_0_0_CC
         .D(\count_reg[11]_i_1_n_6 ),
         .Q(count[9]),
         .R(\count[15]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_1
+       (.I0(waveRef0Address4[14]),
+        .I1(waveRef0Address4[15]),
+        .O(i__carry__0_i_1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_1__0
+       (.I0(waveRef1Address4[14]),
+        .I1(waveRef1Address4[15]),
+        .O(i__carry__0_i_1__0_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_1__1
+       (.I0(waveRef2Address4[14]),
+        .I1(waveRef2Address4[15]),
+        .O(i__carry__0_i_1__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_1__2
+       (.I0(waveRef3Address4[14]),
+        .I1(waveRef3Address4[15]),
+        .O(i__carry__0_i_1__2_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_2
+       (.I0(waveRef0Address4[12]),
+        .I1(waveRef0Address4[13]),
+        .O(i__carry__0_i_2_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_2__0
+       (.I0(waveRef1Address4[12]),
+        .I1(waveRef1Address4[13]),
+        .O(i__carry__0_i_2__0_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_2__1
+       (.I0(waveRef2Address4[12]),
+        .I1(waveRef2Address4[13]),
+        .O(i__carry__0_i_2__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_2__2
+       (.I0(waveRef3Address4[12]),
+        .I1(waveRef3Address4[13]),
+        .O(i__carry__0_i_2__2_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_3
+       (.I0(waveRef0Address4[10]),
+        .I1(waveRef0Address4[11]),
+        .O(i__carry__0_i_3_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_3__0
+       (.I0(waveRef1Address4[10]),
+        .I1(waveRef1Address4[11]),
+        .O(i__carry__0_i_3__0_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_3__1
+       (.I0(waveRef2Address4[10]),
+        .I1(waveRef2Address4[11]),
+        .O(i__carry__0_i_3__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_3__2
+       (.I0(waveRef3Address4[10]),
+        .I1(waveRef3Address4[11]),
+        .O(i__carry__0_i_3__2_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_4
+       (.I0(waveRef0Address4[8]),
+        .I1(waveRef0Address4[9]),
+        .O(i__carry__0_i_4_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_4__0
+       (.I0(waveRef1Address4[8]),
+        .I1(waveRef1Address4[9]),
+        .O(i__carry__0_i_4__0_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_4__1
+       (.I0(waveRef2Address4[8]),
+        .I1(waveRef2Address4[9]),
+        .O(i__carry__0_i_4__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry__0_i_4__2
+       (.I0(waveRef3Address4[8]),
+        .I1(waveRef3Address4[9]),
+        .O(i__carry__0_i_4__2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_5
+       (.I0(waveRef0Address4[14]),
+        .I1(waveRef0Address4[15]),
+        .O(i__carry__0_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_5__0
+       (.I0(waveRef1Address4[14]),
+        .I1(waveRef1Address4[15]),
+        .O(i__carry__0_i_5__0_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_5__1
+       (.I0(waveRef2Address4[14]),
+        .I1(waveRef2Address4[15]),
+        .O(i__carry__0_i_5__1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_5__2
+       (.I0(waveRef3Address4[14]),
+        .I1(waveRef3Address4[15]),
+        .O(i__carry__0_i_5__2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_6
+       (.I0(waveRef0Address4[12]),
+        .I1(waveRef0Address4[13]),
+        .O(i__carry__0_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_6__0
+       (.I0(waveRef1Address4[12]),
+        .I1(waveRef1Address4[13]),
+        .O(i__carry__0_i_6__0_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_6__1
+       (.I0(waveRef2Address4[12]),
+        .I1(waveRef2Address4[13]),
+        .O(i__carry__0_i_6__1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_6__2
+       (.I0(waveRef3Address4[12]),
+        .I1(waveRef3Address4[13]),
+        .O(i__carry__0_i_6__2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_7
+       (.I0(waveRef0Address4[10]),
+        .I1(waveRef0Address4[11]),
+        .O(i__carry__0_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_7__0
+       (.I0(waveRef1Address4[10]),
+        .I1(waveRef1Address4[11]),
+        .O(i__carry__0_i_7__0_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_7__1
+       (.I0(waveRef2Address4[10]),
+        .I1(waveRef2Address4[11]),
+        .O(i__carry__0_i_7__1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_7__2
+       (.I0(waveRef3Address4[10]),
+        .I1(waveRef3Address4[11]),
+        .O(i__carry__0_i_7__2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_8
+       (.I0(waveRef0Address4[8]),
+        .I1(waveRef0Address4[9]),
+        .O(i__carry__0_i_8_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_8__0
+       (.I0(waveRef1Address4[8]),
+        .I1(waveRef1Address4[9]),
+        .O(i__carry__0_i_8__0_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_8__1
+       (.I0(waveRef2Address4[8]),
+        .I1(waveRef2Address4[9]),
+        .O(i__carry__0_i_8__1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry__0_i_8__2
+       (.I0(waveRef3Address4[8]),
+        .I1(waveRef3Address4[9]),
+        .O(i__carry__0_i_8__2_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_1
+       (.I0(waveRef1Address4_carry__3_n_2),
+        .O(i__carry__1_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_1__0
+       (.I0(waveRef2Address4_carry__3_n_2),
+        .O(i__carry__1_i_1__0_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_1__1
+       (.I0(waveRef3Address4_carry__3_n_2),
+        .O(i__carry__1_i_1__1_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_2
+       (.I0(waveRef1Address4_carry__3_n_2),
+        .O(i__carry__1_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_2__0
+       (.I0(waveRef2Address4_carry__3_n_2),
+        .O(i__carry__1_i_2__0_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_2__1
+       (.I0(waveRef3Address4_carry__3_n_2),
+        .O(i__carry__1_i_2__1_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_3
+       (.I0(waveRef1Address4_carry__3_n_2),
+        .O(i__carry__1_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_3__0
+       (.I0(waveRef2Address4_carry__3_n_2),
+        .O(i__carry__1_i_3__0_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__1_i_3__1
+       (.I0(waveRef3Address4_carry__3_n_2),
+        .O(i__carry__1_i_3__1_n_0));
+  LUT2 #(
+    .INIT(4'hB)) 
+    i__carry__1_i_4
+       (.I0(waveRef1Address4[16]),
+        .I1(waveRef1Address4_carry__3_n_2),
+        .O(i__carry__1_i_4_n_0));
+  LUT2 #(
+    .INIT(4'hB)) 
+    i__carry__1_i_4__0
+       (.I0(waveRef2Address4[16]),
+        .I1(waveRef2Address4_carry__3_n_2),
+        .O(i__carry__1_i_4__0_n_0));
+  LUT2 #(
+    .INIT(4'hB)) 
+    i__carry__1_i_4__1
+       (.I0(waveRef3Address4[16]),
+        .I1(waveRef3Address4_carry__3_n_2),
+        .O(i__carry__1_i_4__1_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    i__carry__1_i_5
+       (.I0(waveRef1Address4_carry__3_n_2),
+        .I1(waveRef1Address4[16]),
+        .O(i__carry__1_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    i__carry__1_i_5__0
+       (.I0(waveRef2Address4_carry__3_n_2),
+        .I1(waveRef2Address4[16]),
+        .O(i__carry__1_i_5__0_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    i__carry__1_i_5__1
+       (.I0(waveRef3Address4_carry__3_n_2),
+        .I1(waveRef3Address4[16]),
+        .O(i__carry__1_i_5__1_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_1
+       (.I0(waveRef1Address4_carry__3_n_2),
+        .O(waveRef1Address4[31]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_1__0
+       (.I0(waveRef2Address4_carry__3_n_2),
+        .O(waveRef2Address4[31]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_1__1
+       (.I0(waveRef3Address4_carry__3_n_2),
+        .O(waveRef3Address4[31]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_2
+       (.I0(waveRef1Address4_carry__3_n_2),
+        .O(i__carry__2_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_2__0
+       (.I0(waveRef2Address4_carry__3_n_2),
+        .O(i__carry__2_i_2__0_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_2__1
+       (.I0(waveRef3Address4_carry__3_n_2),
+        .O(i__carry__2_i_2__1_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_3
+       (.I0(waveRef1Address4_carry__3_n_2),
+        .O(i__carry__2_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_3__0
+       (.I0(waveRef2Address4_carry__3_n_2),
+        .O(i__carry__2_i_3__0_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry__2_i_3__1
+       (.I0(waveRef3Address4_carry__3_n_2),
+        .O(i__carry__2_i_3__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_1
+       (.I0(waveRef0Address4[6]),
+        .I1(waveRef0Address4[7]),
+        .O(i__carry_i_1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_1__0
+       (.I0(waveRef1Address4[6]),
+        .I1(waveRef1Address4[7]),
+        .O(i__carry_i_1__0_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_1__1
+       (.I0(waveRef2Address4[6]),
+        .I1(waveRef2Address4[7]),
+        .O(i__carry_i_1__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_1__2
+       (.I0(waveRef3Address4[6]),
+        .I1(waveRef3Address4[7]),
+        .O(i__carry_i_1__2_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_2
+       (.I0(waveRef0Address4[4]),
+        .I1(waveRef0Address4[5]),
+        .O(i__carry_i_2_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_2__0
+       (.I0(waveRef1Address4[4]),
+        .I1(waveRef1Address4[5]),
+        .O(i__carry_i_2__0_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_2__1
+       (.I0(waveRef2Address4[4]),
+        .I1(waveRef2Address4[5]),
+        .O(i__carry_i_2__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_2__2
+       (.I0(waveRef3Address4[4]),
+        .I1(waveRef3Address4[5]),
+        .O(i__carry_i_2__2_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_3
+       (.I0(waveRef0Address4[2]),
+        .I1(waveRef0Address4[3]),
+        .O(i__carry_i_3_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_3__0
+       (.I0(waveRef1Address4[2]),
+        .I1(waveRef1Address4[3]),
+        .O(i__carry_i_3__0_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_3__1
+       (.I0(waveRef2Address4[2]),
+        .I1(waveRef2Address4[3]),
+        .O(i__carry_i_3__1_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_3__2
+       (.I0(waveRef3Address4[2]),
+        .I1(waveRef3Address4[3]),
+        .O(i__carry_i_3__2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_4
+       (.I0(waveRef0Address4[6]),
+        .I1(waveRef0Address4[7]),
+        .O(i__carry_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_4__0
+       (.I0(waveRef1Address4[6]),
+        .I1(waveRef1Address4[7]),
+        .O(i__carry_i_4__0_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_4__1
+       (.I0(waveRef2Address4[6]),
+        .I1(waveRef2Address4[7]),
+        .O(i__carry_i_4__1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_4__2
+       (.I0(waveRef3Address4[6]),
+        .I1(waveRef3Address4[7]),
+        .O(i__carry_i_4__2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_5
+       (.I0(waveRef0Address4[4]),
+        .I1(waveRef0Address4[5]),
+        .O(i__carry_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_5__0
+       (.I0(waveRef1Address4[4]),
+        .I1(waveRef1Address4[5]),
+        .O(i__carry_i_5__0_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_5__1
+       (.I0(waveRef2Address4[4]),
+        .I1(waveRef2Address4[5]),
+        .O(i__carry_i_5__1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_5__2
+       (.I0(waveRef3Address4[4]),
+        .I1(waveRef3Address4[5]),
+        .O(i__carry_i_5__2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_6
+       (.I0(waveRef0Address4[2]),
+        .I1(waveRef0Address4[3]),
+        .O(i__carry_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_6__0
+       (.I0(waveRef1Address4[2]),
+        .I1(waveRef1Address4[3]),
+        .O(i__carry_i_6__0_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_6__1
+       (.I0(waveRef2Address4[2]),
+        .I1(waveRef2Address4[3]),
+        .O(i__carry_i_6__1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    i__carry_i_6__2
+       (.I0(waveRef3Address4[2]),
+        .I1(waveRef3Address4[3]),
+        .O(i__carry_i_6__2_n_0));
+  LUT3 #(
+    .INIT(8'h06)) 
+    i__carry_i_7
+       (.I0(count[0]),
+        .I1(countMulti_reg__0[0]),
+        .I2(waveRef3Address4[1]),
+        .O(i__carry_i_7_n_0));
+  LUT3 #(
+    .INIT(8'h06)) 
+    i__carry_i_7__0
+       (.I0(count[0]),
+        .I1(countMulti_reg__0[0]),
+        .I2(waveRef2Address4[1]),
+        .O(i__carry_i_7__0_n_0));
+  LUT3 #(
+    .INIT(8'h06)) 
+    i__carry_i_7__1
+       (.I0(count[0]),
+        .I1(countMulti_reg__0[0]),
+        .I2(waveRef1Address4[1]),
+        .O(i__carry_i_7__1_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    i__carry_i_7__2
+       (.I0(waveRef0Address4[0]),
+        .I1(waveRef0Address4[1]),
+        .O(i__carry_i_7__2_n_0));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-12 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   DSP48E1 #(
@@ -3345,120 +3834,6 @@ module MicroBlaze_CC_0_0_CC
         .Q(wave03Address[9]),
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef0Address3__7_carry
-       (.CI(1'b0),
-        .CO({waveRef0Address3__7_carry_n_0,waveRef0Address3__7_carry_n_1,waveRef0Address3__7_carry_n_2,waveRef0Address3__7_carry_n_3}),
-        .CYINIT(1'b1),
-        .DI({waveRef0Address3__7_carry_i_1_n_0,waveRef0Address3__7_carry_i_2_n_0,waveRef0Address3__7_carry_i_3_n_0,waveRef0Address4[1]}),
-        .O(NLW_waveRef0Address3__7_carry_O_UNCONNECTED[3:0]),
-        .S({waveRef0Address3__7_carry_i_4_n_0,waveRef0Address3__7_carry_i_5_n_0,waveRef0Address3__7_carry_i_6_n_0,waveRef0Address3__7_carry_i_7_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef0Address3__7_carry__0
-       (.CI(waveRef0Address3__7_carry_n_0),
-        .CO({waveRef0Address3__7_carry__0_n_0,waveRef0Address3__7_carry__0_n_1,waveRef0Address3__7_carry__0_n_2,waveRef0Address3__7_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({waveRef0Address3__7_carry__0_i_1_n_0,waveRef0Address3__7_carry__0_i_2_n_0,waveRef0Address3__7_carry__0_i_3_n_0,waveRef0Address3__7_carry__0_i_4_n_0}),
-        .O(NLW_waveRef0Address3__7_carry__0_O_UNCONNECTED[3:0]),
-        .S({waveRef0Address3__7_carry__0_i_5_n_0,waveRef0Address3__7_carry__0_i_6_n_0,waveRef0Address3__7_carry__0_i_7_n_0,waveRef0Address3__7_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef0Address3__7_carry__0_i_1
-       (.I0(waveRef0Address4[14]),
-        .I1(waveRef0Address4[15]),
-        .O(waveRef0Address3__7_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef0Address3__7_carry__0_i_2
-       (.I0(waveRef0Address4[12]),
-        .I1(waveRef0Address4[13]),
-        .O(waveRef0Address3__7_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef0Address3__7_carry__0_i_3
-       (.I0(waveRef0Address4[10]),
-        .I1(waveRef0Address4[11]),
-        .O(waveRef0Address3__7_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef0Address3__7_carry__0_i_4
-       (.I0(waveRef0Address4[8]),
-        .I1(waveRef0Address4[9]),
-        .O(waveRef0Address3__7_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef0Address3__7_carry__0_i_5
-       (.I0(waveRef0Address4[14]),
-        .I1(waveRef0Address4[15]),
-        .O(waveRef0Address3__7_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef0Address3__7_carry__0_i_6
-       (.I0(waveRef0Address4[12]),
-        .I1(waveRef0Address4[13]),
-        .O(waveRef0Address3__7_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef0Address3__7_carry__0_i_7
-       (.I0(waveRef0Address4[10]),
-        .I1(waveRef0Address4[11]),
-        .O(waveRef0Address3__7_carry__0_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef0Address3__7_carry__0_i_8
-       (.I0(waveRef0Address4[8]),
-        .I1(waveRef0Address4[9]),
-        .O(waveRef0Address3__7_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef0Address3__7_carry__1
-       (.CI(waveRef0Address3__7_carry__0_n_0),
-        .CO({NLW_waveRef0Address3__7_carry__1_CO_UNCONNECTED[3:1],waveRef0Address33_in}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_waveRef0Address3__7_carry__1_O_UNCONNECTED[3:0]),
-        .S({1'b0,1'b0,1'b0,waveRef0Address3_carry__0_i_4_n_3}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef0Address3__7_carry_i_1
-       (.I0(waveRef0Address4[6]),
-        .I1(waveRef0Address4[7]),
-        .O(waveRef0Address3__7_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef0Address3__7_carry_i_2
-       (.I0(waveRef0Address4[4]),
-        .I1(waveRef0Address4[5]),
-        .O(waveRef0Address3__7_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef0Address3__7_carry_i_3
-       (.I0(waveRef0Address4[2]),
-        .I1(waveRef0Address4[3]),
-        .O(waveRef0Address3__7_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef0Address3__7_carry_i_4
-       (.I0(waveRef0Address4[6]),
-        .I1(waveRef0Address4[7]),
-        .O(waveRef0Address3__7_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef0Address3__7_carry_i_5
-       (.I0(waveRef0Address4[4]),
-        .I1(waveRef0Address4[5]),
-        .O(waveRef0Address3__7_carry_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef0Address3__7_carry_i_6
-       (.I0(waveRef0Address4[2]),
-        .I1(waveRef0Address4[3]),
-        .O(waveRef0Address3__7_carry_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    waveRef0Address3__7_carry_i_7
-       (.I0(waveRef0Address4[0]),
-        .I1(waveRef0Address4[1]),
-        .O(waveRef0Address3__7_carry_i_7_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 waveRef0Address3_carry
        (.CI(1'b0),
         .CO({waveRef0Address3_carry_n_0,waveRef0Address3_carry_n_1,waveRef0Address3_carry_n_2,waveRef0Address3_carry_n_3}),
@@ -3557,6 +3932,30 @@ module MicroBlaze_CC_0_0_CC
        (.I0(waveRef0Address4[2]),
         .I1(waveRef0Address4[3]),
         .O(waveRef0Address3_carry_i_7_n_0));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef0Address3_inferred__0/i__carry 
+       (.CI(1'b0),
+        .CO({\waveRef0Address3_inferred__0/i__carry_n_0 ,\waveRef0Address3_inferred__0/i__carry_n_1 ,\waveRef0Address3_inferred__0/i__carry_n_2 ,\waveRef0Address3_inferred__0/i__carry_n_3 }),
+        .CYINIT(1'b1),
+        .DI({i__carry_i_1_n_0,i__carry_i_2_n_0,i__carry_i_3_n_0,waveRef0Address4[1]}),
+        .O(\NLW_waveRef0Address3_inferred__0/i__carry_O_UNCONNECTED [3:0]),
+        .S({i__carry_i_4_n_0,i__carry_i_5_n_0,i__carry_i_6_n_0,i__carry_i_7__2_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef0Address3_inferred__0/i__carry__0 
+       (.CI(\waveRef0Address3_inferred__0/i__carry_n_0 ),
+        .CO({\waveRef0Address3_inferred__0/i__carry__0_n_0 ,\waveRef0Address3_inferred__0/i__carry__0_n_1 ,\waveRef0Address3_inferred__0/i__carry__0_n_2 ,\waveRef0Address3_inferred__0/i__carry__0_n_3 }),
+        .CYINIT(1'b0),
+        .DI({i__carry__0_i_1_n_0,i__carry__0_i_2_n_0,i__carry__0_i_3_n_0,i__carry__0_i_4_n_0}),
+        .O(\NLW_waveRef0Address3_inferred__0/i__carry__0_O_UNCONNECTED [3:0]),
+        .S({i__carry__0_i_5_n_0,i__carry__0_i_6_n_0,i__carry__0_i_7_n_0,i__carry__0_i_8_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef0Address3_inferred__0/i__carry__1 
+       (.CI(\waveRef0Address3_inferred__0/i__carry__0_n_0 ),
+        .CO({\NLW_waveRef0Address3_inferred__0/i__carry__1_CO_UNCONNECTED [3:1],waveRef0Address33_in}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(\NLW_waveRef0Address3_inferred__0/i__carry__1_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,1'b0,waveRef0Address3_carry__0_i_4_n_3}));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 waveRef0Address4__0_carry
        (.CI(1'b0),
@@ -4619,171 +5018,6 @@ module MicroBlaze_CC_0_0_CC
         .Q(waveRef0Address[9]),
         .R(\waveRef0Address[15]_i_1_n_0 ));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef1Address3__14_carry
-       (.CI(1'b0),
-        .CO({waveRef1Address3__14_carry_n_0,waveRef1Address3__14_carry_n_1,waveRef1Address3__14_carry_n_2,waveRef1Address3__14_carry_n_3}),
-        .CYINIT(1'b1),
-        .DI({waveRef1Address3__14_carry_i_1_n_0,waveRef1Address3__14_carry_i_2_n_0,waveRef1Address3__14_carry_i_3_n_0,waveRef1Address4[1]}),
-        .O(NLW_waveRef1Address3__14_carry_O_UNCONNECTED[3:0]),
-        .S({waveRef1Address3__14_carry_i_4_n_0,waveRef1Address3__14_carry_i_5_n_0,waveRef1Address3__14_carry_i_6_n_0,waveRef1Address3__14_carry_i_7_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef1Address3__14_carry__0
-       (.CI(waveRef1Address3__14_carry_n_0),
-        .CO({waveRef1Address3__14_carry__0_n_0,waveRef1Address3__14_carry__0_n_1,waveRef1Address3__14_carry__0_n_2,waveRef1Address3__14_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({waveRef1Address3__14_carry__0_i_1_n_0,waveRef1Address3__14_carry__0_i_2_n_0,waveRef1Address3__14_carry__0_i_3_n_0,waveRef1Address3__14_carry__0_i_4_n_0}),
-        .O(NLW_waveRef1Address3__14_carry__0_O_UNCONNECTED[3:0]),
-        .S({waveRef1Address3__14_carry__0_i_5_n_0,waveRef1Address3__14_carry__0_i_6_n_0,waveRef1Address3__14_carry__0_i_7_n_0,waveRef1Address3__14_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef1Address3__14_carry__0_i_1
-       (.I0(waveRef1Address4[14]),
-        .I1(waveRef1Address4[15]),
-        .O(waveRef1Address3__14_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef1Address3__14_carry__0_i_2
-       (.I0(waveRef1Address4[12]),
-        .I1(waveRef1Address4[13]),
-        .O(waveRef1Address3__14_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef1Address3__14_carry__0_i_3
-       (.I0(waveRef1Address4[10]),
-        .I1(waveRef1Address4[11]),
-        .O(waveRef1Address3__14_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef1Address3__14_carry__0_i_4
-       (.I0(waveRef1Address4[8]),
-        .I1(waveRef1Address4[9]),
-        .O(waveRef1Address3__14_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef1Address3__14_carry__0_i_5
-       (.I0(waveRef1Address4[14]),
-        .I1(waveRef1Address4[15]),
-        .O(waveRef1Address3__14_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef1Address3__14_carry__0_i_6
-       (.I0(waveRef1Address4[12]),
-        .I1(waveRef1Address4[13]),
-        .O(waveRef1Address3__14_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef1Address3__14_carry__0_i_7
-       (.I0(waveRef1Address4[10]),
-        .I1(waveRef1Address4[11]),
-        .O(waveRef1Address3__14_carry__0_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef1Address3__14_carry__0_i_8
-       (.I0(waveRef1Address4[8]),
-        .I1(waveRef1Address4[9]),
-        .O(waveRef1Address3__14_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef1Address3__14_carry__1
-       (.CI(waveRef1Address3__14_carry__0_n_0),
-        .CO({waveRef1Address3__14_carry__1_n_0,waveRef1Address3__14_carry__1_n_1,waveRef1Address3__14_carry__1_n_2,waveRef1Address3__14_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({waveRef1Address3__14_carry__1_i_1_n_0,waveRef1Address3__14_carry__1_i_2_n_0,waveRef1Address3__14_carry__1_i_3_n_0,waveRef1Address3__14_carry__1_i_4_n_0}),
-        .O(NLW_waveRef1Address3__14_carry__1_O_UNCONNECTED[3:0]),
-        .S({waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,waveRef1Address3__14_carry__1_i_5_n_0}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef1Address3__14_carry__1_i_1
-       (.I0(waveRef1Address4_carry__3_n_2),
-        .O(waveRef1Address3__14_carry__1_i_1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef1Address3__14_carry__1_i_2
-       (.I0(waveRef1Address4_carry__3_n_2),
-        .O(waveRef1Address3__14_carry__1_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef1Address3__14_carry__1_i_3
-       (.I0(waveRef1Address4_carry__3_n_2),
-        .O(waveRef1Address3__14_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    waveRef1Address3__14_carry__1_i_4
-       (.I0(waveRef1Address4[16]),
-        .I1(waveRef1Address4_carry__3_n_2),
-        .O(waveRef1Address3__14_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    waveRef1Address3__14_carry__1_i_5
-       (.I0(waveRef1Address4_carry__3_n_2),
-        .I1(waveRef1Address4[16]),
-        .O(waveRef1Address3__14_carry__1_i_5_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef1Address3__14_carry__2
-       (.CI(waveRef1Address3__14_carry__1_n_0),
-        .CO({waveRef1Address32_in,waveRef1Address3__14_carry__2_n_1,waveRef1Address3__14_carry__2_n_2,waveRef1Address3__14_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,waveRef1Address4[31],waveRef1Address3__14_carry__2_i_2_n_0,waveRef1Address3__14_carry__2_i_3_n_0}),
-        .O(NLW_waveRef1Address3__14_carry__2_O_UNCONNECTED[3:0]),
-        .S({waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef1Address3__14_carry__2_i_1
-       (.I0(waveRef1Address4_carry__3_n_2),
-        .O(waveRef1Address4[31]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef1Address3__14_carry__2_i_2
-       (.I0(waveRef1Address4_carry__3_n_2),
-        .O(waveRef1Address3__14_carry__2_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef1Address3__14_carry__2_i_3
-       (.I0(waveRef1Address4_carry__3_n_2),
-        .O(waveRef1Address3__14_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef1Address3__14_carry_i_1
-       (.I0(waveRef1Address4[6]),
-        .I1(waveRef1Address4[7]),
-        .O(waveRef1Address3__14_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef1Address3__14_carry_i_2
-       (.I0(waveRef1Address4[4]),
-        .I1(waveRef1Address4[5]),
-        .O(waveRef1Address3__14_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef1Address3__14_carry_i_3
-       (.I0(waveRef1Address4[2]),
-        .I1(waveRef1Address4[3]),
-        .O(waveRef1Address3__14_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef1Address3__14_carry_i_4
-       (.I0(waveRef1Address4[6]),
-        .I1(waveRef1Address4[7]),
-        .O(waveRef1Address3__14_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef1Address3__14_carry_i_5
-       (.I0(waveRef1Address4[4]),
-        .I1(waveRef1Address4[5]),
-        .O(waveRef1Address3__14_carry_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef1Address3__14_carry_i_6
-       (.I0(waveRef1Address4[2]),
-        .I1(waveRef1Address4[3]),
-        .O(waveRef1Address3__14_carry_i_6_n_0));
-  LUT3 #(
-    .INIT(8'h06)) 
-    waveRef1Address3__14_carry_i_7
-       (.I0(count[0]),
-        .I1(countMulti_reg__0[0]),
-        .I2(waveRef1Address4[1]),
-        .O(waveRef1Address3__14_carry_i_7_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 waveRef1Address3_carry
        (.CI(1'b0),
         .CO({waveRef1Address3_carry_n_0,waveRef1Address3_carry_n_1,waveRef1Address3_carry_n_2,waveRef1Address3_carry_n_3}),
@@ -4898,6 +5132,38 @@ module MicroBlaze_CC_0_0_CC
        (.I0(waveRef1Address4[2]),
         .I1(waveRef1Address4[3]),
         .O(waveRef1Address3_carry_i_7_n_0));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef1Address3_inferred__0/i__carry 
+       (.CI(1'b0),
+        .CO({\waveRef1Address3_inferred__0/i__carry_n_0 ,\waveRef1Address3_inferred__0/i__carry_n_1 ,\waveRef1Address3_inferred__0/i__carry_n_2 ,\waveRef1Address3_inferred__0/i__carry_n_3 }),
+        .CYINIT(1'b1),
+        .DI({i__carry_i_1__0_n_0,i__carry_i_2__0_n_0,i__carry_i_3__0_n_0,waveRef1Address4[1]}),
+        .O(\NLW_waveRef1Address3_inferred__0/i__carry_O_UNCONNECTED [3:0]),
+        .S({i__carry_i_4__0_n_0,i__carry_i_5__0_n_0,i__carry_i_6__0_n_0,i__carry_i_7__1_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef1Address3_inferred__0/i__carry__0 
+       (.CI(\waveRef1Address3_inferred__0/i__carry_n_0 ),
+        .CO({\waveRef1Address3_inferred__0/i__carry__0_n_0 ,\waveRef1Address3_inferred__0/i__carry__0_n_1 ,\waveRef1Address3_inferred__0/i__carry__0_n_2 ,\waveRef1Address3_inferred__0/i__carry__0_n_3 }),
+        .CYINIT(1'b0),
+        .DI({i__carry__0_i_1__0_n_0,i__carry__0_i_2__0_n_0,i__carry__0_i_3__0_n_0,i__carry__0_i_4__0_n_0}),
+        .O(\NLW_waveRef1Address3_inferred__0/i__carry__0_O_UNCONNECTED [3:0]),
+        .S({i__carry__0_i_5__0_n_0,i__carry__0_i_6__0_n_0,i__carry__0_i_7__0_n_0,i__carry__0_i_8__0_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef1Address3_inferred__0/i__carry__1 
+       (.CI(\waveRef1Address3_inferred__0/i__carry__0_n_0 ),
+        .CO({\waveRef1Address3_inferred__0/i__carry__1_n_0 ,\waveRef1Address3_inferred__0/i__carry__1_n_1 ,\waveRef1Address3_inferred__0/i__carry__1_n_2 ,\waveRef1Address3_inferred__0/i__carry__1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({i__carry__1_i_1_n_0,i__carry__1_i_2_n_0,i__carry__1_i_3_n_0,i__carry__1_i_4_n_0}),
+        .O(\NLW_waveRef1Address3_inferred__0/i__carry__1_O_UNCONNECTED [3:0]),
+        .S({waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,i__carry__1_i_5_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef1Address3_inferred__0/i__carry__2 
+       (.CI(\waveRef1Address3_inferred__0/i__carry__1_n_0 ),
+        .CO({waveRef1Address32_in,\waveRef1Address3_inferred__0/i__carry__2_n_1 ,\waveRef1Address3_inferred__0/i__carry__2_n_2 ,\waveRef1Address3_inferred__0/i__carry__2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,waveRef1Address4[31],i__carry__2_i_2_n_0,i__carry__2_i_3_n_0}),
+        .O(\NLW_waveRef1Address3_inferred__0/i__carry__2_O_UNCONNECTED [3:0]),
+        .S({waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2,waveRef1Address4_carry__3_n_2}));
   CARRY4 waveRef1Address4_carry
        (.CI(1'b0),
         .CO({waveRef1Address4_carry_n_0,waveRef1Address4_carry_n_1,waveRef1Address4_carry_n_2,waveRef1Address4_carry_n_3}),
@@ -5278,171 +5544,6 @@ module MicroBlaze_CC_0_0_CC
         .Q(waveRef1Address[9]),
         .R(\waveRef1Address[15]_i_1_n_0 ));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef2Address3__14_carry
-       (.CI(1'b0),
-        .CO({waveRef2Address3__14_carry_n_0,waveRef2Address3__14_carry_n_1,waveRef2Address3__14_carry_n_2,waveRef2Address3__14_carry_n_3}),
-        .CYINIT(1'b1),
-        .DI({waveRef2Address3__14_carry_i_1_n_0,waveRef2Address3__14_carry_i_2_n_0,waveRef2Address3__14_carry_i_3_n_0,waveRef2Address4[1]}),
-        .O(NLW_waveRef2Address3__14_carry_O_UNCONNECTED[3:0]),
-        .S({waveRef2Address3__14_carry_i_4_n_0,waveRef2Address3__14_carry_i_5_n_0,waveRef2Address3__14_carry_i_6_n_0,waveRef2Address3__14_carry_i_7_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef2Address3__14_carry__0
-       (.CI(waveRef2Address3__14_carry_n_0),
-        .CO({waveRef2Address3__14_carry__0_n_0,waveRef2Address3__14_carry__0_n_1,waveRef2Address3__14_carry__0_n_2,waveRef2Address3__14_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({waveRef2Address3__14_carry__0_i_1_n_0,waveRef2Address3__14_carry__0_i_2_n_0,waveRef2Address3__14_carry__0_i_3_n_0,waveRef2Address3__14_carry__0_i_4_n_0}),
-        .O(NLW_waveRef2Address3__14_carry__0_O_UNCONNECTED[3:0]),
-        .S({waveRef2Address3__14_carry__0_i_5_n_0,waveRef2Address3__14_carry__0_i_6_n_0,waveRef2Address3__14_carry__0_i_7_n_0,waveRef2Address3__14_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef2Address3__14_carry__0_i_1
-       (.I0(waveRef2Address4[14]),
-        .I1(waveRef2Address4[15]),
-        .O(waveRef2Address3__14_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef2Address3__14_carry__0_i_2
-       (.I0(waveRef2Address4[12]),
-        .I1(waveRef2Address4[13]),
-        .O(waveRef2Address3__14_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef2Address3__14_carry__0_i_3
-       (.I0(waveRef2Address4[10]),
-        .I1(waveRef2Address4[11]),
-        .O(waveRef2Address3__14_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef2Address3__14_carry__0_i_4
-       (.I0(waveRef2Address4[8]),
-        .I1(waveRef2Address4[9]),
-        .O(waveRef2Address3__14_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef2Address3__14_carry__0_i_5
-       (.I0(waveRef2Address4[14]),
-        .I1(waveRef2Address4[15]),
-        .O(waveRef2Address3__14_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef2Address3__14_carry__0_i_6
-       (.I0(waveRef2Address4[12]),
-        .I1(waveRef2Address4[13]),
-        .O(waveRef2Address3__14_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef2Address3__14_carry__0_i_7
-       (.I0(waveRef2Address4[10]),
-        .I1(waveRef2Address4[11]),
-        .O(waveRef2Address3__14_carry__0_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef2Address3__14_carry__0_i_8
-       (.I0(waveRef2Address4[8]),
-        .I1(waveRef2Address4[9]),
-        .O(waveRef2Address3__14_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef2Address3__14_carry__1
-       (.CI(waveRef2Address3__14_carry__0_n_0),
-        .CO({waveRef2Address3__14_carry__1_n_0,waveRef2Address3__14_carry__1_n_1,waveRef2Address3__14_carry__1_n_2,waveRef2Address3__14_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({waveRef2Address3__14_carry__1_i_1_n_0,waveRef2Address3__14_carry__1_i_2_n_0,waveRef2Address3__14_carry__1_i_3_n_0,waveRef2Address3__14_carry__1_i_4_n_0}),
-        .O(NLW_waveRef2Address3__14_carry__1_O_UNCONNECTED[3:0]),
-        .S({waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,waveRef2Address3__14_carry__1_i_5_n_0}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef2Address3__14_carry__1_i_1
-       (.I0(waveRef2Address4_carry__3_n_2),
-        .O(waveRef2Address3__14_carry__1_i_1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef2Address3__14_carry__1_i_2
-       (.I0(waveRef2Address4_carry__3_n_2),
-        .O(waveRef2Address3__14_carry__1_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef2Address3__14_carry__1_i_3
-       (.I0(waveRef2Address4_carry__3_n_2),
-        .O(waveRef2Address3__14_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    waveRef2Address3__14_carry__1_i_4
-       (.I0(waveRef2Address4[16]),
-        .I1(waveRef2Address4_carry__3_n_2),
-        .O(waveRef2Address3__14_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    waveRef2Address3__14_carry__1_i_5
-       (.I0(waveRef2Address4_carry__3_n_2),
-        .I1(waveRef2Address4[16]),
-        .O(waveRef2Address3__14_carry__1_i_5_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef2Address3__14_carry__2
-       (.CI(waveRef2Address3__14_carry__1_n_0),
-        .CO({waveRef2Address31_in,waveRef2Address3__14_carry__2_n_1,waveRef2Address3__14_carry__2_n_2,waveRef2Address3__14_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,waveRef2Address4[31],waveRef2Address3__14_carry__2_i_2_n_0,waveRef2Address3__14_carry__2_i_3_n_0}),
-        .O(NLW_waveRef2Address3__14_carry__2_O_UNCONNECTED[3:0]),
-        .S({waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef2Address3__14_carry__2_i_1
-       (.I0(waveRef2Address4_carry__3_n_2),
-        .O(waveRef2Address4[31]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef2Address3__14_carry__2_i_2
-       (.I0(waveRef2Address4_carry__3_n_2),
-        .O(waveRef2Address3__14_carry__2_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef2Address3__14_carry__2_i_3
-       (.I0(waveRef2Address4_carry__3_n_2),
-        .O(waveRef2Address3__14_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef2Address3__14_carry_i_1
-       (.I0(waveRef2Address4[6]),
-        .I1(waveRef2Address4[7]),
-        .O(waveRef2Address3__14_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef2Address3__14_carry_i_2
-       (.I0(waveRef2Address4[4]),
-        .I1(waveRef2Address4[5]),
-        .O(waveRef2Address3__14_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef2Address3__14_carry_i_3
-       (.I0(waveRef2Address4[2]),
-        .I1(waveRef2Address4[3]),
-        .O(waveRef2Address3__14_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef2Address3__14_carry_i_4
-       (.I0(waveRef2Address4[6]),
-        .I1(waveRef2Address4[7]),
-        .O(waveRef2Address3__14_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef2Address3__14_carry_i_5
-       (.I0(waveRef2Address4[4]),
-        .I1(waveRef2Address4[5]),
-        .O(waveRef2Address3__14_carry_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef2Address3__14_carry_i_6
-       (.I0(waveRef2Address4[2]),
-        .I1(waveRef2Address4[3]),
-        .O(waveRef2Address3__14_carry_i_6_n_0));
-  LUT3 #(
-    .INIT(8'h06)) 
-    waveRef2Address3__14_carry_i_7
-       (.I0(count[0]),
-        .I1(countMulti_reg__0[0]),
-        .I2(waveRef2Address4[1]),
-        .O(waveRef2Address3__14_carry_i_7_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 waveRef2Address3_carry
        (.CI(1'b0),
         .CO({waveRef2Address3_carry_n_0,waveRef2Address3_carry_n_1,waveRef2Address3_carry_n_2,waveRef2Address3_carry_n_3}),
@@ -5557,6 +5658,38 @@ module MicroBlaze_CC_0_0_CC
        (.I0(waveRef2Address4[2]),
         .I1(waveRef2Address4[3]),
         .O(waveRef2Address3_carry_i_7_n_0));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef2Address3_inferred__0/i__carry 
+       (.CI(1'b0),
+        .CO({\waveRef2Address3_inferred__0/i__carry_n_0 ,\waveRef2Address3_inferred__0/i__carry_n_1 ,\waveRef2Address3_inferred__0/i__carry_n_2 ,\waveRef2Address3_inferred__0/i__carry_n_3 }),
+        .CYINIT(1'b1),
+        .DI({i__carry_i_1__1_n_0,i__carry_i_2__1_n_0,i__carry_i_3__1_n_0,waveRef2Address4[1]}),
+        .O(\NLW_waveRef2Address3_inferred__0/i__carry_O_UNCONNECTED [3:0]),
+        .S({i__carry_i_4__1_n_0,i__carry_i_5__1_n_0,i__carry_i_6__1_n_0,i__carry_i_7__0_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef2Address3_inferred__0/i__carry__0 
+       (.CI(\waveRef2Address3_inferred__0/i__carry_n_0 ),
+        .CO({\waveRef2Address3_inferred__0/i__carry__0_n_0 ,\waveRef2Address3_inferred__0/i__carry__0_n_1 ,\waveRef2Address3_inferred__0/i__carry__0_n_2 ,\waveRef2Address3_inferred__0/i__carry__0_n_3 }),
+        .CYINIT(1'b0),
+        .DI({i__carry__0_i_1__1_n_0,i__carry__0_i_2__1_n_0,i__carry__0_i_3__1_n_0,i__carry__0_i_4__1_n_0}),
+        .O(\NLW_waveRef2Address3_inferred__0/i__carry__0_O_UNCONNECTED [3:0]),
+        .S({i__carry__0_i_5__1_n_0,i__carry__0_i_6__1_n_0,i__carry__0_i_7__1_n_0,i__carry__0_i_8__1_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef2Address3_inferred__0/i__carry__1 
+       (.CI(\waveRef2Address3_inferred__0/i__carry__0_n_0 ),
+        .CO({\waveRef2Address3_inferred__0/i__carry__1_n_0 ,\waveRef2Address3_inferred__0/i__carry__1_n_1 ,\waveRef2Address3_inferred__0/i__carry__1_n_2 ,\waveRef2Address3_inferred__0/i__carry__1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({i__carry__1_i_1__0_n_0,i__carry__1_i_2__0_n_0,i__carry__1_i_3__0_n_0,i__carry__1_i_4__0_n_0}),
+        .O(\NLW_waveRef2Address3_inferred__0/i__carry__1_O_UNCONNECTED [3:0]),
+        .S({waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,i__carry__1_i_5__0_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef2Address3_inferred__0/i__carry__2 
+       (.CI(\waveRef2Address3_inferred__0/i__carry__1_n_0 ),
+        .CO({waveRef2Address31_in,\waveRef2Address3_inferred__0/i__carry__2_n_1 ,\waveRef2Address3_inferred__0/i__carry__2_n_2 ,\waveRef2Address3_inferred__0/i__carry__2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,waveRef2Address4[31],i__carry__2_i_2__0_n_0,i__carry__2_i_3__0_n_0}),
+        .O(\NLW_waveRef2Address3_inferred__0/i__carry__2_O_UNCONNECTED [3:0]),
+        .S({waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2,waveRef2Address4_carry__3_n_2}));
   CARRY4 waveRef2Address4_carry
        (.CI(1'b0),
         .CO({waveRef2Address4_carry_n_0,waveRef2Address4_carry_n_1,waveRef2Address4_carry_n_2,waveRef2Address4_carry_n_3}),
@@ -5929,171 +6062,6 @@ module MicroBlaze_CC_0_0_CC
         .Q(waveRef2Address[9]),
         .R(\waveRef2Address[15]_i_1_n_0 ));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef3Address3__14_carry
-       (.CI(1'b0),
-        .CO({waveRef3Address3__14_carry_n_0,waveRef3Address3__14_carry_n_1,waveRef3Address3__14_carry_n_2,waveRef3Address3__14_carry_n_3}),
-        .CYINIT(1'b1),
-        .DI({waveRef3Address3__14_carry_i_1_n_0,waveRef3Address3__14_carry_i_2_n_0,waveRef3Address3__14_carry_i_3_n_0,waveRef3Address4[1]}),
-        .O(NLW_waveRef3Address3__14_carry_O_UNCONNECTED[3:0]),
-        .S({waveRef3Address3__14_carry_i_4_n_0,waveRef3Address3__14_carry_i_5_n_0,waveRef3Address3__14_carry_i_6_n_0,waveRef3Address3__14_carry_i_7_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef3Address3__14_carry__0
-       (.CI(waveRef3Address3__14_carry_n_0),
-        .CO({waveRef3Address3__14_carry__0_n_0,waveRef3Address3__14_carry__0_n_1,waveRef3Address3__14_carry__0_n_2,waveRef3Address3__14_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({waveRef3Address3__14_carry__0_i_1_n_0,waveRef3Address3__14_carry__0_i_2_n_0,waveRef3Address3__14_carry__0_i_3_n_0,waveRef3Address3__14_carry__0_i_4_n_0}),
-        .O(NLW_waveRef3Address3__14_carry__0_O_UNCONNECTED[3:0]),
-        .S({waveRef3Address3__14_carry__0_i_5_n_0,waveRef3Address3__14_carry__0_i_6_n_0,waveRef3Address3__14_carry__0_i_7_n_0,waveRef3Address3__14_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef3Address3__14_carry__0_i_1
-       (.I0(waveRef3Address4[14]),
-        .I1(waveRef3Address4[15]),
-        .O(waveRef3Address3__14_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef3Address3__14_carry__0_i_2
-       (.I0(waveRef3Address4[12]),
-        .I1(waveRef3Address4[13]),
-        .O(waveRef3Address3__14_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef3Address3__14_carry__0_i_3
-       (.I0(waveRef3Address4[10]),
-        .I1(waveRef3Address4[11]),
-        .O(waveRef3Address3__14_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef3Address3__14_carry__0_i_4
-       (.I0(waveRef3Address4[8]),
-        .I1(waveRef3Address4[9]),
-        .O(waveRef3Address3__14_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef3Address3__14_carry__0_i_5
-       (.I0(waveRef3Address4[14]),
-        .I1(waveRef3Address4[15]),
-        .O(waveRef3Address3__14_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef3Address3__14_carry__0_i_6
-       (.I0(waveRef3Address4[12]),
-        .I1(waveRef3Address4[13]),
-        .O(waveRef3Address3__14_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef3Address3__14_carry__0_i_7
-       (.I0(waveRef3Address4[10]),
-        .I1(waveRef3Address4[11]),
-        .O(waveRef3Address3__14_carry__0_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef3Address3__14_carry__0_i_8
-       (.I0(waveRef3Address4[8]),
-        .I1(waveRef3Address4[9]),
-        .O(waveRef3Address3__14_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef3Address3__14_carry__1
-       (.CI(waveRef3Address3__14_carry__0_n_0),
-        .CO({waveRef3Address3__14_carry__1_n_0,waveRef3Address3__14_carry__1_n_1,waveRef3Address3__14_carry__1_n_2,waveRef3Address3__14_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({waveRef3Address3__14_carry__1_i_1_n_0,waveRef3Address3__14_carry__1_i_2_n_0,waveRef3Address3__14_carry__1_i_3_n_0,waveRef3Address3__14_carry__1_i_4_n_0}),
-        .O(NLW_waveRef3Address3__14_carry__1_O_UNCONNECTED[3:0]),
-        .S({waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,waveRef3Address3__14_carry__1_i_5_n_0}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef3Address3__14_carry__1_i_1
-       (.I0(waveRef3Address4_carry__3_n_2),
-        .O(waveRef3Address3__14_carry__1_i_1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef3Address3__14_carry__1_i_2
-       (.I0(waveRef3Address4_carry__3_n_2),
-        .O(waveRef3Address3__14_carry__1_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef3Address3__14_carry__1_i_3
-       (.I0(waveRef3Address4_carry__3_n_2),
-        .O(waveRef3Address3__14_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    waveRef3Address3__14_carry__1_i_4
-       (.I0(waveRef3Address4[16]),
-        .I1(waveRef3Address4_carry__3_n_2),
-        .O(waveRef3Address3__14_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    waveRef3Address3__14_carry__1_i_5
-       (.I0(waveRef3Address4_carry__3_n_2),
-        .I1(waveRef3Address4[16]),
-        .O(waveRef3Address3__14_carry__1_i_5_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 waveRef3Address3__14_carry__2
-       (.CI(waveRef3Address3__14_carry__1_n_0),
-        .CO({waveRef3Address30_in,waveRef3Address3__14_carry__2_n_1,waveRef3Address3__14_carry__2_n_2,waveRef3Address3__14_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,waveRef3Address4[31],waveRef3Address3__14_carry__2_i_2_n_0,waveRef3Address3__14_carry__2_i_3_n_0}),
-        .O(NLW_waveRef3Address3__14_carry__2_O_UNCONNECTED[3:0]),
-        .S({waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef3Address3__14_carry__2_i_1
-       (.I0(waveRef3Address4_carry__3_n_2),
-        .O(waveRef3Address4[31]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef3Address3__14_carry__2_i_2
-       (.I0(waveRef3Address4_carry__3_n_2),
-        .O(waveRef3Address3__14_carry__2_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    waveRef3Address3__14_carry__2_i_3
-       (.I0(waveRef3Address4_carry__3_n_2),
-        .O(waveRef3Address3__14_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef3Address3__14_carry_i_1
-       (.I0(waveRef3Address4[6]),
-        .I1(waveRef3Address4[7]),
-        .O(waveRef3Address3__14_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef3Address3__14_carry_i_2
-       (.I0(waveRef3Address4[4]),
-        .I1(waveRef3Address4[5]),
-        .O(waveRef3Address3__14_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    waveRef3Address3__14_carry_i_3
-       (.I0(waveRef3Address4[2]),
-        .I1(waveRef3Address4[3]),
-        .O(waveRef3Address3__14_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef3Address3__14_carry_i_4
-       (.I0(waveRef3Address4[6]),
-        .I1(waveRef3Address4[7]),
-        .O(waveRef3Address3__14_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef3Address3__14_carry_i_5
-       (.I0(waveRef3Address4[4]),
-        .I1(waveRef3Address4[5]),
-        .O(waveRef3Address3__14_carry_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    waveRef3Address3__14_carry_i_6
-       (.I0(waveRef3Address4[2]),
-        .I1(waveRef3Address4[3]),
-        .O(waveRef3Address3__14_carry_i_6_n_0));
-  LUT3 #(
-    .INIT(8'h06)) 
-    waveRef3Address3__14_carry_i_7
-       (.I0(count[0]),
-        .I1(countMulti_reg__0[0]),
-        .I2(waveRef3Address4[1]),
-        .O(waveRef3Address3__14_carry_i_7_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 waveRef3Address3_carry
        (.CI(1'b0),
         .CO({waveRef3Address3_carry_n_0,waveRef3Address3_carry_n_1,waveRef3Address3_carry_n_2,waveRef3Address3_carry_n_3}),
@@ -6208,6 +6176,38 @@ module MicroBlaze_CC_0_0_CC
        (.I0(waveRef3Address4[2]),
         .I1(waveRef3Address4[3]),
         .O(waveRef3Address3_carry_i_7_n_0));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef3Address3_inferred__0/i__carry 
+       (.CI(1'b0),
+        .CO({\waveRef3Address3_inferred__0/i__carry_n_0 ,\waveRef3Address3_inferred__0/i__carry_n_1 ,\waveRef3Address3_inferred__0/i__carry_n_2 ,\waveRef3Address3_inferred__0/i__carry_n_3 }),
+        .CYINIT(1'b1),
+        .DI({i__carry_i_1__2_n_0,i__carry_i_2__2_n_0,i__carry_i_3__2_n_0,waveRef3Address4[1]}),
+        .O(\NLW_waveRef3Address3_inferred__0/i__carry_O_UNCONNECTED [3:0]),
+        .S({i__carry_i_4__2_n_0,i__carry_i_5__2_n_0,i__carry_i_6__2_n_0,i__carry_i_7_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef3Address3_inferred__0/i__carry__0 
+       (.CI(\waveRef3Address3_inferred__0/i__carry_n_0 ),
+        .CO({\waveRef3Address3_inferred__0/i__carry__0_n_0 ,\waveRef3Address3_inferred__0/i__carry__0_n_1 ,\waveRef3Address3_inferred__0/i__carry__0_n_2 ,\waveRef3Address3_inferred__0/i__carry__0_n_3 }),
+        .CYINIT(1'b0),
+        .DI({i__carry__0_i_1__2_n_0,i__carry__0_i_2__2_n_0,i__carry__0_i_3__2_n_0,i__carry__0_i_4__2_n_0}),
+        .O(\NLW_waveRef3Address3_inferred__0/i__carry__0_O_UNCONNECTED [3:0]),
+        .S({i__carry__0_i_5__2_n_0,i__carry__0_i_6__2_n_0,i__carry__0_i_7__2_n_0,i__carry__0_i_8__2_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef3Address3_inferred__0/i__carry__1 
+       (.CI(\waveRef3Address3_inferred__0/i__carry__0_n_0 ),
+        .CO({\waveRef3Address3_inferred__0/i__carry__1_n_0 ,\waveRef3Address3_inferred__0/i__carry__1_n_1 ,\waveRef3Address3_inferred__0/i__carry__1_n_2 ,\waveRef3Address3_inferred__0/i__carry__1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({i__carry__1_i_1__1_n_0,i__carry__1_i_2__1_n_0,i__carry__1_i_3__1_n_0,i__carry__1_i_4__1_n_0}),
+        .O(\NLW_waveRef3Address3_inferred__0/i__carry__1_O_UNCONNECTED [3:0]),
+        .S({waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,i__carry__1_i_5__1_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \waveRef3Address3_inferred__0/i__carry__2 
+       (.CI(\waveRef3Address3_inferred__0/i__carry__1_n_0 ),
+        .CO({waveRef3Address30_in,\waveRef3Address3_inferred__0/i__carry__2_n_1 ,\waveRef3Address3_inferred__0/i__carry__2_n_2 ,\waveRef3Address3_inferred__0/i__carry__2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,waveRef3Address4[31],i__carry__2_i_2__1_n_0,i__carry__2_i_3__1_n_0}),
+        .O(\NLW_waveRef3Address3_inferred__0/i__carry__2_O_UNCONNECTED [3:0]),
+        .S({waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2,waveRef3Address4_carry__3_n_2}));
   CARRY4 waveRef3Address4_carry
        (.CI(1'b0),
         .CO({waveRef3Address4_carry_n_0,waveRef3Address4_carry_n_1,waveRef3Address4_carry_n_2,waveRef3Address4_carry_n_3}),

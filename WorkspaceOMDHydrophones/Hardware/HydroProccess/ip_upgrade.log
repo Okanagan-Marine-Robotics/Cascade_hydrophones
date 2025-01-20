@@ -1,0 +1,611 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_xlslice_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_xlslice_0_1 (xilinx.com:ip:xlslice:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_xlslice_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_xlslice_0_0 (xilinx.com:ip:xlslice:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_dds_compiler_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_dds_compiler_0_1 (xilinx.com:ip:dds_compiler:6.0 (Rev. 26)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_blk_mem_gen_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_blk_mem_gen_0_1 (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_blk_mem_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_blk_mem_gen_0_0 (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0 (Rev. 35)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:18:26 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of MicroBlaze_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 35)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_xlslice_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_xlslice_0_1 (xilinx.com:ip:xlslice:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_xlslice_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_xlslice_0_0 (xilinx.com:ip:xlslice:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_xlconstant_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_xlconstant_1_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_rst_clk_wiz_0_200M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_rst_clk_wiz_0_200M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 14) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_microblaze_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_microblaze_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 30) to (Rev. 34)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_microblaze_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_microblaze_0_0 (xilinx.com:ip:microblaze:11.0) from (Rev. 12) to (Rev. 14)
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_BASE_VECTORS to value 0x0000000000000000 (source 'default')
+Set parameter C_M_AXI_DP_ADDR_WIDTH to value 32 (source 'default')
+Set parameter C_M_AXI_DC_ADDR_WIDTH to value 32 (source 'default')
+Set parameter C_M_AXI_IP_ADDR_WIDTH to value 32 (source 'default')
+Set parameter C_M_AXI_IC_ADDR_WIDTH to value 32 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_mdm_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_mdm_1_0 (xilinx.com:ip:mdm:3.2) from (Rev. 25) to (Rev. 27)
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_M_AXIS_ID_WIDTH to value 7 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_lmb_bram_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_lmb_bram_0 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_ilmb_v10_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_ilmb_v10_0 (xilinx.com:ip:lmb_v10:3.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_ilmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_ilmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0) from (Rev. 23) to (Rev. 25)
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_dlmb_v10_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_dlmb_v10_0 (xilinx.com:ip:lmb_v10:3.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_dlmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_dlmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0) from (Rev. 23) to (Rev. 25)
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_dds_compiler_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_dds_compiler_0_1 (xilinx.com:ip:dds_compiler:6.0) from (Rev. 23) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 13) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_blk_mem_gen_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_blk_mem_gen_0_1 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_blk_mem_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_blk_mem_gen_0_0 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 33) to (Rev. 37)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 31) to (Rev. 35)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jan 20 02:13:20 2025
+| Host         : James running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s25csga225-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MicroBlaze_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MicroBlaze_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 31) to (Rev. 35)
+

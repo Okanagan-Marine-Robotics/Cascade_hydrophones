@@ -1,15 +1,15 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Tue Sep 24 19:34:47 2024
--- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+-- Date        : Mon Jan 20 02:22:39 2025
+-- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_sim_netlist.vhdl
+--               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_sim_netlist.vhdl
 -- Design      : MicroBlaze_BRAMMUX_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7s25csga225-1
+-- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -994,26 +994,26 @@ architecture STRUCTURE of MicroBlaze_BRAMMUX_0_0_BRAMMUX is
   signal \NLW_Ref3Address7_carry__2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_Ref3Address7_carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Ref0Address[0]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \Ref0Address[10]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \Ref0Address[0]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \Ref0Address[10]_i_1\ : label is "soft_lutpair13";
   attribute SOFT_HLUTNM of \Ref0Address[11]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \Ref0Address[11]_i_3\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \Ref0Address[1]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \Ref0Address[2]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \Ref0Address[1]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \Ref0Address[2]_i_1\ : label is "soft_lutpair17";
   attribute SOFT_HLUTNM of \Ref0Address[3]_i_5\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \Ref0Address[4]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \Ref0Address[5]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \Ref0Address[6]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \Ref0Address[7]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \Ref0Address[8]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \Ref0Address[9]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \Ref0Address[4]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \Ref0Address[5]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \Ref0Address[6]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \Ref0Address[7]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \Ref0Address[8]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \Ref0Address[9]_i_1\ : label is "soft_lutpair13";
   attribute SOFT_HLUTNM of \Ref0[0]_i_1\ : label is "soft_lutpair19";
   attribute SOFT_HLUTNM of \Ref0[10]_i_1\ : label is "soft_lutpair33";
   attribute SOFT_HLUTNM of \Ref0[11]_i_1\ : label is "soft_lutpair34";
   attribute SOFT_HLUTNM of \Ref0[11]_i_11\ : label is "soft_lutpair16";
   attribute SOFT_HLUTNM of \Ref0[11]_i_12\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \Ref0[11]_i_16\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \Ref0[11]_i_17\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \Ref0[11]_i_17\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of \Ref0[11]_i_5\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \Ref0[1]_i_1\ : label is "soft_lutpair29";
   attribute SOFT_HLUTNM of \Ref0[2]_i_1\ : label is "soft_lutpair29";
@@ -1024,7 +1024,7 @@ architecture STRUCTURE of MicroBlaze_BRAMMUX_0_0_BRAMMUX is
   attribute SOFT_HLUTNM of \Ref0[7]_i_1\ : label is "soft_lutpair32";
   attribute SOFT_HLUTNM of \Ref0[8]_i_1\ : label is "soft_lutpair32";
   attribute SOFT_HLUTNM of \Ref0[9]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \Ref1Address[15]_i_27\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \Ref1Address[15]_i_27\ : label is "soft_lutpair18";
   attribute SOFT_HLUTNM of \Ref1Address[15]_i_28\ : label is "soft_lutpair41";
   attribute SOFT_HLUTNM of \Ref1Address[15]_i_29\ : label is "soft_lutpair28";
   attribute SOFT_HLUTNM of \Ref1[0]_i_1\ : label is "soft_lutpair7";
@@ -9441,7 +9441,7 @@ entity MicroBlaze_BRAMMUX_0_0 is
   attribute IP_DEFINITION_SOURCE : string;
   attribute IP_DEFINITION_SOURCE of MicroBlaze_BRAMMUX_0_0 : entity is "module_ref";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of MicroBlaze_BRAMMUX_0_0 : entity is "BRAMMUX,Vivado 2023.2";
+  attribute X_CORE_INFO of MicroBlaze_BRAMMUX_0_0 : entity is "BRAMMUX,Vivado 2024.2";
 end MicroBlaze_BRAMMUX_0_0;
 
 architecture STRUCTURE of MicroBlaze_BRAMMUX_0_0 is
@@ -9452,8 +9452,10 @@ architecture STRUCTURE of MicroBlaze_BRAMMUX_0_0 is
   signal \^ref3address\ : STD_LOGIC_VECTOR ( 14 downto 0 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute X_INTERFACE_MODE : string;
+  attribute X_INTERFACE_MODE of clk : signal is "slave";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 begin
   Ref0Address(15) <= \<const0>\;
   Ref0Address(14) <= \<const0>\;

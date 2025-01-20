@@ -55,26 +55,12 @@ if {$::dispatch::connected} {
   }
 }
 
-proc create_report { reportName command } {
-  set status "."
-  append status $reportName ".fail"
-  if { [file exists $status] } {
-    eval file delete [glob $status]
-  }
-  send_msg_id runtcl-4 info "Executing : $command"
-  set retval [eval catch { $command } msg]
-  if { $retval != 0 } {
-    set fp [open $status w]
-    close $fp
-    send_msg_id runtcl-5 warning "$msg"
-  }
-}
 OPTRACE "MicroBlaze_CC_0_0_synth_1" START { ROLLUP_AUTO }
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/mref
-create_project -in_memory -part xc7s25csga225-1
+create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -82,9 +68,10 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/wt [current_project]
 set_property parent.project_path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part miner.ebang.com.cn:ebaz4205:part0:1.0 [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -103,47 +90,11 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
-OPTRACE "Configure IP Cache" START { }
-
-set cacheID [config_ip_cache -export -no_bom  -dir C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_CC_0_0_synth_1 -new_name MicroBlaze_CC_0_0 -ip [get_ips MicroBlaze_CC_0_0]]
-
-OPTRACE "Configure IP Cache" END { }
-if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top MicroBlaze_CC_0_0 -part xc7s25csga225-1 -incremental_mode off -mode out_of_context
+synth_design -top MicroBlaze_CC_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
-OPTRACE "Write IP Cache" START { }
-
-#---------------------------------------------------------
-# Generate Checkpoint/Stub/Simulation Files For IP Cache
-#---------------------------------------------------------
-# disable binary constraint mode for IPCache checkpoints
-set_param constraints.enableBinaryConstraints false
-
-catch {
- write_checkpoint -force -noxdef -rename_prefix MicroBlaze_CC_0_0_ MicroBlaze_CC_0_0.dcp
-
- set ipCachedFiles {}
- write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ MicroBlaze_CC_0_0_stub.v
- lappend ipCachedFiles MicroBlaze_CC_0_0_stub.v
-
- write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ MicroBlaze_CC_0_0_stub.vhdl
- lappend ipCachedFiles MicroBlaze_CC_0_0_stub.vhdl
-
- write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ MicroBlaze_CC_0_0_sim_netlist.v
- lappend ipCachedFiles MicroBlaze_CC_0_0_sim_netlist.v
-
- write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ MicroBlaze_CC_0_0_sim_netlist.vhdl
- lappend ipCachedFiles MicroBlaze_CC_0_0_sim_netlist.vhdl
- set TIME_taken [expr [clock seconds] - $TIME_start]
-
- if { [get_msg_config -count -severity {CRITICAL WARNING}] == 0 } {
-  config_ip_cache -add -dcp MicroBlaze_CC_0_0.dcp -move_files $ipCachedFiles   -synth_runtime $TIME_taken  -ip [get_ips MicroBlaze_CC_0_0]
- }
-OPTRACE "Write IP Cache" END { }
-}
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
 }
@@ -156,7 +107,7 @@ set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef MicroBlaze_CC_0_0.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "MicroBlaze_CC_0_0_synth_1_synth_report_utilization_0" "report_utilization -file MicroBlaze_CC_0_0_utilization_synth.rpt -pb MicroBlaze_CC_0_0_utilization_synth.pb"
+generate_parallel_reports -reports { "report_utilization -file MicroBlaze_CC_0_0_utilization_synth.rpt -pb MicroBlaze_CC_0_0_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 
 if { [catch {
@@ -189,44 +140,6 @@ if { [catch {
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
-
-
-} else {
-
-
-if { [catch {
-  file copy -force C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_CC_0_0_synth_1/MicroBlaze_CC_0_0.dcp c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0.dcp
-} _RESULT ] } { 
-  send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
-  error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
-}
-
-if { [catch {
-  file rename -force C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_CC_0_0_synth_1/MicroBlaze_CC_0_0_stub.v c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_stub.v
-} _RESULT ] } { 
-  puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
-}
-
-if { [catch {
-  file rename -force C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_CC_0_0_synth_1/MicroBlaze_CC_0_0_stub.vhdl c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_stub.vhdl
-} _RESULT ] } { 
-  puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
-}
-
-if { [catch {
-  file rename -force C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_CC_0_0_synth_1/MicroBlaze_CC_0_0_sim_netlist.v c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.v
-} _RESULT ] } { 
-  puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
-}
-
-if { [catch {
-  file rename -force C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_CC_0_0_synth_1/MicroBlaze_CC_0_0_sim_netlist.vhdl c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.vhdl
-} _RESULT ] } { 
-  puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
-}
-
-close [open .end.used_ip_cache.rst w]
-}; # end if cacheID 
 
 if {[file isdir C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/ip/MicroBlaze_CC_0_0]} {
   catch { 

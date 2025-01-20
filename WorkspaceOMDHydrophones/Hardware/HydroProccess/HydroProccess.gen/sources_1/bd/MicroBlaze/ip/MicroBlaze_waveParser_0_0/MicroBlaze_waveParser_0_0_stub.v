@@ -1,20 +1,21 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Tue Sep 24 21:40:49 2024
-// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Mon Jan 20 02:22:32 2025
+// Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_stub.v
+//               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_stub.v
 // Design      : MicroBlaze_waveParser_0_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xc7s25csga225-1
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "waveParser,Vivado 2023.2" *)
+(* CHECK_LICENSE_TYPE = "MicroBlaze_waveParser_0_0,waveParser,{}" *) (* CORE_GENERATION_INFO = "MicroBlaze_waveParser_0_0,waveParser,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=waveParser,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* IP_DEFINITION_SOURCE = "module_ref" *) (* X_CORE_INFO = "waveParser,Vivado 2024.2" *) 
 module MicroBlaze_waveParser_0_0(waveRef, wave, wave1, bufferRef, buffer, buffer1, 
   waveRef0Address, wave0Address, wave00Address, waveRef1Address, wave1Address, wave01Address, 
   waveRef2Address, wave2Address, wave02Address, waveRef3Address, wave3Address, wave03Address, 

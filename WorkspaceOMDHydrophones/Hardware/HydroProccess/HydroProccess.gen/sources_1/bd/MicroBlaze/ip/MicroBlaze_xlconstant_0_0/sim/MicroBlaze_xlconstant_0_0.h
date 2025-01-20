@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -50,11 +50,11 @@
 #ifndef _MicroBlaze_xlconstant_0_0_H_
 #define _MicroBlaze_xlconstant_0_0_H_
 
-#include "xlconstant_v1_1_8.h"
+#include "xlconstant_v1_1_9.h"
 #include "systemc.h"
 class MicroBlaze_xlconstant_0_0 : public sc_module {
   public:
-xlconstant_v1_1_8<1,1> mod;
+xlconstant_v1_1_9<1,1> mod;
   sc_out< sc_bv<1> > dout;
 MicroBlaze_xlconstant_0_0 (sc_core::sc_module_name name);
   };

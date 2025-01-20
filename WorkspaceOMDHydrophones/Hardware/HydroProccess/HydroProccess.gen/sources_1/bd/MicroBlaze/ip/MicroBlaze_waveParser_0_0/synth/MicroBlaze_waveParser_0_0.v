@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:waveParser:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "waveParser,Vivado 2023.2" *)
+(* X_CORE_INFO = "waveParser,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "MicroBlaze_waveParser_0_0,waveParser,{}" *)
-(* CORE_GENERATION_INFO = "MicroBlaze_waveParser_0_0,waveParser,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=waveParser,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "MicroBlaze_waveParser_0_0,waveParser,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=waveParser,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module MicroBlaze_waveParser_0_0 (

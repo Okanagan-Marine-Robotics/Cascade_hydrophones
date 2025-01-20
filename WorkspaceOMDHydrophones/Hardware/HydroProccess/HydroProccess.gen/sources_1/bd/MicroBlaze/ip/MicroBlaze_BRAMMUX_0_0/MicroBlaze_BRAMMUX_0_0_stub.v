@@ -1,20 +1,21 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Tue Sep 24 19:34:47 2024
-// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Mon Jan 20 02:22:39 2025
+// Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_stub.v
+//               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_stub.v
 // Design      : MicroBlaze_BRAMMUX_0_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xc7s25csga225-1
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "BRAMMUX,Vivado 2023.2" *)
+(* CHECK_LICENSE_TYPE = "MicroBlaze_BRAMMUX_0_0,BRAMMUX,{}" *) (* CORE_GENERATION_INFO = "MicroBlaze_BRAMMUX_0_0,BRAMMUX,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=BRAMMUX,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* IP_DEFINITION_SOURCE = "module_ref" *) (* X_CORE_INFO = "BRAMMUX,Vivado 2024.2" *) 
 module MicroBlaze_BRAMMUX_0_0(waveRef0, waveRef1, waveRef2, waveRef3, Ref0, Ref1, 
   Ref2, Ref3, waveRef0Address, waveRef1Address, waveRef2Address, waveRef3Address, Ref0Address, 
   Ref1Address, Ref2Address, Ref3Address, clk)
@@ -36,5 +37,5 @@ module MicroBlaze_BRAMMUX_0_0(waveRef0, waveRef1, waveRef2, waveRef3, Ref0, Ref1
   output [15:0]Ref1Address;
   output [15:0]Ref2Address;
   output [15:0]Ref3Address;
-  input clk /* synthesis syn_isclock = 1 */;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
 endmodule

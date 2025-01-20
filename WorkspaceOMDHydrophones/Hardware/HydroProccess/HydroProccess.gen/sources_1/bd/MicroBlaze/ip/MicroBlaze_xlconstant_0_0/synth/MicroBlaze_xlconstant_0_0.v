@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:xlconstant:1.1
-// IP Revision: 8
+// IP Revision: 9
 
-(* X_CORE_INFO = "xlconstant_v1_1_8_xlconstant,Vivado 2023.2" *)
-(* CHECK_LICENSE_TYPE = "MicroBlaze_xlconstant_0_0,xlconstant_v1_1_8_xlconstant,{}" *)
-(* CORE_GENERATION_INFO = "MicroBlaze_xlconstant_0_0,xlconstant_v1_1_8_xlconstant,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconstant,x_ipVersion=1.1,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONST_WIDTH=1,CONST_VAL=0x1}" *)
+(* X_CORE_INFO = "xlconstant_v1_1_9_xlconstant,Vivado 2024.2" *)
+(* CHECK_LICENSE_TYPE = "MicroBlaze_xlconstant_0_0,xlconstant_v1_1_9_xlconstant,{}" *)
+(* CORE_GENERATION_INFO = "MicroBlaze_xlconstant_0_0,xlconstant_v1_1_9_xlconstant,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconstant,x_ipVersion=1.1,x_ipCoreRevision=9,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONST_WIDTH=1,CONST_VAL=0x1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module MicroBlaze_xlconstant_0_0 (
   dout
@@ -60,7 +60,7 @@ module MicroBlaze_xlconstant_0_0 (
 
 output wire [0 : 0] dout;
 
-  xlconstant_v1_1_8_xlconstant #(
+  xlconstant_v1_1_9_xlconstant #(
     .CONST_WIDTH(1),
     .CONST_VAL(1'H1)
   ) inst (

@@ -1,20 +1,20 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Sat Sep 21 21:07:05 2024
-// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Mon Jan 20 02:22:32 2025
+// Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/MicroBlaze_BlockRam_0_0_sim_netlist.v
+//               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/MicroBlaze_BlockRam_0_0_sim_netlist.v
 // Design      : MicroBlaze_BlockRam_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7s25csga225-1
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "MicroBlaze_BlockRam_0_0,BlockRam,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "BlockRam,Vivado 2023.2" *) 
+(* X_CORE_INFO = "BlockRam,Vivado 2024.2" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_BlockRam_0_0
    (clk,
@@ -58,7 +58,7 @@ module MicroBlaze_BlockRam_0_0
     waveRef3AddressB,
     wave3AddressB,
     wave03AddressB);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   input clk1Mhz;
   input [11:0]inWave1;
   input [11:0]inWave2;
@@ -460,7 +460,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram1_reg_1_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -674,7 +675,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram1_reg_1_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -802,7 +804,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram1_reg_2_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -1016,7 +1019,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram1_reg_2_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -1144,7 +1148,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram1_reg_3_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -1358,7 +1363,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram1_reg_3_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -1486,7 +1492,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram2_reg_1_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -1700,7 +1707,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram2_reg_1_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -1828,7 +1836,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram2_reg_2_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -2042,7 +2051,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram2_reg_2_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -2170,7 +2180,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram2_reg_3_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -2384,7 +2395,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram2_reg_3_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -2512,7 +2524,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram3_reg_1_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -2726,7 +2739,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram3_reg_1_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -2854,7 +2868,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram3_reg_2_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -3068,7 +3083,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram3_reg_2_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -3196,7 +3212,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram3_reg_3_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -3410,7 +3427,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram3_reg_3_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -3538,7 +3556,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram4_reg_1_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -3752,7 +3771,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram4_reg_1_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -3880,7 +3900,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram4_reg_2_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -4094,7 +4115,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram4_reg_2_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -4222,7 +4244,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram4_reg_3_0" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
@@ -4436,7 +4459,8 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
   (* RTL_RAM_BITS = "30024" *) 
-  (* RTL_RAM_NAME = "inst/Ram4_reg_3_1" *) 
+  (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
+  (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "4095" *) 
