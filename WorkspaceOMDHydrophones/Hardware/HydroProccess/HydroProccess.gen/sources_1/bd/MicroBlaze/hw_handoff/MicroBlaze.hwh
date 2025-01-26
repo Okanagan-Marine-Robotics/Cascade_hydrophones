@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 20 02:21:22 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan 26 01:31:58 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -69,7 +69,7 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_RAS_n"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="IO" NAME="DDR_reset_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_DDR_DRSTB">
+    <PORT DIR="IO" NAME="DDR_reset_n" SIGIS="rst" SIGNAME="processing_system7_0_DDR_DRSTB">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_DRSTB"/>
       </CONNECTIONS>
@@ -646,6 +646,41 @@
         <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/PulseWaveMaker_0" HWVERSION="1.0" INSTANCE="PulseWaveMaker_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PulseWaveMaker" VLNV="xilinx.com:module_ref:PulseWaveMaker:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_PulseWaveMaker_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_1_m_axis_data_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dds_compiler_1" PORT="m_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="wave2" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_waveRef">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2597,9 +2632,7 @@
         </PORT>
         <PORT DIR="O" LEFT="15" NAME="m_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_1_m_axis_data_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
-            <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
-            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
+            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_data_tvalid" SIGIS="undef"/>
@@ -3753,6 +3786,8 @@
             <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
+            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -4149,14 +4184,19 @@
             <CONNECTION INSTANCE="BlockRam_0" PORT="inWave1"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_1_m_axis_data_tdata">
+        <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds_compiler_1" PORT="m_axis_data_tdata"/>
+            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="wave1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave00Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser_0_wave00Address">
@@ -4184,9 +4224,9 @@
             <CONNECTION INSTANCE="BlockRam_0" PORT="wave0Address"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_1_m_axis_data_tdata">
+        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds_compiler_1" PORT="m_axis_data_tdata"/>
+            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="wave2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave1Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser_0_wave1Address">
@@ -4204,9 +4244,9 @@
             <CONNECTION INSTANCE="BlockRam_0" PORT="wave3Address"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_1_m_axis_data_tdata">
+        <PORT DIR="I" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_waveRef">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds_compiler_1" PORT="m_axis_data_tdata"/>
+            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="waveRef"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser_0_waveRef0Address">

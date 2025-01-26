@@ -10,7 +10,7 @@ reg clk;
 
 // Instantiate the DUT
 MicroBlaze_wrapper DUT (
-    .clk(clk)
+    
 );
 
 // Clock generation

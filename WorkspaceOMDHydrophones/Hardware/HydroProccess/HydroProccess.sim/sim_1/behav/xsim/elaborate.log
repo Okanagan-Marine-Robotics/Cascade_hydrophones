@@ -1,17 +1,55 @@
-Vivado Simulator v2023.2
+Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_11 -L axi_utils_v2_0_7 -L xbip_pipe_v3_0_7 -L xbip_bram18k_v3_0_7 -L mult_gen_v12_0_19 -L xbip_dsp48_wrapper_v3_0_5 -L xbip_dsp48_addsub_v3_0_7 -L xbip_dsp48_multadd_v3_0_7 -L dds_compiler_v6_0_23 -L xlslice_v1_0_3 -L xlconstant_v1_1_8 -L microblaze_v11_0_12 -L lmb_v10_v3_0_13 -L lmb_bram_if_cntlr_v4_0_23 -L blk_mem_gen_v8_4_7 -L axi_lite_ipif_v3_0_4 -L mdm_v3_2_25 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_14 -L lib_pkg_v1_0_3 -L lib_srl_fifo_v1_0_3 -L axi_uartlite_v2_0_33 -L interrupt_control_v3_1_5 -L axi_gpio_v2_0_31 -L generic_baseblocks_v2_1_1 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_29 -L fifo_generator_v13_2_9 -L axi_data_fifo_v2_1_28 -L axi_crossbar_v2_1_30 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_14 -L axi_utils_v2_0_10 -L mult_gen_v12_0_22 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_pipe_v3_0_10 -L floating_point_v7_1_19 -L dds_compiler_v6_0_26 -L xlslice_v1_0_4 -L xlconstant_v1_1_9 -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_3 -L interrupt_control_v3_1_5 -L axi_gpio_v2_0_35 -L blk_mem_gen_v8_4_9 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_19 -L processing_system7_vip_v1_0_21 -L proc_sys_reset_v5_0_16 -L smartconnect_v1_0 -L axi_register_slice_v2_1_33 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sim_1/new/TestBench.v:12]
-WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:293]
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:331]
-WARNING: [VRFC 10-5021] port 'interrupt_ack' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:345]
-WARNING: [VRFC 10-5021] port 'peripheral_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:483]
-WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1381]
-WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:1427]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_gp.v:208]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5546]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5564]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_gp.v:292]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:80]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:89]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10256]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10274]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10275]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:165]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:174]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:251]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:260]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:337]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2024.2_1113_1001/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_21_axi_hp.v:346]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:460]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:463]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/sim/bd_f84b.v:1212]
+WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_processing_system7_0_0/sim/MicroBlaze_processing_system7_0_0.v:215]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ocm_gp0' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4372]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_gp0' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4373]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ocm_gp1' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4394]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_gp1' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4395]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp0' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4465]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp1' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4483]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp2' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4501]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp3' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4519]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_wr_qos' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1253]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_rd_qos' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1276]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_wr_qos' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1091]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_rd_qos' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1115]
+WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3809]
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -29,25 +67,23 @@ Compiling package unisim.vcomponents
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
-Compiling package lib_pkg_v1_0_3.lib_pkg
-Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
-Compiling package xbip_utils_v3_0_11.xcc_utils_v3_0
-Compiling package dds_compiler_v6_0_23.dds_compiler_v6_0_23_viv_comp
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package xbip_utils_v3_0_14.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_26.dds_compiler_v6_0_26_viv_comp
 Compiling package ieee.std_logic_signed
-Compiling package dds_compiler_v6_0_23.pkg_dds_compiler_v6_0_23
-Compiling package dds_compiler_v6_0_23.dds_compiler_v6_0_23_hdl_comps
-Compiling package xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv_comp
-Compiling package axi_utils_v2_0_7.axi_utils_v2_0_7_pkg
+Compiling package dds_compiler_v6_0_26.pkg_dds_compiler_v6_0_26
+Compiling package dds_compiler_v6_0_26.dds_compiler_v6_0_26_hdl_comps
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
 Compiling package ieee.math_real
-Compiling package axi_utils_v2_0_7.global_util_pkg
-Compiling package axi_utils_v2_0_7.axi_utils_comps
-Compiling package dds_compiler_v6_0_23.pkg_betas
-Compiling package dds_compiler_v6_0_23.pkg_alphas
-Compiling package mdm_v3_2_25.mdm_funcs
-Compiling package microblaze_v11_0_12.microblaze_types
-Compiling package microblaze_v11_0_12.microblaze_isa
-Compiling package microblaze_v11_0_12.mmu_types
-Compiling package lmb_bram_if_cntlr_v4_0_23.lmb_bram_if_funcs
+Compiling package axi_utils_v2_0_10.global_util_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_comps
+Compiling package dds_compiler_v6_0_26.pkg_betas
+Compiling package dds_compiler_v6_0_26.pkg_alphas
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
 Compiling module xil_defaultlib.AddressFixer
 Compiling module xil_defaultlib.MicroBlaze_AddressFixer_0_0
 Compiling module xil_defaultlib.BRAMMUX
@@ -56,6 +92,8 @@ Compiling module xil_defaultlib.BlockRam
 Compiling module xil_defaultlib.MicroBlaze_BlockRam_0_0
 Compiling module xil_defaultlib.CC
 Compiling module xil_defaultlib.MicroBlaze_CC_0_0
+Compiling module xil_defaultlib.PulseWaveMaker
+Compiling module xil_defaultlib.MicroBlaze_PulseWaveMaker_0_0
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
@@ -65,236 +103,164 @@ Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\sla
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
 Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
 Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
-Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_mtbf_...]
-Compiling architecture imp of entity axi_gpio_v2_0_31.GPIO_Core [\GPIO_Core(c_aw=9,c_is_dual=1,c_...]
-Compiling architecture imp of entity axi_gpio_v2_0_31.axi_gpio [\axi_gpio(c_family="spartan7",c_...]
+Compiling architecture implementation of entity lib_cdc_v1_0_3.cdc_sync [\cdc_sync(c_single_bit=0,c_mtbf_...]
+Compiling architecture imp of entity axi_gpio_v2_0_35.GPIO_Core [\GPIO_Core(c_aw=9,c_is_dual=1,c_...]
+Compiling architecture imp of entity axi_gpio_v2_0_35.axi_gpio [\axi_gpio(c_family="zynq",c_all_...]
 Compiling architecture microblaze_axi_gpio_0_0_arch of entity xil_defaultlib.MicroBlaze_axi_gpio_0_0 [microblaze_axi_gpio_0_0_default]
-Compiling architecture rtl of entity axi_uartlite_v2_0_33.baudrate [\baudrate(c_ratio=109)\]
-Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
-Compiling architecture imp of entity lib_srl_fifo_v1_0_3.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
-Compiling architecture behavioral of entity lib_srl_fifo_v1_0_3.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
-Compiling architecture imp of entity lib_srl_fifo_v1_0_3.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_fam...]
-Compiling architecture imp of entity lib_srl_fifo_v1_0_3.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_family=...]
-Compiling architecture rtl of entity axi_uartlite_v2_0_33.uartlite_rx [\uartlite_rx(c_family="spartan7"...]
-Compiling architecture rtl of entity axi_uartlite_v2_0_33.uartlite_tx [\uartlite_tx(c_family="spartan7"...]
-Compiling architecture rtl of entity axi_uartlite_v2_0_33.uartlite_core [\uartlite_core(c_family="spartan...]
-Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=4,...]
-Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
-Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
-Compiling architecture rtl of entity axi_uartlite_v2_0_33.axi_uartlite [\axi_uartlite(c_family="spartan7...]
-Compiling architecture microblaze_axi_uartlite_0_0_arch of entity xil_defaultlib.MicroBlaze_axi_uartlite_0_0 [microblaze_axi_uartlite_0_0_defa...]
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_output_stage(...
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_7.blk_mem_axi_regs_fwd_v8_4(C_DATA...
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7(C_FAMILY="spa...
-Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_0
-Compiling module xil_defaultlib.clk1Mhz
-Compiling module xil_defaultlib.MicroBlaze_clk1Mhz_0_0
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=62.5,...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.MicroBlaze_clk_wiz_0_0_clk_wiz
-Compiling module xil_defaultlib.MicroBlaze_clk_wiz_0_0
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
-Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23_rdy [\dds_compiler_v6_0_23_rdy(c_has_...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
-Compiling architecture synth of entity dds_compiler_v6_0_23.pipe_add [\pipe_add(c_width=12,c_seg_width...]
-Compiling architecture synth of entity dds_compiler_v6_0_23.accum [\accum(c_xdevicefamily="spartan7...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
-Compiling architecture synth of entity dds_compiler_v6_0_23.sin_cos [\sin_cos(c_xdevicefamily="sparta...]
-Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
-Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23_core [\dds_compiler_v6_0_23_core(c_xde...]
-Compiling architecture synth of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23_viv [\dds_compiler_v6_0_23_viv(c_xdev...]
-Compiling architecture xilinx of entity dds_compiler_v6_0_23.dds_compiler_v6_0_23 [\dds_compiler_v6_0_23(c_xdevicef...]
-Compiling architecture microblaze_dds_compiler_0_1_arch of entity xil_defaultlib.MicroBlaze_dds_compiler_0_1 [microblaze_dds_compiler_0_1_defa...]
-Compiling architecture bscane2_v of entity unisim.BSCANE2 [\BSCANE2(jtag_chain=2)(1,5)\]
-Compiling architecture imp of entity mdm_v3_2_25.MB_BSCANE2 [\MB_BSCANE2(c_target=spartan7,jt...]
-Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="10")(0,1)\]
-Compiling architecture imp of entity mdm_v3_2_25.MB_LUT1 [\MB_LUT1(c_target=spartan7,init=...]
-Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
-Compiling architecture imp of entity mdm_v3_2_25.MB_BUFG [\MB_BUFG(c_target=spartan7)\]
-Compiling architecture imp of entity mdm_v3_2_25.xil_scan_reset_control [xil_scan_reset_control_default]
-Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
-Compiling architecture fdc_1_v of entity unisim.FDC_1 [fdc_1_default]
-Compiling architecture imp of entity mdm_v3_2_25.MB_FDC_1 [\MB_FDC_1(c_target=spartan7)\]
-Compiling architecture fdre_1_v of entity unisim.FDRE_1 [fdre_1_default]
-Compiling architecture imp of entity mdm_v3_2_25.MB_FDRE_1 [\MB_FDRE_1(c_target=spartan7)\]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000101100111")...]
-Compiling architecture imp of entity mdm_v3_2_25.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_s...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0100001010000111")...]
-Compiling architecture imp of entity mdm_v3_2_25.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_s...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0100010001000011")...]
-Compiling architecture imp of entity mdm_v3_2_25.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_s...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0101100001001101")...]
-Compiling architecture imp of entity mdm_v3_2_25.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_s...]
-Compiling architecture imp of entity mdm_v3_2_25.JTAG_CONTROL [\JTAG_CONTROL(c_target=spartan7,...]
-Compiling architecture imp of entity mdm_v3_2_25.MDM_Core [\MDM_Core(c_target=spartan7,c_jt...]
-Compiling architecture imp of entity mdm_v3_2_25.MDM [\MDM(c_family="spartan7",c_devic...]
-Compiling architecture microblaze_mdm_1_0_arch of entity xil_defaultlib.MicroBlaze_mdm_1_0 [microblaze_mdm_1_0_default]
-Compiling architecture imp of entity microblaze_v11_0_12.mb_sync_bit [mb_sync_bit_default]
-Compiling architecture imp of entity microblaze_v11_0_12.DAXI_interface [\DAXI_interface(c_data_size=32,c...]
-Compiling architecture and2b1l_v of entity unisim.AND2B1L [and2b1l_default]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_AND2B1L [\MB_AND2B1L(c_target=spartan7)\]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_u...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0011111111111111")...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_u...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000000011011")...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_u...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(15,0)\]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_u...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000001100100")...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_u...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0010010100000000")...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_SRL16E [\MB_SRL16E(c_target=spartan7,c_u...]
-Compiling architecture imp of entity microblaze_v11_0_12.mb_sync_bit [\mb_sync_bit(c_levels=1,c_reset_...]
-Compiling architecture imp of entity microblaze_v11_0_12.mb_sync_vec [\mb_sync_vec(c_levels=1,c_reset_...]
-Compiling architecture imp of entity microblaze_v11_0_12.mb_sync_bit [\mb_sync_bit(c_levels=1)\]
-Compiling architecture imp of entity microblaze_v11_0_12.mb_sync_vec [\mb_sync_vec(c_width=10)\]
-Compiling architecture srlc16e_v of entity unisim.SRLC16E [\SRLC16E(0,15)\]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_SRLC16E [\MB_SRLC16E(c_target=spartan7,c_...]
-Compiling architecture imp of entity microblaze_v11_0_12.address_hit [\address_hit(c_target=spartan7,c...]
-Compiling architecture imp of entity microblaze_v11_0_12.xil_scan_reset_control [xil_scan_reset_control_default]
-Compiling architecture imp of entity microblaze_v11_0_12.Debug [\Debug(c_data_size=32,c_instr_si...]
-Compiling architecture imp of entity microblaze_v11_0_12.interrupt_mode_converter [\interrupt_mode_converter(c_edge...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=spartan7,init=...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=spartan7,init=...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_FDRE [\MB_FDRE(c_target=spartan7)\]
-Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
-Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
-Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_MUXCY_XORCY [\MB_MUXCY_XORCY(c_target=spartan...]
-Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_MUXF7 [\MB_MUXF7(c_target=spartan7)\]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_FDR [\MB_FDR(c_target=spartan7)\]
-Compiling architecture imp of entity microblaze_v11_0_12.PC_Module_gti [\PC_Module_gti(c_data_size=32,c_...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=spartan7,init=...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001111...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=spartan7,init=...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=spartan7,init=...]
-Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
-Compiling architecture fds_v of entity unisim.FDS [fds_default]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_FDS [\MB_FDS(c_target=spartan7)\]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111110000...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=spartan7,init=...]
-Compiling architecture imp of entity microblaze_v11_0_12.PreFetch_Buffer_gti [\PreFetch_Buffer_gti(c_instr_siz...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_MUXCY [\MB_MUXCY(c_target=spartan7)\]
-Compiling architecture imp of entity microblaze_v11_0_12.carry_and [\carry_and(c_target=spartan7)\]
-Compiling architecture imp of entity microblaze_v11_0_12.jump_logic [\jump_logic(c_instr_size=32,c_ta...]
-Compiling architecture imp of entity microblaze_v11_0_12.carry_or [\carry_or(c_target=spartan7)\]
-Compiling architecture imp of entity microblaze_v11_0_12.Decode_gti [\Decode_gti(c_data_size=32,c_ins...]
-Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000001111111100...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6_2 [\MB_LUT6_2(c_target=spartan7,ini...]
-Compiling architecture ram32m_v of entity unisim.RAM32M [ram32m_default]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_RAM32M [\MB_RAM32M(c_target=spartan7,c_u...]
-Compiling architecture imp of entity microblaze_v11_0_12.Register_File_gti [\Register_File_gti(c_data_size=3...]
-Compiling architecture imp of entity microblaze_v11_0_12.Operand_Select_gti [\Operand_Select_gti(c_data_size=...]
-Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011000000111101010...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6_2 [\MB_LUT6_2(c_target=spartan7,ini...]
-Compiling architecture imp of entity microblaze_v11_0_12.ALU_Bit [\ALU_Bit(c_target=spartan7,c_all...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100000011110101010...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=spartan7,init=...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111101000001010")(0...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT4 [\MB_LUT4(c_target=spartan7,init=...]
-Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
-Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_MULT_AND [\MB_MULT_AND(c_target=spartan7)\]
-Compiling architecture imp of entity microblaze_v11_0_12.ALU_Bit [\ALU_Bit(c_target=spartan7,c_all...]
-Compiling architecture imp of entity microblaze_v11_0_12.ALU [\ALU(c_data_size=32,c_allow_lut6...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
-Compiling architecture imp of entity microblaze_v11_0_12.Shift_Logic_Module_gti [\Shift_Logic_Module_gti(c_data_s...]
-Compiling architecture imp of entity microblaze_v11_0_12.mul_unit [\mul_unit(c_data_size=32,c_targe...]
-Compiling architecture imp of entity microblaze_v11_0_12.Barrel_Shifter_gti [\Barrel_Shifter_gti(c_data_size=...]
-Compiling architecture imp of entity microblaze_v11_0_12.WB_Mux_Bit [\WB_Mux_Bit(c_target=spartan7,c_...]
-Compiling architecture imp of entity microblaze_v11_0_12.WB_Mux [\WB_Mux(c_data_size=32,c_daddr_s...]
-Compiling architecture imp of entity microblaze_v11_0_12.Zero_Detect_gti [\Zero_Detect_gti(c_data_size=32,...]
-Compiling architecture imp of entity microblaze_v11_0_12.Byte_Doublet_Handle_gti [\Byte_Doublet_Handle_gti(c_data_...]
-Compiling architecture imp of entity microblaze_v11_0_12.Data_Flow_Logic [\Data_Flow_Logic(c_data_size=32,...]
-Compiling architecture msr_reg of entity microblaze_v11_0_12.msr_reg_gti [\msr_reg_gti(c_data_size=32,c_ta...]
-Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111110000000011...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6_2 [\MB_LUT6_2(c_target=spartan7,ini...]
-Compiling architecture imp of entity microblaze_v11_0_12.mux_bus [\mux_bus(c_target=spartan7,c_all...]
-Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="100101101001011010...]
-Compiling architecture imp of entity microblaze_v11_0_12.MB_LUT6_2 [\MB_LUT6_2(c_target=spartan7,ini...]
-Compiling architecture imp of entity microblaze_v11_0_12.exception_registers_gti [\exception_registers_gti(c_data_...]
-Compiling architecture imp of entity microblaze_v11_0_12.Fpu [\Fpu(c_data_size=32,c_target=spa...]
-Compiling architecture imp of entity microblaze_v11_0_12.PVR [\PVR(c_data_size=32,c_daddr_size...]
-Compiling architecture imp of entity microblaze_v11_0_12.Data_Flow_gti [\Data_Flow_gti(c_data_size=32,c_...]
-Compiling architecture imp of entity microblaze_v11_0_12.read_data_mux [\read_data_mux(c_data_size=32,c_...]
-Compiling architecture imp of entity microblaze_v11_0_12.instr_mux [\instr_mux(c_instr_size=32,c_lmb...]
-Compiling architecture imp of entity microblaze_v11_0_12.MMU [\MMU(c_data_size=32,c_daddr_size...]
-Compiling architecture imp of entity microblaze_v11_0_12.MicroBlaze_GTi [\MicroBlaze_GTi(c_num_sync_ff_cl...]
-Compiling architecture imp of entity microblaze_v11_0_12.mb_sync_bit [\mb_sync_bit(c_reset_value='1')\]
-Compiling architecture imp of entity microblaze_v11_0_12.MicroBlaze_Core [\MicroBlaze_Core(c_freq=20000000...]
-Compiling architecture imp of entity microblaze_v11_0_12.MicroBlaze [\MicroBlaze(c_freq=200000000,c_e...]
-Compiling architecture microblaze_microblaze_0_0_arch of entity xil_defaultlib.MicroBlaze_microblaze_0_0 [microblaze_microblaze_0_0_defaul...]
-Compiling module xil_defaultlib.m00_couplers_imp_10RI9FT
-Compiling module xil_defaultlib.m01_couplers_imp_1QOHDSF
-Compiling module xil_defaultlib.s00_couplers_imp_1S13O20
-Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_addr_arbite...
-Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_carry_...
-Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_compar...
-Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_compar...
-Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_addr_decode...
-Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_splitter(C_...
-Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_splitter
-Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_mux_en...
-Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_mux_en...
-Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_mux_en...
-Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
-Compiling module generic_baseblocks_v2_1_1.generic_baseblocks_v2_1_1_mux_en...
-Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_decerr_slav...
-Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_crossbar_sa...
-Compiling module axi_crossbar_v2_1_30.axi_crossbar_v2_1_30_axi_crossba...
-Compiling module xil_defaultlib.MicroBlaze_xbar_0
-Compiling module xil_defaultlib.MicroBlaze_microblaze_0_axi_peri...
-Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_23.pselect_mask [\pselect_mask(c_bar="00000000000...]
-Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_23.lmb_mux [\lmb_mux(c_target=spartan7,c_bas...]
-Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_23.lmb_bram_if_cntlr [\lmb_bram_if_cntlr(c_family="spa...]
-Compiling architecture microblaze_dlmb_bram_if_cntlr_0_arch of entity xil_defaultlib.MicroBlaze_dlmb_bram_if_cntlr_0 [microblaze_dlmb_bram_if_cntlr_0_...]
-Compiling architecture imp of entity lmb_v10_v3_0_13.lmb_v10 [\lmb_v10(c_lmb_num_slaves=1)\]
-Compiling architecture microblaze_dlmb_v10_0_arch of entity xil_defaultlib.MicroBlaze_dlmb_v10_0 [microblaze_dlmb_v10_0_default]
-Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_23.pselect_mask [\pselect_mask(c_bar="00000000000...]
-Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_23.lmb_mux [\lmb_mux(c_target=spartan7,c_bas...]
-Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_23.lmb_bram_if_cntlr [\lmb_bram_if_cntlr(c_family="spa...]
-Compiling architecture microblaze_ilmb_bram_if_cntlr_0_arch of entity xil_defaultlib.MicroBlaze_ilmb_bram_if_cntlr_0 [microblaze_ilmb_bram_if_cntlr_0_...]
-Compiling architecture microblaze_ilmb_v10_0_arch of entity xil_defaultlib.MicroBlaze_ilmb_v10_0 [microblaze_ilmb_v10_0_default]
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_output_stage(...
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7(C_FAMILY="spa...
-Compiling module xil_defaultlib.MicroBlaze_lmb_bram_0
-Compiling module xil_defaultlib.microblaze_0_local_memory_imp_1D...
+Compiling architecture microblaze_axi_gpio_0_1_arch of entity xil_defaultlib.MicroBlaze_axi_gpio_0_1 [microblaze_axi_gpio_0_1_default]
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant
+Compiling module xil_defaultlib.bd_f84b_one_0
 Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
-Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture implementation of entity lib_cdc_v1_0_3.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
 Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
 Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
-Compiling architecture imp of entity proc_sys_reset_v5_0_14.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
-Compiling architecture imp of entity proc_sys_reset_v5_0_14.upcnt_n [\upcnt_n(c_size=6)\]
-Compiling architecture imp of entity proc_sys_reset_v5_0_14.sequence_psr [sequence_psr_default]
-Compiling architecture imp of entity proc_sys_reset_v5_0_14.proc_sys_reset [\proc_sys_reset(c_family="sparta...]
-Compiling architecture microblaze_rst_clk_wiz_0_200m_0_arch of entity xil_defaultlib.MicroBlaze_rst_clk_wiz_0_200M_0 [microblaze_rst_clk_wiz_0_200m_0_...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture bd_f84b_psr_aclk_0_arch of entity xil_defaultlib.bd_f84b_psr_aclk_0 [bd_f84b_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_1YL05Q
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_f84b_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_1YYLWID
+Compiling module xil_defaultlib.bd_f84b_m00arn_0
+Compiling module xil_defaultlib.bd_f84b_m00awn_0
+Compiling module xil_defaultlib.bd_f84b_m00bn_0
+Compiling module xil_defaultlib.bd_f84b_m00rn_0
+Compiling module xil_defaultlib.bd_f84b_m00wn_0
+Compiling module xil_defaultlib.m00_nodes_imp_1CPFS3D
+Compiling module xil_defaultlib.bd_f84b_m00s2a_0
+Compiling module xil_defaultlib.bd_f84b_m01e_0
+Compiling module xil_defaultlib.m01_exit_pipeline_imp_1SJAWB9
+Compiling module xil_defaultlib.bd_f84b_m01arn_0
+Compiling module xil_defaultlib.bd_f84b_m01awn_0
+Compiling module xil_defaultlib.bd_f84b_m01bn_0
+Compiling module xil_defaultlib.bd_f84b_m01rn_0
+Compiling module xil_defaultlib.bd_f84b_m01wn_0
+Compiling module xil_defaultlib.m01_nodes_imp_E0MZKF
+Compiling module xil_defaultlib.bd_f84b_m01s2a_0
+Compiling module xil_defaultlib.bd_f84b_s00a2s_0
+Compiling module xil_defaultlib.bd_f84b_s00mmu_0
+Compiling module xil_defaultlib.bd_f84b_s00sic_0
+Compiling module xil_defaultlib.bd_f84b_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_YKGMHI
+Compiling module xil_defaultlib.bd_f84b_sarn_0
+Compiling module xil_defaultlib.bd_f84b_sawn_0
+Compiling module xil_defaultlib.bd_f84b_sbn_0
+Compiling module xil_defaultlib.bd_f84b_srn_0
+Compiling module xil_defaultlib.bd_f84b_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_T6O2J0
+Compiling module xil_defaultlib.bd_f84b_arinsw_0
+Compiling module xil_defaultlib.bd_f84b_aroutsw_0
+Compiling module xil_defaultlib.bd_f84b_awinsw_0
+Compiling module xil_defaultlib.bd_f84b_awoutsw_0
+Compiling module xil_defaultlib.bd_f84b_binsw_0
+Compiling module xil_defaultlib.bd_f84b_boutsw_0
+Compiling module xil_defaultlib.bd_f84b_arni_0
+Compiling module xil_defaultlib.bd_f84b_awni_0
+Compiling module xil_defaultlib.bd_f84b_bni_0
+Compiling module xil_defaultlib.bd_f84b_rni_0
+Compiling module xil_defaultlib.bd_f84b_wni_0
+Compiling module xil_defaultlib.i_nodes_imp_1J7OULC
+Compiling module xil_defaultlib.bd_f84b_rinsw_0
+Compiling module xil_defaultlib.bd_f84b_routsw_0
+Compiling module xil_defaultlib.bd_f84b_winsw_0
+Compiling module xil_defaultlib.bd_f84b_woutsw_0
+Compiling module xil_defaultlib.switchboards_imp_SFX7C
+Compiling module xil_defaultlib.bd_f84b
+Compiling module xil_defaultlib.MicroBlaze_axi_smc_0
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_output_stage(...
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_9.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9(C_FAMILY="zyn...
+Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_0
+Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_1
+Compiling module xil_defaultlib.clk1Mhz
+Compiling module xil_defaultlib.MicroBlaze_clk1Mhz_0_0
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26_rdy [\dds_compiler_v6_0_26_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity dds_compiler_v6_0_26.pipe_add [\pipe_add(c_width=12,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_26.accum [\accum(c_xdevicefamily="zynq",c_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity dds_compiler_v6_0_26.sin_cos [\sin_cos(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26_core [\dds_compiler_v6_0_26_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26_viv [\dds_compiler_v6_0_26_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26 [\dds_compiler_v6_0_26(c_xdevicef...]
+Compiling architecture microblaze_dds_compiler_0_1_arch of entity xil_defaultlib.MicroBlaze_dds_compiler_0_1 [microblaze_dds_compiler_0_1_defa...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture microblaze_proc_sys_reset_0_0_arch of entity xil_defaultlib.MicroBlaze_proc_sys_reset_0_0 [microblaze_proc_sys_reset_0_0_de...]
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_g...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_g...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_f...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_s...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_i...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_s...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_d...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_o...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_o...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_r...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_r...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_19.axi_vip_v1_1_19_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_19.axi_vip_v1_1_19_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_19.axi_vip_v1_1_19_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_i...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_19.axi_vip_v1_1_19_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21_a...
+Compiling module processing_system7_vip_v1_0_21.processing_system7_vip_v1_0_21(C...
+Compiling module xil_defaultlib.MicroBlaze_processing_system7_0_...
 Compiling module xil_defaultlib.waveParser
 Compiling module xil_defaultlib.MicroBlaze_waveParser_0_0
-Compiling module xlconstant_v1_1_8.xlconstant_v1_1_8_xlconstant
 Compiling module xil_defaultlib.MicroBlaze_xlconstant_0_0
-Compiling module xil_defaultlib.MicroBlaze_xlconstant_1_0
-Compiling module xlslice_v1_0_3.xlslice_v1_0_3_xlslice(DIN_WIDTH...
+Compiling module xlslice_v1_0_4.xlslice_v1_0_4_xlslice(DIN_WIDTH...
 Compiling module xil_defaultlib.MicroBlaze_xlslice_0_0
+Compiling module xil_defaultlib.MicroBlaze_xlslice_0_1
 Compiling module xil_defaultlib.MicroBlaze
 Compiling module xil_defaultlib.MicroBlaze_wrapper
 Compiling module xil_defaultlib.TestBench

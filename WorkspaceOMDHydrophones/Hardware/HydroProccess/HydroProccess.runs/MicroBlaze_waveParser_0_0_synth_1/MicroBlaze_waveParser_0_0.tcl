@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "MicroBlaze_waveParser_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_param bd.open.in_stealth_mode 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }

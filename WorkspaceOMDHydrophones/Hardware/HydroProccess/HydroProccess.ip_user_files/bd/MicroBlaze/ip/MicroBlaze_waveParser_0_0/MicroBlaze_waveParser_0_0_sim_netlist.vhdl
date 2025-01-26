@@ -1,15 +1,15 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Tue Sep 24 21:40:50 2024
--- Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+-- Date        : Sun Jan 26 00:38:33 2025
+-- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.vhdl
+--               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.vhdl
 -- Design      : MicroBlaze_waveParser_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7s25csga225-1
+-- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -670,6 +670,138 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       D => MemoryAddress0(9),
       Q => \MemoryAddress_reg_n_0_[9]\,
       R => p_0_in
+    );
+\wave0Address_reg[0]\: unisim.vcomponents.FDSE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[0]\,
+      Q => waveRef0Address(0),
+      S => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[10]\: unisim.vcomponents.FDRE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[10]\,
+      Q => waveRef0Address(10),
+      R => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[11]\: unisim.vcomponents.FDSE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[11]\,
+      Q => waveRef0Address(11),
+      S => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[1]\,
+      Q => waveRef0Address(1),
+      R => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[2]\: unisim.vcomponents.FDSE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[2]\,
+      Q => waveRef0Address(2),
+      S => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[3]\: unisim.vcomponents.FDRE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[3]\,
+      Q => waveRef0Address(3),
+      R => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[4]\: unisim.vcomponents.FDRE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[4]\,
+      Q => waveRef0Address(4),
+      R => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[5]\: unisim.vcomponents.FDRE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[5]\,
+      Q => waveRef0Address(5),
+      R => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[6]\: unisim.vcomponents.FDSE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[6]\,
+      Q => waveRef0Address(6),
+      S => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[7]\: unisim.vcomponents.FDSE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[7]\,
+      Q => waveRef0Address(7),
+      S => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[8]\: unisim.vcomponents.FDSE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[8]\,
+      Q => waveRef0Address(8),
+      S => \waveRef0Address[13]_i_1_n_0\
+    );
+\wave0Address_reg[9]\: unisim.vcomponents.FDRE
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => clk1Mhz,
+      CE => '1',
+      D => \MemoryAddress_reg_n_0_[9]\,
+      Q => waveRef0Address(9),
+      R => \waveRef0Address[13]_i_1_n_0\
     );
 wave1Address4_carry: unisim.vcomponents.CARRY4
      port map (
@@ -1721,39 +1853,6 @@ wave3Address4_carry_i_2: unisim.vcomponents.LUT1
       I5 => \MemoryAddress_reg_n_0_[5]\,
       O => \waveRef0Address[13]_i_5_n_0\
     );
-\waveRef0Address_reg[0]\: unisim.vcomponents.FDSE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[0]\,
-      Q => waveRef0Address(0),
-      S => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[10]\: unisim.vcomponents.FDRE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[10]\,
-      Q => waveRef0Address(10),
-      R => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[11]\: unisim.vcomponents.FDSE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[11]\,
-      Q => waveRef0Address(11),
-      S => \waveRef0Address[13]_i_1_n_0\
-    );
 \waveRef0Address_reg[12]\: unisim.vcomponents.FDRE
     generic map(
       IS_C_INVERTED => '1'
@@ -1774,105 +1873,6 @@ wave3Address4_carry_i_2: unisim.vcomponents.LUT1
       CE => '1',
       D => \MemoryAddress_reg_n_0_[13]\,
       Q => waveRef0Address(13),
-      R => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[1]\,
-      Q => waveRef0Address(1),
-      R => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[2]\: unisim.vcomponents.FDSE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[2]\,
-      Q => waveRef0Address(2),
-      S => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[3]\: unisim.vcomponents.FDRE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[3]\,
-      Q => waveRef0Address(3),
-      R => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[4]\,
-      Q => waveRef0Address(4),
-      R => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[5]\,
-      Q => waveRef0Address(5),
-      R => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[6]\: unisim.vcomponents.FDSE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[6]\,
-      Q => waveRef0Address(6),
-      S => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[7]\: unisim.vcomponents.FDSE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[7]\,
-      Q => waveRef0Address(7),
-      S => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[8]\: unisim.vcomponents.FDSE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[8]\,
-      Q => waveRef0Address(8),
-      S => \waveRef0Address[13]_i_1_n_0\
-    );
-\waveRef0Address_reg[9]\: unisim.vcomponents.FDRE
-    generic map(
-      IS_C_INVERTED => '1'
-    )
-        port map (
-      C => clk1Mhz,
-      CE => '1',
-      D => \MemoryAddress_reg_n_0_[9]\,
-      Q => waveRef0Address(9),
       R => \waveRef0Address[13]_i_1_n_0\
     );
 \waveRef1Address[12]_i_2\: unisim.vcomponents.LUT1
@@ -2915,7 +2915,8 @@ entity MicroBlaze_waveParser_0_0 is
     waveRef3Address : out STD_LOGIC_VECTOR ( 13 downto 0 );
     wave3Address : out STD_LOGIC_VECTOR ( 11 downto 0 );
     wave03Address : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    clk1Mhz : in STD_LOGIC
+    clk1Mhz : in STD_LOGIC;
+    clk : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of MicroBlaze_waveParser_0_0 : entity is true;
@@ -2926,7 +2927,7 @@ entity MicroBlaze_waveParser_0_0 is
   attribute IP_DEFINITION_SOURCE : string;
   attribute IP_DEFINITION_SOURCE of MicroBlaze_waveParser_0_0 : entity is "module_ref";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of MicroBlaze_waveParser_0_0 : entity is "waveParser,Vivado 2023.2";
+  attribute X_CORE_INFO of MicroBlaze_waveParser_0_0 : entity is "waveParser,Vivado 2024.2";
 end MicroBlaze_waveParser_0_0;
 
 architecture STRUCTURE of MicroBlaze_waveParser_0_0 is
@@ -2934,16 +2935,21 @@ architecture STRUCTURE of MicroBlaze_waveParser_0_0 is
   signal \^wave01address\ : STD_LOGIC_VECTOR ( 11 downto 2 );
   signal \^wave02address\ : STD_LOGIC_VECTOR ( 11 downto 2 );
   signal \^wave03address\ : STD_LOGIC_VECTOR ( 11 downto 1 );
-  signal \^wave0address\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^wave1\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^wave1address\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^wave2address\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^wave3address\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^waveref\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \^waveref0address\ : STD_LOGIC_VECTOR ( 13 downto 12 );
+  signal \^waveref0address\ : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal \^waveref1address\ : STD_LOGIC_VECTOR ( 13 downto 2 );
   signal \^waveref2address\ : STD_LOGIC_VECTOR ( 13 downto 2 );
   signal \^waveref3address\ : STD_LOGIC_VECTOR ( 13 downto 1 );
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute X_INTERFACE_MODE : string;
+  attribute X_INTERFACE_MODE of clk : signal is "slave";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 begin
   \^wave\(11 downto 0) <= wave(11 downto 0);
   \^wave1\(11 downto 0) <= wave1(11 downto 0);
@@ -2951,22 +2957,21 @@ begin
   \buffer\(11 downto 0) <= \^wave\(11 downto 0);
   buffer1(11 downto 0) <= \^wave1\(11 downto 0);
   bufferRef(11 downto 0) <= \^waveref\(11 downto 0);
-  wave00Address(11 downto 0) <= \^wave0address\(11 downto 0);
+  wave00Address(11 downto 0) <= \^waveref0address\(11 downto 0);
   wave01Address(11 downto 2) <= \^wave01address\(11 downto 2);
   wave01Address(1 downto 0) <= \^wave1address\(1 downto 0);
   wave02Address(11 downto 2) <= \^wave02address\(11 downto 2);
   wave02Address(1 downto 0) <= \^wave2address\(1 downto 0);
   wave03Address(11 downto 1) <= \^wave03address\(11 downto 1);
   wave03Address(0) <= \^wave3address\(0);
-  wave0Address(11 downto 0) <= \^wave0address\(11 downto 0);
+  wave0Address(11 downto 0) <= \^waveref0address\(11 downto 0);
   wave1Address(11 downto 2) <= \^wave01address\(11 downto 2);
   wave1Address(1 downto 0) <= \^wave1address\(1 downto 0);
   wave2Address(11 downto 2) <= \^wave02address\(11 downto 2);
   wave2Address(1 downto 0) <= \^wave2address\(1 downto 0);
   wave3Address(11 downto 1) <= \^wave03address\(11 downto 1);
   wave3Address(0) <= \^wave3address\(0);
-  waveRef0Address(13 downto 12) <= \^waveref0address\(13 downto 12);
-  waveRef0Address(11 downto 0) <= \^wave0address\(11 downto 0);
+  waveRef0Address(13 downto 0) <= \^waveref0address\(13 downto 0);
   waveRef1Address(13 downto 2) <= \^waveref1address\(13 downto 2);
   waveRef1Address(1 downto 0) <= \^wave1address\(1 downto 0);
   waveRef2Address(13 downto 2) <= \^waveref2address\(13 downto 2);
@@ -2979,8 +2984,7 @@ inst: entity work.MicroBlaze_waveParser_0_0_waveParser
       wave01Address(9 downto 0) => \^wave01address\(11 downto 2),
       wave02Address(9 downto 0) => \^wave02address\(11 downto 2),
       wave03Address(10 downto 0) => \^wave03address\(11 downto 1),
-      waveRef0Address(13 downto 12) => \^waveref0address\(13 downto 12),
-      waveRef0Address(11 downto 0) => \^wave0address\(11 downto 0),
+      waveRef0Address(13 downto 0) => \^waveref0address\(13 downto 0),
       waveRef1Address(13 downto 2) => \^waveref1address\(13 downto 2),
       waveRef1Address(1 downto 0) => \^wave1address\(1 downto 0),
       waveRef2Address(13 downto 2) => \^waveref2address\(13 downto 2),

@@ -1,15 +1,10 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_1/sim/MicroBlaze_dds_compiler_0_1.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_microblaze_0_0/sim/MicroBlaze_microblaze_0_0.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_dlmb_v10_0/sim/MicroBlaze_dlmb_v10_0.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_ilmb_v10_0/sim/MicroBlaze_ilmb_v10_0.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_dlmb_bram_if_cntlr_0/sim/MicroBlaze_dlmb_bram_if_cntlr_0.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_ilmb_bram_if_cntlr_0/sim/MicroBlaze_ilmb_bram_if_cntlr_0.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_mdm_1_0/sim/MicroBlaze_mdm_1_0.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_rst_clk_wiz_0_200M_0/sim/MicroBlaze_rst_clk_wiz_0_200M_0.vhd" \
-"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_uartlite_0_0/sim/MicroBlaze_axi_uartlite_0_0.vhd" \
 "../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_0/sim/MicroBlaze_axi_gpio_0_0.vhd" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_1/sim/MicroBlaze_axi_gpio_0_1.vhd" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_proc_sys_reset_0_0/sim/MicroBlaze_proc_sys_reset_0_0.vhd" \
+"../../../../HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_1/sim/bd_f84b_psr_aclk_0.vhd" \
 
 # Do not sort compile order
 nosort

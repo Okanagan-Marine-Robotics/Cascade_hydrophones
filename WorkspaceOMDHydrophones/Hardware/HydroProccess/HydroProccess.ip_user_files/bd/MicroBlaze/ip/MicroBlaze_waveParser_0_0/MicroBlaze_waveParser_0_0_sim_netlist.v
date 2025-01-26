@@ -1,20 +1,20 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Tue Sep 24 21:40:49 2024
-// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Sun Jan 26 00:38:33 2025
+// Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.v
+//               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.v
 // Design      : MicroBlaze_waveParser_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7s25csga225-1
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "MicroBlaze_waveParser_0_0,waveParser,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "waveParser,Vivado 2023.2" *) 
+(* X_CORE_INFO = "waveParser,Vivado 2024.2" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_waveParser_0_0
    (waveRef,
@@ -35,7 +35,8 @@ module MicroBlaze_waveParser_0_0
     waveRef3Address,
     wave3Address,
     wave03Address,
-    clk1Mhz);
+    clk1Mhz,
+    clk);
   input [11:0]waveRef;
   input [11:0]wave;
   input [11:0]wave1;
@@ -55,19 +56,19 @@ module MicroBlaze_waveParser_0_0
   output [11:0]wave3Address;
   output [11:0]wave03Address;
   input clk1Mhz;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
 
   wire clk1Mhz;
   wire [11:0]wave;
   wire [11:2]\^wave01Address ;
   wire [11:2]\^wave02Address ;
   wire [11:1]\^wave03Address ;
-  wire [11:0]wave0Address;
   wire [11:0]wave1;
   wire [1:0]\^wave1Address ;
   wire [1:0]\^wave2Address ;
   wire [0:0]\^wave3Address ;
   wire [11:0]waveRef;
-  wire [13:12]\^waveRef0Address ;
+  wire [13:0]waveRef0Address;
   wire [13:2]\^waveRef1Address ;
   wire [13:2]\^waveRef2Address ;
   wire [13:1]\^waveRef3Address ;
@@ -75,21 +76,20 @@ module MicroBlaze_waveParser_0_0
   assign buffer[11:0] = wave;
   assign buffer1[11:0] = wave1;
   assign bufferRef[11:0] = waveRef;
-  assign wave00Address[11:0] = wave0Address;
+  assign wave00Address[11:0] = waveRef0Address[11:0];
   assign wave01Address[11:2] = \^wave01Address [11:2];
   assign wave01Address[1:0] = \^wave1Address [1:0];
   assign wave02Address[11:2] = \^wave02Address [11:2];
   assign wave02Address[1:0] = \^wave2Address [1:0];
   assign wave03Address[11:1] = \^wave03Address [11:1];
   assign wave03Address[0] = \^wave3Address [0];
+  assign wave0Address[11:0] = waveRef0Address[11:0];
   assign wave1Address[11:2] = \^wave01Address [11:2];
   assign wave1Address[1:0] = \^wave1Address [1:0];
   assign wave2Address[11:2] = \^wave02Address [11:2];
   assign wave2Address[1:0] = \^wave2Address [1:0];
   assign wave3Address[11:1] = \^wave03Address [11:1];
   assign wave3Address[0] = \^wave3Address [0];
-  assign waveRef0Address[13:12] = \^waveRef0Address [13:12];
-  assign waveRef0Address[11:0] = wave0Address;
   assign waveRef1Address[13:2] = \^waveRef1Address [13:2];
   assign waveRef1Address[1:0] = \^wave1Address [1:0];
   assign waveRef2Address[13:2] = \^waveRef2Address [13:2];
@@ -101,7 +101,7 @@ module MicroBlaze_waveParser_0_0
         .wave01Address(\^wave01Address ),
         .wave02Address(\^wave02Address ),
         .wave03Address(\^wave03Address ),
-        .waveRef0Address({\^waveRef0Address ,wave0Address}),
+        .waveRef0Address(waveRef0Address),
         .waveRef1Address({\^waveRef1Address ,\^wave1Address }),
         .waveRef2Address({\^waveRef2Address ,\^wave2Address }),
         .waveRef3Address({\^waveRef3Address ,\^wave3Address }));
@@ -629,6 +629,102 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[9]),
         .Q(\MemoryAddress_reg_n_0_[9] ),
         .R(p_0_in));
+  FDSE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[0] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[0] ),
+        .Q(waveRef0Address[0]),
+        .S(\waveRef0Address[13]_i_1_n_0 ));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[10] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[10] ),
+        .Q(waveRef0Address[10]),
+        .R(\waveRef0Address[13]_i_1_n_0 ));
+  FDSE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[11] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[11] ),
+        .Q(waveRef0Address[11]),
+        .S(\waveRef0Address[13]_i_1_n_0 ));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[1] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[1] ),
+        .Q(waveRef0Address[1]),
+        .R(\waveRef0Address[13]_i_1_n_0 ));
+  FDSE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[2] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[2] ),
+        .Q(waveRef0Address[2]),
+        .S(\waveRef0Address[13]_i_1_n_0 ));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[3] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[3] ),
+        .Q(waveRef0Address[3]),
+        .R(\waveRef0Address[13]_i_1_n_0 ));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[4] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[4] ),
+        .Q(waveRef0Address[4]),
+        .R(\waveRef0Address[13]_i_1_n_0 ));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[5] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[5] ),
+        .Q(waveRef0Address[5]),
+        .R(\waveRef0Address[13]_i_1_n_0 ));
+  FDSE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[6] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[6] ),
+        .Q(waveRef0Address[6]),
+        .S(\waveRef0Address[13]_i_1_n_0 ));
+  FDSE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[7] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[7] ),
+        .Q(waveRef0Address[7]),
+        .S(\waveRef0Address[13]_i_1_n_0 ));
+  FDSE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[8] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[8] ),
+        .Q(waveRef0Address[8]),
+        .S(\waveRef0Address[13]_i_1_n_0 ));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \wave0Address_reg[9] 
+       (.C(clk1Mhz),
+        .CE(1'b1),
+        .D(\MemoryAddress_reg_n_0_[9] ),
+        .Q(waveRef0Address[9]),
+        .R(\waveRef0Address[13]_i_1_n_0 ));
   CARRY4 wave1Address4_carry
        (.CI(1'b0),
         .CO({wave1Address4_carry_n_0,wave1Address4_carry_n_1,wave1Address4_carry_n_2,wave1Address4_carry_n_3}),
@@ -1265,30 +1361,6 @@ module MicroBlaze_waveParser_0_0_waveParser
         .I4(\MemoryAddress_reg_n_0_[3] ),
         .I5(\MemoryAddress_reg_n_0_[5] ),
         .O(\waveRef0Address[13]_i_5_n_0 ));
-  FDSE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[0] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[0] ),
-        .Q(waveRef0Address[0]),
-        .S(\waveRef0Address[13]_i_1_n_0 ));
-  FDRE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[10] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[10] ),
-        .Q(waveRef0Address[10]),
-        .R(\waveRef0Address[13]_i_1_n_0 ));
-  FDSE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[11] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[11] ),
-        .Q(waveRef0Address[11]),
-        .S(\waveRef0Address[13]_i_1_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveRef0Address_reg[12] 
@@ -1304,78 +1376,6 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[13] ),
         .Q(waveRef0Address[13]),
-        .R(\waveRef0Address[13]_i_1_n_0 ));
-  FDRE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[1] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[1] ),
-        .Q(waveRef0Address[1]),
-        .R(\waveRef0Address[13]_i_1_n_0 ));
-  FDSE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[2] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[2] ),
-        .Q(waveRef0Address[2]),
-        .S(\waveRef0Address[13]_i_1_n_0 ));
-  FDRE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[3] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[3] ),
-        .Q(waveRef0Address[3]),
-        .R(\waveRef0Address[13]_i_1_n_0 ));
-  FDRE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[4] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[4] ),
-        .Q(waveRef0Address[4]),
-        .R(\waveRef0Address[13]_i_1_n_0 ));
-  FDRE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[5] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[5] ),
-        .Q(waveRef0Address[5]),
-        .R(\waveRef0Address[13]_i_1_n_0 ));
-  FDSE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[6] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[6] ),
-        .Q(waveRef0Address[6]),
-        .S(\waveRef0Address[13]_i_1_n_0 ));
-  FDSE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[7] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[7] ),
-        .Q(waveRef0Address[7]),
-        .S(\waveRef0Address[13]_i_1_n_0 ));
-  FDSE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[8] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[8] ),
-        .Q(waveRef0Address[8]),
-        .S(\waveRef0Address[13]_i_1_n_0 ));
-  FDRE #(
-    .IS_C_INVERTED(1'b1)) 
-    \waveRef0Address_reg[9] 
-       (.C(clk1Mhz),
-        .CE(1'b1),
-        .D(\MemoryAddress_reg_n_0_[9] ),
-        .Q(waveRef0Address[9]),
         .R(\waveRef0Address[13]_i_1_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 

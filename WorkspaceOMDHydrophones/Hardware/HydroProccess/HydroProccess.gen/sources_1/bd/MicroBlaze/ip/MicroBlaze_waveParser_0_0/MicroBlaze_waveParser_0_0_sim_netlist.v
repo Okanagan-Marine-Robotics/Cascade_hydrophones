@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Mon Jan 20 02:22:32 2025
+// Date        : Sun Jan 26 00:38:33 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.v
@@ -35,7 +35,8 @@ module MicroBlaze_waveParser_0_0
     waveRef3Address,
     wave3Address,
     wave03Address,
-    clk1Mhz);
+    clk1Mhz,
+    clk);
   input [11:0]waveRef;
   input [11:0]wave;
   input [11:0]wave1;
@@ -55,6 +56,7 @@ module MicroBlaze_waveParser_0_0
   output [11:0]wave3Address;
   output [11:0]wave03Address;
   input clk1Mhz;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
 
   wire clk1Mhz;
   wire [11:0]wave;

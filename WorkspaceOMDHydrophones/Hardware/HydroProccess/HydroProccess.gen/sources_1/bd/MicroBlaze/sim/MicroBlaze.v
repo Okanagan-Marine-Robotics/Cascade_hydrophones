@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Mon Jan 20 02:21:04 2025
+//Date        : Sun Jan 26 01:31:52 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -113,6 +113,9 @@ module MicroBlaze
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire Net1;
+  wire [11:0]PulseWaveMaker_0_wave1;
+  wire [11:0]PulseWaveMaker_0_wave2;
+  wire [11:0]PulseWaveMaker_0_waveRef;
   wire [31:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
   wire [8:0]axi_smc_M00_AXI_ARADDR;
@@ -151,7 +154,7 @@ module MicroBlaze
   wire axi_smc_M01_AXI_WVALID;
   wire [31:0]blk_mem_gen_0_douta;
   wire [31:0]blk_mem_gen_1_douta;
-  wire [15:0]dds_compiler_0_m_axis_data_tdata;
+  wire [15:0]dds_compiler_1_m_axis_data_tdata;
   wire microblaze_0_Clk;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -306,6 +309,12 @@ module MicroBlaze
         .waveRef3Address(CC_0_waveRef3Address),
         .xcorr(CC_0_xcorr),
         .xcorr1(CC_0_xcorr1));
+  MicroBlaze_PulseWaveMaker_0_0 PulseWaveMaker_0
+       (.clk(microblaze_0_Clk),
+        .wave(dds_compiler_1_m_axis_data_tdata[11:0]),
+        .wave1(PulseWaveMaker_0_wave1),
+        .wave2(PulseWaveMaker_0_wave2),
+        .waveRef(PulseWaveMaker_0_waveRef));
   MicroBlaze_axi_gpio_0_0 axi_gpio_0
        (.gpio2_io_i(blk_mem_gen_0_douta),
         .gpio_io_o(axi_gpio_0_gpio_io_o),
@@ -450,7 +459,7 @@ module MicroBlaze
         .clk1Mhz(Net1));
   MicroBlaze_dds_compiler_0_1 dds_compiler_1
        (.aclk(microblaze_0_Clk),
-        .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
+        .m_axis_data_tdata(dds_compiler_1_m_axis_data_tdata));
   MicroBlaze_proc_sys_reset_0_0 proc_sys_reset_0
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
@@ -534,18 +543,19 @@ module MicroBlaze
        (.buffer(waveParser_0_buffer),
         .buffer1(waveParser_0_buffer1),
         .bufferRef(waveParser_0_bufferRef),
+        .clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
-        .wave(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .wave(PulseWaveMaker_0_wave1),
         .wave00Address(waveParser_0_wave00Address),
         .wave01Address(waveParser_0_wave01Address),
         .wave02Address(waveParser_0_wave02Address),
         .wave03Address(waveParser_0_wave03Address),
         .wave0Address(waveParser_0_wave0Address),
-        .wave1(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .wave1(PulseWaveMaker_0_wave2),
         .wave1Address(waveParser_0_wave1Address),
         .wave2Address(waveParser_0_wave2Address),
         .wave3Address(waveParser_0_wave3Address),
-        .waveRef(dds_compiler_0_m_axis_data_tdata[11:0]),
+        .waveRef(PulseWaveMaker_0_waveRef),
         .waveRef0Address(waveParser_0_waveRef0Address),
         .waveRef1Address(waveParser_0_waveRef1Address),
         .waveRef2Address(waveParser_0_waveRef2Address),

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCC6CFA53F622E079",
+      "boundary_crc": "0xCC6CFA53B4580162",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze",
       "name": "MicroBlaze",
@@ -27,7 +27,8 @@
       "xlslice_1": "",
       "processing_system7_0": "",
       "proc_sys_reset_0": "",
-      "axi_smc": ""
+      "axi_smc": "",
+      "PulseWaveMaker_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -807,6 +808,20 @@
           },
           "clk1Mhz": {
             "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
           }
         }
       },
@@ -2028,6 +2043,54 @@
             }
           }
         }
+      },
+      "PulseWaveMaker_0": {
+        "vlnv": "xilinx.com:module_ref:PulseWaveMaker:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_PulseWaveMaker_0_0",
+        "xci_path": "ip\\MicroBlaze_PulseWaveMaker_0_0\\MicroBlaze_PulseWaveMaker_0_0.xci",
+        "inst_hier_path": "PulseWaveMaker_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PulseWaveMaker",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "wave": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "waveRef": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wave2": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2288,6 +2351,24 @@
           "waveParser_0/clk1Mhz"
         ]
       },
+      "PulseWaveMaker_0_wave1": {
+        "ports": [
+          "PulseWaveMaker_0/wave1",
+          "waveParser_0/wave"
+        ]
+      },
+      "PulseWaveMaker_0_wave2": {
+        "ports": [
+          "PulseWaveMaker_0/wave2",
+          "waveParser_0/wave1"
+        ]
+      },
+      "PulseWaveMaker_0_waveRef": {
+        "ports": [
+          "PulseWaveMaker_0/waveRef",
+          "waveParser_0/waveRef"
+        ]
+      },
       "axi_gpio_0_gpio_io_o": {
         "ports": [
           "axi_gpio_0/gpio_io_o",
@@ -2312,12 +2393,10 @@
           "axi_gpio_1/gpio2_io_i"
         ]
       },
-      "dds_compiler_0_m_axis_data_tdata": {
+      "dds_compiler_1_m_axis_data_tdata": {
         "ports": [
           "dds_compiler_1/m_axis_data_tdata",
-          "waveParser_0/waveRef",
-          "waveParser_0/wave",
-          "waveParser_0/wave1"
+          "PulseWaveMaker_0/wave"
         ]
       },
       "microblaze_0_Clk": {
@@ -2337,7 +2416,9 @@
           "clk1Mhz_0/clk",
           "axi_smc/aclk",
           "proc_sys_reset_0/slowest_sync_clk",
-          "processing_system7_0/M_AXI_GP0_ACLK"
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "waveParser_0/clk",
+          "PulseWaveMaker_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

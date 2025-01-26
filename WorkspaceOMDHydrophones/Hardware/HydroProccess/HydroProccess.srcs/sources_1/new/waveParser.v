@@ -19,7 +19,8 @@ module waveParser(
 	output reg [13:0] waveRef3Address,
 	output reg [11:0] wave3Address,
 	output reg [11:0] wave03Address,
-	input clk1Mhz
+	input clk1Mhz,
+	input clk
 	);
     
 	reg [13:0] MemoryAddress = 10000;

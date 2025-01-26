@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Mon Jan 20 02:22:32 2025
+-- Date        : Sun Jan 26 00:38:33 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.vhdl
@@ -2915,7 +2915,8 @@ entity MicroBlaze_waveParser_0_0 is
     waveRef3Address : out STD_LOGIC_VECTOR ( 13 downto 0 );
     wave3Address : out STD_LOGIC_VECTOR ( 11 downto 0 );
     wave03Address : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    clk1Mhz : in STD_LOGIC
+    clk1Mhz : in STD_LOGIC;
+    clk : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of MicroBlaze_waveParser_0_0 : entity is true;
@@ -2943,6 +2944,12 @@ architecture STRUCTURE of MicroBlaze_waveParser_0_0 is
   signal \^waveref1address\ : STD_LOGIC_VECTOR ( 13 downto 2 );
   signal \^waveref2address\ : STD_LOGIC_VECTOR ( 13 downto 2 );
   signal \^waveref3address\ : STD_LOGIC_VECTOR ( 13 downto 1 );
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute X_INTERFACE_MODE : string;
+  attribute X_INTERFACE_MODE of clk : signal is "slave";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 begin
   \^wave\(11 downto 0) <= wave(11 downto 0);
   \^wave1\(11 downto 0) <= wave1(11 downto 0);

@@ -1,20 +1,20 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Tue Sep 24 19:34:47 2024
-// Host        : DESKTOP-NOLS2CR running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Mon Jan 20 02:22:39 2025
+// Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/JamesWilliamson/Documents/GitHub/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_sim_netlist.v
+//               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_sim_netlist.v
 // Design      : MicroBlaze_BRAMMUX_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7s25csga225-1
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "MicroBlaze_BRAMMUX_0_0,BRAMMUX,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "BRAMMUX,Vivado 2023.2" *) 
+(* X_CORE_INFO = "BRAMMUX,Vivado 2024.2" *) 
 (* NotValidForBitStream *)
 module MicroBlaze_BRAMMUX_0_0
    (waveRef0,
@@ -50,7 +50,7 @@ module MicroBlaze_BRAMMUX_0_0
   output [15:0]Ref1Address;
   output [15:0]Ref2Address;
   output [15:0]Ref3Address;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
 
   wire \<const0> ;
   wire [11:0]Ref0;
@@ -1112,7 +1112,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
   wire [3:0]NLW_Ref3Address7_carry__2_CO_UNCONNECTED;
   wire [3:1]NLW_Ref3Address7_carry__2_O_UNCONNECTED;
 
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[0]_i_1 
@@ -1130,7 +1130,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I4(\Ref3[11]_i_2_n_0 ),
         .I5(waveRef3Address[0]),
         .O(\Ref0Address[0]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[10]_i_1 
@@ -1174,7 +1174,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I1(waveRef2Address[12]),
         .I2(\Ref2[11]_i_4_n_0 ),
         .O(\Ref0Address[11]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[1]_i_1 
@@ -1192,7 +1192,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I4(\Ref1[11]_i_2_n_0 ),
         .I5(waveRef1Address[1]),
         .O(\Ref0Address[1]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[2]_i_1 
@@ -1262,7 +1262,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
        (.I0(waveRef1Address[7]),
         .I1(waveRef1Address[8]),
         .O(\Ref0Address[3]_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[4]_i_1 
@@ -1280,7 +1280,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I4(\Ref1[11]_i_2_n_0 ),
         .I5(waveRef1Address[4]),
         .O(\Ref0Address[4]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[5]_i_1 
@@ -1298,7 +1298,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I4(\Ref3[11]_i_2_n_0 ),
         .I5(waveRef3Address[5]),
         .O(\Ref0Address[5]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[6]_i_1 
@@ -1316,7 +1316,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I4(\Ref3[11]_i_2_n_0 ),
         .I5(waveRef3Address[6]),
         .O(\Ref0Address[6]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[7]_i_1 
@@ -1334,7 +1334,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I4(\Ref3[11]_i_2_n_0 ),
         .I5(waveRef3Address[7]),
         .O(\Ref0Address[7]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[8]_i_1 
@@ -1352,7 +1352,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I4(\Ref3[11]_i_2_n_0 ),
         .I5(waveRef3Address[8]),
         .O(\Ref0Address[8]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \Ref0Address[9]_i_1 
@@ -1572,7 +1572,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I1(waveRef0Address[1]),
         .I2(waveRef0Address[0]),
         .O(\Ref0[11]_i_16_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \Ref0[11]_i_17 
@@ -2587,7 +2587,7 @@ module MicroBlaze_BRAMMUX_0_0_BRAMMUX
         .I3(Ref1Address6[4]),
         .I4(Ref1Address6[3]),
         .O(\Ref1Address[15]_i_26_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \Ref1Address[15]_i_27 
