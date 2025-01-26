@@ -1,6 +1,6 @@
 Nothing to build in platform 'MicroBlaze_wrapper'
 
-03:28:54 **** Incremental Build of configuration Debug for project HelloWorld ****
+03:09:53 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -13,9 +13,6 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcp
 ../src/helloworld.c:17:19: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
    17 |         maxTime = delayGetter(maxTime);
       |                   ^~~~~~~~~~~
-../src/helloworld.c:17:19: warning: 'maxTime' is used uninitialized [-Wuninitialized]
-   17 |         maxTime = delayGetter(maxTime);
-      |                   ^~~~~~~~~~~~~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: HelloWorld.elf'
@@ -26,6 +23,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size HelloWorld.elf  |tee "HelloWorld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  23281	   1176	  22584	  47041	   b7c1	HelloWorld.elf
+  23285	   1176	  22584	  47045	   b7c5	HelloWorld.elf
 'Finished building: HelloWorld.elf.size'
 ' '

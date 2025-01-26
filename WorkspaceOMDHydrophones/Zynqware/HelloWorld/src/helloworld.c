@@ -7,17 +7,17 @@
 int main() {
 	init_platform();
 
-	xil_printf("helloworld\n");
+	xil_printf("helloworld!\n");
 
 	int maxTime;
 
 
 
-
+	while(1){
 	maxTime = delayGetter(maxTime);
 
-	//xil_printf("%d\n", maxTime);
-
+	xil_printf("%d\n", maxTime);
+	}
 	cleanup_platform();
 	return 0;
 }
@@ -31,6 +31,7 @@ int delayGetter (int delay){
 	int maxTime;
 	int MaxSignal = 0;
 	int data = 0;
+
 	while (i < 4000) {
     	XGpio_DiscreteWrite(&Gpio, 1, i);
 
@@ -42,7 +43,7 @@ int delayGetter (int delay){
 
      	}
     	i++;
-    	xil_printf("%d\n", data);
+    	//xil_printf("%d\n", data);
 	}
 	//xil_printf("%d\n", MaxSignal);
 	return maxTime;
