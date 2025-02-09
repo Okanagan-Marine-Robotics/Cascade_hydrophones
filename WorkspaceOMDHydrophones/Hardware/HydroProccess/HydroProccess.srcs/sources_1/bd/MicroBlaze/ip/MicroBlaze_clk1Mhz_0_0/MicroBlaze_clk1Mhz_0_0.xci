@@ -37,7 +37,7 @@
     "boundary": {
       "ports": {
         "clk": [ { "direction": "in" } ],
-        "clk1Mhz": [ { "direction": "out" } ]
+        "clk1Mhz": [ { "direction": "out", "driver_value": "0" } ]
       },
       "interfaces": {
         "clk": {

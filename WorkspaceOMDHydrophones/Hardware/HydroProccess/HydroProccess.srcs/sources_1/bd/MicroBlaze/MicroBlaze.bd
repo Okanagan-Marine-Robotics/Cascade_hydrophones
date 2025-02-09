@@ -2413,12 +2413,12 @@
           "BRAMMUX_0/clk",
           "BlockRam_0/clk",
           "CC_0/clk",
-          "clk1Mhz_0/clk",
           "axi_smc/aclk",
           "proc_sys_reset_0/slowest_sync_clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "waveParser_0/clk",
-          "PulseWaveMaker_0/clk"
+          "PulseWaveMaker_0/clk",
+          "clk1Mhz_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

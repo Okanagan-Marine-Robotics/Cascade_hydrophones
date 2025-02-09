@@ -2,16 +2,20 @@
 
 module clk1Mhz(
     input clk,
-    output clk1Mhz
+    output reg clk1Mhz = 0
     );
     
     reg [10:0] count = 1;
     
     always @(negedge clk) begin
-        if (count != 200) count = count + 1; 
-        else count = 1;
+        if (count != 100)count = count + 1; 
+         
+        else begin
+            count = 1;
+            clk1Mhz = ~clk1Mhz;
+        end
     end
     
-    assign clk1Mhz = (count<100)?0:1;
+   
     
 endmodule
