@@ -1,5 +1,4 @@
 vhdl xil_defaultlib  \
-"../../../bd/MicroBlaze/ip/MicroBlaze_dds_compiler_0_1/sim/MicroBlaze_dds_compiler_0_1.vhd" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_0/sim/MicroBlaze_axi_gpio_0_0.vhd" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_1/sim/MicroBlaze_axi_gpio_0_1.vhd" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_proc_sys_reset_0_0/sim/MicroBlaze_proc_sys_reset_0_0.vhd" \

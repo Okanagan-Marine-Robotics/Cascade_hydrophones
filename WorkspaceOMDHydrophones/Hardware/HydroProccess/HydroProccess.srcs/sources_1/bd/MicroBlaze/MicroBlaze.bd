@@ -16,7 +16,6 @@
       "BRAMMUX_0": "",
       "waveParser_0": "",
       "clk1Mhz_0": "",
-      "dds_compiler_1": "",
       "xlslice_0": "",
       "AddressFixer_0": "",
       "xlconstant_0": "",
@@ -28,7 +27,8 @@
       "processing_system7_0": "",
       "proc_sys_reset_0": "",
       "axi_smc": "",
-      "PulseWaveMaker_0": ""
+      "PulseWaveMaker_0": "",
+      "SineWaveGen_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -853,42 +853,6 @@
           },
           "clk1Mhz": {
             "direction": "O"
-          }
-        }
-      },
-      "dds_compiler_1": {
-        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
-        "ip_revision": "26",
-        "xci_name": "MicroBlaze_dds_compiler_0_1",
-        "xci_path": "ip\\MicroBlaze_dds_compiler_0_1\\MicroBlaze_dds_compiler_0_1.xci",
-        "inst_hier_path": "dds_compiler_1",
-        "parameters": {
-          "DDS_Clock_Rate": {
-            "value": "200"
-          },
-          "Latency": {
-            "value": "7"
-          },
-          "Noise_Shaping": {
-            "value": "None"
-          },
-          "Output_Frequency1": {
-            "value": "0"
-          },
-          "Output_Selection": {
-            "value": "Sine"
-          },
-          "Output_Width": {
-            "value": "12"
-          },
-          "PINC1": {
-            "value": "1"
-          },
-          "Parameter_Entry": {
-            "value": "Hardware_Parameters"
-          },
-          "Phase_Width": {
-            "value": "12"
           }
         }
       },
@@ -2091,6 +2055,28 @@
             "right": "0"
           }
         }
+      },
+      "SineWaveGen_0": {
+        "vlnv": "xilinx.com:module_ref:SineWaveGen:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_SineWaveGen_0_0",
+        "xci_path": "ip\\MicroBlaze_SineWaveGen_0_0\\MicroBlaze_SineWaveGen_0_0.xci",
+        "inst_hier_path": "SineWaveGen_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SineWaveGen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "wave": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2348,7 +2334,8 @@
           "clk1Mhz_0/clk1Mhz",
           "BlockRam_0/clk1Mhz",
           "CC_0/clk1Mhz",
-          "waveParser_0/clk1Mhz"
+          "waveParser_0/clk1Mhz",
+          "SineWaveGen_0/clk1Mhz"
         ]
       },
       "PulseWaveMaker_0_wave1": {
@@ -2367,6 +2354,12 @@
         "ports": [
           "PulseWaveMaker_0/waveRef",
           "waveParser_0/waveRef"
+        ]
+      },
+      "SineWaveGen_0_wave": {
+        "ports": [
+          "SineWaveGen_0/wave",
+          "PulseWaveMaker_0/wave"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
@@ -2393,12 +2386,6 @@
           "axi_gpio_1/gpio2_io_i"
         ]
       },
-      "dds_compiler_1_m_axis_data_tdata": {
-        "ports": [
-          "dds_compiler_1/m_axis_data_tdata",
-          "PulseWaveMaker_0/wave"
-        ]
-      },
       "microblaze_0_Clk": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
@@ -2408,7 +2395,6 @@
           "blk_mem_gen_0/clkb",
           "blk_mem_gen_1/clka",
           "blk_mem_gen_1/clkb",
-          "dds_compiler_1/aclk",
           "AddressFixer_0/clk",
           "BRAMMUX_0/clk",
           "BlockRam_0/clk",

@@ -1,6 +1,6 @@
 Nothing to build in platform 'MicroBlaze_wrapper'
 
-03:09:53 **** Incremental Build of configuration Debug for project HelloWorld ****
+03:05:40 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step

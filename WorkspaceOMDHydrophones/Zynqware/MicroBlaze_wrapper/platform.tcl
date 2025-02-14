@@ -21,3 +21,6 @@ domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
 platform generate
+platform active {MicroBlaze_wrapper}
+platform config -updatehw {C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
+platform generate -domains 

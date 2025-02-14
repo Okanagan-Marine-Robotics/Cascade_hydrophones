@@ -1,7 +1,7 @@
 Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_14 -L axi_utils_v2_0_10 -L mult_gen_v12_0_22 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_pipe_v3_0_10 -L floating_point_v7_1_19 -L dds_compiler_v6_0_26 -L xlslice_v1_0_4 -L xlconstant_v1_1_9 -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_3 -L interrupt_control_v3_1_5 -L axi_gpio_v2_0_35 -L blk_mem_gen_v8_4_9 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_19 -L processing_system7_vip_v1_0_21 -L proc_sys_reset_v5_0_16 -L smartconnect_v1_0 -L axi_register_slice_v2_1_33 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_4 -L xlconstant_v1_1_9 -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_3 -L interrupt_control_v3_1_5 -L axi_gpio_v2_0_35 -L blk_mem_gen_v8_4_9 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_19 -L processing_system7_vip_v1_0_21 -L proc_sys_reset_v5_0_16 -L smartconnect_v1_0 -L axi_register_slice_v2_1_33 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench_behav xil_defaultlib.TestBench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -23,7 +23,6 @@ WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:460]
 WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:463]
 WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/sim/bd_f84b.v:1212]
 WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_processing_system7_0_0/sim/MicroBlaze_processing_system7_0_0.v:215]
@@ -67,19 +66,6 @@ Compiling package unisim.vcomponents
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
-Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
-Compiling package xbip_utils_v3_0_14.xcc_utils_v3_0
-Compiling package dds_compiler_v6_0_26.dds_compiler_v6_0_26_viv_comp
-Compiling package ieee.std_logic_signed
-Compiling package dds_compiler_v6_0_26.pkg_dds_compiler_v6_0_26
-Compiling package dds_compiler_v6_0_26.dds_compiler_v6_0_26_hdl_comps
-Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
-Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
-Compiling package ieee.math_real
-Compiling package axi_utils_v2_0_10.global_util_pkg
-Compiling package axi_utils_v2_0_10.axi_utils_comps
-Compiling package dds_compiler_v6_0_26.pkg_betas
-Compiling package dds_compiler_v6_0_26.pkg_alphas
 Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
 Compiling package xilinx_vip.axi_vip_pkg
 Compiling package xilinx_vip.xil_common_vip_pkg
@@ -94,6 +80,8 @@ Compiling module xil_defaultlib.CC
 Compiling module xil_defaultlib.MicroBlaze_CC_0_0
 Compiling module xil_defaultlib.PulseWaveMaker
 Compiling module xil_defaultlib.MicroBlaze_PulseWaveMaker_0_0
+Compiling module xil_defaultlib.SineWaveGen
+Compiling module xil_defaultlib.MicroBlaze_SineWaveGen_0_0
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
@@ -178,25 +166,6 @@ Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_0
 Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_1
 Compiling module xil_defaultlib.clk1Mhz
 Compiling module xil_defaultlib.MicroBlaze_clk1Mhz_0_0
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26_rdy [\dds_compiler_v6_0_26_rdy(c_has_...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity dds_compiler_v6_0_26.pipe_add [\pipe_add(c_width=12,c_seg_width...]
-Compiling architecture synth of entity dds_compiler_v6_0_26.accum [\accum(c_xdevicefamily="zynq",c_...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity dds_compiler_v6_0_26.sin_cos [\sin_cos(c_xdevicefamily="zynq",...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture synth of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26_core [\dds_compiler_v6_0_26_core(c_xde...]
-Compiling architecture synth of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26_viv [\dds_compiler_v6_0_26_viv(c_xdev...]
-Compiling architecture xilinx of entity dds_compiler_v6_0_26.dds_compiler_v6_0_26 [\dds_compiler_v6_0_26(c_xdevicef...]
-Compiling architecture microblaze_dds_compiler_0_1_arch of entity xil_defaultlib.MicroBlaze_dds_compiler_0_1 [microblaze_dds_compiler_0_1_defa...]
 Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
 Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
 Compiling architecture microblaze_proc_sys_reset_0_0_arch of entity xil_defaultlib.MicroBlaze_proc_sys_reset_0_0 [microblaze_proc_sys_reset_0_0_de...]

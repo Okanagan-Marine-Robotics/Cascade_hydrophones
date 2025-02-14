@@ -58,6 +58,7 @@ verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/includ
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/sim/MicroBlaze_axi_smc_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_PulseWaveMaker_0_0/sim/MicroBlaze_PulseWaveMaker_0_0.v" \
 "../../../bd/MicroBlaze/sim/MicroBlaze.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_0_0/sim/MicroBlaze_SineWaveGen_0_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 
