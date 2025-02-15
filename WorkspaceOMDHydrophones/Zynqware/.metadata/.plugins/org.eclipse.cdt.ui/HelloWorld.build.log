@@ -1,4 +1,4 @@
-03:05:40 **** Incremental Build of configuration Debug for project HelloWorld ****
+02:18:41 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -11,6 +11,9 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcp
 ../src/helloworld.c:17:19: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
    17 |         maxTime = delayGetter(maxTime);
       |                   ^~~~~~~~~~~
+../src/helloworld.c:17:19: warning: 'maxTime' is used uninitialized [-Wuninitialized]
+   17 |         maxTime = delayGetter(maxTime);
+      |                   ^~~~~~~~~~~~~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: HelloWorld.elf'
@@ -25,5 +28,5 @@ arm-none-eabi-size HelloWorld.elf  |tee "HelloWorld.elf.size"
 'Finished building: HelloWorld.elf.size'
 ' '
 
-03:05:41 Build Finished (took 585ms)
+02:18:41 Build Finished (took 654ms)
 

@@ -15,7 +15,6 @@
       "CC_0": "",
       "BRAMMUX_0": "",
       "waveParser_0": "",
-      "clk1Mhz_0": "",
       "xlslice_0": "",
       "AddressFixer_0": "",
       "xlconstant_0": "",
@@ -27,11 +26,16 @@
       "processing_system7_0": "",
       "proc_sys_reset_0": "",
       "axi_smc": "",
-      "PulseWaveMaker_0": "",
       "SineWaveGen_0": "",
       "clk_wiz_0": "",
       "SPI_ADC_Master_0": "",
-      "Serializer_0": ""
+      "Serializer_0": "",
+      "SPI_ADC_Master_1": "",
+      "Serializer_1": "",
+      "SPI_ADC_Master_2": "",
+      "Serializer_2": "",
+      "clk1Mhz_0": "",
+      "clk1Mhz_1": ""
     },
     "interface_ports": {
       "DDR": {
@@ -231,7 +235,21 @@
             }
           },
           "clk1Mhz": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_clk_vip_0_0_clk_out",
+                "value_src": "default_prop"
+              }
+            }
           },
           "inWave1": {
             "direction": "I",
@@ -457,7 +475,21 @@
             }
           },
           "clk1Mhz": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_clk_vip_0_0_clk_out",
+                "value_src": "default_prop"
+              }
+            }
           },
           "waveRef0": {
             "direction": "I",
@@ -521,7 +553,7 @@
           },
           "waveRef0Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "wave0Address": {
@@ -536,7 +568,7 @@
           },
           "waveRef1Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "wave1Address": {
@@ -551,7 +583,7 @@
           },
           "waveRef2Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "wave2Address": {
@@ -566,7 +598,7 @@
           },
           "waveRef3Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "wave3Address": {
@@ -673,22 +705,22 @@
           },
           "Ref0Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "Ref1Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "Ref2Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "Ref3Address": {
             "direction": "O",
-            "left": "15",
+            "left": "13",
             "right": "0"
           },
           "clk": {
@@ -810,7 +842,21 @@
             "right": "0"
           },
           "clk1Mhz": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_clk_vip_0_0_clk_out",
+                "value_src": "default_prop"
+              }
+            }
           },
           "clk": {
             "type": "clk",
@@ -825,37 +871,6 @@
                 "value_src": "default_prop"
               }
             }
-          }
-        }
-      },
-      "clk1Mhz_0": {
-        "vlnv": "xilinx.com:module_ref:clk1Mhz:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_clk1Mhz_0_0",
-        "xci_path": "ip\\MicroBlaze_clk1Mhz_0_0\\MicroBlaze_clk1Mhz_0_0.xci",
-        "inst_hier_path": "clk1Mhz_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "clk1Mhz",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "clk1Mhz": {
-            "direction": "O"
           }
         }
       },
@@ -2011,54 +2026,6 @@
           }
         }
       },
-      "PulseWaveMaker_0": {
-        "vlnv": "xilinx.com:module_ref:PulseWaveMaker:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_PulseWaveMaker_0_0",
-        "xci_path": "ip\\MicroBlaze_PulseWaveMaker_0_0\\MicroBlaze_PulseWaveMaker_0_0.xci",
-        "inst_hier_path": "PulseWaveMaker_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "PulseWaveMaker",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "wave": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "waveRef": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "wave1": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "wave2": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          }
-        }
-      },
       "SineWaveGen_0": {
         "vlnv": "xilinx.com:module_ref:SineWaveGen:1.0",
         "ip_revision": "1",
@@ -2072,7 +2039,21 @@
         },
         "ports": {
           "clk1Mhz": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_clk_vip_0_0_clk_out",
+                "value_src": "default_prop"
+              }
+            }
           },
           "wave": {
             "direction": "O",
@@ -2199,6 +2180,278 @@
             "right": "0"
           },
           "MISO": {
+            "direction": "O"
+          }
+        }
+      },
+      "SPI_ADC_Master_1": {
+        "vlnv": "xilinx.com:module_ref:SPI_ADC_Master:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_SPI_ADC_Master_1_0",
+        "xci_path": "ip\\MicroBlaze_SPI_ADC_Master_1_0\\MicroBlaze_SPI_ADC_Master_1_0.xci",
+        "inst_hier_path": "SPI_ADC_Master_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SPI_ADC_Master",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk16MHz": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "16000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "MISO": {
+            "direction": "I"
+          },
+          "wave": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "CS": {
+            "direction": "O"
+          },
+          "SCLK": {
+            "direction": "O"
+          }
+        }
+      },
+      "Serializer_1": {
+        "vlnv": "xilinx.com:module_ref:Serializer:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_Serializer_1_0",
+        "xci_path": "ip\\MicroBlaze_Serializer_1_0\\MicroBlaze_Serializer_1_0.xci",
+        "inst_hier_path": "Serializer_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Serializer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk16MHz": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "16000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "waveIn": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "MISO": {
+            "direction": "O"
+          }
+        }
+      },
+      "SPI_ADC_Master_2": {
+        "vlnv": "xilinx.com:module_ref:SPI_ADC_Master:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_SPI_ADC_Master_2_0",
+        "xci_path": "ip\\MicroBlaze_SPI_ADC_Master_2_0\\MicroBlaze_SPI_ADC_Master_2_0.xci",
+        "inst_hier_path": "SPI_ADC_Master_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SPI_ADC_Master",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk16MHz": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "16000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "MISO": {
+            "direction": "I"
+          },
+          "wave": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "CS": {
+            "direction": "O"
+          },
+          "SCLK": {
+            "direction": "O"
+          }
+        }
+      },
+      "Serializer_2": {
+        "vlnv": "xilinx.com:module_ref:Serializer:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_Serializer_2_0",
+        "xci_path": "ip\\MicroBlaze_Serializer_2_0\\MicroBlaze_Serializer_2_0.xci",
+        "inst_hier_path": "Serializer_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Serializer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk16MHz": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "16000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "waveIn": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "MISO": {
+            "direction": "O"
+          }
+        }
+      },
+      "clk1Mhz_0": {
+        "vlnv": "xilinx.com:module_ref:clk1Mhz:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_clk1Mhz_0_1",
+        "xci_path": "ip\\MicroBlaze_clk1Mhz_0_1\\MicroBlaze_clk1Mhz_0_1.xci",
+        "inst_hier_path": "clk1Mhz_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clk1Mhz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk1Mhz": {
+            "direction": "O",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_clk_vip_0_0_clk_out",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
+      },
+      "clk1Mhz_1": {
+        "vlnv": "xilinx.com:module_ref:clk1Mhz:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_clk1Mhz_1_0",
+        "xci_path": "ip\\MicroBlaze_clk1Mhz_1_0\\MicroBlaze_clk1Mhz_1_0.xci",
+        "inst_hier_path": "clk1Mhz_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clk1Mhz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk1Mhz": {
             "direction": "O"
           }
         }
@@ -2458,33 +2711,27 @@
         "ports": [
           "clk1Mhz_0/clk1Mhz",
           "BlockRam_0/clk1Mhz",
-          "CC_0/clk1Mhz",
           "waveParser_0/clk1Mhz",
-          "SineWaveGen_0/clk1Mhz"
-        ]
-      },
-      "PulseWaveMaker_0_wave1": {
-        "ports": [
-          "PulseWaveMaker_0/wave1",
-          "waveParser_0/wave"
-        ]
-      },
-      "PulseWaveMaker_0_wave2": {
-        "ports": [
-          "PulseWaveMaker_0/wave2",
-          "waveParser_0/wave1"
-        ]
-      },
-      "PulseWaveMaker_0_waveRef": {
-        "ports": [
-          "PulseWaveMaker_0/waveRef",
-          "waveParser_0/waveRef"
+          "SineWaveGen_0/clk1Mhz",
+          "CC_0/clk1Mhz"
         ]
       },
       "SPI_ADC_Master_0_wave": {
         "ports": [
           "SPI_ADC_Master_0/wave",
-          "PulseWaveMaker_0/wave"
+          "waveParser_0/waveRef"
+        ]
+      },
+      "SPI_ADC_Master_1_wave": {
+        "ports": [
+          "SPI_ADC_Master_1/wave",
+          "waveParser_0/wave"
+        ]
+      },
+      "SPI_ADC_Master_2_wave": {
+        "ports": [
+          "SPI_ADC_Master_2/wave",
+          "waveParser_0/wave1"
         ]
       },
       "Serializer_0_MISO": {
@@ -2493,10 +2740,24 @@
           "SPI_ADC_Master_0/MISO"
         ]
       },
+      "Serializer_1_MISO": {
+        "ports": [
+          "Serializer_1/MISO",
+          "SPI_ADC_Master_1/MISO"
+        ]
+      },
+      "Serializer_2_MISO": {
+        "ports": [
+          "Serializer_2/MISO",
+          "SPI_ADC_Master_2/MISO"
+        ]
+      },
       "SineWaveGen_0_wave": {
         "ports": [
           "SineWaveGen_0/wave",
-          "Serializer_0/waveIn"
+          "Serializer_0/waveIn",
+          "Serializer_1/waveIn",
+          "Serializer_2/waveIn"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
@@ -2527,7 +2788,11 @@
         "ports": [
           "clk_wiz_0/clk_out1",
           "Serializer_0/clk16MHz",
-          "SPI_ADC_Master_0/clk16MHz"
+          "SPI_ADC_Master_0/clk16MHz",
+          "SPI_ADC_Master_1/clk16MHz",
+          "SPI_ADC_Master_2/clk16MHz",
+          "Serializer_1/clk16MHz",
+          "Serializer_2/clk16MHz"
         ]
       },
       "microblaze_0_Clk": {
@@ -2540,17 +2805,19 @@
           "blk_mem_gen_1/clka",
           "blk_mem_gen_1/clkb",
           "AddressFixer_0/clk",
-          "BRAMMUX_0/clk",
           "BlockRam_0/clk",
-          "CC_0/clk",
           "axi_smc/aclk",
           "proc_sys_reset_0/slowest_sync_clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "waveParser_0/clk",
-          "PulseWaveMaker_0/clk",
-          "clk1Mhz_0/clk",
           "clk_wiz_0/clk_in1",
-          "SPI_ADC_Master_0/clk"
+          "SPI_ADC_Master_0/clk",
+          "SPI_ADC_Master_1/clk",
+          "SPI_ADC_Master_2/clk",
+          "BRAMMUX_0/clk",
+          "CC_0/clk",
+          "clk1Mhz_0/clk",
+          "clk1Mhz_1/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

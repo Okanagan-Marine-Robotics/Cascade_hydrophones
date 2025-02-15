@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Mon Jan 20 02:22:39 2025
+// Date        : Sat Feb 15 04:41:50 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_stub.v
@@ -19,7 +19,7 @@
 module MicroBlaze_BRAMMUX_0_0(waveRef0, waveRef1, waveRef2, waveRef3, Ref0, Ref1, 
   Ref2, Ref3, waveRef0Address, waveRef1Address, waveRef2Address, waveRef3Address, Ref0Address, 
   Ref1Address, Ref2Address, Ref3Address, clk)
-/* synthesis syn_black_box black_box_pad_pin="waveRef0[11:0],waveRef1[11:0],waveRef2[11:0],waveRef3[11:0],Ref0[11:0],Ref1[11:0],Ref2[11:0],Ref3[11:0],waveRef0Address[13:0],waveRef1Address[13:0],waveRef2Address[13:0],waveRef3Address[13:0],Ref0Address[15:0],Ref1Address[15:0],Ref2Address[15:0],Ref3Address[15:0]" */
+/* synthesis syn_black_box black_box_pad_pin="waveRef0[11:0],waveRef1[11:0],waveRef2[11:0],waveRef3[11:0],Ref0[11:0],Ref1[11:0],Ref2[11:0],Ref3[11:0],waveRef0Address[13:0],waveRef1Address[13:0],waveRef2Address[13:0],waveRef3Address[13:0],Ref0Address[13:0],Ref1Address[13:0],Ref2Address[13:0],Ref3Address[13:0]" */
 /* synthesis syn_force_seq_prim="clk" */;
   input [11:0]waveRef0;
   input [11:0]waveRef1;
@@ -33,9 +33,9 @@ module MicroBlaze_BRAMMUX_0_0(waveRef0, waveRef1, waveRef2, waveRef3, Ref0, Ref1
   input [13:0]waveRef1Address;
   input [13:0]waveRef2Address;
   input [13:0]waveRef3Address;
-  output [15:0]Ref0Address;
-  output [15:0]Ref1Address;
-  output [15:0]Ref2Address;
-  output [15:0]Ref3Address;
+  output [13:0]Ref0Address;
+  output [13:0]Ref1Address;
+  output [13:0]Ref2Address;
+  output [13:0]Ref3Address;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
 endmodule

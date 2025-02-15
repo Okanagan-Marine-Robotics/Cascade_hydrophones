@@ -87,10 +87,10 @@ input wire [13 : 0] waveRef0Address;
 input wire [13 : 0] waveRef1Address;
 input wire [13 : 0] waveRef2Address;
 input wire [13 : 0] waveRef3Address;
-output wire [15 : 0] Ref0Address;
-output wire [15 : 0] Ref1Address;
-output wire [15 : 0] Ref2Address;
-output wire [15 : 0] Ref3Address;
+output wire [13 : 0] Ref0Address;
+output wire [13 : 0] Ref1Address;
+output wire [13 : 0] Ref2Address;
+output wire [13 : 0] Ref3Address;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)

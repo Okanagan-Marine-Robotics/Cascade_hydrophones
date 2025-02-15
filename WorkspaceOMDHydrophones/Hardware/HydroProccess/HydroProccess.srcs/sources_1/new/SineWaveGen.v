@@ -5,13 +5,13 @@ module SineWaveGen(
     );
         real real_counter;
         real result;
-    reg [11:0] ram [0:1000];
+    reg [11:0] ram [0:25];
     
     integer i;
     initial begin 
     
         
-        for (i = 0; i <= 1000; i = i + 1) begin
+        for (i = 0; i <= 25; i = i + 1) begin
             result = 2047 * $sin(2 * 3.14 * i / 25);
             ram[i] = $floor(result); 
         end

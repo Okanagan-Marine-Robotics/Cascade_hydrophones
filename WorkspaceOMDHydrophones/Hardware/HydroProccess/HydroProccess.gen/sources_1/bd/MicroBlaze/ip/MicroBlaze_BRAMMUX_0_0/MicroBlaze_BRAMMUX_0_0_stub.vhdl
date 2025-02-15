@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Mon Jan 20 02:22:39 2025
+-- Date        : Sat Feb 15 04:41:50 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0_stub.vhdl
@@ -27,10 +27,10 @@ entity MicroBlaze_BRAMMUX_0_0 is
     waveRef1Address : in STD_LOGIC_VECTOR ( 13 downto 0 );
     waveRef2Address : in STD_LOGIC_VECTOR ( 13 downto 0 );
     waveRef3Address : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    Ref0Address : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    Ref1Address : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    Ref2Address : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    Ref3Address : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    Ref0Address : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    Ref1Address : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    Ref2Address : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    Ref3Address : out STD_LOGIC_VECTOR ( 13 downto 0 );
     clk : in STD_LOGIC
   );
 
@@ -48,7 +48,7 @@ architecture stub of MicroBlaze_BRAMMUX_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "waveRef0[11:0],waveRef1[11:0],waveRef2[11:0],waveRef3[11:0],Ref0[11:0],Ref1[11:0],Ref2[11:0],Ref3[11:0],waveRef0Address[13:0],waveRef1Address[13:0],waveRef2Address[13:0],waveRef3Address[13:0],Ref0Address[15:0],Ref1Address[15:0],Ref2Address[15:0],Ref3Address[15:0],clk";
+  attribute black_box_pad_pin of stub : architecture is "waveRef0[11:0],waveRef1[11:0],waveRef2[11:0],waveRef3[11:0],Ref0[11:0],Ref1[11:0],Ref2[11:0],Ref3[11:0],waveRef0Address[13:0],waveRef1Address[13:0],waveRef2Address[13:0],waveRef3Address[13:0],Ref0Address[13:0],Ref1Address[13:0],Ref2Address[13:0],Ref3Address[13:0],clk";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_MODE : string;

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Feb 15 01:30:02 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Feb 15 05:10:31 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -197,7 +197,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="Ref0Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref0Address">
+        <PORT DIR="O" LEFT="13" NAME="Ref0Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref0Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef0AddressB"/>
           </CONNECTIONS>
@@ -207,7 +207,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="Ref1Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref1Address">
+        <PORT DIR="O" LEFT="13" NAME="Ref1Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref1Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef1AddressB"/>
           </CONNECTIONS>
@@ -217,7 +217,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="Ref2Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref2Address">
+        <PORT DIR="O" LEFT="13" NAME="Ref2Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref2Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef2AddressB"/>
           </CONNECTIONS>
@@ -227,7 +227,7 @@
             <CONNECTION INSTANCE="CC_0" PORT="waveRef3"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="Ref3Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref3Address">
+        <PORT DIR="O" LEFT="13" NAME="Ref3Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_0_Ref3Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="waveRef3AddressB"/>
           </CONNECTIONS>
@@ -603,7 +603,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef0Address">
+        <PORT DIR="O" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef0Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef0Address"/>
           </CONNECTIONS>
@@ -613,7 +613,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef1Address">
+        <PORT DIR="O" LEFT="13" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef1Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef1Address"/>
           </CONNECTIONS>
@@ -623,7 +623,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef2Address">
+        <PORT DIR="O" LEFT="13" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef2Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef2Address"/>
           </CONNECTIONS>
@@ -633,7 +633,7 @@
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="Ref3"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef3Address">
+        <PORT DIR="O" LEFT="13" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_waveRef3Address">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="waveRef3Address"/>
           </CONNECTIONS>
@@ -646,41 +646,6 @@
         <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/PulseWaveMaker_0" HWVERSION="1.0" INSTANCE="PulseWaveMaker_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PulseWaveMaker" VLNV="xilinx.com:module_ref:PulseWaveMaker:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_PulseWaveMaker_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="wave"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave2" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_waveRef">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -712,7 +677,71 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="wave"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/SPI_ADC_Master_1" HWVERSION="1.0" INSTANCE="SPI_ADC_Master_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SPI_ADC_Master" VLNV="xilinx.com:module_ref:SPI_ADC_Master:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_SPI_ADC_Master_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="CS" SIGIS="undef"/>
+        <PORT DIR="I" NAME="MISO" SIGIS="undef" SIGNAME="Serializer_1_MISO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Serializer_1" PORT="MISO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SCLK" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk16MHz" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/SPI_ADC_Master_2" HWVERSION="1.0" INSTANCE="SPI_ADC_Master_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SPI_ADC_Master" VLNV="xilinx.com:module_ref:SPI_ADC_Master:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_SPI_ADC_Master_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="CS" SIGIS="undef"/>
+        <PORT DIR="I" NAME="MISO" SIGIS="undef" SIGNAME="Serializer_2_MISO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Serializer_2" PORT="MISO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SCLK" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk16MHz" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_2_wave">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -743,6 +772,56 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Serializer_1" HWVERSION="1.0" INSTANCE="Serializer_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Serializer" VLNV="xilinx.com:module_ref:Serializer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_Serializer_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="MISO" SIGIS="undef" SIGNAME="Serializer_1_MISO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="MISO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk16MHz" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="waveIn" RIGHT="0" SIGIS="undef" SIGNAME="SineWaveGen_0_wave">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SineWaveGen_0" PORT="wave"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Serializer_2" HWVERSION="1.0" INSTANCE="Serializer_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Serializer" VLNV="xilinx.com:module_ref:Serializer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_Serializer_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="MISO" SIGIS="undef" SIGNAME="Serializer_2_MISO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="MISO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk16MHz" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="waveIn" RIGHT="0" SIGIS="undef" SIGNAME="SineWaveGen_0_wave">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SineWaveGen_0" PORT="wave"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/SineWaveGen_0" HWVERSION="1.0" INSTANCE="SineWaveGen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SineWaveGen" VLNV="xilinx.com:module_ref:SineWaveGen:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -758,6 +837,8 @@
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SineWaveGen_0_wave">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Serializer_0" PORT="waveIn"/>
+            <CONNECTION INSTANCE="Serializer_1" PORT="waveIn"/>
+            <CONNECTION INSTANCE="Serializer_2" PORT="waveIn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2523,7 +2604,7 @@
     <MODULE COREREVISION="1" FULLNAME="/clk1Mhz_0" HWVERSION="1.0" INSTANCE="clk1Mhz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk1Mhz" VLNV="xilinx.com:module_ref:clk1Mhz:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_clk1Mhz_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_clk1Mhz_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -2535,11 +2616,27 @@
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clk1Mhz_1" HWVERSION="1.0" INSTANCE="clk1Mhz_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk1Mhz" VLNV="xilinx.com:module_ref:clk1Mhz:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_clk1Mhz_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -3132,6 +3229,10 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="Serializer_0" PORT="clk16MHz"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="clk16MHz"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="clk16MHz"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk16MHz"/>
+            <CONNECTION INSTANCE="Serializer_1" PORT="clk16MHz"/>
+            <CONNECTION INSTANCE="Serializer_2" PORT="clk16MHz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4235,17 +4336,19 @@
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
             <CONNECTION INSTANCE="AddressFixer_0" PORT="clk"/>
-            <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
-            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="clk"/>
-            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="clk"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="clk"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
+            <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
+            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
+            <CONNECTION INSTANCE="clk1Mhz_1" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -4652,9 +4755,9 @@
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave1">
+        <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="wave1"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave00Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser_0_wave00Address">
@@ -4682,9 +4785,9 @@
             <CONNECTION INSTANCE="BlockRam_0" PORT="wave0Address"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_wave2">
+        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_2_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="wave2"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave1Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser_0_wave1Address">
@@ -4702,9 +4805,9 @@
             <CONNECTION INSTANCE="BlockRam_0" PORT="wave3Address"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="PulseWaveMaker_0_waveRef">
+        <PORT DIR="I" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PulseWaveMaker_0" PORT="waveRef"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser_0_waveRef0Address">

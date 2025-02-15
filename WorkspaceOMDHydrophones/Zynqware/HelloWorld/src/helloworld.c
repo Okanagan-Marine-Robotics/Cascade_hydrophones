@@ -13,11 +13,11 @@ int main() {
 
 
 
-	while(1){
+	//while(1){
 	maxTime = delayGetter(maxTime);
 
-	xil_printf("%d\n", maxTime);
-	}
+	//xil_printf("%d\n", maxTime);
+	//}
 	cleanup_platform();
 	return 0;
 }

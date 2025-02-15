@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1739613930">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1739625037">
   <File Type="PA-TCL" Name="MicroBlaze_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="MicroBlaze_wrapper_reports.tcl"/>
   <File Type="INIT-TIMING" Name="MicroBlaze_wrapper_timing_summary_init.rpt"/>
@@ -120,26 +120,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/100khzclk.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/100khzclk.v"/>
-        <Attr Name="ImportTime" Val="1726361289"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/AddressFixer.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/AddressFixer.v"/>
         <Attr Name="ImportTime" Val="1726481992"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/PulseWaveMaker.v">
-      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -166,6 +150,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/100khzclk.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/100khzclk.v"/>
+        <Attr Name="ImportTime" Val="1726361289"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/bd/MicroBlaze/MicroBlaze.bd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd"/>
@@ -179,6 +172,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v"/>
         <Attr Name="ImportTime" Val="1726485015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PulseWaveMaker.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -266,6 +267,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../../../../Users/james/Downloads/ebaz4205.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -303,15 +305,19 @@
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_blk_mem_gen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_AddressFixer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_PulseWaveMaker_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BRAMMUX_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SineWaveGen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BRAMMUX_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SineWaveGen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_1"/>
 </GenRun>

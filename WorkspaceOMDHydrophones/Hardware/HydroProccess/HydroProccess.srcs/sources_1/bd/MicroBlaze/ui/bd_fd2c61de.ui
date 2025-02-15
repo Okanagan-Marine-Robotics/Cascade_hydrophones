@@ -1,55 +1,59 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.765239",
-   "Default View_TopLeft":"1005,350",
+   "Default View_ScaleFactor":"0.541105",
+   "Default View_TopLeft":"355,931",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 6 -x 2780 -y 1450 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 6 -x 2780 -y 1420 -defaultsOSRD
-preplace inst BlockRam_0 -pg 1 -lvl 4 -x 2280 -y 440 -defaultsOSRD
-preplace inst CC_0 -pg 1 -lvl 3 -x 1690 -y 650 -defaultsOSRD
-preplace inst BRAMMUX_0 -pg 1 -lvl 2 -x 960 -y 950 -defaultsOSRD
-preplace inst waveParser_0 -pg 1 -lvl 3 -x 1690 -y 200 -defaultsOSRD
-preplace inst clk1Mhz_0 -pg 1 -lvl 2 -x 960 -y 1190 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 4 -x 2280 -y 1210 -defaultsOSRD
-preplace inst AddressFixer_0 -pg 1 -lvl 4 -x 2280 -y 1100 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 4 -x 2280 -y 990 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 2280 -y 1350 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -x 2660 -y 1090 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 4 -x 2280 -y 1650 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -x 2660 -y 1820 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 4 -x 2280 -y 1780 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 3 -x 1690 -y 1300 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1690 -y 1500 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 4 -x 2280 -y 1500 -defaultsOSRD
-preplace inst PulseWaveMaker_0 -pg 1 -lvl 2 -x 960 -y 570 -defaultsOSRD
-preplace inst SineWaveGen_0 -pg 1 -lvl 2 -x 960 -y 740 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 960 -y 220 -defaultsOSRD
-preplace inst SPI_ADC_Master_0 -pg 1 -lvl 1 -x 360 -y 360 -defaultsOSRD
-preplace inst Serializer_0 -pg 1 -lvl 1 -x 360 -y 510 -defaultsOSRD
-preplace netloc AddressFixer_0_address 1 4 1 2530 1100n
-preplace netloc BRAMMUX_0_Ref0 1 2 1 1430 560n
-preplace netloc BRAMMUX_0_Ref0Address 1 2 2 NJ 960 1980
-preplace netloc BRAMMUX_0_Ref1 1 2 1 1440 620n
-preplace netloc BRAMMUX_0_Ref1Address 1 2 2 NJ 980 1990
-preplace netloc BRAMMUX_0_Ref2 1 2 1 1150 680n
-preplace netloc BRAMMUX_0_Ref2Address 1 2 2 NJ 1000 2010
-preplace netloc BRAMMUX_0_Ref3 1 2 1 1450 740n
-preplace netloc BRAMMUX_0_Ref3Address 1 2 2 NJ 1020 2020
-preplace netloc BlockRam_0_wave00 1 2 3 1460 890 NJ 890 2510
-preplace netloc BlockRam_0_wave0 1 2 3 1460 400 1910J 70 2510
-preplace netloc BlockRam_0_wave01 1 2 3 1470 410 1990J 100 2470
-preplace netloc BlockRam_0_wave1 1 2 3 1490 440 1930J 80 2490
-preplace netloc BlockRam_0_wave02 1 2 3 1480 420 1960J 90 2480
-preplace netloc BlockRam_0_wave2 1 2 3 1490 860 NJ 860 2490
-preplace netloc BlockRam_0_wave03 1 2 3 1480 870 NJ 870 2470
-preplace netloc BlockRam_0_wave3 1 2 3 1470 880 NJ 880 2480
-preplace netloc BlockRam_0_waveRef0 1 1 4 740 -40 NJ -40 NJ -40 2540
-preplace netloc BlockRam_0_waveRef1 1 1 4 750 -30 NJ -30 NJ -30 2530
-preplace netloc BlockRam_0_waveRef2 1 1 4 760 -20 NJ -20 NJ -20 2520
-preplace netloc BlockRam_0_waveRef3 1 1 4 770 -10 NJ -10 NJ -10 2500
-preplace netloc CC_0_count 1 3 1 1940 800n
+preplace port DDR -pg 1 -lvl 6 -x 2790 -y 1450 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2790 -y 1420 -defaultsOSRD
+preplace inst BlockRam_0 -pg 1 -lvl 4 -x 2300 -y 440 -defaultsOSRD
+preplace inst CC_0 -pg 1 -lvl 3 -x 1720 -y 650 -defaultsOSRD
+preplace inst BRAMMUX_0 -pg 1 -lvl 2 -x 900 -y 950 -defaultsOSRD
+preplace inst waveParser_0 -pg 1 -lvl 3 -x 1720 -y 200 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 4 -x 2300 -y 1210 -defaultsOSRD
+preplace inst AddressFixer_0 -pg 1 -lvl 4 -x 2300 -y 1100 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 2300 -y 990 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 2300 -y 1350 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -x 2670 -y 1090 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 4 -x 2300 -y 1650 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -x 2670 -y 1820 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -x 2300 -y 1780 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 1720 -y 1300 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1720 -y 1500 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 2300 -y 1500 -defaultsOSRD
+preplace inst SineWaveGen_0 -pg 1 -lvl 2 -x 900 -y 740 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 900 -y 220 -defaultsOSRD
+preplace inst SPI_ADC_Master_0 -pg 1 -lvl 1 -x 360 -y 330 -defaultsOSRD
+preplace inst Serializer_0 -pg 1 -lvl 1 -x 360 -y 480 -defaultsOSRD
+preplace inst SPI_ADC_Master_1 -pg 1 -lvl 1 -x 360 -y 630 -defaultsOSRD
+preplace inst Serializer_1 -pg 1 -lvl 1 -x 360 -y 790 -defaultsOSRD
+preplace inst SPI_ADC_Master_2 -pg 1 -lvl 1 -x 360 -y 1020 -defaultsOSRD
+preplace inst Serializer_2 -pg 1 -lvl 1 -x 360 -y 1150 -defaultsOSRD
+preplace inst clk1Mhz_0 -pg 1 -lvl 2 -x 900 -y 1210 -defaultsOSRD
+preplace inst clk1Mhz_1 -pg 1 -lvl 2 -x 900 -y 1380 -defaultsOSRD
+preplace netloc AddressFixer_0_address 1 4 1 2540 1100n
+preplace netloc BRAMMUX_0_Ref0 1 2 1 1090 560n
+preplace netloc BRAMMUX_0_Ref0Address 1 2 2 NJ 960 2010
+preplace netloc BRAMMUX_0_Ref1 1 2 1 1400 620n
+preplace netloc BRAMMUX_0_Ref1Address 1 2 2 NJ 980 2020
+preplace netloc BRAMMUX_0_Ref2 1 2 1 1460 680n
+preplace netloc BRAMMUX_0_Ref2Address 1 2 2 NJ 1000 2030
+preplace netloc BRAMMUX_0_Ref3 1 2 1 1480 740n
+preplace netloc BRAMMUX_0_Ref3Address 1 2 2 NJ 1020 2040
+preplace netloc BlockRam_0_wave00 1 2 3 1400 -30 NJ -30 2490
+preplace netloc BlockRam_0_wave0 1 2 3 1490 400 1980J 100 2480
+preplace netloc BlockRam_0_wave01 1 2 3 1480 -10 NJ -10 2470
+preplace netloc BlockRam_0_wave1 1 2 3 1390 -40 NJ -40 2500
+preplace netloc BlockRam_0_wave02 1 2 3 1470 -20 NJ -20 2540
+preplace netloc BlockRam_0_wave2 1 2 3 1510 430 2040J 90 2520
+preplace netloc BlockRam_0_wave03 1 2 3 1510 890 NJ 890 2490
+preplace netloc BlockRam_0_wave3 1 2 3 1500 410 1970J 80 2560
+preplace netloc BlockRam_0_waveRef0 1 1 4 700 1110 1500J 880 NJ 880 2570
+preplace netloc BlockRam_0_waveRef1 1 1 4 720 1090 1490J 860 NJ 860 2530
+preplace netloc BlockRam_0_waveRef2 1 1 4 710 1100 1510J 920 NJ 920 2500
+preplace netloc BlockRam_0_waveRef3 1 1 4 680 810 1410J 870 NJ 870 2480
+preplace netloc CC_0_count 1 3 1 1990 800n
 preplace netloc CC_0_wave00Address 1 3 1 N 540
 preplace netloc CC_0_wave01Address 1 3 1 N 600
 preplace netloc CC_0_wave02Address 1 3 1 N 660
@@ -58,52 +62,53 @@ preplace netloc CC_0_wave0Address 1 3 1 N 520
 preplace netloc CC_0_wave1Address 1 3 1 N 580
 preplace netloc CC_0_wave2Address 1 3 1 N 640
 preplace netloc CC_0_wave3Address 1 3 1 N 700
-preplace netloc CC_0_waveRef0Address 1 1 3 730 430 NJ 430 1890
-preplace netloc CC_0_waveRef1Address 1 1 3 780 1090 NJ 1090 1900
-preplace netloc CC_0_waveRef2Address 1 1 3 760 1110 NJ 1110 1910
-preplace netloc CC_0_waveRef3Address 1 1 3 770 1100 NJ 1100 1890
-preplace netloc CC_0_xcorr 1 3 1 1960 740n
-preplace netloc CC_0_xcorr1 1 3 1 1930 760n
-preplace netloc Net1 1 1 3 780 800 1420 0 2100
-preplace netloc PulseWaveMaker_0_wave1 1 2 1 1400 180n
-preplace netloc PulseWaveMaker_0_wave2 1 2 1 1410 200n
-preplace netloc PulseWaveMaker_0_waveRef 1 2 1 1390 160n
-preplace netloc SPI_ADC_Master_0_wave 1 1 1 490 340n
-preplace netloc Serializer_0_MISO 1 0 2 240 280 480
-preplace netloc SineWaveGen_0_wave 1 0 3 240 440 NJ 440 1140
-preplace netloc axi_gpio_0_gpio_io_o 1 4 1 2470 1030n
-preplace netloc axi_gpio_1_gpio_io_o 1 4 1 2540 1640n
-preplace netloc blk_mem_gen_0_douta 1 4 1 2520 1070n
-preplace netloc blk_mem_gen_1_douta 1 4 1 2520 1680n
-preplace netloc clk_wiz_0_clk_out1 1 0 3 230 270 730J 280 1140
-preplace netloc microblaze_0_Clk 1 0 5 220 260 720 160 1380 920 2060 930 2550
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 1 2090 1370n
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 2 1490 1180 1890
-preplace netloc waveParser_0_buffer 1 3 1 1920 80n
-preplace netloc waveParser_0_buffer1 1 3 1 1980 100n
-preplace netloc waveParser_0_bufferRef 1 3 1 2090 60n
-preplace netloc waveParser_0_wave00Address 1 3 1 1950 160n
-preplace netloc waveParser_0_wave01Address 1 3 1 1890 220n
-preplace netloc waveParser_0_wave02Address 1 3 1 2000 280n
-preplace netloc waveParser_0_wave03Address 1 3 1 1900 340n
-preplace netloc waveParser_0_wave0Address 1 3 1 2070 140n
-preplace netloc waveParser_0_wave1Address 1 3 1 2020 200n
-preplace netloc waveParser_0_wave2Address 1 3 1 2010 260n
-preplace netloc waveParser_0_wave3Address 1 3 1 1920 320n
-preplace netloc waveParser_0_waveRef0Address 1 3 1 2080 120n
-preplace netloc waveParser_0_waveRef1Address 1 3 1 2030 180n
-preplace netloc waveParser_0_waveRef2Address 1 3 1 1970 240n
-preplace netloc waveParser_0_waveRef3Address 1 3 1 1940 300n
-preplace netloc xlconstant_0_dout 1 4 1 2510 990n
-preplace netloc xlslice_0_Dout 1 4 1 2480 1150n
-preplace netloc xlslice_1_Dout 1 4 1 2490 1780n
-preplace netloc axi_smc_M00_AXI 1 3 2 2100 1840 2480
-preplace netloc axi_smc_M01_AXI 1 3 2 2070 1850 2460
-preplace netloc processing_system7_0_DDR 1 3 3 1910J 1860 2470J 1450 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 3 3 1900J 1870 2560J 1420 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1920 1320n
-levelinfo -pg 1 -20 360 960 1690 2280 2660 2780
-pagesize -pg 1 -db -bbox -sgen -110 -50 2890 2350
+preplace netloc CC_0_waveRef0Address 1 1 3 670 440 NJ 440 1930
+preplace netloc CC_0_waveRef1Address 1 1 3 670 1130 NJ 1130 1960
+preplace netloc CC_0_waveRef2Address 1 1 3 660 1140 NJ 1140 1950
+preplace netloc CC_0_waveRef3Address 1 1 3 690 1120 NJ 1120 1930
+preplace netloc CC_0_xcorr 1 3 1 2000 740n
+preplace netloc CC_0_xcorr1 1 3 1 1980 760n
+preplace netloc Net1 1 1 3 720 680 1440 0 2130
+preplace netloc SPI_ADC_Master_0_wave 1 1 2 480 130 1460J
+preplace netloc SPI_ADC_Master_1_wave 1 1 2 490 140 1450J
+preplace netloc SPI_ADC_Master_2_wave 1 1 2 500 150 1430J
+preplace netloc Serializer_0_MISO 1 0 2 240 410 480
+preplace netloc Serializer_1_MISO 1 0 2 240 550 480
+preplace netloc Serializer_2_MISO 1 0 2 240 940 480
+preplace netloc SineWaveGen_0_wave 1 0 3 220 720 490J 800 1080
+preplace netloc axi_gpio_0_gpio_io_o 1 4 1 2490 1030n
+preplace netloc axi_gpio_1_gpio_io_o 1 4 1 2550 1640n
+preplace netloc blk_mem_gen_0_douta 1 4 1 2530 1070n
+preplace netloc blk_mem_gen_1_douta 1 4 1 2530 1680n
+preplace netloc clk_wiz_0_clk_out1 1 0 3 210 120 NJ 120 1080
+preplace netloc microblaze_0_Clk 1 0 5 230 250 650 160 1420 420 2050 930 2560
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 1 2110 1370n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 2 1510 1180 1930
+preplace netloc waveParser_0_buffer 1 3 1 1960 80n
+preplace netloc waveParser_0_buffer1 1 3 1 1950 100n
+preplace netloc waveParser_0_bufferRef 1 3 1 2120 60n
+preplace netloc waveParser_0_wave00Address 1 3 1 2020 160n
+preplace netloc waveParser_0_wave01Address 1 3 1 1940 220n
+preplace netloc waveParser_0_wave02Address 1 3 1 2060 280n
+preplace netloc waveParser_0_wave03Address 1 3 1 1950 340n
+preplace netloc waveParser_0_wave0Address 1 3 1 2100 140n
+preplace netloc waveParser_0_wave1Address 1 3 1 2080 200n
+preplace netloc waveParser_0_wave2Address 1 3 1 2070 260n
+preplace netloc waveParser_0_wave3Address 1 3 1 1960 320n
+preplace netloc waveParser_0_waveRef0Address 1 3 1 2110 120n
+preplace netloc waveParser_0_waveRef1Address 1 3 1 2090 180n
+preplace netloc waveParser_0_waveRef2Address 1 3 1 1930 240n
+preplace netloc waveParser_0_waveRef3Address 1 3 1 2010 300n
+preplace netloc xlconstant_0_dout 1 4 1 2520 990n
+preplace netloc xlslice_0_Dout 1 4 1 2500 1150n
+preplace netloc xlslice_1_Dout 1 4 1 2510 1780n
+preplace netloc axi_smc_M00_AXI 1 3 2 2130 1840 2500
+preplace netloc axi_smc_M01_AXI 1 3 2 2090 1850 2490
+preplace netloc processing_system7_0_DDR 1 3 3 1960J 1860 2480J 1450 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 3 1940J 1870 2570J 1420 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1970 1320n
+levelinfo -pg 1 -20 360 900 1720 2300 2670 2790
+pagesize -pg 1 -db -bbox -sgen -110 -50 2900 2350
 "
 }
 {

@@ -18,9 +18,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_
 # IP: bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_waveParser_0_0 || ORIG_REF_NAME==MicroBlaze_waveParser_0_0} -quiet] -quiet
 
-# IP: bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_0/MicroBlaze_clk1Mhz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_clk1Mhz_0_0 || ORIG_REF_NAME==MicroBlaze_clk1Mhz_0_0} -quiet] -quiet
-
 # IP: bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/MicroBlaze_xlslice_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_xlslice_0_0 || ORIG_REF_NAME==MicroBlaze_xlslice_0_0} -quiet] -quiet
 
@@ -54,9 +51,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_
 # IP: bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/MicroBlaze_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_smc_0 || ORIG_REF_NAME==MicroBlaze_axi_smc_0} -quiet] -quiet
 
-# IP: bd/MicroBlaze/ip/MicroBlaze_PulseWaveMaker_0_0/MicroBlaze_PulseWaveMaker_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_PulseWaveMaker_0_0 || ORIG_REF_NAME==MicroBlaze_PulseWaveMaker_0_0} -quiet] -quiet
-
 # IP: bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_0_0/MicroBlaze_SineWaveGen_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_SineWaveGen_0_0 || ORIG_REF_NAME==MicroBlaze_SineWaveGen_0_0} -quiet] -quiet
 
@@ -68,5 +62,23 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_
 
 # IP: bd/MicroBlaze/ip/MicroBlaze_Serializer_0_0/MicroBlaze_Serializer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_Serializer_0_0 || ORIG_REF_NAME==MicroBlaze_Serializer_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_SPI_ADC_Master_1_0/MicroBlaze_SPI_ADC_Master_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_SPI_ADC_Master_1_0 || ORIG_REF_NAME==MicroBlaze_SPI_ADC_Master_1_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_Serializer_1_0/MicroBlaze_Serializer_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_Serializer_1_0 || ORIG_REF_NAME==MicroBlaze_Serializer_1_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_SPI_ADC_Master_2_0/MicroBlaze_SPI_ADC_Master_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_SPI_ADC_Master_2_0 || ORIG_REF_NAME==MicroBlaze_SPI_ADC_Master_2_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_Serializer_2_0/MicroBlaze_Serializer_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_Serializer_2_0 || ORIG_REF_NAME==MicroBlaze_Serializer_2_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_0_1/MicroBlaze_clk1Mhz_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_clk1Mhz_0_1 || ORIG_REF_NAME==MicroBlaze_clk1Mhz_0_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_clk1Mhz_1_0/MicroBlaze_clk1Mhz_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_clk1Mhz_1_0 || ORIG_REF_NAME==MicroBlaze_clk1Mhz_1_0} -quiet] -quiet
 
 # XDC: c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze_ooc.xdc
