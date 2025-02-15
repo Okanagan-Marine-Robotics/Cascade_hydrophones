@@ -23,7 +23,7 @@ WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:463]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v:478]
 WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/sim/bd_f84b.v:1212]
 WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_processing_system7_0_0/sim/MicroBlaze_processing_system7_0_0.v:215]
 WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ocm_gp0' [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4372]
@@ -80,6 +80,10 @@ Compiling module xil_defaultlib.CC
 Compiling module xil_defaultlib.MicroBlaze_CC_0_0
 Compiling module xil_defaultlib.PulseWaveMaker
 Compiling module xil_defaultlib.MicroBlaze_PulseWaveMaker_0_0
+Compiling module xil_defaultlib.SPI_ADC_Master
+Compiling module xil_defaultlib.MicroBlaze_SPI_ADC_Master_0_1
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.MicroBlaze_Serializer_0_0
 Compiling module xil_defaultlib.SineWaveGen
 Compiling module xil_defaultlib.MicroBlaze_SineWaveGen_0_0
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
@@ -166,6 +170,11 @@ Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_0
 Compiling module xil_defaultlib.MicroBlaze_blk_mem_gen_0_1
 Compiling module xil_defaultlib.clk1Mhz
 Compiling module xil_defaultlib.MicroBlaze_clk1Mhz_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.MicroBlaze_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.MicroBlaze_clk_wiz_0_0
 Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
 Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
 Compiling architecture microblaze_proc_sys_reset_0_0_arch of entity xil_defaultlib.MicroBlaze_proc_sys_reset_0_0 [microblaze_proc_sys_reset_0_0_de...]

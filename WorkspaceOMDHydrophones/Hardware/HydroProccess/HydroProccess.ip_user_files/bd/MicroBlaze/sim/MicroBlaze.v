@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Fri Feb 14 03:34:13 2025
+//Date        : Sat Feb 15 01:29:58 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=21,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=10,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -116,6 +116,8 @@ module MicroBlaze
   wire [11:0]PulseWaveMaker_0_wave1;
   wire [11:0]PulseWaveMaker_0_wave2;
   wire [11:0]PulseWaveMaker_0_waveRef;
+  wire [11:0]SPI_ADC_Master_0_wave;
+  wire Serializer_0_MISO;
   wire [11:0]SineWaveGen_0_wave;
   wire [31:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
@@ -155,6 +157,7 @@ module MicroBlaze
   wire axi_smc_M01_AXI_WVALID;
   wire [31:0]blk_mem_gen_0_douta;
   wire [31:0]blk_mem_gen_1_douta;
+  wire clk_wiz_0_clk_out1;
   wire microblaze_0_Clk;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -311,10 +314,19 @@ module MicroBlaze
         .xcorr1(CC_0_xcorr1));
   MicroBlaze_PulseWaveMaker_0_0 PulseWaveMaker_0
        (.clk(microblaze_0_Clk),
-        .wave(SineWaveGen_0_wave),
+        .wave(SPI_ADC_Master_0_wave),
         .wave1(PulseWaveMaker_0_wave1),
         .wave2(PulseWaveMaker_0_wave2),
         .waveRef(PulseWaveMaker_0_waveRef));
+  MicroBlaze_SPI_ADC_Master_0_1 SPI_ADC_Master_0
+       (.MISO(Serializer_0_MISO),
+        .clk(microblaze_0_Clk),
+        .clk16MHz(clk_wiz_0_clk_out1),
+        .wave(SPI_ADC_Master_0_wave));
+  MicroBlaze_Serializer_0_0 Serializer_0
+       (.MISO(Serializer_0_MISO),
+        .clk16MHz(clk_wiz_0_clk_out1),
+        .waveIn(SineWaveGen_0_wave));
   MicroBlaze_SineWaveGen_0_0 SineWaveGen_0
        (.clk1Mhz(Net1),
         .wave(SineWaveGen_0_wave));
@@ -460,6 +472,9 @@ module MicroBlaze
   MicroBlaze_clk1Mhz_0_0 clk1Mhz_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1));
+  MicroBlaze_clk_wiz_0_0 clk_wiz_0
+       (.clk_in1(microblaze_0_Clk),
+        .clk_out1(clk_wiz_0_clk_out1));
   MicroBlaze_proc_sys_reset_0_0 proc_sys_reset_0
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
