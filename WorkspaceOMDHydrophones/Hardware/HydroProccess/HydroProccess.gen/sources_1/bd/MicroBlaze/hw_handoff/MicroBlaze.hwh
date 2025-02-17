@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Feb 15 05:10:31 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Feb 17 01:43:58 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -107,6 +107,16 @@
     <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="processing_system7_0_PS_SRSTB">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="PS_SRSTB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="led_green" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="led_red" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_2" PORT="dout"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -2617,26 +2627,10 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/clk1Mhz_1" HWVERSION="1.0" INSTANCE="clk1Mhz_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk1Mhz" VLNV="xilinx.com:module_ref:clk1Mhz:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_clk1Mhz_1_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -3227,10 +3221,10 @@
         </PORT>
         <PORT CLKFREQUENCY="16000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Serializer_0" PORT="clk16MHz"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="clk16MHz"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="clk16MHz"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk16MHz"/>
+            <CONNECTION INSTANCE="Serializer_0" PORT="clk16MHz"/>
             <CONNECTION INSTANCE="Serializer_1" PORT="clk16MHz"/>
             <CONNECTION INSTANCE="Serializer_2" PORT="clk16MHz"/>
           </CONNECTIONS>
@@ -4342,13 +4336,12 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
-            <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="clk"/>
-            <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="clk"/>
-            <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
-            <CONNECTION INSTANCE="clk1Mhz_1" PORT="clk"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="clk"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="clk"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -4846,6 +4839,40 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="web"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="web"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_green"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_red"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

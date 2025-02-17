@@ -1,4 +1,0 @@
-
-*** Running vivado
-    with args -log MicroBlaze_blk_mem_gen_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_blk_mem_gen_0_0.tcl
-

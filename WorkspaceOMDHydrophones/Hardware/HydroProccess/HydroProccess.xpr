@@ -204,29 +204,8 @@
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_SineWaveGen_0_0/MicroBlaze_SineWaveGen_0_0.xci">
           <Proxy FileSetName="MicroBlaze_SineWaveGen_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_axi_gpio_0_0/MicroBlaze_axi_gpio_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_axi_gpio_0_1/MicroBlaze_axi_gpio_0_1.xci">
-          <Proxy FileSetName="MicroBlaze_axi_gpio_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_blk_mem_gen_0_0/MicroBlaze_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_blk_mem_gen_0_1/MicroBlaze_blk_mem_gen_0_1.xci">
-          <Proxy FileSetName="MicroBlaze_blk_mem_gen_0_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_clk1Mhz_0_1/MicroBlaze_clk1Mhz_0_1.xci">
           <Proxy FileSetName="MicroBlaze_clk1Mhz_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_clk1Mhz_1_0/MicroBlaze_clk1Mhz_1_0.xci">
-          <Proxy FileSetName="MicroBlaze_clk1Mhz_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_proc_sys_reset_0_0/MicroBlaze_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="MicroBlaze_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_processing_system7_0_0/MicroBlaze_processing_system7_0_0.xci">
           <Proxy FileSetName="MicroBlaze_processing_system7_0_0"/>
@@ -382,30 +361,6 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="MicroBlaze_axi_gpio_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_axi_gpio_0_0" RelGenDir="$PGENDIR/MicroBlaze_axi_gpio_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_axi_gpio_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_blk_mem_gen_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_blk_mem_gen_0_1" RelGenDir="$PGENDIR/MicroBlaze_blk_mem_gen_0_1">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_blk_mem_gen_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_axi_gpio_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_axi_gpio_0_1" RelGenDir="$PGENDIR/MicroBlaze_axi_gpio_0_1">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_axi_gpio_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_blk_mem_gen_0_0" RelGenDir="$PGENDIR/MicroBlaze_blk_mem_gen_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_blk_mem_gen_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="MicroBlaze_AddressFixer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_AddressFixer_0_0" RelGenDir="$PGENDIR/MicroBlaze_AddressFixer_0_0">
       <Config>
         <Option Name="TopModule" Val="MicroBlaze_AddressFixer_0_0"/>
@@ -418,12 +373,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="MicroBlaze_proc_sys_reset_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_proc_sys_reset_0_0" RelGenDir="$PGENDIR/MicroBlaze_proc_sys_reset_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_proc_sys_reset_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="MicroBlaze_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_processing_system7_0_0" RelGenDir="$PGENDIR/MicroBlaze_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="MicroBlaze_processing_system7_0_0"/>
@@ -433,54 +382,6 @@
     <FileSet Name="MicroBlaze_waveParser_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_waveParser_0_0" RelGenDir="$PGENDIR/MicroBlaze_waveParser_0_0">
       <Config>
         <Option Name="TopModule" Val="MicroBlaze_waveParser_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_SPI_ADC_Master_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SPI_ADC_Master_0_1" RelGenDir="$PGENDIR/MicroBlaze_SPI_ADC_Master_0_1">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_SPI_ADC_Master_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_clk_wiz_0_0" RelGenDir="$PGENDIR/MicroBlaze_clk_wiz_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_clk_wiz_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_Serializer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_Serializer_0_0" RelGenDir="$PGENDIR/MicroBlaze_Serializer_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_Serializer_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_SineWaveGen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SineWaveGen_0_0" RelGenDir="$PGENDIR/MicroBlaze_SineWaveGen_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_SineWaveGen_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_Serializer_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_Serializer_1_0" RelGenDir="$PGENDIR/MicroBlaze_Serializer_1_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_Serializer_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_SPI_ADC_Master_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SPI_ADC_Master_2_0" RelGenDir="$PGENDIR/MicroBlaze_SPI_ADC_Master_2_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_SPI_ADC_Master_2_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_SPI_ADC_Master_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SPI_ADC_Master_1_0" RelGenDir="$PGENDIR/MicroBlaze_SPI_ADC_Master_1_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_SPI_ADC_Master_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="MicroBlaze_Serializer_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_Serializer_2_0" RelGenDir="$PGENDIR/MicroBlaze_Serializer_2_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_Serializer_2_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -502,9 +403,45 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="MicroBlaze_clk1Mhz_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_clk1Mhz_1_0" RelGenDir="$PGENDIR/MicroBlaze_clk1Mhz_1_0">
+    <FileSet Name="MicroBlaze_SPI_ADC_Master_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SPI_ADC_Master_0_1" RelGenDir="$PGENDIR/MicroBlaze_SPI_ADC_Master_0_1">
       <Config>
-        <Option Name="TopModule" Val="MicroBlaze_clk1Mhz_1_0"/>
+        <Option Name="TopModule" Val="MicroBlaze_SPI_ADC_Master_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MicroBlaze_SineWaveGen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SineWaveGen_0_0" RelGenDir="$PGENDIR/MicroBlaze_SineWaveGen_0_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_SineWaveGen_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MicroBlaze_Serializer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_Serializer_0_0" RelGenDir="$PGENDIR/MicroBlaze_Serializer_0_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_Serializer_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MicroBlaze_SPI_ADC_Master_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SPI_ADC_Master_2_0" RelGenDir="$PGENDIR/MicroBlaze_SPI_ADC_Master_2_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_SPI_ADC_Master_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MicroBlaze_Serializer_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_Serializer_1_0" RelGenDir="$PGENDIR/MicroBlaze_Serializer_1_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_Serializer_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MicroBlaze_Serializer_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_Serializer_2_0" RelGenDir="$PGENDIR/MicroBlaze_Serializer_2_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_Serializer_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MicroBlaze_SPI_ADC_Master_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_SPI_ADC_Master_1_0" RelGenDir="$PGENDIR/MicroBlaze_SPI_ADC_Master_1_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_SPI_ADC_Master_1_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -538,46 +475,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="MicroBlaze_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_axi_gpio_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_axi_gpio_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_blk_mem_gen_0_1_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_blk_mem_gen_0_1" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_blk_mem_gen_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_blk_mem_gen_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_1_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_axi_gpio_0_1_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_axi_gpio_0_1" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_axi_gpio_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_axi_gpio_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_1_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_blk_mem_gen_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_blk_mem_gen_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="MicroBlaze_AddressFixer_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_AddressFixer_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_AddressFixer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_AddressFixer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
@@ -589,16 +486,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="MicroBlaze_BlockRam_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_BlockRam_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_BlockRam_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_BlockRam_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_BlockRam_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_BlockRam_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_proc_sys_reset_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_proc_sys_reset_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_proc_sys_reset_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_proc_sys_reset_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
@@ -628,31 +515,37 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="MicroBlaze_CC_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_CC_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_CC_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_CC_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_BRAMMUX_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_BRAMMUX_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_BRAMMUX_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_BRAMMUX_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_clk1Mhz_0_1_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_clk1Mhz_0_1" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk1Mhz_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_clk1Mhz_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="MicroBlaze_SPI_ADC_Master_0_1_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_SPI_ADC_Master_0_1" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_SPI_ADC_Master_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_SPI_ADC_Master_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_0_1_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_clk_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_clk_wiz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk_wiz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk_wiz_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_Serializer_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_Serializer_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_Serializer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -676,7 +569,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="MicroBlaze_Serializer_1_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_Serializer_1_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_Serializer_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_synth_1" ParallelReportGen="true">
+    <Run Id="MicroBlaze_Serializer_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_Serializer_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_Serializer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -700,7 +593,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="MicroBlaze_SPI_ADC_Master_1_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_SPI_ADC_Master_1_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_SPI_ADC_Master_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_SPI_ADC_Master_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_synth_1" ParallelReportGen="true">
+    <Run Id="MicroBlaze_Serializer_1_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_Serializer_1_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_Serializer_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -724,43 +617,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="MicroBlaze_CC_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_CC_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_CC_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_CC_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_BRAMMUX_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_BRAMMUX_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_BRAMMUX_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_BRAMMUX_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_clk1Mhz_0_1_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_clk1Mhz_0_1" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk1Mhz_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_clk1Mhz_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_clk1Mhz_1_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_clk1Mhz_1_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk1Mhz_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_clk1Mhz_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_1_0_synth_1" ParallelReportGen="true">
+    <Run Id="MicroBlaze_SPI_ADC_Master_1_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_SPI_ADC_Master_1_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_SPI_ADC_Master_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_SPI_ADC_Master_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -804,58 +661,58 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023" CtrlBit="true">
-        <ReportConfig DisplayName="Timing Summary - Design Initialization" Name="impl_1_copy_1_init_report_timing_summary_0" Spec="report_timing_summary" RunStep="init_design" ReportFile="MicroBlaze_wrapper_timing_summary_init.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Timing Summary - Design Initialization" Name="impl_1_copy_1_init_report_timing_summary_0" Spec="report_timing_summary" RunStep="init_design" ReportFile="MicroBlaze_wrapper_timing_summary_init_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="DRC - Opt Design" Name="impl_1_copy_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" ReportFile="MicroBlaze_wrapper_drc_opted.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="DRC - Opt Design" Name="impl_1_copy_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" ReportFile="MicroBlaze_wrapper_drc_opted_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Opt Design" Name="impl_1_copy_1_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_opted.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Timing Summary - Opt Design" Name="impl_1_copy_1_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_opted_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Power Opt Design" Name="impl_1_copy_1_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="power_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_pwropted.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Timing Summary - Power Opt Design" Name="impl_1_copy_1_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="power_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_pwropted_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="IO - Place Design" Name="impl_1_copy_1_place_report_io_0" Spec="report_io" RunStep="place_design" ReportFile="MicroBlaze_wrapper_io_placed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="IO - Place Design" Name="impl_1_copy_1_place_report_io_0" Spec="report_io" RunStep="place_design" ReportFile="MicroBlaze_wrapper_io_placed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Utilization - Place Design" Name="impl_1_copy_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" ReportFile="MicroBlaze_wrapper_utilization_placed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Utilization - Place Design" Name="impl_1_copy_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" ReportFile="MicroBlaze_wrapper_utilization_placed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Control Sets - Place Design" Name="impl_1_copy_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" ReportFile="MicroBlaze_wrapper_control_sets_placed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Control Sets - Place Design" Name="impl_1_copy_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" ReportFile="MicroBlaze_wrapper_control_sets_placed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="verbose" Type="" Value="true"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse - Place Design" Name="impl_1_copy_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" ReportFile="MicroBlaze_wrapper_incremental_reuse_pre_placed.rpt.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Incremental Reuse - Place Design" Name="impl_1_copy_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" ReportFile="MicroBlaze_wrapper_incremental_reuse_pre_placed.rpt_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse - Place Design" Name="impl_1_copy_1_place_report_incremental_reuse_1" Spec="report_incremental_reuse" RunStep="place_design" ReportFile="MicroBlaze_wrapper_incremental_reuse_placed.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Incremental Reuse - Place Design" Name="impl_1_copy_1_place_report_incremental_reuse_1" Spec="report_incremental_reuse" RunStep="place_design" ReportFile="MicroBlaze_wrapper_incremental_reuse_placed_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Place Design" Name="impl_1_copy_1_place_report_timing_summary_0" Spec="report_timing_summary" RunStep="place_design" ReportFile="MicroBlaze_wrapper_timing_summary_placed.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Timing Summary - Place Design" Name="impl_1_copy_1_place_report_timing_summary_0" Spec="report_timing_summary" RunStep="place_design" ReportFile="MicroBlaze_wrapper_timing_summary_placed_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Post-Place Power Opt Design" Name="impl_1_copy_1_post_place_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_place_power_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_postplace_pwropted.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Timing Summary - Post-Place Power Opt Design" Name="impl_1_copy_1_post_place_power_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_place_power_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_postplace_pwropted_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Post-Place Phys Opt Design" Name="impl_1_copy_1_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="phys_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_physopted.rpt" Version="1" Minor="0" IsDisabled="true">
+        <ReportConfig DisplayName="Timing Summary - Post-Place Phys Opt Design" Name="impl_1_copy_1_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="phys_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_physopted_1.rpt" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
@@ -864,50 +721,50 @@
         <ReportConfig DisplayName="implementation_log" Name="impl_1_copy_1_route_implementation_log_0" Spec="" RunStep="route_design" ReportFile="MicroBlaze_wrapper.vdi">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="DRC - Route Design" Name="impl_1_copy_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" ReportFile="MicroBlaze_wrapper_drc_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="DRC - Route Design" Name="impl_1_copy_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" ReportFile="MicroBlaze_wrapper_drc_routed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Methodology - Route Design" Name="impl_1_copy_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" ReportFile="MicroBlaze_wrapper_methodology_drc_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Methodology - Route Design" Name="impl_1_copy_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" ReportFile="MicroBlaze_wrapper_methodology_drc_routed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Power - Route Design" Name="impl_1_copy_1_route_report_power_0" Spec="report_power" RunStep="route_design" ReportFile="MicroBlaze_wrapper_power_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Power - Route Design" Name="impl_1_copy_1_route_report_power_0" Spec="report_power" RunStep="route_design" ReportFile="MicroBlaze_wrapper_power_routed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Route Status - Route Design" Name="impl_1_copy_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" ReportFile="MicroBlaze_wrapper_route_status.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Route Status - Route Design" Name="impl_1_copy_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" ReportFile="MicroBlaze_wrapper_route_status_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Route Design" Name="impl_1_copy_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" ReportFile="MicroBlaze_wrapper_timing_summary_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Timing Summary - Route Design" Name="impl_1_copy_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" ReportFile="MicroBlaze_wrapper_timing_summary_routed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Incremental Reuse - Route Design" Name="impl_1_copy_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="MicroBlaze_wrapper_incremental_reuse_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Incremental Reuse - Route Design" Name="impl_1_copy_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="MicroBlaze_wrapper_incremental_reuse_routed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Clock Utilization - Route Design" Name="impl_1_copy_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" ReportFile="MicroBlaze_wrapper_clock_utilization_routed.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Clock Utilization - Route Design" Name="impl_1_copy_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" ReportFile="MicroBlaze_wrapper_clock_utilization_routed_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew - Route Design" Name="impl_1_copy_1_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" ReportFile="MicroBlaze_wrapper_bus_skew_routed.rpt" Version="1" Minor="1">
+        <ReportConfig DisplayName="Bus Skew - Route Design" Name="impl_1_copy_1_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" ReportFile="MicroBlaze_wrapper_bus_skew_routed_1.rpt" Version="1" Minor="1">
           <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Timing Summary - Post-Route Phys Opt Design" Name="impl_1_copy_1_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_postroute_physopted.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Timing Summary - Post-Route Phys Opt Design" Name="impl_1_copy_1_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" ReportFile="MicroBlaze_wrapper_timing_summary_postroute_physopted_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
           <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="Bus Skew - Post-Route Phys Opt Design" Name="impl_1_copy_1_post_route_phys_opt_report_bus_skew_0" Spec="report_bus_skew" RunStep="post_route_phys_opt_design" ReportFile="MicroBlaze_wrapper_bus_skew_postroute_physopted.rpt" Version="1" Minor="1">
+        <ReportConfig DisplayName="Bus Skew - Post-Route Phys Opt Design" Name="impl_1_copy_1_post_route_phys_opt_report_bus_skew_0" Spec="report_bus_skew" RunStep="post_route_phys_opt_design" ReportFile="MicroBlaze_wrapper_bus_skew_postroute_physopted_1.rpt" Version="1" Minor="1">
           <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
@@ -916,74 +773,6 @@
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_axi_gpio_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_blk_mem_gen_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_blk_mem_gen_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_blk_mem_gen_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_1_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_axi_gpio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_axi_gpio_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_axi_gpio_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_axi_gpio_0_1_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_blk_mem_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_blk_mem_gen_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
@@ -1005,23 +794,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="MicroBlaze_BlockRam_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_BlockRam_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_BlockRam_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_BlockRam_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_BlockRam_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_proc_sys_reset_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_proc_sys_reset_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_proc_sys_reset_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_proc_sys_reset_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
@@ -1072,45 +844,58 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="MicroBlaze_CC_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_CC_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_CC_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_BRAMMUX_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_BRAMMUX_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_BRAMMUX_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_clk1Mhz_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk1Mhz_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_clk1Mhz_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="MicroBlaze_SPI_ADC_Master_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_SPI_ADC_Master_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_SPI_ADC_Master_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_0_1_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_clk_wiz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk_wiz_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk_wiz_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_Serializer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_Serializer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>
@@ -1148,7 +933,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="MicroBlaze_Serializer_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_Serializer_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_impl_1" ParallelReportGen="true">
+    <Run Id="MicroBlaze_Serializer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_Serializer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>
@@ -1186,7 +971,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="MicroBlaze_SPI_ADC_Master_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_SPI_ADC_Master_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_SPI_ADC_Master_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_impl_1" ParallelReportGen="true">
+    <Run Id="MicroBlaze_Serializer_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Serializer_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_Serializer_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Serializer_1_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>
@@ -1224,64 +1009,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="MicroBlaze_CC_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_CC_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_CC_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_CC_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_BRAMMUX_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_BRAMMUX_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_BRAMMUX_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_BRAMMUX_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_clk1Mhz_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk1Mhz_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_clk1Mhz_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_0_1_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_clk1Mhz_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_clk1Mhz_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_clk1Mhz_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_clk1Mhz_1_0_impl_1" ParallelReportGen="true">
+    <Run Id="MicroBlaze_SPI_ADC_Master_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_SPI_ADC_Master_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_SPI_ADC_Master_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_SPI_ADC_Master_1_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>

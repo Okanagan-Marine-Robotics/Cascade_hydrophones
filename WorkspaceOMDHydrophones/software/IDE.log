@@ -1,0 +1,63 @@
+02:06:51 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/IDE.log'.
+02:06:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\temp_xsdb_launch_script.tcl
+02:06:53 INFO  : Registering command handlers for Vitis TCF services
+02:06:53 INFO  : Platform repository initialization has completed.
+02:06:56 INFO  : XSCT server has started successfully.
+02:06:56 INFO  : plnx-install-location is set to ''
+02:06:56 INFO  : Successfully done setting XSCT server connection channel  
+02:06:59 INFO  : Successfully done setting workspace for the tool. 
+02:07:00 INFO  : Successfully done query RDI_DATADIR 
+02:08:02 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+02:08:02 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:08:03 WARN  : An unexpected exception occurred in the module 'platform project logging'
+02:08:03 INFO  : Platform 'MicroBlaze_wrapper' is added to custom repositories.
+02:08:10 INFO  : Platform 'MicroBlaze_wrapper' is added to custom repositories.
+02:09:15 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+02:09:15 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:09:15 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:10:43 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:11:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:11:12 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:11:12 INFO  : 'jtag frequency' command is executed.
+02:11:12 INFO  : Context for 'APU' is selected.
+02:11:12 INFO  : System reset is completed.
+02:11:15 INFO  : 'after 3000' command is executed.
+02:11:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:11:16 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit"
+02:11:16 INFO  : Context for 'APU' is selected.
+02:11:16 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+02:11:16 INFO  : 'configparams force-mem-access 1' command is executed.
+02:11:16 INFO  : Context for 'APU' is selected.
+02:11:16 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:11:17 INFO  : 'ps7_init' command is executed.
+02:11:17 INFO  : 'ps7_post_config' command is executed.
+02:11:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:11:17 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:11:17 INFO  : 'configparams force-mem-access 0' command is executed.
+02:11:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:11:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:11:17 INFO  : 'con' command is executed.
+02:11:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:11:17 INFO  : Disconnected from the channel tcfchan#2.

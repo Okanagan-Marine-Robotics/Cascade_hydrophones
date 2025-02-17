@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Sat Feb 15 05:10:25 2025
+//Date        : Mon Feb 17 01:43:52 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze_wrapper.bd
 //Design      : MicroBlaze_wrapper
@@ -31,7 +31,9 @@ module MicroBlaze_wrapper
     FIXED_IO_mio,
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
-    FIXED_IO_ps_srstb);
+    FIXED_IO_ps_srstb,
+    led_green,
+    led_red);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -53,6 +55,8 @@ module MicroBlaze_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output [0:0]led_green;
+  output [0:0]led_red;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -75,6 +79,8 @@ module MicroBlaze_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [0:0]led_green;
+  wire [0:0]led_red;
 
   MicroBlaze MicroBlaze_i
        (.DDR_addr(DDR_addr),
@@ -97,5 +103,7 @@ module MicroBlaze_wrapper
         .FIXED_IO_mio(FIXED_IO_mio),
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
-        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb));
+        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .led_green(led_green),
+        .led_red(led_red));
 endmodule

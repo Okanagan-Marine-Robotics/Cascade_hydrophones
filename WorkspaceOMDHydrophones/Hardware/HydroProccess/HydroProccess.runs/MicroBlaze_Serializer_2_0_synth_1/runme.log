@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sat Feb 15 04:18:40 2025
+  **** Start of session at: Mon Feb 17 01:44:29 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -25,57 +25,57 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2128
+INFO: [Synth 8-7075] Helper process launched with PID 11428
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.195 ; gain = 466.637
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1058.250 ; gain = 466.047
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Serializer_2_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_Serializer_2_0/synth/MicroBlaze_Serializer_2_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'Serializer' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/Serializer.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Serializer' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/Serializer.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Serializer_2_0' (0#1) [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_Serializer_2_0/synth/MicroBlaze_Serializer_2_0.v:53]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1168.688 ; gain = 577.129
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1167.820 ; gain = 575.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1168.688 ; gain = 577.129
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1167.820 ; gain = 575.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1168.688 ; gain = 577.129
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1167.820 ; gain = 575.617
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1168.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1167.820 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1216.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1210.172 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1216.902 ; gain = 0.320
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1210.172 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1216.902 ; gain = 625.344
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1210.172 ; gain = 617.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1216.902 ; gain = 625.344
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1210.172 ; gain = 617.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1216.902 ; gain = 625.344
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1210.172 ; gain = 617.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1216.902 ; gain = 625.344
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1210.172 ; gain = 617.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -105,25 +105,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1225.969 ; gain = 634.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1214.543 ; gain = 622.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1369.625 ; gain = 778.066
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 1357.438 ; gain = 765.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1369.699 ; gain = 778.141
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 1357.438 ; gain = 765.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1379.773 ; gain = 788.215
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 1367.750 ; gain = 775.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -141,37 +141,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:01:09 . Memory (MB): peak = 1583.793 ; gain = 991.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:01:09 . Memory (MB): peak = 1583.793 ; gain = 991.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1583.793 ; gain = 991.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1583.793 ; gain = 991.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1583.793 ; gain = 991.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1583.793 ; gain = 991.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -197,18 +197,18 @@ Report Cell Usage:
 |8     |FDRE   |    33|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1583.793 ; gain = 991.590
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1596.094 ; gain = 956.320
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1596.094 ; gain = 1004.535
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:01:14 . Memory (MB): peak = 1583.793 ; gain = 949.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:01:16 . Memory (MB): peak = 1583.793 ; gain = 991.590
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1605.176 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1583.793 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1608.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1583.793 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -216,8 +216,8 @@ Synth Design complete | Checksum: a24f8087
 INFO: [Common 17-83] Releasing license: Synthesis
 22 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:35 . Memory (MB): peak = 1608.840 ; gain = 1225.848
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1608.840 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:44 . Memory (MB): peak = 1583.793 ; gain = 1203.418
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1583.793 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_Serializer_2_0_synth_1/MicroBlaze_Serializer_2_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file MicroBlaze_Serializer_2_0_utilization_synth.rpt -pb MicroBlaze_Serializer_2_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 04:19:19 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 17 01:46:28 2025...

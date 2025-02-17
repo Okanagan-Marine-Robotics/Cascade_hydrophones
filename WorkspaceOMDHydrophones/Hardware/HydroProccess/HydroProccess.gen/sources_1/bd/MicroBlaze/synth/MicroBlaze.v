@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Sat Feb 15 05:10:25 2025
+//Date        : Mon Feb 17 01:43:52 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=25,numReposBlks=25,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=14,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=26,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -32,7 +32,9 @@ module MicroBlaze
     FIXED_IO_mio,
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
-    FIXED_IO_ps_srstb);
+    FIXED_IO_ps_srstb,
+    led_green,
+    led_red);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -54,6 +56,8 @@ module MicroBlaze
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
+  output [0:0]led_green;
+  output [0:0]led_red;
 
   wire [13:0]AddressFixer_0_address;
   wire [11:0]BRAMMUX_0_Ref0;
@@ -159,6 +163,8 @@ module MicroBlaze
   wire [31:0]blk_mem_gen_0_douta;
   wire [31:0]blk_mem_gen_1_douta;
   wire clk_wiz_0_clk_out1;
+  wire [0:0]led_green;
+  wire [0:0]led_red;
   wire microblaze_0_Clk;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -485,8 +491,6 @@ module MicroBlaze
   MicroBlaze_clk1Mhz_0_1 clk1Mhz_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1));
-  MicroBlaze_clk1Mhz_1_0 clk1Mhz_1
-       (.clk(microblaze_0_Clk));
   MicroBlaze_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(microblaze_0_Clk),
         .clk_out1(clk_wiz_0_clk_out1));
@@ -592,6 +596,10 @@ module MicroBlaze
         .waveRef3Address(waveParser_0_waveRef3Address));
   MicroBlaze_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
+  MicroBlaze_xlconstant_1_0 xlconstant_1
+       (.dout(led_green));
+  MicroBlaze_xlconstant_2_0 xlconstant_2
+       (.dout(led_red));
   MicroBlaze_xlslice_0_0 xlslice_0
        (.Din(CC_0_xcorr),
         .Dout(xlslice_0_Dout));

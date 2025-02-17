@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 -- Date        : Mon Jan 20 02:22:32 2025
 -- Host        : James running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_proc_sys_reset_0_0/MicroBlaze_proc_sys_reset_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top MicroBlaze_proc_sys_reset_0_0 -prefix
+--               MicroBlaze_proc_sys_reset_0_0_ MicroBlaze_proc_sys_reset_0_0_stub.vhdl
 -- Design      : MicroBlaze_proc_sys_reset_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

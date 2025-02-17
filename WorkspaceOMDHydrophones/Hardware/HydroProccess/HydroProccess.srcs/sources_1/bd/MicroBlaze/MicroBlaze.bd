@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCC6CFA53B4580162",
+      "boundary_crc": "0xDBF9E2241F093FB7",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze",
       "name": "MicroBlaze",
@@ -35,7 +35,8 @@
       "SPI_ADC_Master_2": "",
       "Serializer_2": "",
       "clk1Mhz_0": "",
-      "clk1Mhz_1": ""
+      "xlconstant_1": "",
+      "xlconstant_2": ""
     },
     "interface_ports": {
       "DDR": {
@@ -205,6 +206,18 @@
             "direction": "IO"
           }
         }
+      }
+    },
+    "ports": {
+      "led_green": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "led_red": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -2425,34 +2438,22 @@
           }
         }
       },
-      "clk1Mhz_1": {
-        "vlnv": "xilinx.com:module_ref:clk1Mhz:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_clk1Mhz_1_0",
-        "xci_path": "ip\\MicroBlaze_clk1Mhz_1_0\\MicroBlaze_clk1Mhz_1_0.xci",
-        "inst_hier_path": "clk1Mhz_1",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "clk1Mhz",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "clk1Mhz": {
-            "direction": "O"
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "MicroBlaze_xlconstant_1_0",
+        "xci_path": "ip\\MicroBlaze_xlconstant_1_0\\MicroBlaze_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1"
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "MicroBlaze_xlconstant_2_0",
+        "xci_path": "ip\\MicroBlaze_xlconstant_2_0\\MicroBlaze_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
           }
         }
       }
@@ -2712,8 +2713,8 @@
           "clk1Mhz_0/clk1Mhz",
           "BlockRam_0/clk1Mhz",
           "waveParser_0/clk1Mhz",
-          "SineWaveGen_0/clk1Mhz",
-          "CC_0/clk1Mhz"
+          "CC_0/clk1Mhz",
+          "SineWaveGen_0/clk1Mhz"
         ]
       },
       "SPI_ADC_Master_0_wave": {
@@ -2787,10 +2788,10 @@
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "Serializer_0/clk16MHz",
           "SPI_ADC_Master_0/clk16MHz",
           "SPI_ADC_Master_1/clk16MHz",
           "SPI_ADC_Master_2/clk16MHz",
+          "Serializer_0/clk16MHz",
           "Serializer_1/clk16MHz",
           "Serializer_2/clk16MHz"
         ]
@@ -2811,13 +2812,12 @@
           "processing_system7_0/M_AXI_GP0_ACLK",
           "waveParser_0/clk",
           "clk_wiz_0/clk_in1",
-          "SPI_ADC_Master_0/clk",
-          "SPI_ADC_Master_1/clk",
-          "SPI_ADC_Master_2/clk",
           "BRAMMUX_0/clk",
           "CC_0/clk",
           "clk1Mhz_0/clk",
-          "clk1Mhz_1/clk"
+          "SPI_ADC_Master_0/clk",
+          "SPI_ADC_Master_1/clk",
+          "SPI_ADC_Master_2/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -2929,6 +2929,18 @@
           "xlconstant_0/dout",
           "blk_mem_gen_0/web",
           "blk_mem_gen_1/web"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "led_green"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "led_red"
         ]
       },
       "xlslice_0_Dout": {
