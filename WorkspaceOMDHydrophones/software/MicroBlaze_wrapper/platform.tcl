@@ -20,3 +20,15 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform active {MicroBlaze_wrapper}
+domain active {zynq_fsbl}
+bsp reload
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+platform active {MicroBlaze_wrapper}
+bsp reload
+platform active {MicroBlaze_wrapper}
+platform generate
+platform generate
+platform clean
+platform generate

@@ -1,4 +1,4 @@
-02:10:43 **** Incremental Build of configuration Debug for project helloworld ****
+05:21:46 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,25 +8,36 @@ make --no-print-directory main-build
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:17:19: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
-   17 |         maxTime = delayGetter(maxTime);
+../src/helloworld.c:18:19: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
+   18 |         maxTime = delayGetter(maxTime);
       |                   ^~~~~~~~~~~
-../src/helloworld.c:17:19: warning: 'maxTime' is used uninitialized [-Wuninitialized]
-   17 |         maxTime = delayGetter(maxTime);
-      |                   ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:9: warning: implicit declaration of function 'solver' [-Wimplicit-function-declaration]
+   25 |         solver(i, j, solution);
+      |         ^~~~~~
+../src/helloworld.c:27:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   27 |         printf("Solution: x = %.2f, y = %.2f\n", solution[0], solution[1]);
+      |         ^~~~~~
+../src/helloworld.c:7:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    6 | #include "math.h"
+  +++ |+#include <stdio.h>
+    7 | 
+../src/helloworld.c:27:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   27 |         printf("Solution: x = %.2f, y = %.2f\n", solution[0], solution[1]);
+      |         ^~~~~~
+../src/helloworld.c:27:9: note: include '<stdio.h>' or provide a declaration of 'printf'
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: helloworld.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "helloworld.elf"  ./src/computeFiniteDifferences.o ./src/finDiffEvalAndChkErr.o ./src/fsolve.o ./src/helloworld.o ./src/linearLeastSquares.o ./src/platform.o ./src/rtGetInf.o ./src/rtGetNaN.o ./src/rt_nonfinite.o ./src/solver.o ./src/solver_initialize.o ./src/solver_terminate.o ./src/xnrm2.o ./src/xzlarf.o ./src/xzlarfg.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: helloworld.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  23285	   1176	  22584	  47045	   b7c5	helloworld.elf
+  66879	   2620	  22648	  92147	  167f3	helloworld.elf
 'Finished building: helloworld.elf.size'
 ' '
 
-02:10:44 Build Finished (took 593ms)
+05:21:47 Build Finished (took 606ms)
 

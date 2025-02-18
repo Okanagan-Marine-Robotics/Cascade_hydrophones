@@ -1,0 +1,53 @@
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_types.h"
+
+int main() {
+	init_platform();
+
+	xil_printf("helloworld!\n");
+
+	int maxTime;
+
+
+
+	while(1){
+	maxTime = delayGetter(maxTime);
+
+	xil_printf("%d\n", maxTime);
+	}
+	cleanup_platform();
+	return 0;
+}
+
+int delayGetter (int delay){
+
+	XGpio Gpio;
+	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+
+	int i = 1;
+	int maxTime;
+	int MaxSignal = 0;
+	int data = 0;
+
+	while (i < 4000) {
+    	XGpio_DiscreteWrite(&Gpio, 1, i);
+
+     	data = XGpio_DiscreteRead(&Gpio, 2);
+
+     	if (data > MaxSignal){
+         	maxTime = i-2002;
+         	MaxSignal = data;
+
+     	}
+    	i++;
+    	//xil_printf("{\"Data\": %d}\n", data);
+	}
+	//xil_printf("%d\n", MaxSignal);
+	return maxTime;
+}
+
+
+

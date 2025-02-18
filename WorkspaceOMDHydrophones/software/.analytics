@@ -5,3 +5,57 @@ timestamp=[2025-02-17 02:08:09], mode=APP_CREATION, duration=0:00:16.309, durati
 timestamp=[2025-02-17 02:09:15], mode=PLATFORM_GENERATION, duration=0:00:15.557, duration_ms=15557, data={name=MicroBlaze_wrapper}
 timestamp=[2025-02-17 02:09:17], mode=BUILD, duration=0:00:01.625, duration_ms=1625, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-02-17 02:10:44], mode=BUILD, duration=0:00:00.598, duration_ms=598, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-17 02:50:35], mode=WORKBENCH_START, duration=0:00:04.225, duration_ms=4225, data={}
+timestamp=[2025-02-17 02:50:35], mode=WORKBENCH_UI_INIT, duration=0:00:00.424, duration_ms=424, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system}
+timestamp=[2025-02-17 02:50:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.656, duration_ms=656, data={}
+timestamp=[2025-02-17 02:56:59], mode=APP_CREATION, duration=0:00:06.080, duration_ms=6080, data={name=xuartps_low_echo_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=MicroBlaze_wrapper, application_type=application}
+timestamp=[2025-02-17 03:35:20], mode=WORKBENCH_START, duration=0:00:04.739, duration_ms=4739, data={}
+timestamp=[2025-02-17 03:35:22], mode=WORKBENCH_UI_INIT, duration=0:00:01.109, duration_ms=1109, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=true, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
+timestamp=[2025-02-17 03:35:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.046, duration_ms=2046, data={}
+timestamp=[2025-02-17 03:36:33], mode=APP_CREATION, duration=0:00:05.758, duration_ms=5758, data={name=xuartps_hello_world_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=MicroBlaze_wrapper, application_type=application}
+timestamp=[2025-02-18 00:21:31], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.007, duration_ms=1007, data={}
+timestamp=[2025-02-18 00:21:31], mode=WORKBENCH_START, duration=0:00:06.763, duration_ms=6763, data={}
+timestamp=[2025-02-18 00:21:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.326, duration_ms=326, data={editors_count=6, platform_editors_count=1, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system,xuartps_hello_world_example_1,xuartps_hello_world_example_1_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
+timestamp=[2025-02-18 00:23:45], mode=PLATFORM_GENERATION, duration=0:00:10.156, duration_ms=10156, data={name=MicroBlaze_wrapper}
+timestamp=[2025-02-18 00:23:47], mode=BUILD, duration=0:00:00.733, duration_ms=733, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 00:23:59], mode=BUILD, duration=0:00:01.719, duration_ms=1719, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 00:30:01], mode=BUILD, duration=0:00:00.656, duration_ms=656, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 00:30:25], mode=BUILD, duration=0:00:00.590, duration_ms=590, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 01:07:51], mode=WORKBENCH_START, duration=0:00:04.034, duration_ms=4034, data={}
+timestamp=[2025-02-18 01:07:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.407, duration_ms=407, data={editors_count=1, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system,xuartps_hello_world_example_1,xuartps_hello_world_example_1_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
+timestamp=[2025-02-18 01:07:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.696, duration_ms=696, data={}
+timestamp=[2025-02-18 04:08:36], mode=WORKBENCH_START, duration=0:00:05.274, duration_ms=5274, data={}
+timestamp=[2025-02-18 04:08:37], mode=WORKBENCH_UI_INIT, duration=0:00:00.340, duration_ms=340, data={editors_count=1, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system,xuartps_hello_world_example_1,xuartps_hello_world_example_1_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
+timestamp=[2025-02-18 04:08:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.901, duration_ms=901, data={}
+timestamp=[2025-02-18 04:23:23], mode=PLATFORM_GENERATION, duration=0:00:11.382, duration_ms=11382, data={name=MicroBlaze_wrapper}
+timestamp=[2025-02-18 04:23:27], mode=BUILD, duration=0:00:01.971, duration_ms=1971, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:23:44], mode=BUILD, duration=0:00:00.349, duration_ms=349, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:30:21], mode=WORKBENCH_START, duration=0:00:04.572, duration_ms=4572, data={}
+timestamp=[2025-02-18 04:30:22], mode=WORKBENCH_UI_INIT, duration=0:00:01.362, duration_ms=1362, data={editors_count=3, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system,xuartps_hello_world_example_1,xuartps_hello_world_example_1_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
+timestamp=[2025-02-18 04:30:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.154, duration_ms=2154, data={}
+timestamp=[2025-02-18 04:31:30], mode=BUILD, duration=0:00:03.104, duration_ms=3104, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:37:58], mode=BUILD, duration=0:00:00.533, duration_ms=533, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:39:28], mode=BUILD, duration=0:00:00.529, duration_ms=529, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:40:28], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:41:06], mode=BUILD, duration=0:00:00.346, duration_ms=346, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:48:41], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=helloworld, configuration=Debug, clean_build=true}
+timestamp=[2025-02-18 04:48:44], mode=BUILD, duration=0:00:02.447, duration_ms=2447, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:50:30], mode=BUILD, duration=0:00:00.544, duration_ms=544, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:51:26], mode=BUILD, duration=0:00:00.352, duration_ms=352, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:51:44], mode=BUILD, duration=0:00:00.542, duration_ms=542, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:52:46], mode=BUILD, duration=0:00:00.532, duration_ms=532, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:55:10], mode=BUILD, duration=0:00:00.528, duration_ms=528, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:55:16], mode=BUILD, duration=0:00:00.343, duration_ms=343, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:55:38], mode=BUILD, duration=0:00:00.533, duration_ms=533, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 04:55:54], mode=PLATFORM_GENERATION, duration=0:00:04.636, duration_ms=4636, data={name=MicroBlaze_wrapper}
+timestamp=[2025-02-18 04:55:54], mode=BUILD, duration=0:00:00.157, duration_ms=157, data={name=helloworld, configuration=Debug, clean_build=true}
+timestamp=[2025-02-18 04:56:13], mode=PLATFORM_GENERATION, duration=0:00:09.757, duration_ms=9757, data={name=MicroBlaze_wrapper}
+timestamp=[2025-02-18 04:56:16], mode=BUILD, duration=0:00:03.078, duration_ms=3078, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:04:47], mode=BUILD, duration=0:00:00.162, duration_ms=162, data={name=helloworld, configuration=Debug, clean_build=true}
+timestamp=[2025-02-18 05:04:50], mode=BUILD, duration=0:00:02.748, duration_ms=2748, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:06:02], mode=BUILD, duration=0:00:00.286, duration_ms=286, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:09:53], mode=BUILD, duration=0:00:00.780, duration_ms=780, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:10:39], mode=BUILD, duration=0:00:00.647, duration_ms=647, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:13:28], mode=BUILD, duration=0:00:00.709, duration_ms=709, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:17:07], mode=BUILD, duration=0:00:00.650, duration_ms=650, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:21:47], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=helloworld, configuration=Debug, clean_build=false}

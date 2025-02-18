@@ -3,6 +3,7 @@
 #include "xparameters.h"
 #include "xgpio.h"
 #include "xil_types.h"
+#include "math.h"
 
 int main() {
 	init_platform();
@@ -13,11 +14,24 @@ int main() {
 
 
 
-	//while(1){
+	while(1){
 	maxTime = delayGetter(maxTime);
 
-	xil_printf("%d\n", maxTime);
-	//}
+	double i = 10.0;
+	double j = 10.0;
+	double solution[2];
+
+	    // Call solver
+	solver(i, j, solution);
+
+	printf("Solution: x = %f, y = %f\n", solution[0], solution[1]);
+
+	solution[0]=0;
+	solution[1]=0;
+	printf("Solution: x = %f, y = %f\n", solution[0], solution[1]);
+
+	//xil_printf("%d\n", maxTime);
+	}
 	cleanup_platform();
 	return 0;
 }
@@ -43,11 +57,15 @@ int delayGetter (int delay){
 
      	}
     	i++;
-    	xil_printf("%d\n", data);
+    	//xil_printf("{\"Data\": %d}\n", data);
 	}
 	//xil_printf("%d\n", MaxSignal);
 	return maxTime;
 }
+
+
+
+
 
 
 
