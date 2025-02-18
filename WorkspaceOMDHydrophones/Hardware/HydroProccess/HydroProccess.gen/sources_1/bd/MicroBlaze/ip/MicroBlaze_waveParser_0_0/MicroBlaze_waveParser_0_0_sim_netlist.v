@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Mon Feb 17 01:46:22 2025
+// Date        : Tue Feb 18 08:00:16 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.v
@@ -549,7 +549,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .Q(\MemoryAddress_reg_n_0_[13] ),
         .R(p_0_in));
   FDRE #(
-    .INIT(1'b0),
+    .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[1] 
        (.C(clk1Mhz),
@@ -567,7 +567,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .Q(\MemoryAddress_reg_n_0_[2] ),
         .R(p_0_in));
   FDRE #(
-    .INIT(1'b0),
+    .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[3] 
        (.C(clk1Mhz),

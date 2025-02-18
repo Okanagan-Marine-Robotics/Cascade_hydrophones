@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Mon Feb 17 01:46:22 2025
+-- Date        : Tue Feb 18 08:00:16 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.vhdl
@@ -565,7 +565,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
     );
 \MemoryAddress_reg[1]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0',
+      INIT => '1',
       IS_C_INVERTED => '1'
     )
         port map (
@@ -589,7 +589,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
     );
 \MemoryAddress_reg[3]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0',
+      INIT => '1',
       IS_C_INVERTED => '1'
     )
         port map (

@@ -61,8 +61,8 @@ int delayGetter (int delay){
 }
 int delayGetter2 (int delay){
 
-	XGpio Gpio;
-	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio Gpio1;
+	XGpio_Initialize(&Gpio1, XPAR_AXI_GPIO_1_DEVICE_ID);
 
 	int i = 1;
 	int maxTime;
@@ -70,9 +70,9 @@ int delayGetter2 (int delay){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio, 1, i);
+    	XGpio_DiscreteWrite(&Gpio1, 1, i);
 
-     	data = XGpio_DiscreteRead(&Gpio, 2);
+     	data = XGpio_DiscreteRead(&Gpio1, 2);
 
      	if (data > MaxSignal){
          	maxTime = i-2002;

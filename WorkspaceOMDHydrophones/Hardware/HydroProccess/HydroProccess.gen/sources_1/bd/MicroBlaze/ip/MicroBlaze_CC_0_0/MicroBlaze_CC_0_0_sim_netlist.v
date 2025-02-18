@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Mon Feb 17 01:46:32 2025
+// Date        : Tue Feb 18 08:00:19 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.v
@@ -356,6 +356,7 @@ module MicroBlaze_CC_0_0_CC
   wire i__carry_i_7__2_n_0;
   wire i__carry_i_7_n_0;
   wire [13:0]p_1_in;
+  wire product;
   wire product1_reg_n_100;
   wire product1_reg_n_101;
   wire product1_reg_n_102;
@@ -765,7 +766,6 @@ module MicroBlaze_CC_0_0_CC
   wire product_stage3_reg_n_97;
   wire product_stage3_reg_n_98;
   wire product_stage3_reg_n_99;
-  wire temp0;
   wire temp00_reg_n_100;
   wire temp00_reg_n_101;
   wire temp00_reg_n_102;
@@ -1889,7 +1889,7 @@ module MicroBlaze_CC_0_0_CC
        (.I0(countMulti_reg__0[0]),
         .O(\countMulti[0]_i_2_n_0 ));
   FDSE #(
-    .INIT(1'b1),
+    .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \countMulti_reg[0] 
        (.C(clk),
@@ -2067,13 +2067,13 @@ module MicroBlaze_CC_0_0_CC
   LUT2 #(
     .INIT(4'h1)) 
     \count[15]_i_1 
-       (.I0(temp0),
+       (.I0(product),
         .I1(count1),
         .O(\count[15]_i_1_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \count[15]_i_2 
-       (.I0(temp0),
+       (.I0(product),
         .O(count_0));
   LUT1 #(
     .INIT(2'h1)) 
@@ -2800,7 +2800,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(1'b1),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -2878,8 +2878,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(temp0),
-        .CEP(temp0),
+        .CEM(product),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -2957,8 +2957,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(temp0),
-        .CEP(temp0),
+        .CEM(product),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3037,7 +3037,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(temp0),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3116,7 +3116,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(1'b1),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3194,8 +3194,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(temp0),
-        .CEP(temp0),
+        .CEM(product),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3273,8 +3273,8 @@ module MicroBlaze_CC_0_0_CC
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(temp0),
-        .CEP(temp0),
+        .CEM(product),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3353,7 +3353,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(temp0),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3432,7 +3432,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(temp0),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3511,7 +3511,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(temp0),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3590,7 +3590,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(temp0),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3669,7 +3669,7 @@ module MicroBlaze_CC_0_0_CC
         .CED(1'b0),
         .CEINMODE(1'b0),
         .CEM(1'b0),
-        .CEP(temp0),
+        .CEP(product),
         .CLK(product_reg_0),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -3702,7 +3702,7 @@ module MicroBlaze_CC_0_0_CC
         .I3(countMulti_reg__0[10]),
         .I4(countMulti_reg__0[9]),
         .I5(\xcorr[35]_i_3_n_0 ),
-        .O(temp0));
+        .O(product));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFEFFFF)) 
     temp2_reg_i_3

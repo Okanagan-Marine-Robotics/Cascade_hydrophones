@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Feb 17 01:43:58 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Feb 18 07:59:39 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -824,9 +824,9 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveIn" RIGHT="0" SIGIS="undef" SIGNAME="SineWaveGen_0_wave">
+        <PORT DIR="I" LEFT="11" NAME="waveIn" RIGHT="0" SIGIS="undef" SIGNAME="testdelaysine_0_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="SineWaveGen_0" PORT="wave"/>
+            <CONNECTION INSTANCE="testdelaysine_0" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -848,7 +848,6 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="Serializer_0" PORT="waveIn"/>
             <CONNECTION INSTANCE="Serializer_1" PORT="waveIn"/>
-            <CONNECTION INSTANCE="Serializer_2" PORT="waveIn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2625,10 +2624,11 @@
         </PORT>
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="testdelaysine_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4330,18 +4330,18 @@
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
             <CONNECTION INSTANCE="AddressFixer_0" PORT="clk"/>
-            <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
             <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
-            <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
             <CONNECTION INSTANCE="BRAMMUX_0" PORT="clk"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="clk"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="clk"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
+            <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -4716,6 +4716,26 @@
         <PERIPHERAL INSTANCE="axi_gpio_1"/>
       </PERIPHERALS>
     </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/testdelaysine_0" HWVERSION="1.0" INSTANCE="testdelaysine_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="testdelaysine" VLNV="xilinx.com:module_ref:testdelaysine:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_testdelaysine_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="testdelaysine_0_wave">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Serializer_2" PORT="waveIn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/waveParser_0" HWVERSION="1.0" INSTANCE="waveParser_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="waveParser" VLNV="xilinx.com:module_ref:waveParser:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -4847,7 +4867,7 @@
     <MODULE COREREVISION="9" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>

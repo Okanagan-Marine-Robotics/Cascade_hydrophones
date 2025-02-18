@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Sat Feb 15 01:29:58 2025
+//Date        : Tue Feb 18 07:27:30 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=21,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=10,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=14,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -32,7 +32,9 @@ module MicroBlaze
     FIXED_IO_mio,
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
-    FIXED_IO_ps_srstb);
+    FIXED_IO_ps_srstb,
+    led_green,
+    led_red);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -54,16 +56,18 @@ module MicroBlaze
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
+  output [0:0]led_green;
+  output [0:0]led_red;
 
   wire [13:0]AddressFixer_0_address;
   wire [11:0]BRAMMUX_0_Ref0;
-  wire [15:0]BRAMMUX_0_Ref0Address;
+  wire [13:0]BRAMMUX_0_Ref0Address;
   wire [11:0]BRAMMUX_0_Ref1;
-  wire [15:0]BRAMMUX_0_Ref1Address;
+  wire [13:0]BRAMMUX_0_Ref1Address;
   wire [11:0]BRAMMUX_0_Ref2;
-  wire [15:0]BRAMMUX_0_Ref2Address;
+  wire [13:0]BRAMMUX_0_Ref2Address;
   wire [11:0]BRAMMUX_0_Ref3;
-  wire [15:0]BRAMMUX_0_Ref3Address;
+  wire [13:0]BRAMMUX_0_Ref3Address;
   wire [11:0]BlockRam_0_wave0;
   wire [11:0]BlockRam_0_wave00;
   wire [11:0]BlockRam_0_wave01;
@@ -85,10 +89,10 @@ module MicroBlaze
   wire [11:0]CC_0_wave1Address;
   wire [11:0]CC_0_wave2Address;
   wire [11:0]CC_0_wave3Address;
-  wire [15:0]CC_0_waveRef0Address;
-  wire [15:0]CC_0_waveRef1Address;
-  wire [15:0]CC_0_waveRef2Address;
-  wire [15:0]CC_0_waveRef3Address;
+  wire [13:0]CC_0_waveRef0Address;
+  wire [13:0]CC_0_waveRef1Address;
+  wire [13:0]CC_0_waveRef2Address;
+  wire [13:0]CC_0_waveRef3Address;
   wire [35:0]CC_0_xcorr;
   wire [35:0]CC_0_xcorr1;
   wire [14:0]DDR_addr;
@@ -113,11 +117,12 @@ module MicroBlaze
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire Net1;
-  wire [11:0]PulseWaveMaker_0_wave1;
-  wire [11:0]PulseWaveMaker_0_wave2;
-  wire [11:0]PulseWaveMaker_0_waveRef;
   wire [11:0]SPI_ADC_Master_0_wave;
+  wire [11:0]SPI_ADC_Master_1_wave;
+  wire [11:0]SPI_ADC_Master_2_wave;
   wire Serializer_0_MISO;
+  wire Serializer_1_MISO;
+  wire Serializer_2_MISO;
   wire [11:0]SineWaveGen_0_wave;
   wire [31:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
@@ -158,6 +163,8 @@ module MicroBlaze
   wire [31:0]blk_mem_gen_0_douta;
   wire [31:0]blk_mem_gen_1_douta;
   wire clk_wiz_0_clk_out1;
+  wire [0:0]led_green;
+  wire [0:0]led_red;
   wire microblaze_0_Clk;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -199,6 +206,7 @@ module MicroBlaze
   wire processing_system7_0_M_AXI_GP0_WREADY;
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
+  wire [11:0]testdelaysine_0_wave;
   wire [11:0]waveParser_0_buffer;
   wire [11:0]waveParser_0_buffer1;
   wire [11:0]waveParser_0_bufferRef;
@@ -233,13 +241,13 @@ module MicroBlaze
         .Ref3Address(BRAMMUX_0_Ref3Address),
         .clk(microblaze_0_Clk),
         .waveRef0(BlockRam_0_waveRef0),
-        .waveRef0Address(CC_0_waveRef0Address[13:0]),
+        .waveRef0Address(CC_0_waveRef0Address),
         .waveRef1(BlockRam_0_waveRef1),
-        .waveRef1Address(CC_0_waveRef1Address[13:0]),
+        .waveRef1Address(CC_0_waveRef1Address),
         .waveRef2(BlockRam_0_waveRef2),
-        .waveRef2Address(CC_0_waveRef2Address[13:0]),
+        .waveRef2Address(CC_0_waveRef2Address),
         .waveRef3(BlockRam_0_waveRef3),
-        .waveRef3Address(CC_0_waveRef3Address[13:0]));
+        .waveRef3Address(CC_0_waveRef3Address));
   MicroBlaze_BlockRam_0_0 BlockRam_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
@@ -312,21 +320,33 @@ module MicroBlaze
         .waveRef3Address(CC_0_waveRef3Address),
         .xcorr(CC_0_xcorr),
         .xcorr1(CC_0_xcorr1));
-  MicroBlaze_PulseWaveMaker_0_0 PulseWaveMaker_0
-       (.clk(microblaze_0_Clk),
-        .wave(SPI_ADC_Master_0_wave),
-        .wave1(PulseWaveMaker_0_wave1),
-        .wave2(PulseWaveMaker_0_wave2),
-        .waveRef(PulseWaveMaker_0_waveRef));
   MicroBlaze_SPI_ADC_Master_0_1 SPI_ADC_Master_0
        (.MISO(Serializer_0_MISO),
         .clk(microblaze_0_Clk),
         .clk16MHz(clk_wiz_0_clk_out1),
         .wave(SPI_ADC_Master_0_wave));
+  MicroBlaze_SPI_ADC_Master_1_0 SPI_ADC_Master_1
+       (.MISO(Serializer_1_MISO),
+        .clk(microblaze_0_Clk),
+        .clk16MHz(clk_wiz_0_clk_out1),
+        .wave(SPI_ADC_Master_1_wave));
+  MicroBlaze_SPI_ADC_Master_2_0 SPI_ADC_Master_2
+       (.MISO(Serializer_2_MISO),
+        .clk(microblaze_0_Clk),
+        .clk16MHz(clk_wiz_0_clk_out1),
+        .wave(SPI_ADC_Master_2_wave));
   MicroBlaze_Serializer_0_0 Serializer_0
        (.MISO(Serializer_0_MISO),
         .clk16MHz(clk_wiz_0_clk_out1),
         .waveIn(SineWaveGen_0_wave));
+  MicroBlaze_Serializer_1_0 Serializer_1
+       (.MISO(Serializer_1_MISO),
+        .clk16MHz(clk_wiz_0_clk_out1),
+        .waveIn(SineWaveGen_0_wave));
+  MicroBlaze_Serializer_2_0 Serializer_2
+       (.MISO(Serializer_2_MISO),
+        .clk16MHz(clk_wiz_0_clk_out1),
+        .waveIn(testdelaysine_0_wave));
   MicroBlaze_SineWaveGen_0_0 SineWaveGen_0
        (.clk1Mhz(Net1),
         .wave(SineWaveGen_0_wave));
@@ -469,7 +489,7 @@ module MicroBlaze
         .douta(blk_mem_gen_1_douta),
         .wea(1'b0),
         .web(xlconstant_0_dout));
-  MicroBlaze_clk1Mhz_0_0 clk1Mhz_0
+  MicroBlaze_clk1Mhz_0_1 clk1Mhz_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1));
   MicroBlaze_clk_wiz_0_0 clk_wiz_0
@@ -554,29 +574,36 @@ module MicroBlaze
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb));
+  MicroBlaze_testdelaysine_0_0 testdelaysine_0
+       (.clk1Mhz(Net1),
+        .wave(testdelaysine_0_wave));
   MicroBlaze_waveParser_0_0 waveParser_0
        (.buffer(waveParser_0_buffer),
         .buffer1(waveParser_0_buffer1),
         .bufferRef(waveParser_0_bufferRef),
         .clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
-        .wave(PulseWaveMaker_0_wave1),
+        .wave(SPI_ADC_Master_1_wave),
         .wave00Address(waveParser_0_wave00Address),
         .wave01Address(waveParser_0_wave01Address),
         .wave02Address(waveParser_0_wave02Address),
         .wave03Address(waveParser_0_wave03Address),
         .wave0Address(waveParser_0_wave0Address),
-        .wave1(PulseWaveMaker_0_wave2),
+        .wave1(SPI_ADC_Master_2_wave),
         .wave1Address(waveParser_0_wave1Address),
         .wave2Address(waveParser_0_wave2Address),
         .wave3Address(waveParser_0_wave3Address),
-        .waveRef(PulseWaveMaker_0_waveRef),
+        .waveRef(SPI_ADC_Master_0_wave),
         .waveRef0Address(waveParser_0_waveRef0Address),
         .waveRef1Address(waveParser_0_waveRef1Address),
         .waveRef2Address(waveParser_0_waveRef2Address),
         .waveRef3Address(waveParser_0_waveRef3Address));
   MicroBlaze_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
+  MicroBlaze_xlconstant_1_0 xlconstant_1
+       (.dout(led_green));
+  MicroBlaze_xlconstant_2_0 xlconstant_2
+       (.dout(led_red));
   MicroBlaze_xlslice_0_0 xlslice_0
        (.Din(CC_0_xcorr),
         .Dout(xlslice_0_Dout));

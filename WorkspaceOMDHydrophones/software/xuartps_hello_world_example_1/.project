@@ -3,7 +3,6 @@
 	<name>xuartps_hello_world_example_1</name>
 	<comment>Created by Vitis v2022.2</comment>
 	<projects>
-		<project>MicroBlaze_wrapper</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

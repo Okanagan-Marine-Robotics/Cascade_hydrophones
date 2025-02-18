@@ -7,7 +7,8 @@
       "name": "MicroBlaze",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2"
+      "tool_version": "2024.2",
+      "validated": "true"
     },
     "design_tree": {
       "BlockRam_0": "",
@@ -35,7 +36,8 @@
       "Serializer_2": "",
       "clk1Mhz_0": "",
       "xlconstant_1": "",
-      "xlconstant_2": ""
+      "xlconstant_2": "",
+      "testdelaysine_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2457,7 +2459,43 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "1"
+            "value": "0"
+          }
+        }
+      },
+      "testdelaysine_0": {
+        "vlnv": "xilinx.com:module_ref:testdelaysine:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_testdelaysine_0_0",
+        "xci_path": "ip\\MicroBlaze_testdelaysine_0_0\\MicroBlaze_testdelaysine_0_0.xci",
+        "inst_hier_path": "testdelaysine_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "testdelaysine",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1Mhz": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_clk_vip_0_0_clk_out",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "wave": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
           }
         }
       }
@@ -2715,10 +2753,11 @@
       "Net1": {
         "ports": [
           "clk1Mhz_0/clk1Mhz",
-          "BlockRam_0/clk1Mhz",
-          "waveParser_0/clk1Mhz",
+          "SineWaveGen_0/clk1Mhz",
+          "testdelaysine_0/clk1Mhz",
           "CC_0/clk1Mhz",
-          "SineWaveGen_0/clk1Mhz"
+          "BlockRam_0/clk1Mhz",
+          "waveParser_0/clk1Mhz"
         ]
       },
       "SPI_ADC_Master_0_wave": {
@@ -2761,8 +2800,7 @@
         "ports": [
           "SineWaveGen_0/wave",
           "Serializer_0/waveIn",
-          "Serializer_1/waveIn",
-          "Serializer_2/waveIn"
+          "Serializer_1/waveIn"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
@@ -2810,18 +2848,18 @@
           "blk_mem_gen_1/clka",
           "blk_mem_gen_1/clkb",
           "AddressFixer_0/clk",
-          "BlockRam_0/clk",
           "axi_smc/aclk",
           "proc_sys_reset_0/slowest_sync_clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "waveParser_0/clk",
           "clk_wiz_0/clk_in1",
           "BRAMMUX_0/clk",
-          "CC_0/clk",
           "clk1Mhz_0/clk",
           "SPI_ADC_Master_0/clk",
           "SPI_ADC_Master_1/clk",
-          "SPI_ADC_Master_2/clk"
+          "SPI_ADC_Master_2/clk",
+          "CC_0/clk",
+          "BlockRam_0/clk",
+          "waveParser_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -2836,6 +2874,12 @@
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "testdelaysine_0_wave": {
+        "ports": [
+          "testdelaysine_0/wave",
+          "Serializer_2/waveIn"
         ]
       },
       "waveParser_0_buffer": {

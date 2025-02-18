@@ -84,4 +84,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_
 # IP: bd/MicroBlaze/ip/MicroBlaze_xlconstant_2_0/MicroBlaze_xlconstant_2_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_xlconstant_2_0 || ORIG_REF_NAME==MicroBlaze_xlconstant_2_0} -quiet] -quiet
 
+# IP: bd/MicroBlaze/ip/MicroBlaze_testdelaysine_0_0/MicroBlaze_testdelaysine_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_testdelaysine_0_0 || ORIG_REF_NAME==MicroBlaze_testdelaysine_0_0} -quiet] -quiet
+
 # XDC: c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze_ooc.xdc

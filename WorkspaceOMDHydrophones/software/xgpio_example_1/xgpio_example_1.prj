@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="xgpio_example_1" location="C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/xgpio_example_1" platform="C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/test/export/test/test.xpfm" platformUID="xilinx:cmod-s7-25::0.0(custom)" systemProject="xgpio_example_1_system" sysConfig="test" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="c04e9594fe23c869ffc2e78489d4208e">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.299435204" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1733857889" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

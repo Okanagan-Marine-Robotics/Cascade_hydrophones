@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Mon Feb 17 01:46:32 2025
+-- Date        : Tue Feb 18 08:00:19 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_sim_netlist.vhdl
@@ -217,6 +217,7 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal \i__carry_i_7__2_n_0\ : STD_LOGIC;
   signal \i__carry_i_7_n_0\ : STD_LOGIC;
   signal p_1_in : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal product : STD_LOGIC;
   signal product1_reg_n_100 : STD_LOGIC;
   signal product1_reg_n_101 : STD_LOGIC;
   signal product1_reg_n_102 : STD_LOGIC;
@@ -625,7 +626,6 @@ architecture STRUCTURE of MicroBlaze_CC_0_0_CC is
   signal product_stage3_reg_n_97 : STD_LOGIC;
   signal product_stage3_reg_n_98 : STD_LOGIC;
   signal product_stage3_reg_n_99 : STD_LOGIC;
-  signal temp0 : STD_LOGIC;
   signal temp00_reg_n_100 : STD_LOGIC;
   signal temp00_reg_n_101 : STD_LOGIC;
   signal temp00_reg_n_102 : STD_LOGIC;
@@ -1877,7 +1877,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
     );
 \countMulti_reg[0]\: unisim.vcomponents.FDSE
     generic map(
-      INIT => '1',
+      INIT => '0',
       IS_C_INVERTED => '1'
     )
         port map (
@@ -2133,7 +2133,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       INIT => X"1"
     )
         port map (
-      I0 => temp0,
+      I0 => product,
       I1 => count1,
       O => \count[15]_i_1_n_0\
     );
@@ -2142,7 +2142,7 @@ count1_carry_i_7: unisim.vcomponents.LUT2
       INIT => X"1"
     )
         port map (
-      I0 => temp0,
+      I0 => product,
       O => count_0
     );
 \count[3]_i_2\: unisim.vcomponents.LUT1
@@ -3202,7 +3202,7 @@ product1_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => '1',
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -3388,8 +3388,8 @@ product1_stage1_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => temp0,
-      CEP => temp0,
+      CEM => product,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -3575,8 +3575,8 @@ product1_stage2_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => temp0,
-      CEP => temp0,
+      CEM => product,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -3796,7 +3796,7 @@ product1_stage3_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => temp0,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -4006,7 +4006,7 @@ product_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => '1',
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -4192,8 +4192,8 @@ product_stage1_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => temp0,
-      CEP => temp0,
+      CEM => product,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -4379,8 +4379,8 @@ product_stage2_reg: unisim.vcomponents.DSP48E1
       CECTRL => '0',
       CED => '0',
       CEINMODE => '0',
-      CEM => temp0,
-      CEP => temp0,
+      CEM => product,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -4600,7 +4600,7 @@ product_stage3_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => temp0,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -4834,7 +4834,7 @@ temp00_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => temp0,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -5009,7 +5009,7 @@ temp02_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => temp0,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -5184,7 +5184,7 @@ temp0_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => temp0,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -5359,7 +5359,7 @@ temp2_reg: unisim.vcomponents.DSP48E1
       CED => '0',
       CEINMODE => '0',
       CEM => '0',
-      CEP => temp0,
+      CEP => product,
       CLK => product_reg_0,
       D(24 downto 0) => B"0000000000000000000000000",
       INMODE(4 downto 0) => B"00000",
@@ -5466,7 +5466,7 @@ temp2_reg_i_1: unisim.vcomponents.LUT6
       I3 => \countMulti_reg__0\(10),
       I4 => \countMulti_reg__0\(9),
       I5 => \xcorr[35]_i_3_n_0\,
-      O => temp0
+      O => product
     );
 temp2_reg_i_3: unisim.vcomponents.LUT6
     generic map(

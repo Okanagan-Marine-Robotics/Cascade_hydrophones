@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 -- Date        : Mon Jan 20 02:22:32 2025
 -- Host        : James running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_proc_sys_reset_0_0/MicroBlaze_proc_sys_reset_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top MicroBlaze_proc_sys_reset_0_0 -prefix
+--               MicroBlaze_proc_sys_reset_0_0_ MicroBlaze_proc_sys_reset_0_0_sim_netlist.vhdl
 -- Design      : MicroBlaze_proc_sys_reset_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,8 +26,6 @@ entity MicroBlaze_proc_sys_reset_0_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of MicroBlaze_proc_sys_reset_0_0_cdc_sync : entity is "cdc_sync";
 end MicroBlaze_proc_sys_reset_0_0_cdc_sync;
 
 architecture STRUCTURE of MicroBlaze_proc_sys_reset_0_0_cdc_sync is
@@ -248,8 +246,6 @@ entity MicroBlaze_proc_sys_reset_0_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of MicroBlaze_proc_sys_reset_0_0_upcnt_n : entity is "upcnt_n";
 end MicroBlaze_proc_sys_reset_0_0_upcnt_n;
 
 architecture STRUCTURE of MicroBlaze_proc_sys_reset_0_0_upcnt_n is
@@ -414,8 +410,6 @@ entity MicroBlaze_proc_sys_reset_0_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of MicroBlaze_proc_sys_reset_0_0_lpf : entity is "lpf";
 end MicroBlaze_proc_sys_reset_0_0_lpf;
 
 architecture STRUCTURE of MicroBlaze_proc_sys_reset_0_0_lpf is
@@ -604,8 +598,6 @@ entity MicroBlaze_proc_sys_reset_0_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of MicroBlaze_proc_sys_reset_0_0_sequence_psr : entity is "sequence_psr";
 end MicroBlaze_proc_sys_reset_0_0_sequence_psr;
 
 architecture STRUCTURE of MicroBlaze_proc_sys_reset_0_0_sequence_psr is
@@ -944,8 +936,6 @@ entity MicroBlaze_proc_sys_reset_0_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of MicroBlaze_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of MicroBlaze_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of MicroBlaze_proc_sys_reset_0_0_proc_sys_reset : entity is "proc_sys_reset";
 end MicroBlaze_proc_sys_reset_0_0_proc_sys_reset;
 
 architecture STRUCTURE of MicroBlaze_proc_sys_reset_0_0_proc_sys_reset is

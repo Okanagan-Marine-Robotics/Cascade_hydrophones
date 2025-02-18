@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
-		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1" value="417"/>
-		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2" value="578"/>
+		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1" value="419"/>
+		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2" value="580"/>
 		<item key="org.eclipse.debug.ui.EXPANDED_NODES" value=", com.xilinx.sdx.sdsoc.debug.launch.gdb.SdsGdbLaunchDelegate, "/>
 		<item key="DIALOG_WIDTH" value="1440"/>
 		<item key="DIALOG_HEIGHT" value="702"/>

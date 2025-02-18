@@ -23,7 +23,7 @@ module waveParser(
 	input clk
 	);
     
-	reg [13:0] MemoryAddress = 10000;
+	reg [13:0] MemoryAddress = 10010;
     
 	always @(negedge clk1Mhz)begin
 	 
