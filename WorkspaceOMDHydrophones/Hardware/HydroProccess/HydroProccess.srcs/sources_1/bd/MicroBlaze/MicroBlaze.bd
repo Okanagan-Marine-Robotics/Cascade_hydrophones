@@ -7,8 +7,7 @@
       "name": "MicroBlaze",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "BlockRam_0": "",
@@ -2443,7 +2442,12 @@
         "ip_revision": "9",
         "xci_name": "MicroBlaze_xlconstant_1_0",
         "xci_path": "ip\\MicroBlaze_xlconstant_1_0\\MicroBlaze_xlconstant_1_0.xci",
-        "inst_hier_path": "xlconstant_1"
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
       },
       "xlconstant_2": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
@@ -2453,7 +2457,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       }

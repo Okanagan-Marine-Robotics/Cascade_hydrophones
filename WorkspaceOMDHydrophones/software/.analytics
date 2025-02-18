@@ -59,3 +59,7 @@ timestamp=[2025-02-18 05:10:39], mode=BUILD, duration=0:00:00.647, duration_ms=6
 timestamp=[2025-02-18 05:13:28], mode=BUILD, duration=0:00:00.709, duration_ms=709, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-02-18 05:17:07], mode=BUILD, duration=0:00:00.650, duration_ms=650, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-02-18 05:21:47], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 05:51:27], mode=WORKBENCH_START, duration=0:00:04.373, duration_ms=4373, data={}
+timestamp=[2025-02-18 05:51:28], mode=WORKBENCH_UI_INIT, duration=0:00:00.500, duration_ms=500, data={editors_count=4, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system,xuartps_hello_world_example_1,xuartps_hello_world_example_1_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
+timestamp=[2025-02-18 05:51:29], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.681, duration_ms=681, data={}
+timestamp=[2025-02-18 05:56:31], mode=BUILD, duration=0:00:00.808, duration_ms=808, data={name=helloworld, configuration=Debug, clean_build=false}
