@@ -17,15 +17,15 @@ int main() {
 	while(1){
 	maxTime = delayGetter(maxTime);
 	maxTime2 = delayGetter2(maxTime2);
-	//xil_printf("{\"delay_1\": {%d}, \"delay_2\": {%d}}\n", maxTime, maxTime2);
-	double i = maxTime;
-	double j = maxTime2;
-	double solution[2];
+	xil_printf("{\"delay_1\": {%d}, \"delay_2\": {%d}}\n", maxTime, maxTime2);
+	//double i = 10.0;
+	//double j = 10.0;
+	//double solution[2];
 
 	    // Call solver
-	solver(i, j, solution);
+	//solver(i, j, solution);
 
-	printf("Pingers Location: x = %f, y = %f\n", solution[0], solution[1]);
+	//printf("Solution: x = %f, y = %f\n", solution[0], solution[1]);
 
 
 	}

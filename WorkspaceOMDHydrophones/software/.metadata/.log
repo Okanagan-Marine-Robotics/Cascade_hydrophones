@@ -14629,3 +14629,665 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launch
 
 !ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:05:50.174
 !MESSAGE XSCT command with result: [disconnect tcfchan#14], Result: [null, ]. Thread: Thread-724
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:29.684
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:29.687
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:29.687
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:29.689
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-18 08:14:29.690
+!MESSAGE Generating MD5 hash for file: C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\MicroBlaze_wrapper\export\MicroBlaze_wrapper\sw\MicroBlaze_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:29.690
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:29.691
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:45.581
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:14:47.749
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:14:47.770
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:14:47.770
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:14:47.770
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:14:47.771
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:14:47.771
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:14:47.771
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:47.806
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#15]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:47.807
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.006
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.007
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.009
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.009
+!MESSAGE XSCT Command: [version], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.010
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.010
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.014
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.014
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.024
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.024
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.028
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.028
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.038
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.038
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.041
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.041
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.051
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.051
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.056
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.056
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.066
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.066
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.070
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.070
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.079
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.080
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.084
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.084
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.094
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.095
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level == 0}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.104
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level == 0}], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.105
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.106
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.106
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.113
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.114
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.174
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:48.174
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.189
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.201
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.204
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.205
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.215
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.215
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.237
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:51.237
+!MESSAGE XSCT Command: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.315
+!MESSAGE XSCT command with result: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.330
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.338
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.338
+!MESSAGE XSCT Command: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.345
+!MESSAGE XSCT command with result: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, MicroBlaze_wrapper_7]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.346
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.347
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.347
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.352
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.353
+!MESSAGE XSCT Command: [source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.354
+!MESSAGE XSCT command with result: [source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.355
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.663
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.663
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.668
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.669
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.672
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:52.674
+!MESSAGE XSCT Command: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.000
+!MESSAGE XSCT command with result: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.000
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.030
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.039
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.060
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.060
+!MESSAGE XSCT Command: [con], Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.073
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.087
+!MESSAGE XSCT Command: [disconnect tcfchan#15], Thread: Thread-784
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:14:53.089
+!MESSAGE XSCT command with result: [disconnect tcfchan#15], Result: [null, ]. Thread: Thread-784
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:37.751
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:37.758
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:37.758
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:37.761
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-18 08:16:37.761
+!MESSAGE Generating MD5 hash for file: C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\MicroBlaze_wrapper\export\MicroBlaze_wrapper\sw\MicroBlaze_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:37.761
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:37.761
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:41.991
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:16:44.063
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:16:44.063
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:16:44.078
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:16:44.078
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:16:44.078
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:16:44.078
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-18 08:16:44.078
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.098
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.098
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.245
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.245
+!MESSAGE XSCT Command: [version -server], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.251
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.251
+!MESSAGE XSCT Command: [version], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.251
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.254
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.256
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.256
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.263
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.263
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.271
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.271
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.281
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.281
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.281
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.281
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.295
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.295
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.295
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.295
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.309
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.309
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.311
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.311
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.322
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.322
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.322
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.322
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.335
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.337
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level == 0}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.346
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level == 0}], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.347
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.347
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.347
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.351
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.351
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.413
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:44.413
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.418
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.427
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.431
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 A30526FBA07A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.431
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.441
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.441
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.481
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:47.481
+!MESSAGE XSCT Command: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.557
+!MESSAGE XSCT command with result: [fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.571
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.581
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.581
+!MESSAGE XSCT Command: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.589
+!MESSAGE XSCT command with result: [loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, MicroBlaze_wrapper_7]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.589
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.589
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.589
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.596
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.596
+!MESSAGE XSCT Command: [source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.596
+!MESSAGE XSCT command with result: [source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.596
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.888
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.891
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.894
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.897
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.901
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:48.901
+!MESSAGE XSCT Command: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.221
+!MESSAGE XSCT command with result: [dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.221
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.251
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.263
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.285
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.285
+!MESSAGE XSCT Command: [con], Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.294
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-28: Launching Debugger_helloworld-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.312
+!MESSAGE XSCT Command: [disconnect tcfchan#16], Thread: Thread-834
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.312
+!MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-834

@@ -25,7 +25,7 @@ int main() {
 	    // Call solver
 	solver(i, j, solution);
 
-	printf("Pingers Location: x = %f, y = %f\n", solution[0], solution[1]);
+	printf("Solution: x = %f, y = %f\n", solution[0], solution[1]);
 
 
 	}
