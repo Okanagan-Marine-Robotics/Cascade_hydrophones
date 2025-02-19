@@ -5,4 +5,13 @@
 ### Progress
 	Firmware: working prototype 90% done
 	HDL: working prototype 90% done
+
+### Choices IDEs and Languages
+	HDL:Verilog
+	Firmware:C
+	Test Programs:Matlab
+	Hardware IDE:Vivado 2024.2
+	Firmware IDE:Vitis 2022.2
+	
+
 	
