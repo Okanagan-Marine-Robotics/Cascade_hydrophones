@@ -6,7 +6,8 @@
 	Firmware: working prototype 90% done
 	HDL: working prototype 90% done
 
-### Choices IDEs and Languages
+### Chosen IDEs, Hardware, & Languages
+	Processing Board:Zynq SoC
 	HDL:Verilog
 	Firmware:C
 	Test Programs:Matlab
