@@ -1385,3 +1385,12 @@ con
 ----------------End of Script----------------
 
 08:16:49 INFO  : Disconnected from the channel tcfchan#16.
+22:46:55 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/IDE.log'.
+22:46:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\temp_xsdb_launch_script.tcl
+22:47:00 INFO  : XSCT server has started successfully.
+22:47:00 INFO  : plnx-install-location is set to ''
+22:47:00 INFO  : Successfully done setting XSCT server connection channel  
+22:47:00 INFO  : Successfully done setting workspace for the tool. 
+22:47:01 INFO  : Registering command handlers for Vitis TCF services
+22:47:04 INFO  : Platform repository initialization has completed.
+22:47:07 INFO  : Successfully done query RDI_DATADIR 

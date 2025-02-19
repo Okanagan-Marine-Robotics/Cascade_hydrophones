@@ -15291,3 +15291,42 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-28: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 08:16:49.312
 !MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-834
+!SESSION 2025-02-18 22:45:53.008 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-02-18 22:46:53.762
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:00.637
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:00.655
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:00.661
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:00.662
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:00.666
+!MESSAGE XSCT Command: [setws C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software], Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:00.669
+!MESSAGE XSCT command with result: [setws C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software], Result: [null, ]. Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:01.132
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-7: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:07.672
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-7: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:07.673
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-7: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-18 22:47:07.674
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-7: Initializing s/w repositories

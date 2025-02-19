@@ -9,8 +9,7 @@ int main() {
 	init_platform();
 
 	xil_printf("helloworld!\n");
-	xil_printf("Starting Pinger Triangulation System\n");
-	xil_printf("by James Williamsom v:0.1\n");
+
 	int maxTime;
 	int maxTime2;
 
@@ -26,7 +25,7 @@ int main() {
 	    // Call solver
 	solver(i, j, solution);
 
-	printf("{"x": {%f},"y": {%f}}", solution[0], solution[1]);
+	printf("Pingers Location: x = %f, y = %f\n", solution[0], solution[1]);
 
 
 	}

@@ -92,3 +92,6 @@ timestamp=[2025-02-18 08:04:39], mode=BUILD, duration=0:00:00.285, duration_ms=2
 timestamp=[2025-02-18 08:04:42], mode=BUILD, duration=0:00:03.194, duration_ms=3194, data={name=helloworld_system, configuration=Debug, clean_build=false}
 timestamp=[2025-02-18 08:14:30], mode=BUILD, duration=0:00:00.846, duration_ms=846, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-02-18 08:16:38], mode=BUILD, duration=0:00:00.702, duration_ms=702, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-02-18 22:47:00], mode=WORKBENCH_START, duration=0:00:08.803, duration_ms=8803, data={}
+timestamp=[2025-02-18 22:47:01], mode=WORKBENCH_UI_INIT, duration=0:00:01.218, duration_ms=1218, data={editors_count=5, platform_editors_count=1, projects_count=10, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld,helloworld_system,test,xgpio_example_1,xgpio_example_1_system,xuartps_hello_world_example_1,xuartps_hello_world_example_1_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
+timestamp=[2025-02-18 22:47:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.084, duration_ms=3084, data={}
