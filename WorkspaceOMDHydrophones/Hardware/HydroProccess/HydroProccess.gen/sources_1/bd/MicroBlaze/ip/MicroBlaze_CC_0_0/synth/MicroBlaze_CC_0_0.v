@@ -85,12 +85,13 @@ module MicroBlaze_CC_0_0 (
   xcorr,
   xcorr1,
   clkcorr,
-  count
+  count,
+  reset
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 input wire clk;
 input wire clk1Mhz;
 input wire [11 : 0] waveRef0;
@@ -121,6 +122,10 @@ output wire [35 : 0] xcorr;
 output wire [35 : 0] xcorr1;
 output wire clkcorr;
 output wire [15 : 0] count;
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+input wire reset;
 
   CC inst (
     .clk(clk),
@@ -152,6 +157,7 @@ output wire [15 : 0] count;
     .xcorr(xcorr),
     .xcorr1(xcorr1),
     .clkcorr(clkcorr),
-    .count(count)
+    .count(count),
+    .reset(reset)
   );
 endmodule

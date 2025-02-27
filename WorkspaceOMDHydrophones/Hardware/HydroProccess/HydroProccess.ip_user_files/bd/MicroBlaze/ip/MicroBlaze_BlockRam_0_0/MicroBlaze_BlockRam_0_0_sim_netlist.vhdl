@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Tue Feb 18 06:29:07 2025
+-- Date        : Tue Feb 18 08:00:17 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/MicroBlaze_BlockRam_0_0_sim_netlist.vhdl
@@ -17,562 +17,572 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity MicroBlaze_BlockRam_0_0_BlockRam is
   port (
-    wave00 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef0 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     wave0 : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave01 : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave00 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef1 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     wave1 : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave02 : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave01 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef2 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     wave2 : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave03 : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave02 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef3 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     wave3 : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Ram1_reg_3_1_0 : in STD_LOGIC;
-    Ram1_reg_3_1_1 : in STD_LOGIC;
+    wave03 : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    Ram1_reg_1_0 : in STD_LOGIC;
+    Ram1_reg_1_1 : in STD_LOGIC;
     waveRef0Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave00AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    inWave1 : in STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef0AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    inWave1 : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave0Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wave0AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    inWave2 : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave00Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave00AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    inWave3 : in STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef1Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave01AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef1AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave1Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wave1AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave01Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave01AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef2Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave02AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef2AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave2Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wave2AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave02Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave02AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef3Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave03AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
     waveRef3AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wave3AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    wave3Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave3AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave03Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wave03AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of MicroBlaze_BlockRam_0_0_BlockRam : entity is "BlockRam";
 end MicroBlaze_BlockRam_0_0_BlockRam;
 
 architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
-  signal NLW_Ram1_reg_1_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_1_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_1_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_1_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_1_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_1_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_1_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram1_reg_1_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram1_reg_1_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram1_reg_1_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram1_reg_1_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram1_reg_1_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram1_reg_1_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram1_reg_1_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram1_reg_1_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram1_reg_1_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram1_reg_2_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_2_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_2_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_2_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_2_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_2_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_2_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram1_reg_2_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram1_reg_2_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram1_reg_2_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram1_reg_2_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram1_reg_2_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram1_reg_2_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram1_reg_2_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram1_reg_2_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram1_reg_2_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram1_reg_3_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_3_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_3_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_3_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_3_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_3_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram1_reg_3_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram1_reg_3_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram1_reg_3_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram1_reg_3_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram1_reg_3_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram1_reg_3_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram1_reg_3_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram1_reg_3_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram1_reg_3_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram1_reg_3_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram2_reg_1_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_1_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_1_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_1_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_1_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_1_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_1_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram2_reg_1_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram2_reg_1_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram2_reg_1_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram2_reg_1_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram2_reg_1_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram2_reg_1_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram2_reg_1_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram2_reg_1_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram2_reg_1_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram2_reg_2_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_2_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_2_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_2_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_2_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_2_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_2_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram2_reg_2_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram2_reg_2_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram2_reg_2_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram2_reg_2_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram2_reg_2_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram2_reg_2_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram2_reg_2_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram2_reg_2_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram2_reg_2_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram2_reg_3_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_3_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_3_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_3_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_3_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_3_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram2_reg_3_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram2_reg_3_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram2_reg_3_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram2_reg_3_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram2_reg_3_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram2_reg_3_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram2_reg_3_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram2_reg_3_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram2_reg_3_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram2_reg_3_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram3_reg_1_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_1_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_1_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_1_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_1_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_1_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_1_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram3_reg_1_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram3_reg_1_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram3_reg_1_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram3_reg_1_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram3_reg_1_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram3_reg_1_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram3_reg_1_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram3_reg_1_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram3_reg_1_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram3_reg_2_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_2_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_2_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_2_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_2_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_2_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_2_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram3_reg_2_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram3_reg_2_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram3_reg_2_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram3_reg_2_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram3_reg_2_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram3_reg_2_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram3_reg_2_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram3_reg_2_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram3_reg_2_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram3_reg_3_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_3_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_3_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_3_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_3_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_3_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram3_reg_3_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram3_reg_3_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram3_reg_3_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram3_reg_3_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram3_reg_3_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram3_reg_3_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram3_reg_3_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram3_reg_3_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram3_reg_3_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram3_reg_3_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram4_reg_1_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_1_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_1_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_1_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_1_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_1_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_1_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram4_reg_1_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram4_reg_1_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram4_reg_1_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram4_reg_1_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram4_reg_1_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram4_reg_1_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram4_reg_1_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram4_reg_1_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram4_reg_1_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram4_reg_2_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_2_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_2_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_2_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_2_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_2_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_2_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram4_reg_2_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram4_reg_2_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram4_reg_2_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram4_reg_2_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram4_reg_2_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram4_reg_2_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram4_reg_2_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram4_reg_2_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram4_reg_2_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram4_reg_3_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_3_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_3_0_DBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_3_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_3_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_3_0_SBITERR_UNCONNECTED : STD_LOGIC;
-  signal NLW_Ram4_reg_3_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_Ram4_reg_3_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_Ram4_reg_3_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_Ram4_reg_3_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal NLW_Ram4_reg_3_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_Ram4_reg_3_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal NLW_Ram4_reg_3_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_Ram4_reg_3_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
-  signal NLW_Ram4_reg_3_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_Ram4_reg_3_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram10_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram10_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram10_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram10_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram10_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram10_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram10_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram10_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram10_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram10_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram10_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram10_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram10_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram10_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram10_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram10_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram11_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram11_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram11_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram11_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram11_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram11_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram11_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram11_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram11_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram11_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram11_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram11_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram11_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram11_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram11_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram11_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram12_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram12_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram12_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram12_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram12_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram12_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram12_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram12_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram12_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram12_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram12_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram12_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram12_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram12_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram12_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram12_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram1_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram1_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram1_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram1_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram1_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram1_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram1_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram1_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram1_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram1_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram1_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram1_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram1_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram1_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram1_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram1_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram2_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram2_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram2_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram2_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram2_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram2_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram2_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram2_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram2_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram2_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram2_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram2_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram2_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram2_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram2_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram2_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram3_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram3_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram3_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram3_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram3_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram3_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram3_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram3_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram3_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram3_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram3_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram3_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram3_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram3_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram3_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram3_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram4_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram4_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram4_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram4_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram4_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram4_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram4_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram4_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram4_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram4_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram4_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram4_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram4_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram4_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram4_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram4_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram5_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram5_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram5_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram5_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram5_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram5_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram5_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram5_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram5_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram5_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram5_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram5_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram5_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram5_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram5_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram5_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram6_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram6_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram6_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram6_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram6_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram6_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram6_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram6_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram6_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram6_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram6_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram6_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram6_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram6_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram6_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram6_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram7_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram7_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram7_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram7_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram7_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram7_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram7_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram7_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram7_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram7_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram7_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram7_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram7_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram7_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram7_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram7_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram8_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram8_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram8_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram8_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram8_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram8_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram8_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram8_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram8_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram8_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram8_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram8_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram8_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram8_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram8_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram8_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram9_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram9_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram9_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram9_reg_0_INJECTDBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram9_reg_0_INJECTSBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram9_reg_0_SBITERR_UNCONNECTED : STD_LOGIC;
+  signal NLW_Ram9_reg_0_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_Ram9_reg_0_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal NLW_Ram9_reg_0_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_Ram9_reg_0_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal NLW_Ram9_reg_0_ECCPARITY_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Ram9_reg_0_RDADDRECC_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_Ram9_reg_1_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_Ram9_reg_1_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 3 );
+  signal NLW_Ram9_reg_1_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_Ram9_reg_1_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute \MEM.PORTA.DATA_BIT_LAYOUT\ : string;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_1_0 : label is "p1_d8";
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram10_reg_0 : label is "p1_d8";
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ : string;
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_1_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram10_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS : string;
-  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_1_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
+  attribute METHODOLOGY_DRC_VIOS of Ram10_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED : string;
-  attribute OPT_MODIFIED of Ram1_reg_1_0 : label is "MLO";
+  attribute OPT_MODIFIED of Ram10_reg_0 : label is "MLO";
   attribute RTL_RAM_BITS : integer;
-  attribute RTL_RAM_BITS of Ram1_reg_1_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram10_reg_0 : label is 30024;
   attribute RTL_RAM_NAME : string;
-  attribute RTL_RAM_NAME of Ram1_reg_1_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
+  attribute RTL_RAM_NAME of Ram10_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram10_reg";
   attribute RTL_RAM_STYLE : string;
-  attribute RTL_RAM_STYLE of Ram1_reg_1_0 : label is "auto";
+  attribute RTL_RAM_STYLE of Ram10_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE : string;
-  attribute RTL_RAM_TYPE of Ram1_reg_1_0 : label is "RAM_SDP";
+  attribute RTL_RAM_TYPE of Ram10_reg_0 : label is "RAM_SDP";
   attribute ram_addr_begin : integer;
-  attribute ram_addr_begin of Ram1_reg_1_0 : label is 0;
+  attribute ram_addr_begin of Ram10_reg_0 : label is 0;
   attribute ram_addr_end : integer;
-  attribute ram_addr_end of Ram1_reg_1_0 : label is 4095;
+  attribute ram_addr_end of Ram10_reg_0 : label is 4095;
   attribute ram_offset : integer;
-  attribute ram_offset of Ram1_reg_1_0 : label is 0;
+  attribute ram_offset of Ram10_reg_0 : label is 0;
   attribute ram_slice_begin : integer;
-  attribute ram_slice_begin of Ram1_reg_1_0 : label is 0;
+  attribute ram_slice_begin of Ram10_reg_0 : label is 0;
   attribute ram_slice_end : integer;
-  attribute ram_slice_end of Ram1_reg_1_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_1_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_1_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_1_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram1_reg_1_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram1_reg_1_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram1_reg_1_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
-  attribute RTL_RAM_STYLE of Ram1_reg_1_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram1_reg_1_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram1_reg_1_1 : label is 0;
-  attribute ram_addr_end of Ram1_reg_1_1 : label is 4095;
-  attribute ram_offset of Ram1_reg_1_1 : label is 0;
-  attribute ram_slice_begin of Ram1_reg_1_1 : label is 9;
-  attribute ram_slice_end of Ram1_reg_1_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_2_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_2_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_2_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram1_reg_2_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram1_reg_2_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram1_reg_2_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
-  attribute RTL_RAM_STYLE of Ram1_reg_2_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram1_reg_2_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram1_reg_2_0 : label is 0;
-  attribute ram_addr_end of Ram1_reg_2_0 : label is 4095;
-  attribute ram_offset of Ram1_reg_2_0 : label is 0;
-  attribute ram_slice_begin of Ram1_reg_2_0 : label is 0;
-  attribute ram_slice_end of Ram1_reg_2_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_2_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_2_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_2_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram1_reg_2_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram1_reg_2_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram1_reg_2_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
-  attribute RTL_RAM_STYLE of Ram1_reg_2_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram1_reg_2_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram1_reg_2_1 : label is 0;
-  attribute ram_addr_end of Ram1_reg_2_1 : label is 4095;
-  attribute ram_offset of Ram1_reg_2_1 : label is 0;
-  attribute ram_slice_begin of Ram1_reg_2_1 : label is 9;
-  attribute ram_slice_end of Ram1_reg_2_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_3_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_3_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_3_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram1_reg_3_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram1_reg_3_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram1_reg_3_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
-  attribute RTL_RAM_STYLE of Ram1_reg_3_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram1_reg_3_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram1_reg_3_0 : label is 0;
-  attribute ram_addr_end of Ram1_reg_3_0 : label is 4095;
-  attribute ram_offset of Ram1_reg_3_0 : label is 0;
-  attribute ram_slice_begin of Ram1_reg_3_0 : label is 0;
-  attribute ram_slice_end of Ram1_reg_3_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_3_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_3_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_3_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram1_reg_3_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram1_reg_3_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram1_reg_3_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
-  attribute RTL_RAM_STYLE of Ram1_reg_3_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram1_reg_3_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram1_reg_3_1 : label is 0;
-  attribute ram_addr_end of Ram1_reg_3_1 : label is 4095;
-  attribute ram_offset of Ram1_reg_3_1 : label is 0;
-  attribute ram_slice_begin of Ram1_reg_3_1 : label is 9;
-  attribute ram_slice_end of Ram1_reg_3_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_1_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_1_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_1_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram2_reg_1_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_1_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram2_reg_1_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
-  attribute RTL_RAM_STYLE of Ram2_reg_1_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram2_reg_1_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram2_reg_1_0 : label is 0;
-  attribute ram_addr_end of Ram2_reg_1_0 : label is 4095;
-  attribute ram_offset of Ram2_reg_1_0 : label is 0;
-  attribute ram_slice_begin of Ram2_reg_1_0 : label is 0;
-  attribute ram_slice_end of Ram2_reg_1_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_1_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_1_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_1_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram2_reg_1_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_1_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram2_reg_1_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
-  attribute RTL_RAM_STYLE of Ram2_reg_1_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram2_reg_1_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram2_reg_1_1 : label is 0;
-  attribute ram_addr_end of Ram2_reg_1_1 : label is 4095;
-  attribute ram_offset of Ram2_reg_1_1 : label is 0;
-  attribute ram_slice_begin of Ram2_reg_1_1 : label is 9;
-  attribute ram_slice_end of Ram2_reg_1_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_2_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_2_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_2_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram2_reg_2_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_2_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram2_reg_2_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
-  attribute RTL_RAM_STYLE of Ram2_reg_2_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram2_reg_2_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram2_reg_2_0 : label is 0;
-  attribute ram_addr_end of Ram2_reg_2_0 : label is 4095;
-  attribute ram_offset of Ram2_reg_2_0 : label is 0;
-  attribute ram_slice_begin of Ram2_reg_2_0 : label is 0;
-  attribute ram_slice_end of Ram2_reg_2_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_2_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_2_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_2_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram2_reg_2_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_2_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram2_reg_2_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
-  attribute RTL_RAM_STYLE of Ram2_reg_2_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram2_reg_2_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram2_reg_2_1 : label is 0;
-  attribute ram_addr_end of Ram2_reg_2_1 : label is 4095;
-  attribute ram_offset of Ram2_reg_2_1 : label is 0;
-  attribute ram_slice_begin of Ram2_reg_2_1 : label is 9;
-  attribute ram_slice_end of Ram2_reg_2_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_3_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_3_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_3_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram2_reg_3_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_3_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram2_reg_3_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
-  attribute RTL_RAM_STYLE of Ram2_reg_3_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram2_reg_3_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram2_reg_3_0 : label is 0;
-  attribute ram_addr_end of Ram2_reg_3_0 : label is 4095;
-  attribute ram_offset of Ram2_reg_3_0 : label is 0;
-  attribute ram_slice_begin of Ram2_reg_3_0 : label is 0;
-  attribute ram_slice_end of Ram2_reg_3_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_3_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_3_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_3_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram2_reg_3_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_3_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram2_reg_3_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
-  attribute RTL_RAM_STYLE of Ram2_reg_3_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram2_reg_3_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram2_reg_3_1 : label is 0;
-  attribute ram_addr_end of Ram2_reg_3_1 : label is 4095;
-  attribute ram_offset of Ram2_reg_3_1 : label is 0;
-  attribute ram_slice_begin of Ram2_reg_3_1 : label is 9;
-  attribute ram_slice_end of Ram2_reg_3_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_1_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_1_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_1_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram3_reg_1_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_1_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram3_reg_1_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
-  attribute RTL_RAM_STYLE of Ram3_reg_1_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram3_reg_1_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram3_reg_1_0 : label is 0;
-  attribute ram_addr_end of Ram3_reg_1_0 : label is 4095;
-  attribute ram_offset of Ram3_reg_1_0 : label is 0;
-  attribute ram_slice_begin of Ram3_reg_1_0 : label is 0;
-  attribute ram_slice_end of Ram3_reg_1_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_1_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_1_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_1_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram3_reg_1_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_1_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram3_reg_1_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
-  attribute RTL_RAM_STYLE of Ram3_reg_1_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram3_reg_1_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram3_reg_1_1 : label is 0;
-  attribute ram_addr_end of Ram3_reg_1_1 : label is 4095;
-  attribute ram_offset of Ram3_reg_1_1 : label is 0;
-  attribute ram_slice_begin of Ram3_reg_1_1 : label is 9;
-  attribute ram_slice_end of Ram3_reg_1_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_2_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_2_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_2_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram3_reg_2_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_2_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram3_reg_2_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
-  attribute RTL_RAM_STYLE of Ram3_reg_2_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram3_reg_2_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram3_reg_2_0 : label is 0;
-  attribute ram_addr_end of Ram3_reg_2_0 : label is 4095;
-  attribute ram_offset of Ram3_reg_2_0 : label is 0;
-  attribute ram_slice_begin of Ram3_reg_2_0 : label is 0;
-  attribute ram_slice_end of Ram3_reg_2_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_2_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_2_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_2_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram3_reg_2_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_2_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram3_reg_2_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
-  attribute RTL_RAM_STYLE of Ram3_reg_2_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram3_reg_2_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram3_reg_2_1 : label is 0;
-  attribute ram_addr_end of Ram3_reg_2_1 : label is 4095;
-  attribute ram_offset of Ram3_reg_2_1 : label is 0;
-  attribute ram_slice_begin of Ram3_reg_2_1 : label is 9;
-  attribute ram_slice_end of Ram3_reg_2_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_3_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_3_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_3_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram3_reg_3_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_3_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram3_reg_3_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
-  attribute RTL_RAM_STYLE of Ram3_reg_3_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram3_reg_3_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram3_reg_3_0 : label is 0;
-  attribute ram_addr_end of Ram3_reg_3_0 : label is 4095;
-  attribute ram_offset of Ram3_reg_3_0 : label is 0;
-  attribute ram_slice_begin of Ram3_reg_3_0 : label is 0;
-  attribute ram_slice_end of Ram3_reg_3_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_3_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_3_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_3_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram3_reg_3_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_3_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram3_reg_3_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
-  attribute RTL_RAM_STYLE of Ram3_reg_3_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram3_reg_3_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram3_reg_3_1 : label is 0;
-  attribute ram_addr_end of Ram3_reg_3_1 : label is 4095;
-  attribute ram_offset of Ram3_reg_3_1 : label is 0;
-  attribute ram_slice_begin of Ram3_reg_3_1 : label is 9;
-  attribute ram_slice_end of Ram3_reg_3_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_1_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_1_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_1_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram4_reg_1_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_1_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram4_reg_1_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
-  attribute RTL_RAM_STYLE of Ram4_reg_1_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram4_reg_1_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram4_reg_1_0 : label is 0;
-  attribute ram_addr_end of Ram4_reg_1_0 : label is 4095;
-  attribute ram_offset of Ram4_reg_1_0 : label is 0;
-  attribute ram_slice_begin of Ram4_reg_1_0 : label is 0;
-  attribute ram_slice_end of Ram4_reg_1_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_1_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_1_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_1_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram4_reg_1_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_1_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram4_reg_1_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
-  attribute RTL_RAM_STYLE of Ram4_reg_1_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram4_reg_1_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram4_reg_1_1 : label is 0;
-  attribute ram_addr_end of Ram4_reg_1_1 : label is 4095;
-  attribute ram_offset of Ram4_reg_1_1 : label is 0;
-  attribute ram_slice_begin of Ram4_reg_1_1 : label is 9;
-  attribute ram_slice_end of Ram4_reg_1_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_2_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_2_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_2_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram4_reg_2_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_2_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram4_reg_2_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
-  attribute RTL_RAM_STYLE of Ram4_reg_2_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram4_reg_2_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram4_reg_2_0 : label is 0;
-  attribute ram_addr_end of Ram4_reg_2_0 : label is 4095;
-  attribute ram_offset of Ram4_reg_2_0 : label is 0;
-  attribute ram_slice_begin of Ram4_reg_2_0 : label is 0;
-  attribute ram_slice_end of Ram4_reg_2_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_2_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_2_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_2_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram4_reg_2_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_2_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram4_reg_2_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
-  attribute RTL_RAM_STYLE of Ram4_reg_2_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram4_reg_2_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram4_reg_2_1 : label is 0;
-  attribute ram_addr_end of Ram4_reg_2_1 : label is 4095;
-  attribute ram_offset of Ram4_reg_2_1 : label is 0;
-  attribute ram_slice_begin of Ram4_reg_2_1 : label is 9;
-  attribute ram_slice_end of Ram4_reg_2_1 : label is 11;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_3_0 : label is "p1_d8";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_3_0 : label is "p1_d8";
-  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_3_0 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram4_reg_3_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_3_0 : label is 30024;
-  attribute RTL_RAM_NAME of Ram4_reg_3_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
-  attribute RTL_RAM_STYLE of Ram4_reg_3_0 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram4_reg_3_0 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram4_reg_3_0 : label is 0;
-  attribute ram_addr_end of Ram4_reg_3_0 : label is 4095;
-  attribute ram_offset of Ram4_reg_3_0 : label is 0;
-  attribute ram_slice_begin of Ram4_reg_3_0 : label is 0;
-  attribute ram_slice_end of Ram4_reg_3_0 : label is 8;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_3_1 : label is "p0_d3";
-  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_3_1 : label is "p0_d3";
-  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_3_1 : label is "{SYNTH-6 {cell *THIS*}} {SYNTH-7 {cell *THIS*}}";
-  attribute OPT_MODIFIED of Ram4_reg_3_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_3_1 : label is 30024;
-  attribute RTL_RAM_NAME of Ram4_reg_3_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
-  attribute RTL_RAM_STYLE of Ram4_reg_3_1 : label is "auto";
-  attribute RTL_RAM_TYPE of Ram4_reg_3_1 : label is "RAM_SDP";
-  attribute ram_addr_begin of Ram4_reg_3_1 : label is 0;
-  attribute ram_addr_end of Ram4_reg_3_1 : label is 4095;
-  attribute ram_offset of Ram4_reg_3_1 : label is 0;
-  attribute ram_slice_begin of Ram4_reg_3_1 : label is 9;
-  attribute ram_slice_end of Ram4_reg_3_1 : label is 11;
+  attribute ram_slice_end of Ram10_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram10_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram10_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram10_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram10_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram10_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram10_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram10_reg";
+  attribute RTL_RAM_STYLE of Ram10_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram10_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram10_reg_1 : label is 0;
+  attribute ram_addr_end of Ram10_reg_1 : label is 4095;
+  attribute ram_offset of Ram10_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram10_reg_1 : label is 9;
+  attribute ram_slice_end of Ram10_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram11_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram11_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram11_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram11_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram11_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram11_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram11_reg";
+  attribute RTL_RAM_STYLE of Ram11_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram11_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram11_reg_0 : label is 0;
+  attribute ram_addr_end of Ram11_reg_0 : label is 4095;
+  attribute ram_offset of Ram11_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram11_reg_0 : label is 0;
+  attribute ram_slice_end of Ram11_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram11_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram11_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram11_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram11_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram11_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram11_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram11_reg";
+  attribute RTL_RAM_STYLE of Ram11_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram11_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram11_reg_1 : label is 0;
+  attribute ram_addr_end of Ram11_reg_1 : label is 4095;
+  attribute ram_offset of Ram11_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram11_reg_1 : label is 9;
+  attribute ram_slice_end of Ram11_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram12_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram12_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram12_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram12_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram12_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram12_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram12_reg";
+  attribute RTL_RAM_STYLE of Ram12_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram12_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram12_reg_0 : label is 0;
+  attribute ram_addr_end of Ram12_reg_0 : label is 4095;
+  attribute ram_offset of Ram12_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram12_reg_0 : label is 0;
+  attribute ram_slice_end of Ram12_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram12_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram12_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram12_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram12_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram12_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram12_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram12_reg";
+  attribute RTL_RAM_STYLE of Ram12_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram12_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram12_reg_1 : label is 0;
+  attribute ram_addr_end of Ram12_reg_1 : label is 4095;
+  attribute ram_offset of Ram12_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram12_reg_1 : label is 9;
+  attribute ram_slice_end of Ram12_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram1_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram1_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram1_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
+  attribute RTL_RAM_STYLE of Ram1_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram1_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram1_reg_0 : label is 0;
+  attribute ram_addr_end of Ram1_reg_0 : label is 4095;
+  attribute ram_offset of Ram1_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram1_reg_0 : label is 0;
+  attribute ram_slice_end of Ram1_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram1_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram1_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram1_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram1_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram1_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
+  attribute RTL_RAM_STYLE of Ram1_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram1_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram1_reg_1 : label is 0;
+  attribute ram_addr_end of Ram1_reg_1 : label is 4095;
+  attribute ram_offset of Ram1_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram1_reg_1 : label is 9;
+  attribute ram_slice_end of Ram1_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram2_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram2_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram2_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
+  attribute RTL_RAM_STYLE of Ram2_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram2_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram2_reg_0 : label is 0;
+  attribute ram_addr_end of Ram2_reg_0 : label is 4095;
+  attribute ram_offset of Ram2_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram2_reg_0 : label is 0;
+  attribute ram_slice_end of Ram2_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram2_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram2_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram2_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram2_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram2_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
+  attribute RTL_RAM_STYLE of Ram2_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram2_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram2_reg_1 : label is 0;
+  attribute ram_addr_end of Ram2_reg_1 : label is 4095;
+  attribute ram_offset of Ram2_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram2_reg_1 : label is 9;
+  attribute ram_slice_end of Ram2_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram3_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram3_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram3_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
+  attribute RTL_RAM_STYLE of Ram3_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram3_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram3_reg_0 : label is 0;
+  attribute ram_addr_end of Ram3_reg_0 : label is 4095;
+  attribute ram_offset of Ram3_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram3_reg_0 : label is 0;
+  attribute ram_slice_end of Ram3_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram3_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram3_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram3_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram3_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram3_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
+  attribute RTL_RAM_STYLE of Ram3_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram3_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram3_reg_1 : label is 0;
+  attribute ram_addr_end of Ram3_reg_1 : label is 4095;
+  attribute ram_offset of Ram3_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram3_reg_1 : label is 9;
+  attribute ram_slice_end of Ram3_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram4_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram4_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram4_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
+  attribute RTL_RAM_STYLE of Ram4_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram4_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram4_reg_0 : label is 0;
+  attribute ram_addr_end of Ram4_reg_0 : label is 4095;
+  attribute ram_offset of Ram4_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram4_reg_0 : label is 0;
+  attribute ram_slice_end of Ram4_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram4_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram4_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram4_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram4_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram4_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
+  attribute RTL_RAM_STYLE of Ram4_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram4_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram4_reg_1 : label is 0;
+  attribute ram_addr_end of Ram4_reg_1 : label is 4095;
+  attribute ram_offset of Ram4_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram4_reg_1 : label is 9;
+  attribute ram_slice_end of Ram4_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram5_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram5_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram5_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram5_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram5_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram5_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram5_reg";
+  attribute RTL_RAM_STYLE of Ram5_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram5_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram5_reg_0 : label is 0;
+  attribute ram_addr_end of Ram5_reg_0 : label is 4095;
+  attribute ram_offset of Ram5_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram5_reg_0 : label is 0;
+  attribute ram_slice_end of Ram5_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram5_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram5_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram5_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram5_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram5_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram5_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram5_reg";
+  attribute RTL_RAM_STYLE of Ram5_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram5_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram5_reg_1 : label is 0;
+  attribute ram_addr_end of Ram5_reg_1 : label is 4095;
+  attribute ram_offset of Ram5_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram5_reg_1 : label is 9;
+  attribute ram_slice_end of Ram5_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram6_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram6_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram6_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram6_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram6_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram6_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram6_reg";
+  attribute RTL_RAM_STYLE of Ram6_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram6_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram6_reg_0 : label is 0;
+  attribute ram_addr_end of Ram6_reg_0 : label is 4095;
+  attribute ram_offset of Ram6_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram6_reg_0 : label is 0;
+  attribute ram_slice_end of Ram6_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram6_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram6_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram6_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram6_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram6_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram6_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram6_reg";
+  attribute RTL_RAM_STYLE of Ram6_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram6_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram6_reg_1 : label is 0;
+  attribute ram_addr_end of Ram6_reg_1 : label is 4095;
+  attribute ram_offset of Ram6_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram6_reg_1 : label is 9;
+  attribute ram_slice_end of Ram6_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram7_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram7_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram7_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram7_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram7_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram7_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram7_reg";
+  attribute RTL_RAM_STYLE of Ram7_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram7_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram7_reg_0 : label is 0;
+  attribute ram_addr_end of Ram7_reg_0 : label is 4095;
+  attribute ram_offset of Ram7_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram7_reg_0 : label is 0;
+  attribute ram_slice_end of Ram7_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram7_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram7_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram7_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram7_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram7_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram7_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram7_reg";
+  attribute RTL_RAM_STYLE of Ram7_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram7_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram7_reg_1 : label is 0;
+  attribute ram_addr_end of Ram7_reg_1 : label is 4095;
+  attribute ram_offset of Ram7_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram7_reg_1 : label is 9;
+  attribute ram_slice_end of Ram7_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram8_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram8_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram8_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram8_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram8_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram8_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram8_reg";
+  attribute RTL_RAM_STYLE of Ram8_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram8_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram8_reg_0 : label is 0;
+  attribute ram_addr_end of Ram8_reg_0 : label is 4095;
+  attribute ram_offset of Ram8_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram8_reg_0 : label is 0;
+  attribute ram_slice_end of Ram8_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram8_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram8_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram8_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram8_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram8_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram8_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram8_reg";
+  attribute RTL_RAM_STYLE of Ram8_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram8_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram8_reg_1 : label is 0;
+  attribute ram_addr_end of Ram8_reg_1 : label is 4095;
+  attribute ram_offset of Ram8_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram8_reg_1 : label is 9;
+  attribute ram_slice_end of Ram8_reg_1 : label is 11;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram9_reg_0 : label is "p1_d8";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram9_reg_0 : label is "p1_d8";
+  attribute METHODOLOGY_DRC_VIOS of Ram9_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram9_reg_0 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram9_reg_0 : label is 30024;
+  attribute RTL_RAM_NAME of Ram9_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram9_reg";
+  attribute RTL_RAM_STYLE of Ram9_reg_0 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram9_reg_0 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram9_reg_0 : label is 0;
+  attribute ram_addr_end of Ram9_reg_0 : label is 4095;
+  attribute ram_offset of Ram9_reg_0 : label is 0;
+  attribute ram_slice_begin of Ram9_reg_0 : label is 0;
+  attribute ram_slice_end of Ram9_reg_0 : label is 8;
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram9_reg_1 : label is "p0_d3";
+  attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram9_reg_1 : label is "p0_d3";
+  attribute METHODOLOGY_DRC_VIOS of Ram9_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute OPT_MODIFIED of Ram9_reg_1 : label is "MLO";
+  attribute RTL_RAM_BITS of Ram9_reg_1 : label is 30024;
+  attribute RTL_RAM_NAME of Ram9_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram9_reg";
+  attribute RTL_RAM_STYLE of Ram9_reg_1 : label is "auto";
+  attribute RTL_RAM_TYPE of Ram9_reg_1 : label is "RAM_SDP";
+  attribute ram_addr_begin of Ram9_reg_1 : label is 0;
+  attribute ram_addr_end of Ram9_reg_1 : label is 4095;
+  attribute ram_offset of Ram9_reg_1 : label is 0;
+  attribute ram_slice_begin of Ram9_reg_1 : label is 9;
+  attribute ram_slice_end of Ram9_reg_1 : label is 11;
 begin
-Ram1_reg_1_0: unisim.vcomponents.RAMB36E1
+Ram10_reg_0: unisim.vcomponents.RAMB36E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -745,47 +755,47 @@ Ram1_reg_1_0: unisim.vcomponents.RAMB36E1
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef0Address(11 downto 0),
+      ADDRARDADDR(14 downto 3) => wave01Address(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"000",
       ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave00AddressB(11 downto 0),
+      ADDRBWRADDR(14 downto 3) => wave01AddressB(11 downto 0),
       ADDRBWRADDR(2 downto 0) => B"000",
       CASCADEINA => '1',
       CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram1_reg_1_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram1_reg_1_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram1_reg_1_0_DBITERR_UNCONNECTED,
+      CASCADEOUTA => NLW_Ram10_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram10_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram10_reg_0_DBITERR_UNCONNECTED,
       DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
+      DIADI(7 downto 0) => inWave3(7 downto 0),
       DIBDI(31 downto 0) => B"00000000000000000000000011111111",
       DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
+      DIPADIP(0) => inWave3(8),
       DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram1_reg_1_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram1_reg_1_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave00(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram1_reg_1_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram1_reg_1_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave00(8),
-      ECCPARITY(7 downto 0) => NLW_Ram1_reg_1_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      DOADO(31 downto 0) => NLW_Ram10_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram10_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave01(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram10_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram10_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave01(8),
+      ECCPARITY(7 downto 0) => NLW_Ram10_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram1_reg_1_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram1_reg_1_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram1_reg_1_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      INJECTDBITERR => NLW_Ram10_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram10_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram10_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
-      SBITERR => NLW_Ram1_reg_1_0_SBITERR_UNCONNECTED,
+      SBITERR => NLW_Ram10_reg_0_SBITERR_UNCONNECTED,
       WEA(3 downto 0) => B"1111",
       WEBWE(7 downto 0) => B"00000000"
     );
-Ram1_reg_1_1: unisim.vcomponents.RAMB18E1
+Ram10_reg_1: unisim.vcomponents.RAMB18E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -881,22 +891,22 @@ Ram1_reg_1_1: unisim.vcomponents.RAMB18E1
       WRITE_WIDTH_B => 4
     )
         port map (
-      ADDRARDADDR(13 downto 2) => waveRef0Address(11 downto 0),
+      ADDRARDADDR(13 downto 2) => wave01Address(11 downto 0),
       ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave00AddressB(11 downto 0),
+      ADDRBWRADDR(13 downto 2) => wave01AddressB(11 downto 0),
       ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
       DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
+      DIADI(2 downto 0) => inWave3(11 downto 9),
       DIBDI(15 downto 0) => B"0000000000000111",
       DIPADIP(1 downto 0) => B"00",
       DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram1_reg_1_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram1_reg_1_1_DOBDO_UNCONNECTED(15 downto 3),
-      DOBDO(2 downto 0) => wave00(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram1_reg_1_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram1_reg_1_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      DOADO(15 downto 0) => NLW_Ram10_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram10_reg_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOBDO(2 downto 0) => wave01(11 downto 9),
+      DOPADOP(1 downto 0) => NLW_Ram10_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram10_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
       REGCEAREGCE => '0',
@@ -908,7 +918,679 @@ Ram1_reg_1_1: unisim.vcomponents.RAMB18E1
       WEA(1 downto 0) => B"11",
       WEBWE(3 downto 0) => B"0000"
     );
-Ram1_reg_2_0: unisim.vcomponents.RAMB36E1
+Ram11_reg_0: unisim.vcomponents.RAMB36E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      EN_ECC_READ => false,
+      EN_ECC_WRITE => false,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"000000000",
+      INIT_B => X"000000000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_EXTENSION_A => "NONE",
+      RAM_EXTENSION_B => "NONE",
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 9,
+      READ_WIDTH_B => 9,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"000000000",
+      SRVAL_B => X"000000000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 9,
+      WRITE_WIDTH_B => 9
+    )
+        port map (
+      ADDRARDADDR(15) => '1',
+      ADDRARDADDR(14 downto 3) => wave02Address(11 downto 0),
+      ADDRARDADDR(2 downto 0) => B"000",
+      ADDRBWRADDR(15) => '1',
+      ADDRBWRADDR(14 downto 3) => wave02AddressB(11 downto 0),
+      ADDRBWRADDR(2 downto 0) => B"000",
+      CASCADEINA => '1',
+      CASCADEINB => '1',
+      CASCADEOUTA => NLW_Ram11_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram11_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram11_reg_0_DBITERR_UNCONNECTED,
+      DIADI(31 downto 8) => B"000000000000000000000000",
+      DIADI(7 downto 0) => inWave3(7 downto 0),
+      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
+      DIPADIP(3 downto 1) => B"000",
+      DIPADIP(0) => inWave3(8),
+      DIPBDIP(3 downto 0) => B"0001",
+      DOADO(31 downto 0) => NLW_Ram11_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram11_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave02(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram11_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram11_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave02(8),
+      ECCPARITY(7 downto 0) => NLW_Ram11_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      INJECTDBITERR => NLW_Ram11_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram11_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram11_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      SBITERR => NLW_Ram11_reg_0_SBITERR_UNCONNECTED,
+      WEA(3 downto 0) => B"1111",
+      WEBWE(7 downto 0) => B"00000000"
+    );
+Ram11_reg_1: unisim.vcomponents.RAMB18E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"00000",
+      INIT_B => X"00000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 4,
+      READ_WIDTH_B => 4,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"00000",
+      SRVAL_B => X"00000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 4,
+      WRITE_WIDTH_B => 4
+    )
+        port map (
+      ADDRARDADDR(13 downto 2) => wave02Address(11 downto 0),
+      ADDRARDADDR(1 downto 0) => B"00",
+      ADDRBWRADDR(13 downto 2) => wave02AddressB(11 downto 0),
+      ADDRBWRADDR(1 downto 0) => B"00",
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DIADI(15 downto 3) => B"0000000000000",
+      DIADI(2 downto 0) => inWave3(11 downto 9),
+      DIBDI(15 downto 0) => B"0000000000000111",
+      DIPADIP(1 downto 0) => B"00",
+      DIPBDIP(1 downto 0) => B"00",
+      DOADO(15 downto 0) => NLW_Ram11_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram11_reg_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOBDO(2 downto 0) => wave02(11 downto 9),
+      DOPADOP(1 downto 0) => NLW_Ram11_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram11_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      WEA(1 downto 0) => B"11",
+      WEBWE(3 downto 0) => B"0000"
+    );
+Ram12_reg_0: unisim.vcomponents.RAMB36E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      EN_ECC_READ => false,
+      EN_ECC_WRITE => false,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"000000000",
+      INIT_B => X"000000000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_EXTENSION_A => "NONE",
+      RAM_EXTENSION_B => "NONE",
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 9,
+      READ_WIDTH_B => 9,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"000000000",
+      SRVAL_B => X"000000000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 9,
+      WRITE_WIDTH_B => 9
+    )
+        port map (
+      ADDRARDADDR(15) => '1',
+      ADDRARDADDR(14 downto 3) => wave03Address(11 downto 0),
+      ADDRARDADDR(2 downto 0) => B"000",
+      ADDRBWRADDR(15) => '1',
+      ADDRBWRADDR(14 downto 3) => wave03AddressB(11 downto 0),
+      ADDRBWRADDR(2 downto 0) => B"000",
+      CASCADEINA => '1',
+      CASCADEINB => '1',
+      CASCADEOUTA => NLW_Ram12_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram12_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram12_reg_0_DBITERR_UNCONNECTED,
+      DIADI(31 downto 8) => B"000000000000000000000000",
+      DIADI(7 downto 0) => inWave3(7 downto 0),
+      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
+      DIPADIP(3 downto 1) => B"000",
+      DIPADIP(0) => inWave3(8),
+      DIPBDIP(3 downto 0) => B"0001",
+      DOADO(31 downto 0) => NLW_Ram12_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram12_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave03(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram12_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram12_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave03(8),
+      ECCPARITY(7 downto 0) => NLW_Ram12_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      INJECTDBITERR => NLW_Ram12_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram12_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram12_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      SBITERR => NLW_Ram12_reg_0_SBITERR_UNCONNECTED,
+      WEA(3 downto 0) => B"1111",
+      WEBWE(7 downto 0) => B"00000000"
+    );
+Ram12_reg_1: unisim.vcomponents.RAMB18E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"00000",
+      INIT_B => X"00000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 4,
+      READ_WIDTH_B => 4,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"00000",
+      SRVAL_B => X"00000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 4,
+      WRITE_WIDTH_B => 4
+    )
+        port map (
+      ADDRARDADDR(13 downto 2) => wave03Address(11 downto 0),
+      ADDRARDADDR(1 downto 0) => B"00",
+      ADDRBWRADDR(13 downto 2) => wave03AddressB(11 downto 0),
+      ADDRBWRADDR(1 downto 0) => B"00",
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DIADI(15 downto 3) => B"0000000000000",
+      DIADI(2 downto 0) => inWave3(11 downto 9),
+      DIBDI(15 downto 0) => B"0000000000000111",
+      DIPADIP(1 downto 0) => B"00",
+      DIPBDIP(1 downto 0) => B"00",
+      DOADO(15 downto 0) => NLW_Ram12_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram12_reg_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOBDO(2 downto 0) => wave03(11 downto 9),
+      DOPADOP(1 downto 0) => NLW_Ram12_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram12_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      WEA(1 downto 0) => B"11",
+      WEBWE(3 downto 0) => B"0000"
+    );
+Ram1_reg_0: unisim.vcomponents.RAMB36E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -1088,40 +1770,40 @@ Ram1_reg_2_0: unisim.vcomponents.RAMB36E1
       ADDRBWRADDR(2 downto 0) => B"000",
       CASCADEINA => '1',
       CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram1_reg_2_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram1_reg_2_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram1_reg_2_0_DBITERR_UNCONNECTED,
+      CASCADEOUTA => NLW_Ram1_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram1_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram1_reg_0_DBITERR_UNCONNECTED,
       DIADI(31 downto 8) => B"000000000000000000000000",
       DIADI(7 downto 0) => inWave1(7 downto 0),
       DIBDI(31 downto 0) => B"00000000000000000000000011111111",
       DIPADIP(3 downto 1) => B"000",
       DIPADIP(0) => inWave1(8),
       DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram1_reg_2_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram1_reg_2_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOADO(31 downto 0) => NLW_Ram1_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram1_reg_0_DOBDO_UNCONNECTED(31 downto 8),
       DOBDO(7 downto 0) => waveRef0(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram1_reg_2_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram1_reg_2_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPADOP(3 downto 0) => NLW_Ram1_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram1_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
       DOPBDOP(0) => waveRef0(8),
-      ECCPARITY(7 downto 0) => NLW_Ram1_reg_2_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ECCPARITY(7 downto 0) => NLW_Ram1_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram1_reg_2_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram1_reg_2_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram1_reg_2_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      INJECTDBITERR => NLW_Ram1_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram1_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram1_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
-      SBITERR => NLW_Ram1_reg_2_0_SBITERR_UNCONNECTED,
+      SBITERR => NLW_Ram1_reg_0_SBITERR_UNCONNECTED,
       WEA(3 downto 0) => B"1111",
       WEBWE(7 downto 0) => B"00000000"
     );
-Ram1_reg_2_1: unisim.vcomponents.RAMB18E1
+Ram1_reg_1: unisim.vcomponents.RAMB18E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -1221,18 +1903,18 @@ Ram1_reg_2_1: unisim.vcomponents.RAMB18E1
       ADDRARDADDR(1 downto 0) => B"00",
       ADDRBWRADDR(13 downto 2) => waveRef0AddressB(11 downto 0),
       ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
       DIADI(15 downto 3) => B"0000000000000",
       DIADI(2 downto 0) => inWave1(11 downto 9),
       DIBDI(15 downto 0) => B"0000000000000111",
       DIPADIP(1 downto 0) => B"00",
       DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram1_reg_2_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram1_reg_2_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOADO(15 downto 0) => NLW_Ram1_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram1_reg_1_DOBDO_UNCONNECTED(15 downto 3),
       DOBDO(2 downto 0) => waveRef0(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram1_reg_2_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram1_reg_2_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      DOPADOP(1 downto 0) => NLW_Ram1_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram1_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
       REGCEAREGCE => '0',
@@ -1244,679 +1926,7 @@ Ram1_reg_2_1: unisim.vcomponents.RAMB18E1
       WEA(1 downto 0) => B"11",
       WEBWE(3 downto 0) => B"0000"
     );
-Ram1_reg_3_0: unisim.vcomponents.RAMB36E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      EN_ECC_READ => false,
-      EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"000000000",
-      INIT_B => X"000000000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_EXTENSION_A => "NONE",
-      RAM_EXTENSION_B => "NONE",
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 9,
-      READ_WIDTH_B => 9,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"000000000",
-      SRVAL_B => X"000000000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 9,
-      WRITE_WIDTH_B => 9
-    )
-        port map (
-      ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef0Address(11 downto 0),
-      ADDRARDADDR(2 downto 0) => B"000",
-      ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave0AddressB(11 downto 0),
-      ADDRBWRADDR(2 downto 0) => B"000",
-      CASCADEINA => '1',
-      CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram1_reg_3_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram1_reg_3_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram1_reg_3_0_DBITERR_UNCONNECTED,
-      DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
-      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
-      DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
-      DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram1_reg_3_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram1_reg_3_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave0(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram1_reg_3_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram1_reg_3_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave0(8),
-      ECCPARITY(7 downto 0) => NLW_Ram1_reg_3_0_ECCPARITY_UNCONNECTED(7 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram1_reg_3_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram1_reg_3_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram1_reg_3_0_RDADDRECC_UNCONNECTED(8 downto 0),
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      SBITERR => NLW_Ram1_reg_3_0_SBITERR_UNCONNECTED,
-      WEA(3 downto 0) => B"1111",
-      WEBWE(7 downto 0) => B"00000000"
-    );
-Ram1_reg_3_1: unisim.vcomponents.RAMB18E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"00000",
-      INIT_B => X"00000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 4,
-      READ_WIDTH_B => 4,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"00000",
-      SRVAL_B => X"00000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 4,
-      WRITE_WIDTH_B => 4
-    )
-        port map (
-      ADDRARDADDR(13 downto 2) => waveRef0Address(11 downto 0),
-      ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave0AddressB(11 downto 0),
-      ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
-      DIBDI(15 downto 0) => B"0000000000000111",
-      DIPADIP(1 downto 0) => B"00",
-      DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram1_reg_3_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram1_reg_3_1_DOBDO_UNCONNECTED(15 downto 3),
-      DOBDO(2 downto 0) => wave0(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram1_reg_3_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram1_reg_3_1_DOPBDOP_UNCONNECTED(1 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      WEA(1 downto 0) => B"11",
-      WEBWE(3 downto 0) => B"0000"
-    );
-Ram2_reg_1_0: unisim.vcomponents.RAMB36E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      EN_ECC_READ => false,
-      EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"000000000",
-      INIT_B => X"000000000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_EXTENSION_A => "NONE",
-      RAM_EXTENSION_B => "NONE",
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 9,
-      READ_WIDTH_B => 9,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"000000000",
-      SRVAL_B => X"000000000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 9,
-      WRITE_WIDTH_B => 9
-    )
-        port map (
-      ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef1Address(11 downto 0),
-      ADDRARDADDR(2 downto 0) => B"000",
-      ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave01AddressB(11 downto 0),
-      ADDRBWRADDR(2 downto 0) => B"000",
-      CASCADEINA => '1',
-      CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram2_reg_1_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram2_reg_1_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram2_reg_1_0_DBITERR_UNCONNECTED,
-      DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
-      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
-      DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
-      DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram2_reg_1_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram2_reg_1_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave01(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram2_reg_1_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram2_reg_1_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave01(8),
-      ECCPARITY(7 downto 0) => NLW_Ram2_reg_1_0_ECCPARITY_UNCONNECTED(7 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram2_reg_1_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram2_reg_1_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram2_reg_1_0_RDADDRECC_UNCONNECTED(8 downto 0),
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      SBITERR => NLW_Ram2_reg_1_0_SBITERR_UNCONNECTED,
-      WEA(3 downto 0) => B"1111",
-      WEBWE(7 downto 0) => B"00000000"
-    );
-Ram2_reg_1_1: unisim.vcomponents.RAMB18E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"00000",
-      INIT_B => X"00000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 4,
-      READ_WIDTH_B => 4,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"00000",
-      SRVAL_B => X"00000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 4,
-      WRITE_WIDTH_B => 4
-    )
-        port map (
-      ADDRARDADDR(13 downto 2) => waveRef1Address(11 downto 0),
-      ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave01AddressB(11 downto 0),
-      ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
-      DIBDI(15 downto 0) => B"0000000000000111",
-      DIPADIP(1 downto 0) => B"00",
-      DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram2_reg_1_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram2_reg_1_1_DOBDO_UNCONNECTED(15 downto 3),
-      DOBDO(2 downto 0) => wave01(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram2_reg_1_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram2_reg_1_1_DOPBDOP_UNCONNECTED(1 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      WEA(1 downto 0) => B"11",
-      WEBWE(3 downto 0) => B"0000"
-    );
-Ram2_reg_2_0: unisim.vcomponents.RAMB36E1
+Ram2_reg_0: unisim.vcomponents.RAMB36E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -2096,40 +2106,40 @@ Ram2_reg_2_0: unisim.vcomponents.RAMB36E1
       ADDRBWRADDR(2 downto 0) => B"000",
       CASCADEINA => '1',
       CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram2_reg_2_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram2_reg_2_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram2_reg_2_0_DBITERR_UNCONNECTED,
+      CASCADEOUTA => NLW_Ram2_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram2_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram2_reg_0_DBITERR_UNCONNECTED,
       DIADI(31 downto 8) => B"000000000000000000000000",
       DIADI(7 downto 0) => inWave1(7 downto 0),
       DIBDI(31 downto 0) => B"00000000000000000000000011111111",
       DIPADIP(3 downto 1) => B"000",
       DIPADIP(0) => inWave1(8),
       DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram2_reg_2_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram2_reg_2_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOADO(31 downto 0) => NLW_Ram2_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram2_reg_0_DOBDO_UNCONNECTED(31 downto 8),
       DOBDO(7 downto 0) => waveRef1(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram2_reg_2_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram2_reg_2_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPADOP(3 downto 0) => NLW_Ram2_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram2_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
       DOPBDOP(0) => waveRef1(8),
-      ECCPARITY(7 downto 0) => NLW_Ram2_reg_2_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ECCPARITY(7 downto 0) => NLW_Ram2_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram2_reg_2_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram2_reg_2_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram2_reg_2_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      INJECTDBITERR => NLW_Ram2_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram2_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram2_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
-      SBITERR => NLW_Ram2_reg_2_0_SBITERR_UNCONNECTED,
+      SBITERR => NLW_Ram2_reg_0_SBITERR_UNCONNECTED,
       WEA(3 downto 0) => B"1111",
       WEBWE(7 downto 0) => B"00000000"
     );
-Ram2_reg_2_1: unisim.vcomponents.RAMB18E1
+Ram2_reg_1: unisim.vcomponents.RAMB18E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -2229,18 +2239,18 @@ Ram2_reg_2_1: unisim.vcomponents.RAMB18E1
       ADDRARDADDR(1 downto 0) => B"00",
       ADDRBWRADDR(13 downto 2) => waveRef1AddressB(11 downto 0),
       ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
       DIADI(15 downto 3) => B"0000000000000",
       DIADI(2 downto 0) => inWave1(11 downto 9),
       DIBDI(15 downto 0) => B"0000000000000111",
       DIPADIP(1 downto 0) => B"00",
       DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram2_reg_2_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram2_reg_2_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOADO(15 downto 0) => NLW_Ram2_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram2_reg_1_DOBDO_UNCONNECTED(15 downto 3),
       DOBDO(2 downto 0) => waveRef1(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram2_reg_2_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram2_reg_2_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      DOPADOP(1 downto 0) => NLW_Ram2_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram2_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
       REGCEAREGCE => '0',
@@ -2252,679 +2262,7 @@ Ram2_reg_2_1: unisim.vcomponents.RAMB18E1
       WEA(1 downto 0) => B"11",
       WEBWE(3 downto 0) => B"0000"
     );
-Ram2_reg_3_0: unisim.vcomponents.RAMB36E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      EN_ECC_READ => false,
-      EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"000000000",
-      INIT_B => X"000000000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_EXTENSION_A => "NONE",
-      RAM_EXTENSION_B => "NONE",
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 9,
-      READ_WIDTH_B => 9,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"000000000",
-      SRVAL_B => X"000000000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 9,
-      WRITE_WIDTH_B => 9
-    )
-        port map (
-      ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef1Address(11 downto 0),
-      ADDRARDADDR(2 downto 0) => B"000",
-      ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave1AddressB(11 downto 0),
-      ADDRBWRADDR(2 downto 0) => B"000",
-      CASCADEINA => '1',
-      CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram2_reg_3_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram2_reg_3_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram2_reg_3_0_DBITERR_UNCONNECTED,
-      DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
-      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
-      DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
-      DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram2_reg_3_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram2_reg_3_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave1(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram2_reg_3_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram2_reg_3_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave1(8),
-      ECCPARITY(7 downto 0) => NLW_Ram2_reg_3_0_ECCPARITY_UNCONNECTED(7 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram2_reg_3_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram2_reg_3_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram2_reg_3_0_RDADDRECC_UNCONNECTED(8 downto 0),
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      SBITERR => NLW_Ram2_reg_3_0_SBITERR_UNCONNECTED,
-      WEA(3 downto 0) => B"1111",
-      WEBWE(7 downto 0) => B"00000000"
-    );
-Ram2_reg_3_1: unisim.vcomponents.RAMB18E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"00000",
-      INIT_B => X"00000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 4,
-      READ_WIDTH_B => 4,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"00000",
-      SRVAL_B => X"00000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 4,
-      WRITE_WIDTH_B => 4
-    )
-        port map (
-      ADDRARDADDR(13 downto 2) => waveRef1Address(11 downto 0),
-      ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave1AddressB(11 downto 0),
-      ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
-      DIBDI(15 downto 0) => B"0000000000000111",
-      DIPADIP(1 downto 0) => B"00",
-      DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram2_reg_3_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram2_reg_3_1_DOBDO_UNCONNECTED(15 downto 3),
-      DOBDO(2 downto 0) => wave1(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram2_reg_3_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram2_reg_3_1_DOPBDOP_UNCONNECTED(1 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      WEA(1 downto 0) => B"11",
-      WEBWE(3 downto 0) => B"0000"
-    );
-Ram3_reg_1_0: unisim.vcomponents.RAMB36E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      EN_ECC_READ => false,
-      EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"000000000",
-      INIT_B => X"000000000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_EXTENSION_A => "NONE",
-      RAM_EXTENSION_B => "NONE",
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 9,
-      READ_WIDTH_B => 9,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"000000000",
-      SRVAL_B => X"000000000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 9,
-      WRITE_WIDTH_B => 9
-    )
-        port map (
-      ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef2Address(11 downto 0),
-      ADDRARDADDR(2 downto 0) => B"000",
-      ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave02AddressB(11 downto 0),
-      ADDRBWRADDR(2 downto 0) => B"000",
-      CASCADEINA => '1',
-      CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram3_reg_1_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram3_reg_1_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram3_reg_1_0_DBITERR_UNCONNECTED,
-      DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
-      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
-      DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
-      DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram3_reg_1_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram3_reg_1_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave02(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram3_reg_1_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram3_reg_1_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave02(8),
-      ECCPARITY(7 downto 0) => NLW_Ram3_reg_1_0_ECCPARITY_UNCONNECTED(7 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram3_reg_1_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram3_reg_1_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram3_reg_1_0_RDADDRECC_UNCONNECTED(8 downto 0),
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      SBITERR => NLW_Ram3_reg_1_0_SBITERR_UNCONNECTED,
-      WEA(3 downto 0) => B"1111",
-      WEBWE(7 downto 0) => B"00000000"
-    );
-Ram3_reg_1_1: unisim.vcomponents.RAMB18E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"00000",
-      INIT_B => X"00000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 4,
-      READ_WIDTH_B => 4,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"00000",
-      SRVAL_B => X"00000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 4,
-      WRITE_WIDTH_B => 4
-    )
-        port map (
-      ADDRARDADDR(13 downto 2) => waveRef2Address(11 downto 0),
-      ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave02AddressB(11 downto 0),
-      ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
-      DIBDI(15 downto 0) => B"0000000000000111",
-      DIPADIP(1 downto 0) => B"00",
-      DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram3_reg_1_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram3_reg_1_1_DOBDO_UNCONNECTED(15 downto 3),
-      DOBDO(2 downto 0) => wave02(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram3_reg_1_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram3_reg_1_1_DOPBDOP_UNCONNECTED(1 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      WEA(1 downto 0) => B"11",
-      WEBWE(3 downto 0) => B"0000"
-    );
-Ram3_reg_2_0: unisim.vcomponents.RAMB36E1
+Ram3_reg_0: unisim.vcomponents.RAMB36E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -3104,40 +2442,40 @@ Ram3_reg_2_0: unisim.vcomponents.RAMB36E1
       ADDRBWRADDR(2 downto 0) => B"000",
       CASCADEINA => '1',
       CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram3_reg_2_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram3_reg_2_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram3_reg_2_0_DBITERR_UNCONNECTED,
+      CASCADEOUTA => NLW_Ram3_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram3_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram3_reg_0_DBITERR_UNCONNECTED,
       DIADI(31 downto 8) => B"000000000000000000000000",
       DIADI(7 downto 0) => inWave1(7 downto 0),
       DIBDI(31 downto 0) => B"00000000000000000000000011111111",
       DIPADIP(3 downto 1) => B"000",
       DIPADIP(0) => inWave1(8),
       DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram3_reg_2_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram3_reg_2_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOADO(31 downto 0) => NLW_Ram3_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram3_reg_0_DOBDO_UNCONNECTED(31 downto 8),
       DOBDO(7 downto 0) => waveRef2(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram3_reg_2_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram3_reg_2_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPADOP(3 downto 0) => NLW_Ram3_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram3_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
       DOPBDOP(0) => waveRef2(8),
-      ECCPARITY(7 downto 0) => NLW_Ram3_reg_2_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ECCPARITY(7 downto 0) => NLW_Ram3_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram3_reg_2_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram3_reg_2_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram3_reg_2_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      INJECTDBITERR => NLW_Ram3_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram3_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram3_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
-      SBITERR => NLW_Ram3_reg_2_0_SBITERR_UNCONNECTED,
+      SBITERR => NLW_Ram3_reg_0_SBITERR_UNCONNECTED,
       WEA(3 downto 0) => B"1111",
       WEBWE(7 downto 0) => B"00000000"
     );
-Ram3_reg_2_1: unisim.vcomponents.RAMB18E1
+Ram3_reg_1: unisim.vcomponents.RAMB18E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -3237,18 +2575,18 @@ Ram3_reg_2_1: unisim.vcomponents.RAMB18E1
       ADDRARDADDR(1 downto 0) => B"00",
       ADDRBWRADDR(13 downto 2) => waveRef2AddressB(11 downto 0),
       ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
       DIADI(15 downto 3) => B"0000000000000",
       DIADI(2 downto 0) => inWave1(11 downto 9),
       DIBDI(15 downto 0) => B"0000000000000111",
       DIPADIP(1 downto 0) => B"00",
       DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram3_reg_2_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram3_reg_2_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOADO(15 downto 0) => NLW_Ram3_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram3_reg_1_DOBDO_UNCONNECTED(15 downto 3),
       DOBDO(2 downto 0) => waveRef2(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram3_reg_2_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram3_reg_2_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      DOPADOP(1 downto 0) => NLW_Ram3_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram3_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
       REGCEAREGCE => '0',
@@ -3260,679 +2598,7 @@ Ram3_reg_2_1: unisim.vcomponents.RAMB18E1
       WEA(1 downto 0) => B"11",
       WEBWE(3 downto 0) => B"0000"
     );
-Ram3_reg_3_0: unisim.vcomponents.RAMB36E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      EN_ECC_READ => false,
-      EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"000000000",
-      INIT_B => X"000000000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_EXTENSION_A => "NONE",
-      RAM_EXTENSION_B => "NONE",
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 9,
-      READ_WIDTH_B => 9,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"000000000",
-      SRVAL_B => X"000000000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 9,
-      WRITE_WIDTH_B => 9
-    )
-        port map (
-      ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef2Address(11 downto 0),
-      ADDRARDADDR(2 downto 0) => B"000",
-      ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave2AddressB(11 downto 0),
-      ADDRBWRADDR(2 downto 0) => B"000",
-      CASCADEINA => '1',
-      CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram3_reg_3_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram3_reg_3_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram3_reg_3_0_DBITERR_UNCONNECTED,
-      DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
-      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
-      DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
-      DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram3_reg_3_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram3_reg_3_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave2(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram3_reg_3_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram3_reg_3_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave2(8),
-      ECCPARITY(7 downto 0) => NLW_Ram3_reg_3_0_ECCPARITY_UNCONNECTED(7 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram3_reg_3_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram3_reg_3_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram3_reg_3_0_RDADDRECC_UNCONNECTED(8 downto 0),
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      SBITERR => NLW_Ram3_reg_3_0_SBITERR_UNCONNECTED,
-      WEA(3 downto 0) => B"1111",
-      WEBWE(7 downto 0) => B"00000000"
-    );
-Ram3_reg_3_1: unisim.vcomponents.RAMB18E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"00000",
-      INIT_B => X"00000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 4,
-      READ_WIDTH_B => 4,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"00000",
-      SRVAL_B => X"00000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 4,
-      WRITE_WIDTH_B => 4
-    )
-        port map (
-      ADDRARDADDR(13 downto 2) => waveRef2Address(11 downto 0),
-      ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave2AddressB(11 downto 0),
-      ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
-      DIBDI(15 downto 0) => B"0000000000000111",
-      DIPADIP(1 downto 0) => B"00",
-      DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram3_reg_3_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram3_reg_3_1_DOBDO_UNCONNECTED(15 downto 3),
-      DOBDO(2 downto 0) => wave2(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram3_reg_3_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram3_reg_3_1_DOPBDOP_UNCONNECTED(1 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      WEA(1 downto 0) => B"11",
-      WEBWE(3 downto 0) => B"0000"
-    );
-Ram4_reg_1_0: unisim.vcomponents.RAMB36E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      EN_ECC_READ => false,
-      EN_ECC_WRITE => false,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"000000000",
-      INIT_B => X"000000000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_EXTENSION_A => "NONE",
-      RAM_EXTENSION_B => "NONE",
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 9,
-      READ_WIDTH_B => 9,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"000000000",
-      SRVAL_B => X"000000000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 9,
-      WRITE_WIDTH_B => 9
-    )
-        port map (
-      ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef3Address(11 downto 0),
-      ADDRARDADDR(2 downto 0) => B"000",
-      ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave03AddressB(11 downto 0),
-      ADDRBWRADDR(2 downto 0) => B"000",
-      CASCADEINA => '1',
-      CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram4_reg_1_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram4_reg_1_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram4_reg_1_0_DBITERR_UNCONNECTED,
-      DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
-      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
-      DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
-      DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram4_reg_1_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram4_reg_1_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave03(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram4_reg_1_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram4_reg_1_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave03(8),
-      ECCPARITY(7 downto 0) => NLW_Ram4_reg_1_0_ECCPARITY_UNCONNECTED(7 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram4_reg_1_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram4_reg_1_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram4_reg_1_0_RDADDRECC_UNCONNECTED(8 downto 0),
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      SBITERR => NLW_Ram4_reg_1_0_SBITERR_UNCONNECTED,
-      WEA(3 downto 0) => B"1111",
-      WEBWE(7 downto 0) => B"00000000"
-    );
-Ram4_reg_1_1: unisim.vcomponents.RAMB18E1
-    generic map(
-      DOA_REG => 0,
-      DOB_REG => 0,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"00000",
-      INIT_B => X"00000",
-      IS_CLKARDCLK_INVERTED => '1',
-      IS_CLKBWRCLK_INVERTED => '1',
-      RAM_MODE => "TDP",
-      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
-      READ_WIDTH_A => 4,
-      READ_WIDTH_B => 4,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"00000",
-      SRVAL_B => X"00000",
-      WRITE_MODE_A => "READ_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 4,
-      WRITE_WIDTH_B => 4
-    )
-        port map (
-      ADDRARDADDR(13 downto 2) => waveRef3Address(11 downto 0),
-      ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave03AddressB(11 downto 0),
-      ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
-      DIBDI(15 downto 0) => B"0000000000000111",
-      DIPADIP(1 downto 0) => B"00",
-      DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram4_reg_1_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram4_reg_1_1_DOBDO_UNCONNECTED(15 downto 3),
-      DOBDO(2 downto 0) => wave03(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram4_reg_1_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram4_reg_1_1_DOPBDOP_UNCONNECTED(1 downto 0),
-      ENARDEN => '1',
-      ENBWREN => '1',
-      REGCEAREGCE => '0',
-      REGCEB => '0',
-      RSTRAMARSTRAM => '0',
-      RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
-      WEA(1 downto 0) => B"11",
-      WEBWE(3 downto 0) => B"0000"
-    );
-Ram4_reg_2_0: unisim.vcomponents.RAMB36E1
+Ram4_reg_0: unisim.vcomponents.RAMB36E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -4112,40 +2778,40 @@ Ram4_reg_2_0: unisim.vcomponents.RAMB36E1
       ADDRBWRADDR(2 downto 0) => B"000",
       CASCADEINA => '1',
       CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram4_reg_2_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram4_reg_2_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram4_reg_2_0_DBITERR_UNCONNECTED,
+      CASCADEOUTA => NLW_Ram4_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram4_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram4_reg_0_DBITERR_UNCONNECTED,
       DIADI(31 downto 8) => B"000000000000000000000000",
       DIADI(7 downto 0) => inWave1(7 downto 0),
       DIBDI(31 downto 0) => B"00000000000000000000000011111111",
       DIPADIP(3 downto 1) => B"000",
       DIPADIP(0) => inWave1(8),
       DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram4_reg_2_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram4_reg_2_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOADO(31 downto 0) => NLW_Ram4_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram4_reg_0_DOBDO_UNCONNECTED(31 downto 8),
       DOBDO(7 downto 0) => waveRef3(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram4_reg_2_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram4_reg_2_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPADOP(3 downto 0) => NLW_Ram4_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram4_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
       DOPBDOP(0) => waveRef3(8),
-      ECCPARITY(7 downto 0) => NLW_Ram4_reg_2_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ECCPARITY(7 downto 0) => NLW_Ram4_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram4_reg_2_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram4_reg_2_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram4_reg_2_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      INJECTDBITERR => NLW_Ram4_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram4_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram4_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
-      SBITERR => NLW_Ram4_reg_2_0_SBITERR_UNCONNECTED,
+      SBITERR => NLW_Ram4_reg_0_SBITERR_UNCONNECTED,
       WEA(3 downto 0) => B"1111",
       WEBWE(7 downto 0) => B"00000000"
     );
-Ram4_reg_2_1: unisim.vcomponents.RAMB18E1
+Ram4_reg_1: unisim.vcomponents.RAMB18E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -4245,18 +2911,18 @@ Ram4_reg_2_1: unisim.vcomponents.RAMB18E1
       ADDRARDADDR(1 downto 0) => B"00",
       ADDRBWRADDR(13 downto 2) => waveRef3AddressB(11 downto 0),
       ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
       DIADI(15 downto 3) => B"0000000000000",
       DIADI(2 downto 0) => inWave1(11 downto 9),
       DIBDI(15 downto 0) => B"0000000000000111",
       DIPADIP(1 downto 0) => B"00",
       DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram4_reg_2_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram4_reg_2_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOADO(15 downto 0) => NLW_Ram4_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram4_reg_1_DOBDO_UNCONNECTED(15 downto 3),
       DOBDO(2 downto 0) => waveRef3(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram4_reg_2_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram4_reg_2_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      DOPADOP(1 downto 0) => NLW_Ram4_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram4_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
       REGCEAREGCE => '0',
@@ -4268,7 +2934,7 @@ Ram4_reg_2_1: unisim.vcomponents.RAMB18E1
       WEA(1 downto 0) => B"11",
       WEBWE(3 downto 0) => B"0000"
     );
-Ram4_reg_3_0: unisim.vcomponents.RAMB36E1
+Ram5_reg_0: unisim.vcomponents.RAMB36E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -4441,47 +3107,47 @@ Ram4_reg_3_0: unisim.vcomponents.RAMB36E1
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => waveRef3Address(11 downto 0),
+      ADDRARDADDR(14 downto 3) => wave0Address(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"000",
       ADDRBWRADDR(15) => '1',
-      ADDRBWRADDR(14 downto 3) => wave3AddressB(11 downto 0),
+      ADDRBWRADDR(14 downto 3) => wave0AddressB(11 downto 0),
       ADDRBWRADDR(2 downto 0) => B"000",
       CASCADEINA => '1',
       CASCADEINB => '1',
-      CASCADEOUTA => NLW_Ram4_reg_3_0_CASCADEOUTA_UNCONNECTED,
-      CASCADEOUTB => NLW_Ram4_reg_3_0_CASCADEOUTB_UNCONNECTED,
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
-      DBITERR => NLW_Ram4_reg_3_0_DBITERR_UNCONNECTED,
+      CASCADEOUTA => NLW_Ram5_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram5_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram5_reg_0_DBITERR_UNCONNECTED,
       DIADI(31 downto 8) => B"000000000000000000000000",
-      DIADI(7 downto 0) => inWave1(7 downto 0),
+      DIADI(7 downto 0) => inWave2(7 downto 0),
       DIBDI(31 downto 0) => B"00000000000000000000000011111111",
       DIPADIP(3 downto 1) => B"000",
-      DIPADIP(0) => inWave1(8),
+      DIPADIP(0) => inWave2(8),
       DIPBDIP(3 downto 0) => B"0001",
-      DOADO(31 downto 0) => NLW_Ram4_reg_3_0_DOADO_UNCONNECTED(31 downto 0),
-      DOBDO(31 downto 8) => NLW_Ram4_reg_3_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7 downto 0) => wave3(7 downto 0),
-      DOPADOP(3 downto 0) => NLW_Ram4_reg_3_0_DOPADOP_UNCONNECTED(3 downto 0),
-      DOPBDOP(3 downto 1) => NLW_Ram4_reg_3_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => wave3(8),
-      ECCPARITY(7 downto 0) => NLW_Ram4_reg_3_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      DOADO(31 downto 0) => NLW_Ram5_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram5_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave0(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram5_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram5_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave0(8),
+      ECCPARITY(7 downto 0) => NLW_Ram5_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
-      INJECTDBITERR => NLW_Ram4_reg_3_0_INJECTDBITERR_UNCONNECTED,
-      INJECTSBITERR => NLW_Ram4_reg_3_0_INJECTSBITERR_UNCONNECTED,
-      RDADDRECC(8 downto 0) => NLW_Ram4_reg_3_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      INJECTDBITERR => NLW_Ram5_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram5_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram5_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
-      SBITERR => NLW_Ram4_reg_3_0_SBITERR_UNCONNECTED,
+      SBITERR => NLW_Ram5_reg_0_SBITERR_UNCONNECTED,
       WEA(3 downto 0) => B"1111",
       WEBWE(7 downto 0) => B"00000000"
     );
-Ram4_reg_3_1: unisim.vcomponents.RAMB18E1
+Ram5_reg_1: unisim.vcomponents.RAMB18E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -4577,22 +3243,1366 @@ Ram4_reg_3_1: unisim.vcomponents.RAMB18E1
       WRITE_WIDTH_B => 4
     )
         port map (
-      ADDRARDADDR(13 downto 2) => waveRef3Address(11 downto 0),
+      ADDRARDADDR(13 downto 2) => wave0Address(11 downto 0),
       ADDRARDADDR(1 downto 0) => B"00",
-      ADDRBWRADDR(13 downto 2) => wave3AddressB(11 downto 0),
+      ADDRBWRADDR(13 downto 2) => wave0AddressB(11 downto 0),
       ADDRBWRADDR(1 downto 0) => B"00",
-      CLKARDCLK => Ram1_reg_3_1_0,
-      CLKBWRCLK => Ram1_reg_3_1_1,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
       DIADI(15 downto 3) => B"0000000000000",
-      DIADI(2 downto 0) => inWave1(11 downto 9),
+      DIADI(2 downto 0) => inWave2(11 downto 9),
       DIBDI(15 downto 0) => B"0000000000000111",
       DIPADIP(1 downto 0) => B"00",
       DIPBDIP(1 downto 0) => B"00",
-      DOADO(15 downto 0) => NLW_Ram4_reg_3_1_DOADO_UNCONNECTED(15 downto 0),
-      DOBDO(15 downto 3) => NLW_Ram4_reg_3_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOADO(15 downto 0) => NLW_Ram5_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram5_reg_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOBDO(2 downto 0) => wave0(11 downto 9),
+      DOPADOP(1 downto 0) => NLW_Ram5_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram5_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      WEA(1 downto 0) => B"11",
+      WEBWE(3 downto 0) => B"0000"
+    );
+Ram6_reg_0: unisim.vcomponents.RAMB36E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      EN_ECC_READ => false,
+      EN_ECC_WRITE => false,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"000000000",
+      INIT_B => X"000000000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_EXTENSION_A => "NONE",
+      RAM_EXTENSION_B => "NONE",
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 9,
+      READ_WIDTH_B => 9,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"000000000",
+      SRVAL_B => X"000000000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 9,
+      WRITE_WIDTH_B => 9
+    )
+        port map (
+      ADDRARDADDR(15) => '1',
+      ADDRARDADDR(14 downto 3) => wave1Address(11 downto 0),
+      ADDRARDADDR(2 downto 0) => B"000",
+      ADDRBWRADDR(15) => '1',
+      ADDRBWRADDR(14 downto 3) => wave1AddressB(11 downto 0),
+      ADDRBWRADDR(2 downto 0) => B"000",
+      CASCADEINA => '1',
+      CASCADEINB => '1',
+      CASCADEOUTA => NLW_Ram6_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram6_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram6_reg_0_DBITERR_UNCONNECTED,
+      DIADI(31 downto 8) => B"000000000000000000000000",
+      DIADI(7 downto 0) => inWave2(7 downto 0),
+      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
+      DIPADIP(3 downto 1) => B"000",
+      DIPADIP(0) => inWave2(8),
+      DIPBDIP(3 downto 0) => B"0001",
+      DOADO(31 downto 0) => NLW_Ram6_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram6_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave1(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram6_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram6_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave1(8),
+      ECCPARITY(7 downto 0) => NLW_Ram6_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      INJECTDBITERR => NLW_Ram6_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram6_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram6_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      SBITERR => NLW_Ram6_reg_0_SBITERR_UNCONNECTED,
+      WEA(3 downto 0) => B"1111",
+      WEBWE(7 downto 0) => B"00000000"
+    );
+Ram6_reg_1: unisim.vcomponents.RAMB18E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"00000",
+      INIT_B => X"00000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 4,
+      READ_WIDTH_B => 4,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"00000",
+      SRVAL_B => X"00000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 4,
+      WRITE_WIDTH_B => 4
+    )
+        port map (
+      ADDRARDADDR(13 downto 2) => wave1Address(11 downto 0),
+      ADDRARDADDR(1 downto 0) => B"00",
+      ADDRBWRADDR(13 downto 2) => wave1AddressB(11 downto 0),
+      ADDRBWRADDR(1 downto 0) => B"00",
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DIADI(15 downto 3) => B"0000000000000",
+      DIADI(2 downto 0) => inWave2(11 downto 9),
+      DIBDI(15 downto 0) => B"0000000000000111",
+      DIPADIP(1 downto 0) => B"00",
+      DIPBDIP(1 downto 0) => B"00",
+      DOADO(15 downto 0) => NLW_Ram6_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram6_reg_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOBDO(2 downto 0) => wave1(11 downto 9),
+      DOPADOP(1 downto 0) => NLW_Ram6_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram6_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      WEA(1 downto 0) => B"11",
+      WEBWE(3 downto 0) => B"0000"
+    );
+Ram7_reg_0: unisim.vcomponents.RAMB36E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      EN_ECC_READ => false,
+      EN_ECC_WRITE => false,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"000000000",
+      INIT_B => X"000000000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_EXTENSION_A => "NONE",
+      RAM_EXTENSION_B => "NONE",
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 9,
+      READ_WIDTH_B => 9,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"000000000",
+      SRVAL_B => X"000000000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 9,
+      WRITE_WIDTH_B => 9
+    )
+        port map (
+      ADDRARDADDR(15) => '1',
+      ADDRARDADDR(14 downto 3) => wave2Address(11 downto 0),
+      ADDRARDADDR(2 downto 0) => B"000",
+      ADDRBWRADDR(15) => '1',
+      ADDRBWRADDR(14 downto 3) => wave2AddressB(11 downto 0),
+      ADDRBWRADDR(2 downto 0) => B"000",
+      CASCADEINA => '1',
+      CASCADEINB => '1',
+      CASCADEOUTA => NLW_Ram7_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram7_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram7_reg_0_DBITERR_UNCONNECTED,
+      DIADI(31 downto 8) => B"000000000000000000000000",
+      DIADI(7 downto 0) => inWave2(7 downto 0),
+      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
+      DIPADIP(3 downto 1) => B"000",
+      DIPADIP(0) => inWave2(8),
+      DIPBDIP(3 downto 0) => B"0001",
+      DOADO(31 downto 0) => NLW_Ram7_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram7_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave2(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram7_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram7_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave2(8),
+      ECCPARITY(7 downto 0) => NLW_Ram7_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      INJECTDBITERR => NLW_Ram7_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram7_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram7_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      SBITERR => NLW_Ram7_reg_0_SBITERR_UNCONNECTED,
+      WEA(3 downto 0) => B"1111",
+      WEBWE(7 downto 0) => B"00000000"
+    );
+Ram7_reg_1: unisim.vcomponents.RAMB18E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"00000",
+      INIT_B => X"00000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 4,
+      READ_WIDTH_B => 4,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"00000",
+      SRVAL_B => X"00000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 4,
+      WRITE_WIDTH_B => 4
+    )
+        port map (
+      ADDRARDADDR(13 downto 2) => wave2Address(11 downto 0),
+      ADDRARDADDR(1 downto 0) => B"00",
+      ADDRBWRADDR(13 downto 2) => wave2AddressB(11 downto 0),
+      ADDRBWRADDR(1 downto 0) => B"00",
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DIADI(15 downto 3) => B"0000000000000",
+      DIADI(2 downto 0) => inWave2(11 downto 9),
+      DIBDI(15 downto 0) => B"0000000000000111",
+      DIPADIP(1 downto 0) => B"00",
+      DIPBDIP(1 downto 0) => B"00",
+      DOADO(15 downto 0) => NLW_Ram7_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram7_reg_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOBDO(2 downto 0) => wave2(11 downto 9),
+      DOPADOP(1 downto 0) => NLW_Ram7_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram7_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      WEA(1 downto 0) => B"11",
+      WEBWE(3 downto 0) => B"0000"
+    );
+Ram8_reg_0: unisim.vcomponents.RAMB36E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      EN_ECC_READ => false,
+      EN_ECC_WRITE => false,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"000000000",
+      INIT_B => X"000000000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_EXTENSION_A => "NONE",
+      RAM_EXTENSION_B => "NONE",
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 9,
+      READ_WIDTH_B => 9,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"000000000",
+      SRVAL_B => X"000000000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 9,
+      WRITE_WIDTH_B => 9
+    )
+        port map (
+      ADDRARDADDR(15) => '1',
+      ADDRARDADDR(14 downto 3) => wave3Address(11 downto 0),
+      ADDRARDADDR(2 downto 0) => B"000",
+      ADDRBWRADDR(15) => '1',
+      ADDRBWRADDR(14 downto 3) => wave3AddressB(11 downto 0),
+      ADDRBWRADDR(2 downto 0) => B"000",
+      CASCADEINA => '1',
+      CASCADEINB => '1',
+      CASCADEOUTA => NLW_Ram8_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram8_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram8_reg_0_DBITERR_UNCONNECTED,
+      DIADI(31 downto 8) => B"000000000000000000000000",
+      DIADI(7 downto 0) => inWave2(7 downto 0),
+      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
+      DIPADIP(3 downto 1) => B"000",
+      DIPADIP(0) => inWave2(8),
+      DIPBDIP(3 downto 0) => B"0001",
+      DOADO(31 downto 0) => NLW_Ram8_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram8_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave3(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram8_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram8_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave3(8),
+      ECCPARITY(7 downto 0) => NLW_Ram8_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      INJECTDBITERR => NLW_Ram8_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram8_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram8_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      SBITERR => NLW_Ram8_reg_0_SBITERR_UNCONNECTED,
+      WEA(3 downto 0) => B"1111",
+      WEBWE(7 downto 0) => B"00000000"
+    );
+Ram8_reg_1: unisim.vcomponents.RAMB18E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"00000",
+      INIT_B => X"00000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 4,
+      READ_WIDTH_B => 4,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"00000",
+      SRVAL_B => X"00000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 4,
+      WRITE_WIDTH_B => 4
+    )
+        port map (
+      ADDRARDADDR(13 downto 2) => wave3Address(11 downto 0),
+      ADDRARDADDR(1 downto 0) => B"00",
+      ADDRBWRADDR(13 downto 2) => wave3AddressB(11 downto 0),
+      ADDRBWRADDR(1 downto 0) => B"00",
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DIADI(15 downto 3) => B"0000000000000",
+      DIADI(2 downto 0) => inWave2(11 downto 9),
+      DIBDI(15 downto 0) => B"0000000000000111",
+      DIPADIP(1 downto 0) => B"00",
+      DIPBDIP(1 downto 0) => B"00",
+      DOADO(15 downto 0) => NLW_Ram8_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram8_reg_1_DOBDO_UNCONNECTED(15 downto 3),
       DOBDO(2 downto 0) => wave3(11 downto 9),
-      DOPADOP(1 downto 0) => NLW_Ram4_reg_3_1_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_Ram4_reg_3_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      DOPADOP(1 downto 0) => NLW_Ram8_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram8_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      WEA(1 downto 0) => B"11",
+      WEBWE(3 downto 0) => B"0000"
+    );
+Ram9_reg_0: unisim.vcomponents.RAMB36E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      EN_ECC_READ => false,
+      EN_ECC_WRITE => false,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_40 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_41 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_42 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_43 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_44 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_45 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_46 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_47 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_48 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_49 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_4F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_50 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_51 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_52 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_53 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_54 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_55 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_56 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_57 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_58 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_59 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_5F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_60 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_61 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_62 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_63 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_64 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_65 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_66 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_67 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_68 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_69 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_6F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_70 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_71 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_72 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_73 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_74 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_75 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_76 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_77 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_78 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_79 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_7F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"000000000",
+      INIT_B => X"000000000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_EXTENSION_A => "NONE",
+      RAM_EXTENSION_B => "NONE",
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 9,
+      READ_WIDTH_B => 9,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"000000000",
+      SRVAL_B => X"000000000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 9,
+      WRITE_WIDTH_B => 9
+    )
+        port map (
+      ADDRARDADDR(15) => '1',
+      ADDRARDADDR(14 downto 3) => wave00Address(11 downto 0),
+      ADDRARDADDR(2 downto 0) => B"000",
+      ADDRBWRADDR(15) => '1',
+      ADDRBWRADDR(14 downto 3) => wave00AddressB(11 downto 0),
+      ADDRBWRADDR(2 downto 0) => B"000",
+      CASCADEINA => '1',
+      CASCADEINB => '1',
+      CASCADEOUTA => NLW_Ram9_reg_0_CASCADEOUTA_UNCONNECTED,
+      CASCADEOUTB => NLW_Ram9_reg_0_CASCADEOUTB_UNCONNECTED,
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DBITERR => NLW_Ram9_reg_0_DBITERR_UNCONNECTED,
+      DIADI(31 downto 8) => B"000000000000000000000000",
+      DIADI(7 downto 0) => inWave3(7 downto 0),
+      DIBDI(31 downto 0) => B"00000000000000000000000011111111",
+      DIPADIP(3 downto 1) => B"000",
+      DIPADIP(0) => inWave3(8),
+      DIPBDIP(3 downto 0) => B"0001",
+      DOADO(31 downto 0) => NLW_Ram9_reg_0_DOADO_UNCONNECTED(31 downto 0),
+      DOBDO(31 downto 8) => NLW_Ram9_reg_0_DOBDO_UNCONNECTED(31 downto 8),
+      DOBDO(7 downto 0) => wave00(7 downto 0),
+      DOPADOP(3 downto 0) => NLW_Ram9_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
+      DOPBDOP(3 downto 1) => NLW_Ram9_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
+      DOPBDOP(0) => wave00(8),
+      ECCPARITY(7 downto 0) => NLW_Ram9_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
+      ENARDEN => '1',
+      ENBWREN => '1',
+      INJECTDBITERR => NLW_Ram9_reg_0_INJECTDBITERR_UNCONNECTED,
+      INJECTSBITERR => NLW_Ram9_reg_0_INJECTSBITERR_UNCONNECTED,
+      RDADDRECC(8 downto 0) => NLW_Ram9_reg_0_RDADDRECC_UNCONNECTED(8 downto 0),
+      REGCEAREGCE => '0',
+      REGCEB => '0',
+      RSTRAMARSTRAM => '0',
+      RSTRAMB => '0',
+      RSTREGARSTREG => '0',
+      RSTREGB => '0',
+      SBITERR => NLW_Ram9_reg_0_SBITERR_UNCONNECTED,
+      WEA(3 downto 0) => B"1111",
+      WEBWE(7 downto 0) => B"00000000"
+    );
+Ram9_reg_1: unisim.vcomponents.RAMB18E1
+    generic map(
+      DOA_REG => 0,
+      DOB_REG => 0,
+      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
+      INIT_A => X"00000",
+      INIT_B => X"00000",
+      IS_CLKARDCLK_INVERTED => '1',
+      IS_CLKBWRCLK_INVERTED => '1',
+      RAM_MODE => "TDP",
+      RDADDR_COLLISION_HWCONFIG => "DELAYED_WRITE",
+      READ_WIDTH_A => 4,
+      READ_WIDTH_B => 4,
+      RSTREG_PRIORITY_A => "RSTREG",
+      RSTREG_PRIORITY_B => "RSTREG",
+      SIM_COLLISION_CHECK => "ALL",
+      SIM_DEVICE => "7SERIES",
+      SRVAL_A => X"00000",
+      SRVAL_B => X"00000",
+      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_WIDTH_A => 4,
+      WRITE_WIDTH_B => 4
+    )
+        port map (
+      ADDRARDADDR(13 downto 2) => wave00Address(11 downto 0),
+      ADDRARDADDR(1 downto 0) => B"00",
+      ADDRBWRADDR(13 downto 2) => wave00AddressB(11 downto 0),
+      ADDRBWRADDR(1 downto 0) => B"00",
+      CLKARDCLK => Ram1_reg_1_0,
+      CLKBWRCLK => Ram1_reg_1_1,
+      DIADI(15 downto 3) => B"0000000000000",
+      DIADI(2 downto 0) => inWave3(11 downto 9),
+      DIBDI(15 downto 0) => B"0000000000000111",
+      DIPADIP(1 downto 0) => B"00",
+      DIPBDIP(1 downto 0) => B"00",
+      DOADO(15 downto 0) => NLW_Ram9_reg_1_DOADO_UNCONNECTED(15 downto 0),
+      DOBDO(15 downto 3) => NLW_Ram9_reg_1_DOBDO_UNCONNECTED(15 downto 3),
+      DOBDO(2 downto 0) => wave00(11 downto 9),
+      DOPADOP(1 downto 0) => NLW_Ram9_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_Ram9_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
       ENARDEN => '1',
       ENBWREN => '1',
       REGCEAREGCE => '0',
@@ -4675,24 +4685,34 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0 is
 begin
 inst: entity work.MicroBlaze_BlockRam_0_0_BlockRam
      port map (
-      Ram1_reg_3_1_0 => clk1Mhz,
-      Ram1_reg_3_1_1 => clk,
+      Ram1_reg_1_0 => clk1Mhz,
+      Ram1_reg_1_1 => clk,
       inWave1(11 downto 0) => inWave1(11 downto 0),
+      inWave2(11 downto 0) => inWave2(11 downto 0),
+      inWave3(11 downto 0) => inWave3(11 downto 0),
       wave0(11 downto 0) => wave0(11 downto 0),
       wave00(11 downto 0) => wave00(11 downto 0),
+      wave00Address(11 downto 0) => wave00Address(11 downto 0),
       wave00AddressB(11 downto 0) => wave00AddressB(11 downto 0),
       wave01(11 downto 0) => wave01(11 downto 0),
+      wave01Address(11 downto 0) => wave01Address(11 downto 0),
       wave01AddressB(11 downto 0) => wave01AddressB(11 downto 0),
       wave02(11 downto 0) => wave02(11 downto 0),
+      wave02Address(11 downto 0) => wave02Address(11 downto 0),
       wave02AddressB(11 downto 0) => wave02AddressB(11 downto 0),
       wave03(11 downto 0) => wave03(11 downto 0),
+      wave03Address(11 downto 0) => wave03Address(11 downto 0),
       wave03AddressB(11 downto 0) => wave03AddressB(11 downto 0),
+      wave0Address(11 downto 0) => wave0Address(11 downto 0),
       wave0AddressB(11 downto 0) => wave0AddressB(11 downto 0),
       wave1(11 downto 0) => wave1(11 downto 0),
+      wave1Address(11 downto 0) => wave1Address(11 downto 0),
       wave1AddressB(11 downto 0) => wave1AddressB(11 downto 0),
       wave2(11 downto 0) => wave2(11 downto 0),
+      wave2Address(11 downto 0) => wave2Address(11 downto 0),
       wave2AddressB(11 downto 0) => wave2AddressB(11 downto 0),
       wave3(11 downto 0) => wave3(11 downto 0),
+      wave3Address(11 downto 0) => wave3Address(11 downto 0),
       wave3AddressB(11 downto 0) => wave3AddressB(11 downto 0),
       waveRef0(11 downto 0) => waveRef0(11 downto 0),
       waveRef0Address(11 downto 0) => waveRef0Address(11 downto 0),

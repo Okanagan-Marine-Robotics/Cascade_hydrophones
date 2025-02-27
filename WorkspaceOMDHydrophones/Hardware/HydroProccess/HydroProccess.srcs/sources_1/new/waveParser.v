@@ -20,16 +20,21 @@ module waveParser(
 	output reg [11:0] wave3Address,
 	output reg [11:0] wave03Address,
 	input clk1Mhz,
-	input clk
+	input clk,
+	output reg resetsignal = 0
 	);
     
-	reg [13:0] MemoryAddress = 10010;
+	reg [31:0] MemoryAddress = 10010;
     
 	always @(negedge clk1Mhz)begin
 	 
-	if (MemoryAddress == 0) MemoryAddress<=0;
-	else MemoryAddress <= MemoryAddress - 1;
-    
+	if (MemoryAddress == 0) begin MemoryAddress<=500000;
+	resetsignal <=1;
+	end
+	else begin
+	   MemoryAddress <= MemoryAddress - 1;
+	   resetsignal <=0;
+    end
 	wave0Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
 	wave00Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
 	waveRef0Address <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;

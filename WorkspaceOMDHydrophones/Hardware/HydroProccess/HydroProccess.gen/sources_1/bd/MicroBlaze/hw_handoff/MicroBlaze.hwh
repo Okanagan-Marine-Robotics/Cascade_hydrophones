@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Feb 18 07:59:39 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 27 02:33:14 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -526,6 +526,11 @@
         <PORT DIR="O" LEFT="15" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_count">
           <CONNECTIONS>
             <CONNECTION INSTANCE="AddressFixer_0" PORT="counter"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="waveParser_0_resetsignal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="resetsignal"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="wave0" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_0_wave0">
@@ -2625,9 +2630,9 @@
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="testdelaysine_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
@@ -4339,8 +4344,8 @@
             <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="clk"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="clk"/>
             <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
-            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
+            <CONNECTION INSTANCE="CC_0" PORT="clk"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
@@ -4766,6 +4771,11 @@
         <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="resetsignal" SIGIS="undef" SIGNAME="waveParser_0_resetsignal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CC_0" PORT="reset"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">

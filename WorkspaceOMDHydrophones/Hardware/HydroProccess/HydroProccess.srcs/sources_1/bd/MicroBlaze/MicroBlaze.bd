@@ -478,6 +478,10 @@
             "type": "clk",
             "direction": "I",
             "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
               "FREQ_HZ": {
                 "value": "200000000",
                 "value_src": "user_prop"
@@ -642,6 +646,10 @@
             "direction": "O",
             "left": "15",
             "right": "0"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
           }
         }
       },
@@ -885,6 +893,9 @@
                 "value_src": "default_prop"
               }
             }
+          },
+          "resetsignal": {
+            "direction": "O"
           }
         }
       },
@@ -2754,9 +2765,9 @@
         "ports": [
           "clk1Mhz_0/clk1Mhz",
           "SineWaveGen_0/clk1Mhz",
+          "BlockRam_0/clk1Mhz",
           "testdelaysine_0/clk1Mhz",
           "CC_0/clk1Mhz",
-          "BlockRam_0/clk1Mhz",
           "waveParser_0/clk1Mhz"
         ]
       },
@@ -2857,8 +2868,8 @@
           "SPI_ADC_Master_0/clk",
           "SPI_ADC_Master_1/clk",
           "SPI_ADC_Master_2/clk",
-          "CC_0/clk",
           "BlockRam_0/clk",
+          "CC_0/clk",
           "waveParser_0/clk"
         ]
       },
@@ -2898,6 +2909,12 @@
         "ports": [
           "waveParser_0/bufferRef",
           "BlockRam_0/inWave1"
+        ]
+      },
+      "waveParser_0_resetsignal": {
+        "ports": [
+          "waveParser_0/resetsignal",
+          "CC_0/reset"
         ]
       },
       "waveParser_0_wave00Address": {

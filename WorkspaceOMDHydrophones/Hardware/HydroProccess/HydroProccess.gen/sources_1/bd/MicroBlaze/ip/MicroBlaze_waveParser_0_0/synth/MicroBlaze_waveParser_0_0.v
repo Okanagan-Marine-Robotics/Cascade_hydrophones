@@ -75,7 +75,8 @@ module MicroBlaze_waveParser_0_0 (
   wave3Address,
   wave03Address,
   clk1Mhz,
-  clk
+  clk,
+  resetsignal
 );
 
 input wire [11 : 0] waveRef;
@@ -101,6 +102,7 @@ input wire clk1Mhz;
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 input wire clk;
+output wire resetsignal;
 
   waveParser inst (
     .waveRef(waveRef),
@@ -122,6 +124,7 @@ input wire clk;
     .wave3Address(wave3Address),
     .wave03Address(wave03Address),
     .clk1Mhz(clk1Mhz),
-    .clk(clk)
+    .clk(clk),
+    .resetsignal(resetsignal)
   );
 endmodule

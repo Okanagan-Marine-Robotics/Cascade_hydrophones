@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Tue Feb 18 07:59:33 2025
+//Date        : Thu Feb 27 02:33:07 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -210,6 +210,7 @@ module MicroBlaze
   wire [11:0]waveParser_0_buffer;
   wire [11:0]waveParser_0_buffer1;
   wire [11:0]waveParser_0_bufferRef;
+  wire waveParser_0_resetsignal;
   wire [11:0]waveParser_0_wave00Address;
   wire [11:0]waveParser_0_wave01Address;
   wire [11:0]waveParser_0_wave02Address;
@@ -294,6 +295,7 @@ module MicroBlaze
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
         .count(CC_0_count),
+        .reset(waveParser_0_resetsignal),
         .wave0(BlockRam_0_wave0),
         .wave00(BlockRam_0_wave00),
         .wave00Address(CC_0_wave00Address),
@@ -583,6 +585,7 @@ module MicroBlaze
         .bufferRef(waveParser_0_bufferRef),
         .clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
+        .resetsignal(waveParser_0_resetsignal),
         .wave(SPI_ADC_Master_1_wave),
         .wave00Address(waveParser_0_wave00Address),
         .wave01Address(waveParser_0_wave01Address),

@@ -31,7 +31,8 @@ input clk,
 	output reg signed [35:0] xcorr,
 	output reg signed [35:0] xcorr1,
 	output reg clkcorr = 0,
-	output reg signed [15:0] count = -9999
+	output reg signed [15:0] count = -9999,
+	input reset
 	);
  	reg signed [35:0] product = 0;
  	reg signed [35:0] product1 = 0;
@@ -44,9 +45,14 @@ input clk,
     reg signed [35:0] temp00 = 0, temp01 = 0, temp02 = 0, temp03 = 0;
     
  
-   always @(negedge clk)begin
+always @(negedge clk)begin
 
-    	if (countMulti!=2500)begin
+if (reset ==1) begin
+   countMulti <= 1; 
+   count <= -9999;
+end
+else begin
+        if (countMulti!=2500)begin
         	countMulti <= countMulti + 1;
         	clkcorr = 0;
     	end
@@ -57,8 +63,8 @@ input clk,
          	clkcorr = 1;
     	end
     	
-    	if (countMulti==1)begin
-	if (count <= 10000) begin
+    if (countMulti==1)begin
+	   if (count <= 10000) begin
     
     	count <= count + 1;
    	 
@@ -68,8 +74,8 @@ input clk,
 	end
    	 
     
-	end
-   	 
+	 end
+  end
 
             waveRef0Address <= ((countMulti+count>=1)&&(countMulti+count<=10000))?countMulti+count:0;
             wave0Address <= countMulti;

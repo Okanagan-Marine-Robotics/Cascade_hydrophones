@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Tue Feb 18 08:00:19 2025
+// Date        : Thu Feb 27 02:34:01 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0_stub.v
@@ -19,10 +19,11 @@
 module MicroBlaze_CC_0_0(clk, clk1Mhz, waveRef0, wave0, wave00, waveRef1, 
   wave1, wave01, waveRef2, wave2, wave02, waveRef3, wave3, wave03, waveRef0Address, wave0Address, 
   wave00Address, waveRef1Address, wave1Address, wave01Address, waveRef2Address, wave2Address, 
-  wave02Address, waveRef3Address, wave3Address, wave03Address, xcorr, xcorr1, clkcorr, count)
-/* synthesis syn_black_box black_box_pad_pin="clk1Mhz,waveRef0[11:0],wave0[11:0],wave00[11:0],waveRef1[11:0],wave1[11:0],wave01[11:0],waveRef2[11:0],wave2[11:0],wave02[11:0],waveRef3[11:0],wave3[11:0],wave03[11:0],waveRef0Address[13:0],wave0Address[11:0],wave00Address[11:0],waveRef1Address[13:0],wave1Address[11:0],wave01Address[11:0],waveRef2Address[13:0],wave2Address[11:0],wave02Address[11:0],waveRef3Address[13:0],wave3Address[11:0],wave03Address[11:0],xcorr[35:0],xcorr1[35:0],clkcorr,count[15:0]" */
+  wave02Address, waveRef3Address, wave3Address, wave03Address, xcorr, xcorr1, clkcorr, count, 
+  reset)
+/* synthesis syn_black_box black_box_pad_pin="clk1Mhz,waveRef0[11:0],wave0[11:0],wave00[11:0],waveRef1[11:0],wave1[11:0],wave01[11:0],waveRef2[11:0],wave2[11:0],wave02[11:0],waveRef3[11:0],wave3[11:0],wave03[11:0],waveRef0Address[13:0],wave0Address[11:0],wave00Address[11:0],waveRef1Address[13:0],wave1Address[11:0],wave01Address[11:0],waveRef2Address[13:0],wave2Address[11:0],wave02Address[11:0],waveRef3Address[13:0],wave3Address[11:0],wave03Address[11:0],xcorr[35:0],xcorr1[35:0],clkcorr,count[15:0],reset" */
 /* synthesis syn_force_seq_prim="clk" */;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
   input clk1Mhz;
   input [11:0]waveRef0;
   input [11:0]wave0;
@@ -52,4 +53,5 @@ module MicroBlaze_CC_0_0(clk, clk1Mhz, waveRef0, wave0, wave00, waveRef1,
   output [35:0]xcorr1;
   output clkcorr;
   output [15:0]count;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset;
 endmodule
