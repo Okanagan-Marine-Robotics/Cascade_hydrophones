@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Thu Feb 27 02:33:07 2025
+//Date        : Thu Feb 27 04:14:58 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=14,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=32,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=18,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -68,6 +68,14 @@ module MicroBlaze
   wire [13:0]BRAMMUX_0_Ref2Address;
   wire [11:0]BRAMMUX_0_Ref3;
   wire [13:0]BRAMMUX_0_Ref3Address;
+  wire [11:0]BRAMMUX_1_Ref0;
+  wire [13:0]BRAMMUX_1_Ref0Address;
+  wire [11:0]BRAMMUX_1_Ref1;
+  wire [13:0]BRAMMUX_1_Ref1Address;
+  wire [11:0]BRAMMUX_1_Ref2;
+  wire [13:0]BRAMMUX_1_Ref2Address;
+  wire [11:0]BRAMMUX_1_Ref3;
+  wire [13:0]BRAMMUX_1_Ref3Address;
   wire [11:0]BlockRam_0_wave0;
   wire [11:0]BlockRam_0_wave00;
   wire [11:0]BlockRam_0_wave01;
@@ -80,6 +88,18 @@ module MicroBlaze
   wire [11:0]BlockRam_0_waveRef1;
   wire [11:0]BlockRam_0_waveRef2;
   wire [11:0]BlockRam_0_waveRef3;
+  wire [11:0]BlockRam_1_wave0;
+  wire [11:0]BlockRam_1_wave00;
+  wire [11:0]BlockRam_1_wave01;
+  wire [11:0]BlockRam_1_wave02;
+  wire [11:0]BlockRam_1_wave03;
+  wire [11:0]BlockRam_1_wave1;
+  wire [11:0]BlockRam_1_wave2;
+  wire [11:0]BlockRam_1_wave3;
+  wire [11:0]BlockRam_1_waveRef0;
+  wire [11:0]BlockRam_1_waveRef1;
+  wire [11:0]BlockRam_1_waveRef2;
+  wire [11:0]BlockRam_1_waveRef3;
   wire [15:0]CC_0_count;
   wire [11:0]CC_0_wave00Address;
   wire [11:0]CC_0_wave01Address;
@@ -95,6 +115,19 @@ module MicroBlaze
   wire [13:0]CC_0_waveRef3Address;
   wire [35:0]CC_0_xcorr;
   wire [35:0]CC_0_xcorr1;
+  wire [11:0]CC_1_wave00Address;
+  wire [11:0]CC_1_wave01Address;
+  wire [11:0]CC_1_wave02Address;
+  wire [11:0]CC_1_wave03Address;
+  wire [11:0]CC_1_wave0Address;
+  wire [11:0]CC_1_wave1Address;
+  wire [11:0]CC_1_wave2Address;
+  wire [11:0]CC_1_wave3Address;
+  wire [13:0]CC_1_waveRef0Address;
+  wire [13:0]CC_1_waveRef1Address;
+  wire [13:0]CC_1_waveRef2Address;
+  wire [13:0]CC_1_waveRef3Address;
+  wire [35:0]CC_1_xcorr;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -207,6 +240,22 @@ module MicroBlaze
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [11:0]testdelaysine_0_wave;
+  wire [11:0]waveParser2_0_buffer;
+  wire [11:0]waveParser2_0_buffer1;
+  wire [11:0]waveParser2_0_bufferRef;
+  wire waveParser2_0_resetsignal;
+  wire [11:0]waveParser2_0_wave00Address;
+  wire [11:0]waveParser2_0_wave01Address;
+  wire [11:0]waveParser2_0_wave02Address;
+  wire [11:0]waveParser2_0_wave03Address;
+  wire [11:0]waveParser2_0_wave0Address;
+  wire [11:0]waveParser2_0_wave1Address;
+  wire [11:0]waveParser2_0_wave2Address;
+  wire [11:0]waveParser2_0_wave3Address;
+  wire [13:0]waveParser2_0_waveRef0Address;
+  wire [13:0]waveParser2_0_waveRef1Address;
+  wire [13:0]waveParser2_0_waveRef2Address;
+  wire [13:0]waveParser2_0_waveRef3Address;
   wire [11:0]waveParser_0_buffer;
   wire [11:0]waveParser_0_buffer1;
   wire [11:0]waveParser_0_bufferRef;
@@ -249,6 +298,24 @@ module MicroBlaze
         .waveRef2Address(CC_0_waveRef2Address),
         .waveRef3(BlockRam_0_waveRef3),
         .waveRef3Address(CC_0_waveRef3Address));
+  MicroBlaze_BRAMMUX_1_0 BRAMMUX_1
+       (.Ref0(BRAMMUX_1_Ref0),
+        .Ref0Address(BRAMMUX_1_Ref0Address),
+        .Ref1(BRAMMUX_1_Ref1),
+        .Ref1Address(BRAMMUX_1_Ref1Address),
+        .Ref2(BRAMMUX_1_Ref2),
+        .Ref2Address(BRAMMUX_1_Ref2Address),
+        .Ref3(BRAMMUX_1_Ref3),
+        .Ref3Address(BRAMMUX_1_Ref3Address),
+        .clk(microblaze_0_Clk),
+        .waveRef0(CC_1_waveRef0Address[11:0]),
+        .waveRef0Address({1'b0,1'b0,BlockRam_1_waveRef0}),
+        .waveRef1(CC_1_waveRef1Address[11:0]),
+        .waveRef1Address({1'b0,1'b0,BlockRam_1_waveRef1}),
+        .waveRef2(CC_1_waveRef2Address[11:0]),
+        .waveRef2Address({1'b0,1'b0,BlockRam_1_waveRef2}),
+        .waveRef3(CC_1_waveRef3Address[11:0]),
+        .waveRef3Address({1'b0,1'b0,BlockRam_1_waveRef3}));
   MicroBlaze_BlockRam_0_0 BlockRam_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
@@ -291,6 +358,48 @@ module MicroBlaze
         .waveRef3(BlockRam_0_waveRef3),
         .waveRef3Address(waveParser_0_waveRef3Address[11:0]),
         .waveRef3AddressB(BRAMMUX_0_Ref3Address[11:0]));
+  MicroBlaze_BlockRam_1_0 BlockRam_1
+       (.clk(microblaze_0_Clk),
+        .clk1Mhz(Net1),
+        .inWave1(waveParser2_0_bufferRef),
+        .inWave2(waveParser2_0_buffer),
+        .inWave3(waveParser2_0_buffer1),
+        .wave0(BlockRam_1_wave0),
+        .wave00(BlockRam_1_wave00),
+        .wave00Address(waveParser2_0_wave00Address),
+        .wave00AddressB(CC_1_wave00Address),
+        .wave01(BlockRam_1_wave01),
+        .wave01Address(waveParser2_0_wave01Address),
+        .wave01AddressB(CC_1_wave01Address),
+        .wave02(BlockRam_1_wave02),
+        .wave02Address(waveParser2_0_wave02Address),
+        .wave02AddressB(CC_1_wave02Address),
+        .wave03(BlockRam_1_wave03),
+        .wave03Address(waveParser2_0_wave03Address),
+        .wave03AddressB(CC_1_wave03Address),
+        .wave0Address(waveParser2_0_wave0Address),
+        .wave0AddressB(CC_1_wave0Address),
+        .wave1(BlockRam_1_wave1),
+        .wave1Address(waveParser2_0_wave1Address),
+        .wave1AddressB(CC_1_wave1Address),
+        .wave2(BlockRam_1_wave2),
+        .wave2Address(waveParser2_0_wave2Address),
+        .wave2AddressB(CC_1_wave2Address),
+        .wave3(BlockRam_1_wave3),
+        .wave3Address(waveParser2_0_wave3Address),
+        .wave3AddressB(CC_1_wave3Address),
+        .waveRef0(BlockRam_1_waveRef0),
+        .waveRef0Address(waveParser2_0_waveRef0Address),
+        .waveRef0AddressB(BRAMMUX_1_Ref0Address[11:0]),
+        .waveRef1(BlockRam_1_waveRef1),
+        .waveRef1Address(waveParser2_0_waveRef1Address[11:0]),
+        .waveRef1AddressB(BRAMMUX_1_Ref1Address[11:0]),
+        .waveRef2(BlockRam_1_waveRef2),
+        .waveRef2Address(waveParser2_0_waveRef2Address[11:0]),
+        .waveRef2AddressB(BRAMMUX_1_Ref2Address[11:0]),
+        .waveRef3(BlockRam_1_waveRef3),
+        .waveRef3Address(waveParser2_0_waveRef3Address[11:0]),
+        .waveRef3AddressB(BRAMMUX_1_Ref3Address[11:0]));
   MicroBlaze_CC_0_0 CC_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
@@ -322,6 +431,35 @@ module MicroBlaze
         .waveRef3Address(CC_0_waveRef3Address),
         .xcorr(CC_0_xcorr),
         .xcorr1(CC_0_xcorr1));
+  MicroBlaze_CC_1_0 CC_1
+       (.clk(microblaze_0_Clk),
+        .clk1Mhz(Net1),
+        .reset(waveParser2_0_resetsignal),
+        .wave0(BlockRam_1_wave0),
+        .wave00(BlockRam_1_wave00),
+        .wave00Address(CC_1_wave00Address),
+        .wave01(BlockRam_1_wave01),
+        .wave01Address(CC_1_wave01Address),
+        .wave02(BlockRam_1_wave02),
+        .wave02Address(CC_1_wave02Address),
+        .wave03(BlockRam_1_wave03),
+        .wave03Address(CC_1_wave03Address),
+        .wave0Address(CC_1_wave0Address),
+        .wave1(BlockRam_1_wave1),
+        .wave1Address(CC_1_wave1Address),
+        .wave2(BlockRam_1_wave2),
+        .wave2Address(CC_1_wave2Address),
+        .wave3(BlockRam_1_wave3),
+        .wave3Address(CC_1_wave3Address),
+        .waveRef0(BRAMMUX_1_Ref0),
+        .waveRef0Address(CC_1_waveRef0Address),
+        .waveRef1(BRAMMUX_1_Ref1),
+        .waveRef1Address(CC_1_waveRef1Address),
+        .waveRef2(BRAMMUX_1_Ref2),
+        .waveRef2Address(CC_1_waveRef2Address),
+        .waveRef3(BRAMMUX_1_Ref3),
+        .waveRef3Address(CC_1_waveRef3Address),
+        .xcorr(CC_1_xcorr));
   MicroBlaze_SPI_ADC_Master_0_1 SPI_ADC_Master_0
        (.MISO(Serializer_0_MISO),
         .clk(microblaze_0_Clk),
@@ -579,6 +717,28 @@ module MicroBlaze
   MicroBlaze_testdelaysine_0_0 testdelaysine_0
        (.clk1Mhz(Net1),
         .wave(testdelaysine_0_wave));
+  MicroBlaze_waveParser2_0_0 waveParser2_0
+       (.buffer(waveParser2_0_buffer),
+        .buffer1(waveParser2_0_buffer1),
+        .bufferRef(waveParser2_0_bufferRef),
+        .clk(microblaze_0_Clk),
+        .clk1Mhz(Net1),
+        .resetsignal(waveParser2_0_resetsignal),
+        .wave(SPI_ADC_Master_1_wave),
+        .wave00Address(waveParser2_0_wave00Address),
+        .wave01Address(waveParser2_0_wave01Address),
+        .wave02Address(waveParser2_0_wave02Address),
+        .wave03Address(waveParser2_0_wave03Address),
+        .wave0Address(waveParser2_0_wave0Address),
+        .wave1(SPI_ADC_Master_2_wave),
+        .wave1Address(waveParser2_0_wave1Address),
+        .wave2Address(waveParser2_0_wave2Address),
+        .wave3Address(waveParser2_0_wave3Address),
+        .waveRef(SPI_ADC_Master_0_wave),
+        .waveRef0Address(waveParser2_0_waveRef0Address),
+        .waveRef1Address(waveParser2_0_waveRef1Address),
+        .waveRef2Address(waveParser2_0_waveRef2Address),
+        .waveRef3Address(waveParser2_0_waveRef3Address));
   MicroBlaze_waveParser_0_0 waveParser_0
        (.buffer(waveParser_0_buffer),
         .buffer1(waveParser_0_buffer1),
@@ -613,4 +773,6 @@ module MicroBlaze
   MicroBlaze_xlslice_0_1 xlslice_1
        (.Din(CC_0_xcorr1),
         .Dout(xlslice_1_Dout));
+  MicroBlaze_xlslice_0_2 xlslice_2
+       (.Din(CC_1_xcorr));
 endmodule

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1740652401">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1740658511">
   <File Type="PA-TCL" Name="MicroBlaze_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="MicroBlaze_wrapper_reports.tcl"/>
   <File Type="INIT-TIMING" Name="MicroBlaze_wrapper_timing_summary_init.rpt"/>
@@ -166,6 +166,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/waveParser2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/bd/MicroBlaze/MicroBlaze.bd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd"/>
@@ -260,14 +267,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/waveParser2.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="MicroBlaze_wrapper"/>
@@ -324,9 +323,13 @@
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SineWaveGen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BRAMMUX_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_1_0"/>
 </GenRun>
