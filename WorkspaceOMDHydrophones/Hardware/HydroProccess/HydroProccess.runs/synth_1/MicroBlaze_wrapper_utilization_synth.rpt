@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Feb 27 04:15:53 2025
+| Date         : Thu Feb 27 14:53:43 2025
 | Host         : James running 64-bit major release  (build 9200)
 | Command      : report_utilization -file MicroBlaze_wrapper_utilization_synth.rpt -pb MicroBlaze_wrapper_utilization_synth.pb
 | Design       : MicroBlaze_wrapper
@@ -171,6 +171,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | MicroBlaze_axi_smc_0              |    1 |
 | MicroBlaze_axi_gpio_0_1           |    1 |
 | MicroBlaze_axi_gpio_0_0           |    1 |
+| MicroBlaze_XCorrOutputManager_0_0 |    1 |
 | MicroBlaze_SineWaveGen_0_0        |    1 |
 | MicroBlaze_Serializer_2_0         |    1 |
 | MicroBlaze_Serializer_1_0         |    1 |

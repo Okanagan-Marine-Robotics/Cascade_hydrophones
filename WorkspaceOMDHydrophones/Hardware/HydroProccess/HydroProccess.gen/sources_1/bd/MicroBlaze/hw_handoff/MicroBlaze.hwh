@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 27 04:15:05 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 27 14:52:16 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -832,7 +832,11 @@
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="clkcorr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="clkcorr" SIGIS="undef" SIGNAME="CC_0_clkcorr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_prime1"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="15" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_count">
           <CONNECTIONS>
             <CONNECTION INSTANCE="AddressFixer_0" PORT="counter"/>
@@ -965,14 +969,10 @@
         </PORT>
         <PORT DIR="O" LEFT="35" NAME="xcorr" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_prime"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -1122,10 +1122,14 @@
         </PORT>
         <PORT DIR="O" LEFT="35" NAME="xcorr" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_2" PORT="Din"/>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_second"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_second1"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -1319,6 +1323,61 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="Serializer_0" PORT="waveIn"/>
             <CONNECTION INSTANCE="Serializer_1" PORT="waveIn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/XCorrOutputManager_0" HWVERSION="1.0" INSTANCE="XCorrOutputManager_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="XCorrOutputManager" VLNV="xilinx.com:module_ref:XCorrOutputManager:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_XCorrOutputManager_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="31" NAME="XCORR" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="XCORR1" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="35" NAME="XCORR_prime" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CC_0" PORT="xcorr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="35" NAME="XCORR_prime1" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_clkcorr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CC_0" PORT="clkcorr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="35" NAME="XCORR_second" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CC_1" PORT="xcorr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="35" NAME="XCORR_second1" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CC_1" PORT="xcorr1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="waveParser_0_resetsignal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser_0" PORT="resetsignal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset1" SIGIS="undef" SIGNAME="waveParser2_0_resetsignal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="waveParser2_0" PORT="resetsignal"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2799,9 +2858,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_douta">
@@ -3028,9 +3087,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
@@ -4820,6 +4879,7 @@
             <CONNECTION INSTANCE="BlockRam_1" PORT="clk"/>
             <CONNECTION INSTANCE="BRAMMUX_1" PORT="clk"/>
             <CONNECTION INSTANCE="CC_1" PORT="clk"/>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -5249,6 +5309,7 @@
         <PORT DIR="O" NAME="resetsignal" SIGIS="undef" SIGNAME="waveParser2_0_resetsignal">
           <CONNECTIONS>
             <CONNECTION INSTANCE="CC_1" PORT="reset"/>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="reset1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
@@ -5364,6 +5425,7 @@
         <PORT DIR="O" NAME="resetsignal" SIGIS="undef" SIGNAME="waveParser_0_resetsignal">
           <CONNECTIONS>
             <CONNECTION INSTANCE="CC_0" PORT="reset"/>
+            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="reset"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
@@ -5493,74 +5555,6 @@
             <CONNECTION INSTANCE="External_Ports" PORT="led_red"/>
           </CONNECTIONS>
         </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/xlslice_0" HWVERSION="1.0" INSTANCE="xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_FROM" VALUE="35"/>
-        <PARAMETER NAME="DIN_TO" VALUE="4"/>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="36"/>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlslice_0_0"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="35" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_0" PORT="xcorr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dinb"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/xlslice_1" HWVERSION="1.0" INSTANCE="xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_FROM" VALUE="35"/>
-        <PARAMETER NAME="DIN_TO" VALUE="4"/>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="36"/>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlslice_0_1"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="35" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_0" PORT="xcorr1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="dinb"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/xlslice_2" HWVERSION="1.0" INSTANCE="xlslice_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_FROM" VALUE="35"/>
-        <PARAMETER NAME="DIN_TO" VALUE="4"/>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="36"/>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlslice_0_2"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="35" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="xcorr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>

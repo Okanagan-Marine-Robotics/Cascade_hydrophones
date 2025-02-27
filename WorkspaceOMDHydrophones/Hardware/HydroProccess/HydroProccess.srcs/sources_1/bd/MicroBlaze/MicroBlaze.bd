@@ -15,14 +15,12 @@
       "CC_0": "",
       "BRAMMUX_0": "",
       "waveParser_0": "",
-      "xlslice_0": "",
       "AddressFixer_0": "",
       "xlconstant_0": "",
       "axi_gpio_0": "",
       "blk_mem_gen_0": "",
       "axi_gpio_1": "",
       "blk_mem_gen_1": "",
-      "xlslice_1": "",
       "processing_system7_0": "",
       "proc_sys_reset_0": "",
       "axi_smc": "",
@@ -42,7 +40,7 @@
       "BlockRam_1": "",
       "BRAMMUX_1": "",
       "CC_1": "",
-      "xlslice_2": ""
+      "XCorrOutputManager_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -904,27 +902,6 @@
           }
         }
       },
-      "xlslice_0": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "ip_revision": "4",
-        "xci_name": "MicroBlaze_xlslice_0_0",
-        "xci_path": "ip\\MicroBlaze_xlslice_0_0\\MicroBlaze_xlslice_0_0.xci",
-        "inst_hier_path": "xlslice_0",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "35"
-          },
-          "DIN_TO": {
-            "value": "4"
-          },
-          "DIN_WIDTH": {
-            "value": "36"
-          },
-          "DOUT_WIDTH": {
-            "value": "32"
-          }
-        }
-      },
       "AddressFixer_0": {
         "vlnv": "xilinx.com:module_ref:AddressFixer:1.0",
         "ip_revision": "1",
@@ -1105,27 +1082,6 @@
           },
           "use_bram_block": {
             "value": "Stand_Alone"
-          }
-        }
-      },
-      "xlslice_1": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "ip_revision": "4",
-        "xci_name": "MicroBlaze_xlslice_0_1",
-        "xci_path": "ip\\MicroBlaze_xlslice_0_1\\MicroBlaze_xlslice_0_1.xci",
-        "inst_hier_path": "xlslice_1",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "35"
-          },
-          "DIN_TO": {
-            "value": "4"
-          },
-          "DIN_WIDTH": {
-            "value": "36"
-          },
-          "DOUT_WIDTH": {
-            "value": "32"
           }
         }
       },
@@ -3192,24 +3148,72 @@
           }
         }
       },
-      "xlslice_2": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "ip_revision": "4",
-        "xci_name": "MicroBlaze_xlslice_0_2",
-        "xci_path": "ip\\MicroBlaze_xlslice_0_2\\MicroBlaze_xlslice_0_2.xci",
-        "inst_hier_path": "xlslice_2",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "35"
+      "XCorrOutputManager_0": {
+        "vlnv": "xilinx.com:module_ref:XCorrOutputManager:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_XCorrOutputManager_0_0",
+        "xci_path": "ip\\MicroBlaze_XCorrOutputManager_0_0\\MicroBlaze_XCorrOutputManager_0_0.xci",
+        "inst_hier_path": "XCorrOutputManager_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "XCorrOutputManager",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "XCORR_prime": {
+            "direction": "I",
+            "left": "35",
+            "right": "0"
           },
-          "DIN_TO": {
-            "value": "4"
+          "XCORR_prime1": {
+            "direction": "I",
+            "left": "35",
+            "right": "0"
           },
-          "DIN_WIDTH": {
-            "value": "36"
+          "XCORR_second": {
+            "direction": "I",
+            "left": "35",
+            "right": "0"
           },
-          "DOUT_WIDTH": {
-            "value": "32"
+          "XCORR_second1": {
+            "direction": "I",
+            "left": "35",
+            "right": "0"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "reset1": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "XCORR": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "XCORR1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
           }
         }
       }
@@ -3494,6 +3498,12 @@
           "BRAMMUX_1/waveRef3Address"
         ]
       },
+      "CC_0_clkcorr": {
+        "ports": [
+          "CC_0/clkcorr",
+          "XCorrOutputManager_0/XCORR_prime1"
+        ]
+      },
       "CC_0_count": {
         "ports": [
           "CC_0/count",
@@ -3575,13 +3585,7 @@
       "CC_0_xcorr": {
         "ports": [
           "CC_0/xcorr",
-          "xlslice_0/Din"
-        ]
-      },
-      "CC_0_xcorr1": {
-        "ports": [
-          "CC_0/xcorr1",
-          "xlslice_1/Din"
+          "XCorrOutputManager_0/XCORR_prime"
         ]
       },
       "CC_1_wave00Address": {
@@ -3659,7 +3663,13 @@
       "CC_1_xcorr": {
         "ports": [
           "CC_1/xcorr",
-          "xlslice_2/Din"
+          "XCorrOutputManager_0/XCORR_second"
+        ]
+      },
+      "CC_1_xcorr1": {
+        "ports": [
+          "CC_1/xcorr1",
+          "XCorrOutputManager_0/XCORR_second1"
         ]
       },
       "Net1": {
@@ -3719,6 +3729,18 @@
           "SineWaveGen_0/wave",
           "Serializer_0/waveIn",
           "Serializer_1/waveIn"
+        ]
+      },
+      "XCorrOutputManager_0_XCORR": {
+        "ports": [
+          "XCorrOutputManager_0/XCORR",
+          "blk_mem_gen_0/dinb"
+        ]
+      },
+      "XCorrOutputManager_0_XCORR1": {
+        "ports": [
+          "XCorrOutputManager_0/XCORR1",
+          "blk_mem_gen_1/dinb"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
@@ -3781,7 +3803,8 @@
           "waveParser2_0/clk",
           "BlockRam_1/clk",
           "BRAMMUX_1/clk",
-          "CC_1/clk"
+          "CC_1/clk",
+          "XCorrOutputManager_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -3825,7 +3848,8 @@
       "waveParser2_0_resetsignal": {
         "ports": [
           "waveParser2_0/resetsignal",
-          "CC_1/reset"
+          "CC_1/reset",
+          "XCorrOutputManager_0/reset1"
         ]
       },
       "waveParser2_0_wave00Address": {
@@ -3921,7 +3945,8 @@
       "waveParser_0_resetsignal": {
         "ports": [
           "waveParser_0/resetsignal",
-          "CC_0/reset"
+          "CC_0/reset",
+          "XCorrOutputManager_0/reset"
         ]
       },
       "waveParser_0_wave00Address": {
@@ -4013,18 +4038,6 @@
         "ports": [
           "xlconstant_2/dout",
           "led_red"
-        ]
-      },
-      "xlslice_0_Dout": {
-        "ports": [
-          "xlslice_0/Dout",
-          "blk_mem_gen_0/dinb"
-        ]
-      },
-      "xlslice_1_Dout": {
-        "ports": [
-          "xlslice_1/Dout",
-          "blk_mem_gen_1/dinb"
         ]
       }
     },

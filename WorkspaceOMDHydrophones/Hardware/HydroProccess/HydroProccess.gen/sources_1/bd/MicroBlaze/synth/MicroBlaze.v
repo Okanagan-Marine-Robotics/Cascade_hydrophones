@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Thu Feb 27 04:14:58 2025
+//Date        : Thu Feb 27 14:52:09 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=32,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=18,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=30,numReposBlks=30,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=19,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=21,da_board_cnt=16,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -100,6 +100,7 @@ module MicroBlaze
   wire [11:0]BlockRam_1_waveRef1;
   wire [11:0]BlockRam_1_waveRef2;
   wire [11:0]BlockRam_1_waveRef3;
+  wire CC_0_clkcorr;
   wire [15:0]CC_0_count;
   wire [11:0]CC_0_wave00Address;
   wire [11:0]CC_0_wave01Address;
@@ -114,7 +115,6 @@ module MicroBlaze
   wire [13:0]CC_0_waveRef2Address;
   wire [13:0]CC_0_waveRef3Address;
   wire [35:0]CC_0_xcorr;
-  wire [35:0]CC_0_xcorr1;
   wire [11:0]CC_1_wave00Address;
   wire [11:0]CC_1_wave01Address;
   wire [11:0]CC_1_wave02Address;
@@ -128,6 +128,7 @@ module MicroBlaze
   wire [13:0]CC_1_waveRef2Address;
   wire [13:0]CC_1_waveRef3Address;
   wire [35:0]CC_1_xcorr;
+  wire [35:0]CC_1_xcorr1;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -157,6 +158,8 @@ module MicroBlaze
   wire Serializer_1_MISO;
   wire Serializer_2_MISO;
   wire [11:0]SineWaveGen_0_wave;
+  wire [31:0]XCorrOutputManager_0_XCORR;
+  wire [31:0]XCorrOutputManager_0_XCORR1;
   wire [31:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
   wire [8:0]axi_smc_M00_AXI_ARADDR;
@@ -273,8 +276,6 @@ module MicroBlaze
   wire [13:0]waveParser_0_waveRef2Address;
   wire [13:0]waveParser_0_waveRef3Address;
   wire [0:0]xlconstant_0_dout;
-  wire [31:0]xlslice_0_Dout;
-  wire [31:0]xlslice_1_Dout;
 
   MicroBlaze_AddressFixer_0_0 AddressFixer_0
        (.address(AddressFixer_0_address),
@@ -403,6 +404,7 @@ module MicroBlaze
   MicroBlaze_CC_0_0 CC_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
+        .clkcorr(CC_0_clkcorr),
         .count(CC_0_count),
         .reset(waveParser_0_resetsignal),
         .wave0(BlockRam_0_wave0),
@@ -429,8 +431,7 @@ module MicroBlaze
         .waveRef2Address(CC_0_waveRef2Address),
         .waveRef3(BRAMMUX_0_Ref3),
         .waveRef3Address(CC_0_waveRef3Address),
-        .xcorr(CC_0_xcorr),
-        .xcorr1(CC_0_xcorr1));
+        .xcorr(CC_0_xcorr));
   MicroBlaze_CC_1_0 CC_1
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
@@ -459,7 +460,8 @@ module MicroBlaze
         .waveRef2Address(CC_1_waveRef2Address),
         .waveRef3(BRAMMUX_1_Ref3),
         .waveRef3Address(CC_1_waveRef3Address),
-        .xcorr(CC_1_xcorr));
+        .xcorr(CC_1_xcorr),
+        .xcorr1(CC_1_xcorr1));
   MicroBlaze_SPI_ADC_Master_0_1 SPI_ADC_Master_0
        (.MISO(Serializer_0_MISO),
         .clk(microblaze_0_Clk),
@@ -490,6 +492,16 @@ module MicroBlaze
   MicroBlaze_SineWaveGen_0_0 SineWaveGen_0
        (.clk1Mhz(Net1),
         .wave(SineWaveGen_0_wave));
+  MicroBlaze_XCorrOutputManager_0_0 XCorrOutputManager_0
+       (.XCORR(XCorrOutputManager_0_XCORR),
+        .XCORR1(XCorrOutputManager_0_XCORR1),
+        .XCORR_prime(CC_0_xcorr),
+        .XCORR_prime1({CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr}),
+        .XCORR_second(CC_1_xcorr),
+        .XCORR_second1(CC_1_xcorr1),
+        .clk(microblaze_0_Clk),
+        .reset(waveParser_0_resetsignal),
+        .reset1(waveParser2_0_resetsignal));
   MicroBlaze_axi_gpio_0_0 axi_gpio_0
        (.gpio2_io_i(blk_mem_gen_0_douta),
         .gpio_io_o(axi_gpio_0_gpio_io_o),
@@ -615,7 +627,7 @@ module MicroBlaze
         .clka(microblaze_0_Clk),
         .clkb(microblaze_0_Clk),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
-        .dinb(xlslice_0_Dout),
+        .dinb(XCorrOutputManager_0_XCORR),
         .douta(blk_mem_gen_0_douta),
         .wea(1'b0),
         .web(xlconstant_0_dout));
@@ -625,7 +637,7 @@ module MicroBlaze
         .clka(microblaze_0_Clk),
         .clkb(microblaze_0_Clk),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
-        .dinb(xlslice_1_Dout),
+        .dinb(XCorrOutputManager_0_XCORR1),
         .douta(blk_mem_gen_1_douta),
         .wea(1'b0),
         .web(xlconstant_0_dout));
@@ -767,12 +779,4 @@ module MicroBlaze
        (.dout(led_green));
   MicroBlaze_xlconstant_2_0 xlconstant_2
        (.dout(led_red));
-  MicroBlaze_xlslice_0_0 xlslice_0
-       (.Din(CC_0_xcorr),
-        .Dout(xlslice_0_Dout));
-  MicroBlaze_xlslice_0_1 xlslice_1
-       (.Din(CC_0_xcorr1),
-        .Dout(xlslice_1_Dout));
-  MicroBlaze_xlslice_0_2 xlslice_2
-       (.Din(CC_1_xcorr));
 endmodule
