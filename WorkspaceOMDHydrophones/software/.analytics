@@ -98,3 +98,6 @@ timestamp=[2025-02-18 22:47:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03
 timestamp=[2025-02-26 20:21:44], mode=WORKBENCH_START, duration=0:00:19.740, duration_ms=19740, data={}
 timestamp=[2025-02-26 20:21:46], mode=WORKBENCH_UI_INIT, duration=0:00:01.634, duration_ms=1634, data={editors_count=5, platform_editors_count=1, projects_count=10, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld,helloworld_system,test,xgpio_example_1,xgpio_example_1_system,xuartps_hello_world_example_1,xuartps_hello_world_example_1_system,xuartps_low_echo_example_1,xuartps_low_echo_example_1_system}
 timestamp=[2025-02-26 20:21:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.074, duration_ms=3074, data={}
+timestamp=[2025-02-27 15:08:53], mode=WORKBENCH_START, duration=0:00:05.525, duration_ms=5525, data={}
+timestamp=[2025-02-27 15:08:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.549, duration_ms=549, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld,helloworld_system,test}
+timestamp=[2025-02-27 15:08:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.952, duration_ms=952, data={}

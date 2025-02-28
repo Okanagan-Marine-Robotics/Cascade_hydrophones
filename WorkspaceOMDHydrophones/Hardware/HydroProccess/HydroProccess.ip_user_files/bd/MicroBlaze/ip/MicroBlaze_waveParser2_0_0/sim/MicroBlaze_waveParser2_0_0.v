@@ -47,26 +47,83 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:ip:xlslice:1.0
-// IP Revision: 4
+// IP VLNV: xilinx.com:module_ref:waveParser2:1.0
+// IP Revision: 1
 
 `timescale 1ns/1ps
 
+(* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
-module MicroBlaze_xlslice_0_0 (
-  Din,
-  Dout
+module MicroBlaze_waveParser2_0_0 (
+  waveRef,
+  wave,
+  wave1,
+  bufferRef,
+  buffer,
+  buffer1,
+  waveRef0Address,
+  wave0Address,
+  wave00Address,
+  waveRef1Address,
+  wave1Address,
+  wave01Address,
+  waveRef2Address,
+  wave2Address,
+  wave02Address,
+  waveRef3Address,
+  wave3Address,
+  wave03Address,
+  clk1Mhz,
+  clk,
+  resetsignal
 );
 
-input wire [35 : 0] Din;
-output wire [31 : 0] Dout;
+input wire [11 : 0] waveRef;
+input wire [11 : 0] wave;
+input wire [11 : 0] wave1;
+output wire [11 : 0] bufferRef;
+output wire [11 : 0] buffer;
+output wire [11 : 0] buffer1;
+output wire [13 : 0] waveRef0Address;
+output wire [11 : 0] wave0Address;
+output wire [11 : 0] wave00Address;
+output wire [13 : 0] waveRef1Address;
+output wire [11 : 0] wave1Address;
+output wire [11 : 0] wave01Address;
+output wire [13 : 0] waveRef2Address;
+output wire [11 : 0] wave2Address;
+output wire [11 : 0] wave02Address;
+output wire [13 : 0] waveRef3Address;
+output wire [11 : 0] wave3Address;
+output wire [11 : 0] wave03Address;
+input wire clk1Mhz;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+input wire clk;
+output wire resetsignal;
 
-  xlslice_v1_0_4_xlslice #(
-    .DIN_WIDTH(36),
-    .DIN_FROM(35),
-    .DIN_TO(4)
-  ) inst (
-    .Din(Din),
-    .Dout(Dout)
+  waveParser2 inst (
+    .waveRef(waveRef),
+    .wave(wave),
+    .wave1(wave1),
+    .bufferRef(bufferRef),
+    .buffer(buffer),
+    .buffer1(buffer1),
+    .waveRef0Address(waveRef0Address),
+    .wave0Address(wave0Address),
+    .wave00Address(wave00Address),
+    .waveRef1Address(waveRef1Address),
+    .wave1Address(wave1Address),
+    .wave01Address(wave01Address),
+    .waveRef2Address(waveRef2Address),
+    .wave2Address(wave2Address),
+    .wave02Address(wave02Address),
+    .waveRef3Address(waveRef3Address),
+    .wave3Address(wave3Address),
+    .wave03Address(wave03Address),
+    .clk1Mhz(clk1Mhz),
+    .clk(clk),
+    .resetsignal(resetsignal)
   );
 endmodule

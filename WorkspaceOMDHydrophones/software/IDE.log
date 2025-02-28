@@ -1403,3 +1403,12 @@ con
 20:21:46 INFO  : Registering command handlers for Vitis TCF services
 20:21:49 INFO  : Platform repository initialization has completed.
 20:21:55 INFO  : Successfully done query RDI_DATADIR 
+15:08:51 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/IDE.log'.
+15:08:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\temp_xsdb_launch_script.tcl
+15:08:54 INFO  : Registering command handlers for Vitis TCF services
+15:08:55 INFO  : Platform repository initialization has completed.
+15:08:56 INFO  : XSCT server has started successfully.
+15:09:02 INFO  : plnx-install-location is set to ''
+15:09:02 INFO  : Successfully done setting XSCT server connection channel  
+15:09:02 INFO  : Successfully done query RDI_DATADIR 
+15:09:02 INFO  : Successfully done setting workspace for the tool. 

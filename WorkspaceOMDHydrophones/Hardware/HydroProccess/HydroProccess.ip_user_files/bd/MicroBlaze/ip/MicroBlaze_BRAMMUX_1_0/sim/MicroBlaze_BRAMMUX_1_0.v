@@ -47,26 +47,71 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:ip:xlslice:1.0
-// IP Revision: 4
+// IP VLNV: xilinx.com:module_ref:BRAMMUX:1.0
+// IP Revision: 1
 
 `timescale 1ns/1ps
 
+(* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
-module MicroBlaze_xlslice_0_1 (
-  Din,
-  Dout
+module MicroBlaze_BRAMMUX_1_0 (
+  waveRef0,
+  waveRef1,
+  waveRef2,
+  waveRef3,
+  Ref0,
+  Ref1,
+  Ref2,
+  Ref3,
+  waveRef0Address,
+  waveRef1Address,
+  waveRef2Address,
+  waveRef3Address,
+  Ref0Address,
+  Ref1Address,
+  Ref2Address,
+  Ref3Address,
+  clk
 );
 
-input wire [35 : 0] Din;
-output wire [31 : 0] Dout;
+input wire [11 : 0] waveRef0;
+input wire [11 : 0] waveRef1;
+input wire [11 : 0] waveRef2;
+input wire [11 : 0] waveRef3;
+output wire [11 : 0] Ref0;
+output wire [11 : 0] Ref1;
+output wire [11 : 0] Ref2;
+output wire [11 : 0] Ref3;
+input wire [13 : 0] waveRef0Address;
+input wire [13 : 0] waveRef1Address;
+input wire [13 : 0] waveRef2Address;
+input wire [13 : 0] waveRef3Address;
+output wire [13 : 0] Ref0Address;
+output wire [13 : 0] Ref1Address;
+output wire [13 : 0] Ref2Address;
+output wire [13 : 0] Ref3Address;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+input wire clk;
 
-  xlslice_v1_0_4_xlslice #(
-    .DIN_WIDTH(36),
-    .DIN_FROM(35),
-    .DIN_TO(4)
-  ) inst (
-    .Din(Din),
-    .Dout(Dout)
+  BRAMMUX inst (
+    .waveRef0(waveRef0),
+    .waveRef1(waveRef1),
+    .waveRef2(waveRef2),
+    .waveRef3(waveRef3),
+    .Ref0(Ref0),
+    .Ref1(Ref1),
+    .Ref2(Ref2),
+    .Ref3(Ref3),
+    .waveRef0Address(waveRef0Address),
+    .waveRef1Address(waveRef1Address),
+    .waveRef2Address(waveRef2Address),
+    .waveRef3Address(waveRef3Address),
+    .Ref0Address(Ref0Address),
+    .Ref1Address(Ref1Address),
+    .Ref2Address(Ref2Address),
+    .Ref3Address(Ref3Address),
+    .clk(clk)
   );
 endmodule

@@ -7,8 +7,7 @@
       "name": "MicroBlaze",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "BlockRam_0": "",
@@ -3498,12 +3497,6 @@
           "BRAMMUX_1/waveRef3Address"
         ]
       },
-      "CC_0_clkcorr": {
-        "ports": [
-          "CC_0/clkcorr",
-          "XCorrOutputManager_0/XCORR_prime1"
-        ]
-      },
       "CC_0_count": {
         "ports": [
           "CC_0/count",
@@ -3586,6 +3579,12 @@
         "ports": [
           "CC_0/xcorr",
           "XCorrOutputManager_0/XCORR_prime"
+        ]
+      },
+      "CC_0_xcorr1": {
+        "ports": [
+          "CC_0/xcorr1",
+          "XCorrOutputManager_0/XCORR_prime1"
         ]
       },
       "CC_1_wave00Address": {
