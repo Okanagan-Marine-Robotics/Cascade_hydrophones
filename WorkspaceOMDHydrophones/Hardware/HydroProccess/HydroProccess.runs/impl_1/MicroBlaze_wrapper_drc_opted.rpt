@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Feb 27 14:54:19 2025
+| Date         : Sat Mar  1 01:46:14 2025
 | Host         : James running 64-bit major release  (build 9200)
 | Command      : report_drc -file MicroBlaze_wrapper_drc_opted.rpt -pb MicroBlaze_wrapper_drc_opted.pb -rpx MicroBlaze_wrapper_drc_opted.rpx
 | Design       : MicroBlaze_wrapper
@@ -24,163 +24,113 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 30
+             Checks found: 20
 +--------+----------+------------------+--------+
 | Rule   | Severity | Description      | Checks |
 +--------+----------+------------------+--------+
-| DPIP-1 | Warning  | Input pipelining | 30     |
+| DPIP-1 | Warning  | Input pipelining | 20     |
 +--------+----------+------------------+--------+
 
 2. REPORT DETAILS
 -----------------
 DPIP-1#1 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/product_stage1_reg input MicroBlaze_i/CC_0/inst/product_stage1_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product1_stage1_reg input MicroBlaze_i/CC_0/inst/product1_stage1_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#2 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/product_stage1_reg input MicroBlaze_i/CC_0/inst/product_stage1_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product1_stage1_reg input MicroBlaze_i/CC_0/inst/product1_stage1_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#3 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/product_stage2_reg input MicroBlaze_i/CC_0/inst/product_stage2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product1_stage2_reg input MicroBlaze_i/CC_0/inst/product1_stage2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#4 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/product_stage2_reg input MicroBlaze_i/CC_0/inst/product_stage2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product1_stage2_reg input MicroBlaze_i/CC_0/inst/product1_stage2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#5 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/product_stage3_reg input MicroBlaze_i/CC_0/inst/product_stage3_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product1_stage3_reg input MicroBlaze_i/CC_0/inst/product1_stage3_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#6 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/product_stage3_reg input MicroBlaze_i/CC_0/inst/product_stage3_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product1_stage3_reg input MicroBlaze_i/CC_0/inst/product1_stage3_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#7 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/temp0_reg input MicroBlaze_i/CC_0/inst/temp0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product_stage1_reg input MicroBlaze_i/CC_0/inst/product_stage1_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#8 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/temp0_reg input MicroBlaze_i/CC_0/inst/temp0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product_stage1_reg input MicroBlaze_i/CC_0/inst/product_stage1_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#9 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/temp2_reg input MicroBlaze_i/CC_0/inst/temp2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product_stage2_reg input MicroBlaze_i/CC_0/inst/product_stage2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#10 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_0/inst/temp2_reg input MicroBlaze_i/CC_0/inst/temp2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product_stage2_reg input MicroBlaze_i/CC_0/inst/product_stage2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#11 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product1_stage1_reg input MicroBlaze_i/CC_1/inst/product1_stage1_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product_stage3_reg input MicroBlaze_i/CC_0/inst/product_stage3_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#12 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product1_stage1_reg input MicroBlaze_i/CC_1/inst/product1_stage1_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/product_stage3_reg input MicroBlaze_i/CC_0/inst/product_stage3_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#13 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product1_stage2_reg input MicroBlaze_i/CC_1/inst/product1_stage2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp00_reg input MicroBlaze_i/CC_0/inst/temp00_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#14 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product1_stage2_reg input MicroBlaze_i/CC_1/inst/product1_stage2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp00_reg input MicroBlaze_i/CC_0/inst/temp00_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#15 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product1_stage3_reg input MicroBlaze_i/CC_1/inst/product1_stage3_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp02_reg input MicroBlaze_i/CC_0/inst/temp02_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#16 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product1_stage3_reg input MicroBlaze_i/CC_1/inst/product1_stage3_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp02_reg input MicroBlaze_i/CC_0/inst/temp02_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#17 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product_stage1_reg input MicroBlaze_i/CC_1/inst/product_stage1_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp0_reg input MicroBlaze_i/CC_0/inst/temp0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#18 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product_stage1_reg input MicroBlaze_i/CC_1/inst/product_stage1_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp0_reg input MicroBlaze_i/CC_0/inst/temp0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#19 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product_stage2_reg input MicroBlaze_i/CC_1/inst/product_stage2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp2_reg input MicroBlaze_i/CC_0/inst/temp2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#20 Warning
 Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product_stage2_reg input MicroBlaze_i/CC_1/inst/product_stage2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#21 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product_stage3_reg input MicroBlaze_i/CC_1/inst/product_stage3_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#22 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/product_stage3_reg input MicroBlaze_i/CC_1/inst/product_stage3_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#23 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp00_reg input MicroBlaze_i/CC_1/inst/temp00_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#24 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp00_reg input MicroBlaze_i/CC_1/inst/temp00_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#25 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp02_reg input MicroBlaze_i/CC_1/inst/temp02_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#26 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp02_reg input MicroBlaze_i/CC_1/inst/temp02_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#27 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp0_reg input MicroBlaze_i/CC_1/inst/temp0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#28 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp0_reg input MicroBlaze_i/CC_1/inst/temp0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#29 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp2_reg input MicroBlaze_i/CC_1/inst/temp2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#30 Warning
-Input pipelining  
-DSP MicroBlaze_i/CC_1/inst/temp2_reg input MicroBlaze_i/CC_1/inst/temp2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP MicroBlaze_i/CC_0/inst/temp2_reg input MicroBlaze_i/CC_0/inst/temp2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 

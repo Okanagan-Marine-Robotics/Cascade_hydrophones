@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Thu Feb 27 14:52:09 2025
+//Date        : Sat Mar  1 00:43:38 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -100,7 +100,6 @@ module MicroBlaze
   wire [11:0]BlockRam_1_waveRef1;
   wire [11:0]BlockRam_1_waveRef2;
   wire [11:0]BlockRam_1_waveRef3;
-  wire CC_0_clkcorr;
   wire [15:0]CC_0_count;
   wire [11:0]CC_0_wave00Address;
   wire [11:0]CC_0_wave01Address;
@@ -115,6 +114,7 @@ module MicroBlaze
   wire [13:0]CC_0_waveRef2Address;
   wire [13:0]CC_0_waveRef3Address;
   wire [35:0]CC_0_xcorr;
+  wire [35:0]CC_0_xcorr1;
   wire [11:0]CC_1_wave00Address;
   wire [11:0]CC_1_wave01Address;
   wire [11:0]CC_1_wave02Address;
@@ -309,14 +309,14 @@ module MicroBlaze
         .Ref3(BRAMMUX_1_Ref3),
         .Ref3Address(BRAMMUX_1_Ref3Address),
         .clk(microblaze_0_Clk),
-        .waveRef0(CC_1_waveRef0Address[11:0]),
-        .waveRef0Address({1'b0,1'b0,BlockRam_1_waveRef0}),
-        .waveRef1(CC_1_waveRef1Address[11:0]),
-        .waveRef1Address({1'b0,1'b0,BlockRam_1_waveRef1}),
-        .waveRef2(CC_1_waveRef2Address[11:0]),
-        .waveRef2Address({1'b0,1'b0,BlockRam_1_waveRef2}),
-        .waveRef3(CC_1_waveRef3Address[11:0]),
-        .waveRef3Address({1'b0,1'b0,BlockRam_1_waveRef3}));
+        .waveRef0(BlockRam_1_waveRef0),
+        .waveRef0Address(CC_1_waveRef0Address),
+        .waveRef1(BlockRam_1_waveRef1),
+        .waveRef1Address(CC_1_waveRef1Address),
+        .waveRef2(BlockRam_1_waveRef2),
+        .waveRef2Address(CC_1_waveRef2Address),
+        .waveRef3(BlockRam_1_waveRef3),
+        .waveRef3Address(CC_1_waveRef3Address));
   MicroBlaze_BlockRam_0_0 BlockRam_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
@@ -404,7 +404,6 @@ module MicroBlaze
   MicroBlaze_CC_0_0 CC_0
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
-        .clkcorr(CC_0_clkcorr),
         .count(CC_0_count),
         .reset(waveParser_0_resetsignal),
         .wave0(BlockRam_0_wave0),
@@ -431,7 +430,8 @@ module MicroBlaze
         .waveRef2Address(CC_0_waveRef2Address),
         .waveRef3(BRAMMUX_0_Ref3),
         .waveRef3Address(CC_0_waveRef3Address),
-        .xcorr(CC_0_xcorr));
+        .xcorr(CC_0_xcorr),
+        .xcorr1(CC_0_xcorr1));
   MicroBlaze_CC_1_0 CC_1
        (.clk(microblaze_0_Clk),
         .clk1Mhz(Net1),
@@ -496,7 +496,7 @@ module MicroBlaze
        (.XCORR(XCorrOutputManager_0_XCORR),
         .XCORR1(XCorrOutputManager_0_XCORR1),
         .XCORR_prime(CC_0_xcorr),
-        .XCORR_prime1({CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr,CC_0_clkcorr}),
+        .XCORR_prime1(CC_0_xcorr1),
         .XCORR_second(CC_1_xcorr),
         .XCORR_second1(CC_1_xcorr1),
         .clk(microblaze_0_Clk),

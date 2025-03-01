@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu Feb 27 14:53:02 2025
+// Date        : Sat Mar  1 01:45:13 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_XCorrOutputManager_0_0/MicroBlaze_XCorrOutputManager_0_0_stub.v
@@ -18,15 +18,14 @@
 (* IP_DEFINITION_SOURCE = "module_ref" *) (* X_CORE_INFO = "XCorrOutputManager,Vivado 2024.2" *) 
 module MicroBlaze_XCorrOutputManager_0_0(XCORR_prime, XCORR_prime1, XCORR_second, 
   XCORR_second1, reset, reset1, clk, XCORR, XCORR1)
-/* synthesis syn_black_box black_box_pad_pin="XCORR_prime[35:0],XCORR_prime1[35:0],XCORR_second[35:0],XCORR_second1[35:0],reset,XCORR[31:0],XCORR1[31:0]" */
-/* synthesis syn_force_seq_prim="reset1" */
+/* synthesis syn_black_box black_box_pad_pin="XCORR_prime[35:0],XCORR_prime1[35:0],XCORR_second[35:0],XCORR_second1[35:0],reset,reset1,XCORR[31:0],XCORR1[31:0]" */
 /* synthesis syn_force_seq_prim="clk" */;
   input [35:0]XCORR_prime;
   input [35:0]XCORR_prime1;
   input [35:0]XCORR_second;
   input [35:0]XCORR_second1;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset;
-  input reset1 /* synthesis syn_isclock = 1 */;
+  input reset1;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
   output [31:0]XCORR;
   output [31:0]XCORR1;

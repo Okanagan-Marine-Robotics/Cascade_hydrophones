@@ -18,19 +18,20 @@ module XCorrOutputManager(
             state <= 0;
         end
         if (reset1)begin
-        state <= 1;
+        //make 1
+        state <= 0;
         end
         
     end
     
     always @(negedge clk)begin
         if (state == 0)begin
-            XCORR <=  XCORR_prime [35:3] ;
-            XCORR1 <=  XCORR_prime1 [35:3] ;
+            XCORR [31:0] <=  XCORR_prime [35:4] ;
+            XCORR1 [31:0] <=  XCORR_prime1 [35:4] ;
         end
         else if (state == 1)begin
-            XCORR <=  XCORR_second [35:3] ;
-            XCORR1 <=  XCORR_second1 [35:3] ;
+            XCORR [31:0] <=  XCORR_second [35:4] ;
+            XCORR1 [31:0] <=  XCORR_second1 [35:4] ;
         end
     end
 endmodule

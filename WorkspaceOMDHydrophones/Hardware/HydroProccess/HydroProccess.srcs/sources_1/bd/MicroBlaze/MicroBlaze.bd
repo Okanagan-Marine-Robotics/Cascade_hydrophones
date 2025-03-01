@@ -7,7 +7,8 @@
       "name": "MicroBlaze",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2"
+      "tool_version": "2024.2",
+      "validated": "true"
     },
     "design_tree": {
       "BlockRam_0": "",
@@ -2418,7 +2419,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -2430,7 +2431,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -3476,25 +3477,25 @@
       "BlockRam_1_waveRef0": {
         "ports": [
           "BlockRam_1/waveRef0",
-          "BRAMMUX_1/waveRef0Address"
+          "BRAMMUX_1/waveRef0"
         ]
       },
       "BlockRam_1_waveRef1": {
         "ports": [
           "BlockRam_1/waveRef1",
-          "BRAMMUX_1/waveRef1Address"
+          "BRAMMUX_1/waveRef1"
         ]
       },
       "BlockRam_1_waveRef2": {
         "ports": [
           "BlockRam_1/waveRef2",
-          "BRAMMUX_1/waveRef2Address"
+          "BRAMMUX_1/waveRef2"
         ]
       },
       "BlockRam_1_waveRef3": {
         "ports": [
           "BlockRam_1/waveRef3",
-          "BRAMMUX_1/waveRef3Address"
+          "BRAMMUX_1/waveRef3"
         ]
       },
       "CC_0_count": {
@@ -3638,25 +3639,25 @@
       "CC_1_waveRef0Address": {
         "ports": [
           "CC_1/waveRef0Address",
-          "BRAMMUX_1/waveRef0"
+          "BRAMMUX_1/waveRef0Address"
         ]
       },
       "CC_1_waveRef1Address": {
         "ports": [
           "CC_1/waveRef1Address",
-          "BRAMMUX_1/waveRef1"
+          "BRAMMUX_1/waveRef1Address"
         ]
       },
       "CC_1_waveRef2Address": {
         "ports": [
           "CC_1/waveRef2Address",
-          "BRAMMUX_1/waveRef2"
+          "BRAMMUX_1/waveRef2Address"
         ]
       },
       "CC_1_waveRef3Address": {
         "ports": [
           "CC_1/waveRef3Address",
-          "BRAMMUX_1/waveRef3"
+          "BRAMMUX_1/waveRef3Address"
         ]
       },
       "CC_1_xcorr": {

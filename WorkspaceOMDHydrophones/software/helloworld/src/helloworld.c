@@ -18,7 +18,7 @@ int main() {
 	while(1){
 	maxTime = delayGetter(maxTime);
 	maxTime2 = delayGetter2(maxTime2);
-	//xil_printf("{\"delay_1\": {%d}, \"delay_2\": {%d}}\n", maxTime, maxTime2);
+	xil_printf("{\"delay_1\": {%d}, \"delay_2\": {%d}}\n", maxTime, maxTime2);
 	double i = maxTime;
 	double j = maxTime2;
 	double solution[2];
@@ -26,7 +26,7 @@ int main() {
 	    // Call solver
 	solver(i, j, solution);
 
-	printf("{"x": {%f},"y": {%f}}", solution[0], solution[1]);
+	//printf("{x: {%f},y: {%f}}", solution[0], solution[1]);
 
 
 	}

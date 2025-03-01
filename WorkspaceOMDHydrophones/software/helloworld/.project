@@ -3,6 +3,7 @@
 	<name>helloworld</name>
 	<comment>Created by Vitis v2022.2</comment>
 	<projects>
+		<project>test2</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
