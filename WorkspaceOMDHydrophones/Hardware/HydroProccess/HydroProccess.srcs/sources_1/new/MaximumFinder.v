@@ -15,11 +15,11 @@ module MaximumFinder(
     reg [13:0] addressMax1=0;
     
     always @(negedge clk)begin
-        if (XCORR > max)begin
+        if (XCORR > max && address != 3999)begin
             max <= XCORR;
             addressMax <= address;
         end
-        if (XCORR1 > max1)begin
+        if (XCORR1 > max1 && address != 3999)begin
             max1 <= XCORR1;
             addressMax1 <= address;
         end
