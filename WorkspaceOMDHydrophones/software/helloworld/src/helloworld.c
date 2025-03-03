@@ -49,11 +49,11 @@ int delayGetter (int delay){
 
      	data = XGpio_DiscreteRead(&Gpio, 2);
 
-     	if (data > MaxSignal){
-         	maxTime = i-2002;
-         	MaxSignal = data;
 
-     	}
+         	maxTime = data-2002;
+
+
+
     	i++;
     	//xil_printf("{\"Data\": %d}\n", data);
 	}
@@ -75,11 +75,7 @@ int delayGetter2 (int delay){
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 
-     	if (data > MaxSignal){
-         	maxTime = i-2002;
-         	MaxSignal = data;
-
-     	}
+     	maxTime = data-2002;
     	i++;
     	//xil_printf("{\"Data\": %d}\n", data);
 	}

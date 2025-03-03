@@ -59,7 +59,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="cmod-s7-25"/>
-    <Option Name="WTXSimLaunchSim" Val="235"/>
+    <Option Name="WTXSimLaunchSim" Val="241"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -184,6 +184,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/MaximumFinder.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/MicroBlaze/MicroBlaze.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/bd/MicroBlaze/MicroBlaze.bd"/>
@@ -212,6 +219,9 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_CC_1_0/MicroBlaze_CC_1_0.xci">
           <Proxy FileSetName="MicroBlaze_CC_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_MaximumFinder_0_0/MicroBlaze_MaximumFinder_0_0.xci">
+          <Proxy FileSetName="MicroBlaze_MaximumFinder_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="MicroBlaze.bd" FileRelPathName="ip/MicroBlaze_SPI_ADC_Master_0_1/MicroBlaze_SPI_ADC_Master_0_1.xci">
           <Proxy FileSetName="MicroBlaze_SPI_ADC_Master_0_1"/>
@@ -400,12 +410,6 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="MicroBlaze_AddressFixer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_AddressFixer_0_0" RelGenDir="$PGENDIR/MicroBlaze_AddressFixer_0_0">
-      <Config>
-        <Option Name="TopModule" Val="MicroBlaze_AddressFixer_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="MicroBlaze_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_processing_system7_0_0" RelGenDir="$PGENDIR/MicroBlaze_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="MicroBlaze_processing_system7_0_0"/>
@@ -520,6 +524,18 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="MicroBlaze_AddressFixer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_AddressFixer_0_0" RelGenDir="$PGENDIR/MicroBlaze_AddressFixer_0_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_AddressFixer_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="MicroBlaze_MaximumFinder_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MicroBlaze_MaximumFinder_0_0" RelGenDir="$PGENDIR/MicroBlaze_MaximumFinder_0_0">
+      <Config>
+        <Option Name="TopModule" Val="MicroBlaze_MaximumFinder_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -547,16 +563,6 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_AddressFixer_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_AddressFixer_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_AddressFixer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_AddressFixer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
@@ -742,9 +748,27 @@
     </Run>
     <Run Id="MicroBlaze_XCorrOutputManager_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_XCorrOutputManager_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_XCorrOutputManager_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_XCorrOutputManager_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_XCorrOutputManager_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_XCorrOutputManager_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_AddressFixer_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_AddressFixer_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_AddressFixer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_AddressFixer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_MaximumFinder_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_MaximumFinder_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_MaximumFinder_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_MaximumFinder_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -896,23 +920,6 @@
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="MicroBlaze_AddressFixer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_AddressFixer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_AddressFixer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
@@ -1224,9 +1231,41 @@
     </Run>
     <Run Id="MicroBlaze_XCorrOutputManager_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_XCorrOutputManager_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_XCorrOutputManager_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_XCorrOutputManager_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_XCorrOutputManager_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_AddressFixer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_AddressFixer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_AddressFixer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_AddressFixer_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="MicroBlaze_MaximumFinder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_MaximumFinder_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_MaximumFinder_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

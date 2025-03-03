@@ -16,11 +16,8 @@
       "BRAMMUX_0": "",
       "waveParser_0": "",
       "AddressFixer_0": "",
-      "xlconstant_0": "",
       "axi_gpio_0": "",
-      "blk_mem_gen_0": "",
       "axi_gpio_1": "",
-      "blk_mem_gen_1": "",
       "processing_system7_0": "",
       "proc_sys_reset_0": "",
       "axi_smc": "",
@@ -40,7 +37,8 @@
       "BlockRam_1": "",
       "BRAMMUX_1": "",
       "CC_1": "",
-      "XCorrOutputManager_0": ""
+      "XCorrOutputManager_0": "",
+      "MaximumFinder_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -940,13 +938,6 @@
           }
         }
       },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "MicroBlaze_xlconstant_0_0",
-        "xci_path": "ip\\MicroBlaze_xlconstant_0_0\\MicroBlaze_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0"
-      },
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "35",
@@ -965,57 +956,6 @@
           }
         }
       },
-      "blk_mem_gen_0": {
-        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
-        "ip_revision": "9",
-        "xci_name": "MicroBlaze_blk_mem_gen_0_0",
-        "xci_path": "ip\\MicroBlaze_blk_mem_gen_0_0\\MicroBlaze_blk_mem_gen_0_0.xci",
-        "inst_hier_path": "blk_mem_gen_0",
-        "parameters": {
-          "Assume_Synchronous_Clk": {
-            "value": "true"
-          },
-          "Enable_32bit_Address": {
-            "value": "false"
-          },
-          "Enable_A": {
-            "value": "Always_Enabled"
-          },
-          "Enable_B": {
-            "value": "Always_Enabled"
-          },
-          "Memory_Type": {
-            "value": "True_Dual_Port_RAM"
-          },
-          "Port_B_Clock": {
-            "value": "100"
-          },
-          "Port_B_Enable_Rate": {
-            "value": "100"
-          },
-          "Port_B_Write_Rate": {
-            "value": "50"
-          },
-          "Register_PortA_Output_of_Memory_Primitives": {
-            "value": "true"
-          },
-          "Register_PortB_Output_of_Memory_Primitives": {
-            "value": "true"
-          },
-          "Use_Byte_Write_Enable": {
-            "value": "false"
-          },
-          "Use_RSTA_Pin": {
-            "value": "false"
-          },
-          "Write_Depth_A": {
-            "value": "4001"
-          },
-          "use_bram_block": {
-            "value": "Stand_Alone"
-          }
-        }
-      },
       "axi_gpio_1": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "35",
@@ -1031,57 +971,6 @@
           },
           "C_IS_DUAL": {
             "value": "1"
-          }
-        }
-      },
-      "blk_mem_gen_1": {
-        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
-        "ip_revision": "9",
-        "xci_name": "MicroBlaze_blk_mem_gen_0_1",
-        "xci_path": "ip\\MicroBlaze_blk_mem_gen_0_1\\MicroBlaze_blk_mem_gen_0_1.xci",
-        "inst_hier_path": "blk_mem_gen_1",
-        "parameters": {
-          "Assume_Synchronous_Clk": {
-            "value": "true"
-          },
-          "Enable_32bit_Address": {
-            "value": "false"
-          },
-          "Enable_A": {
-            "value": "Always_Enabled"
-          },
-          "Enable_B": {
-            "value": "Always_Enabled"
-          },
-          "Memory_Type": {
-            "value": "True_Dual_Port_RAM"
-          },
-          "Port_B_Clock": {
-            "value": "100"
-          },
-          "Port_B_Enable_Rate": {
-            "value": "100"
-          },
-          "Port_B_Write_Rate": {
-            "value": "50"
-          },
-          "Register_PortA_Output_of_Memory_Primitives": {
-            "value": "true"
-          },
-          "Register_PortB_Output_of_Memory_Primitives": {
-            "value": "true"
-          },
-          "Use_Byte_Write_Enable": {
-            "value": "false"
-          },
-          "Use_RSTA_Pin": {
-            "value": "false"
-          },
-          "Write_Depth_A": {
-            "value": "4001"
-          },
-          "use_bram_block": {
-            "value": "Stand_Alone"
           }
         }
       },
@@ -2419,7 +2308,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "1"
+            "value": "0"
           }
         }
       },
@@ -3216,6 +3105,59 @@
             "right": "0"
           }
         }
+      },
+      "MaximumFinder_0": {
+        "vlnv": "xilinx.com:module_ref:MaximumFinder:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_MaximumFinder_0_0",
+        "xci_path": "ip\\MicroBlaze_MaximumFinder_0_0\\MicroBlaze_MaximumFinder_0_0.xci",
+        "inst_hier_path": "MaximumFinder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MaximumFinder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "XCORR": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "XCORR1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "tmax": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "tmax1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -3254,8 +3196,7 @@
       "AddressFixer_0_address": {
         "ports": [
           "AddressFixer_0/address",
-          "blk_mem_gen_0/addrb",
-          "blk_mem_gen_1/addrb"
+          "MaximumFinder_0/address"
         ]
       },
       "BRAMMUX_0_Ref0": {
@@ -3438,28 +3379,28 @@
           "CC_1/wave0"
         ]
       },
-      "BlockRam_1_wave01": {
-        "ports": [
-          "BlockRam_1/wave01",
-          "CC_1/wave01"
-        ]
-      },
       "BlockRam_1_wave1": {
         "ports": [
           "BlockRam_1/wave1",
           "CC_1/wave1"
         ]
       },
-      "BlockRam_1_wave02": {
+      "BlockRam_1_wave01": {
         "ports": [
-          "BlockRam_1/wave02",
-          "CC_1/wave02"
+          "BlockRam_1/wave01",
+          "CC_1/wave01"
         ]
       },
       "BlockRam_1_wave2": {
         "ports": [
           "BlockRam_1/wave2",
           "CC_1/wave2"
+        ]
+      },
+      "BlockRam_1_wave02": {
+        "ports": [
+          "BlockRam_1/wave02",
+          "CC_1/wave02"
         ]
       },
       "BlockRam_1_wave03": {
@@ -3672,6 +3613,18 @@
           "XCorrOutputManager_0/XCORR_second1"
         ]
       },
+      "MaximumFinder_0_tmax": {
+        "ports": [
+          "MaximumFinder_0/tmax",
+          "axi_gpio_0/gpio2_io_i"
+        ]
+      },
+      "MaximumFinder_0_tmax1": {
+        "ports": [
+          "MaximumFinder_0/tmax1",
+          "axi_gpio_1/gpio2_io_i"
+        ]
+      },
       "Net1": {
         "ports": [
           "clk1Mhz_0/clk1Mhz",
@@ -3734,37 +3687,13 @@
       "XCorrOutputManager_0_XCORR": {
         "ports": [
           "XCorrOutputManager_0/XCORR",
-          "blk_mem_gen_0/dinb"
+          "MaximumFinder_0/XCORR"
         ]
       },
       "XCorrOutputManager_0_XCORR1": {
         "ports": [
           "XCorrOutputManager_0/XCORR1",
-          "blk_mem_gen_1/dinb"
-        ]
-      },
-      "axi_gpio_0_gpio_io_o": {
-        "ports": [
-          "axi_gpio_0/gpio_io_o",
-          "blk_mem_gen_0/addra"
-        ]
-      },
-      "axi_gpio_1_gpio_io_o": {
-        "ports": [
-          "axi_gpio_1/gpio_io_o",
-          "blk_mem_gen_1/addra"
-        ]
-      },
-      "blk_mem_gen_0_douta": {
-        "ports": [
-          "blk_mem_gen_0/douta",
-          "axi_gpio_0/gpio2_io_i"
-        ]
-      },
-      "blk_mem_gen_1_douta": {
-        "ports": [
-          "blk_mem_gen_1/douta",
-          "axi_gpio_1/gpio2_io_i"
+          "MaximumFinder_0/XCORR1"
         ]
       },
       "clk_wiz_0_clk_out1": {
@@ -3783,11 +3712,6 @@
           "processing_system7_0/FCLK_CLK0",
           "axi_gpio_0/s_axi_aclk",
           "axi_gpio_1/s_axi_aclk",
-          "blk_mem_gen_0/clka",
-          "blk_mem_gen_0/clkb",
-          "blk_mem_gen_1/clka",
-          "blk_mem_gen_1/clkb",
-          "AddressFixer_0/clk",
           "axi_smc/aclk",
           "proc_sys_reset_0/slowest_sync_clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
@@ -3804,7 +3728,9 @@
           "BlockRam_1/clk",
           "BRAMMUX_1/clk",
           "CC_1/clk",
-          "XCorrOutputManager_0/clk"
+          "XCorrOutputManager_0/clk",
+          "AddressFixer_0/clk",
+          "MaximumFinder_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -4019,13 +3945,6 @@
         "ports": [
           "waveParser_0/waveRef3Address",
           "BlockRam_0/waveRef3Address"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "blk_mem_gen_0/web",
-          "blk_mem_gen_1/web"
         ]
       },
       "xlconstant_1_dout": {

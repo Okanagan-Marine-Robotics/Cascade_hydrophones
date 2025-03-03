@@ -1,175 +1,170 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.98406",
-   "Default View_TopLeft":"3694,1030",
+   "Default View_ScaleFactor":"0.530634",
+   "Default View_TopLeft":"3520,1702",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 12 -x 4360 -y 1850 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 12 -x 4360 -y 1880 -defaultsOSRD
-preplace portBus led_green -pg 1 -lvl 12 -x 4360 -y 1800 -defaultsOSRD
-preplace portBus led_red -pg 1 -lvl 12 -x 4360 -y 1940 -defaultsOSRD
-preplace inst BlockRam_0 -pg 1 -lvl 7 -x 2370 -y 350 -defaultsOSRD
-preplace inst CC_0 -pg 1 -lvl 9 -x 3390 -y 510 -defaultsOSRD
-preplace inst BRAMMUX_0 -pg 1 -lvl 8 -x 2860 -y 480 -defaultsOSRD
-preplace inst waveParser_0 -pg 1 -lvl 6 -x 1810 -y 260 -defaultsOSRD
-preplace inst AddressFixer_0 -pg 1 -lvl 10 -x 3920 -y 1350 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 10 -x 3920 -y 1460 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 920 -y 1610 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 11 -x 4240 -y 1330 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 920 -y 1770 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 11 -x 4240 -y 1610 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 1880 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 240 -y 1660 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 2 -x 610 -y 1740 -defaultsOSRD
-preplace inst SineWaveGen_0 -pg 1 -lvl 3 -x 920 -y 1170 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 920 -y 1070 -defaultsOSRD
-preplace inst SPI_ADC_Master_0 -pg 1 -lvl 5 -x 1480 -y 1000 -defaultsOSRD
-preplace inst Serializer_0 -pg 1 -lvl 4 -x 1210 -y 1080 -defaultsOSRD
-preplace inst SPI_ADC_Master_1 -pg 1 -lvl 5 -x 1480 -y 860 -defaultsOSRD
-preplace inst Serializer_1 -pg 1 -lvl 4 -x 1210 -y 940 -defaultsOSRD
-preplace inst SPI_ADC_Master_2 -pg 1 -lvl 5 -x 1480 -y 1170 -defaultsOSRD
-preplace inst Serializer_2 -pg 1 -lvl 4 -x 1210 -y 1280 -defaultsOSRD
-preplace inst clk1Mhz_0 -pg 1 -lvl 2 -x 610 -y 1620 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 11 -x 4240 -y 1800 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 11 -x 4240 -y 1940 -defaultsOSRD
-preplace inst testdelaysine_0 -pg 1 -lvl 3 -x 920 -y 1290 -defaultsOSRD
-preplace inst waveParser2_0 -pg 1 -lvl 6 -x 1810 -y 1060 -defaultsOSRD
-preplace inst BlockRam_1 -pg 1 -lvl 7 -x 2370 -y 1150 -defaultsOSRD
-preplace inst BRAMMUX_1 -pg 1 -lvl 8 -x 2860 -y 1140 -defaultsOSRD
-preplace inst CC_1 -pg 1 -lvl 9 -x 3390 -y 1050 -defaultsOSRD
-preplace inst XCorrOutputManager_0 -pg 1 -lvl 10 -x 3920 -y 1160 -defaultsOSRD
-preplace netloc AddressFixer_0_address 1 10 1 4130 1350n
-preplace netloc BRAMMUX_0_Ref0 1 8 1 N 410
-preplace netloc BRAMMUX_0_Ref0Address 1 6 3 2200 10 NJ 10 3040
-preplace netloc BRAMMUX_0_Ref1 1 8 1 3170 430n
-preplace netloc BRAMMUX_0_Ref1Address 1 6 3 2190 700 NJ 700 3060
-preplace netloc BRAMMUX_0_Ref2 1 8 1 3140 450n
-preplace netloc BRAMMUX_0_Ref2Address 1 6 3 2160 710 NJ 710 3050
-preplace netloc BRAMMUX_0_Ref3 1 8 1 3070 470n
-preplace netloc BRAMMUX_0_Ref3Address 1 6 3 2200 690 2540J 670 3040
-preplace netloc BRAMMUX_1_Ref0 1 8 1 3040 950n
-preplace netloc BRAMMUX_1_Ref0Address 1 6 3 2200 1510 NJ 1510 3070
-preplace netloc BRAMMUX_1_Ref1 1 8 1 3050 1010n
-preplace netloc BRAMMUX_1_Ref1Address 1 6 3 2190 1520 NJ 1520 3060
-preplace netloc BRAMMUX_1_Ref2 1 8 1 3060 1070n
-preplace netloc BRAMMUX_1_Ref2Address 1 6 3 2170 1530 NJ 1530 3050
-preplace netloc BRAMMUX_1_Ref3 1 8 1 N 1130
-preplace netloc BRAMMUX_1_Ref3Address 1 6 3 2150 1540 NJ 1540 3040
-preplace netloc BlockRam_0_wave00 1 7 2 NJ 280 3210
-preplace netloc BlockRam_0_wave0 1 7 2 NJ 260 3220
-preplace netloc BlockRam_0_wave01 1 7 2 2550J 310 3190
-preplace netloc BlockRam_0_wave1 1 7 2 NJ 320 3180
-preplace netloc BlockRam_0_wave02 1 7 2 2610 330 3150J
-preplace netloc BlockRam_0_wave2 1 7 2 2540 290 3200J
-preplace netloc BlockRam_0_wave03 1 7 2 2560 340 3110J
-preplace netloc BlockRam_0_wave3 1 7 2 2600 300 3160J
-preplace netloc BlockRam_0_waveRef0 1 7 1 2630 240n
-preplace netloc BlockRam_0_waveRef1 1 7 1 2590 300n
-preplace netloc BlockRam_0_waveRef2 1 7 1 2620 360n
-preplace netloc BlockRam_0_waveRef3 1 7 1 2580 420n
-preplace netloc BlockRam_1_wave00 1 7 2 2560 990 NJ
-preplace netloc BlockRam_1_wave0 1 7 2 2540 970 NJ
-preplace netloc BlockRam_1_wave01 1 7 2 2620 1290 3110J
-preplace netloc BlockRam_1_wave1 1 7 2 2610 1320 3140J
-preplace netloc BlockRam_1_wave02 1 7 2 2560J 1300 3170
-preplace netloc BlockRam_1_wave2 1 7 2 2550J 1330 3190
-preplace netloc BlockRam_1_wave03 1 7 2 2540J 1310 3210
-preplace netloc BlockRam_1_wave3 1 7 2 2570J 1280 3160
-preplace netloc BlockRam_1_waveRef0 1 7 1 2550 1040n
-preplace netloc BlockRam_1_waveRef1 1 7 1 2590 1080n
-preplace netloc BlockRam_1_waveRef2 1 7 1 2630 1100n
-preplace netloc BlockRam_1_waveRef3 1 7 1 2640 1120n
-preplace netloc CC_0_count 1 9 1 3730 660n
-preplace netloc CC_0_wave00Address 1 6 4 2130 730 NJ 730 3090J 740 3650
-preplace netloc CC_0_wave01Address 1 6 4 2080 740 NJ 740 3080J 750 3600
-preplace netloc CC_0_wave02Address 1 6 4 2150 790 NJ 790 NJ 790 3610
-preplace netloc CC_0_wave03Address 1 6 4 2120 800 NJ 800 NJ 800 3560
-preplace netloc CC_0_wave0Address 1 6 4 2070 1490 NJ 1490 NJ 1490 3700
-preplace netloc CC_0_wave1Address 1 6 4 2140 720 NJ 720 3100J 730 3630
-preplace netloc CC_0_wave2Address 1 6 4 2180 770 NJ 770 NJ 770 3690
-preplace netloc CC_0_wave3Address 1 6 4 2170 780 NJ 780 NJ 780 3590
-preplace netloc CC_0_waveRef0Address 1 7 3 2680 250 NJ 250 3570
-preplace netloc CC_0_waveRef1Address 1 7 3 2670 270 NJ 270 3590
-preplace netloc CC_0_waveRef2Address 1 7 3 2680 690 3110J 720 3570
-preplace netloc CC_0_waveRef3Address 1 7 3 2670 760 NJ 760 3580
-preplace netloc CC_0_xcorr 1 9 1 3760 600n
-preplace netloc CC_0_xcorr1 1 9 1 3750 620n
-preplace netloc CC_1_wave00Address 1 6 4 2090 1590 NJ 1590 3100J 1530 3620
-preplace netloc CC_1_wave01Address 1 6 4 2080 1600 NJ 1600 NJ 1600 3710
-preplace netloc CC_1_wave02Address 1 6 4 2060 1610 NJ 1610 NJ 1610 3690
-preplace netloc CC_1_wave03Address 1 6 4 2050 1620 NJ 1620 NJ 1620 3670
-preplace netloc CC_1_wave0Address 1 6 4 2130 1550 NJ 1550 NJ 1550 3640
-preplace netloc CC_1_wave1Address 1 6 4 2120 1560 NJ 1560 3180J 1540 3600
-preplace netloc CC_1_wave2Address 1 6 4 2110 1570 NJ 1570 NJ 1570 3660
-preplace netloc CC_1_wave3Address 1 6 4 2100 1580 NJ 1580 NJ 1580 3630
-preplace netloc CC_1_waveRef0Address 1 7 3 2680 1340 NJ 1340 3680
-preplace netloc CC_1_waveRef1Address 1 7 3 2660 1350 NJ 1350 3650
-preplace netloc CC_1_waveRef2Address 1 7 3 2630 1360 NJ 1360 3610
-preplace netloc CC_1_waveRef3Address 1 7 3 2600 1370 NJ 1370 3560
-preplace netloc CC_1_xcorr 1 9 1 N 1140
-preplace netloc CC_1_xcorr1 1 9 1 N 1160
-preplace netloc Net1 1 2 7 750 1010 NJ 1010 1350J 1080 1640 470 2060 810 NJ 810 3130
-preplace netloc SPI_ADC_Master_0_wave 1 5 1 1620 220n
-preplace netloc SPI_ADC_Master_1_wave 1 5 1 1630 240n
-preplace netloc SPI_ADC_Master_2_wave 1 5 1 1610 260n
-preplace netloc Serializer_0_MISO 1 4 1 1340 1020n
-preplace netloc Serializer_1_MISO 1 4 1 1350 880n
-preplace netloc Serializer_2_MISO 1 4 1 1360 1190n
-preplace netloc SineWaveGen_0_wave 1 3 1 1080 950n
-preplace netloc XCorrOutputManager_0_XCORR 1 10 1 4120 1150n
-preplace netloc XCorrOutputManager_0_XCORR1 1 10 1 4100 1170n
-preplace netloc axi_gpio_0_gpio_io_o 1 3 8 NJ 1600 NJ 1600 NJ 1600 1970J 1630 NJ 1630 NJ 1630 NJ 1630 4110
-preplace netloc axi_gpio_1_gpio_io_o 1 3 8 1070J 1640 NJ 1640 NJ 1640 NJ 1640 NJ 1640 3210J 1560 NJ 1560 4120
-preplace netloc blk_mem_gen_0_douta 1 3 8 1060J 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 4080
-preplace netloc blk_mem_gen_1_douta 1 3 8 1080J 1660 NJ 1660 NJ 1660 NJ 1660 NJ 1660 3220J 1590 NJ 1590 N
-preplace netloc clk_wiz_0_clk_out1 1 3 2 1090 870 1360
-preplace netloc microblaze_0_Clk 1 0 11 20 1550 460 1550 780 1230 1060J 1210 1330 780 1650 480 2050 760 2650 680 3120 840 3720 1280 4090
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 480 1560 760
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1560 450
-preplace netloc testdelaysine_0_wave 1 3 1 NJ 1290
-preplace netloc waveParser2_0_buffer 1 6 1 N 930
-preplace netloc waveParser2_0_buffer1 1 6 1 N 950
-preplace netloc waveParser2_0_bufferRef 1 6 1 N 910
-preplace netloc waveParser2_0_resetsignal 1 6 4 1970J 1500 NJ 1500 3220 1260 3760J
-preplace netloc waveParser2_0_wave00Address 1 6 1 N 1010
-preplace netloc waveParser2_0_wave01Address 1 6 1 N 1070
-preplace netloc waveParser2_0_wave02Address 1 6 1 N 1130
-preplace netloc waveParser2_0_wave03Address 1 6 1 N 1190
-preplace netloc waveParser2_0_wave0Address 1 6 1 N 990
-preplace netloc waveParser2_0_wave1Address 1 6 1 N 1050
-preplace netloc waveParser2_0_wave2Address 1 6 1 N 1110
-preplace netloc waveParser2_0_wave3Address 1 6 1 N 1170
-preplace netloc waveParser2_0_waveRef0Address 1 6 1 N 970
-preplace netloc waveParser2_0_waveRef1Address 1 6 1 N 1030
-preplace netloc waveParser2_0_waveRef2Address 1 6 1 N 1090
-preplace netloc waveParser2_0_waveRef3Address 1 6 1 N 1150
-preplace netloc waveParser_0_buffer 1 6 1 N 130
-preplace netloc waveParser_0_buffer1 1 6 1 N 150
-preplace netloc waveParser_0_bufferRef 1 6 1 N 110
-preplace netloc waveParser_0_resetsignal 1 6 4 1970J 750 NJ 750 3070 830 3740J
-preplace netloc waveParser_0_wave00Address 1 6 1 N 210
-preplace netloc waveParser_0_wave01Address 1 6 1 N 270
-preplace netloc waveParser_0_wave02Address 1 6 1 N 330
-preplace netloc waveParser_0_wave03Address 1 6 1 N 390
-preplace netloc waveParser_0_wave0Address 1 6 1 N 190
-preplace netloc waveParser_0_wave1Address 1 6 1 N 250
-preplace netloc waveParser_0_wave2Address 1 6 1 N 310
-preplace netloc waveParser_0_wave3Address 1 6 1 N 370
-preplace netloc waveParser_0_waveRef0Address 1 6 1 N 170
-preplace netloc waveParser_0_waveRef1Address 1 6 1 N 230
-preplace netloc waveParser_0_waveRef2Address 1 6 1 N 290
-preplace netloc waveParser_0_waveRef3Address 1 6 1 N 350
-preplace netloc xlconstant_0_dout 1 10 1 4140 1410n
-preplace netloc xlconstant_1_dout 1 11 1 NJ 1800
-preplace netloc xlconstant_2_dout 1 11 1 NJ 1940
-preplace netloc axi_smc_M00_AXI 1 2 1 770 1590n
-preplace netloc axi_smc_M01_AXI 1 2 1 N 1750
-preplace netloc processing_system7_0_DDR 1 1 11 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 4340J
-preplace netloc processing_system7_0_FIXED_IO 1 1 11 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 470 1720n
-levelinfo -pg 1 0 240 610 920 1210 1480 1810 2370 2860 3390 3920 4240 4360
-pagesize -pg 1 -db -bbox -sgen 0 0 4510 2010
+preplace port DDR -pg 1 -lvl 12 -x 4610 -y 810 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 12 -x 4610 -y 840 -defaultsOSRD
+preplace portBus led_green -pg 1 -lvl 12 -x 4610 -y 2270 -defaultsOSRD
+preplace portBus led_red -pg 1 -lvl 12 -x 4610 -y 2170 -defaultsOSRD
+preplace inst BlockRam_0 -pg 1 -lvl 7 -x 2300 -y 340 -defaultsOSRD
+preplace inst CC_0 -pg 1 -lvl 9 -x 3370 -y 490 -defaultsOSRD
+preplace inst BRAMMUX_0 -pg 1 -lvl 8 -x 2800 -y 460 -defaultsOSRD
+preplace inst waveParser_0 -pg 1 -lvl 6 -x 1780 -y 250 -defaultsOSRD
+preplace inst AddressFixer_0 -pg 1 -lvl 10 -x 3860 -y 910 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 900 -y 1030 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 900 -y 1190 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 840 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 240 -y 1060 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 600 -y 1040 -defaultsOSRD
+preplace inst SineWaveGen_0 -pg 1 -lvl 3 -x 900 -y 540 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 900 -y 650 -defaultsOSRD
+preplace inst SPI_ADC_Master_0 -pg 1 -lvl 5 -x 1450 -y 580 -defaultsOSRD
+preplace inst Serializer_0 -pg 1 -lvl 4 -x 1180 -y 600 -defaultsOSRD
+preplace inst SPI_ADC_Master_1 -pg 1 -lvl 5 -x 1450 -y 440 -defaultsOSRD
+preplace inst Serializer_1 -pg 1 -lvl 4 -x 1180 -y 480 -defaultsOSRD
+preplace inst SPI_ADC_Master_2 -pg 1 -lvl 5 -x 1450 -y 740 -defaultsOSRD
+preplace inst Serializer_2 -pg 1 -lvl 4 -x 1180 -y 740 -defaultsOSRD
+preplace inst clk1Mhz_0 -pg 1 -lvl 2 -x 600 -y 900 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 11 -x 4350 -y 2270 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 11 -x 4350 -y 2170 -defaultsOSRD
+preplace inst testdelaysine_0 -pg 1 -lvl 3 -x 900 -y 750 -defaultsOSRD
+preplace inst waveParser2_0 -pg 1 -lvl 8 -x 2800 -y 1490 -defaultsOSRD
+preplace inst BlockRam_1 -pg 1 -lvl 10 -x 3860 -y 1580 -defaultsOSRD
+preplace inst BRAMMUX_1 -pg 1 -lvl 11 -x 4350 -y 1900 -defaultsOSRD
+preplace inst CC_1 -pg 1 -lvl 9 -x 3370 -y 1790 -defaultsOSRD
+preplace inst XCorrOutputManager_0 -pg 1 -lvl 10 -x 3860 -y 1100 -defaultsOSRD
+preplace inst MaximumFinder_0 -pg 1 -lvl 11 -x 4350 -y 1120 -defaultsOSRD
+preplace netloc AddressFixer_0_address 1 10 1 4160 910n
+preplace netloc BRAMMUX_0_Ref0 1 8 1 N 390
+preplace netloc BRAMMUX_0_Ref0Address 1 6 3 2120 690 NJ 690 2990
+preplace netloc BRAMMUX_0_Ref1 1 8 1 3080 410n
+preplace netloc BRAMMUX_0_Ref1Address 1 6 3 2080 730 NJ 730 3010
+preplace netloc BRAMMUX_0_Ref2 1 8 1 3050 430n
+preplace netloc BRAMMUX_0_Ref2Address 1 6 3 2070 740 NJ 740 3000
+preplace netloc BRAMMUX_0_Ref3 1 8 1 3020 450n
+preplace netloc BRAMMUX_0_Ref3Address 1 6 3 2130 680 NJ 680 2980
+preplace netloc BRAMMUX_1_Ref0 1 8 4 3140 2070 NJ 2070 NJ 2070 4590
+preplace netloc BRAMMUX_1_Ref0Address 1 9 3 3670 1980 4110J 2040 4540
+preplace netloc BRAMMUX_1_Ref1 1 8 4 3130 2080 NJ 2080 NJ 2080 4580
+preplace netloc BRAMMUX_1_Ref1Address 1 9 3 3690 1920 4090J 1750 4530
+preplace netloc BRAMMUX_1_Ref2 1 8 4 3150 2050 NJ 2050 NJ 2050 4570
+preplace netloc BRAMMUX_1_Ref2Address 1 9 3 3680 1930 4100J 1760 4550
+preplace netloc BRAMMUX_1_Ref3 1 8 4 3120 2090 NJ 2090 NJ 2090 4560
+preplace netloc BRAMMUX_1_Ref3Address 1 9 3 3650 1990 4090J 2060 4530
+preplace netloc BlockRam_0_wave00 1 7 2 2480 250 3190J
+preplace netloc BlockRam_0_wave0 1 7 2 2470 240 3200J
+preplace netloc BlockRam_0_wave01 1 7 2 2490 260 3180J
+preplace netloc BlockRam_0_wave1 1 7 2 2510 300 3140J
+preplace netloc BlockRam_0_wave02 1 7 2 2500J 270 3100
+preplace netloc BlockRam_0_wave2 1 7 2 2530J 310 3070
+preplace netloc BlockRam_0_wave03 1 7 2 2520J 280 3060
+preplace netloc BlockRam_0_wave3 1 7 2 2570J 320 3030
+preplace netloc BlockRam_0_waveRef0 1 7 1 2580 230n
+preplace netloc BlockRam_0_waveRef1 1 7 1 2540 290n
+preplace netloc BlockRam_0_waveRef2 1 7 1 2510 350n
+preplace netloc BlockRam_0_waveRef3 1 7 1 2470 410n
+preplace netloc BlockRam_1_wave00 1 8 3 3200 1240 NJ 1240 4050
+preplace netloc BlockRam_1_wave0 1 8 3 3190 1230 NJ 1230 4030
+preplace netloc BlockRam_1_wave1 1 8 3 3110 2100 NJ 2100 4080
+preplace netloc BlockRam_1_wave01 1 8 3 3190 2010 NJ 2010 4070
+preplace netloc BlockRam_1_wave2 1 8 3 3160 2040 NJ 2040 4060
+preplace netloc BlockRam_1_wave02 1 8 3 3180 2020 NJ 2020 4050
+preplace netloc BlockRam_1_wave03 1 8 3 3170 2030 NJ 2030 4040
+preplace netloc BlockRam_1_wave3 1 8 3 3200 2000 NJ 2000 4030
+preplace netloc BlockRam_1_waveRef0 1 10 1 4160 1470n
+preplace netloc BlockRam_1_waveRef1 1 10 1 4150 1530n
+preplace netloc BlockRam_1_waveRef2 1 10 1 4120 1590n
+preplace netloc BlockRam_1_waveRef3 1 10 1 4110 1650n
+preplace netloc CC_0_count 1 9 1 3680 640n
+preplace netloc CC_0_wave00Address 1 6 4 2040 770 NJ 770 NJ 770 3630
+preplace netloc CC_0_wave01Address 1 6 4 2030 780 NJ 780 NJ 780 3600
+preplace netloc CC_0_wave02Address 1 6 4 2090 720 NJ 720 NJ 720 3540
+preplace netloc CC_0_wave03Address 1 6 4 2020 790 NJ 790 NJ 790 3580
+preplace netloc CC_0_wave0Address 1 6 4 2060 750 NJ 750 NJ 750 3620
+preplace netloc CC_0_wave1Address 1 6 4 2110 700 NJ 700 NJ 700 3590
+preplace netloc CC_0_wave2Address 1 6 4 2100 710 NJ 710 NJ 710 3570
+preplace netloc CC_0_wave3Address 1 6 4 2050 760 NJ 760 NJ 760 3550
+preplace netloc CC_0_waveRef0Address 1 7 3 2590 200 NJ 200 3630
+preplace netloc CC_0_waveRef1Address 1 7 3 2610 220 NJ 220 3600
+preplace netloc CC_0_waveRef2Address 1 7 3 2600 210 NJ 210 3610
+preplace netloc CC_0_waveRef3Address 1 7 3 2620 230 NJ 230 3560
+preplace netloc CC_0_xcorr 1 9 1 3690 580n
+preplace netloc CC_0_xcorr1 1 9 1 3670 600n
+preplace netloc CC_1_wave00Address 1 9 1 N 1680
+preplace netloc CC_1_wave01Address 1 9 1 N 1740
+preplace netloc CC_1_wave02Address 1 9 1 N 1800
+preplace netloc CC_1_wave03Address 1 9 1 N 1860
+preplace netloc CC_1_wave0Address 1 9 1 N 1660
+preplace netloc CC_1_wave1Address 1 9 1 N 1720
+preplace netloc CC_1_wave2Address 1 9 1 N 1780
+preplace netloc CC_1_wave3Address 1 9 1 N 1840
+preplace netloc CC_1_waveRef0Address 1 9 2 3590 1940 4110J
+preplace netloc CC_1_waveRef1Address 1 9 2 3580 1950 4150J
+preplace netloc CC_1_waveRef2Address 1 9 2 3570 1960 4160J
+preplace netloc CC_1_waveRef3Address 1 9 2 3560 1970 4170J
+preplace netloc CC_1_xcorr 1 9 1 3600 1080n
+preplace netloc CC_1_xcorr1 1 9 1 3610 1100n
+preplace netloc MaximumFinder_0_tmax 1 3 9 1050 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 4540
+preplace netloc MaximumFinder_0_tmax1 1 3 9 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 3620J 1220 NJ 1220 4540
+preplace netloc Net1 1 2 8 740 270 NJ 270 NJ 270 1590 40 1980 1160 2540 1160 3090 1320 NJ
+preplace netloc SPI_ADC_Master_0_wave 1 5 3 1600 800 1950J 860 2490J
+preplace netloc SPI_ADC_Master_1_wave 1 5 3 1620 790 1990J 850 2510J
+preplace netloc SPI_ADC_Master_2_wave 1 5 3 1610 810 1940J 870 2470J
+preplace netloc Serializer_0_MISO 1 4 1 N 600
+preplace netloc Serializer_1_MISO 1 4 1 1320 460n
+preplace netloc Serializer_2_MISO 1 4 1 1290 740n
+preplace netloc SineWaveGen_0_wave 1 3 1 1070 490n
+preplace netloc XCorrOutputManager_0_XCORR 1 10 1 N 1090
+preplace netloc XCorrOutputManager_0_XCORR1 1 10 1 N 1110
+preplace netloc clk_wiz_0_clk_out1 1 3 2 1060 410 1330
+preplace netloc microblaze_0_Clk 1 0 11 30 960 460 960 750 810 NJ 810 1310 290 1580 30 2010 810 2560 290 3040 900 3660 980 4140
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 470 1120 760
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1160 450
+preplace netloc testdelaysine_0_wave 1 3 1 NJ 750
+preplace netloc waveParser2_0_buffer 1 8 2 N 1360 NJ
+preplace netloc waveParser2_0_buffer1 1 8 2 N 1380 NJ
+preplace netloc waveParser2_0_bufferRef 1 8 2 N 1340 NJ
+preplace netloc waveParser2_0_resetsignal 1 8 2 3100 1140 NJ
+preplace netloc waveParser2_0_wave00Address 1 8 2 N 1440 NJ
+preplace netloc waveParser2_0_wave01Address 1 8 2 N 1500 NJ
+preplace netloc waveParser2_0_wave02Address 1 8 2 N 1560 NJ
+preplace netloc waveParser2_0_wave03Address 1 8 2 3180J 1580 3560
+preplace netloc waveParser2_0_wave0Address 1 8 2 N 1420 NJ
+preplace netloc waveParser2_0_wave1Address 1 8 2 N 1480 NJ
+preplace netloc waveParser2_0_wave2Address 1 8 2 NJ 1540 N
+preplace netloc waveParser2_0_wave3Address 1 8 2 3060 1550 3580J
+preplace netloc waveParser2_0_waveRef0Address 1 8 2 N 1400 NJ
+preplace netloc waveParser2_0_waveRef1Address 1 8 2 N 1460 NJ
+preplace netloc waveParser2_0_waveRef2Address 1 8 2 NJ 1520 N
+preplace netloc waveParser2_0_waveRef3Address 1 8 2 3070J 1570 3570
+preplace netloc waveParser_0_buffer 1 6 1 N 120
+preplace netloc waveParser_0_buffer1 1 6 1 N 140
+preplace netloc waveParser_0_bufferRef 1 6 1 N 100
+preplace netloc waveParser_0_resetsignal 1 6 4 2000J 800 NJ 800 3060 800 3620J
+preplace netloc waveParser_0_wave00Address 1 6 1 N 200
+preplace netloc waveParser_0_wave01Address 1 6 1 N 260
+preplace netloc waveParser_0_wave02Address 1 6 1 N 320
+preplace netloc waveParser_0_wave03Address 1 6 1 N 380
+preplace netloc waveParser_0_wave0Address 1 6 1 N 180
+preplace netloc waveParser_0_wave1Address 1 6 1 N 240
+preplace netloc waveParser_0_wave2Address 1 6 1 N 300
+preplace netloc waveParser_0_wave3Address 1 6 1 N 360
+preplace netloc waveParser_0_waveRef0Address 1 6 1 N 160
+preplace netloc waveParser_0_waveRef1Address 1 6 1 N 220
+preplace netloc waveParser_0_waveRef2Address 1 6 1 N 280
+preplace netloc waveParser_0_waveRef3Address 1 6 1 N 340
+preplace netloc xlconstant_1_dout 1 11 1 NJ 2270
+preplace netloc xlconstant_2_dout 1 11 1 NJ 2170
+preplace netloc axi_smc_M00_AXI 1 2 1 730 1010n
+preplace netloc axi_smc_M01_AXI 1 2 1 730 1050n
+preplace netloc processing_system7_0_DDR 1 1 11 NJ 820 NJ 820 1040J 830 NJ 830 NJ 830 NJ 830 2620J 810 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 11 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 470 860n
+levelinfo -pg 1 0 240 600 900 1180 1450 1780 2300 2800 3370 3860 4350 4610
+pagesize -pg 1 -db -bbox -sgen 0 0 4760 2330
 "
 }
 {

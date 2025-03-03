@@ -2,5 +2,6 @@
 <section name="Workbench">
 	<item key="scw_hwspec" value="C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess"/>
 	<item key="scw_hwspec_file_selection" value="C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess"/>
-	<item key="debug_files_selection" value="C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess\HydroProccess.runs\impl_1"/>
+	<item key="debug_files_selection" value="C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess"/>
+	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="C:\Cascade_hydrophones\WorkspaceOMDHydrophones\Hardware\HydroProccess\HydroProccess.runs\impl_1"/>
 </section>

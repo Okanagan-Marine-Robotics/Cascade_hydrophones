@@ -125,3 +125,34 @@ timestamp=[2025-03-01 01:33:24], mode=BUILD, duration=0:00:01.138, duration_ms=1
 timestamp=[2025-03-01 01:49:54], mode=PLATFORM_GENERATION, duration=0:00:05.377, duration_ms=5377, data={name=test2}
 timestamp=[2025-03-01 01:49:59], mode=BUILD, duration=0:00:00.913, duration_ms=913, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-03-01 01:50:06], mode=BUILD, duration=0:00:03.822, duration_ms=3822, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-03-01 02:20:43], mode=PLATFORM_GENERATION, duration=0:00:12.233, duration_ms=12233, data={name=test2}
+timestamp=[2025-03-01 02:21:50], mode=PLATFORM_GENERATION, duration=0:00:05.238, duration_ms=5238, data={name=test2}
+timestamp=[2025-03-01 02:24:02], mode=BUILD, duration=0:00:01.720, duration_ms=1720, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-01 02:24:42], mode=PLATFORM_GENERATION, duration=0:00:05.275, duration_ms=5275, data={name=test2}
+timestamp=[2025-03-01 02:31:17], mode=WORKBENCH_START, duration=0:00:05.032, duration_ms=5032, data={}
+timestamp=[2025-03-01 02:31:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.476, duration_ms=476, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld,helloworld_system,test2}
+timestamp=[2025-03-01 02:31:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.723, duration_ms=723, data={}
+timestamp=[2025-03-01 02:33:51], mode=WORKBENCH_START, duration=0:00:04.538, duration_ms=4538, data={}
+timestamp=[2025-03-01 02:33:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.510, duration_ms=510, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld,helloworld_system,test2}
+timestamp=[2025-03-01 02:33:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.707, duration_ms=707, data={}
+timestamp=[2025-03-01 02:35:46], mode=PLATFORM_GENERATION, duration=0:00:18.695, duration_ms=18695, data={name=test2}
+timestamp=[2025-03-01 02:35:50], mode=BUILD, duration=0:00:03.625, duration_ms=3625, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-01 02:35:54], mode=BUILD, duration=0:00:04.021, duration_ms=4021, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-03-02 03:22:16], mode=WORKBENCH_START, duration=0:00:06.030, duration_ms=6030, data={}
+timestamp=[2025-03-02 03:22:16], mode=WORKBENCH_UI_INIT, duration=0:00:00.502, duration_ms=502, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld,helloworld_system,test2}
+timestamp=[2025-03-02 03:22:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.968, duration_ms=968, data={}
+timestamp=[2025-03-02 04:13:21], mode=WORKBENCH_START, duration=0:00:06.640, duration_ms=6640, data={}
+timestamp=[2025-03-02 04:13:22], mode=WORKBENCH_UI_INIT, duration=0:00:01.305, duration_ms=1305, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,helloworld,helloworld_system,test2}
+timestamp=[2025-03-02 04:13:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.336, duration_ms=2336, data={}
+timestamp=[2025-03-02 04:15:14], mode=PLATFORM_GENERATION, duration=0:00:10.977, duration_ms=10977, data={name=test2}
+timestamp=[2025-03-02 04:15:16], mode=BUILD, duration=0:00:00.862, duration_ms=862, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-02 04:16:14], mode=PLATFORM_GENERATION, duration=0:00:07.663, duration_ms=7663, data={name=test2}
+timestamp=[2025-03-02 04:16:52], mode=BUILD, duration=0:00:01.028, duration_ms=1028, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-02 04:17:20], mode=BUILD, duration=0:00:00.289, duration_ms=289, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-02 04:54:06], mode=PLATFORM_GENERATION, duration=0:00:08.592, duration_ms=8592, data={name=test2}
+timestamp=[2025-03-02 04:54:33], mode=BUILD, duration=0:00:01.142, duration_ms=1142, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-02 04:54:37], mode=BUILD, duration=0:00:04.064, duration_ms=4064, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-03-02 04:55:29], mode=PLATFORM_GENERATION, duration=0:00:01.905, duration_ms=1905, data={name=test2}
+timestamp=[2025-03-02 04:55:31], mode=BUILD, duration=0:00:00.288, duration_ms=288, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-02 04:56:32], mode=PLATFORM_GENERATION, duration=0:00:05.281, duration_ms=5281, data={name=test2}
+timestamp=[2025-03-02 05:59:36], mode=PLATFORM_GENERATION, duration=0:00:07.013, duration_ms=7013, data={name=test2}
