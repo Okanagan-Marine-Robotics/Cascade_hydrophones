@@ -1,4 +1,4 @@
-00:52:14 **** Incremental Build of configuration Debug for project helloworld ****
+04:46:13 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -27,11 +27,6 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcp
       |             ^~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/test2/export/test2/sw/test2/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
 'Building target: helloworld.elf'
 'Invoking: ARM v7 gcc linker'
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/test2/export/test2/sw/test2/standalone_domain/bsplib/lib -o "helloworld.elf"  ./src/computeFiniteDifferences.o ./src/finDiffEvalAndChkErr.o ./src/fsolve.o ./src/helloworld.o ./src/linearLeastSquares.o ./src/platform.o ./src/rtGetInf.o ./src/rtGetNaN.o ./src/rt_nonfinite.o ./src/solver.o ./src/solver_initialize.o ./src/solver_terminate.o ./src/xnrm2.o ./src/xzlarf.o ./src/xzlarfg.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -44,5 +39,5 @@ arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
 'Finished building: helloworld.elf.size'
 ' '
 
-00:52:15 Build Finished (took 1s.578ms)
+04:46:14 Build Finished (took 708ms)
 
