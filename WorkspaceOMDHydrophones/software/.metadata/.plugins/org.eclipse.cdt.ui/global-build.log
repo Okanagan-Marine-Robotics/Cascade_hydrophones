@@ -1,6 +1,6 @@
-01:22:59 **** Incremental Build of project test2 ****
-buildplatform.bat 64124 test2 no_domain_build 
-xsct% XSDB Server Channel: tcfchan#3
+04:20:14 **** Incremental Build of project test2 ****
+buildplatform.bat 50586 test2 no_domain_build 
+xsct% XSDB Server Channel: tcfchan#20
 Building the BSP Library for domain  - standalone_domain on processor ps7_cortexa9_0
 make --no-print-directory seq_libs
 

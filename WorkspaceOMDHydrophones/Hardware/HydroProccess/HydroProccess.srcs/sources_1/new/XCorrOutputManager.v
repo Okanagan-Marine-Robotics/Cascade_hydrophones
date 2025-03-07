@@ -3,8 +3,6 @@
 module XCorrOutputManager(
     input [35:0] XCORR_prime,
     input [35:0] XCORR_prime1,
-    input [35:0] XCORR_second,
-    input [35:0] XCORR_second1,
     input reset,
     input reset1,
     input clk,
@@ -16,10 +14,6 @@ module XCorrOutputManager(
         
         if (reset)begin
             state <= 0;
-        end
-        if (reset1)begin
-        //make 1
-        state <= 0;
         end
         
     end

@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Sun Mar  2 05:53:07 2025
+//Date        : Fri Mar  7 02:39:33 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -160,8 +160,11 @@ module MicroBlaze
   wire Serializer_1_MISO;
   wire Serializer_2_MISO;
   wire [11:0]SineWaveGen_0_wave;
+  wire [11:0]SineWaveGen_1_wave;
   wire [31:0]XCorrOutputManager_0_XCORR;
   wire [31:0]XCorrOutputManager_0_XCORR1;
+  wire [31:0]axi_gpio_0_gpio_io_o;
+  wire [31:0]axi_gpio_1_gpio_io_o;
   wire [8:0]axi_smc_M00_AXI_ARADDR;
   wire axi_smc_M00_AXI_ARREADY;
   wire axi_smc_M00_AXI_ARVALID;
@@ -240,7 +243,6 @@ module MicroBlaze
   wire processing_system7_0_M_AXI_GP0_WREADY;
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
-  wire [11:0]testdelaysine_0_wave;
   wire [11:0]waveParser2_0_buffer;
   wire [11:0]waveParser2_0_buffer1;
   wire [11:0]waveParser2_0_bufferRef;
@@ -492,10 +494,15 @@ module MicroBlaze
   MicroBlaze_Serializer_2_0 Serializer_2
        (.MISO(Serializer_2_MISO),
         .clk16MHz(clk_wiz_0_clk_out1),
-        .waveIn(testdelaysine_0_wave));
+        .waveIn(SineWaveGen_1_wave));
   MicroBlaze_SineWaveGen_0_0 SineWaveGen_0
        (.clk1Mhz(Net1),
+        .delay(axi_gpio_0_gpio_io_o),
         .wave(SineWaveGen_0_wave));
+  MicroBlaze_SineWaveGen_0_1 SineWaveGen_1
+       (.clk1Mhz(Net1),
+        .delay(axi_gpio_1_gpio_io_o),
+        .wave(SineWaveGen_1_wave));
   MicroBlaze_XCorrOutputManager_0_0 XCorrOutputManager_0
        (.XCORR(XCorrOutputManager_0_XCORR),
         .XCORR1(XCorrOutputManager_0_XCORR1),
@@ -508,6 +515,7 @@ module MicroBlaze
         .reset1(waveParser2_0_resetsignal));
   MicroBlaze_axi_gpio_0_0 axi_gpio_0
        (.gpio2_io_i(MaximumFinder_0_tmax),
+        .gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(axi_smc_M00_AXI_ARADDR),
         .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
@@ -529,6 +537,7 @@ module MicroBlaze
         .s_axi_wvalid(axi_smc_M00_AXI_WVALID));
   MicroBlaze_axi_gpio_0_1 axi_gpio_1
        (.gpio2_io_i(MaximumFinder_0_tmax1),
+        .gpio_io_o(axi_gpio_1_gpio_io_o),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(axi_smc_M01_AXI_ARADDR),
         .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
@@ -708,9 +717,6 @@ module MicroBlaze
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb));
-  MicroBlaze_testdelaysine_0_0 testdelaysine_0
-       (.clk1Mhz(Net1),
-        .wave(testdelaysine_0_wave));
   MicroBlaze_waveParser2_0_0 waveParser2_0
        (.buffer(waveParser2_0_buffer),
         .buffer1(waveParser2_0_buffer1),

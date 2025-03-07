@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun Mar  2 04:47:16 2025
+-- Date        : Fri Mar  7 01:19:32 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.vhdl
@@ -937,7 +937,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       Q => \MemoryAddress_reg_n_0_[0]\,
       R => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[10]\: unisim.vcomponents.FDRE
+\MemoryAddress_reg[10]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '1',
       IS_C_INVERTED => '1'
@@ -947,7 +947,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(10),
       Q => \MemoryAddress_reg_n_0_[10]\,
-      R => resetsignal_i_1_n_0
+      S => resetsignal_i_1_n_0
     );
 \MemoryAddress_reg[11]\: unisim.vcomponents.FDRE
     generic map(
@@ -973,7 +973,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       Q => \MemoryAddress_reg_n_0_[12]\,
       R => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[13]\: unisim.vcomponents.FDSE
+\MemoryAddress_reg[13]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '1',
       IS_C_INVERTED => '1'
@@ -983,7 +983,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(13),
       Q => \MemoryAddress_reg_n_0_[13]\,
-      S => resetsignal_i_1_n_0
+      R => resetsignal_i_1_n_0
     );
 \MemoryAddress_reg[14]\: unisim.vcomponents.FDRE
     generic map(
@@ -1009,7 +1009,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       Q => \MemoryAddress_reg_n_0_[15]\,
       S => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[16]\: unisim.vcomponents.FDSE
+\MemoryAddress_reg[16]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1019,7 +1019,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(16),
       Q => \MemoryAddress_reg_n_0_[16]\,
-      S => resetsignal_i_1_n_0
+      R => resetsignal_i_1_n_0
     );
 \MemoryAddress_reg[17]\: unisim.vcomponents.FDSE
     generic map(
@@ -1045,7 +1045,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       Q => \MemoryAddress_reg_n_0_[18]\,
       S => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[19]\: unisim.vcomponents.FDRE
+\MemoryAddress_reg[19]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1055,7 +1055,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(19),
       Q => \MemoryAddress_reg_n_0_[19]\,
-      R => resetsignal_i_1_n_0
+      S => resetsignal_i_1_n_0
     );
 \MemoryAddress_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -1069,7 +1069,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       Q => \MemoryAddress_reg_n_0_[1]\,
       R => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[20]\: unisim.vcomponents.FDRE
+\MemoryAddress_reg[20]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1079,7 +1079,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(20),
       Q => \MemoryAddress_reg_n_0_[20]\,
-      R => resetsignal_i_1_n_0
+      S => resetsignal_i_1_n_0
     );
 \MemoryAddress_reg[21]\: unisim.vcomponents.FDRE
     generic map(
@@ -1249,7 +1249,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       Q => \MemoryAddress_reg_n_0_[4]\,
       R => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[5]\: unisim.vcomponents.FDSE
+\MemoryAddress_reg[5]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1259,7 +1259,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(5),
       Q => \MemoryAddress_reg_n_0_[5]\,
-      S => resetsignal_i_1_n_0
+      R => resetsignal_i_1_n_0
     );
 \MemoryAddress_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -1273,7 +1273,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       Q => \MemoryAddress_reg_n_0_[6]\,
       R => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[7]\: unisim.vcomponents.FDRE
+\MemoryAddress_reg[7]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1283,9 +1283,9 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(7),
       Q => \MemoryAddress_reg_n_0_[7]\,
-      R => resetsignal_i_1_n_0
+      S => resetsignal_i_1_n_0
     );
-\MemoryAddress_reg[8]\: unisim.vcomponents.FDSE
+\MemoryAddress_reg[8]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '1',
       IS_C_INVERTED => '1'
@@ -1295,7 +1295,7 @@ MemoryAddress0_carry_i_4: unisim.vcomponents.LUT1
       CE => '1',
       D => MemoryAddress0(8),
       Q => \MemoryAddress_reg_n_0_[8]\,
-      S => resetsignal_i_1_n_0
+      R => resetsignal_i_1_n_0
     );
 \MemoryAddress_reg[9]\: unisim.vcomponents.FDRE
     generic map(

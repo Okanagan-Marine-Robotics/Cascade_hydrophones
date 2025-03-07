@@ -1,11 +1,13 @@
 `timescale 1ns / 1ps
 module SineWaveGen(
     input clk1Mhz,
+    input [31:0] delay,
     output reg signed [11:0] wave
     );
-        real real_counter;
-        real result;
+    real real_counter;
+    real result;
     reg [11:0] ram [0:25];
+    reg [31:0] counter;
     
     integer i;
     initial begin 
@@ -17,15 +19,25 @@ module SineWaveGen(
         end
         
     end
-    reg [31:0] counter = 0;
-    reg [31:0] counter2 = 0;
+    reg [31:0] counterL = 1;
+    
     always @(negedge clk1Mhz) begin
-        if (counter < 25) counter = counter + 1;
-        else begin
+        if (counterL != 2000000)counterL = counterL + 1;
+        else counterL=0;
+        if (counterL > delay && counterL < delay + 5000) begin
+        
+            if (counter < 25) counter = counter + 1;
+            else begin
             counter = 0;
-           
+            end
+        
+            wave = ram [counter];
+        
         end
-        wave = ram [counter];
+        else wave = 0;
+    
+    
+        
     end
 
 endmodule

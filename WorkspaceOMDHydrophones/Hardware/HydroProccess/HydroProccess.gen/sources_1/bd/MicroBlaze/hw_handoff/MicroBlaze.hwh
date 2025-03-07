@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar  7 01:18:48 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar  7 04:36:10 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -289,101 +289,6 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/BRAMMUX_1" HWVERSION="1.0" INSTANCE="BRAMMUX_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BRAMMUX" VLNV="xilinx.com:module_ref:BRAMMUX:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_BRAMMUX_1_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="11" NAME="Ref0" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref0Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef0AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="Ref1" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref1Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef1AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="Ref2" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref2Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef2AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="Ref3" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref3">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="Ref3Address" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef3AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef0" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef1" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="13" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef2" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="13" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef3" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef3">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="13" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="waveRef3Address"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/BlockRam_0" HWVERSION="1.0" INSTANCE="BlockRam_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BlockRam" VLNV="xilinx.com:module_ref:BlockRam:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -599,221 +504,6 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/BlockRam_1" HWVERSION="1.0" INSTANCE="BlockRam_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BlockRam" VLNV="xilinx.com:module_ref:BlockRam:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_BlockRam_1_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="inWave1" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_bufferRef">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="bufferRef"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="inWave2" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_buffer">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="buffer"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="inWave3" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_buffer1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="buffer1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave0" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave00" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave00">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave00"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave00Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave00Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave00Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave00AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave00Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave00Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave01" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave01">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave01"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave01Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave01Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave01Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave01AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave01Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave01Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave02" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave02">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave02"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave02Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave02Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave02Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave02AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave02Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave02Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave03" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave03">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave03"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave03Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave03Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave03Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave03AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave03Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave03Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave0Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave0AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave1Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave1AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave2" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave2Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave2AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave3" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave3">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave3Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave3Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave3AddressB" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="wave3Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="waveRef0" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="waveRef0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef0AddressB" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="waveRef1" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="waveRef1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef1AddressB" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="waveRef2" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="waveRef2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef2AddressB" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="waveRef3" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_waveRef3">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="waveRef3Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef3AddressB" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref3Address"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/CC_0" HWVERSION="1.0" INSTANCE="CC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CC" VLNV="xilinx.com:module_ref:CC:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -964,169 +654,12 @@
         </PORT>
         <PORT DIR="O" LEFT="35" NAME="xcorr" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_prime"/>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_prime1"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/CC_1" HWVERSION="1.0" INSTANCE="CC_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CC" VLNV="xilinx.com:module_ref:CC:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_CC_1_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="clkcorr" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="15" NAME="count" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="waveParser2_0_resetsignal">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="resetsignal"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave0" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave00" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave00">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave00"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave00Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave00Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave00AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave01" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave01">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave01"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave01Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave01Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave01AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave2" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave02" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave02">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave02"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave02Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave02Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave02AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave3" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave3">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave03" RIGHT="0" SIGIS="undef" SIGNAME="BlockRam_1_wave03">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave03"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave03Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave03Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave03AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave0Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave0AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave1Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave1AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave2Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave2AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave3Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_wave3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave3AddressB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef0" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef1" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef2" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef3" RIGHT="0" SIGIS="undef" SIGNAME="BRAMMUX_1_Ref3">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="Ref3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_waveRef3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="waveRef3Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="35" NAME="xcorr" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_second"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="35" NAME="xcorr1" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR_second1"/>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1139,14 +672,14 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="XCORR" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR">
+        <PORT DIR="I" LEFT="31" NAME="XCORR" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR"/>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="XCORR1" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR1">
+        <PORT DIR="I" LEFT="31" NAME="XCORR1" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="XCORR1"/>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="13" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="AddressFixer_0_address">
@@ -1198,7 +731,6 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="waveRef"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
           </CONNECTIONS>
         </PORT>
@@ -1231,7 +763,6 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
@@ -1264,7 +795,6 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_2_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="wave1"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
           </CONNECTIONS>
         </PORT>
@@ -1338,9 +868,9 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveIn" RIGHT="0" SIGIS="undef" SIGNAME="testdelaysine_0_wave">
+        <PORT DIR="I" LEFT="11" NAME="waveIn" RIGHT="0" SIGIS="undef" SIGNAME="SineWaveGen_1_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="testdelaysine_0" PORT="wave"/>
+            <CONNECTION INSTANCE="SineWaveGen_1" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1358,6 +888,11 @@
             <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="31" NAME="delay" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SineWaveGen_0_wave">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Serializer_0" PORT="waveIn"/>
@@ -1367,56 +902,26 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/XCorrOutputManager_0" HWVERSION="1.0" INSTANCE="XCorrOutputManager_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="XCorrOutputManager" VLNV="xilinx.com:module_ref:XCorrOutputManager:1.0">
+    <MODULE COREREVISION="1" FULLNAME="/SineWaveGen_1" HWVERSION="1.0" INSTANCE="SineWaveGen_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SineWaveGen" VLNV="xilinx.com:module_ref:SineWaveGen:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_XCorrOutputManager_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_SineWaveGen_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="31" NAME="XCORR" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR">
+        <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MaximumFinder_0" PORT="XCORR"/>
+            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="XCORR1" RIGHT="0" SIGIS="undef" SIGNAME="XCorrOutputManager_0_XCORR1">
+        <PORT DIR="I" LEFT="31" NAME="delay" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MaximumFinder_0" PORT="XCORR1"/>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="35" NAME="XCORR_prime" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr">
+        <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SineWaveGen_1_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_0" PORT="xcorr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="35" NAME="XCORR_prime1" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_0" PORT="xcorr1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="35" NAME="XCORR_second" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="xcorr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="35" NAME="XCORR_second1" RIGHT="0" SIGIS="undef" SIGNAME="CC_1_xcorr1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="xcorr1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="waveParser_0_resetsignal">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="resetsignal"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="reset1" SIGIS="undef" SIGNAME="waveParser2_0_resetsignal">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="resetsignal"/>
+            <CONNECTION INSTANCE="Serializer_2" PORT="waveIn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1622,7 +1127,11 @@
             <CONNECTION INSTANCE="MaximumFinder_0" PORT="tmax"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SineWaveGen_0" PORT="delay"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
@@ -1984,7 +1493,11 @@
             <CONNECTION INSTANCE="MaximumFinder_0" PORT="tmax1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SineWaveGen_1" PORT="delay"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
@@ -2727,14 +2240,11 @@
         </PORT>
         <PORT DIR="O" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="CC_1" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="testdelaysine_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="SineWaveGen_1" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4442,14 +3952,9 @@
             <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk"/>
-            <CONNECTION INSTANCE="waveParser2_0" PORT="clk"/>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="clk"/>
-            <CONNECTION INSTANCE="BRAMMUX_1" PORT="clk"/>
-            <CONNECTION INSTANCE="CC_1" PORT="clk"/>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="clk"/>
             <CONNECTION INSTANCE="AddressFixer_0" PORT="clk"/>
-            <CONNECTION INSTANCE="MaximumFinder_0" PORT="clk"/>
             <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
+            <CONNECTION INSTANCE="MaximumFinder_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -4824,142 +4329,6 @@
         <PERIPHERAL INSTANCE="axi_gpio_1"/>
       </PERIPHERALS>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/testdelaysine_0" HWVERSION="1.0" INSTANCE="testdelaysine_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="testdelaysine" VLNV="xilinx.com:module_ref:testdelaysine:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_testdelaysine_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="testdelaysine_0_wave">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Serializer_2" PORT="waveIn"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/waveParser2_0" HWVERSION="1.0" INSTANCE="waveParser2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="waveParser2" VLNV="xilinx.com:module_ref:waveParser2:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_waveParser2_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="11" NAME="buffer" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_buffer">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="inWave2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="buffer1" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_buffer1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="inWave3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="bufferRef" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_bufferRef">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="inWave1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="clk1Mhz" SIGIS="undef" SIGNAME="clk1Mhz_0_clk1Mhz">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk1Mhz_0" PORT="clk1Mhz"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="resetsignal" SIGIS="undef" SIGNAME="waveParser2_0_resetsignal">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="CC_1" PORT="reset"/>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="reset1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="SPI_ADC_Master_1" PORT="wave"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave00Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave00Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave00Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave01Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave01Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave01Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave02Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave02Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave02Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave03Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave03Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave03Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave0Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="wave1" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_2_wave">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="wave"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave1Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave2Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave3Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_wave3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="wave3Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="wave"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef0Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef0Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef0Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef1Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef1Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef1Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef2Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef2Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef2Address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="13" NAME="waveRef3Address" RIGHT="0" SIGIS="undef" SIGNAME="waveParser2_0_waveRef3Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="BlockRam_1" PORT="waveRef3Address"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/waveParser_0" HWVERSION="1.0" INSTANCE="waveParser_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="waveParser" VLNV="xilinx.com:module_ref:waveParser:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -4995,7 +4364,6 @@
         <PORT DIR="O" NAME="resetsignal" SIGIS="undef" SIGNAME="waveParser_0_resetsignal">
           <CONNECTIONS>
             <CONNECTION INSTANCE="CC_0" PORT="reset"/>
-            <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="reset"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
@@ -5079,7 +4447,7 @@
     <MODULE COREREVISION="9" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -5105,6 +4473,54 @@
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="led_red"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/xlslice_0" HWVERSION="1.0" INSTANCE="xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_FROM" VALUE="35"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="36"/>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="35" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CC_0" PORT="xcorr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MaximumFinder_0" PORT="XCORR"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/xlslice_1" HWVERSION="1.0" INSTANCE="xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_FROM" VALUE="35"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="36"/>
+        <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlslice_0_1"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="35" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="CC_0_xcorr1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CC_0" PORT="xcorr1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MaximumFinder_0" PORT="XCORR1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

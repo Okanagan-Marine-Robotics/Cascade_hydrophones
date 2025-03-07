@@ -28,8 +28,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMD
 INFO: [VRFC 10-311] analyzing module Serializer
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/100khzclk.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clk1Mhz
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/TestDelaysine.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testdelaysine
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/waveParser2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module waveParser2
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorrOutputManager.v" into library xil_defaultlib
@@ -48,6 +46,17 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMD
 INFO: [VRFC 10-311] analyzing module MicroBlaze_AddressFixer_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_processing_system7_0_0/sim/MicroBlaze_processing_system7_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MicroBlaze_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/sim/bd_f84b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f84b
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1YL05Q
+INFO: [VRFC 10-311] analyzing module i_nodes_imp_1J7OULC
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1YYLWID
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_1CPFS3D
+INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_1SJAWB9
+INFO: [VRFC 10-311] analyzing module m01_nodes_imp_E0MZKF
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_YKGMHI
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_T6O2J0
+INFO: [VRFC 10-311] analyzing module switchboards_imp_SFX7C
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_0/sim/bd_f84b_one_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bd_f84b_one_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_2/sim/bd_f84b_arinsw_0.sv" into library xil_defaultlib
@@ -133,17 +142,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cascade_hydrophones/Worksp
 INFO: [VRFC 10-311] analyzing module bd_f84b_m01bn_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_39/sim/bd_f84b_m01e_0.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bd_f84b_m01e_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/sim/bd_f84b.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bd_f84b
-INFO: [VRFC 10-311] analyzing module clk_map_imp_1YL05Q
-INFO: [VRFC 10-311] analyzing module i_nodes_imp_1J7OULC
-INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1YYLWID
-INFO: [VRFC 10-311] analyzing module m00_nodes_imp_1CPFS3D
-INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_1SJAWB9
-INFO: [VRFC 10-311] analyzing module m01_nodes_imp_E0MZKF
-INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_YKGMHI
-INFO: [VRFC 10-311] analyzing module s00_nodes_imp_T6O2J0
-INFO: [VRFC 10-311] analyzing module switchboards_imp_SFX7C
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/sim/MicroBlaze_axi_smc_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MicroBlaze_axi_smc_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_0_0/sim/MicroBlaze_SineWaveGen_0_0.v" into library xil_defaultlib
@@ -170,8 +168,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMD
 INFO: [VRFC 10-311] analyzing module MicroBlaze_xlconstant_1_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_xlconstant_2_0/sim/MicroBlaze_xlconstant_2_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MicroBlaze_xlconstant_2_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_testdelaysine_0_0/sim/MicroBlaze_testdelaysine_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MicroBlaze_testdelaysine_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_waveParser2_0_0/sim/MicroBlaze_waveParser2_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MicroBlaze_waveParser2_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_BlockRam_1_0/sim/MicroBlaze_BlockRam_1_0.v" into library xil_defaultlib
@@ -186,9 +182,19 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMD
 INFO: [VRFC 10-311] analyzing module MicroBlaze_MaximumFinder_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/sim/MicroBlaze.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MicroBlaze
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_0_1/sim/MicroBlaze_SineWaveGen_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MicroBlaze_SineWaveGen_0_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MicroBlaze_wrapper
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sim_1/new/TestBench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_0/sim/MicroBlaze_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze_axi_gpio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_1/sim/MicroBlaze_axi_gpio_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze_axi_gpio_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_proc_sys_reset_0_0/sim/MicroBlaze_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze_proc_sys_reset_0_0'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.ip_user_files/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_1/sim/bd_f84b_psr_aclk_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'bd_f84b_psr_aclk_0'

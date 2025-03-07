@@ -57,14 +57,17 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module MicroBlaze_SineWaveGen_0_0 (
   clk1Mhz,
+  delay,
   wave
 );
 
 input wire clk1Mhz;
+input wire [31 : 0] delay;
 output wire [11 : 0] wave;
 
   SineWaveGen inst (
     .clk1Mhz(clk1Mhz),
+    .delay(delay),
     .wave(wave)
   );
 endmodule
