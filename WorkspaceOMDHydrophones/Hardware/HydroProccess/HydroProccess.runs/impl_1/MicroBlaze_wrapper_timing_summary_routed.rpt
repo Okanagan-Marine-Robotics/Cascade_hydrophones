@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon Mar  3 00:39:14 2025
+| Date         : Fri Mar  7 01:21:23 2025
 | Host         : James running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file MicroBlaze_wrapper_timing_summary_routed.rpt -pb MicroBlaze_wrapper_timing_summary_routed.pb -rpx MicroBlaze_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : MicroBlaze_wrapper
@@ -2785,7 +2785,7 @@ Slack (MET) :             0.132ns  (arrival time - required time)
 
 Slack (MET) :             0.133ns  (arrival time - required time)
   Source:                 MicroBlaze_i/waveParser_0/inst/MemoryAddress_reg[7]/C
-                            (falling edge-triggered cell FDRE clocked by clk1Mhz  {rise@0.000ns fall@500.000ns period=1000.000ns})
+                            (falling edge-triggered cell FDSE clocked by clk1Mhz  {rise@0.000ns fall@500.000ns period=1000.000ns})
   Destination:            MicroBlaze_i/waveParser_0/inst/wave2Address_reg[7]/D
                             (falling edge-triggered cell FDSE clocked by clk1Mhz  {rise@0.000ns fall@500.000ns period=1000.000ns})
   Path Group:             clk1Mhz
@@ -2803,9 +2803,9 @@ Slack (MET) :             0.133ns  (arrival time - required time)
                          (clock clk1Mhz fall edge)  500.000   500.000 f  
     BUFGCTRL_X0Y2        BUFG                         0.000   500.000 f  MicroBlaze_i/clk1Mhz_0/inst/clk1Mhz_BUFG_inst/O
                          net (fo=171, routed)         0.559   500.559    MicroBlaze_i/waveParser_0/inst/clk1Mhz
-    SLICE_X25Y9          FDRE                                         r  MicroBlaze_i/waveParser_0/inst/MemoryAddress_reg[7]/C  (IS_INVERTED)
+    SLICE_X25Y9          FDSE                                         r  MicroBlaze_i/waveParser_0/inst/MemoryAddress_reg[7]/C  (IS_INVERTED)
   -------------------------------------------------------------------    -------------------
-    SLICE_X25Y9          FDRE (Prop_fdre_C_Q)         0.146   500.705 r  MicroBlaze_i/waveParser_0/inst/MemoryAddress_reg[7]/Q
+    SLICE_X25Y9          FDSE (Prop_fdse_C_Q)         0.146   500.705 r  MicroBlaze_i/waveParser_0/inst/MemoryAddress_reg[7]/Q
                          net (fo=17, routed)          0.256   500.961    MicroBlaze_i/waveParser_0/inst/MemoryAddress_reg_n_0_[7]
     SLICE_X19Y5          CARRY4 (Prop_carry4_S[1]_O[1])
                                                       0.110   501.071 r  MicroBlaze_i/waveParser_0/inst/wave2Address_reg[9]_i_1/O[1]

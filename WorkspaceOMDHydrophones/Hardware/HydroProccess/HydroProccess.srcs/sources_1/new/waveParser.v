@@ -28,7 +28,7 @@ module waveParser(
     
 	always @(negedge clk1Mhz)begin
 	 
-	if (MemoryAddress == 0) begin MemoryAddress<=500000;
+	if (MemoryAddress == 0) begin MemoryAddress<=2000000;
 	resetsignal <=1;
 	end
 	else begin

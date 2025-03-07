@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun Mar  2 04:47:16 2025
+// Date        : Fri Mar  7 01:19:32 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0_sim_netlist.v
@@ -813,7 +813,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[0]),
         .Q(\MemoryAddress_reg_n_0_[0] ),
         .R(resetsignal_i_1_n_0));
-  FDRE #(
+  FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[10] 
@@ -821,7 +821,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[10]),
         .Q(\MemoryAddress_reg_n_0_[10] ),
-        .R(resetsignal_i_1_n_0));
+        .S(resetsignal_i_1_n_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -840,7 +840,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[12]),
         .Q(\MemoryAddress_reg_n_0_[12] ),
         .R(resetsignal_i_1_n_0));
-  FDSE #(
+  FDRE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[13] 
@@ -848,7 +848,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[13]),
         .Q(\MemoryAddress_reg_n_0_[13] ),
-        .S(resetsignal_i_1_n_0));
+        .R(resetsignal_i_1_n_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -867,7 +867,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[15]),
         .Q(\MemoryAddress_reg_n_0_[15] ),
         .S(resetsignal_i_1_n_0));
-  FDSE #(
+  FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[16] 
@@ -875,7 +875,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[16]),
         .Q(\MemoryAddress_reg_n_0_[16] ),
-        .S(resetsignal_i_1_n_0));
+        .R(resetsignal_i_1_n_0));
   FDSE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -894,7 +894,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[18]),
         .Q(\MemoryAddress_reg_n_0_[18] ),
         .S(resetsignal_i_1_n_0));
-  FDRE #(
+  FDSE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[19] 
@@ -902,7 +902,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[19]),
         .Q(\MemoryAddress_reg_n_0_[19] ),
-        .R(resetsignal_i_1_n_0));
+        .S(resetsignal_i_1_n_0));
   FDRE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
@@ -912,7 +912,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[1]),
         .Q(\MemoryAddress_reg_n_0_[1] ),
         .R(resetsignal_i_1_n_0));
-  FDRE #(
+  FDSE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[20] 
@@ -920,7 +920,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[20]),
         .Q(\MemoryAddress_reg_n_0_[20] ),
-        .R(resetsignal_i_1_n_0));
+        .S(resetsignal_i_1_n_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1047,7 +1047,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[4]),
         .Q(\MemoryAddress_reg_n_0_[4] ),
         .R(resetsignal_i_1_n_0));
-  FDSE #(
+  FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[5] 
@@ -1055,7 +1055,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[5]),
         .Q(\MemoryAddress_reg_n_0_[5] ),
-        .S(resetsignal_i_1_n_0));
+        .R(resetsignal_i_1_n_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1065,7 +1065,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .D(MemoryAddress0[6]),
         .Q(\MemoryAddress_reg_n_0_[6] ),
         .R(resetsignal_i_1_n_0));
-  FDRE #(
+  FDSE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[7] 
@@ -1073,8 +1073,8 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[7]),
         .Q(\MemoryAddress_reg_n_0_[7] ),
-        .R(resetsignal_i_1_n_0));
-  FDSE #(
+        .S(resetsignal_i_1_n_0));
+  FDRE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \MemoryAddress_reg[8] 
@@ -1082,7 +1082,7 @@ module MicroBlaze_waveParser_0_0_waveParser
         .CE(1'b1),
         .D(MemoryAddress0[8]),
         .Q(\MemoryAddress_reg_n_0_[8] ),
-        .S(resetsignal_i_1_n_0));
+        .R(resetsignal_i_1_n_0));
   FDRE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 

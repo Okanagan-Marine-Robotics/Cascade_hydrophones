@@ -17,7 +17,7 @@ module testdelaysine(
         end
         
     end
-    reg [31:0] counter = 10;
+    reg [31:0] counter = 15;
     reg [31:0] counter2 = 0;
     always @(negedge clk1Mhz) begin
         if (counter < 25) counter = counter + 1;

@@ -2320,7 +2320,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -3630,33 +3630,33 @@
           "clk1Mhz_0/clk1Mhz",
           "SineWaveGen_0/clk1Mhz",
           "BlockRam_0/clk1Mhz",
-          "testdelaysine_0/clk1Mhz",
           "CC_0/clk1Mhz",
-          "waveParser_0/clk1Mhz",
           "waveParser2_0/clk1Mhz",
           "BlockRam_1/clk1Mhz",
-          "CC_1/clk1Mhz"
+          "CC_1/clk1Mhz",
+          "testdelaysine_0/clk1Mhz",
+          "waveParser_0/clk1Mhz"
         ]
       },
       "SPI_ADC_Master_0_wave": {
         "ports": [
           "SPI_ADC_Master_0/wave",
-          "waveParser_0/waveRef",
-          "waveParser2_0/waveRef"
+          "waveParser2_0/waveRef",
+          "waveParser_0/waveRef"
         ]
       },
       "SPI_ADC_Master_1_wave": {
         "ports": [
           "SPI_ADC_Master_1/wave",
-          "waveParser_0/wave",
-          "waveParser2_0/wave"
+          "waveParser2_0/wave",
+          "waveParser_0/wave"
         ]
       },
       "SPI_ADC_Master_2_wave": {
         "ports": [
           "SPI_ADC_Master_2/wave",
-          "waveParser_0/wave1",
-          "waveParser2_0/wave1"
+          "waveParser2_0/wave1",
+          "waveParser_0/wave1"
         ]
       },
       "Serializer_0_MISO": {
@@ -3723,14 +3723,14 @@
           "SPI_ADC_Master_2/clk",
           "BlockRam_0/clk",
           "CC_0/clk",
-          "waveParser_0/clk",
           "waveParser2_0/clk",
           "BlockRam_1/clk",
           "BRAMMUX_1/clk",
           "CC_1/clk",
           "XCorrOutputManager_0/clk",
           "AddressFixer_0/clk",
-          "MaximumFinder_0/clk"
+          "MaximumFinder_0/clk",
+          "waveParser_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

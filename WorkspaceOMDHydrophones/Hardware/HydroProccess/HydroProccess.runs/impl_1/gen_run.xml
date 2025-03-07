@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1740990991">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1741339136">
   <File Type="PA-TCL" Name="MicroBlaze_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="MicroBlaze_wrapper_reports.tcl"/>
   <File Type="INIT-TIMING" Name="MicroBlaze_wrapper_timing_summary_init.rpt"/>
@@ -334,18 +334,13 @@
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_XCorrOutputManager_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SineWaveGen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BRAMMUX_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_CC_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_BlockRam_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_AddressFixer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_MaximumFinder_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_waveParser_0_0"/>
 </GenRun>

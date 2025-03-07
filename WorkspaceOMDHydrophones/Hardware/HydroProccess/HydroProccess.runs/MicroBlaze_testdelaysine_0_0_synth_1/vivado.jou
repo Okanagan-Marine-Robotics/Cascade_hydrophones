@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Mar  2 04:43:45 2025
-# Process ID         : 26784
+# Start of session at: Fri Mar  7 01:18:58 2025
+# Process ID         : 2196
 # Current directory  : C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_testdelaysine_0_0_synth_1
 # Command line       : vivado.exe -log MicroBlaze_testdelaysine_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_testdelaysine_0_0.tcl
 # Log file           : C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_testdelaysine_0_0_synth_1/MicroBlaze_testdelaysine_0_0.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores : 10
 # CPU Logical cores  : 16
 # Host memory        : 16780 MB
-# Swap memory        : 23204 MB
-# Total Virtual      : 39984 MB
-# Available Virtual  : 16998 MB
+# Swap memory        : 16106 MB
+# Total Virtual      : 32886 MB
+# Available Virtual  : 14246 MB
 #-----------------------------------------------------------
 source MicroBlaze_testdelaysine_0_0.tcl -notrace

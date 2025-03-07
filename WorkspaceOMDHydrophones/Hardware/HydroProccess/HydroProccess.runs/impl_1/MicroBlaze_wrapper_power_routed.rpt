@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Mon Mar  3 00:39:15 2025
+| Date             : Fri Mar  7 01:21:24 2025
 | Host             : James running 64-bit major release  (build 9200)
 | Command          : report_power -file MicroBlaze_wrapper_power_routed.rpt -pb MicroBlaze_wrapper_power_summary_routed.pb -rpx MicroBlaze_wrapper_power_routed.rpx
 | Design           : MicroBlaze_wrapper
@@ -53,11 +53,11 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.022 |        7 |       --- |             --- |
-| Slice Logic             |     0.010 |     5781 |       --- |             --- |
+| Slice Logic             |     0.010 |     5782 |       --- |             --- |
 |   LUT as Logic          |     0.009 |     2291 |     17600 |           13.02 |
 |   CARRY4                |    <0.001 |      333 |      4400 |            7.57 |
 |   Register              |    <0.001 |     2326 |     35200 |            6.61 |
-|   Others                |     0.000 |      379 |       --- |             --- |
+|   Others                |     0.000 |      380 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        2 |      6000 |            0.03 |
 | Signals                 |     0.019 |     5016 |       --- |             --- |
 | Block RAM               |     0.069 |       18 |        60 |           30.00 |

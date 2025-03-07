@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun Mar  2 04:47:19 2025
+-- Date        : Fri Mar  7 01:19:31 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_testdelaysine_0_0/MicroBlaze_testdelaysine_0_0_sim_netlist.vhdl
@@ -138,7 +138,7 @@ begin
     );
 \counter_reg[0]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0',
+      INIT => '1',
       IS_C_INVERTED => '1'
     )
         port map (
@@ -162,7 +162,7 @@ begin
     );
 \counter_reg[2]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '0',
+      INIT => '1',
       IS_C_INVERTED => '1'
     )
         port map (

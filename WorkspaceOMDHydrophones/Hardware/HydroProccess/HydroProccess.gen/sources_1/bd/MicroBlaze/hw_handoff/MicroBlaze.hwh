@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar  3 00:36:24 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar  7 01:18:48 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -1198,8 +1198,8 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
             <CONNECTION INSTANCE="waveParser2_0" PORT="waveRef"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="waveRef"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1231,8 +1231,8 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_1_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
             <CONNECTION INSTANCE="waveParser2_0" PORT="wave"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1264,8 +1264,8 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_2_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
             <CONNECTION INSTANCE="waveParser2_0" PORT="wave1"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="wave1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2729,12 +2729,12 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="SineWaveGen_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="testdelaysine_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk1Mhz"/>
-            <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="waveParser2_0" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="BlockRam_1" PORT="clk1Mhz"/>
             <CONNECTION INSTANCE="CC_1" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="testdelaysine_0" PORT="clk1Mhz"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="clk1Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4442,7 +4442,6 @@
             <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
             <CONNECTION INSTANCE="BlockRam_0" PORT="clk"/>
             <CONNECTION INSTANCE="CC_0" PORT="clk"/>
-            <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
             <CONNECTION INSTANCE="waveParser2_0" PORT="clk"/>
             <CONNECTION INSTANCE="BlockRam_1" PORT="clk"/>
             <CONNECTION INSTANCE="BRAMMUX_1" PORT="clk"/>
@@ -4450,6 +4449,7 @@
             <CONNECTION INSTANCE="XCorrOutputManager_0" PORT="clk"/>
             <CONNECTION INSTANCE="AddressFixer_0" PORT="clk"/>
             <CONNECTION INSTANCE="MaximumFinder_0" PORT="clk"/>
+            <CONNECTION INSTANCE="waveParser_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -5096,7 +5096,7 @@
     <MODULE COREREVISION="9" FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_2_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>

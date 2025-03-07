@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun Mar  2 04:47:19 2025
+// Date        : Fri Mar  7 01:19:31 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_testdelaysine_0_0/MicroBlaze_testdelaysine_0_0_sim_netlist.v
@@ -115,7 +115,7 @@ module MicroBlaze_testdelaysine_0_0_testdelaysine
         .I4(\counter_reg_n_0_[4] ),
         .O(\counter[4]_i_2_n_0 ));
   FDRE #(
-    .INIT(1'b0),
+    .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \counter_reg[0] 
        (.C(clk1Mhz),
@@ -133,7 +133,7 @@ module MicroBlaze_testdelaysine_0_0_testdelaysine
         .Q(\counter_reg_n_0_[1] ),
         .R(\counter[4]_i_1_n_0 ));
   FDRE #(
-    .INIT(1'b0),
+    .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \counter_reg[2] 
        (.C(clk1Mhz),
