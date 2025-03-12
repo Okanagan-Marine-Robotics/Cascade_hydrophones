@@ -4,35 +4,70 @@
 #include "xgpio.h"
 #include "xil_types.h"
 #include "math.h"
+#include <stdio.h>
+#include "xuartps.h"  // Include the UART header for receiving data
+
+#define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID  // Adjust this to your UART instance
+#define MAX_BUFFER_SIZE  4  // "test" is 4 characters long
+
+XUartPs Uart_Ps;  // UART instance
+u8 ReceivedData[MAX_BUFFER_SIZE];  // Buffer for receiving data
+
 
 int main() {
+
 	init_platform();
+
+	XUartPs_Config *Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+	XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+
 
 	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
 	xil_printf("by James Williamsom v:0.1\n");
 	int maxTime;
 	int maxTime2;
-
-
+	int state = 0;
 	while(1){
-	maxTime = delayGetter(maxTime);
-	maxTime2 = delayGetter2(maxTime2);
-	xil_printf("{\"delay_1\": {%d}, \"delay_2\": {%d}}\n", maxTime, maxTime2);
-	double i = maxTime;
-	double j = maxTime2;
-	double solution[2];
 
-	    // Call solver
-	solver(i, j, solution);
+		 // Receive 4 bytes of data (enough to hold "test")
+		u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
 
-	//printf("{x: {%f},y: {%f}}", solution[0], solution[1]);
+		        // If 4 bytes are received, compare with "test"
+		        if (bytesReceived == MAX_BUFFER_SIZE &&
+		            ReceivedData[0] == 't' &&
+		            ReceivedData[1] == 'e' &&
+		            ReceivedData[2] == 's' &&
+		            ReceivedData[3] == 't') {
+		            // Stop printing "Hello World" if "test" is received
+		            break;
+		        }
 
 
+
+		if (state == 1){
+
+
+
+		}
+		if (state == 0){
+			maxTime = delayGetter(maxTime);
+			maxTime2 = delayGetter2(maxTime2);
+			double i = maxTime;
+			double j = maxTime2;
+			double solution[2];
+
+			// Call solver
+			solver(i, j, solution);
+			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, solution[0], solution[1]);
+		}
 	}
 	cleanup_platform();
 	return 0;
 }
+
+
+
 
 int delayGetter (int delay){
 
@@ -60,6 +95,11 @@ int delayGetter (int delay){
 	//xil_printf("%d\n", MaxSignal);
 	return maxTime;
 }
+
+
+
+
+
 int delayGetter2 (int delay){
 
 	XGpio Gpio1;
@@ -71,7 +111,7 @@ int delayGetter2 (int delay){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio1, 1, 100);
+    	XGpio_DiscreteWrite(&Gpio1, 1, 300);
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 
