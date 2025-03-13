@@ -9,14 +9,14 @@ input [11:0] wave1
     );
     
     wire [11:0] bufferwire [0:2];
-    wire [13:0] waceRefAddressWire [0:3];
-    wire [11:0] waceXAddressWire[0:3];
-    wire [11:0] waceYAddressWire[0:3];
-    wire [13:0] RefAddress_outMux[0:3];
-    wire [11:0] waveRefOutRam[0:3];
-    wire [11:0] waveRefIntoXCorr[0:3],waveXIntoXCorr[0:3],waveYIntoYCorr[0:3];
-    wire [13:0] waveRefOutXCorr[0:3];
-    wire [11:0] waveXOutXCorr[0:3],waveYOutXCorr[0:3];
+    wire [13:0] waceRefAddressWire [0:7];
+    wire [11:0] waceXAddressWire[0:7];
+    wire [11:0] waceYAddressWire[0:7];
+    wire [13:0] RefAddress_outMux[0:7];
+    wire [11:0] waveRefOutRam[0:7];
+    wire [11:0] waveRefIntoXCorr[0:7],waveXIntoXCorr[0:7],waveYIntoYCorr[0:7];
+    wire [13:0] waveRefOutXCorr[0:7];
+    wire [11:0] waveXOutXCorr[0:7],waveYOutXCorr[0:7];
     
    XCorr_waveParser waveParser (
         .clk(clk),

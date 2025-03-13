@@ -7,13 +7,15 @@ module XCorr_waveParser(
 	output signed [11:0] bufferRef,
 	output signed [11:0] buffer,
 	output signed [11:0] buffer1,
-	output reg [13:0] waveRefAddress [0:3],
-	output reg [11:0] waveXAddress [0:3],
-	output reg [11:0] waveYAddress [0:3],
+	output reg [13:0] waveRefAddress [0:7],
+	output reg [11:0] waveXAddress [0:7],
+	output reg [11:0] waveYAddress [0:7],
 	input clk1Mhz,
 	input clk,
 	output reg resetsignal = 0
 	);
+	
+	parameter XCORRsize = 2500;
 
 	reg [31:0] MemoryAddress = 10010;
     
@@ -26,20 +28,12 @@ module XCorr_waveParser(
 	   MemoryAddress <= MemoryAddress - 1;
 	   resetsignal <=0;
     end
-	waveXAddress [0] <=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
-	waveYAddress [0]<=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
-	waveRefAddress [0]<=((MemoryAddress<=2500)&&(MemoryAddress>0))?MemoryAddress:2501;
-	waveXAddress [1] <=((MemoryAddress-2500<=2500)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
-	waveYAddress [1] <=((MemoryAddress-2500<=2500)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
-	waveRefAddress [1] <=((MemoryAddress-2500<=2500)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
-	waveXAddress [2] <=((MemoryAddress-5000<=2500)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
-	waveYAddress [2] <=((MemoryAddress-5000<=2500)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
-	waveRefAddress [2] <=((MemoryAddress-5000<=2500)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
-	waveXAddress [3] <=((MemoryAddress-7500<=2500)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
-	waveYAddress [3] <=((MemoryAddress-7500<=2500)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
-	waveRefAddress [3] <=((MemoryAddress-7500<=2500)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
-    
-   	 
+	
+	for(int i = 0;i<=7;i++)begin
+	   waveXAddress [i] <=((MemoryAddress-XCORRsize*i<=XCORRsize)&&(MemoryAddress-XCORRsize*i>0))?MemoryAddress-XCORRsize*i:2501;
+	   waveYAddress [i] <=((MemoryAddress-XCORRsize*i<=XCORRsize)&&(MemoryAddress-XCORRsize*i>0))?MemoryAddress-XCORRsize*i:2501;
+	   waveRefAddress [i] <=((MemoryAddress-XCORRsize*i<=XCORRsize)&&(MemoryAddress-XCORRsize*i>0))?MemoryAddress-XCORRsize*i:2501;
+    end
   	 
 	end
     
