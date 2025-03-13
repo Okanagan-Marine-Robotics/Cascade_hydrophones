@@ -1,0 +1,10 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_SineWaveGen_0_0/sim/XCORR_Unit_SineWaveGen_0_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_0_0/sim/XCORR_Unit_xlconstant_0_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_Wrapper_XCorr_0_0/sim/XCORR_Unit_Wrapper_XCorr_0_0.v" \
+"../../../bd/XCORR_Unit/sim/XCORR_Unit.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

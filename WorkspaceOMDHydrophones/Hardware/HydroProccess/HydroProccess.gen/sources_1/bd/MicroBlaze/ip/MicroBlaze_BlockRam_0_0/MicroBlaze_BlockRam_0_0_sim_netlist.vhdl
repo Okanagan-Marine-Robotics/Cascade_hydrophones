@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun Mar  2 04:47:16 2025
+-- Date        : Wed Mar 12 17:12:51 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/MicroBlaze_BlockRam_0_0_sim_netlist.vhdl
@@ -31,7 +31,7 @@ entity MicroBlaze_BlockRam_0_0_BlockRam is
     wave03 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     Ram1_reg_1_0 : in STD_LOGIC;
     Ram1_reg_1_1 : in STD_LOGIC;
-    waveRef0Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    waveRef0Address : in STD_LOGIC_VECTOR ( 13 downto 0 );
     waveRef0AddressB : in STD_LOGIC_VECTOR ( 11 downto 0 );
     inWave1 : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wave0Address : in STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -64,6 +64,7 @@ entity MicroBlaze_BlockRam_0_0_BlockRam is
 end MicroBlaze_BlockRam_0_0_BlockRam;
 
 architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
+  signal p_0_in : STD_LOGIC;
   signal NLW_Ram10_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
   signal NLW_Ram10_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_Ram10_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
@@ -265,7 +266,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute OPT_MODIFIED : string;
   attribute OPT_MODIFIED of Ram10_reg_0 : label is "MLO";
   attribute RTL_RAM_BITS : integer;
-  attribute RTL_RAM_BITS of Ram10_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram10_reg_0 : label is 49152;
   attribute RTL_RAM_NAME : string;
   attribute RTL_RAM_NAME of Ram10_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram10_reg";
   attribute RTL_RAM_STYLE : string;
@@ -286,7 +287,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram10_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram10_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram10_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram10_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram10_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram10_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram10_reg";
   attribute RTL_RAM_STYLE of Ram10_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram10_reg_1 : label is "RAM_SDP";
@@ -299,7 +300,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram11_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram11_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram11_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram11_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram11_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram11_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram11_reg";
   attribute RTL_RAM_STYLE of Ram11_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram11_reg_0 : label is "RAM_SDP";
@@ -312,7 +313,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram11_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram11_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram11_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram11_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram11_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram11_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram11_reg";
   attribute RTL_RAM_STYLE of Ram11_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram11_reg_1 : label is "RAM_SDP";
@@ -325,7 +326,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram12_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram12_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram12_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram12_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram12_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram12_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram12_reg";
   attribute RTL_RAM_STYLE of Ram12_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram12_reg_0 : label is "RAM_SDP";
@@ -338,7 +339,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram12_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram12_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram12_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram12_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram12_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram12_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram12_reg";
   attribute RTL_RAM_STYLE of Ram12_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram12_reg_1 : label is "RAM_SDP";
@@ -351,7 +352,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram1_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram1_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram1_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram1_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram1_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
   attribute RTL_RAM_STYLE of Ram1_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram1_reg_0 : label is "RAM_SDP";
@@ -364,7 +365,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram1_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram1_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram1_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram1_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram1_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram1_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram1_reg";
   attribute RTL_RAM_STYLE of Ram1_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram1_reg_1 : label is "RAM_SDP";
@@ -377,7 +378,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram2_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram2_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram2_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram2_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
   attribute RTL_RAM_STYLE of Ram2_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram2_reg_0 : label is "RAM_SDP";
@@ -390,7 +391,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram2_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram2_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram2_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram2_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram2_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram2_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram2_reg";
   attribute RTL_RAM_STYLE of Ram2_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram2_reg_1 : label is "RAM_SDP";
@@ -403,7 +404,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram3_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram3_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram3_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram3_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
   attribute RTL_RAM_STYLE of Ram3_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram3_reg_0 : label is "RAM_SDP";
@@ -416,7 +417,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram3_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram3_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram3_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram3_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram3_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram3_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram3_reg";
   attribute RTL_RAM_STYLE of Ram3_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram3_reg_1 : label is "RAM_SDP";
@@ -429,7 +430,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram4_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram4_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram4_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram4_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
   attribute RTL_RAM_STYLE of Ram4_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram4_reg_0 : label is "RAM_SDP";
@@ -442,7 +443,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram4_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram4_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram4_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram4_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram4_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram4_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram4_reg";
   attribute RTL_RAM_STYLE of Ram4_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram4_reg_1 : label is "RAM_SDP";
@@ -455,7 +456,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram5_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram5_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram5_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram5_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram5_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram5_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram5_reg";
   attribute RTL_RAM_STYLE of Ram5_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram5_reg_0 : label is "RAM_SDP";
@@ -468,7 +469,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram5_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram5_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram5_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram5_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram5_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram5_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram5_reg";
   attribute RTL_RAM_STYLE of Ram5_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram5_reg_1 : label is "RAM_SDP";
@@ -481,7 +482,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram6_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram6_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram6_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram6_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram6_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram6_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram6_reg";
   attribute RTL_RAM_STYLE of Ram6_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram6_reg_0 : label is "RAM_SDP";
@@ -494,7 +495,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram6_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram6_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram6_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram6_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram6_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram6_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram6_reg";
   attribute RTL_RAM_STYLE of Ram6_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram6_reg_1 : label is "RAM_SDP";
@@ -507,7 +508,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram7_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram7_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram7_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram7_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram7_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram7_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram7_reg";
   attribute RTL_RAM_STYLE of Ram7_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram7_reg_0 : label is "RAM_SDP";
@@ -520,7 +521,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram7_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram7_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram7_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram7_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram7_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram7_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram7_reg";
   attribute RTL_RAM_STYLE of Ram7_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram7_reg_1 : label is "RAM_SDP";
@@ -533,7 +534,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram8_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram8_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram8_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram8_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram8_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram8_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram8_reg";
   attribute RTL_RAM_STYLE of Ram8_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram8_reg_0 : label is "RAM_SDP";
@@ -546,7 +547,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram8_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram8_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram8_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram8_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram8_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram8_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram8_reg";
   attribute RTL_RAM_STYLE of Ram8_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram8_reg_1 : label is "RAM_SDP";
@@ -559,7 +560,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram9_reg_0 : label is "p1_d8";
   attribute METHODOLOGY_DRC_VIOS of Ram9_reg_0 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram9_reg_0 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram9_reg_0 : label is 30024;
+  attribute RTL_RAM_BITS of Ram9_reg_0 : label is 49152;
   attribute RTL_RAM_NAME of Ram9_reg_0 : label is "MicroBlaze_BlockRam_0_0/inst/Ram9_reg";
   attribute RTL_RAM_STYLE of Ram9_reg_0 : label is "auto";
   attribute RTL_RAM_TYPE of Ram9_reg_0 : label is "RAM_SDP";
@@ -572,7 +573,7 @@ architecture STRUCTURE of MicroBlaze_BlockRam_0_0_BlockRam is
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of Ram9_reg_1 : label is "p0_d3";
   attribute METHODOLOGY_DRC_VIOS of Ram9_reg_1 : label is "{SYNTH-6 {cell *THIS*}}";
   attribute OPT_MODIFIED of Ram9_reg_1 : label is "MLO";
-  attribute RTL_RAM_BITS of Ram9_reg_1 : label is 30024;
+  attribute RTL_RAM_BITS of Ram9_reg_1 : label is 49152;
   attribute RTL_RAM_NAME of Ram9_reg_1 : label is "MicroBlaze_BlockRam_0_0/inst/Ram9_reg";
   attribute RTL_RAM_STYLE of Ram9_reg_1 : label is "auto";
   attribute RTL_RAM_TYPE of Ram9_reg_1 : label is "RAM_SDP";
@@ -1756,7 +1757,7 @@ Ram1_reg_0: unisim.vcomponents.RAMB36E1
       SIM_DEVICE => "7SERIES",
       SRVAL_A => X"000000000",
       SRVAL_B => X"000000000",
-      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_A => "NO_CHANGE",
       WRITE_MODE_B => "WRITE_FIRST",
       WRITE_WIDTH_A => 9,
       WRITE_WIDTH_B => 9
@@ -1788,7 +1789,7 @@ Ram1_reg_0: unisim.vcomponents.RAMB36E1
       DOPBDOP(3 downto 1) => NLW_Ram1_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
       DOPBDOP(0) => waveRef0(8),
       ECCPARITY(7 downto 0) => NLW_Ram1_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
-      ENARDEN => '1',
+      ENARDEN => p_0_in,
       ENBWREN => '1',
       INJECTDBITERR => NLW_Ram1_reg_0_INJECTDBITERR_UNCONNECTED,
       INJECTSBITERR => NLW_Ram1_reg_0_INJECTSBITERR_UNCONNECTED,
@@ -1800,7 +1801,10 @@ Ram1_reg_0: unisim.vcomponents.RAMB36E1
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => NLW_Ram1_reg_0_SBITERR_UNCONNECTED,
-      WEA(3 downto 0) => B"1111",
+      WEA(3) => p_0_in,
+      WEA(2) => p_0_in,
+      WEA(1) => p_0_in,
+      WEA(0) => '1',
       WEBWE(7 downto 0) => B"00000000"
     );
 Ram1_reg_1: unisim.vcomponents.RAMB18E1
@@ -1893,7 +1897,7 @@ Ram1_reg_1: unisim.vcomponents.RAMB18E1
       SIM_DEVICE => "7SERIES",
       SRVAL_A => X"00000",
       SRVAL_B => X"00000",
-      WRITE_MODE_A => "READ_FIRST",
+      WRITE_MODE_A => "NO_CHANGE",
       WRITE_MODE_B => "WRITE_FIRST",
       WRITE_WIDTH_A => 4,
       WRITE_WIDTH_B => 4
@@ -1915,7 +1919,7 @@ Ram1_reg_1: unisim.vcomponents.RAMB18E1
       DOBDO(2 downto 0) => waveRef0(11 downto 9),
       DOPADOP(1 downto 0) => NLW_Ram1_reg_1_DOPADOP_UNCONNECTED(1 downto 0),
       DOPBDOP(1 downto 0) => NLW_Ram1_reg_1_DOPBDOP_UNCONNECTED(1 downto 0),
-      ENARDEN => '1',
+      ENARDEN => p_0_in,
       ENBWREN => '1',
       REGCEAREGCE => '0',
       REGCEB => '0',
@@ -1923,8 +1927,18 @@ Ram1_reg_1: unisim.vcomponents.RAMB18E1
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
-      WEA(1 downto 0) => B"11",
+      WEA(1) => p_0_in,
+      WEA(0) => '1',
       WEBWE(3 downto 0) => B"0000"
+    );
+Ram1_reg_1_i_3: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => waveRef0Address(12),
+      I1 => waveRef0Address(13),
+      O => p_0_in
     );
 Ram2_reg_0: unisim.vcomponents.RAMB36E1
     generic map(
@@ -4715,7 +4729,7 @@ inst: entity work.MicroBlaze_BlockRam_0_0_BlockRam
       wave3Address(11 downto 0) => wave3Address(11 downto 0),
       wave3AddressB(11 downto 0) => wave3AddressB(11 downto 0),
       waveRef0(11 downto 0) => waveRef0(11 downto 0),
-      waveRef0Address(11 downto 0) => waveRef0Address(11 downto 0),
+      waveRef0Address(13 downto 0) => waveRef0Address(13 downto 0),
       waveRef0AddressB(11 downto 0) => waveRef0AddressB(11 downto 0),
       waveRef1(11 downto 0) => waveRef1(11 downto 0),
       waveRef1Address(11 downto 0) => waveRef1Address(11 downto 0),

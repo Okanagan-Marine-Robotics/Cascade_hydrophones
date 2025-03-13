@@ -1,0 +1,21 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-322,72",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -170 -y 140 -defaultsOSRD
+preplace port port-id_clk1Mhz -pg 1 -lvl 0 -x -170 -y 170 -defaultsOSRD
+preplace inst SineWaveGen_0 -pg 1 -lvl 2 -x 140 -y 250 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x -70 -y 260 -defaultsOSRD
+preplace inst Wrapper_XCorr_0 -pg 1 -lvl 3 -x 380 -y 200 -defaultsOSRD
+preplace netloc SineWaveGen_0_wave 1 2 1 270 200n
+preplace netloc clk1Mhz_0_1 1 0 3 NJ 170 20 180 N
+preplace netloc clk_1 1 0 3 NJ 140 NJ 140 260
+preplace netloc xlconstant_0_dout 1 1 1 N 260
+levelinfo -pg 1 -170 -70 140 380 1360
+pagesize -pg 1 -db -bbox -sgen -280 -120 1600 680
+"
+}
+0

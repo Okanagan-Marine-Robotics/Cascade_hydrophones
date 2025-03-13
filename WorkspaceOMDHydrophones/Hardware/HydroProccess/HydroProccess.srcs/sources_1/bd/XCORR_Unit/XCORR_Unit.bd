@@ -1,0 +1,165 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2CC38FD68A89CD25",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/XCORR_Unit",
+      "name": "XCORR_Unit",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "SineWaveGen_0": "",
+      "xlconstant_0": "",
+      "Wrapper_XCorr_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "XCORR_Unit_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk1Mhz": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "SineWaveGen_0": {
+        "vlnv": "xilinx.com:module_ref:SineWaveGen:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_SineWaveGen_0_0",
+        "xci_path": "ip\\XCORR_Unit_SineWaveGen_0_0\\XCORR_Unit_SineWaveGen_0_0.xci",
+        "inst_hier_path": "SineWaveGen_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SineWaveGen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "delay": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "XCORR_Unit_xlconstant_0_0",
+        "xci_path": "ip\\XCORR_Unit_xlconstant_0_0\\XCORR_Unit_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "Wrapper_XCorr_0": {
+        "vlnv": "xilinx.com:module_ref:Wrapper_XCorr:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_Wrapper_XCorr_0_0",
+        "xci_path": "ip\\XCORR_Unit_Wrapper_XCorr_0_0\\XCORR_Unit_Wrapper_XCorr_0_0.xci",
+        "inst_hier_path": "Wrapper_XCorr_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Wrapper_XCorr",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "XCORR_Unit_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "waveRef": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wave1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "SineWaveGen_0_wave": {
+        "ports": [
+          "SineWaveGen_0/wave",
+          "Wrapper_XCorr_0/waveRef",
+          "Wrapper_XCorr_0/wave",
+          "Wrapper_XCorr_0/wave1"
+        ]
+      },
+      "clk1Mhz_0_1": {
+        "ports": [
+          "clk1Mhz",
+          "SineWaveGen_0/clk1Mhz",
+          "Wrapper_XCorr_0/clk1Mhz"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "Wrapper_XCorr_0/clk"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "SineWaveGen_0/delay"
+        ]
+      }
+    }
+  }
+}

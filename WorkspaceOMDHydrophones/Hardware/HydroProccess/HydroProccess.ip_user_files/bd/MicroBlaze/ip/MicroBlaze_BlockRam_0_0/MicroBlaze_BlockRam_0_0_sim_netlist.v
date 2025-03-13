@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun Mar  2 04:47:16 2025
+// Date        : Wed Mar 12 17:12:51 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/MicroBlaze_BlockRam_0_0_sim_netlist.v
@@ -173,7 +173,7 @@ module MicroBlaze_BlockRam_0_0
         .wave3Address(wave3Address),
         .wave3AddressB(wave3AddressB),
         .waveRef0(waveRef0),
-        .waveRef0Address(waveRef0Address[11:0]),
+        .waveRef0Address(waveRef0Address),
         .waveRef0AddressB(waveRef0AddressB),
         .waveRef1(waveRef1),
         .waveRef1Address(waveRef1Address),
@@ -243,7 +243,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   output [11:0]wave03;
   input Ram1_reg_1_0;
   input Ram1_reg_1_1;
-  input [11:0]waveRef0Address;
+  input [13:0]waveRef0Address;
   input [11:0]waveRef0AddressB;
   input [11:0]inWave1;
   input [11:0]wave0Address;
@@ -276,6 +276,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   wire [11:0]inWave1;
   wire [11:0]inWave2;
   wire [11:0]inWave3;
+  wire p_0_in;
   wire [11:0]wave0;
   wire [11:0]wave00;
   wire [11:0]wave00Address;
@@ -301,7 +302,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   wire [11:0]wave3Address;
   wire [11:0]wave3AddressB;
   wire [11:0]waveRef0;
-  wire [11:0]waveRef0Address;
+  wire [13:0]waveRef0Address;
   wire [11:0]waveRef0AddressB;
   wire [11:0]waveRef1;
   wire [11:0]waveRef1Address;
@@ -509,7 +510,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram10_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -724,7 +725,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram10_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -853,7 +854,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram11_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -1068,7 +1069,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram11_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -1197,7 +1198,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram12_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -1412,7 +1413,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram12_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -1541,7 +1542,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -1715,12 +1716,12 @@ module MicroBlaze_BlockRam_0_0_BlockRam
     .SIM_DEVICE("7SERIES"),
     .SRVAL_A(36'h000000000),
     .SRVAL_B(36'h000000000),
-    .WRITE_MODE_A("READ_FIRST"),
+    .WRITE_MODE_A("NO_CHANGE"),
     .WRITE_MODE_B("WRITE_FIRST"),
     .WRITE_WIDTH_A(9),
     .WRITE_WIDTH_B(9)) 
     Ram1_reg_0
-       (.ADDRARDADDR({1'b1,waveRef0Address,1'b0,1'b0,1'b0}),
+       (.ADDRARDADDR({1'b1,waveRef0Address[11:0],1'b0,1'b0,1'b0}),
         .ADDRBWRADDR({1'b1,waveRef0AddressB,1'b0,1'b0,1'b0}),
         .CASCADEINA(1'b1),
         .CASCADEINB(1'b1),
@@ -1738,7 +1739,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
         .DOPADOP(NLW_Ram1_reg_0_DOPADOP_UNCONNECTED[3:0]),
         .DOPBDOP({NLW_Ram1_reg_0_DOPBDOP_UNCONNECTED[3:1],waveRef0[8]}),
         .ECCPARITY(NLW_Ram1_reg_0_ECCPARITY_UNCONNECTED[7:0]),
-        .ENARDEN(1'b1),
+        .ENARDEN(p_0_in),
         .ENBWREN(1'b1),
         .INJECTDBITERR(NLW_Ram1_reg_0_INJECTDBITERR_UNCONNECTED),
         .INJECTSBITERR(NLW_Ram1_reg_0_INJECTSBITERR_UNCONNECTED),
@@ -1750,13 +1751,13 @@ module MicroBlaze_BlockRam_0_0_BlockRam
         .RSTREGARSTREG(1'b0),
         .RSTREGB(1'b0),
         .SBITERR(NLW_Ram1_reg_0_SBITERR_UNCONNECTED),
-        .WEA({1'b1,1'b1,1'b1,1'b1}),
+        .WEA({p_0_in,p_0_in,p_0_in,1'b1}),
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
   (* \MEM.PORTA.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram1_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -1854,12 +1855,12 @@ module MicroBlaze_BlockRam_0_0_BlockRam
     .SIM_DEVICE("7SERIES"),
     .SRVAL_A(18'h00000),
     .SRVAL_B(18'h00000),
-    .WRITE_MODE_A("READ_FIRST"),
+    .WRITE_MODE_A("NO_CHANGE"),
     .WRITE_MODE_B("WRITE_FIRST"),
     .WRITE_WIDTH_A(4),
     .WRITE_WIDTH_B(4)) 
     Ram1_reg_1
-       (.ADDRARDADDR({waveRef0Address,1'b0,1'b0}),
+       (.ADDRARDADDR({waveRef0Address[11:0],1'b0,1'b0}),
         .ADDRBWRADDR({waveRef0AddressB,1'b0,1'b0}),
         .CLKARDCLK(Ram1_reg_1_0),
         .CLKBWRCLK(Ram1_reg_1_1),
@@ -1871,7 +1872,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
         .DOBDO({NLW_Ram1_reg_1_DOBDO_UNCONNECTED[15:3],waveRef0[11:9]}),
         .DOPADOP(NLW_Ram1_reg_1_DOPADOP_UNCONNECTED[1:0]),
         .DOPBDOP(NLW_Ram1_reg_1_DOPBDOP_UNCONNECTED[1:0]),
-        .ENARDEN(1'b1),
+        .ENARDEN(p_0_in),
         .ENBWREN(1'b1),
         .REGCEAREGCE(1'b0),
         .REGCEB(1'b0),
@@ -1879,13 +1880,19 @@ module MicroBlaze_BlockRam_0_0_BlockRam
         .RSTRAMB(1'b0),
         .RSTREGARSTREG(1'b0),
         .RSTREGB(1'b0),
-        .WEA({1'b1,1'b1}),
+        .WEA({p_0_in,1'b1}),
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
+  LUT2 #(
+    .INIT(4'h1)) 
+    Ram1_reg_1_i_3
+       (.I0(waveRef0Address[12]),
+        .I1(waveRef0Address[13]),
+        .O(p_0_in));
   (* \MEM.PORTA.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -2100,7 +2107,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram2_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -2229,7 +2236,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -2444,7 +2451,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram3_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -2573,7 +2580,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -2788,7 +2795,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram4_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -2917,7 +2924,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram5_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -3132,7 +3139,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram5_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -3261,7 +3268,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram6_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -3476,7 +3483,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram6_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -3605,7 +3612,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram7_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -3820,7 +3827,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram7_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -3949,7 +3956,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram8_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -4164,7 +4171,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram8_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -4293,7 +4300,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p1_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram9_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
@@ -4508,7 +4515,7 @@ module MicroBlaze_BlockRam_0_0_BlockRam
   (* \MEM.PORTB.DATA_BIT_LAYOUT  = "p0_d3" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* OPT_MODIFIED = "MLO" *) 
-  (* RTL_RAM_BITS = "30024" *) 
+  (* RTL_RAM_BITS = "49152" *) 
   (* RTL_RAM_NAME = "MicroBlaze_BlockRam_0_0/inst/Ram9_reg" *) 
   (* RTL_RAM_STYLE = "auto" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 

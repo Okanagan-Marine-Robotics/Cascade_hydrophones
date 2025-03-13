@@ -50,7 +50,7 @@ module BlockRam(
 
     initial begin
     // Initialize Ram1 to Ram12 to 0
-        for (i = 0; i < 2502; i = i + 1) begin
+        for (i = 0; i < 10002; i = i + 1) begin
             Ram1[i] = 12'b0;
             Ram2[i] = 12'b0;
             Ram3[i] = 12'b0;
@@ -66,18 +66,18 @@ module BlockRam(
         end
     end
     
-    reg [11:0] Ram1 [0:2501];
-    reg [11:0] Ram2 [0:2501];
-    reg [11:0] Ram3 [0:2501];
-    reg [11:0] Ram4 [0:2501];
-    reg [11:0] Ram5 [0:2501];
-    reg [11:0] Ram6 [0:2501];
-    reg [11:0] Ram7 [0:2501];
-    reg [11:0] Ram8 [0:2501];
-    reg [11:0] Ram9 [0:2501];
-    reg [11:0] Ram10 [0:2501];
-    reg [11:0] Ram11 [0:2501];
-    reg [11:0] Ram12 [0:2501];
+    reg [11:0] Ram1 [0:10001];
+    reg [11:0] Ram2 [0:10001];
+    reg [11:0] Ram3 [0:10001];
+    reg [11:0] Ram4 [0:10001];
+    reg [11:0] Ram5 [0:10001];
+    reg [11:0] Ram6 [0:10001];
+    reg [11:0] Ram7 [0:10001];
+    reg [11:0] Ram8 [0:10001];
+    reg [11:0] Ram9 [0:10001];
+    reg [11:0] Ram10 [0:10001];
+    reg [11:0] Ram11 [0:10001];
+    reg [11:0] Ram12 [0:10001];
     
     always @(negedge clk1Mhz)begin
         Ram1[waveRef0Address]<=inWave1;

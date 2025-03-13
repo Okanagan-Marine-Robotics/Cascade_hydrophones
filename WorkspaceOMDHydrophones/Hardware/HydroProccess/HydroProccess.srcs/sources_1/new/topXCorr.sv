@@ -1,0 +1,71 @@
+`timescale 1ns / 1ps
+
+module topXCorr(
+input clk,
+input clk1Mhz,
+input [11:0] waveRef,
+input [11:0] wave,
+input [11:0] wave1
+    );
+    
+    wire [11:0] bufferwire [0:2];
+    wire [13:0] waceRefAddressWire [0:3];
+    wire [11:0] waceXAddressWire[0:3];
+    wire [11:0] waceYAddressWire[0:3];
+    wire [13:0] RefAddress_outMux[0:3];
+    wire [11:0] waveRefOutRam[0:3];
+    wire [11:0] waveRefIntoXCorr[0:3],waveXIntoXCorr[0:3],waveYIntoYCorr[0:3];
+    wire [13:0] waveRefOutXCorr[0:3];
+    wire [11:0] waveXOutXCorr[0:3],waveYOutXCorr[0:3];
+    
+   XCorr_waveParser waveParser (
+        .clk(clk),
+        .clk1Mhz(clk1Mhz),
+        .waveRef(waveRef),
+        .wave(wave),
+        .wave1(wave),
+        .bufferRef(bufferwire[0]),
+        .buffer(bufferwire[1]),
+        .buffer1(bufferwire[2]),
+        .waveRefAddress(waceRefAddressWire),
+        .waveXAddress(waceXAddressWire),
+        .waveYAddress(waceYAddressWire)
+   );
+    
+    XCORR_BRAM bram(
+        .clk(clk),
+        .clk1Mhz(clk1Mhz),
+        .inWave1(bufferwire[0]),
+        .inWave2(bufferwire[1]),
+        .inWave3(bufferwire[2]),
+        .waveRefAddress(waceRefAddressWire),
+        .waveXAddress(waceXAddressWire),
+        .waveYAddress(waceYAddressWire),
+        .waveRefAddressB(RefAddress_outMux),
+        .waveXAddressB(waveXOutXCorr),
+        .waveYAddressB(waveYOutXCorr),
+        .waveRef(waveRefOutRam),
+        .waveX(waveXIntoXCorr),
+        .waveY(waveYIntoYCorr)
+    );
+    
+    XCorr_BramMux mux(
+        .waveRef(waveRefOutRam),
+        .waveRefAddress(waveRefOutXCorr),
+        .clk(clk),
+        .Ref0(waveRefIntoXCorr),
+        .RefAddress(RefAddress_outMux)
+    );
+    
+    XCORR_SV XCORR (
+        .clk(clk),
+        .clk1Mhz(clk1Mhz),
+        .waveRef(waveRefIntoXCorr),
+        .waveX(waveXIntoXCorr),
+        .waveY(waveYIntoYCorr),
+        .waveRefAddress(waveRefOutXCorr),
+        .waveXAddress(waveXOutXCorr),
+        .waveYAddress(waveYOutXCorr)
+    );
+
+endmodule
