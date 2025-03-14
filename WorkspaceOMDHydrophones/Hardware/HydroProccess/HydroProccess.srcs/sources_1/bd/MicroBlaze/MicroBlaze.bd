@@ -2084,9 +2084,9 @@
           "SPI_ADC_Master_0/clk",
           "SPI_ADC_Master_1/clk",
           "SPI_ADC_Master_2/clk",
-          "AddressFixer_0/clk",
           "MaximumFinder_0/clk",
-          "Wrapper_XCorr_0/clk"
+          "Wrapper_XCorr_0/clk",
+          "AddressFixer_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

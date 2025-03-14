@@ -37,6 +37,7 @@ preplace netloc AddressFixer_0_address 1 8 1 N 390
 preplace netloc MaximumFinder_0_tmax 1 3 7 NJ 460 NJ 460 NJ 460 1870J 470 NJ 470 NJ 470 2800
 preplace netloc MaximumFinder_0_tmax1 1 3 7 1040J 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 2790
 preplace netloc Net1 1 3 4 1080 120 NJ 120 NJ 120 1870J
+preplace netloc SPI_ADC_Master_0_wave 1 6 1 1870 160n
 preplace netloc SPI_ADC_Master_1_wave 1 6 1 1900 180n
 preplace netloc SPI_ADC_Master_2_wave 1 6 1 1910 200n
 preplace netloc Serializer_0_MISO 1 5 1 N 220
@@ -59,7 +60,6 @@ preplace netloc xlconstant_1_dout 1 9 1 NJ 530
 preplace netloc xlconstant_2_dout 1 9 1 NJ 790
 preplace netloc xlslice_0_Dout 1 8 1 2500 60n
 preplace netloc xlslice_1_Dout 1 8 1 2490 160n
-preplace netloc SPI_ADC_Master_0_wave 1 6 1 1870 160n
 preplace netloc axi_smc_M00_AXI 1 2 1 730 410n
 preplace netloc axi_smc_M01_AXI 1 2 1 730 580n
 preplace netloc processing_system7_0_DDR 1 1 9 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 2810J

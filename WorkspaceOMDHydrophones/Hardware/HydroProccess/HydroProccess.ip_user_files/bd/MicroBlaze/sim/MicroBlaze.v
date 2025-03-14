@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Fri Mar 14 02:22:16 2025
+//Date        : Fri Mar 14 02:57:59 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -84,7 +84,7 @@ module MicroBlaze
   wire [31:0]MaximumFinder_0_tmax;
   wire [31:0]MaximumFinder_0_tmax1;
   wire Net1;
-  wire SPI_ADC_Master_0_CS;
+  wire [11:0]SPI_ADC_Master_0_wave;
   wire [11:0]SPI_ADC_Master_1_wave;
   wire [11:0]SPI_ADC_Master_2_wave;
   wire Serializer_0_MISO;
@@ -192,10 +192,10 @@ module MicroBlaze
         .tmax(MaximumFinder_0_tmax),
         .tmax1(MaximumFinder_0_tmax1));
   MicroBlaze_SPI_ADC_Master_0_1 SPI_ADC_Master_0
-       (.CS(SPI_ADC_Master_0_CS),
-        .MISO(Serializer_0_MISO),
+       (.MISO(Serializer_0_MISO),
         .clk(microblaze_0_Clk),
-        .clk16MHz(clk_wiz_0_clk_out1));
+        .clk16MHz(clk_wiz_0_clk_out1),
+        .wave(SPI_ADC_Master_0_wave));
   MicroBlaze_SPI_ADC_Master_1_0 SPI_ADC_Master_1
        (.MISO(Serializer_1_MISO),
         .clk(microblaze_0_Clk),
@@ -236,7 +236,7 @@ module MicroBlaze
         .count(Wrapper_XCorr_0_count),
         .wave(SPI_ADC_Master_1_wave),
         .wave1(SPI_ADC_Master_2_wave),
-        .waveRef({SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS,SPI_ADC_Master_0_CS}),
+        .waveRef(SPI_ADC_Master_0_wave),
         .xcorr(Wrapper_XCorr_0_xcorr),
         .xcorr1(Wrapper_XCorr_0_xcorr1));
   MicroBlaze_axi_gpio_0_0 axi_gpio_0

@@ -13,7 +13,7 @@ module waveParserXCorr(
 	input clk,
 	output reg resetsignal = 0
 	);
-
+    parameter XCORRsize = 2500;
 	reg [31:0] MemoryAddress = 10010;
     
 	always @(negedge clk1Mhz)begin
@@ -25,18 +25,18 @@ module waveParserXCorr(
 	   MemoryAddress <= MemoryAddress - 1;
 	   resetsignal <=0;
     end
-	waveXAddress [0] <=((MemoryAddress<=10000)&&(MemoryAddress>0))?MemoryAddress:2501;
-	waveYAddress [0]<=((MemoryAddress<=10000)&&(MemoryAddress>0))?MemoryAddress:2501;
-	waveRefAddress [0]<=((MemoryAddress<=10000)&&(MemoryAddress>0))?MemoryAddress:2501;
-	waveXAddress [1] <=((MemoryAddress-2500<=10000)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
-	waveYAddress [1] <=((MemoryAddress-2500<=10000)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
-	waveRefAddress [1] <=((MemoryAddress-2500<=10000)&&(MemoryAddress-2500>0))?MemoryAddress-2500:2501;
-	waveXAddress [2] <=((MemoryAddress-5000<=10000)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
-	waveYAddress [2] <=((MemoryAddress-5000<=10000)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
-	waveRefAddress [2] <=((MemoryAddress-5000<=10000)&&(MemoryAddress-5000>0))?MemoryAddress-5000:2501;
-	waveXAddress [3] <=((MemoryAddress-7500<=10000)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
-	waveYAddress [3] <=((MemoryAddress-7500<=10000)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
-	waveRefAddress [3] <=((MemoryAddress-7500<=10000)&&(MemoryAddress-7500>0))?MemoryAddress-7500:2501;
+	waveXAddress [0] <=((MemoryAddress<=XCORRsize)&&(MemoryAddress>0))?MemoryAddress:2501;
+	waveYAddress [0]<=((MemoryAddress<=XCORRsize)&&(MemoryAddress>0))?MemoryAddress:2501;
+	waveRefAddress [0]<=((MemoryAddress<=XCORRsize)&&(MemoryAddress>0))?MemoryAddress:2501;
+	waveXAddress [1] <=((MemoryAddress<=XCORRsize+2500)&&(MemoryAddress>2500))?MemoryAddress-2500:2501;
+	waveYAddress [1] <=((MemoryAddress<=XCORRsize+2500)&&(MemoryAddress>2500))?MemoryAddress-2500:2501;
+	waveRefAddress [1] <=((MemoryAddress<=XCORRsize+2500)&&(MemoryAddress>2500))?MemoryAddress-2500:2501;
+	waveXAddress [2] <=((MemoryAddress<=XCORRsize+5000)&&(MemoryAddress>5000))?MemoryAddress-5000:2501;
+	waveYAddress [2] <=((MemoryAddress<=XCORRsize+5000)&&(MemoryAddress>5000))?MemoryAddress-5000:2501;
+	waveRefAddress [2] <=((MemoryAddress<=XCORRsize+5000)&&(MemoryAddress>5000))?MemoryAddress-5000:2501;
+	waveXAddress [3] <=((MemoryAddress<=XCORRsize+7500)&&(MemoryAddress>7500))?MemoryAddress-7500:2501;
+	waveYAddress [3] <=((MemoryAddress<=XCORRsize+7500)&&(MemoryAddress>7500))?MemoryAddress-7500:2501;
+	waveRefAddress [3] <=((MemoryAddress<=XCORRsize+7500)&&(MemoryAddress>7500))?MemoryAddress-7500:2501;
     
    	 
   	 

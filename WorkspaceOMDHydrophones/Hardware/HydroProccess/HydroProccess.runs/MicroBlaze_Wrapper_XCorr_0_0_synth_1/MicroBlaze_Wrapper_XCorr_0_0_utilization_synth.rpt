@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Mar 14 02:42:14 2025
+| Date         : Fri Mar 14 03:49:48 2025
 | Host         : James running 64-bit major release  (build 9200)
 | Command      : report_utilization -file MicroBlaze_Wrapper_XCorr_0_0_utilization_synth.rpt -pb MicroBlaze_Wrapper_XCorr_0_0_utilization_synth.pb
 | Design       : MicroBlaze_Wrapper_XCorr_0_0
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 2147 |     0 |          0 |     17600 | 12.20 |
-|   LUT as Logic          | 2147 |     0 |          0 |     17600 | 12.20 |
+| Slice LUTs*             | 2069 |     0 |          0 |     17600 | 11.76 |
+|   LUT as Logic          | 2069 |     0 |          0 |     17600 | 11.76 |
 |   LUT as Memory         |    0 |     0 |          0 |      6000 |  0.00 |
 | Slice Registers         |  595 |     0 |          0 |     35200 |  1.69 |
 |   Register as Flip Flop |  595 |     0 |          0 |     35200 |  1.69 |
@@ -152,15 +152,15 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT1     |  812 |                 LUT |
-| LUT6     |  560 |                 LUT |
-| LUT2     |  504 |                 LUT |
+| LUT1     |  836 |                 LUT |
+| LUT6     |  556 |                 LUT |
+| CARRY4   |  508 |          CarryLogic |
 | FDRE     |  503 |        Flop & Latch |
-| CARRY4   |  502 |          CarryLogic |
-| LUT4     |  256 |                 LUT |
-| LUT5     |  244 |                 LUT |
-| LUT3     |   95 |                 LUT |
+| LUT4     |  434 |                 LUT |
+| LUT5     |  249 |                 LUT |
+| LUT2     |  191 |                 LUT |
 | FDSE     |   92 |        Flop & Latch |
+| LUT3     |   74 |                 LUT |
 | RAMB36E1 |   23 |        Block Memory |
 | RAMB18E1 |   23 |        Block Memory |
 | DSP48E1  |   22 |    Block Arithmetic |

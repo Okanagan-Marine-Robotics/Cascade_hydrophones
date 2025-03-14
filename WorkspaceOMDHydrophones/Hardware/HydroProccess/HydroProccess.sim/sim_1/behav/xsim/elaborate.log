@@ -1,7 +1,7 @@
 Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_9 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBenchXCorr_behav xil_defaultlib.TestBenchXCorr xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_9 -L xlslice_v1_0_4 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBenchXCorr_behav xil_defaultlib.TestBenchXCorr xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -9,6 +9,8 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MaximumFinder
+Compiling module xil_defaultlib.XCORR_Unit_MaximumFinder_0_0
 Compiling module xil_defaultlib.SineWaveGen
 Compiling module xil_defaultlib.XCORR_Unit_SineWaveGen_0_0
 Compiling module xil_defaultlib.XCORR_Unit_SineWaveGen_1_0
@@ -23,6 +25,9 @@ Compiling module xil_defaultlib.XCORR_Unit_Wrapper_XCorr_0_0
 Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
 Compiling module xil_defaultlib.XCORR_Unit_xlconstant_0_0
 Compiling module xil_defaultlib.XCORR_Unit_xlconstant_1_0
+Compiling module xlslice_v1_0_4.xlslice_v1_0_4_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.XCORR_Unit_xlslice_0_0
+Compiling module xil_defaultlib.XCORR_Unit_xlslice_1_0
 Compiling module xil_defaultlib.XCORR_Unit
 Compiling module xil_defaultlib.XCORR_Unit_wrapper
 Compiling module xil_defaultlib.TestBenchXCorr

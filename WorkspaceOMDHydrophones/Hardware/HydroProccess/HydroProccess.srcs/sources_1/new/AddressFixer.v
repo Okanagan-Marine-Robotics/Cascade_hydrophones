@@ -6,7 +6,7 @@ module AddressFixer(
     );
     
 always @(posedge clk) begin
-    if ((counter + 2000 < 4000) && (counter + 2000 > 0)) begin
+    if ((counter < 4000 - 2000) && (counter > -2000)) begin
         address <= counter + 2000;
     end else begin
         address <= 0;

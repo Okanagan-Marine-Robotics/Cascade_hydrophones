@@ -63,7 +63,7 @@ else begin
   end
 
         for(int i = 0;i<=7;i++)begin
-            waveRefAddress [i] <= ((countMulti+XCORRsize*i+count>=1)&&(countMulti+XCORRsize*i+count<=lengthOfXCorr))?countMulti+XCORRsize*i+count:0;
+            waveRefAddress [i] <= ((countMulti>=-XCORRsize*i+count)&&(countMulti<=lengthOfXCorr-XCORRsize*i+count))?countMulti+XCORRsize*i+count:0;
             waveXAddress [i] <= countMulti;
             waveYAddress [i] <= countMulti;
         end
