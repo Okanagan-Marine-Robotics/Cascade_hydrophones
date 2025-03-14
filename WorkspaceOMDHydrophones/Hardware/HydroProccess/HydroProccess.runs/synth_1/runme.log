@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Fri Mar 14 02:42:16 2025
+  **** Start of session at: Fri Mar 14 02:58:17 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -31,69 +31,69 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20968
+INFO: [Synth 8-7075] Helper process launched with PID 2432
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1106.152 ; gain = 467.914
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1108.426 ; gain = 468.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_wrapper' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/hdl/MicroBlaze_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'MicroBlaze' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:13]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_AddressFixer_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_AddressFixer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_AddressFixer_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_AddressFixer_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_MaximumFinder_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_MaximumFinder_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_MaximumFinder_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_MaximumFinder_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SPI_ADC_Master_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SPI_ADC_Master_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SPI_ADC_Master_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SPI_ADC_Master_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'wave' of module 'MicroBlaze_SPI_ADC_Master_0_1' is unconnected for instance 'SPI_ADC_Master_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:194]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_AddressFixer_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_AddressFixer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_AddressFixer_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_AddressFixer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_MaximumFinder_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_MaximumFinder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_MaximumFinder_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_MaximumFinder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SPI_ADC_Master_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SPI_ADC_Master_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SPI_ADC_Master_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SPI_ADC_Master_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'CS' of module 'MicroBlaze_SPI_ADC_Master_0_1' is unconnected for instance 'SPI_ADC_Master_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:194]
 WARNING: [Synth 8-7071] port 'SCLK' of module 'MicroBlaze_SPI_ADC_Master_0_1' is unconnected for instance 'SPI_ADC_Master_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:194]
 WARNING: [Synth 8-7023] instance 'SPI_ADC_Master_0' of module 'MicroBlaze_SPI_ADC_Master_0_1' has 6 connections declared, but only 4 given [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:194]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SPI_ADC_Master_1_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SPI_ADC_Master_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SPI_ADC_Master_1_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SPI_ADC_Master_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SPI_ADC_Master_1_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SPI_ADC_Master_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SPI_ADC_Master_1_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SPI_ADC_Master_1_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'CS' of module 'MicroBlaze_SPI_ADC_Master_1_0' is unconnected for instance 'SPI_ADC_Master_1' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:199]
 WARNING: [Synth 8-7071] port 'SCLK' of module 'MicroBlaze_SPI_ADC_Master_1_0' is unconnected for instance 'SPI_ADC_Master_1' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:199]
 WARNING: [Synth 8-7023] instance 'SPI_ADC_Master_1' of module 'MicroBlaze_SPI_ADC_Master_1_0' has 6 connections declared, but only 4 given [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:199]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SPI_ADC_Master_2_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SPI_ADC_Master_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SPI_ADC_Master_2_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SPI_ADC_Master_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SPI_ADC_Master_2_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SPI_ADC_Master_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SPI_ADC_Master_2_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SPI_ADC_Master_2_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'CS' of module 'MicroBlaze_SPI_ADC_Master_2_0' is unconnected for instance 'SPI_ADC_Master_2' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:204]
 WARNING: [Synth 8-7071] port 'SCLK' of module 'MicroBlaze_SPI_ADC_Master_2_0' is unconnected for instance 'SPI_ADC_Master_2' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:204]
 WARNING: [Synth 8-7023] instance 'SPI_ADC_Master_2' of module 'MicroBlaze_SPI_ADC_Master_2_0' has 6 connections declared, but only 4 given [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:204]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Serializer_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Serializer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Serializer_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Serializer_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Serializer_1_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Serializer_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Serializer_1_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Serializer_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Serializer_2_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Serializer_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Serializer_2_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Serializer_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SineWaveGen_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SineWaveGen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SineWaveGen_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SineWaveGen_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SineWaveGen_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SineWaveGen_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SineWaveGen_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SineWaveGen_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SineWaveGen_2_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SineWaveGen_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SineWaveGen_2_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_SineWaveGen_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Wrapper_XCorr_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Wrapper_XCorr_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Wrapper_XCorr_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_Wrapper_XCorr_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_axi_gpio_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_axi_gpio_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_axi_gpio_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_axi_gpio_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_axi_smc_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_axi_smc_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Serializer_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Serializer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Serializer_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Serializer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Serializer_1_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Serializer_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Serializer_1_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Serializer_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Serializer_2_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Serializer_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Serializer_2_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Serializer_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SineWaveGen_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SineWaveGen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SineWaveGen_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SineWaveGen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SineWaveGen_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SineWaveGen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SineWaveGen_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SineWaveGen_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_SineWaveGen_2_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SineWaveGen_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_SineWaveGen_2_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_SineWaveGen_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Wrapper_XCorr_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Wrapper_XCorr_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Wrapper_XCorr_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_Wrapper_XCorr_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_axi_gpio_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_axi_gpio_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_axi_gpio_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_axi_gpio_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_axi_smc_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_axi_smc_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_axi_smc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'MicroBlaze_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:286]
 WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'MicroBlaze_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:286]
 WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'MicroBlaze_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:286]
 WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'MicroBlaze_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:286]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'MicroBlaze_axi_smc_0' has 78 connections declared, but only 74 given [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:286]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk1Mhz_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_clk1Mhz_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk1Mhz_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_clk1Mhz_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk_wiz_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk_wiz_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_proc_sys_reset_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_proc_sys_reset_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk1Mhz_0_1' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_clk1Mhz_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk1Mhz_0_1' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_clk1Mhz_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_clk_wiz_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_clk_wiz_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_proc_sys_reset_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_proc_sys_reset_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'MicroBlaze_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:367]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'MicroBlaze_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:367]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'MicroBlaze_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:367]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'MicroBlaze_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:367]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'MicroBlaze_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:367]
-INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_processing_system7_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_processing_system7_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-7980-James/realtime/MicroBlaze_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_processing_system7_0_0' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_processing_system7_0_0' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/.Xil/Vivado-20744-James/realtime/MicroBlaze_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'ENET0_GMII_TX_EN' of module 'MicroBlaze_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:374]
 WARNING: [Synth 8-7071] port 'ENET0_GMII_TX_ER' of module 'MicroBlaze_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:374]
 WARNING: [Synth 8-7071] port 'ENET0_MDIO_MDC' of module 'MicroBlaze_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/synth/MicroBlaze.v:374]
@@ -124,18 +124,18 @@ WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_4_xlslice is either u
 WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1218.285 ; gain = 580.047
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1222.039 ; gain = 581.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1218.285 ; gain = 580.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1222.039 ; gain = 581.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1218.285 ; gain = 580.047
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1222.039 ; gain = 581.961
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1218.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1222.039 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -188,24 +188,24 @@ Parsing XDC File [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroP
 Finished Parsing XDC File [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1218.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1222.039 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1218.285 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1222.039 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'MicroBlaze_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'MicroBlaze_i/axi_gpio_1' at clock pin 's_axi_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1218.285 ; gain = 580.047
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1222.039 ; gain = 581.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1218.285 ; gain = 580.047
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1222.039 ; gain = 581.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -496,10 +496,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for MicroBlaze_i/Wrapper_XCorr_0. (co
 Applied set_property KEEP_HIERARCHY = SOFT for MicroBlaze_i/SineWaveGen_2. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for MicroBlaze_i/xlconstant_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1218.285 ; gain = 580.047
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1222.039 ; gain = 581.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1218.285 ; gain = 580.047
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1222.039 ; gain = 581.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -530,25 +530,25 @@ WARNING: [Synth 8-7129] Port Din[2] in module MicroBlaze_xlslice_0_0 is either u
 WARNING: [Synth 8-7129] Port Din[1] in module MicroBlaze_xlslice_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[0] in module MicroBlaze_xlslice_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1225.230 ; gain = 586.992
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1229.012 ; gain = 588.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1395.398 ; gain = 757.160
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1397.777 ; gain = 757.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1395.547 ; gain = 757.309
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1397.926 ; gain = 757.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1405.758 ; gain = 767.520
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1408.195 ; gain = 768.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -566,37 +566,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -651,25 +651,25 @@ Report Cell Usage:
 |20    |OBUF                            |     2|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1621.812 ; gain = 983.574
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.812 ; gain = 983.574
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1624.348 ; gain = 984.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1624.348 ; gain = 984.270
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1621.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1625.492 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1621.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1629.176 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: aee1ad04
+Synth Design complete | Checksum: 91e0f8b8
 INFO: [Common 17-83] Releasing license: Synthesis
 81 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1621.812 ; gain = 1203.035
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1621.812 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1629.176 ; gain = 1207.523
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1629.176 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/synth_1/MicroBlaze_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file MicroBlaze_wrapper_utilization_synth.rpt -pb MicroBlaze_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 02:42:48 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 02:58:49 2025...

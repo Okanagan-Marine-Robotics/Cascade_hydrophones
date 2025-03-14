@@ -1,24 +1,9 @@
-02:50:55 **** Incremental Build of configuration Debug for project helloworld ****
+03:08:39 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/computeFiniteDifferences.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/computeFiniteDifferences.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/computeFiniteDifferences.d" -MT"src/computeFiniteDifferences.o" -o "src/computeFiniteDifferences.o" "../src/computeFiniteDifferences.c"
-'Finished building: ../src/computeFiniteDifferences.c'
-' '
-'Building file: ../src/finDiffEvalAndChkErr.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/finDiffEvalAndChkErr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/finDiffEvalAndChkErr.d" -MT"src/finDiffEvalAndChkErr.o" -o "src/finDiffEvalAndChkErr.o" "../src/finDiffEvalAndChkErr.c"
-'Finished building: ../src/finDiffEvalAndChkErr.c'
-' '
-'Building file: ../src/fsolve.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fsolve.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/fsolve.d" -MT"src/fsolve.o" -o "src/fsolve.o" "../src/fsolve.c"
-'Finished building: ../src/fsolve.c'
-' '
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
@@ -50,61 +35,6 @@ In file included from ../src/platform.h:36,
       |             ^~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
-'Building file: ../src/linearLeastSquares.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/linearLeastSquares.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/linearLeastSquares.d" -MT"src/linearLeastSquares.o" -o "src/linearLeastSquares.o" "../src/linearLeastSquares.c"
-'Finished building: ../src/linearLeastSquares.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/rtGetInf.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rtGetInf.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/rtGetInf.d" -MT"src/rtGetInf.o" -o "src/rtGetInf.o" "../src/rtGetInf.c"
-'Finished building: ../src/rtGetInf.c'
-' '
-'Building file: ../src/rtGetNaN.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rtGetNaN.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/rtGetNaN.d" -MT"src/rtGetNaN.o" -o "src/rtGetNaN.o" "../src/rtGetNaN.c"
-'Finished building: ../src/rtGetNaN.c'
-' '
-'Building file: ../src/rt_nonfinite.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rt_nonfinite.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/rt_nonfinite.d" -MT"src/rt_nonfinite.o" -o "src/rt_nonfinite.o" "../src/rt_nonfinite.c"
-'Finished building: ../src/rt_nonfinite.c'
-' '
-'Building file: ../src/solver.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/solver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/solver.d" -MT"src/solver.o" -o "src/solver.o" "../src/solver.c"
-'Finished building: ../src/solver.c'
-' '
-'Building file: ../src/solver_initialize.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/solver_initialize.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/solver_initialize.d" -MT"src/solver_initialize.o" -o "src/solver_initialize.o" "../src/solver_initialize.c"
-'Finished building: ../src/solver_initialize.c'
-' '
-'Building file: ../src/solver_terminate.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/solver_terminate.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/solver_terminate.d" -MT"src/solver_terminate.o" -o "src/solver_terminate.o" "../src/solver_terminate.c"
-'Finished building: ../src/solver_terminate.c'
-' '
-'Building file: ../src/xnrm2.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xnrm2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/xnrm2.d" -MT"src/xnrm2.o" -o "src/xnrm2.o" "../src/xnrm2.c"
-'Finished building: ../src/xnrm2.c'
-' '
-'Building file: ../src/xzlarf.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xzlarf.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/xzlarf.d" -MT"src/xzlarf.o" -o "src/xzlarf.o" "../src/xzlarf.c"
-'Finished building: ../src/xzlarf.c'
-' '
-'Building file: ../src/xzlarfg.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xzlarfg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/xzlarfg.d" -MT"src/xzlarfg.o" -o "src/xzlarfg.o" "../src/xzlarfg.c"
-'Finished building: ../src/xzlarfg.c'
-' '
 'Building target: helloworld.elf'
 'Invoking: ARM v7 gcc linker'
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "helloworld.elf"  ./src/computeFiniteDifferences.o ./src/finDiffEvalAndChkErr.o ./src/fsolve.o ./src/helloworld.o ./src/linearLeastSquares.o ./src/platform.o ./src/rtGetInf.o ./src/rtGetNaN.o ./src/rt_nonfinite.o ./src/solver.o ./src/solver_initialize.o ./src/solver_terminate.o ./src/xnrm2.o ./src/xzlarf.o ./src/xzlarfg.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -117,5 +47,5 @@ arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
 'Finished building: helloworld.elf.size'
 ' '
 
-02:50:58 Build Finished (took 3s.154ms)
+03:08:40 Build Finished (took 708ms)
 

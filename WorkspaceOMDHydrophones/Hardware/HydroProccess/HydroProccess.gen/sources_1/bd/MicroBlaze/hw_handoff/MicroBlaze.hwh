@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar 14 02:41:31 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar 14 02:58:05 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -241,11 +241,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" NAME="CS" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_CS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Wrapper_XCorr_0" PORT="waveRef"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="CS" SIGIS="undef"/>
         <PORT DIR="I" NAME="MISO" SIGIS="undef" SIGNAME="Serializer_0_MISO">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Serializer_0" PORT="MISO"/>
@@ -262,7 +258,11 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="11" NAME="wave" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Wrapper_XCorr_0" PORT="waveRef"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -512,9 +512,9 @@
             <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_CS">
+        <PORT DIR="I" LEFT="11" NAME="waveRef" RIGHT="0" SIGIS="undef" SIGNAME="SPI_ADC_Master_0_wave">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="CS"/>
+            <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="35" NAME="xcorr" RIGHT="0" SIGIS="undef" SIGNAME="Wrapper_XCorr_0_xcorr">
@@ -3948,7 +3948,7 @@
     <MODULE COREREVISION="9" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -3965,7 +3965,7 @@
     <MODULE COREREVISION="9" FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="Component_Name" VALUE="MicroBlaze_xlconstant_2_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>

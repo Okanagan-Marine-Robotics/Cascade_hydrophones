@@ -1632,7 +1632,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -1644,7 +1644,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -1976,9 +1976,9 @@
           "Wrapper_XCorr_0/clk1Mhz"
         ]
       },
-      "SPI_ADC_Master_0_CS": {
+      "SPI_ADC_Master_0_wave": {
         "ports": [
-          "SPI_ADC_Master_0/CS",
+          "SPI_ADC_Master_0/wave",
           "Wrapper_XCorr_0/waveRef"
         ]
       },

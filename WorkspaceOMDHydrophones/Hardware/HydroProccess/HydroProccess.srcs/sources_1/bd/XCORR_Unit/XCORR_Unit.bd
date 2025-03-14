@@ -7,8 +7,7 @@
       "name": "XCORR_Unit",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "SineWaveGen_0": "",
@@ -16,34 +15,15 @@
       "Wrapper_XCorr_0": "",
       "SineWaveGen_1": "",
       "SineWaveGen_2": "",
-      "xlconstant_1": ""
+      "xlconstant_1": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "MaximumFinder_0": ""
     },
     "ports": {
       "clk": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "XCORR_Unit_clk",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "clk1Mhz": {
         "direction": "I"
@@ -217,6 +197,88 @@
             "value": "32"
           }
         }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "XCORR_Unit_xlslice_0_0",
+        "xci_path": "ip\\XCORR_Unit_xlslice_0_0\\XCORR_Unit_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "35"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "36"
+          },
+          "DOUT_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "XCORR_Unit_xlslice_1_0",
+        "xci_path": "ip\\XCORR_Unit_xlslice_1_0\\XCORR_Unit_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "35"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "36"
+          }
+        }
+      },
+      "MaximumFinder_0": {
+        "vlnv": "xilinx.com:module_ref:MaximumFinder:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_MaximumFinder_0_0",
+        "xci_path": "ip\\XCORR_Unit_MaximumFinder_0_0\\XCORR_Unit_MaximumFinder_0_0.xci",
+        "inst_hier_path": "MaximumFinder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MaximumFinder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "XCORR": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "XCORR1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "address": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "tmax": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "tmax1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
@@ -238,6 +300,24 @@
           "Wrapper_XCorr_0/wave1"
         ]
       },
+      "Wrapper_XCorr_0_count": {
+        "ports": [
+          "Wrapper_XCorr_0/count",
+          "MaximumFinder_0/address"
+        ]
+      },
+      "Wrapper_XCorr_0_xcorr": {
+        "ports": [
+          "Wrapper_XCorr_0/xcorr",
+          "xlslice_0/Din"
+        ]
+      },
+      "Wrapper_XCorr_0_xcorr1": {
+        "ports": [
+          "Wrapper_XCorr_0/xcorr1",
+          "xlslice_1/Din"
+        ]
+      },
       "clk1Mhz_0_1": {
         "ports": [
           "clk1Mhz",
@@ -250,7 +330,8 @@
       "clk_1": {
         "ports": [
           "clk",
-          "Wrapper_XCorr_0/clk"
+          "Wrapper_XCorr_0/clk",
+          "MaximumFinder_0/clk"
         ]
       },
       "xlconstant_0_dout": {
@@ -264,6 +345,18 @@
         "ports": [
           "xlconstant_1/dout",
           "SineWaveGen_2/delay"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "MaximumFinder_0/XCORR"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "MaximumFinder_0/XCORR1"
         ]
       }
     }
