@@ -6,18 +6,6 @@
 # Block Designs: bd/MicroBlaze/MicroBlaze.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze || ORIG_REF_NAME==MicroBlaze} -quiet] -quiet
 
-# IP: bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/MicroBlaze_BlockRam_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_BlockRam_0_0 || ORIG_REF_NAME==MicroBlaze_BlockRam_0_0} -quiet] -quiet
-
-# IP: bd/MicroBlaze/ip/MicroBlaze_CC_0_0/MicroBlaze_CC_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_CC_0_0 || ORIG_REF_NAME==MicroBlaze_CC_0_0} -quiet] -quiet
-
-# IP: bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/MicroBlaze_BRAMMUX_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_BRAMMUX_0_0 || ORIG_REF_NAME==MicroBlaze_BRAMMUX_0_0} -quiet] -quiet
-
-# IP: bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/MicroBlaze_waveParser_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_waveParser_0_0 || ORIG_REF_NAME==MicroBlaze_waveParser_0_0} -quiet] -quiet
-
 # IP: bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/MicroBlaze_AddressFixer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_AddressFixer_0_0 || ORIG_REF_NAME==MicroBlaze_AddressFixer_0_0} -quiet] -quiet
 
@@ -80,5 +68,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_
 
 # IP: bd/MicroBlaze/ip/MicroBlaze_xlslice_0_1/MicroBlaze_xlslice_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_xlslice_0_1 || ORIG_REF_NAME==MicroBlaze_xlslice_0_1} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/MicroBlaze_Wrapper_XCorr_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_Wrapper_XCorr_0_0 || ORIG_REF_NAME==MicroBlaze_Wrapper_XCorr_0_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_2_0/MicroBlaze_SineWaveGen_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_SineWaveGen_2_0 || ORIG_REF_NAME==MicroBlaze_SineWaveGen_2_0} -quiet] -quiet
+
+# IP: bd/MicroBlaze/ip/MicroBlaze_xlconstant_0_0/MicroBlaze_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_xlconstant_0_0 || ORIG_REF_NAME==MicroBlaze_xlconstant_0_0} -quiet] -quiet
 
 # XDC: c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze_ooc.xdc

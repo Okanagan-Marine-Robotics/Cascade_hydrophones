@@ -59,7 +59,10 @@ module XCORR_Unit_Wrapper_XCorr_0_0 (
   clk1Mhz,
   waveRef,
   wave,
-  wave1
+  wave1,
+  xcorr,
+  xcorr1,
+  count
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
@@ -70,12 +73,18 @@ input wire clk1Mhz;
 input wire [11 : 0] waveRef;
 input wire [11 : 0] wave;
 input wire [11 : 0] wave1;
+output wire [35 : 0] xcorr;
+output wire [35 : 0] xcorr1;
+output wire [15 : 0] count;
 
   Wrapper_XCorr inst (
     .clk(clk),
     .clk1Mhz(clk1Mhz),
     .waveRef(waveRef),
     .wave(wave),
-    .wave1(wave1)
+    .wave1(wave1),
+    .xcorr(xcorr),
+    .xcorr1(xcorr1),
+    .count(count)
   );
 endmodule

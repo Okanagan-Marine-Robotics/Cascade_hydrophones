@@ -5,16 +5,19 @@ input clk,
 input clk1Mhz,
 input [11:0] waveRef,
 input [11:0] wave,
-input [11:0] wave1
+input [11:0] wave1,
+output signed [35:0] xcorr,
+output signed [35:0] xcorr1,
+output signed [15:0] count
     );
     
-    wire [11:0] bufferwire [0:2];
+    wire signed [11:0] bufferwire [0:2];
     wire [13:0] waceRefAddressWire [0:7];
     wire [11:0] waceXAddressWire[0:7];
     wire [11:0] waceYAddressWire[0:7];
     wire [13:0] RefAddress_outMux[0:7];
-    wire [11:0] waveRefOutRam[0:7];
-    wire [11:0] waveRefIntoXCorr[0:7],waveXIntoXCorr[0:7],waveYIntoYCorr[0:7];
+    wire signed [11:0] waveRefOutRam[0:7];
+    wire signed [11:0] waveRefIntoXCorr[0:7],waveXIntoXCorr[0:7],waveYIntoYCorr[0:7];
     wire [13:0] waveRefOutXCorr[0:7];
     wire [11:0] waveXOutXCorr[0:7],waveYOutXCorr[0:7];
     
@@ -23,7 +26,7 @@ input [11:0] wave1
         .clk1Mhz(clk1Mhz),
         .waveRef(waveRef),
         .wave(wave),
-        .wave1(wave),
+        .wave1(wave1),
         .bufferRef(bufferwire[0]),
         .buffer(bufferwire[1]),
         .buffer1(bufferwire[2]),
@@ -65,7 +68,10 @@ input [11:0] wave1
         .waveY(waveYIntoYCorr),
         .waveRefAddress(waveRefOutXCorr),
         .waveXAddress(waveXOutXCorr),
-        .waveYAddress(waveYOutXCorr)
+        .waveYAddress(waveYOutXCorr),
+        .xcorr(xcorr),
+        .xcorr1(xcorr1),
+        .count(count)
     );
 
 endmodule

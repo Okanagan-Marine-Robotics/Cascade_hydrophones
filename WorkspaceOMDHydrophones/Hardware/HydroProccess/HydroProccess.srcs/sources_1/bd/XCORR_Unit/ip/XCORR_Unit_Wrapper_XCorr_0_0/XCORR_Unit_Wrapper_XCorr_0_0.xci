@@ -40,7 +40,10 @@
         "clk1Mhz": [ { "direction": "in" } ],
         "waveRef": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
         "wave": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
-        "wave1": [ { "direction": "in", "size_left": "11", "size_right": "0" } ]
+        "wave1": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "xcorr": [ { "direction": "out", "size_left": "35", "size_right": "0" } ],
+        "xcorr1": [ { "direction": "out", "size_left": "35", "size_right": "0" } ],
+        "count": [ { "direction": "out", "size_left": "15", "size_right": "0" } ]
       },
       "interfaces": {
         "clk": {

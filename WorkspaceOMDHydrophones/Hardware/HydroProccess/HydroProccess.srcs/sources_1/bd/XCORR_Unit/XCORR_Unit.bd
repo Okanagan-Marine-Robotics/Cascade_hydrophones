@@ -13,7 +13,10 @@
     "design_tree": {
       "SineWaveGen_0": "",
       "xlconstant_0": "",
-      "Wrapper_XCorr_0": ""
+      "Wrapper_XCorr_0": "",
+      "SineWaveGen_1": "",
+      "SineWaveGen_2": "",
+      "xlconstant_1": ""
     },
     "ports": {
       "clk": {
@@ -128,6 +131,90 @@
             "direction": "I",
             "left": "11",
             "right": "0"
+          },
+          "xcorr": {
+            "direction": "O",
+            "left": "35",
+            "right": "0"
+          },
+          "xcorr1": {
+            "direction": "O",
+            "left": "35",
+            "right": "0"
+          },
+          "count": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "SineWaveGen_1": {
+        "vlnv": "xilinx.com:module_ref:SineWaveGen:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_SineWaveGen_1_0",
+        "xci_path": "ip\\XCORR_Unit_SineWaveGen_1_0\\XCORR_Unit_SineWaveGen_1_0.xci",
+        "inst_hier_path": "SineWaveGen_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SineWaveGen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "delay": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "SineWaveGen_2": {
+        "vlnv": "xilinx.com:module_ref:SineWaveGen:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_SineWaveGen_2_0",
+        "xci_path": "ip\\XCORR_Unit_SineWaveGen_2_0\\XCORR_Unit_SineWaveGen_2_0.xci",
+        "inst_hier_path": "SineWaveGen_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SineWaveGen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "delay": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "wave": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "XCORR_Unit_xlconstant_1_0",
+        "xci_path": "ip\\XCORR_Unit_xlconstant_1_0\\XCORR_Unit_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "1000"
+          },
+          "CONST_WIDTH": {
+            "value": "32"
           }
         }
       }
@@ -136,8 +223,18 @@
       "SineWaveGen_0_wave": {
         "ports": [
           "SineWaveGen_0/wave",
-          "Wrapper_XCorr_0/waveRef",
-          "Wrapper_XCorr_0/wave",
+          "Wrapper_XCorr_0/waveRef"
+        ]
+      },
+      "SineWaveGen_1_wave": {
+        "ports": [
+          "SineWaveGen_1/wave",
+          "Wrapper_XCorr_0/wave"
+        ]
+      },
+      "SineWaveGen_2_wave": {
+        "ports": [
+          "SineWaveGen_2/wave",
           "Wrapper_XCorr_0/wave1"
         ]
       },
@@ -145,6 +242,8 @@
         "ports": [
           "clk1Mhz",
           "SineWaveGen_0/clk1Mhz",
+          "SineWaveGen_1/clk1Mhz",
+          "SineWaveGen_2/clk1Mhz",
           "Wrapper_XCorr_0/clk1Mhz"
         ]
       },
@@ -157,7 +256,14 @@
       "xlconstant_0_dout": {
         "ports": [
           "xlconstant_0/dout",
-          "SineWaveGen_0/delay"
+          "SineWaveGen_0/delay",
+          "SineWaveGen_1/delay"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "SineWaveGen_2/delay"
         ]
       }
     }

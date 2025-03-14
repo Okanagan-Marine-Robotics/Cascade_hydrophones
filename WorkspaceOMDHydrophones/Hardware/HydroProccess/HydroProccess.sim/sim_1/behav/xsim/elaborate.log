@@ -11,6 +11,8 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.SineWaveGen
 Compiling module xil_defaultlib.XCORR_Unit_SineWaveGen_0_0
+Compiling module xil_defaultlib.XCORR_Unit_SineWaveGen_1_0
+Compiling module xil_defaultlib.XCORR_Unit_SineWaveGen_2_0
 Compiling module xil_defaultlib.XCorr_waveParser
 Compiling module xil_defaultlib.XCORR_BRAM
 Compiling module xil_defaultlib.XCorr_BramMux
@@ -20,6 +22,7 @@ Compiling module xil_defaultlib.Wrapper_XCorr
 Compiling module xil_defaultlib.XCORR_Unit_Wrapper_XCorr_0_0
 Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
 Compiling module xil_defaultlib.XCORR_Unit_xlconstant_0_0
+Compiling module xil_defaultlib.XCORR_Unit_xlconstant_1_0
 Compiling module xil_defaultlib.XCORR_Unit
 Compiling module xil_defaultlib.XCORR_Unit_wrapper
 Compiling module xil_defaultlib.TestBenchXCorr

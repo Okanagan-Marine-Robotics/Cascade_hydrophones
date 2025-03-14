@@ -42,6 +42,9 @@ vlog -work xlconstant_v1_1_9  -incr -v2k5 "+incdir+C:/Xilinx/Vivado/2024.2/data/
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_9 \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_0_0/sim/XCORR_Unit_xlconstant_0_0.v" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_Wrapper_XCorr_0_0/sim/XCORR_Unit_Wrapper_XCorr_0_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_SineWaveGen_1_0/sim/XCORR_Unit_SineWaveGen_1_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_SineWaveGen_2_0/sim/XCORR_Unit_SineWaveGen_2_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_1_0/sim/XCORR_Unit_xlconstant_1_0.v" \
 "../../../bd/XCORR_Unit/sim/XCORR_Unit.v" \
 
 vlog -work xil_defaultlib \

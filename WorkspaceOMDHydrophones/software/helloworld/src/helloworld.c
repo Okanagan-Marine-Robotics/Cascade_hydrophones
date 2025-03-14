@@ -111,7 +111,7 @@ int delayGetter2 (int delay){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio1, 1, 300);
+    	XGpio_DiscreteWrite(&Gpio1, 1, 0);
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 
