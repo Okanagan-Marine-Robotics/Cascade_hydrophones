@@ -59,7 +59,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="cmod-s7-25"/>
-    <Option Name="WTXSimLaunchSim" Val="295"/>
+    <Option Name="WTXSimLaunchSim" Val="300"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -730,9 +730,7 @@
     </Run>
     <Run Id="MicroBlaze_Wrapper_XCorr_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_Wrapper_XCorr_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Wrapper_XCorr_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_Wrapper_XCorr_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Wrapper_XCorr_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Wrapper_XCorr_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -742,9 +740,7 @@
     </Run>
     <Run Id="MicroBlaze_MaximumFinder_0_0_synth_1" Type="Ft3:Synth" SrcSet="MicroBlaze_MaximumFinder_0_0" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_MaximumFinder_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/MicroBlaze_MaximumFinder_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -1105,9 +1101,7 @@
     </Run>
     <Run Id="MicroBlaze_Wrapper_XCorr_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_Wrapper_XCorr_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_Wrapper_XCorr_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_Wrapper_XCorr_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_Wrapper_XCorr_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1124,9 +1118,7 @@
     </Run>
     <Run Id="MicroBlaze_MaximumFinder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="MicroBlaze_MaximumFinder_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="MicroBlaze_MaximumFinder_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/MicroBlaze_MaximumFinder_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

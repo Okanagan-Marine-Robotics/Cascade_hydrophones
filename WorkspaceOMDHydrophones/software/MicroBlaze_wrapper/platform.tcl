@@ -73,3 +73,9 @@ platform generate -domains
 platform active {MicroBlaze_wrapper}
 platform config -updatehw {C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
 platform generate -domains 
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {MicroBlaze_wrapper}
+bsp reload
+bsp reload
+bsp reload
+platform generate -domains 

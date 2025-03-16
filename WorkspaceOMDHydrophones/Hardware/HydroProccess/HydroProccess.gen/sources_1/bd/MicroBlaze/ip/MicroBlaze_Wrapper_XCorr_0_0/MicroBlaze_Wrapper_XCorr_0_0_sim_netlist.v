@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Fri Mar 14 16:02:03 2025
+// Date        : Fri Mar 14 18:01:31 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/MicroBlaze_Wrapper_XCorr_0_0_sim_netlist.v
@@ -35458,8 +35458,8 @@ endmodule
 (* ORIG_REF_NAME = "XCorr_waveParser" *) 
 module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
    (\waveYAddress[0] ,
-    \waveRefAddress[6] ,
     \waveRefAddress[4] ,
+    \waveRefAddress[6] ,
     \waveRefAddress[2] ,
     \waveRefAddress[5] ,
     \waveRefAddress[3] ,
@@ -35473,8 +35473,8 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     \waveXAddress_reg[7][11]_0 ,
     clk1Mhz);
   output [11:0]\waveYAddress[0] ;
-  output [11:0]\waveRefAddress[6] ;
   output [11:0]\waveRefAddress[4] ;
+  output [11:0]\waveRefAddress[6] ;
   output [11:0]\waveRefAddress[2] ;
   output [11:0]\waveRefAddress[5] ;
   output [11:0]\waveRefAddress[3] ;
@@ -35554,10 +35554,6 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \MemoryAddress[31]_i_2_n_0 ;
   wire \MemoryAddress[31]_i_3_n_0 ;
   wire \MemoryAddress[31]_i_4_n_0 ;
-  wire \MemoryAddress[31]_i_5_n_0 ;
-  wire \MemoryAddress[31]_i_6_n_0 ;
-  wire \MemoryAddress[31]_i_7_n_0 ;
-  wire \MemoryAddress[31]_i_8_n_0 ;
   wire \MemoryAddress_reg_n_0_[0] ;
   wire \MemoryAddress_reg_n_0_[10] ;
   wire \MemoryAddress_reg_n_0_[11] ;
@@ -35597,38 +35593,14 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress[1][11]_i_10_n_0 ;
   wire \waveRefAddress[1][11]_i_11_n_0 ;
   wire \waveRefAddress[1][11]_i_12_n_0 ;
-  wire \waveRefAddress[1][11]_i_13_n_0 ;
-  wire \waveRefAddress[1][11]_i_14_n_0 ;
-  wire \waveRefAddress[1][11]_i_17_n_0 ;
-  wire \waveRefAddress[1][11]_i_18_n_0 ;
-  wire \waveRefAddress[1][11]_i_19_n_0 ;
   wire \waveRefAddress[1][11]_i_1_n_0 ;
-  wire \waveRefAddress[1][11]_i_22_n_0 ;
-  wire \waveRefAddress[1][11]_i_23_n_0 ;
-  wire \waveRefAddress[1][11]_i_24_n_0 ;
-  wire \waveRefAddress[1][11]_i_25_n_0 ;
-  wire \waveRefAddress[1][11]_i_26_n_0 ;
-  wire \waveRefAddress[1][11]_i_27_n_0 ;
-  wire \waveRefAddress[1][11]_i_28_n_0 ;
-  wire \waveRefAddress[1][11]_i_29_n_0 ;
-  wire \waveRefAddress[1][11]_i_31_n_0 ;
-  wire \waveRefAddress[1][11]_i_32_n_0 ;
-  wire \waveRefAddress[1][11]_i_33_n_0 ;
-  wire \waveRefAddress[1][11]_i_34_n_0 ;
-  wire \waveRefAddress[1][11]_i_35_n_0 ;
-  wire \waveRefAddress[1][11]_i_36_n_0 ;
-  wire \waveRefAddress[1][11]_i_37_n_0 ;
-  wire \waveRefAddress[1][11]_i_38_n_0 ;
-  wire \waveRefAddress[1][11]_i_39_n_0 ;
   wire \waveRefAddress[1][11]_i_3_n_0 ;
-  wire \waveRefAddress[1][11]_i_40_n_0 ;
-  wire \waveRefAddress[1][11]_i_41_n_0 ;
-  wire \waveRefAddress[1][11]_i_42_n_0 ;
-  wire \waveRefAddress[1][11]_i_43_n_0 ;
+  wire \waveRefAddress[1][11]_i_4_n_0 ;
   wire \waveRefAddress[1][11]_i_5_n_0 ;
   wire \waveRefAddress[1][11]_i_6_n_0 ;
   wire \waveRefAddress[1][11]_i_7_n_0 ;
   wire \waveRefAddress[1][11]_i_8_n_0 ;
+  wire \waveRefAddress[1][11]_i_9_n_0 ;
   wire \waveRefAddress[1][4]_i_2_n_0 ;
   wire \waveRefAddress[1][4]_i_3_n_0 ;
   wire \waveRefAddress[1][4]_i_4_n_0 ;
@@ -35637,32 +35609,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress[2][11]_i_10_n_0 ;
   wire \waveRefAddress[2][11]_i_11_n_0 ;
   wire \waveRefAddress[2][11]_i_12_n_0 ;
-  wire \waveRefAddress[2][11]_i_13_n_0 ;
-  wire \waveRefAddress[2][11]_i_14_n_0 ;
-  wire \waveRefAddress[2][11]_i_15_n_0 ;
-  wire \waveRefAddress[2][11]_i_18_n_0 ;
-  wire \waveRefAddress[2][11]_i_19_n_0 ;
   wire \waveRefAddress[2][11]_i_1_n_0 ;
-  wire \waveRefAddress[2][11]_i_21_n_0 ;
-  wire \waveRefAddress[2][11]_i_22_n_0 ;
-  wire \waveRefAddress[2][11]_i_23_n_0 ;
-  wire \waveRefAddress[2][11]_i_24_n_0 ;
-  wire \waveRefAddress[2][11]_i_26_n_0 ;
-  wire \waveRefAddress[2][11]_i_27_n_0 ;
-  wire \waveRefAddress[2][11]_i_28_n_0 ;
-  wire \waveRefAddress[2][11]_i_29_n_0 ;
-  wire \waveRefAddress[2][11]_i_31_n_0 ;
-  wire \waveRefAddress[2][11]_i_32_n_0 ;
-  wire \waveRefAddress[2][11]_i_33_n_0 ;
-  wire \waveRefAddress[2][11]_i_34_n_0 ;
-  wire \waveRefAddress[2][11]_i_35_n_0 ;
-  wire \waveRefAddress[2][11]_i_36_n_0 ;
-  wire \waveRefAddress[2][11]_i_37_n_0 ;
-  wire \waveRefAddress[2][11]_i_38_n_0 ;
-  wire \waveRefAddress[2][11]_i_39_n_0 ;
-  wire \waveRefAddress[2][11]_i_40_n_0 ;
-  wire \waveRefAddress[2][11]_i_41_n_0 ;
-  wire \waveRefAddress[2][11]_i_42_n_0 ;
+  wire \waveRefAddress[2][11]_i_3_n_0 ;
+  wire \waveRefAddress[2][11]_i_4_n_0 ;
   wire \waveRefAddress[2][11]_i_5_n_0 ;
   wire \waveRefAddress[2][11]_i_6_n_0 ;
   wire \waveRefAddress[2][11]_i_7_n_0 ;
@@ -35673,281 +35622,59 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress[2][5]_i_4_n_0 ;
   wire \waveRefAddress[2][9]_i_2_n_0 ;
   wire [11:0]\waveRefAddress[3] ;
-  wire \waveRefAddress[3][11]_i_10_n_0 ;
-  wire \waveRefAddress[3][11]_i_11_n_0 ;
-  wire \waveRefAddress[3][11]_i_12_n_0 ;
-  wire \waveRefAddress[3][11]_i_17_n_0 ;
-  wire \waveRefAddress[3][11]_i_18_n_0 ;
-  wire \waveRefAddress[3][11]_i_19_n_0 ;
   wire \waveRefAddress[3][11]_i_1_n_0 ;
-  wire \waveRefAddress[3][11]_i_20_n_0 ;
-  wire \waveRefAddress[3][11]_i_21_n_0 ;
-  wire \waveRefAddress[3][11]_i_22_n_0 ;
-  wire \waveRefAddress[3][11]_i_24_n_0 ;
-  wire \waveRefAddress[3][11]_i_25_n_0 ;
-  wire \waveRefAddress[3][11]_i_26_n_0 ;
-  wire \waveRefAddress[3][11]_i_27_n_0 ;
-  wire \waveRefAddress[3][11]_i_28_n_0 ;
-  wire \waveRefAddress[3][11]_i_29_n_0 ;
-  wire \waveRefAddress[3][11]_i_30_n_0 ;
-  wire \waveRefAddress[3][11]_i_31_n_0 ;
-  wire \waveRefAddress[3][11]_i_32_n_0 ;
-  wire \waveRefAddress[3][11]_i_33_n_0 ;
-  wire \waveRefAddress[3][11]_i_34_n_0 ;
-  wire \waveRefAddress[3][11]_i_35_n_0 ;
-  wire \waveRefAddress[3][11]_i_36_n_0 ;
-  wire \waveRefAddress[3][11]_i_37_n_0 ;
-  wire \waveRefAddress[3][11]_i_38_n_0 ;
-  wire \waveRefAddress[3][11]_i_39_n_0 ;
   wire \waveRefAddress[3][11]_i_3_n_0 ;
-  wire \waveRefAddress[3][11]_i_40_n_0 ;
-  wire \waveRefAddress[3][11]_i_41_n_0 ;
-  wire \waveRefAddress[3][11]_i_42_n_0 ;
-  wire \waveRefAddress[3][11]_i_43_n_0 ;
-  wire \waveRefAddress[3][11]_i_44_n_0 ;
+  wire \waveRefAddress[3][11]_i_4_n_0 ;
   wire \waveRefAddress[3][11]_i_5_n_0 ;
-  wire \waveRefAddress[3][11]_i_6_n_0 ;
-  wire \waveRefAddress[3][11]_i_7_n_0 ;
   wire \waveRefAddress[3][4]_i_2_n_0 ;
   wire \waveRefAddress[3][4]_i_3_n_0 ;
   wire \waveRefAddress[3][8]_i_2_n_0 ;
   wire \waveRefAddress[3][8]_i_3_n_0 ;
   wire [11:0]\waveRefAddress[4] ;
   wire \waveRefAddress[4][10]_i_2_n_0 ;
-  wire \waveRefAddress[4][11]_i_10_n_0 ;
-  wire \waveRefAddress[4][11]_i_11_n_0 ;
-  wire \waveRefAddress[4][11]_i_12_n_0 ;
-  wire \waveRefAddress[4][11]_i_13_n_0 ;
-  wire \waveRefAddress[4][11]_i_14_n_0 ;
-  wire \waveRefAddress[4][11]_i_17_n_0 ;
-  wire \waveRefAddress[4][11]_i_18_n_0 ;
   wire \waveRefAddress[4][11]_i_1_n_0 ;
-  wire \waveRefAddress[4][11]_i_20_n_0 ;
-  wire \waveRefAddress[4][11]_i_21_n_0 ;
-  wire \waveRefAddress[4][11]_i_22_n_0 ;
-  wire \waveRefAddress[4][11]_i_23_n_0 ;
-  wire \waveRefAddress[4][11]_i_24_n_0 ;
-  wire \waveRefAddress[4][11]_i_25_n_0 ;
-  wire \waveRefAddress[4][11]_i_26_n_0 ;
-  wire \waveRefAddress[4][11]_i_27_n_0 ;
-  wire \waveRefAddress[4][11]_i_30_n_0 ;
-  wire \waveRefAddress[4][11]_i_31_n_0 ;
-  wire \waveRefAddress[4][11]_i_32_n_0 ;
-  wire \waveRefAddress[4][11]_i_33_n_0 ;
-  wire \waveRefAddress[4][11]_i_34_n_0 ;
-  wire \waveRefAddress[4][11]_i_35_n_0 ;
-  wire \waveRefAddress[4][11]_i_36_n_0 ;
-  wire \waveRefAddress[4][11]_i_37_n_0 ;
-  wire \waveRefAddress[4][11]_i_38_n_0 ;
-  wire \waveRefAddress[4][11]_i_39_n_0 ;
-  wire \waveRefAddress[4][11]_i_40_n_0 ;
+  wire \waveRefAddress[4][11]_i_3_n_0 ;
   wire \waveRefAddress[4][11]_i_4_n_0 ;
-  wire \waveRefAddress[4][11]_i_6_n_0 ;
-  wire \waveRefAddress[4][11]_i_7_n_0 ;
-  wire \waveRefAddress[4][11]_i_8_n_0 ;
-  wire \waveRefAddress[4][11]_i_9_n_0 ;
+  wire \waveRefAddress[4][11]_i_5_n_0 ;
   wire \waveRefAddress[4][6]_i_2_n_0 ;
   wire \waveRefAddress[4][6]_i_3_n_0 ;
   wire \waveRefAddress[4][6]_i_4_n_0 ;
   wire [11:0]\waveRefAddress[5] ;
-  wire \waveRefAddress[5][11]_i_12_n_0 ;
-  wire \waveRefAddress[5][11]_i_13_n_0 ;
-  wire \waveRefAddress[5][11]_i_14_n_0 ;
-  wire \waveRefAddress[5][11]_i_15_n_0 ;
-  wire \waveRefAddress[5][11]_i_16_n_0 ;
-  wire \waveRefAddress[5][11]_i_19_n_0 ;
   wire \waveRefAddress[5][11]_i_1_n_0 ;
-  wire \waveRefAddress[5][11]_i_20_n_0 ;
-  wire \waveRefAddress[5][11]_i_21_n_0 ;
-  wire \waveRefAddress[5][11]_i_22_n_0 ;
-  wire \waveRefAddress[5][11]_i_23_n_0 ;
-  wire \waveRefAddress[5][11]_i_24_n_0 ;
-  wire \waveRefAddress[5][11]_i_27_n_0 ;
-  wire \waveRefAddress[5][11]_i_28_n_0 ;
-  wire \waveRefAddress[5][11]_i_29_n_0 ;
-  wire \waveRefAddress[5][11]_i_30_n_0 ;
-  wire \waveRefAddress[5][11]_i_31_n_0 ;
-  wire \waveRefAddress[5][11]_i_32_n_0 ;
-  wire \waveRefAddress[5][11]_i_33_n_0 ;
-  wire \waveRefAddress[5][11]_i_35_n_0 ;
-  wire \waveRefAddress[5][11]_i_36_n_0 ;
-  wire \waveRefAddress[5][11]_i_37_n_0 ;
-  wire \waveRefAddress[5][11]_i_38_n_0 ;
-  wire \waveRefAddress[5][11]_i_39_n_0 ;
   wire \waveRefAddress[5][11]_i_3_n_0 ;
-  wire \waveRefAddress[5][11]_i_40_n_0 ;
-  wire \waveRefAddress[5][11]_i_41_n_0 ;
-  wire \waveRefAddress[5][11]_i_42_n_0 ;
-  wire \waveRefAddress[5][11]_i_43_n_0 ;
-  wire \waveRefAddress[5][11]_i_44_n_0 ;
-  wire \waveRefAddress[5][11]_i_45_n_0 ;
-  wire \waveRefAddress[5][11]_i_46_n_0 ;
-  wire \waveRefAddress[5][11]_i_47_n_0 ;
+  wire \waveRefAddress[5][11]_i_4_n_0 ;
   wire \waveRefAddress[5][11]_i_5_n_0 ;
   wire \waveRefAddress[5][11]_i_6_n_0 ;
   wire \waveRefAddress[5][11]_i_7_n_0 ;
   wire \waveRefAddress[5][11]_i_8_n_0 ;
-  wire \waveRefAddress[5][11]_i_9_n_0 ;
   wire \waveRefAddress[5][4]_i_2_n_0 ;
   wire \waveRefAddress[5][4]_i_3_n_0 ;
   wire \waveRefAddress[5][8]_i_2_n_0 ;
   wire \waveRefAddress[5][8]_i_3_n_0 ;
   wire [11:0]\waveRefAddress[6] ;
-  wire \waveRefAddress[6][11]_i_10_n_0 ;
-  wire \waveRefAddress[6][11]_i_11_n_0 ;
-  wire \waveRefAddress[6][11]_i_12_n_0 ;
-  wire \waveRefAddress[6][11]_i_13_n_0 ;
-  wire \waveRefAddress[6][11]_i_14_n_0 ;
-  wire \waveRefAddress[6][11]_i_18_n_0 ;
-  wire \waveRefAddress[6][11]_i_19_n_0 ;
   wire \waveRefAddress[6][11]_i_1_n_0 ;
-  wire \waveRefAddress[6][11]_i_20_n_0 ;
-  wire \waveRefAddress[6][11]_i_21_n_0 ;
-  wire \waveRefAddress[6][11]_i_23_n_0 ;
-  wire \waveRefAddress[6][11]_i_24_n_0 ;
-  wire \waveRefAddress[6][11]_i_25_n_0 ;
-  wire \waveRefAddress[6][11]_i_26_n_0 ;
-  wire \waveRefAddress[6][11]_i_27_n_0 ;
-  wire \waveRefAddress[6][11]_i_28_n_0 ;
-  wire \waveRefAddress[6][11]_i_29_n_0 ;
-  wire \waveRefAddress[6][11]_i_30_n_0 ;
-  wire \waveRefAddress[6][11]_i_31_n_0 ;
-  wire \waveRefAddress[6][11]_i_32_n_0 ;
-  wire \waveRefAddress[6][11]_i_33_n_0 ;
-  wire \waveRefAddress[6][11]_i_34_n_0 ;
-  wire \waveRefAddress[6][11]_i_35_n_0 ;
-  wire \waveRefAddress[6][11]_i_36_n_0 ;
-  wire \waveRefAddress[6][11]_i_37_n_0 ;
-  wire \waveRefAddress[6][11]_i_38_n_0 ;
-  wire \waveRefAddress[6][11]_i_39_n_0 ;
-  wire \waveRefAddress[6][11]_i_40_n_0 ;
-  wire \waveRefAddress[6][11]_i_42_n_0 ;
-  wire \waveRefAddress[6][11]_i_43_n_0 ;
+  wire \waveRefAddress[6][11]_i_3_n_0 ;
+  wire \waveRefAddress[6][11]_i_4_n_0 ;
   wire \waveRefAddress[6][11]_i_5_n_0 ;
   wire \waveRefAddress[6][11]_i_6_n_0 ;
-  wire \waveRefAddress[6][11]_i_7_n_0 ;
-  wire \waveRefAddress[6][11]_i_8_n_0 ;
   wire \waveRefAddress[6][5]_i_2_n_0 ;
   wire \waveRefAddress[6][5]_i_3_n_0 ;
   wire \waveRefAddress[6][9]_i_2_n_0 ;
   wire \waveRefAddress[6][9]_i_3_n_0 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_0 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_1 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_2 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_4 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_5 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_6 ;
-  wire \waveRefAddress_reg[1][11]_i_15_n_7 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_0 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_1 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_2 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_4 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_5 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_6 ;
-  wire \waveRefAddress_reg[1][11]_i_16_n_7 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_0 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_1 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_2 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_4 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_5 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_6 ;
-  wire \waveRefAddress_reg[1][11]_i_20_n_7 ;
-  wire \waveRefAddress_reg[1][11]_i_21_n_2 ;
-  wire \waveRefAddress_reg[1][11]_i_21_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_21_n_5 ;
-  wire \waveRefAddress_reg[1][11]_i_21_n_6 ;
-  wire \waveRefAddress_reg[1][11]_i_21_n_7 ;
   wire \waveRefAddress_reg[1][11]_i_2_n_2 ;
   wire \waveRefAddress_reg[1][11]_i_2_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_0 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_1 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_2 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_4 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_5 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_6 ;
-  wire \waveRefAddress_reg[1][11]_i_30_n_7 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_0 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_1 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_2 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_4 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_5 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_6 ;
-  wire \waveRefAddress_reg[1][11]_i_4_n_7 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_0 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_1 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_2 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_3 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_4 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_5 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_6 ;
-  wire \waveRefAddress_reg[1][11]_i_9_n_7 ;
   wire \waveRefAddress_reg[1][4]_i_1_n_0 ;
   wire \waveRefAddress_reg[1][4]_i_1_n_1 ;
   wire \waveRefAddress_reg[1][4]_i_1_n_2 ;
   wire \waveRefAddress_reg[1][4]_i_1_n_3 ;
+  wire \waveRefAddress_reg[1][4]_i_1_n_7 ;
   wire \waveRefAddress_reg[1][8]_i_1_n_0 ;
   wire \waveRefAddress_reg[1][8]_i_1_n_1 ;
   wire \waveRefAddress_reg[1][8]_i_1_n_2 ;
   wire \waveRefAddress_reg[1][8]_i_1_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_0 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_1 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_2 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_4 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_5 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_6 ;
-  wire \waveRefAddress_reg[2][11]_i_16_n_7 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_0 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_1 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_2 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_4 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_5 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_6 ;
-  wire \waveRefAddress_reg[2][11]_i_17_n_7 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_0 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_1 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_2 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_4 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_5 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_6 ;
-  wire \waveRefAddress_reg[2][11]_i_20_n_7 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_0 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_1 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_2 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_4 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_5 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_6 ;
-  wire \waveRefAddress_reg[2][11]_i_25_n_7 ;
   wire \waveRefAddress_reg[2][11]_i_2_n_3 ;
   wire \waveRefAddress_reg[2][11]_i_2_n_6 ;
   wire \waveRefAddress_reg[2][11]_i_2_n_7 ;
-  wire \waveRefAddress_reg[2][11]_i_30_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_30_n_6 ;
-  wire \waveRefAddress_reg[2][11]_i_30_n_7 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_0 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_1 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_2 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_4 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_5 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_6 ;
-  wire \waveRefAddress_reg[2][11]_i_3_n_7 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_0 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_1 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_2 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_3 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_4 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_5 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_6 ;
-  wire \waveRefAddress_reg[2][11]_i_4_n_7 ;
   wire \waveRefAddress_reg[2][5]_i_1_n_0 ;
   wire \waveRefAddress_reg[2][5]_i_1_n_1 ;
   wire \waveRefAddress_reg[2][5]_i_1_n_2 ;
@@ -35955,6 +35682,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress_reg[2][5]_i_1_n_4 ;
   wire \waveRefAddress_reg[2][5]_i_1_n_5 ;
   wire \waveRefAddress_reg[2][5]_i_1_n_6 ;
+  wire \waveRefAddress_reg[2][5]_i_1_n_7 ;
   wire \waveRefAddress_reg[2][9]_i_1_n_0 ;
   wire \waveRefAddress_reg[2][9]_i_1_n_1 ;
   wire \waveRefAddress_reg[2][9]_i_1_n_2 ;
@@ -35963,71 +35691,11 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress_reg[2][9]_i_1_n_5 ;
   wire \waveRefAddress_reg[2][9]_i_1_n_6 ;
   wire \waveRefAddress_reg[2][9]_i_1_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_0 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_1 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_4 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_6 ;
-  wire \waveRefAddress_reg[3][11]_i_13_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_0 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_1 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_4 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_6 ;
-  wire \waveRefAddress_reg[3][11]_i_14_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_0 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_1 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_4 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_6 ;
-  wire \waveRefAddress_reg[3][11]_i_15_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_0 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_1 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_4 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_6 ;
-  wire \waveRefAddress_reg[3][11]_i_16_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_23_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_23_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_23_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_23_n_6 ;
-  wire \waveRefAddress_reg[3][11]_i_23_n_7 ;
   wire \waveRefAddress_reg[3][11]_i_2_n_2 ;
   wire \waveRefAddress_reg[3][11]_i_2_n_3 ;
   wire \waveRefAddress_reg[3][11]_i_2_n_5 ;
   wire \waveRefAddress_reg[3][11]_i_2_n_6 ;
   wire \waveRefAddress_reg[3][11]_i_2_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_0 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_1 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_4 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_6 ;
-  wire \waveRefAddress_reg[3][11]_i_4_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_0 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_1 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_4 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_6 ;
-  wire \waveRefAddress_reg[3][11]_i_8_n_7 ;
-  wire \waveRefAddress_reg[3][11]_i_9_n_0 ;
-  wire \waveRefAddress_reg[3][11]_i_9_n_1 ;
-  wire \waveRefAddress_reg[3][11]_i_9_n_2 ;
-  wire \waveRefAddress_reg[3][11]_i_9_n_3 ;
-  wire \waveRefAddress_reg[3][11]_i_9_n_4 ;
-  wire \waveRefAddress_reg[3][11]_i_9_n_5 ;
-  wire \waveRefAddress_reg[3][11]_i_9_n_6 ;
   wire \waveRefAddress_reg[3][4]_i_1_n_0 ;
   wire \waveRefAddress_reg[3][4]_i_1_n_1 ;
   wire \waveRefAddress_reg[3][4]_i_1_n_2 ;
@@ -36051,56 +35719,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress_reg[4][10]_i_1_n_5 ;
   wire \waveRefAddress_reg[4][10]_i_1_n_6 ;
   wire \waveRefAddress_reg[4][10]_i_1_n_7 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_0 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_1 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_2 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_3 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_4 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_5 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_6 ;
-  wire \waveRefAddress_reg[4][11]_i_15_n_7 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_0 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_1 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_2 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_3 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_4 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_5 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_6 ;
-  wire \waveRefAddress_reg[4][11]_i_16_n_7 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_0 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_1 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_2 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_3 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_4 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_5 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_6 ;
-  wire \waveRefAddress_reg[4][11]_i_19_n_7 ;
-  wire \waveRefAddress_reg[4][11]_i_28_n_7 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_0 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_1 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_2 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_3 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_4 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_5 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_6 ;
-  wire \waveRefAddress_reg[4][11]_i_29_n_7 ;
   wire \waveRefAddress_reg[4][11]_i_2_n_7 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_0 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_1 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_2 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_3 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_4 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_5 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_6 ;
-  wire \waveRefAddress_reg[4][11]_i_3_n_7 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_0 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_1 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_2 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_3 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_4 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_5 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_6 ;
-  wire \waveRefAddress_reg[4][11]_i_5_n_7 ;
   wire \waveRefAddress_reg[4][6]_i_1_n_0 ;
   wire \waveRefAddress_reg[4][6]_i_1_n_1 ;
   wire \waveRefAddress_reg[4][6]_i_1_n_2 ;
@@ -36108,71 +35727,12 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress_reg[4][6]_i_1_n_4 ;
   wire \waveRefAddress_reg[4][6]_i_1_n_5 ;
   wire \waveRefAddress_reg[4][6]_i_1_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_0 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_1 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_4 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_10_n_7 ;
-  wire \waveRefAddress_reg[5][11]_i_11_n_0 ;
-  wire \waveRefAddress_reg[5][11]_i_11_n_1 ;
-  wire \waveRefAddress_reg[5][11]_i_11_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_11_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_11_n_4 ;
-  wire \waveRefAddress_reg[5][11]_i_11_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_11_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_0 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_1 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_4 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_17_n_7 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_0 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_1 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_4 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_18_n_7 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_0 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_1 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_4 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_25_n_7 ;
-  wire \waveRefAddress_reg[5][11]_i_26_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_26_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_26_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_26_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_26_n_7 ;
+  wire \waveRefAddress_reg[4][6]_i_1_n_7 ;
   wire \waveRefAddress_reg[5][11]_i_2_n_2 ;
   wire \waveRefAddress_reg[5][11]_i_2_n_3 ;
   wire \waveRefAddress_reg[5][11]_i_2_n_5 ;
   wire \waveRefAddress_reg[5][11]_i_2_n_6 ;
   wire \waveRefAddress_reg[5][11]_i_2_n_7 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_0 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_1 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_4 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_34_n_7 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_0 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_1 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_2 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_3 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_4 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_5 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_6 ;
-  wire \waveRefAddress_reg[5][11]_i_4_n_7 ;
   wire \waveRefAddress_reg[5][4]_i_1_n_0 ;
   wire \waveRefAddress_reg[5][4]_i_1_n_1 ;
   wire \waveRefAddress_reg[5][4]_i_1_n_2 ;
@@ -36188,67 +35748,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress_reg[5][8]_i_1_n_5 ;
   wire \waveRefAddress_reg[5][8]_i_1_n_6 ;
   wire \waveRefAddress_reg[5][8]_i_1_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_0 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_1 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_2 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_4 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_5 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_6 ;
-  wire \waveRefAddress_reg[6][11]_i_15_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_0 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_1 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_2 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_4 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_5 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_6 ;
-  wire \waveRefAddress_reg[6][11]_i_16_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_0 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_1 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_2 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_4 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_5 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_6 ;
-  wire \waveRefAddress_reg[6][11]_i_17_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_0 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_1 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_2 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_4 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_5 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_6 ;
-  wire \waveRefAddress_reg[6][11]_i_22_n_7 ;
   wire \waveRefAddress_reg[6][11]_i_2_n_3 ;
   wire \waveRefAddress_reg[6][11]_i_2_n_6 ;
   wire \waveRefAddress_reg[6][11]_i_2_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_0 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_1 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_2 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_4 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_5 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_6 ;
-  wire \waveRefAddress_reg[6][11]_i_3_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_41_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_41_n_6 ;
-  wire \waveRefAddress_reg[6][11]_i_41_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_0 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_1 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_2 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_4 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_5 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_6 ;
-  wire \waveRefAddress_reg[6][11]_i_4_n_7 ;
-  wire \waveRefAddress_reg[6][11]_i_9_n_0 ;
-  wire \waveRefAddress_reg[6][11]_i_9_n_1 ;
-  wire \waveRefAddress_reg[6][11]_i_9_n_2 ;
-  wire \waveRefAddress_reg[6][11]_i_9_n_3 ;
-  wire \waveRefAddress_reg[6][11]_i_9_n_4 ;
-  wire \waveRefAddress_reg[6][11]_i_9_n_5 ;
-  wire \waveRefAddress_reg[6][11]_i_9_n_6 ;
   wire \waveRefAddress_reg[6][5]_i_1_n_0 ;
   wire \waveRefAddress_reg[6][5]_i_1_n_1 ;
   wire \waveRefAddress_reg[6][5]_i_1_n_2 ;
@@ -36264,11 +35766,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveRefAddress_reg[6][9]_i_1_n_5 ;
   wire \waveRefAddress_reg[6][9]_i_1_n_6 ;
   wire \waveRefAddress_reg[6][9]_i_1_n_7 ;
-  wire \waveXAddress[0][11]_i_1_n_0 ;
-  wire \waveXAddress[0][11]_i_2_n_0 ;
-  wire \waveXAddress[0][11]_i_3_n_0 ;
-  wire \waveXAddress[0][11]_i_4_n_0 ;
-  wire \waveXAddress[0][11]_i_5_n_0 ;
+  wire \waveXAddress[0][10]_i_1_n_0 ;
   wire \waveXAddress[1][11]_i_2_n_0 ;
   wire \waveXAddress[1][11]_i_3_n_0 ;
   wire \waveXAddress[1][4]_i_2_n_0 ;
@@ -36288,67 +35786,27 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveXAddress[3][8]_i_3_n_0 ;
   wire \waveXAddress[4][10]_i_2_n_0 ;
   wire \waveXAddress[4][11]_i_2_n_0 ;
-  wire \waveXAddress[4][3]_i_2_n_0 ;
-  wire \waveXAddress[4][3]_i_3_n_0 ;
-  wire \waveXAddress[4][3]_i_4_n_0 ;
   wire \waveXAddress[4][6]_i_2_n_0 ;
   wire \waveXAddress[4][6]_i_3_n_0 ;
   wire \waveXAddress[4][6]_i_4_n_0 ;
   wire \waveXAddress[5][11]_i_2_n_0 ;
   wire \waveXAddress[5][11]_i_3_n_0 ;
   wire \waveXAddress[5][11]_i_4_n_0 ;
-  wire \waveXAddress[5][1]_i_2_n_0 ;
-  wire \waveXAddress[5][1]_i_3_n_0 ;
-  wire \waveXAddress[5][1]_i_4_n_0 ;
   wire \waveXAddress[5][4]_i_2_n_0 ;
   wire \waveXAddress[5][4]_i_3_n_0 ;
   wire \waveXAddress[5][8]_i_2_n_0 ;
   wire \waveXAddress[5][8]_i_3_n_0 ;
   wire \waveXAddress[6][11]_i_2_n_0 ;
-  wire \waveXAddress[6][2]_i_2_n_0 ;
-  wire \waveXAddress[6][2]_i_3_n_0 ;
-  wire \waveXAddress[6][2]_i_4_n_0 ;
   wire \waveXAddress[6][5]_i_2_n_0 ;
   wire \waveXAddress[6][5]_i_3_n_0 ;
   wire \waveXAddress[6][9]_i_2_n_0 ;
   wire \waveXAddress[6][9]_i_3_n_0 ;
-  wire \waveXAddress[7][11]_i_11_n_0 ;
-  wire \waveXAddress[7][11]_i_12_n_0 ;
-  wire \waveXAddress[7][11]_i_13_n_0 ;
-  wire \waveXAddress[7][11]_i_14_n_0 ;
-  wire \waveXAddress[7][11]_i_15_n_0 ;
-  wire \waveXAddress[7][11]_i_19_n_0 ;
   wire \waveXAddress[7][11]_i_1_n_0 ;
-  wire \waveXAddress[7][11]_i_20_n_0 ;
-  wire \waveXAddress[7][11]_i_21_n_0 ;
-  wire \waveXAddress[7][11]_i_22_n_0 ;
-  wire \waveXAddress[7][11]_i_23_n_0 ;
-  wire \waveXAddress[7][11]_i_24_n_0 ;
-  wire \waveXAddress[7][11]_i_27_n_0 ;
-  wire \waveXAddress[7][11]_i_28_n_0 ;
-  wire \waveXAddress[7][11]_i_29_n_0 ;
-  wire \waveXAddress[7][11]_i_30_n_0 ;
-  wire \waveXAddress[7][11]_i_31_n_0 ;
-  wire \waveXAddress[7][11]_i_32_n_0 ;
-  wire \waveXAddress[7][11]_i_33_n_0 ;
-  wire \waveXAddress[7][11]_i_34_n_0 ;
-  wire \waveXAddress[7][11]_i_35_n_0 ;
-  wire \waveXAddress[7][11]_i_36_n_0 ;
-  wire \waveXAddress[7][11]_i_37_n_0 ;
-  wire \waveXAddress[7][11]_i_38_n_0 ;
-  wire \waveXAddress[7][11]_i_39_n_0 ;
   wire \waveXAddress[7][11]_i_3_n_0 ;
-  wire \waveXAddress[7][11]_i_40_n_0 ;
-  wire \waveXAddress[7][11]_i_41_n_0 ;
-  wire \waveXAddress[7][11]_i_42_n_0 ;
-  wire \waveXAddress[7][11]_i_43_n_0 ;
-  wire \waveXAddress[7][11]_i_44_n_0 ;
-  wire \waveXAddress[7][11]_i_45_n_0 ;
-  wire \waveXAddress[7][11]_i_46_n_0 ;
+  wire \waveXAddress[7][11]_i_4_n_0 ;
   wire \waveXAddress[7][11]_i_5_n_0 ;
   wire \waveXAddress[7][11]_i_6_n_0 ;
   wire \waveXAddress[7][11]_i_7_n_0 ;
-  wire \waveXAddress[7][11]_i_8_n_0 ;
   wire \waveXAddress[7][4]_i_2_n_0 ;
   wire \waveXAddress[7][8]_i_2_n_0 ;
   wire \waveXAddress[7][8]_i_3_n_0 ;
@@ -36423,14 +35881,6 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveXAddress_reg[4][10]_i_1_n_7 ;
   wire [8:0]\waveXAddress_reg[4][11]_0 ;
   wire \waveXAddress_reg[4][11]_i_1_n_7 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_0 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_1 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_2 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_3 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_4 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_5 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_6 ;
-  wire \waveXAddress_reg[4][3]_i_1_n_7 ;
   wire \waveXAddress_reg[4][6]_i_1_n_0 ;
   wire \waveXAddress_reg[4][6]_i_1_n_1 ;
   wire \waveXAddress_reg[4][6]_i_1_n_2 ;
@@ -36444,14 +35894,6 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveXAddress_reg[5][11]_i_1_n_5 ;
   wire \waveXAddress_reg[5][11]_i_1_n_6 ;
   wire \waveXAddress_reg[5][11]_i_1_n_7 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_0 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_1 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_2 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_3 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_4 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_5 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_6 ;
-  wire \waveXAddress_reg[5][1]_i_1_n_7 ;
   wire \waveXAddress_reg[5][4]_i_1_n_0 ;
   wire \waveXAddress_reg[5][4]_i_1_n_1 ;
   wire \waveXAddress_reg[5][4]_i_1_n_2 ;
@@ -36471,14 +35913,6 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveXAddress_reg[6][11]_i_1_n_3 ;
   wire \waveXAddress_reg[6][11]_i_1_n_6 ;
   wire \waveXAddress_reg[6][11]_i_1_n_7 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_0 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_1 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_2 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_3 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_4 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_5 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_6 ;
-  wire \waveXAddress_reg[6][2]_i_1_n_7 ;
   wire \waveXAddress_reg[6][5]_i_1_n_0 ;
   wire \waveXAddress_reg[6][5]_i_1_n_1 ;
   wire \waveXAddress_reg[6][5]_i_1_n_2 ;
@@ -36495,71 +35929,11 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire \waveXAddress_reg[6][9]_i_1_n_6 ;
   wire \waveXAddress_reg[6][9]_i_1_n_7 ;
   wire [11:0]\waveXAddress_reg[7][11]_0 ;
-  wire \waveXAddress_reg[7][11]_i_10_n_0 ;
-  wire \waveXAddress_reg[7][11]_i_10_n_1 ;
-  wire \waveXAddress_reg[7][11]_i_10_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_10_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_10_n_4 ;
-  wire \waveXAddress_reg[7][11]_i_10_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_10_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_0 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_1 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_4 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_16_n_7 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_0 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_1 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_4 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_17_n_7 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_0 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_1 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_4 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_18_n_7 ;
-  wire \waveXAddress_reg[7][11]_i_25_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_25_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_25_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_25_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_25_n_7 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_0 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_1 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_4 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_26_n_7 ;
   wire \waveXAddress_reg[7][11]_i_2_n_2 ;
   wire \waveXAddress_reg[7][11]_i_2_n_3 ;
   wire \waveXAddress_reg[7][11]_i_2_n_5 ;
   wire \waveXAddress_reg[7][11]_i_2_n_6 ;
   wire \waveXAddress_reg[7][11]_i_2_n_7 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_0 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_1 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_4 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_4_n_7 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_0 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_1 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_2 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_3 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_4 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_5 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_6 ;
-  wire \waveXAddress_reg[7][11]_i_9_n_7 ;
   wire \waveXAddress_reg[7][4]_i_1_n_0 ;
   wire \waveXAddress_reg[7][4]_i_1_n_1 ;
   wire \waveXAddress_reg[7][4]_i_1_n_2 ;
@@ -36580,36 +35954,18 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire [3:3]NLW_MemoryAddress0_carry__6_O_UNCONNECTED;
   wire [3:2]\NLW_waveRefAddress_reg[1][11]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_waveRefAddress_reg[1][11]_i_2_O_UNCONNECTED ;
-  wire [3:2]\NLW_waveRefAddress_reg[1][11]_i_21_CO_UNCONNECTED ;
-  wire [3:3]\NLW_waveRefAddress_reg[1][11]_i_21_O_UNCONNECTED ;
-  wire [0:0]\NLW_waveRefAddress_reg[1][4]_i_1_O_UNCONNECTED ;
   wire [3:1]\NLW_waveRefAddress_reg[2][11]_i_2_CO_UNCONNECTED ;
   wire [3:2]\NLW_waveRefAddress_reg[2][11]_i_2_O_UNCONNECTED ;
-  wire [3:1]\NLW_waveRefAddress_reg[2][11]_i_30_CO_UNCONNECTED ;
-  wire [3:2]\NLW_waveRefAddress_reg[2][11]_i_30_O_UNCONNECTED ;
-  wire [0:0]\NLW_waveRefAddress_reg[2][5]_i_1_O_UNCONNECTED ;
   wire [3:2]\NLW_waveRefAddress_reg[3][11]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_waveRefAddress_reg[3][11]_i_2_O_UNCONNECTED ;
-  wire [3:2]\NLW_waveRefAddress_reg[3][11]_i_23_CO_UNCONNECTED ;
-  wire [3:3]\NLW_waveRefAddress_reg[3][11]_i_23_O_UNCONNECTED ;
-  wire [0:0]\NLW_waveRefAddress_reg[3][11]_i_9_O_UNCONNECTED ;
   wire [0:0]\NLW_waveRefAddress_reg[3][4]_i_1_O_UNCONNECTED ;
   wire [3:0]\NLW_waveRefAddress_reg[4][11]_i_2_CO_UNCONNECTED ;
   wire [3:1]\NLW_waveRefAddress_reg[4][11]_i_2_O_UNCONNECTED ;
-  wire [3:0]\NLW_waveRefAddress_reg[4][11]_i_28_CO_UNCONNECTED ;
-  wire [3:1]\NLW_waveRefAddress_reg[4][11]_i_28_O_UNCONNECTED ;
-  wire [0:0]\NLW_waveRefAddress_reg[4][6]_i_1_O_UNCONNECTED ;
-  wire [0:0]\NLW_waveRefAddress_reg[5][11]_i_11_O_UNCONNECTED ;
   wire [3:2]\NLW_waveRefAddress_reg[5][11]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_waveRefAddress_reg[5][11]_i_2_O_UNCONNECTED ;
-  wire [3:2]\NLW_waveRefAddress_reg[5][11]_i_26_CO_UNCONNECTED ;
-  wire [3:3]\NLW_waveRefAddress_reg[5][11]_i_26_O_UNCONNECTED ;
   wire [0:0]\NLW_waveRefAddress_reg[5][4]_i_1_O_UNCONNECTED ;
   wire [3:1]\NLW_waveRefAddress_reg[6][11]_i_2_CO_UNCONNECTED ;
   wire [3:2]\NLW_waveRefAddress_reg[6][11]_i_2_O_UNCONNECTED ;
-  wire [3:1]\NLW_waveRefAddress_reg[6][11]_i_41_CO_UNCONNECTED ;
-  wire [3:2]\NLW_waveRefAddress_reg[6][11]_i_41_O_UNCONNECTED ;
-  wire [0:0]\NLW_waveRefAddress_reg[6][11]_i_9_O_UNCONNECTED ;
   wire [0:0]\NLW_waveRefAddress_reg[6][5]_i_1_O_UNCONNECTED ;
   wire [3:2]\NLW_waveXAddress_reg[1][11]_i_1_CO_UNCONNECTED ;
   wire [3:3]\NLW_waveXAddress_reg[1][11]_i_1_O_UNCONNECTED ;
@@ -36629,11 +35985,8 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
   wire [3:1]\NLW_waveXAddress_reg[6][11]_i_1_CO_UNCONNECTED ;
   wire [3:2]\NLW_waveXAddress_reg[6][11]_i_1_O_UNCONNECTED ;
   wire [0:0]\NLW_waveXAddress_reg[6][5]_i_1_O_UNCONNECTED ;
-  wire [0:0]\NLW_waveXAddress_reg[7][11]_i_10_O_UNCONNECTED ;
   wire [3:2]\NLW_waveXAddress_reg[7][11]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_waveXAddress_reg[7][11]_i_2_O_UNCONNECTED ;
-  wire [3:2]\NLW_waveXAddress_reg[7][11]_i_25_CO_UNCONNECTED ;
-  wire [3:3]\NLW_waveXAddress_reg[7][11]_i_25_O_UNCONNECTED ;
   wire [0:0]\NLW_waveXAddress_reg[7][4]_i_1_O_UNCONNECTED ;
 
   (* ADDER_THRESHOLD = "35" *) 
@@ -36855,81 +36208,48 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     MemoryAddress0_carry_i_4
        (.I0(\MemoryAddress_reg_n_0_[1] ),
         .O(MemoryAddress0_carry_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \MemoryAddress[0]_i_1 
        (.I0(\MemoryAddress_reg_n_0_[0] ),
         .O(MemoryAddress0[0]));
   LUT6 #(
-    .INIT(64'h0000000000010000)) 
+    .INIT(64'h0000000200000000)) 
     \MemoryAddress[31]_i_1 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .I1(\MemoryAddress_reg_n_0_[9] ),
-        .I2(\MemoryAddress_reg_n_0_[6] ),
-        .I3(\MemoryAddress_reg_n_0_[7] ),
-        .I4(\MemoryAddress[31]_i_2_n_0 ),
-        .I5(\MemoryAddress[31]_i_3_n_0 ),
+       (.I0(\MemoryAddress[31]_i_2_n_0 ),
+        .I1(\MemoryAddress[31]_i_3_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[5] ),
+        .I3(\MemoryAddress_reg_n_0_[6] ),
+        .I4(\MemoryAddress_reg_n_0_[7] ),
+        .I5(\MemoryAddress[31]_i_4_n_0 ),
         .O(\MemoryAddress[31]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000010000)) 
+  LUT3 #(
+    .INIT(8'h01)) 
     \MemoryAddress[31]_i_2 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .I1(\MemoryAddress_reg_n_0_[8] ),
-        .I2(\MemoryAddress_reg_n_0_[11] ),
-        .I3(\MemoryAddress_reg_n_0_[3] ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\MemoryAddress[31]_i_5_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[13] ),
+        .I1(\MemoryAddress_reg_n_0_[12] ),
+        .I2(\waveRefAddress[1][11]_i_5_n_0 ),
         .O(\MemoryAddress[31]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
     \MemoryAddress[31]_i_3 
-       (.I0(\MemoryAddress[31]_i_6_n_0 ),
-        .I1(\MemoryAddress[31]_i_7_n_0 ),
-        .I2(\MemoryAddress_reg_n_0_[14] ),
-        .I3(\MemoryAddress_reg_n_0_[19] ),
-        .I4(\MemoryAddress_reg_n_0_[31] ),
-        .I5(\MemoryAddress_reg_n_0_[13] ),
+       (.I0(\MemoryAddress_reg_n_0_[10] ),
+        .I1(\MemoryAddress_reg_n_0_[11] ),
+        .I2(\MemoryAddress_reg_n_0_[8] ),
+        .I3(\MemoryAddress_reg_n_0_[9] ),
         .O(\MemoryAddress[31]_i_3_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair63" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT5 #(
+    .INIT(32'h00000001)) 
     \MemoryAddress[31]_i_4 
-       (.I0(\MemoryAddress_reg_n_0_[0] ),
-        .I1(\MemoryAddress_reg_n_0_[1] ),
+       (.I0(\MemoryAddress_reg_n_0_[4] ),
+        .I1(\MemoryAddress_reg_n_0_[2] ),
+        .I2(\MemoryAddress_reg_n_0_[1] ),
+        .I3(\MemoryAddress_reg_n_0_[0] ),
+        .I4(\MemoryAddress_reg_n_0_[3] ),
         .O(\MemoryAddress[31]_i_4_n_0 ));
-  LUT2 #(
-    .INIT(4'hE)) 
-    \MemoryAddress[31]_i_5 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .I1(\MemoryAddress_reg_n_0_[4] ),
-        .O(\MemoryAddress[31]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \MemoryAddress[31]_i_6 
-       (.I0(\waveXAddress[0][11]_i_4_n_0 ),
-        .I1(\MemoryAddress[31]_i_8_n_0 ),
-        .I2(\MemoryAddress_reg_n_0_[15] ),
-        .I3(\MemoryAddress_reg_n_0_[23] ),
-        .I4(\MemoryAddress_reg_n_0_[16] ),
-        .I5(\MemoryAddress_reg_n_0_[25] ),
-        .O(\MemoryAddress[31]_i_6_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \MemoryAddress[31]_i_7 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .I1(\MemoryAddress_reg_n_0_[28] ),
-        .I2(\MemoryAddress_reg_n_0_[18] ),
-        .I3(\MemoryAddress_reg_n_0_[24] ),
-        .O(\MemoryAddress[31]_i_7_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \MemoryAddress[31]_i_8 
-       (.I0(\MemoryAddress_reg_n_0_[12] ),
-        .I1(\MemoryAddress_reg_n_0_[26] ),
-        .I2(\MemoryAddress_reg_n_0_[20] ),
-        .I3(\MemoryAddress_reg_n_0_[27] ),
-        .O(\MemoryAddress[31]_i_8_n_0 ));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -37218,222 +36538,93 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .D(MemoryAddress0[9]),
         .Q(\MemoryAddress_reg_n_0_[9] ),
         .R(\MemoryAddress[31]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFD00)) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
     \waveRefAddress[1][11]_i_1 
        (.I0(\waveRefAddress[1][11]_i_3_n_0 ),
-        .I1(\waveRefAddress_reg[1][11]_i_4_n_7 ),
-        .I2(\waveRefAddress_reg[1][11]_i_4_n_6 ),
-        .I3(\waveRefAddress_reg[1][11]_i_4_n_5 ),
-        .I4(\waveRefAddress[1][11]_i_5_n_0 ),
-        .I5(\waveRefAddress[1][11]_i_6_n_0 ),
+        .I1(\waveRefAddress[1][11]_i_4_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[13] ),
+        .I3(\waveRefAddress[1][11]_i_5_n_0 ),
         .O(\waveRefAddress[1][11]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \waveRefAddress[1][11]_i_10 
+       (.I0(\MemoryAddress_reg_n_0_[9] ),
+        .I1(\MemoryAddress_reg_n_0_[8] ),
+        .O(\waveRefAddress[1][11]_i_10_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  LUT4 #(
+    .INIT(16'hFEAA)) 
+    \waveRefAddress[1][11]_i_11 
+       (.I0(\MemoryAddress_reg_n_0_[3] ),
+        .I1(\MemoryAddress_reg_n_0_[0] ),
+        .I2(\MemoryAddress_reg_n_0_[1] ),
+        .I3(\MemoryAddress_reg_n_0_[2] ),
+        .O(\waveRefAddress[1][11]_i_11_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT3 #(
     .INIT(8'hFE)) 
-    \waveRefAddress[1][11]_i_10 
-       (.I0(\waveXAddress_reg[5][1]_i_1_n_5 ),
-        .I1(\waveXAddress_reg[5][1]_i_1_n_4 ),
-        .I2(\waveRefAddress_reg[1][11]_i_9_n_7 ),
-        .O(\waveRefAddress[1][11]_i_10_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_11 
-       (.I0(\MemoryAddress_reg_n_0_[12] ),
-        .O(\waveRefAddress[1][11]_i_11_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
     \waveRefAddress[1][11]_i_12 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
+       (.I0(\MemoryAddress_reg_n_0_[2] ),
+        .I1(\MemoryAddress_reg_n_0_[1] ),
+        .I2(\MemoryAddress_reg_n_0_[0] ),
         .O(\waveRefAddress[1][11]_i_12_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_13 
-       (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .O(\waveRefAddress[1][11]_i_13_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[1][11]_i_14 
-       (.I0(\waveRefAddress_reg[1][11]_i_15_n_6 ),
-        .I1(\waveRefAddress_reg[1][11]_i_20_n_7 ),
-        .I2(\waveRefAddress_reg[1][11]_i_4_n_4 ),
-        .I3(\waveRefAddress_reg[1][11]_i_21_n_7 ),
-        .O(\waveRefAddress[1][11]_i_14_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[1][11]_i_17 
-       (.I0(\waveRefAddress_reg[1][11]_i_30_n_4 ),
-        .I1(\waveRefAddress_reg[1][11]_i_20_n_4 ),
-        .I2(\waveRefAddress_reg[1][11]_i_21_n_6 ),
-        .I3(\waveRefAddress_reg[1][11]_i_30_n_5 ),
-        .I4(\waveRefAddress[1][11]_i_31_n_0 ),
-        .I5(\waveRefAddress[1][11]_i_32_n_0 ),
-        .O(\waveRefAddress[1][11]_i_17_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[1][11]_i_18 
-       (.I0(\waveRefAddress_reg[1][11]_i_9_n_7 ),
-        .I1(\waveXAddress_reg[5][1]_i_1_n_4 ),
-        .I2(\waveXAddress_reg[5][1]_i_1_n_5 ),
-        .I3(\waveRefAddress_reg[1][11]_i_4_n_5 ),
-        .I4(\waveRefAddress_reg[1][11]_i_9_n_5 ),
-        .I5(\waveXAddress_reg[5][1]_i_1_n_6 ),
-        .O(\waveRefAddress[1][11]_i_18_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_19 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .O(\waveRefAddress[1][11]_i_19_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_22 
-       (.I0(\MemoryAddress_reg_n_0_[16] ),
-        .O(\waveRefAddress[1][11]_i_22_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_23 
-       (.I0(\MemoryAddress_reg_n_0_[15] ),
-        .O(\waveRefAddress[1][11]_i_23_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_24 
-       (.I0(\MemoryAddress_reg_n_0_[14] ),
-        .O(\waveRefAddress[1][11]_i_24_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_25 
-       (.I0(\MemoryAddress_reg_n_0_[13] ),
-        .O(\waveRefAddress[1][11]_i_25_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_26 
-       (.I0(\MemoryAddress_reg_n_0_[24] ),
-        .O(\waveRefAddress[1][11]_i_26_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_27 
-       (.I0(\MemoryAddress_reg_n_0_[23] ),
-        .O(\waveRefAddress[1][11]_i_27_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_28 
-       (.I0(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveRefAddress[1][11]_i_28_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_29 
-       (.I0(\MemoryAddress_reg_n_0_[21] ),
-        .O(\waveRefAddress[1][11]_i_29_n_0 ));
-  LUT6 #(
-    .INIT(64'h7F7F7F7FFFFF7FFF)) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  LUT5 #(
+    .INIT(32'h0002AAAA)) 
     \waveRefAddress[1][11]_i_3 
-       (.I0(\waveRefAddress_reg[1][11]_i_9_n_5 ),
-        .I1(\waveRefAddress_reg[1][11]_i_9_n_6 ),
-        .I2(\waveRefAddress_reg[1][11]_i_9_n_4 ),
-        .I3(\waveXAddress_reg[5][1]_i_1_n_6 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveRefAddress[1][11]_i_10_n_0 ),
+       (.I0(\MemoryAddress[31]_i_2_n_0 ),
+        .I1(\MemoryAddress_reg_n_0_[10] ),
+        .I2(\MemoryAddress_reg_n_0_[9] ),
+        .I3(\waveRefAddress[1][11]_i_8_n_0 ),
+        .I4(\MemoryAddress_reg_n_0_[11] ),
         .O(\waveRefAddress[1][11]_i_3_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[1][11]_i_31 
-       (.I0(\waveRefAddress_reg[1][11]_i_16_n_6 ),
-        .I1(\waveRefAddress_reg[1][11]_i_30_n_7 ),
-        .I2(\waveRefAddress_reg[1][11]_i_20_n_6 ),
-        .I3(\waveRefAddress_reg[1][11]_i_30_n_6 ),
-        .O(\waveRefAddress[1][11]_i_31_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[1][11]_i_32 
-       (.I0(\waveRefAddress_reg[1][11]_i_16_n_7 ),
-        .I1(\waveRefAddress_reg[1][11]_i_16_n_5 ),
-        .I2(\waveRefAddress_reg[1][11]_i_20_n_5 ),
-        .I3(\waveRefAddress_reg[1][11]_i_21_n_5 ),
-        .O(\waveRefAddress[1][11]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_33 
-       (.I0(\MemoryAddress_reg_n_0_[20] ),
-        .O(\waveRefAddress[1][11]_i_33_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_34 
-       (.I0(\MemoryAddress_reg_n_0_[19] ),
-        .O(\waveRefAddress[1][11]_i_34_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_35 
-       (.I0(\MemoryAddress_reg_n_0_[18] ),
-        .O(\waveRefAddress[1][11]_i_35_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_36 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .O(\waveRefAddress[1][11]_i_36_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_37 
-       (.I0(\MemoryAddress_reg_n_0_[31] ),
-        .O(\waveRefAddress[1][11]_i_37_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_38 
-       (.I0(\MemoryAddress_reg_n_0_[30] ),
-        .O(\waveRefAddress[1][11]_i_38_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_39 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .O(\waveRefAddress[1][11]_i_39_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_40 
-       (.I0(\MemoryAddress_reg_n_0_[28] ),
-        .O(\waveRefAddress[1][11]_i_40_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_41 
-       (.I0(\MemoryAddress_reg_n_0_[27] ),
-        .O(\waveRefAddress[1][11]_i_41_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_42 
-       (.I0(\MemoryAddress_reg_n_0_[26] ),
-        .O(\waveRefAddress[1][11]_i_42_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_43 
-       (.I0(\MemoryAddress_reg_n_0_[25] ),
-        .O(\waveRefAddress[1][11]_i_43_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    .INIT(64'hAAAAAAAAAAAA0080)) 
+    \waveRefAddress[1][11]_i_4 
+       (.I0(\MemoryAddress_reg_n_0_[12] ),
+        .I1(\waveRefAddress[1][11]_i_9_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[7] ),
+        .I3(\waveRefAddress[1][11]_i_10_n_0 ),
+        .I4(\MemoryAddress_reg_n_0_[11] ),
+        .I5(\MemoryAddress_reg_n_0_[10] ),
+        .O(\waveRefAddress[1][11]_i_4_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
     \waveRefAddress[1][11]_i_5 
-       (.I0(\waveRefAddress[1][11]_i_14_n_0 ),
-        .I1(\waveRefAddress_reg[1][11]_i_15_n_7 ),
-        .I2(\waveRefAddress_reg[1][11]_i_15_n_5 ),
-        .I3(\waveRefAddress_reg[1][11]_i_15_n_4 ),
-        .I4(\waveRefAddress_reg[1][11]_i_16_n_4 ),
-        .I5(\waveRefAddress[1][11]_i_17_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[14] ),
+        .I1(\waveRefAddress[2][11]_i_3_n_0 ),
         .O(\waveRefAddress[1][11]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000010000)) 
+  LUT1 #(
+    .INIT(2'h1)) 
     \waveRefAddress[1][11]_i_6 
-       (.I0(\waveRefAddress_reg[1][11]_i_4_n_7 ),
-        .I1(\waveRefAddress_reg[1][11]_i_4_n_6 ),
-        .I2(\waveRefAddress_reg[1][11]_i_9_n_6 ),
-        .I3(\waveRefAddress_reg[1][11]_i_9_n_4 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveRefAddress[1][11]_i_18_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[10] ),
         .O(\waveRefAddress[1][11]_i_6_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveRefAddress[1][11]_i_7 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .O(\waveRefAddress[1][11]_i_7_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[1][11]_i_8 
        (.I0(\MemoryAddress_reg_n_0_[9] ),
+        .O(\waveRefAddress[1][11]_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'hFE00000000000000)) 
+    \waveRefAddress[1][11]_i_8 
+       (.I0(\MemoryAddress_reg_n_0_[5] ),
+        .I1(\MemoryAddress_reg_n_0_[4] ),
+        .I2(\waveRefAddress[1][11]_i_11_n_0 ),
+        .I3(\MemoryAddress_reg_n_0_[8] ),
+        .I4(\MemoryAddress_reg_n_0_[7] ),
+        .I5(\MemoryAddress_reg_n_0_[6] ),
         .O(\waveRefAddress[1][11]_i_8_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFFEFEFE)) 
+    \waveRefAddress[1][11]_i_9 
+       (.I0(\MemoryAddress_reg_n_0_[5] ),
+        .I1(\MemoryAddress_reg_n_0_[6] ),
+        .I2(\MemoryAddress_reg_n_0_[4] ),
+        .I3(\MemoryAddress_reg_n_0_[3] ),
+        .I4(\waveRefAddress[1][11]_i_12_n_0 ),
+        .O(\waveRefAddress[1][11]_i_9_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveRefAddress[1][4]_i_2 
@@ -37454,216 +36645,92 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     \waveRefAddress[1][8]_i_2 
        (.I0(\MemoryAddress_reg_n_0_[5] ),
         .O(\waveRefAddress[1][8]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFE00)) 
-    \waveRefAddress[2][11]_i_1 
-       (.I0(\waveRefAddress_reg[2][11]_i_3_n_4 ),
-        .I1(\waveRefAddress_reg[2][11]_i_4_n_7 ),
-        .I2(\waveRefAddress[2][11]_i_5_n_0 ),
-        .I3(\waveRefAddress_reg[2][11]_i_4_n_6 ),
-        .I4(\waveRefAddress[2][11]_i_6_n_0 ),
-        .I5(\waveRefAddress[2][11]_i_7_n_0 ),
-        .O(\waveRefAddress[2][11]_i_1_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_10 
-       (.I0(\MemoryAddress_reg_n_0_[6] ),
-        .O(\waveRefAddress[2][11]_i_10_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_11 
-       (.I0(\MemoryAddress_reg_n_0_[13] ),
-        .O(\waveRefAddress[2][11]_i_11_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_12 
-       (.I0(\MemoryAddress_reg_n_0_[11] ),
-        .O(\waveRefAddress[2][11]_i_12_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_13 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .O(\waveRefAddress[2][11]_i_13_n_0 ));
   LUT3 #(
-    .INIT(8'hFE)) 
-    \waveRefAddress[2][11]_i_14 
-       (.I0(\waveXAddress_reg[6][2]_i_1_n_6 ),
-        .I1(\waveXAddress_reg[6][2]_i_1_n_5 ),
-        .I2(\waveXAddress_reg[6][2]_i_1_n_4 ),
-        .O(\waveRefAddress[2][11]_i_14_n_0 ));
+    .INIT(8'h1F)) 
+    \waveRefAddress[2][11]_i_1 
+       (.I0(\waveRefAddress[1][11]_i_4_n_0 ),
+        .I1(\waveRefAddress[2][11]_i_3_n_0 ),
+        .I2(\waveRefAddress[2][11]_i_4_n_0 ),
+        .O(\waveRefAddress[2][11]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
-    \waveRefAddress[2][11]_i_15 
-       (.I0(\waveRefAddress_reg[2][11]_i_16_n_7 ),
-        .I1(\waveRefAddress_reg[2][11]_i_16_n_4 ),
-        .I2(\waveRefAddress_reg[2][11]_i_4_n_5 ),
-        .I3(\waveRefAddress_reg[2][11]_i_20_n_4 ),
-        .O(\waveRefAddress[2][11]_i_15_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[2][11]_i_18 
-       (.I0(\waveRefAddress_reg[2][11]_i_20_n_5 ),
-        .I1(\waveRefAddress_reg[2][11]_i_25_n_5 ),
-        .I2(\waveRefAddress_reg[2][11]_i_30_n_7 ),
-        .I3(\waveRefAddress_reg[2][11]_i_20_n_6 ),
-        .I4(\waveRefAddress[2][11]_i_31_n_0 ),
-        .I5(\waveRefAddress[2][11]_i_32_n_0 ),
-        .O(\waveRefAddress[2][11]_i_18_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[2][11]_i_19 
-       (.I0(\waveXAddress_reg[6][2]_i_1_n_4 ),
-        .I1(\waveXAddress_reg[6][2]_i_1_n_5 ),
-        .I2(\waveXAddress_reg[6][2]_i_1_n_6 ),
-        .I3(\waveRefAddress_reg[2][11]_i_4_n_6 ),
-        .I4(\waveRefAddress_reg[2][11]_i_3_n_6 ),
-        .I5(\MemoryAddress_reg_n_0_[2] ),
-        .O(\waveRefAddress[2][11]_i_19_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_21 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .O(\waveRefAddress[2][11]_i_21_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_22 
+    \waveRefAddress[2][11]_i_10 
        (.I0(\MemoryAddress_reg_n_0_[16] ),
-        .O(\waveRefAddress[2][11]_i_22_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_23 
+        .I1(\MemoryAddress_reg_n_0_[17] ),
+        .I2(\MemoryAddress_reg_n_0_[18] ),
+        .I3(\MemoryAddress_reg_n_0_[19] ),
+        .O(\waveRefAddress[2][11]_i_10_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  LUT5 #(
+    .INIT(32'h1FFFFFFF)) 
+    \waveRefAddress[2][11]_i_11 
+       (.I0(\MemoryAddress_reg_n_0_[8] ),
+        .I1(\MemoryAddress_reg_n_0_[9] ),
+        .I2(\MemoryAddress_reg_n_0_[12] ),
+        .I3(\MemoryAddress_reg_n_0_[11] ),
+        .I4(\MemoryAddress_reg_n_0_[10] ),
+        .O(\waveRefAddress[2][11]_i_11_n_0 ));
+  LUT5 #(
+    .INIT(32'hAAAAAA80)) 
+    \waveRefAddress[2][11]_i_12 
+       (.I0(\MemoryAddress_reg_n_0_[6] ),
+        .I1(\waveRefAddress[4][11]_i_5_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[3] ),
+        .I3(\MemoryAddress_reg_n_0_[5] ),
+        .I4(\MemoryAddress_reg_n_0_[4] ),
+        .O(\waveRefAddress[2][11]_i_12_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    \waveRefAddress[2][11]_i_3 
        (.I0(\MemoryAddress_reg_n_0_[15] ),
-        .O(\waveRefAddress[2][11]_i_23_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_24 
-       (.I0(\MemoryAddress_reg_n_0_[14] ),
-        .O(\waveRefAddress[2][11]_i_24_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_26 
-       (.I0(\MemoryAddress_reg_n_0_[25] ),
-        .O(\waveRefAddress[2][11]_i_26_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_27 
-       (.I0(\MemoryAddress_reg_n_0_[24] ),
-        .O(\waveRefAddress[2][11]_i_27_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_28 
-       (.I0(\MemoryAddress_reg_n_0_[23] ),
-        .O(\waveRefAddress[2][11]_i_28_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_29 
-       (.I0(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveRefAddress[2][11]_i_29_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[2][11]_i_31 
-       (.I0(\waveRefAddress_reg[2][11]_i_17_n_7 ),
-        .I1(\waveRefAddress_reg[2][11]_i_17_n_4 ),
-        .I2(\waveRefAddress_reg[2][11]_i_25_n_7 ),
-        .I3(\waveRefAddress_reg[2][11]_i_20_n_7 ),
-        .O(\waveRefAddress[2][11]_i_31_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[2][11]_i_32 
-       (.I0(\waveRefAddress_reg[2][11]_i_25_n_4 ),
-        .I1(\waveRefAddress_reg[2][11]_i_17_n_6 ),
-        .I2(\waveRefAddress_reg[2][11]_i_25_n_6 ),
-        .I3(\waveRefAddress_reg[2][11]_i_30_n_6 ),
-        .O(\waveRefAddress[2][11]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_33 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .O(\waveRefAddress[2][11]_i_33_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_34 
-       (.I0(\MemoryAddress_reg_n_0_[28] ),
-        .O(\waveRefAddress[2][11]_i_34_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_35 
-       (.I0(\MemoryAddress_reg_n_0_[27] ),
-        .O(\waveRefAddress[2][11]_i_35_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_36 
-       (.I0(\MemoryAddress_reg_n_0_[26] ),
-        .O(\waveRefAddress[2][11]_i_36_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_37 
-       (.I0(\MemoryAddress_reg_n_0_[21] ),
-        .O(\waveRefAddress[2][11]_i_37_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_38 
-       (.I0(\MemoryAddress_reg_n_0_[20] ),
-        .O(\waveRefAddress[2][11]_i_38_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_39 
-       (.I0(\MemoryAddress_reg_n_0_[19] ),
-        .O(\waveRefAddress[2][11]_i_39_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_40 
-       (.I0(\MemoryAddress_reg_n_0_[18] ),
-        .O(\waveRefAddress[2][11]_i_40_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_41 
-       (.I0(\MemoryAddress_reg_n_0_[31] ),
-        .O(\waveRefAddress[2][11]_i_41_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_42 
-       (.I0(\MemoryAddress_reg_n_0_[30] ),
-        .O(\waveRefAddress[2][11]_i_42_n_0 ));
+        .I1(\waveRefAddress[2][11]_i_7_n_0 ),
+        .I2(\waveRefAddress[2][11]_i_8_n_0 ),
+        .I3(\waveRefAddress[2][11]_i_9_n_0 ),
+        .I4(\waveRefAddress[2][11]_i_10_n_0 ),
+        .O(\waveRefAddress[2][11]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'hF200000000000000)) 
+    .INIT(64'h1010101010101011)) 
+    \waveRefAddress[2][11]_i_4 
+       (.I0(\waveRefAddress[1][11]_i_5_n_0 ),
+        .I1(\MemoryAddress_reg_n_0_[13] ),
+        .I2(\waveRefAddress[2][11]_i_11_n_0 ),
+        .I3(\waveRefAddress[2][11]_i_12_n_0 ),
+        .I4(\MemoryAddress_reg_n_0_[7] ),
+        .I5(\MemoryAddress_reg_n_0_[9] ),
+        .O(\waveRefAddress[2][11]_i_4_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
     \waveRefAddress[2][11]_i_5 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .I1(\MemoryAddress[31]_i_4_n_0 ),
-        .I2(\waveRefAddress[2][11]_i_14_n_0 ),
-        .I3(\waveRefAddress_reg[2][11]_i_3_n_6 ),
-        .I4(\waveRefAddress_reg[2][11]_i_3_n_7 ),
-        .I5(\waveRefAddress_reg[2][11]_i_3_n_5 ),
-        .O(\waveRefAddress[2][11]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[2][11]_i_6 
-       (.I0(\waveRefAddress[2][11]_i_15_n_0 ),
-        .I1(\waveRefAddress_reg[2][11]_i_4_n_4 ),
-        .I2(\waveRefAddress_reg[2][11]_i_16_n_6 ),
-        .I3(\waveRefAddress_reg[2][11]_i_16_n_5 ),
-        .I4(\waveRefAddress_reg[2][11]_i_17_n_5 ),
-        .I5(\waveRefAddress[2][11]_i_18_n_0 ),
-        .O(\waveRefAddress[2][11]_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000010)) 
-    \waveRefAddress[2][11]_i_7 
-       (.I0(\waveRefAddress_reg[2][11]_i_3_n_7 ),
-        .I1(\waveRefAddress_reg[2][11]_i_3_n_5 ),
-        .I2(\MemoryAddress[31]_i_4_n_0 ),
-        .I3(\waveRefAddress_reg[2][11]_i_4_n_7 ),
-        .I4(\waveRefAddress_reg[2][11]_i_3_n_4 ),
-        .I5(\waveRefAddress[2][11]_i_19_n_0 ),
-        .O(\waveRefAddress[2][11]_i_7_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_8 
        (.I0(\MemoryAddress_reg_n_0_[11] ),
-        .O(\waveRefAddress[2][11]_i_8_n_0 ));
+        .O(\waveRefAddress[2][11]_i_5_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveRefAddress[2][11]_i_9 
+    \waveRefAddress[2][11]_i_6 
        (.I0(\MemoryAddress_reg_n_0_[10] ),
+        .O(\waveRefAddress[2][11]_i_6_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \waveRefAddress[2][11]_i_7 
+       (.I0(\MemoryAddress_reg_n_0_[26] ),
+        .I1(\MemoryAddress_reg_n_0_[27] ),
+        .I2(\MemoryAddress_reg_n_0_[24] ),
+        .I3(\MemoryAddress_reg_n_0_[25] ),
+        .O(\waveRefAddress[2][11]_i_7_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \waveRefAddress[2][11]_i_8 
+       (.I0(\MemoryAddress_reg_n_0_[28] ),
+        .I1(\MemoryAddress_reg_n_0_[29] ),
+        .I2(\MemoryAddress_reg_n_0_[31] ),
+        .I3(\MemoryAddress_reg_n_0_[30] ),
+        .O(\waveRefAddress[2][11]_i_8_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \waveRefAddress[2][11]_i_9 
+       (.I0(\MemoryAddress_reg_n_0_[20] ),
+        .I1(\MemoryAddress_reg_n_0_[21] ),
+        .I2(\MemoryAddress_reg_n_0_[22] ),
+        .I3(\MemoryAddress_reg_n_0_[23] ),
         .O(\waveRefAddress[2][11]_i_9_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
@@ -37685,222 +36752,38 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     \waveRefAddress[2][9]_i_2 
        (.I0(\MemoryAddress_reg_n_0_[6] ),
         .O(\waveRefAddress[2][9]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFD00)) 
-    \waveRefAddress[3][11]_i_1 
-       (.I0(\waveRefAddress[3][11]_i_3_n_0 ),
-        .I1(\waveRefAddress_reg[3][11]_i_4_n_7 ),
-        .I2(\waveRefAddress_reg[3][11]_i_4_n_6 ),
-        .I3(\waveRefAddress_reg[3][11]_i_4_n_5 ),
-        .I4(\waveRefAddress[3][11]_i_5_n_0 ),
-        .I5(\waveRefAddress[3][11]_i_6_n_0 ),
-        .O(\waveRefAddress[3][11]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'hFE)) 
-    \waveRefAddress[3][11]_i_10 
-       (.I0(\waveRefAddress_reg[3][11]_i_9_n_5 ),
-        .I1(\waveRefAddress_reg[3][11]_i_9_n_4 ),
-        .I2(\waveRefAddress_reg[3][11]_i_8_n_7 ),
-        .O(\waveRefAddress[3][11]_i_10_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_11 
-       (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .O(\waveRefAddress[3][11]_i_11_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[3][11]_i_12 
-       (.I0(\waveRefAddress_reg[3][11]_i_23_n_6 ),
-        .I1(\waveRefAddress_reg[3][11]_i_23_n_5 ),
-        .I2(\waveRefAddress_reg[3][11]_i_4_n_4 ),
-        .I3(\waveRefAddress_reg[3][11]_i_16_n_7 ),
-        .O(\waveRefAddress[3][11]_i_12_n_0 ));
+    \waveRefAddress[3][11]_i_1 
+       (.I0(\waveRefAddress[3][11]_i_3_n_0 ),
+        .I1(\waveRefAddress[2][11]_i_4_n_0 ),
+        .I2(\waveRefAddress[1][11]_i_5_n_0 ),
+        .O(\waveRefAddress[3][11]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[3][11]_i_17 
-       (.I0(\waveRefAddress_reg[3][11]_i_16_n_4 ),
-        .I1(\waveRefAddress_reg[3][11]_i_15_n_6 ),
-        .I2(\waveRefAddress_reg[3][11]_i_23_n_7 ),
-        .I3(\waveRefAddress_reg[3][11]_i_14_n_7 ),
-        .I4(\waveRefAddress[3][11]_i_40_n_0 ),
-        .I5(\waveRefAddress[3][11]_i_41_n_0 ),
-        .O(\waveRefAddress[3][11]_i_17_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[3][11]_i_18 
-       (.I0(\waveRefAddress_reg[3][11]_i_8_n_7 ),
-        .I1(\waveRefAddress_reg[3][11]_i_9_n_4 ),
-        .I2(\waveRefAddress_reg[3][11]_i_9_n_5 ),
-        .I3(\waveRefAddress_reg[3][11]_i_4_n_5 ),
-        .I4(\waveRefAddress_reg[3][11]_i_8_n_5 ),
-        .I5(\waveRefAddress_reg[3][11]_i_9_n_6 ),
-        .O(\waveRefAddress[3][11]_i_18_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_19 
-       (.I0(\MemoryAddress_reg_n_0_[7] ),
-        .O(\waveRefAddress[3][11]_i_19_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_20 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .O(\waveRefAddress[3][11]_i_20_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_21 
-       (.I0(\MemoryAddress_reg_n_0_[4] ),
-        .O(\waveRefAddress[3][11]_i_21_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_22 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .O(\waveRefAddress[3][11]_i_22_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_24 
-       (.I0(\MemoryAddress_reg_n_0_[16] ),
-        .O(\waveRefAddress[3][11]_i_24_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_25 
-       (.I0(\MemoryAddress_reg_n_0_[15] ),
-        .O(\waveRefAddress[3][11]_i_25_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_26 
-       (.I0(\MemoryAddress_reg_n_0_[14] ),
-        .O(\waveRefAddress[3][11]_i_26_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_27 
-       (.I0(\MemoryAddress_reg_n_0_[13] ),
-        .O(\waveRefAddress[3][11]_i_27_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_28 
-       (.I0(\MemoryAddress_reg_n_0_[20] ),
-        .O(\waveRefAddress[3][11]_i_28_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_29 
-       (.I0(\MemoryAddress_reg_n_0_[19] ),
-        .O(\waveRefAddress[3][11]_i_29_n_0 ));
-  LUT6 #(
-    .INIT(64'h7F7F7F7FFFFF7FFF)) 
+    .INIT(64'hAAAAAAAAAAAA0080)) 
     \waveRefAddress[3][11]_i_3 
-       (.I0(\waveRefAddress_reg[3][11]_i_8_n_5 ),
-        .I1(\waveRefAddress_reg[3][11]_i_8_n_6 ),
-        .I2(\waveRefAddress_reg[3][11]_i_8_n_4 ),
-        .I3(\waveRefAddress_reg[3][11]_i_9_n_6 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveRefAddress[3][11]_i_10_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[13] ),
+        .I1(\waveRefAddress[3][11]_i_5_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[10] ),
+        .I3(\waveRefAddress[1][11]_i_10_n_0 ),
+        .I4(\MemoryAddress_reg_n_0_[12] ),
+        .I5(\MemoryAddress_reg_n_0_[11] ),
         .O(\waveRefAddress[3][11]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_30 
-       (.I0(\MemoryAddress_reg_n_0_[18] ),
-        .O(\waveRefAddress[3][11]_i_30_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_31 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .O(\waveRefAddress[3][11]_i_31_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_32 
-       (.I0(\MemoryAddress_reg_n_0_[24] ),
-        .O(\waveRefAddress[3][11]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_33 
-       (.I0(\MemoryAddress_reg_n_0_[23] ),
-        .O(\waveRefAddress[3][11]_i_33_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_34 
-       (.I0(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveRefAddress[3][11]_i_34_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_35 
-       (.I0(\MemoryAddress_reg_n_0_[21] ),
-        .O(\waveRefAddress[3][11]_i_35_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_36 
-       (.I0(\MemoryAddress_reg_n_0_[28] ),
-        .O(\waveRefAddress[3][11]_i_36_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_37 
-       (.I0(\MemoryAddress_reg_n_0_[27] ),
-        .O(\waveRefAddress[3][11]_i_37_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_38 
-       (.I0(\MemoryAddress_reg_n_0_[26] ),
-        .O(\waveRefAddress[3][11]_i_38_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_39 
-       (.I0(\MemoryAddress_reg_n_0_[25] ),
-        .O(\waveRefAddress[3][11]_i_39_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[3][11]_i_40 
-       (.I0(\waveRefAddress_reg[3][11]_i_13_n_5 ),
-        .I1(\waveRefAddress_reg[3][11]_i_16_n_5 ),
-        .I2(\waveRefAddress_reg[3][11]_i_13_n_6 ),
-        .I3(\waveRefAddress_reg[3][11]_i_15_n_4 ),
-        .O(\waveRefAddress[3][11]_i_40_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[3][11]_i_41 
-       (.I0(\waveRefAddress_reg[3][11]_i_14_n_6 ),
-        .I1(\waveRefAddress_reg[3][11]_i_14_n_5 ),
-        .I2(\waveRefAddress_reg[3][11]_i_13_n_4 ),
-        .I3(\waveRefAddress_reg[3][11]_i_15_n_5 ),
-        .O(\waveRefAddress[3][11]_i_41_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_42 
-       (.I0(\MemoryAddress_reg_n_0_[31] ),
-        .O(\waveRefAddress[3][11]_i_42_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_43 
-       (.I0(\MemoryAddress_reg_n_0_[30] ),
-        .O(\waveRefAddress[3][11]_i_43_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_44 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .O(\waveRefAddress[3][11]_i_44_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[3][11]_i_5 
-       (.I0(\waveRefAddress[3][11]_i_12_n_0 ),
-        .I1(\waveRefAddress_reg[3][11]_i_13_n_7 ),
-        .I2(\waveRefAddress_reg[3][11]_i_14_n_4 ),
-        .I3(\waveRefAddress_reg[3][11]_i_15_n_7 ),
-        .I4(\waveRefAddress_reg[3][11]_i_16_n_6 ),
-        .I5(\waveRefAddress[3][11]_i_17_n_0 ),
-        .O(\waveRefAddress[3][11]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000010000)) 
-    \waveRefAddress[3][11]_i_6 
-       (.I0(\waveRefAddress_reg[3][11]_i_4_n_7 ),
-        .I1(\waveRefAddress_reg[3][11]_i_4_n_6 ),
-        .I2(\waveRefAddress_reg[3][11]_i_8_n_6 ),
-        .I3(\waveRefAddress_reg[3][11]_i_8_n_4 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveRefAddress[3][11]_i_18_n_0 ),
-        .O(\waveRefAddress[3][11]_i_6_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[3][11]_i_7 
+    \waveRefAddress[3][11]_i_4 
        (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .O(\waveRefAddress[3][11]_i_7_n_0 ));
+        .O(\waveRefAddress[3][11]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFEFFFEFFFEFEFE)) 
+    \waveRefAddress[3][11]_i_5 
+       (.I0(\MemoryAddress_reg_n_0_[5] ),
+        .I1(\MemoryAddress_reg_n_0_[6] ),
+        .I2(\MemoryAddress_reg_n_0_[7] ),
+        .I3(\MemoryAddress_reg_n_0_[4] ),
+        .I4(\MemoryAddress_reg_n_0_[3] ),
+        .I5(\waveRefAddress[1][11]_i_12_n_0 ),
+        .O(\waveRefAddress[3][11]_i_5_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveRefAddress[3][4]_i_2 
@@ -37927,206 +36810,38 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
        (.I0(\MemoryAddress_reg_n_0_[7] ),
         .O(\waveRefAddress[4][10]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFE00)) 
+    .INIT(64'hEAEAEAAAFFFFFFFF)) 
     \waveRefAddress[4][11]_i_1 
-       (.I0(\waveRefAddress_reg[4][11]_i_3_n_5 ),
-        .I1(\waveRefAddress_reg[4][11]_i_3_n_4 ),
-        .I2(\waveRefAddress[4][11]_i_4_n_0 ),
-        .I3(\waveRefAddress_reg[4][11]_i_5_n_7 ),
-        .I4(\waveRefAddress[4][11]_i_6_n_0 ),
-        .I5(\waveRefAddress[4][11]_i_7_n_0 ),
+       (.I0(\waveRefAddress[1][11]_i_5_n_0 ),
+        .I1(\MemoryAddress_reg_n_0_[12] ),
+        .I2(\MemoryAddress_reg_n_0_[13] ),
+        .I3(\MemoryAddress[31]_i_3_n_0 ),
+        .I4(\waveRefAddress[4][11]_i_3_n_0 ),
+        .I5(\waveRefAddress[3][11]_i_3_n_0 ),
         .O(\waveRefAddress[4][11]_i_1_n_0 ));
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \waveRefAddress[4][11]_i_10 
-       (.I0(\waveXAddress_reg[4][3]_i_1_n_6 ),
-        .I1(\MemoryAddress_reg_n_0_[3] ),
-        .I2(\waveXAddress_reg[4][3]_i_1_n_5 ),
-        .O(\waveRefAddress[4][11]_i_10_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_11 
-       (.I0(\MemoryAddress_reg_n_0_[14] ),
-        .O(\waveRefAddress[4][11]_i_11_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_12 
-       (.I0(\MemoryAddress_reg_n_0_[12] ),
-        .O(\waveRefAddress[4][11]_i_12_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_13 
-       (.I0(\MemoryAddress_reg_n_0_[11] ),
-        .O(\waveRefAddress[4][11]_i_13_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[4][11]_i_14 
-       (.I0(\waveRefAddress_reg[4][11]_i_16_n_4 ),
-        .I1(\waveRefAddress_reg[4][11]_i_15_n_4 ),
-        .I2(\waveRefAddress_reg[4][11]_i_15_n_7 ),
-        .I3(\waveRefAddress_reg[4][11]_i_19_n_5 ),
-        .O(\waveRefAddress[4][11]_i_14_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[4][11]_i_17 
-       (.I0(\waveRefAddress_reg[4][11]_i_28_n_7 ),
-        .I1(\waveRefAddress_reg[4][11]_i_5_n_6 ),
-        .I2(\waveRefAddress_reg[4][11]_i_29_n_5 ),
-        .I3(\waveRefAddress_reg[4][11]_i_16_n_5 ),
-        .I4(\waveRefAddress[4][11]_i_30_n_0 ),
-        .I5(\waveRefAddress[4][11]_i_31_n_0 ),
-        .O(\waveRefAddress[4][11]_i_17_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[4][11]_i_18 
-       (.I0(\waveXAddress_reg[4][3]_i_1_n_5 ),
-        .I1(\MemoryAddress_reg_n_0_[3] ),
-        .I2(\waveXAddress_reg[4][3]_i_1_n_6 ),
-        .I3(\waveRefAddress_reg[4][11]_i_5_n_7 ),
-        .I4(\waveRefAddress_reg[4][11]_i_3_n_7 ),
-        .I5(\MemoryAddress_reg_n_0_[2] ),
-        .O(\waveRefAddress[4][11]_i_18_n_0 ));
+    .INIT(64'hF000E000F0000000)) 
+    \waveRefAddress[4][11]_i_3 
+       (.I0(\MemoryAddress_reg_n_0_[3] ),
+        .I1(\waveRefAddress[4][11]_i_5_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[7] ),
+        .I3(\MemoryAddress_reg_n_0_[6] ),
+        .I4(\MemoryAddress_reg_n_0_[5] ),
+        .I5(\MemoryAddress_reg_n_0_[4] ),
+        .O(\waveRefAddress[4][11]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_20 
-       (.I0(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveRefAddress[4][11]_i_20_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_21 
-       (.I0(\MemoryAddress_reg_n_0_[21] ),
-        .O(\waveRefAddress[4][11]_i_21_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_22 
-       (.I0(\MemoryAddress_reg_n_0_[20] ),
-        .O(\waveRefAddress[4][11]_i_22_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_23 
-       (.I0(\MemoryAddress_reg_n_0_[19] ),
-        .O(\waveRefAddress[4][11]_i_23_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_24 
-       (.I0(\MemoryAddress_reg_n_0_[18] ),
-        .O(\waveRefAddress[4][11]_i_24_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_25 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .O(\waveRefAddress[4][11]_i_25_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_26 
-       (.I0(\MemoryAddress_reg_n_0_[16] ),
-        .O(\waveRefAddress[4][11]_i_26_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_27 
-       (.I0(\MemoryAddress_reg_n_0_[15] ),
-        .O(\waveRefAddress[4][11]_i_27_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[4][11]_i_30 
-       (.I0(\waveRefAddress_reg[4][11]_i_15_n_5 ),
-        .I1(\waveRefAddress_reg[4][11]_i_19_n_4 ),
-        .I2(\waveRefAddress_reg[4][11]_i_29_n_6 ),
-        .I3(\waveRefAddress_reg[4][11]_i_19_n_7 ),
-        .O(\waveRefAddress[4][11]_i_30_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[4][11]_i_31 
-       (.I0(\waveRefAddress_reg[4][11]_i_16_n_7 ),
-        .I1(\waveRefAddress_reg[4][11]_i_29_n_4 ),
-        .I2(\waveRefAddress_reg[4][11]_i_29_n_7 ),
-        .I3(\waveRefAddress_reg[4][11]_i_19_n_6 ),
-        .O(\waveRefAddress[4][11]_i_31_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_32 
-       (.I0(\MemoryAddress_reg_n_0_[30] ),
-        .O(\waveRefAddress[4][11]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_33 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .O(\waveRefAddress[4][11]_i_33_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_34 
-       (.I0(\MemoryAddress_reg_n_0_[28] ),
-        .O(\waveRefAddress[4][11]_i_34_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_35 
-       (.I0(\MemoryAddress_reg_n_0_[27] ),
-        .O(\waveRefAddress[4][11]_i_35_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_36 
-       (.I0(\MemoryAddress_reg_n_0_[31] ),
-        .O(\waveRefAddress[4][11]_i_36_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_37 
-       (.I0(\MemoryAddress_reg_n_0_[26] ),
-        .O(\waveRefAddress[4][11]_i_37_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_38 
-       (.I0(\MemoryAddress_reg_n_0_[25] ),
-        .O(\waveRefAddress[4][11]_i_38_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_39 
-       (.I0(\MemoryAddress_reg_n_0_[24] ),
-        .O(\waveRefAddress[4][11]_i_39_n_0 ));
-  LUT6 #(
-    .INIT(64'hAE00000000000000)) 
     \waveRefAddress[4][11]_i_4 
-       (.I0(\waveRefAddress[4][11]_i_10_n_0 ),
-        .I1(\MemoryAddress_reg_n_0_[2] ),
-        .I2(\MemoryAddress[31]_i_4_n_0 ),
-        .I3(\waveRefAddress_reg[4][11]_i_3_n_7 ),
-        .I4(\waveXAddress_reg[4][3]_i_1_n_4 ),
-        .I5(\waveRefAddress_reg[4][11]_i_3_n_6 ),
-        .O(\waveRefAddress[4][11]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_40 
-       (.I0(\MemoryAddress_reg_n_0_[23] ),
-        .O(\waveRefAddress[4][11]_i_40_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[4][11]_i_6 
-       (.I0(\waveRefAddress[4][11]_i_14_n_0 ),
-        .I1(\waveRefAddress_reg[4][11]_i_5_n_5 ),
-        .I2(\waveRefAddress_reg[4][11]_i_15_n_6 ),
-        .I3(\waveRefAddress_reg[4][11]_i_5_n_4 ),
-        .I4(\waveRefAddress_reg[4][11]_i_16_n_6 ),
-        .I5(\waveRefAddress[4][11]_i_17_n_0 ),
-        .O(\waveRefAddress[4][11]_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000010)) 
-    \waveRefAddress[4][11]_i_7 
-       (.I0(\waveXAddress_reg[4][3]_i_1_n_4 ),
-        .I1(\waveRefAddress_reg[4][11]_i_3_n_6 ),
-        .I2(\MemoryAddress[31]_i_4_n_0 ),
-        .I3(\waveRefAddress_reg[4][11]_i_3_n_4 ),
-        .I4(\waveRefAddress_reg[4][11]_i_3_n_5 ),
-        .I5(\waveRefAddress[4][11]_i_18_n_0 ),
-        .O(\waveRefAddress[4][11]_i_7_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_8 
        (.I0(\MemoryAddress_reg_n_0_[11] ),
-        .O(\waveRefAddress[4][11]_i_8_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[4][11]_i_9 
-       (.I0(\MemoryAddress_reg_n_0_[7] ),
-        .O(\waveRefAddress[4][11]_i_9_n_0 ));
+        .O(\waveRefAddress[4][11]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  LUT3 #(
+    .INIT(8'hA8)) 
+    \waveRefAddress[4][11]_i_5 
+       (.I0(\MemoryAddress_reg_n_0_[2] ),
+        .I1(\MemoryAddress_reg_n_0_[1] ),
+        .I2(\MemoryAddress_reg_n_0_[0] ),
+        .O(\waveRefAddress[4][11]_i_5_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveRefAddress[4][6]_i_2 
@@ -38143,236 +36858,60 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
        (.I0(\MemoryAddress_reg_n_0_[4] ),
         .O(\waveRefAddress[4][6]_i_4_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFD00)) 
+    .INIT(64'h15151555FFFFFFFF)) 
     \waveRefAddress[5][11]_i_1 
-       (.I0(\waveRefAddress[5][11]_i_3_n_0 ),
-        .I1(\waveRefAddress_reg[5][11]_i_4_n_7 ),
-        .I2(\waveRefAddress_reg[5][11]_i_4_n_6 ),
-        .I3(\waveRefAddress_reg[5][11]_i_4_n_5 ),
-        .I4(\waveRefAddress[5][11]_i_5_n_0 ),
-        .I5(\waveRefAddress[5][11]_i_6_n_0 ),
+       (.I0(\waveRefAddress[1][11]_i_5_n_0 ),
+        .I1(\MemoryAddress_reg_n_0_[12] ),
+        .I2(\MemoryAddress_reg_n_0_[13] ),
+        .I3(\MemoryAddress[31]_i_3_n_0 ),
+        .I4(\waveRefAddress[4][11]_i_3_n_0 ),
+        .I5(\waveRefAddress[5][11]_i_3_n_0 ),
         .O(\waveRefAddress[5][11]_i_1_n_0 ));
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \waveRefAddress[5][11]_i_12 
-       (.I0(\waveRefAddress_reg[5][11]_i_11_n_5 ),
-        .I1(\waveRefAddress_reg[5][11]_i_11_n_4 ),
-        .I2(\waveRefAddress_reg[5][11]_i_10_n_7 ),
-        .O(\waveRefAddress[5][11]_i_12_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_13 
-       (.I0(\MemoryAddress_reg_n_0_[11] ),
-        .O(\waveRefAddress[5][11]_i_13_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_14 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .O(\waveRefAddress[5][11]_i_14_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_15 
-       (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .O(\waveRefAddress[5][11]_i_15_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[5][11]_i_16 
-       (.I0(\waveRefAddress_reg[5][11]_i_17_n_6 ),
-        .I1(\waveRefAddress_reg[5][11]_i_25_n_7 ),
-        .I2(\waveRefAddress_reg[5][11]_i_4_n_4 ),
-        .I3(\waveRefAddress_reg[5][11]_i_26_n_7 ),
-        .O(\waveRefAddress[5][11]_i_16_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[5][11]_i_19 
-       (.I0(\waveRefAddress_reg[5][11]_i_34_n_4 ),
-        .I1(\waveRefAddress_reg[5][11]_i_25_n_4 ),
-        .I2(\waveRefAddress_reg[5][11]_i_26_n_6 ),
-        .I3(\waveRefAddress_reg[5][11]_i_34_n_5 ),
-        .I4(\waveRefAddress[5][11]_i_35_n_0 ),
-        .I5(\waveRefAddress[5][11]_i_36_n_0 ),
-        .O(\waveRefAddress[5][11]_i_19_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[5][11]_i_20 
-       (.I0(\waveRefAddress_reg[5][11]_i_10_n_7 ),
-        .I1(\waveRefAddress_reg[5][11]_i_11_n_4 ),
-        .I2(\waveRefAddress_reg[5][11]_i_11_n_5 ),
-        .I3(\waveRefAddress_reg[5][11]_i_4_n_5 ),
-        .I4(\waveRefAddress_reg[5][11]_i_10_n_5 ),
-        .I5(\waveRefAddress_reg[5][11]_i_11_n_6 ),
-        .O(\waveRefAddress[5][11]_i_20_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_21 
-       (.I0(\MemoryAddress_reg_n_0_[8] ),
-        .O(\waveRefAddress[5][11]_i_21_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_22 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .O(\waveRefAddress[5][11]_i_22_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_23 
-       (.I0(\MemoryAddress_reg_n_0_[3] ),
-        .O(\waveRefAddress[5][11]_i_23_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_24 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .O(\waveRefAddress[5][11]_i_24_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_27 
-       (.I0(\MemoryAddress_reg_n_0_[16] ),
-        .O(\waveRefAddress[5][11]_i_27_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_28 
-       (.I0(\MemoryAddress_reg_n_0_[15] ),
-        .O(\waveRefAddress[5][11]_i_28_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_29 
-       (.I0(\MemoryAddress_reg_n_0_[14] ),
-        .O(\waveRefAddress[5][11]_i_29_n_0 ));
-  LUT6 #(
-    .INIT(64'h7F7F7F7FFFFF7FFF)) 
+    .INIT(64'h1555155515555555)) 
     \waveRefAddress[5][11]_i_3 
-       (.I0(\waveRefAddress_reg[5][11]_i_10_n_5 ),
-        .I1(\waveRefAddress_reg[5][11]_i_10_n_6 ),
-        .I2(\waveRefAddress_reg[5][11]_i_10_n_4 ),
-        .I3(\waveRefAddress_reg[5][11]_i_11_n_6 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveRefAddress[5][11]_i_12_n_0 ),
+       (.I0(\waveRefAddress[1][11]_i_5_n_0 ),
+        .I1(\MemoryAddress_reg_n_0_[13] ),
+        .I2(\MemoryAddress_reg_n_0_[12] ),
+        .I3(\MemoryAddress_reg_n_0_[11] ),
+        .I4(\MemoryAddress_reg_n_0_[10] ),
+        .I5(\waveRefAddress[5][11]_i_7_n_0 ),
         .O(\waveRefAddress[5][11]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_30 
-       (.I0(\MemoryAddress_reg_n_0_[24] ),
-        .O(\waveRefAddress[5][11]_i_30_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_31 
-       (.I0(\MemoryAddress_reg_n_0_[23] ),
-        .O(\waveRefAddress[5][11]_i_31_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_32 
-       (.I0(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveRefAddress[5][11]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_33 
-       (.I0(\MemoryAddress_reg_n_0_[21] ),
-        .O(\waveRefAddress[5][11]_i_33_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[5][11]_i_35 
-       (.I0(\waveRefAddress_reg[5][11]_i_18_n_6 ),
-        .I1(\waveRefAddress_reg[5][11]_i_34_n_7 ),
-        .I2(\waveRefAddress_reg[5][11]_i_25_n_6 ),
-        .I3(\waveRefAddress_reg[5][11]_i_34_n_6 ),
-        .O(\waveRefAddress[5][11]_i_35_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[5][11]_i_36 
-       (.I0(\waveRefAddress_reg[5][11]_i_18_n_7 ),
-        .I1(\waveRefAddress_reg[5][11]_i_18_n_5 ),
-        .I2(\waveRefAddress_reg[5][11]_i_25_n_5 ),
-        .I3(\waveRefAddress_reg[5][11]_i_26_n_5 ),
-        .O(\waveRefAddress[5][11]_i_36_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_37 
-       (.I0(\MemoryAddress_reg_n_0_[20] ),
-        .O(\waveRefAddress[5][11]_i_37_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_38 
-       (.I0(\MemoryAddress_reg_n_0_[19] ),
-        .O(\waveRefAddress[5][11]_i_38_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_39 
-       (.I0(\MemoryAddress_reg_n_0_[18] ),
-        .O(\waveRefAddress[5][11]_i_39_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_40 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .O(\waveRefAddress[5][11]_i_40_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_41 
-       (.I0(\MemoryAddress_reg_n_0_[31] ),
-        .O(\waveRefAddress[5][11]_i_41_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_42 
-       (.I0(\MemoryAddress_reg_n_0_[30] ),
-        .O(\waveRefAddress[5][11]_i_42_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_43 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .O(\waveRefAddress[5][11]_i_43_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_44 
-       (.I0(\MemoryAddress_reg_n_0_[28] ),
-        .O(\waveRefAddress[5][11]_i_44_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_45 
-       (.I0(\MemoryAddress_reg_n_0_[27] ),
-        .O(\waveRefAddress[5][11]_i_45_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_46 
-       (.I0(\MemoryAddress_reg_n_0_[26] ),
-        .O(\waveRefAddress[5][11]_i_46_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_47 
-       (.I0(\MemoryAddress_reg_n_0_[25] ),
-        .O(\waveRefAddress[5][11]_i_47_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[5][11]_i_5 
-       (.I0(\waveRefAddress[5][11]_i_16_n_0 ),
-        .I1(\waveRefAddress_reg[5][11]_i_17_n_7 ),
-        .I2(\waveRefAddress_reg[5][11]_i_17_n_5 ),
-        .I3(\waveRefAddress_reg[5][11]_i_17_n_4 ),
-        .I4(\waveRefAddress_reg[5][11]_i_18_n_4 ),
-        .I5(\waveRefAddress[5][11]_i_19_n_0 ),
-        .O(\waveRefAddress[5][11]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000010000)) 
-    \waveRefAddress[5][11]_i_6 
-       (.I0(\waveRefAddress_reg[5][11]_i_4_n_7 ),
-        .I1(\waveRefAddress_reg[5][11]_i_4_n_6 ),
-        .I2(\waveRefAddress_reg[5][11]_i_10_n_6 ),
-        .I3(\waveRefAddress_reg[5][11]_i_10_n_4 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveRefAddress[5][11]_i_20_n_0 ),
-        .O(\waveRefAddress[5][11]_i_6_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_7 
+    \waveRefAddress[5][11]_i_4 
        (.I0(\MemoryAddress_reg_n_0_[11] ),
-        .O(\waveRefAddress[5][11]_i_7_n_0 ));
+        .O(\waveRefAddress[5][11]_i_4_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_8 
+    \waveRefAddress[5][11]_i_5 
        (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .O(\waveRefAddress[5][11]_i_8_n_0 ));
+        .O(\waveRefAddress[5][11]_i_5_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveRefAddress[5][11]_i_9 
+    \waveRefAddress[5][11]_i_6 
        (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .O(\waveRefAddress[5][11]_i_9_n_0 ));
+        .O(\waveRefAddress[5][11]_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFE0000000000)) 
+    \waveRefAddress[5][11]_i_7 
+       (.I0(\MemoryAddress_reg_n_0_[6] ),
+        .I1(\MemoryAddress_reg_n_0_[5] ),
+        .I2(\waveRefAddress[5][11]_i_8_n_0 ),
+        .I3(\MemoryAddress_reg_n_0_[7] ),
+        .I4(\MemoryAddress_reg_n_0_[8] ),
+        .I5(\MemoryAddress_reg_n_0_[9] ),
+        .O(\waveRefAddress[5][11]_i_7_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  LUT5 #(
+    .INIT(32'hFE000000)) 
+    \waveRefAddress[5][11]_i_8 
+       (.I0(\MemoryAddress_reg_n_0_[0] ),
+        .I1(\MemoryAddress_reg_n_0_[1] ),
+        .I2(\MemoryAddress_reg_n_0_[2] ),
+        .I3(\MemoryAddress_reg_n_0_[3] ),
+        .I4(\MemoryAddress_reg_n_0_[4] ),
+        .O(\waveRefAddress[5][11]_i_8_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveRefAddress[5][4]_i_2 
@@ -38393,217 +36932,47 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     \waveRefAddress[5][8]_i_3 
        (.I0(\MemoryAddress_reg_n_0_[5] ),
         .O(\waveRefAddress[5][8]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFE00)) 
-    \waveRefAddress[6][11]_i_1 
-       (.I0(\waveRefAddress_reg[6][11]_i_3_n_4 ),
-        .I1(\waveRefAddress_reg[6][11]_i_4_n_7 ),
-        .I2(\waveRefAddress[6][11]_i_5_n_0 ),
-        .I3(\waveRefAddress_reg[6][11]_i_4_n_6 ),
-        .I4(\waveRefAddress[6][11]_i_6_n_0 ),
-        .I5(\waveRefAddress[6][11]_i_7_n_0 ),
-        .O(\waveRefAddress[6][11]_i_1_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_10 
-       (.I0(\MemoryAddress_reg_n_0_[8] ),
-        .O(\waveRefAddress[6][11]_i_10_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_11 
-       (.I0(\MemoryAddress_reg_n_0_[6] ),
-        .O(\waveRefAddress[6][11]_i_11_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_12 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .O(\waveRefAddress[6][11]_i_12_n_0 ));
   LUT3 #(
     .INIT(8'hFE)) 
-    \waveRefAddress[6][11]_i_13 
-       (.I0(\waveRefAddress_reg[6][11]_i_9_n_6 ),
-        .I1(\waveRefAddress_reg[6][11]_i_9_n_5 ),
-        .I2(\waveRefAddress_reg[6][11]_i_9_n_4 ),
-        .O(\waveRefAddress[6][11]_i_13_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[6][11]_i_14 
-       (.I0(\waveRefAddress_reg[6][11]_i_16_n_4 ),
-        .I1(\waveRefAddress_reg[6][11]_i_15_n_5 ),
-        .I2(\waveRefAddress_reg[6][11]_i_15_n_4 ),
-        .I3(\waveRefAddress_reg[6][11]_i_22_n_5 ),
-        .O(\waveRefAddress[6][11]_i_14_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[6][11]_i_18 
-       (.I0(\waveRefAddress_reg[6][11]_i_22_n_4 ),
-        .I1(\waveRefAddress_reg[6][11]_i_16_n_5 ),
-        .I2(\waveRefAddress_reg[6][11]_i_17_n_6 ),
-        .I3(\waveRefAddress_reg[6][11]_i_15_n_7 ),
-        .I4(\waveRefAddress[6][11]_i_35_n_0 ),
-        .I5(\waveRefAddress[6][11]_i_36_n_0 ),
-        .O(\waveRefAddress[6][11]_i_18_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveRefAddress[6][11]_i_19 
-       (.I0(\waveRefAddress_reg[6][11]_i_9_n_4 ),
-        .I1(\waveRefAddress_reg[6][11]_i_9_n_5 ),
-        .I2(\waveRefAddress_reg[6][11]_i_9_n_6 ),
-        .I3(\waveRefAddress_reg[6][11]_i_3_n_5 ),
-        .I4(\waveRefAddress_reg[6][11]_i_3_n_6 ),
-        .I5(\waveRefAddress_reg[6][11]_i_3_n_7 ),
-        .O(\waveRefAddress[6][11]_i_19_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_20 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .O(\waveRefAddress[6][11]_i_20_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_21 
-       (.I0(\MemoryAddress_reg_n_0_[3] ),
-        .O(\waveRefAddress[6][11]_i_21_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_23 
-       (.I0(\MemoryAddress_reg_n_0_[21] ),
-        .O(\waveRefAddress[6][11]_i_23_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_24 
-       (.I0(\MemoryAddress_reg_n_0_[20] ),
-        .O(\waveRefAddress[6][11]_i_24_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_25 
-       (.I0(\MemoryAddress_reg_n_0_[19] ),
-        .O(\waveRefAddress[6][11]_i_25_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_26 
-       (.I0(\MemoryAddress_reg_n_0_[18] ),
-        .O(\waveRefAddress[6][11]_i_26_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_27 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .O(\waveRefAddress[6][11]_i_27_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_28 
-       (.I0(\MemoryAddress_reg_n_0_[16] ),
-        .O(\waveRefAddress[6][11]_i_28_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_29 
-       (.I0(\MemoryAddress_reg_n_0_[15] ),
-        .O(\waveRefAddress[6][11]_i_29_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_30 
+    \waveRefAddress[6][11]_i_1 
+       (.I0(\waveRefAddress[6][11]_i_3_n_0 ),
+        .I1(\waveRefAddress[5][11]_i_3_n_0 ),
+        .I2(\waveRefAddress[2][11]_i_3_n_0 ),
+        .O(\waveRefAddress[6][11]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'hAAA8AAAA)) 
+    \waveRefAddress[6][11]_i_3 
        (.I0(\MemoryAddress_reg_n_0_[14] ),
-        .O(\waveRefAddress[6][11]_i_30_n_0 ));
+        .I1(\MemoryAddress_reg_n_0_[13] ),
+        .I2(\MemoryAddress_reg_n_0_[11] ),
+        .I3(\MemoryAddress_reg_n_0_[12] ),
+        .I4(\waveRefAddress[6][11]_i_5_n_0 ),
+        .O(\waveRefAddress[6][11]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_31 
-       (.I0(\MemoryAddress_reg_n_0_[25] ),
-        .O(\waveRefAddress[6][11]_i_31_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_32 
-       (.I0(\MemoryAddress_reg_n_0_[24] ),
-        .O(\waveRefAddress[6][11]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_33 
-       (.I0(\MemoryAddress_reg_n_0_[23] ),
-        .O(\waveRefAddress[6][11]_i_33_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_34 
-       (.I0(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveRefAddress[6][11]_i_34_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[6][11]_i_35 
-       (.I0(\waveRefAddress_reg[6][11]_i_22_n_7 ),
-        .I1(\waveRefAddress_reg[6][11]_i_41_n_6 ),
-        .I2(\waveRefAddress_reg[6][11]_i_4_n_4 ),
-        .I3(\waveRefAddress_reg[6][11]_i_17_n_4 ),
-        .O(\waveRefAddress[6][11]_i_35_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveRefAddress[6][11]_i_36 
-       (.I0(\waveRefAddress_reg[6][11]_i_17_n_5 ),
-        .I1(\waveRefAddress_reg[6][11]_i_22_n_6 ),
-        .I2(\waveRefAddress_reg[6][11]_i_16_n_6 ),
-        .I3(\waveRefAddress_reg[6][11]_i_41_n_7 ),
-        .O(\waveRefAddress[6][11]_i_36_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_37 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .O(\waveRefAddress[6][11]_i_37_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_38 
-       (.I0(\MemoryAddress_reg_n_0_[28] ),
-        .O(\waveRefAddress[6][11]_i_38_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_39 
-       (.I0(\MemoryAddress_reg_n_0_[27] ),
-        .O(\waveRefAddress[6][11]_i_39_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_40 
-       (.I0(\MemoryAddress_reg_n_0_[26] ),
-        .O(\waveRefAddress[6][11]_i_40_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_42 
-       (.I0(\MemoryAddress_reg_n_0_[31] ),
-        .O(\waveRefAddress[6][11]_i_42_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_43 
-       (.I0(\MemoryAddress_reg_n_0_[30] ),
-        .O(\waveRefAddress[6][11]_i_43_n_0 ));
+    \waveRefAddress[6][11]_i_4 
+       (.I0(\MemoryAddress_reg_n_0_[10] ),
+        .O(\waveRefAddress[6][11]_i_4_n_0 ));
   LUT6 #(
-    .INIT(64'hF200000000000000)) 
+    .INIT(64'h01000101FFFFFFFF)) 
     \waveRefAddress[6][11]_i_5 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .I1(\MemoryAddress[31]_i_4_n_0 ),
-        .I2(\waveRefAddress[6][11]_i_13_n_0 ),
-        .I3(\waveRefAddress_reg[6][11]_i_3_n_6 ),
-        .I4(\waveRefAddress_reg[6][11]_i_3_n_7 ),
-        .I5(\waveRefAddress_reg[6][11]_i_3_n_5 ),
+       (.I0(\MemoryAddress_reg_n_0_[9] ),
+        .I1(\MemoryAddress_reg_n_0_[8] ),
+        .I2(\MemoryAddress_reg_n_0_[7] ),
+        .I3(\waveRefAddress[6][11]_i_6_n_0 ),
+        .I4(\MemoryAddress_reg_n_0_[6] ),
+        .I5(\MemoryAddress_reg_n_0_[10] ),
         .O(\waveRefAddress[6][11]_i_5_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    .INIT(64'h1555155515555555)) 
     \waveRefAddress[6][11]_i_6 
-       (.I0(\waveRefAddress[6][11]_i_14_n_0 ),
-        .I1(\waveRefAddress_reg[6][11]_i_4_n_5 ),
-        .I2(\waveRefAddress_reg[6][11]_i_15_n_6 ),
-        .I3(\waveRefAddress_reg[6][11]_i_16_n_7 ),
-        .I4(\waveRefAddress_reg[6][11]_i_17_n_7 ),
-        .I5(\waveRefAddress[6][11]_i_18_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[5] ),
+        .I1(\MemoryAddress_reg_n_0_[4] ),
+        .I2(\MemoryAddress_reg_n_0_[3] ),
+        .I3(\MemoryAddress_reg_n_0_[2] ),
+        .I4(\MemoryAddress_reg_n_0_[1] ),
+        .I5(\MemoryAddress_reg_n_0_[0] ),
         .O(\waveRefAddress[6][11]_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000010)) 
-    \waveRefAddress[6][11]_i_7 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .I1(\waveRefAddress_reg[6][11]_i_4_n_6 ),
-        .I2(\MemoryAddress[31]_i_4_n_0 ),
-        .I3(\waveRefAddress_reg[6][11]_i_4_n_7 ),
-        .I4(\waveRefAddress_reg[6][11]_i_3_n_4 ),
-        .I5(\waveRefAddress[6][11]_i_19_n_0 ),
-        .O(\waveRefAddress[6][11]_i_7_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveRefAddress[6][11]_i_8 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .O(\waveRefAddress[6][11]_i_8_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveRefAddress[6][5]_i_2 
@@ -38640,69 +37009,13 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .D(p_1_in[11]),
         .Q(\waveRefAddress[1] [11]),
         .S(\waveRefAddress[1][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[1][11]_i_15 
-       (.CI(\waveRefAddress_reg[1][11]_i_4_n_0 ),
-        .CO({\waveRefAddress_reg[1][11]_i_15_n_0 ,\waveRefAddress_reg[1][11]_i_15_n_1 ,\waveRefAddress_reg[1][11]_i_15_n_2 ,\waveRefAddress_reg[1][11]_i_15_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[16] ,\MemoryAddress_reg_n_0_[15] ,\MemoryAddress_reg_n_0_[14] ,\MemoryAddress_reg_n_0_[13] }),
-        .O({\waveRefAddress_reg[1][11]_i_15_n_4 ,\waveRefAddress_reg[1][11]_i_15_n_5 ,\waveRefAddress_reg[1][11]_i_15_n_6 ,\waveRefAddress_reg[1][11]_i_15_n_7 }),
-        .S({\waveRefAddress[1][11]_i_22_n_0 ,\waveRefAddress[1][11]_i_23_n_0 ,\waveRefAddress[1][11]_i_24_n_0 ,\waveRefAddress[1][11]_i_25_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[1][11]_i_16 
-       (.CI(\waveRefAddress_reg[1][11]_i_20_n_0 ),
-        .CO({\waveRefAddress_reg[1][11]_i_16_n_0 ,\waveRefAddress_reg[1][11]_i_16_n_1 ,\waveRefAddress_reg[1][11]_i_16_n_2 ,\waveRefAddress_reg[1][11]_i_16_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[24] ,\MemoryAddress_reg_n_0_[23] ,\MemoryAddress_reg_n_0_[22] ,\MemoryAddress_reg_n_0_[21] }),
-        .O({\waveRefAddress_reg[1][11]_i_16_n_4 ,\waveRefAddress_reg[1][11]_i_16_n_5 ,\waveRefAddress_reg[1][11]_i_16_n_6 ,\waveRefAddress_reg[1][11]_i_16_n_7 }),
-        .S({\waveRefAddress[1][11]_i_26_n_0 ,\waveRefAddress[1][11]_i_27_n_0 ,\waveRefAddress[1][11]_i_28_n_0 ,\waveRefAddress[1][11]_i_29_n_0 }));
   CARRY4 \waveRefAddress_reg[1][11]_i_2 
        (.CI(\waveRefAddress_reg[1][8]_i_1_n_0 ),
         .CO({\NLW_waveRefAddress_reg[1][11]_i_2_CO_UNCONNECTED [3:2],\waveRefAddress_reg[1][11]_i_2_n_2 ,\waveRefAddress_reg[1][11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,\MemoryAddress_reg_n_0_[10] ,\MemoryAddress_reg_n_0_[9] }),
         .O({\NLW_waveRefAddress_reg[1][11]_i_2_O_UNCONNECTED [3],p_1_in[11:9]}),
-        .S({1'b0,\MemoryAddress_reg_n_0_[11] ,\waveRefAddress[1][11]_i_7_n_0 ,\waveRefAddress[1][11]_i_8_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[1][11]_i_20 
-       (.CI(\waveRefAddress_reg[1][11]_i_15_n_0 ),
-        .CO({\waveRefAddress_reg[1][11]_i_20_n_0 ,\waveRefAddress_reg[1][11]_i_20_n_1 ,\waveRefAddress_reg[1][11]_i_20_n_2 ,\waveRefAddress_reg[1][11]_i_20_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[20] ,\MemoryAddress_reg_n_0_[19] ,\MemoryAddress_reg_n_0_[18] ,\MemoryAddress_reg_n_0_[17] }),
-        .O({\waveRefAddress_reg[1][11]_i_20_n_4 ,\waveRefAddress_reg[1][11]_i_20_n_5 ,\waveRefAddress_reg[1][11]_i_20_n_6 ,\waveRefAddress_reg[1][11]_i_20_n_7 }),
-        .S({\waveRefAddress[1][11]_i_33_n_0 ,\waveRefAddress[1][11]_i_34_n_0 ,\waveRefAddress[1][11]_i_35_n_0 ,\waveRefAddress[1][11]_i_36_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[1][11]_i_21 
-       (.CI(\waveRefAddress_reg[1][11]_i_30_n_0 ),
-        .CO({\NLW_waveRefAddress_reg[1][11]_i_21_CO_UNCONNECTED [3:2],\waveRefAddress_reg[1][11]_i_21_n_2 ,\waveRefAddress_reg[1][11]_i_21_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\MemoryAddress_reg_n_0_[30] ,\MemoryAddress_reg_n_0_[29] }),
-        .O({\NLW_waveRefAddress_reg[1][11]_i_21_O_UNCONNECTED [3],\waveRefAddress_reg[1][11]_i_21_n_5 ,\waveRefAddress_reg[1][11]_i_21_n_6 ,\waveRefAddress_reg[1][11]_i_21_n_7 }),
-        .S({1'b0,\waveRefAddress[1][11]_i_37_n_0 ,\waveRefAddress[1][11]_i_38_n_0 ,\waveRefAddress[1][11]_i_39_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[1][11]_i_30 
-       (.CI(\waveRefAddress_reg[1][11]_i_16_n_0 ),
-        .CO({\waveRefAddress_reg[1][11]_i_30_n_0 ,\waveRefAddress_reg[1][11]_i_30_n_1 ,\waveRefAddress_reg[1][11]_i_30_n_2 ,\waveRefAddress_reg[1][11]_i_30_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[28] ,\MemoryAddress_reg_n_0_[27] ,\MemoryAddress_reg_n_0_[26] ,\MemoryAddress_reg_n_0_[25] }),
-        .O({\waveRefAddress_reg[1][11]_i_30_n_4 ,\waveRefAddress_reg[1][11]_i_30_n_5 ,\waveRefAddress_reg[1][11]_i_30_n_6 ,\waveRefAddress_reg[1][11]_i_30_n_7 }),
-        .S({\waveRefAddress[1][11]_i_40_n_0 ,\waveRefAddress[1][11]_i_41_n_0 ,\waveRefAddress[1][11]_i_42_n_0 ,\waveRefAddress[1][11]_i_43_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[1][11]_i_4 
-       (.CI(\waveRefAddress_reg[1][11]_i_9_n_0 ),
-        .CO({\waveRefAddress_reg[1][11]_i_4_n_0 ,\waveRefAddress_reg[1][11]_i_4_n_1 ,\waveRefAddress_reg[1][11]_i_4_n_2 ,\waveRefAddress_reg[1][11]_i_4_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[12] ,1'b0,\MemoryAddress_reg_n_0_[10] ,\MemoryAddress_reg_n_0_[9] }),
-        .O({\waveRefAddress_reg[1][11]_i_4_n_4 ,\waveRefAddress_reg[1][11]_i_4_n_5 ,\waveRefAddress_reg[1][11]_i_4_n_6 ,\waveRefAddress_reg[1][11]_i_4_n_7 }),
-        .S({\waveRefAddress[1][11]_i_11_n_0 ,\MemoryAddress_reg_n_0_[11] ,\waveRefAddress[1][11]_i_12_n_0 ,\waveRefAddress[1][11]_i_13_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[1][11]_i_9 
-       (.CI(\waveXAddress_reg[5][1]_i_1_n_0 ),
-        .CO({\waveRefAddress_reg[1][11]_i_9_n_0 ,\waveRefAddress_reg[1][11]_i_9_n_1 ,\waveRefAddress_reg[1][11]_i_9_n_2 ,\waveRefAddress_reg[1][11]_i_9_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[5] }),
-        .O({\waveRefAddress_reg[1][11]_i_9_n_4 ,\waveRefAddress_reg[1][11]_i_9_n_5 ,\waveRefAddress_reg[1][11]_i_9_n_6 ,\waveRefAddress_reg[1][11]_i_9_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[8] ,\MemoryAddress_reg_n_0_[7] ,\MemoryAddress_reg_n_0_[6] ,\waveRefAddress[1][11]_i_19_n_0 }));
+        .S({1'b0,\MemoryAddress_reg_n_0_[11] ,\waveRefAddress[1][11]_i_6_n_0 ,\waveRefAddress[1][11]_i_7_n_0 }));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveRefAddress_reg[1][2] 
@@ -38732,7 +37045,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CO({\waveRefAddress_reg[1][4]_i_1_n_0 ,\waveRefAddress_reg[1][4]_i_1_n_1 ,\waveRefAddress_reg[1][4]_i_1_n_2 ,\waveRefAddress_reg[1][4]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({\MemoryAddress_reg_n_0_[4] ,\MemoryAddress_reg_n_0_[3] ,\MemoryAddress_reg_n_0_[2] ,1'b0}),
-        .O({p_1_in[4:2],\NLW_waveRefAddress_reg[1][4]_i_1_O_UNCONNECTED [0]}),
+        .O({p_1_in[4:2],\waveRefAddress_reg[1][4]_i_1_n_7 }),
         .S({\waveRefAddress[1][4]_i_2_n_0 ,\waveRefAddress[1][4]_i_3_n_0 ,\waveRefAddress[1][4]_i_4_n_0 ,\MemoryAddress_reg_n_0_[1] }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
@@ -38805,69 +37118,13 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .D(\waveRefAddress_reg[2][11]_i_2_n_6 ),
         .Q(\waveRefAddress[2] [11]),
         .S(\waveRefAddress[2][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[2][11]_i_16 
-       (.CI(\waveRefAddress_reg[2][11]_i_4_n_0 ),
-        .CO({\waveRefAddress_reg[2][11]_i_16_n_0 ,\waveRefAddress_reg[2][11]_i_16_n_1 ,\waveRefAddress_reg[2][11]_i_16_n_2 ,\waveRefAddress_reg[2][11]_i_16_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[17] ,\MemoryAddress_reg_n_0_[16] ,\MemoryAddress_reg_n_0_[15] ,\MemoryAddress_reg_n_0_[14] }),
-        .O({\waveRefAddress_reg[2][11]_i_16_n_4 ,\waveRefAddress_reg[2][11]_i_16_n_5 ,\waveRefAddress_reg[2][11]_i_16_n_6 ,\waveRefAddress_reg[2][11]_i_16_n_7 }),
-        .S({\waveRefAddress[2][11]_i_21_n_0 ,\waveRefAddress[2][11]_i_22_n_0 ,\waveRefAddress[2][11]_i_23_n_0 ,\waveRefAddress[2][11]_i_24_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[2][11]_i_17 
-       (.CI(\waveRefAddress_reg[2][11]_i_25_n_0 ),
-        .CO({\waveRefAddress_reg[2][11]_i_17_n_0 ,\waveRefAddress_reg[2][11]_i_17_n_1 ,\waveRefAddress_reg[2][11]_i_17_n_2 ,\waveRefAddress_reg[2][11]_i_17_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[25] ,\MemoryAddress_reg_n_0_[24] ,\MemoryAddress_reg_n_0_[23] ,\MemoryAddress_reg_n_0_[22] }),
-        .O({\waveRefAddress_reg[2][11]_i_17_n_4 ,\waveRefAddress_reg[2][11]_i_17_n_5 ,\waveRefAddress_reg[2][11]_i_17_n_6 ,\waveRefAddress_reg[2][11]_i_17_n_7 }),
-        .S({\waveRefAddress[2][11]_i_26_n_0 ,\waveRefAddress[2][11]_i_27_n_0 ,\waveRefAddress[2][11]_i_28_n_0 ,\waveRefAddress[2][11]_i_29_n_0 }));
   CARRY4 \waveRefAddress_reg[2][11]_i_2 
        (.CI(\waveRefAddress_reg[2][9]_i_1_n_0 ),
         .CO({\NLW_waveRefAddress_reg[2][11]_i_2_CO_UNCONNECTED [3:1],\waveRefAddress_reg[2][11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[10] }),
         .O({\NLW_waveRefAddress_reg[2][11]_i_2_O_UNCONNECTED [3:2],\waveRefAddress_reg[2][11]_i_2_n_6 ,\waveRefAddress_reg[2][11]_i_2_n_7 }),
-        .S({1'b0,1'b0,\waveRefAddress[2][11]_i_8_n_0 ,\waveRefAddress[2][11]_i_9_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[2][11]_i_20 
-       (.CI(\waveRefAddress_reg[2][11]_i_17_n_0 ),
-        .CO({\waveRefAddress_reg[2][11]_i_20_n_0 ,\waveRefAddress_reg[2][11]_i_20_n_1 ,\waveRefAddress_reg[2][11]_i_20_n_2 ,\waveRefAddress_reg[2][11]_i_20_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[29] ,\MemoryAddress_reg_n_0_[28] ,\MemoryAddress_reg_n_0_[27] ,\MemoryAddress_reg_n_0_[26] }),
-        .O({\waveRefAddress_reg[2][11]_i_20_n_4 ,\waveRefAddress_reg[2][11]_i_20_n_5 ,\waveRefAddress_reg[2][11]_i_20_n_6 ,\waveRefAddress_reg[2][11]_i_20_n_7 }),
-        .S({\waveRefAddress[2][11]_i_33_n_0 ,\waveRefAddress[2][11]_i_34_n_0 ,\waveRefAddress[2][11]_i_35_n_0 ,\waveRefAddress[2][11]_i_36_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[2][11]_i_25 
-       (.CI(\waveRefAddress_reg[2][11]_i_16_n_0 ),
-        .CO({\waveRefAddress_reg[2][11]_i_25_n_0 ,\waveRefAddress_reg[2][11]_i_25_n_1 ,\waveRefAddress_reg[2][11]_i_25_n_2 ,\waveRefAddress_reg[2][11]_i_25_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[21] ,\MemoryAddress_reg_n_0_[20] ,\MemoryAddress_reg_n_0_[19] ,\MemoryAddress_reg_n_0_[18] }),
-        .O({\waveRefAddress_reg[2][11]_i_25_n_4 ,\waveRefAddress_reg[2][11]_i_25_n_5 ,\waveRefAddress_reg[2][11]_i_25_n_6 ,\waveRefAddress_reg[2][11]_i_25_n_7 }),
-        .S({\waveRefAddress[2][11]_i_37_n_0 ,\waveRefAddress[2][11]_i_38_n_0 ,\waveRefAddress[2][11]_i_39_n_0 ,\waveRefAddress[2][11]_i_40_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[2][11]_i_3 
-       (.CI(\waveXAddress_reg[6][2]_i_1_n_0 ),
-        .CO({\waveRefAddress_reg[2][11]_i_3_n_0 ,\waveRefAddress_reg[2][11]_i_3_n_1 ,\waveRefAddress_reg[2][11]_i_3_n_2 ,\waveRefAddress_reg[2][11]_i_3_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[6] }),
-        .O({\waveRefAddress_reg[2][11]_i_3_n_4 ,\waveRefAddress_reg[2][11]_i_3_n_5 ,\waveRefAddress_reg[2][11]_i_3_n_6 ,\waveRefAddress_reg[2][11]_i_3_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[9] ,\MemoryAddress_reg_n_0_[8] ,\MemoryAddress_reg_n_0_[7] ,\waveRefAddress[2][11]_i_10_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[2][11]_i_30 
-       (.CI(\waveRefAddress_reg[2][11]_i_20_n_0 ),
-        .CO({\NLW_waveRefAddress_reg[2][11]_i_30_CO_UNCONNECTED [3:1],\waveRefAddress_reg[2][11]_i_30_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[30] }),
-        .O({\NLW_waveRefAddress_reg[2][11]_i_30_O_UNCONNECTED [3:2],\waveRefAddress_reg[2][11]_i_30_n_6 ,\waveRefAddress_reg[2][11]_i_30_n_7 }),
-        .S({1'b0,1'b0,\waveRefAddress[2][11]_i_41_n_0 ,\waveRefAddress[2][11]_i_42_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[2][11]_i_4 
-       (.CI(\waveRefAddress_reg[2][11]_i_3_n_0 ),
-        .CO({\waveRefAddress_reg[2][11]_i_4_n_0 ,\waveRefAddress_reg[2][11]_i_4_n_1 ,\waveRefAddress_reg[2][11]_i_4_n_2 ,\waveRefAddress_reg[2][11]_i_4_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[13] ,1'b0,\MemoryAddress_reg_n_0_[11] ,\MemoryAddress_reg_n_0_[10] }),
-        .O({\waveRefAddress_reg[2][11]_i_4_n_4 ,\waveRefAddress_reg[2][11]_i_4_n_5 ,\waveRefAddress_reg[2][11]_i_4_n_6 ,\waveRefAddress_reg[2][11]_i_4_n_7 }),
-        .S({\waveRefAddress[2][11]_i_11_n_0 ,\MemoryAddress_reg_n_0_[12] ,\waveRefAddress[2][11]_i_12_n_0 ,\waveRefAddress[2][11]_i_13_n_0 }));
+        .S({1'b0,1'b0,\waveRefAddress[2][11]_i_5_n_0 ,\waveRefAddress[2][11]_i_6_n_0 }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveRefAddress_reg[2][1] 
@@ -38913,7 +37170,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CO({\waveRefAddress_reg[2][5]_i_1_n_0 ,\waveRefAddress_reg[2][5]_i_1_n_1 ,\waveRefAddress_reg[2][5]_i_1_n_2 ,\waveRefAddress_reg[2][5]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({\MemoryAddress_reg_n_0_[5] ,\MemoryAddress_reg_n_0_[4] ,\MemoryAddress_reg_n_0_[3] ,1'b0}),
-        .O({\waveRefAddress_reg[2][5]_i_1_n_4 ,\waveRefAddress_reg[2][5]_i_1_n_5 ,\waveRefAddress_reg[2][5]_i_1_n_6 ,\NLW_waveRefAddress_reg[2][5]_i_1_O_UNCONNECTED [0]}),
+        .O({\waveRefAddress_reg[2][5]_i_1_n_4 ,\waveRefAddress_reg[2][5]_i_1_n_5 ,\waveRefAddress_reg[2][5]_i_1_n_6 ,\waveRefAddress_reg[2][5]_i_1_n_7 }),
         .S({\waveRefAddress[2][5]_i_2_n_0 ,\waveRefAddress[2][5]_i_3_n_0 ,\waveRefAddress[2][5]_i_4_n_0 ,\MemoryAddress_reg_n_0_[2] }));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
@@ -38970,77 +37227,13 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .D(\waveRefAddress_reg[3][11]_i_2_n_5 ),
         .Q(\waveRefAddress[3] [11]),
         .S(\waveRefAddress[3][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_13 
-       (.CI(\waveRefAddress_reg[3][11]_i_4_n_0 ),
-        .CO({\waveRefAddress_reg[3][11]_i_13_n_0 ,\waveRefAddress_reg[3][11]_i_13_n_1 ,\waveRefAddress_reg[3][11]_i_13_n_2 ,\waveRefAddress_reg[3][11]_i_13_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[16] ,\MemoryAddress_reg_n_0_[15] ,\MemoryAddress_reg_n_0_[14] ,\MemoryAddress_reg_n_0_[13] }),
-        .O({\waveRefAddress_reg[3][11]_i_13_n_4 ,\waveRefAddress_reg[3][11]_i_13_n_5 ,\waveRefAddress_reg[3][11]_i_13_n_6 ,\waveRefAddress_reg[3][11]_i_13_n_7 }),
-        .S({\waveRefAddress[3][11]_i_24_n_0 ,\waveRefAddress[3][11]_i_25_n_0 ,\waveRefAddress[3][11]_i_26_n_0 ,\waveRefAddress[3][11]_i_27_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_14 
-       (.CI(\waveRefAddress_reg[3][11]_i_13_n_0 ),
-        .CO({\waveRefAddress_reg[3][11]_i_14_n_0 ,\waveRefAddress_reg[3][11]_i_14_n_1 ,\waveRefAddress_reg[3][11]_i_14_n_2 ,\waveRefAddress_reg[3][11]_i_14_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[20] ,\MemoryAddress_reg_n_0_[19] ,\MemoryAddress_reg_n_0_[18] ,\MemoryAddress_reg_n_0_[17] }),
-        .O({\waveRefAddress_reg[3][11]_i_14_n_4 ,\waveRefAddress_reg[3][11]_i_14_n_5 ,\waveRefAddress_reg[3][11]_i_14_n_6 ,\waveRefAddress_reg[3][11]_i_14_n_7 }),
-        .S({\waveRefAddress[3][11]_i_28_n_0 ,\waveRefAddress[3][11]_i_29_n_0 ,\waveRefAddress[3][11]_i_30_n_0 ,\waveRefAddress[3][11]_i_31_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_15 
-       (.CI(\waveRefAddress_reg[3][11]_i_14_n_0 ),
-        .CO({\waveRefAddress_reg[3][11]_i_15_n_0 ,\waveRefAddress_reg[3][11]_i_15_n_1 ,\waveRefAddress_reg[3][11]_i_15_n_2 ,\waveRefAddress_reg[3][11]_i_15_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[24] ,\MemoryAddress_reg_n_0_[23] ,\MemoryAddress_reg_n_0_[22] ,\MemoryAddress_reg_n_0_[21] }),
-        .O({\waveRefAddress_reg[3][11]_i_15_n_4 ,\waveRefAddress_reg[3][11]_i_15_n_5 ,\waveRefAddress_reg[3][11]_i_15_n_6 ,\waveRefAddress_reg[3][11]_i_15_n_7 }),
-        .S({\waveRefAddress[3][11]_i_32_n_0 ,\waveRefAddress[3][11]_i_33_n_0 ,\waveRefAddress[3][11]_i_34_n_0 ,\waveRefAddress[3][11]_i_35_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_16 
-       (.CI(\waveRefAddress_reg[3][11]_i_15_n_0 ),
-        .CO({\waveRefAddress_reg[3][11]_i_16_n_0 ,\waveRefAddress_reg[3][11]_i_16_n_1 ,\waveRefAddress_reg[3][11]_i_16_n_2 ,\waveRefAddress_reg[3][11]_i_16_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[28] ,\MemoryAddress_reg_n_0_[27] ,\MemoryAddress_reg_n_0_[26] ,\MemoryAddress_reg_n_0_[25] }),
-        .O({\waveRefAddress_reg[3][11]_i_16_n_4 ,\waveRefAddress_reg[3][11]_i_16_n_5 ,\waveRefAddress_reg[3][11]_i_16_n_6 ,\waveRefAddress_reg[3][11]_i_16_n_7 }),
-        .S({\waveRefAddress[3][11]_i_36_n_0 ,\waveRefAddress[3][11]_i_37_n_0 ,\waveRefAddress[3][11]_i_38_n_0 ,\waveRefAddress[3][11]_i_39_n_0 }));
   CARRY4 \waveRefAddress_reg[3][11]_i_2 
        (.CI(\waveRefAddress_reg[3][8]_i_1_n_0 ),
         .CO({\NLW_waveRefAddress_reg[3][11]_i_2_CO_UNCONNECTED [3:2],\waveRefAddress_reg[3][11]_i_2_n_2 ,\waveRefAddress_reg[3][11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[9] }),
         .O({\NLW_waveRefAddress_reg[3][11]_i_2_O_UNCONNECTED [3],\waveRefAddress_reg[3][11]_i_2_n_5 ,\waveRefAddress_reg[3][11]_i_2_n_6 ,\waveRefAddress_reg[3][11]_i_2_n_7 }),
-        .S({1'b0,\MemoryAddress_reg_n_0_[11] ,\MemoryAddress_reg_n_0_[10] ,\waveRefAddress[3][11]_i_7_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_23 
-       (.CI(\waveRefAddress_reg[3][11]_i_16_n_0 ),
-        .CO({\NLW_waveRefAddress_reg[3][11]_i_23_CO_UNCONNECTED [3:2],\waveRefAddress_reg[3][11]_i_23_n_2 ,\waveRefAddress_reg[3][11]_i_23_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\MemoryAddress_reg_n_0_[30] ,\MemoryAddress_reg_n_0_[29] }),
-        .O({\NLW_waveRefAddress_reg[3][11]_i_23_O_UNCONNECTED [3],\waveRefAddress_reg[3][11]_i_23_n_5 ,\waveRefAddress_reg[3][11]_i_23_n_6 ,\waveRefAddress_reg[3][11]_i_23_n_7 }),
-        .S({1'b0,\waveRefAddress[3][11]_i_42_n_0 ,\waveRefAddress[3][11]_i_43_n_0 ,\waveRefAddress[3][11]_i_44_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_4 
-       (.CI(\waveRefAddress_reg[3][11]_i_8_n_0 ),
-        .CO({\waveRefAddress_reg[3][11]_i_4_n_0 ,\waveRefAddress_reg[3][11]_i_4_n_1 ,\waveRefAddress_reg[3][11]_i_4_n_2 ,\waveRefAddress_reg[3][11]_i_4_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[9] }),
-        .O({\waveRefAddress_reg[3][11]_i_4_n_4 ,\waveRefAddress_reg[3][11]_i_4_n_5 ,\waveRefAddress_reg[3][11]_i_4_n_6 ,\waveRefAddress_reg[3][11]_i_4_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[12] ,\MemoryAddress_reg_n_0_[11] ,\MemoryAddress_reg_n_0_[10] ,\waveRefAddress[3][11]_i_11_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_8 
-       (.CI(\waveRefAddress_reg[3][11]_i_9_n_0 ),
-        .CO({\waveRefAddress_reg[3][11]_i_8_n_0 ,\waveRefAddress_reg[3][11]_i_8_n_1 ,\waveRefAddress_reg[3][11]_i_8_n_2 ,\waveRefAddress_reg[3][11]_i_8_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,\MemoryAddress_reg_n_0_[7] ,1'b0,\MemoryAddress_reg_n_0_[5] }),
-        .O({\waveRefAddress_reg[3][11]_i_8_n_4 ,\waveRefAddress_reg[3][11]_i_8_n_5 ,\waveRefAddress_reg[3][11]_i_8_n_6 ,\waveRefAddress_reg[3][11]_i_8_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[8] ,\waveRefAddress[3][11]_i_19_n_0 ,\MemoryAddress_reg_n_0_[6] ,\waveRefAddress[3][11]_i_20_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[3][11]_i_9 
-       (.CI(1'b0),
-        .CO({\waveRefAddress_reg[3][11]_i_9_n_0 ,\waveRefAddress_reg[3][11]_i_9_n_1 ,\waveRefAddress_reg[3][11]_i_9_n_2 ,\waveRefAddress_reg[3][11]_i_9_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[4] ,1'b0,\MemoryAddress_reg_n_0_[2] ,1'b0}),
-        .O({\waveRefAddress_reg[3][11]_i_9_n_4 ,\waveRefAddress_reg[3][11]_i_9_n_5 ,\waveRefAddress_reg[3][11]_i_9_n_6 ,\NLW_waveRefAddress_reg[3][11]_i_9_O_UNCONNECTED [0]}),
-        .S({\waveRefAddress[3][11]_i_21_n_0 ,\MemoryAddress_reg_n_0_[3] ,\waveRefAddress[3][11]_i_22_n_0 ,\MemoryAddress_reg_n_0_[1] }));
+        .S({1'b0,\MemoryAddress_reg_n_0_[11] ,\MemoryAddress_reg_n_0_[10] ,\waveRefAddress[3][11]_i_4_n_0 }));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveRefAddress_reg[3][2] 
@@ -39150,69 +37343,13 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .D(\waveRefAddress_reg[4][11]_i_2_n_7 ),
         .Q(\waveRefAddress[4] [11]),
         .S(\waveRefAddress[4][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[4][11]_i_15 
-       (.CI(\waveRefAddress_reg[4][11]_i_16_n_0 ),
-        .CO({\waveRefAddress_reg[4][11]_i_15_n_0 ,\waveRefAddress_reg[4][11]_i_15_n_1 ,\waveRefAddress_reg[4][11]_i_15_n_2 ,\waveRefAddress_reg[4][11]_i_15_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[22] ,\MemoryAddress_reg_n_0_[21] ,\MemoryAddress_reg_n_0_[20] ,\MemoryAddress_reg_n_0_[19] }),
-        .O({\waveRefAddress_reg[4][11]_i_15_n_4 ,\waveRefAddress_reg[4][11]_i_15_n_5 ,\waveRefAddress_reg[4][11]_i_15_n_6 ,\waveRefAddress_reg[4][11]_i_15_n_7 }),
-        .S({\waveRefAddress[4][11]_i_20_n_0 ,\waveRefAddress[4][11]_i_21_n_0 ,\waveRefAddress[4][11]_i_22_n_0 ,\waveRefAddress[4][11]_i_23_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[4][11]_i_16 
-       (.CI(\waveRefAddress_reg[4][11]_i_5_n_0 ),
-        .CO({\waveRefAddress_reg[4][11]_i_16_n_0 ,\waveRefAddress_reg[4][11]_i_16_n_1 ,\waveRefAddress_reg[4][11]_i_16_n_2 ,\waveRefAddress_reg[4][11]_i_16_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[18] ,\MemoryAddress_reg_n_0_[17] ,\MemoryAddress_reg_n_0_[16] ,\MemoryAddress_reg_n_0_[15] }),
-        .O({\waveRefAddress_reg[4][11]_i_16_n_4 ,\waveRefAddress_reg[4][11]_i_16_n_5 ,\waveRefAddress_reg[4][11]_i_16_n_6 ,\waveRefAddress_reg[4][11]_i_16_n_7 }),
-        .S({\waveRefAddress[4][11]_i_24_n_0 ,\waveRefAddress[4][11]_i_25_n_0 ,\waveRefAddress[4][11]_i_26_n_0 ,\waveRefAddress[4][11]_i_27_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[4][11]_i_19 
-       (.CI(\waveRefAddress_reg[4][11]_i_29_n_0 ),
-        .CO({\waveRefAddress_reg[4][11]_i_19_n_0 ,\waveRefAddress_reg[4][11]_i_19_n_1 ,\waveRefAddress_reg[4][11]_i_19_n_2 ,\waveRefAddress_reg[4][11]_i_19_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[30] ,\MemoryAddress_reg_n_0_[29] ,\MemoryAddress_reg_n_0_[28] ,\MemoryAddress_reg_n_0_[27] }),
-        .O({\waveRefAddress_reg[4][11]_i_19_n_4 ,\waveRefAddress_reg[4][11]_i_19_n_5 ,\waveRefAddress_reg[4][11]_i_19_n_6 ,\waveRefAddress_reg[4][11]_i_19_n_7 }),
-        .S({\waveRefAddress[4][11]_i_32_n_0 ,\waveRefAddress[4][11]_i_33_n_0 ,\waveRefAddress[4][11]_i_34_n_0 ,\waveRefAddress[4][11]_i_35_n_0 }));
   CARRY4 \waveRefAddress_reg[4][11]_i_2 
        (.CI(\waveRefAddress_reg[4][10]_i_1_n_0 ),
         .CO(\NLW_waveRefAddress_reg[4][11]_i_2_CO_UNCONNECTED [3:0]),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O({\NLW_waveRefAddress_reg[4][11]_i_2_O_UNCONNECTED [3:1],\waveRefAddress_reg[4][11]_i_2_n_7 }),
-        .S({1'b0,1'b0,1'b0,\waveRefAddress[4][11]_i_8_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[4][11]_i_28 
-       (.CI(\waveRefAddress_reg[4][11]_i_19_n_0 ),
-        .CO(\NLW_waveRefAddress_reg[4][11]_i_28_CO_UNCONNECTED [3:0]),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_waveRefAddress_reg[4][11]_i_28_O_UNCONNECTED [3:1],\waveRefAddress_reg[4][11]_i_28_n_7 }),
-        .S({1'b0,1'b0,1'b0,\waveRefAddress[4][11]_i_36_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[4][11]_i_29 
-       (.CI(\waveRefAddress_reg[4][11]_i_15_n_0 ),
-        .CO({\waveRefAddress_reg[4][11]_i_29_n_0 ,\waveRefAddress_reg[4][11]_i_29_n_1 ,\waveRefAddress_reg[4][11]_i_29_n_2 ,\waveRefAddress_reg[4][11]_i_29_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[26] ,\MemoryAddress_reg_n_0_[25] ,\MemoryAddress_reg_n_0_[24] ,\MemoryAddress_reg_n_0_[23] }),
-        .O({\waveRefAddress_reg[4][11]_i_29_n_4 ,\waveRefAddress_reg[4][11]_i_29_n_5 ,\waveRefAddress_reg[4][11]_i_29_n_6 ,\waveRefAddress_reg[4][11]_i_29_n_7 }),
-        .S({\waveRefAddress[4][11]_i_37_n_0 ,\waveRefAddress[4][11]_i_38_n_0 ,\waveRefAddress[4][11]_i_39_n_0 ,\waveRefAddress[4][11]_i_40_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[4][11]_i_3 
-       (.CI(\waveXAddress_reg[4][3]_i_1_n_0 ),
-        .CO({\waveRefAddress_reg[4][11]_i_3_n_0 ,\waveRefAddress_reg[4][11]_i_3_n_1 ,\waveRefAddress_reg[4][11]_i_3_n_2 ,\waveRefAddress_reg[4][11]_i_3_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[7] }),
-        .O({\waveRefAddress_reg[4][11]_i_3_n_4 ,\waveRefAddress_reg[4][11]_i_3_n_5 ,\waveRefAddress_reg[4][11]_i_3_n_6 ,\waveRefAddress_reg[4][11]_i_3_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[10] ,\MemoryAddress_reg_n_0_[9] ,\MemoryAddress_reg_n_0_[8] ,\waveRefAddress[4][11]_i_9_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[4][11]_i_5 
-       (.CI(\waveRefAddress_reg[4][11]_i_3_n_0 ),
-        .CO({\waveRefAddress_reg[4][11]_i_5_n_0 ,\waveRefAddress_reg[4][11]_i_5_n_1 ,\waveRefAddress_reg[4][11]_i_5_n_2 ,\waveRefAddress_reg[4][11]_i_5_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[14] ,1'b0,\MemoryAddress_reg_n_0_[12] ,\MemoryAddress_reg_n_0_[11] }),
-        .O({\waveRefAddress_reg[4][11]_i_5_n_4 ,\waveRefAddress_reg[4][11]_i_5_n_5 ,\waveRefAddress_reg[4][11]_i_5_n_6 ,\waveRefAddress_reg[4][11]_i_5_n_7 }),
-        .S({\waveRefAddress[4][11]_i_11_n_0 ,\MemoryAddress_reg_n_0_[13] ,\waveRefAddress[4][11]_i_12_n_0 ,\waveRefAddress[4][11]_i_13_n_0 }));
+        .S({1'b0,1'b0,1'b0,\waveRefAddress[4][11]_i_4_n_0 }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveRefAddress_reg[4][1] 
@@ -39266,7 +37403,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CO({\waveRefAddress_reg[4][6]_i_1_n_0 ,\waveRefAddress_reg[4][6]_i_1_n_1 ,\waveRefAddress_reg[4][6]_i_1_n_2 ,\waveRefAddress_reg[4][6]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({\MemoryAddress_reg_n_0_[6] ,\MemoryAddress_reg_n_0_[5] ,\MemoryAddress_reg_n_0_[4] ,1'b0}),
-        .O({\waveRefAddress_reg[4][6]_i_1_n_4 ,\waveRefAddress_reg[4][6]_i_1_n_5 ,\waveRefAddress_reg[4][6]_i_1_n_6 ,\NLW_waveRefAddress_reg[4][6]_i_1_O_UNCONNECTED [0]}),
+        .O({\waveRefAddress_reg[4][6]_i_1_n_4 ,\waveRefAddress_reg[4][6]_i_1_n_5 ,\waveRefAddress_reg[4][6]_i_1_n_6 ,\waveRefAddress_reg[4][6]_i_1_n_7 }),
         .S({\waveRefAddress[4][6]_i_2_n_0 ,\waveRefAddress[4][6]_i_3_n_0 ,\waveRefAddress[4][6]_i_4_n_0 ,\MemoryAddress_reg_n_0_[3] }));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
@@ -39308,77 +37445,13 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .D(\waveRefAddress_reg[5][11]_i_2_n_5 ),
         .Q(\waveRefAddress[5] [11]),
         .S(\waveRefAddress[5][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_10 
-       (.CI(\waveRefAddress_reg[5][11]_i_11_n_0 ),
-        .CO({\waveRefAddress_reg[5][11]_i_10_n_0 ,\waveRefAddress_reg[5][11]_i_10_n_1 ,\waveRefAddress_reg[5][11]_i_10_n_2 ,\waveRefAddress_reg[5][11]_i_10_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[8] ,1'b0,1'b0,\MemoryAddress_reg_n_0_[5] }),
-        .O({\waveRefAddress_reg[5][11]_i_10_n_4 ,\waveRefAddress_reg[5][11]_i_10_n_5 ,\waveRefAddress_reg[5][11]_i_10_n_6 ,\waveRefAddress_reg[5][11]_i_10_n_7 }),
-        .S({\waveRefAddress[5][11]_i_21_n_0 ,\MemoryAddress_reg_n_0_[7] ,\MemoryAddress_reg_n_0_[6] ,\waveRefAddress[5][11]_i_22_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_11 
-       (.CI(1'b0),
-        .CO({\waveRefAddress_reg[5][11]_i_11_n_0 ,\waveRefAddress_reg[5][11]_i_11_n_1 ,\waveRefAddress_reg[5][11]_i_11_n_2 ,\waveRefAddress_reg[5][11]_i_11_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,\MemoryAddress_reg_n_0_[3] ,\MemoryAddress_reg_n_0_[2] ,1'b0}),
-        .O({\waveRefAddress_reg[5][11]_i_11_n_4 ,\waveRefAddress_reg[5][11]_i_11_n_5 ,\waveRefAddress_reg[5][11]_i_11_n_6 ,\NLW_waveRefAddress_reg[5][11]_i_11_O_UNCONNECTED [0]}),
-        .S({\MemoryAddress_reg_n_0_[4] ,\waveRefAddress[5][11]_i_23_n_0 ,\waveRefAddress[5][11]_i_24_n_0 ,\MemoryAddress_reg_n_0_[1] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_17 
-       (.CI(\waveRefAddress_reg[5][11]_i_4_n_0 ),
-        .CO({\waveRefAddress_reg[5][11]_i_17_n_0 ,\waveRefAddress_reg[5][11]_i_17_n_1 ,\waveRefAddress_reg[5][11]_i_17_n_2 ,\waveRefAddress_reg[5][11]_i_17_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[16] ,\MemoryAddress_reg_n_0_[15] ,\MemoryAddress_reg_n_0_[14] ,1'b0}),
-        .O({\waveRefAddress_reg[5][11]_i_17_n_4 ,\waveRefAddress_reg[5][11]_i_17_n_5 ,\waveRefAddress_reg[5][11]_i_17_n_6 ,\waveRefAddress_reg[5][11]_i_17_n_7 }),
-        .S({\waveRefAddress[5][11]_i_27_n_0 ,\waveRefAddress[5][11]_i_28_n_0 ,\waveRefAddress[5][11]_i_29_n_0 ,\MemoryAddress_reg_n_0_[13] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_18 
-       (.CI(\waveRefAddress_reg[5][11]_i_25_n_0 ),
-        .CO({\waveRefAddress_reg[5][11]_i_18_n_0 ,\waveRefAddress_reg[5][11]_i_18_n_1 ,\waveRefAddress_reg[5][11]_i_18_n_2 ,\waveRefAddress_reg[5][11]_i_18_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[24] ,\MemoryAddress_reg_n_0_[23] ,\MemoryAddress_reg_n_0_[22] ,\MemoryAddress_reg_n_0_[21] }),
-        .O({\waveRefAddress_reg[5][11]_i_18_n_4 ,\waveRefAddress_reg[5][11]_i_18_n_5 ,\waveRefAddress_reg[5][11]_i_18_n_6 ,\waveRefAddress_reg[5][11]_i_18_n_7 }),
-        .S({\waveRefAddress[5][11]_i_30_n_0 ,\waveRefAddress[5][11]_i_31_n_0 ,\waveRefAddress[5][11]_i_32_n_0 ,\waveRefAddress[5][11]_i_33_n_0 }));
   CARRY4 \waveRefAddress_reg[5][11]_i_2 
        (.CI(\waveRefAddress_reg[5][8]_i_1_n_0 ),
         .CO({\NLW_waveRefAddress_reg[5][11]_i_2_CO_UNCONNECTED [3:2],\waveRefAddress_reg[5][11]_i_2_n_2 ,\waveRefAddress_reg[5][11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,\MemoryAddress_reg_n_0_[10] ,\MemoryAddress_reg_n_0_[9] }),
         .O({\NLW_waveRefAddress_reg[5][11]_i_2_O_UNCONNECTED [3],\waveRefAddress_reg[5][11]_i_2_n_5 ,\waveRefAddress_reg[5][11]_i_2_n_6 ,\waveRefAddress_reg[5][11]_i_2_n_7 }),
-        .S({1'b0,\waveRefAddress[5][11]_i_7_n_0 ,\waveRefAddress[5][11]_i_8_n_0 ,\waveRefAddress[5][11]_i_9_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_25 
-       (.CI(\waveRefAddress_reg[5][11]_i_17_n_0 ),
-        .CO({\waveRefAddress_reg[5][11]_i_25_n_0 ,\waveRefAddress_reg[5][11]_i_25_n_1 ,\waveRefAddress_reg[5][11]_i_25_n_2 ,\waveRefAddress_reg[5][11]_i_25_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[20] ,\MemoryAddress_reg_n_0_[19] ,\MemoryAddress_reg_n_0_[18] ,\MemoryAddress_reg_n_0_[17] }),
-        .O({\waveRefAddress_reg[5][11]_i_25_n_4 ,\waveRefAddress_reg[5][11]_i_25_n_5 ,\waveRefAddress_reg[5][11]_i_25_n_6 ,\waveRefAddress_reg[5][11]_i_25_n_7 }),
-        .S({\waveRefAddress[5][11]_i_37_n_0 ,\waveRefAddress[5][11]_i_38_n_0 ,\waveRefAddress[5][11]_i_39_n_0 ,\waveRefAddress[5][11]_i_40_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_26 
-       (.CI(\waveRefAddress_reg[5][11]_i_34_n_0 ),
-        .CO({\NLW_waveRefAddress_reg[5][11]_i_26_CO_UNCONNECTED [3:2],\waveRefAddress_reg[5][11]_i_26_n_2 ,\waveRefAddress_reg[5][11]_i_26_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\MemoryAddress_reg_n_0_[30] ,\MemoryAddress_reg_n_0_[29] }),
-        .O({\NLW_waveRefAddress_reg[5][11]_i_26_O_UNCONNECTED [3],\waveRefAddress_reg[5][11]_i_26_n_5 ,\waveRefAddress_reg[5][11]_i_26_n_6 ,\waveRefAddress_reg[5][11]_i_26_n_7 }),
-        .S({1'b0,\waveRefAddress[5][11]_i_41_n_0 ,\waveRefAddress[5][11]_i_42_n_0 ,\waveRefAddress[5][11]_i_43_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_34 
-       (.CI(\waveRefAddress_reg[5][11]_i_18_n_0 ),
-        .CO({\waveRefAddress_reg[5][11]_i_34_n_0 ,\waveRefAddress_reg[5][11]_i_34_n_1 ,\waveRefAddress_reg[5][11]_i_34_n_2 ,\waveRefAddress_reg[5][11]_i_34_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[28] ,\MemoryAddress_reg_n_0_[27] ,\MemoryAddress_reg_n_0_[26] ,\MemoryAddress_reg_n_0_[25] }),
-        .O({\waveRefAddress_reg[5][11]_i_34_n_4 ,\waveRefAddress_reg[5][11]_i_34_n_5 ,\waveRefAddress_reg[5][11]_i_34_n_6 ,\waveRefAddress_reg[5][11]_i_34_n_7 }),
-        .S({\waveRefAddress[5][11]_i_44_n_0 ,\waveRefAddress[5][11]_i_45_n_0 ,\waveRefAddress[5][11]_i_46_n_0 ,\waveRefAddress[5][11]_i_47_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[5][11]_i_4 
-       (.CI(\waveRefAddress_reg[5][11]_i_10_n_0 ),
-        .CO({\waveRefAddress_reg[5][11]_i_4_n_0 ,\waveRefAddress_reg[5][11]_i_4_n_1 ,\waveRefAddress_reg[5][11]_i_4_n_2 ,\waveRefAddress_reg[5][11]_i_4_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,\MemoryAddress_reg_n_0_[11] ,\MemoryAddress_reg_n_0_[10] ,\MemoryAddress_reg_n_0_[9] }),
-        .O({\waveRefAddress_reg[5][11]_i_4_n_4 ,\waveRefAddress_reg[5][11]_i_4_n_5 ,\waveRefAddress_reg[5][11]_i_4_n_6 ,\waveRefAddress_reg[5][11]_i_4_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[12] ,\waveRefAddress[5][11]_i_13_n_0 ,\waveRefAddress[5][11]_i_14_n_0 ,\waveRefAddress[5][11]_i_15_n_0 }));
+        .S({1'b0,\waveRefAddress[5][11]_i_4_n_0 ,\waveRefAddress[5][11]_i_5_n_0 ,\waveRefAddress[5][11]_i_6_n_0 }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveRefAddress_reg[5][1] 
@@ -39489,77 +37562,13 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .D(\waveRefAddress_reg[6][11]_i_2_n_6 ),
         .Q(\waveRefAddress[6] [11]),
         .S(\waveRefAddress[6][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_15 
-       (.CI(\waveRefAddress_reg[6][11]_i_16_n_0 ),
-        .CO({\waveRefAddress_reg[6][11]_i_15_n_0 ,\waveRefAddress_reg[6][11]_i_15_n_1 ,\waveRefAddress_reg[6][11]_i_15_n_2 ,\waveRefAddress_reg[6][11]_i_15_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[21] ,\MemoryAddress_reg_n_0_[20] ,\MemoryAddress_reg_n_0_[19] ,\MemoryAddress_reg_n_0_[18] }),
-        .O({\waveRefAddress_reg[6][11]_i_15_n_4 ,\waveRefAddress_reg[6][11]_i_15_n_5 ,\waveRefAddress_reg[6][11]_i_15_n_6 ,\waveRefAddress_reg[6][11]_i_15_n_7 }),
-        .S({\waveRefAddress[6][11]_i_23_n_0 ,\waveRefAddress[6][11]_i_24_n_0 ,\waveRefAddress[6][11]_i_25_n_0 ,\waveRefAddress[6][11]_i_26_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_16 
-       (.CI(\waveRefAddress_reg[6][11]_i_4_n_0 ),
-        .CO({\waveRefAddress_reg[6][11]_i_16_n_0 ,\waveRefAddress_reg[6][11]_i_16_n_1 ,\waveRefAddress_reg[6][11]_i_16_n_2 ,\waveRefAddress_reg[6][11]_i_16_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[17] ,\MemoryAddress_reg_n_0_[16] ,\MemoryAddress_reg_n_0_[15] ,\MemoryAddress_reg_n_0_[14] }),
-        .O({\waveRefAddress_reg[6][11]_i_16_n_4 ,\waveRefAddress_reg[6][11]_i_16_n_5 ,\waveRefAddress_reg[6][11]_i_16_n_6 ,\waveRefAddress_reg[6][11]_i_16_n_7 }),
-        .S({\waveRefAddress[6][11]_i_27_n_0 ,\waveRefAddress[6][11]_i_28_n_0 ,\waveRefAddress[6][11]_i_29_n_0 ,\waveRefAddress[6][11]_i_30_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_17 
-       (.CI(\waveRefAddress_reg[6][11]_i_15_n_0 ),
-        .CO({\waveRefAddress_reg[6][11]_i_17_n_0 ,\waveRefAddress_reg[6][11]_i_17_n_1 ,\waveRefAddress_reg[6][11]_i_17_n_2 ,\waveRefAddress_reg[6][11]_i_17_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[25] ,\MemoryAddress_reg_n_0_[24] ,\MemoryAddress_reg_n_0_[23] ,\MemoryAddress_reg_n_0_[22] }),
-        .O({\waveRefAddress_reg[6][11]_i_17_n_4 ,\waveRefAddress_reg[6][11]_i_17_n_5 ,\waveRefAddress_reg[6][11]_i_17_n_6 ,\waveRefAddress_reg[6][11]_i_17_n_7 }),
-        .S({\waveRefAddress[6][11]_i_31_n_0 ,\waveRefAddress[6][11]_i_32_n_0 ,\waveRefAddress[6][11]_i_33_n_0 ,\waveRefAddress[6][11]_i_34_n_0 }));
   CARRY4 \waveRefAddress_reg[6][11]_i_2 
        (.CI(\waveRefAddress_reg[6][9]_i_1_n_0 ),
         .CO({\NLW_waveRefAddress_reg[6][11]_i_2_CO_UNCONNECTED [3:1],\waveRefAddress_reg[6][11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[10] }),
         .O({\NLW_waveRefAddress_reg[6][11]_i_2_O_UNCONNECTED [3:2],\waveRefAddress_reg[6][11]_i_2_n_6 ,\waveRefAddress_reg[6][11]_i_2_n_7 }),
-        .S({1'b0,1'b0,\MemoryAddress_reg_n_0_[11] ,\waveRefAddress[6][11]_i_8_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_22 
-       (.CI(\waveRefAddress_reg[6][11]_i_17_n_0 ),
-        .CO({\waveRefAddress_reg[6][11]_i_22_n_0 ,\waveRefAddress_reg[6][11]_i_22_n_1 ,\waveRefAddress_reg[6][11]_i_22_n_2 ,\waveRefAddress_reg[6][11]_i_22_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[29] ,\MemoryAddress_reg_n_0_[28] ,\MemoryAddress_reg_n_0_[27] ,\MemoryAddress_reg_n_0_[26] }),
-        .O({\waveRefAddress_reg[6][11]_i_22_n_4 ,\waveRefAddress_reg[6][11]_i_22_n_5 ,\waveRefAddress_reg[6][11]_i_22_n_6 ,\waveRefAddress_reg[6][11]_i_22_n_7 }),
-        .S({\waveRefAddress[6][11]_i_37_n_0 ,\waveRefAddress[6][11]_i_38_n_0 ,\waveRefAddress[6][11]_i_39_n_0 ,\waveRefAddress[6][11]_i_40_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_3 
-       (.CI(\waveRefAddress_reg[6][11]_i_9_n_0 ),
-        .CO({\waveRefAddress_reg[6][11]_i_3_n_0 ,\waveRefAddress_reg[6][11]_i_3_n_1 ,\waveRefAddress_reg[6][11]_i_3_n_2 ,\waveRefAddress_reg[6][11]_i_3_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,\MemoryAddress_reg_n_0_[8] ,1'b0,\MemoryAddress_reg_n_0_[6] }),
-        .O({\waveRefAddress_reg[6][11]_i_3_n_4 ,\waveRefAddress_reg[6][11]_i_3_n_5 ,\waveRefAddress_reg[6][11]_i_3_n_6 ,\waveRefAddress_reg[6][11]_i_3_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[9] ,\waveRefAddress[6][11]_i_10_n_0 ,\MemoryAddress_reg_n_0_[7] ,\waveRefAddress[6][11]_i_11_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_4 
-       (.CI(\waveRefAddress_reg[6][11]_i_3_n_0 ),
-        .CO({\waveRefAddress_reg[6][11]_i_4_n_0 ,\waveRefAddress_reg[6][11]_i_4_n_1 ,\waveRefAddress_reg[6][11]_i_4_n_2 ,\waveRefAddress_reg[6][11]_i_4_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[10] }),
-        .O({\waveRefAddress_reg[6][11]_i_4_n_4 ,\waveRefAddress_reg[6][11]_i_4_n_5 ,\waveRefAddress_reg[6][11]_i_4_n_6 ,\waveRefAddress_reg[6][11]_i_4_n_7 }),
-        .S({\MemoryAddress_reg_n_0_[13] ,\MemoryAddress_reg_n_0_[12] ,\MemoryAddress_reg_n_0_[11] ,\waveRefAddress[6][11]_i_12_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_41 
-       (.CI(\waveRefAddress_reg[6][11]_i_22_n_0 ),
-        .CO({\NLW_waveRefAddress_reg[6][11]_i_41_CO_UNCONNECTED [3:1],\waveRefAddress_reg[6][11]_i_41_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[30] }),
-        .O({\NLW_waveRefAddress_reg[6][11]_i_41_O_UNCONNECTED [3:2],\waveRefAddress_reg[6][11]_i_41_n_6 ,\waveRefAddress_reg[6][11]_i_41_n_7 }),
-        .S({1'b0,1'b0,\waveRefAddress[6][11]_i_42_n_0 ,\waveRefAddress[6][11]_i_43_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveRefAddress_reg[6][11]_i_9 
-       (.CI(1'b0),
-        .CO({\waveRefAddress_reg[6][11]_i_9_n_0 ,\waveRefAddress_reg[6][11]_i_9_n_1 ,\waveRefAddress_reg[6][11]_i_9_n_2 ,\waveRefAddress_reg[6][11]_i_9_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[5] ,1'b0,\MemoryAddress_reg_n_0_[3] ,1'b0}),
-        .O({\waveRefAddress_reg[6][11]_i_9_n_4 ,\waveRefAddress_reg[6][11]_i_9_n_5 ,\waveRefAddress_reg[6][11]_i_9_n_6 ,\NLW_waveRefAddress_reg[6][11]_i_9_O_UNCONNECTED [0]}),
-        .S({\waveRefAddress[6][11]_i_20_n_0 ,\MemoryAddress_reg_n_0_[4] ,\waveRefAddress[6][11]_i_21_n_0 ,\MemoryAddress_reg_n_0_[2] }));
+        .S({1'b0,1'b0,\MemoryAddress_reg_n_0_[11] ,\waveRefAddress[6][11]_i_4_n_0 }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveRefAddress_reg[6][1] 
@@ -39646,52 +37655,12 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .DI({1'b0,\MemoryAddress_reg_n_0_[8] ,1'b0,\MemoryAddress_reg_n_0_[6] }),
         .O({\waveRefAddress_reg[6][9]_i_1_n_4 ,\waveRefAddress_reg[6][9]_i_1_n_5 ,\waveRefAddress_reg[6][9]_i_1_n_6 ,\waveRefAddress_reg[6][9]_i_1_n_7 }),
         .S({\MemoryAddress_reg_n_0_[9] ,\waveRefAddress[6][9]_i_2_n_0 ,\MemoryAddress_reg_n_0_[7] ,\waveRefAddress[6][9]_i_3_n_0 }));
-  LUT6 #(
-    .INIT(64'hFFFFFFFF444444F4)) 
-    \waveXAddress[0][11]_i_1 
-       (.I0(\waveXAddress[0][11]_i_2_n_0 ),
-        .I1(\MemoryAddress_reg_n_0_[11] ),
-        .I2(\MemoryAddress[31]_i_2_n_0 ),
-        .I3(\waveXAddress[0][11]_i_3_n_0 ),
-        .I4(\waveXAddress[0][11]_i_4_n_0 ),
-        .I5(\MemoryAddress[31]_i_3_n_0 ),
-        .O(\waveXAddress[0][11]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0111111111111111)) 
-    \waveXAddress[0][11]_i_2 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .I1(\MemoryAddress_reg_n_0_[9] ),
-        .I2(\MemoryAddress_reg_n_0_[6] ),
-        .I3(\MemoryAddress_reg_n_0_[8] ),
-        .I4(\MemoryAddress_reg_n_0_[7] ),
-        .I5(\waveXAddress[0][11]_i_5_n_0 ),
-        .O(\waveXAddress[0][11]_i_2_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveXAddress[0][11]_i_3 
-       (.I0(\MemoryAddress_reg_n_0_[10] ),
-        .I1(\MemoryAddress_reg_n_0_[9] ),
-        .I2(\MemoryAddress_reg_n_0_[6] ),
-        .I3(\MemoryAddress_reg_n_0_[7] ),
-        .O(\waveXAddress[0][11]_i_3_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveXAddress[0][11]_i_4 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .I1(\MemoryAddress_reg_n_0_[30] ),
-        .I2(\MemoryAddress_reg_n_0_[21] ),
-        .I3(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveXAddress[0][11]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFE0)) 
-    \waveXAddress[0][11]_i_5 
-       (.I0(\MemoryAddress_reg_n_0_[0] ),
-        .I1(\MemoryAddress_reg_n_0_[1] ),
-        .I2(\MemoryAddress_reg_n_0_[2] ),
-        .I3(\MemoryAddress_reg_n_0_[5] ),
-        .I4(\MemoryAddress_reg_n_0_[4] ),
-        .I5(\MemoryAddress_reg_n_0_[3] ),
-        .O(\waveXAddress[0][11]_i_5_n_0 ));
+  LUT2 #(
+    .INIT(4'hB)) 
+    \waveXAddress[0][10]_i_1 
+       (.I0(\MemoryAddress[31]_i_1_n_0 ),
+        .I1(\waveRefAddress[1][11]_i_3_n_0 ),
+        .O(\waveXAddress[0][10]_i_1_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveXAddress[1][11]_i_2 
@@ -39789,21 +37758,6 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .O(\waveXAddress[4][11]_i_2_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveXAddress[4][3]_i_2 
-       (.I0(\MemoryAddress_reg_n_0_[6] ),
-        .O(\waveXAddress[4][3]_i_2_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[4][3]_i_3 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .O(\waveXAddress[4][3]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[4][3]_i_4 
-       (.I0(\MemoryAddress_reg_n_0_[4] ),
-        .O(\waveXAddress[4][3]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
     \waveXAddress[4][6]_i_2 
        (.I0(\MemoryAddress_reg_n_0_[6] ),
         .O(\waveXAddress[4][6]_i_2_n_0 ));
@@ -39834,21 +37788,6 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .O(\waveXAddress[5][11]_i_4_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveXAddress[5][1]_i_2 
-       (.I0(\MemoryAddress_reg_n_0_[4] ),
-        .O(\waveXAddress[5][1]_i_2_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[5][1]_i_3 
-       (.I0(\MemoryAddress_reg_n_0_[3] ),
-        .O(\waveXAddress[5][1]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[5][1]_i_4 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .O(\waveXAddress[5][1]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
     \waveXAddress[5][4]_i_2 
        (.I0(\MemoryAddress_reg_n_0_[3] ),
         .O(\waveXAddress[5][4]_i_2_n_0 ));
@@ -39874,21 +37813,6 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .O(\waveXAddress[6][11]_i_2_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveXAddress[6][2]_i_2 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .O(\waveXAddress[6][2]_i_2_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[6][2]_i_3 
-       (.I0(\MemoryAddress_reg_n_0_[4] ),
-        .O(\waveXAddress[6][2]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[6][2]_i_4 
-       (.I0(\MemoryAddress_reg_n_0_[3] ),
-        .O(\waveXAddress[6][2]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
     \waveXAddress[6][5]_i_2 
        (.I0(\MemoryAddress_reg_n_0_[5] ),
         .O(\waveXAddress[6][5]_i_2_n_0 ));
@@ -39908,231 +37832,49 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
        (.I0(\MemoryAddress_reg_n_0_[6] ),
         .O(\waveXAddress[6][9]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFD00)) 
+    .INIT(64'hFFFFFFFDDDDDDDDD)) 
     \waveXAddress[7][11]_i_1 
-       (.I0(\waveXAddress[7][11]_i_3_n_0 ),
-        .I1(\waveXAddress_reg[7][11]_i_4_n_7 ),
-        .I2(\waveXAddress_reg[7][11]_i_4_n_6 ),
-        .I3(\waveXAddress_reg[7][11]_i_4_n_5 ),
-        .I4(\waveXAddress[7][11]_i_5_n_0 ),
-        .I5(\waveXAddress[7][11]_i_6_n_0 ),
+       (.I0(\waveRefAddress[6][11]_i_3_n_0 ),
+        .I1(\waveRefAddress[2][11]_i_3_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[12] ),
+        .I3(\MemoryAddress_reg_n_0_[13] ),
+        .I4(\waveXAddress[7][11]_i_3_n_0 ),
+        .I5(\MemoryAddress_reg_n_0_[14] ),
         .O(\waveXAddress[7][11]_i_1_n_0 ));
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \waveXAddress[7][11]_i_11 
-       (.I0(\waveXAddress_reg[7][11]_i_10_n_5 ),
-        .I1(\waveXAddress_reg[7][11]_i_10_n_4 ),
-        .I2(\waveXAddress_reg[7][11]_i_9_n_7 ),
-        .O(\waveXAddress[7][11]_i_11_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_12 
-       (.I0(\MemoryAddress_reg_n_0_[12] ),
-        .O(\waveXAddress[7][11]_i_12_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_13 
-       (.I0(\MemoryAddress_reg_n_0_[11] ),
-        .O(\waveXAddress[7][11]_i_13_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_14 
-       (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .O(\waveXAddress[7][11]_i_14_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveXAddress[7][11]_i_15 
-       (.I0(\waveXAddress_reg[7][11]_i_25_n_6 ),
-        .I1(\waveXAddress_reg[7][11]_i_25_n_5 ),
-        .I2(\waveXAddress_reg[7][11]_i_16_n_6 ),
-        .I3(\waveXAddress_reg[7][11]_i_26_n_7 ),
-        .O(\waveXAddress[7][11]_i_15_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveXAddress[7][11]_i_19 
-       (.I0(\waveXAddress_reg[7][11]_i_26_n_4 ),
-        .I1(\waveXAddress_reg[7][11]_i_18_n_6 ),
-        .I2(\waveXAddress_reg[7][11]_i_26_n_6 ),
-        .I3(\waveXAddress_reg[7][11]_i_17_n_6 ),
-        .I4(\waveXAddress[7][11]_i_38_n_0 ),
-        .I5(\waveXAddress[7][11]_i_39_n_0 ),
-        .O(\waveXAddress[7][11]_i_19_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \waveXAddress[7][11]_i_20 
-       (.I0(\waveXAddress_reg[7][11]_i_9_n_7 ),
-        .I1(\waveXAddress_reg[7][11]_i_10_n_4 ),
-        .I2(\waveXAddress_reg[7][11]_i_10_n_5 ),
-        .I3(\waveXAddress_reg[7][11]_i_4_n_5 ),
-        .I4(\waveXAddress_reg[7][11]_i_9_n_5 ),
-        .I5(\waveXAddress_reg[7][11]_i_10_n_6 ),
-        .O(\waveXAddress[7][11]_i_20_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_21 
-       (.I0(\MemoryAddress_reg_n_0_[8] ),
-        .O(\waveXAddress[7][11]_i_21_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_22 
-       (.I0(\MemoryAddress_reg_n_0_[7] ),
-        .O(\waveXAddress[7][11]_i_22_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_23 
-       (.I0(\MemoryAddress_reg_n_0_[5] ),
-        .O(\waveXAddress[7][11]_i_23_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_24 
-       (.I0(\MemoryAddress_reg_n_0_[2] ),
-        .O(\waveXAddress[7][11]_i_24_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_27 
-       (.I0(\MemoryAddress_reg_n_0_[16] ),
-        .O(\waveXAddress[7][11]_i_27_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_28 
-       (.I0(\MemoryAddress_reg_n_0_[15] ),
-        .O(\waveXAddress[7][11]_i_28_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_29 
-       (.I0(\MemoryAddress_reg_n_0_[13] ),
-        .O(\waveXAddress[7][11]_i_29_n_0 ));
-  LUT6 #(
-    .INIT(64'h7F7F7F7FFFFF7FFF)) 
+    .INIT(64'h00000000EEFE0000)) 
     \waveXAddress[7][11]_i_3 
-       (.I0(\waveXAddress_reg[7][11]_i_9_n_5 ),
-        .I1(\waveXAddress_reg[7][11]_i_9_n_6 ),
-        .I2(\waveXAddress_reg[7][11]_i_9_n_4 ),
-        .I3(\waveXAddress_reg[7][11]_i_10_n_6 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveXAddress[7][11]_i_11_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[6] ),
+        .I1(\waveXAddress[7][11]_i_6_n_0 ),
+        .I2(\MemoryAddress_reg_n_0_[5] ),
+        .I3(\MemoryAddress[31]_i_4_n_0 ),
+        .I4(\MemoryAddress_reg_n_0_[9] ),
+        .I5(\waveXAddress[7][11]_i_7_n_0 ),
         .O(\waveXAddress[7][11]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_30 
-       (.I0(\MemoryAddress_reg_n_0_[20] ),
-        .O(\waveXAddress[7][11]_i_30_n_0 ));
+    \waveXAddress[7][11]_i_4 
+       (.I0(\MemoryAddress_reg_n_0_[11] ),
+        .O(\waveXAddress[7][11]_i_4_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_31 
-       (.I0(\MemoryAddress_reg_n_0_[19] ),
-        .O(\waveXAddress[7][11]_i_31_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_32 
-       (.I0(\MemoryAddress_reg_n_0_[18] ),
-        .O(\waveXAddress[7][11]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_33 
-       (.I0(\MemoryAddress_reg_n_0_[17] ),
-        .O(\waveXAddress[7][11]_i_33_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_34 
-       (.I0(\MemoryAddress_reg_n_0_[24] ),
-        .O(\waveXAddress[7][11]_i_34_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_35 
-       (.I0(\MemoryAddress_reg_n_0_[23] ),
-        .O(\waveXAddress[7][11]_i_35_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_36 
-       (.I0(\MemoryAddress_reg_n_0_[22] ),
-        .O(\waveXAddress[7][11]_i_36_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_37 
-       (.I0(\MemoryAddress_reg_n_0_[21] ),
-        .O(\waveXAddress[7][11]_i_37_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveXAddress[7][11]_i_38 
-       (.I0(\waveXAddress_reg[7][11]_i_4_n_4 ),
-        .I1(\waveXAddress_reg[7][11]_i_26_n_5 ),
-        .I2(\waveXAddress_reg[7][11]_i_16_n_4 ),
-        .I3(\waveXAddress_reg[7][11]_i_25_n_7 ),
-        .O(\waveXAddress[7][11]_i_38_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \waveXAddress[7][11]_i_39 
-       (.I0(\waveXAddress_reg[7][11]_i_16_n_7 ),
-        .I1(\waveXAddress_reg[7][11]_i_18_n_4 ),
-        .I2(\waveXAddress_reg[7][11]_i_17_n_7 ),
-        .I3(\waveXAddress_reg[7][11]_i_17_n_4 ),
-        .O(\waveXAddress[7][11]_i_39_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_40 
-       (.I0(\MemoryAddress_reg_n_0_[31] ),
-        .O(\waveXAddress[7][11]_i_40_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_41 
-       (.I0(\MemoryAddress_reg_n_0_[30] ),
-        .O(\waveXAddress[7][11]_i_41_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_42 
-       (.I0(\MemoryAddress_reg_n_0_[29] ),
-        .O(\waveXAddress[7][11]_i_42_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_43 
-       (.I0(\MemoryAddress_reg_n_0_[28] ),
-        .O(\waveXAddress[7][11]_i_43_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_44 
-       (.I0(\MemoryAddress_reg_n_0_[27] ),
-        .O(\waveXAddress[7][11]_i_44_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_45 
-       (.I0(\MemoryAddress_reg_n_0_[26] ),
-        .O(\waveXAddress[7][11]_i_45_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_46 
-       (.I0(\MemoryAddress_reg_n_0_[25] ),
-        .O(\waveXAddress[7][11]_i_46_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
     \waveXAddress[7][11]_i_5 
-       (.I0(\waveXAddress[7][11]_i_15_n_0 ),
-        .I1(\waveXAddress_reg[7][11]_i_16_n_5 ),
-        .I2(\waveXAddress_reg[7][11]_i_17_n_5 ),
-        .I3(\waveXAddress_reg[7][11]_i_18_n_7 ),
-        .I4(\waveXAddress_reg[7][11]_i_18_n_5 ),
-        .I5(\waveXAddress[7][11]_i_19_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[9] ),
         .O(\waveXAddress[7][11]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000010000)) 
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
     \waveXAddress[7][11]_i_6 
-       (.I0(\waveXAddress_reg[7][11]_i_4_n_7 ),
-        .I1(\waveXAddress_reg[7][11]_i_4_n_6 ),
-        .I2(\waveXAddress_reg[7][11]_i_9_n_6 ),
-        .I3(\waveXAddress_reg[7][11]_i_9_n_4 ),
-        .I4(\MemoryAddress[31]_i_4_n_0 ),
-        .I5(\waveXAddress[7][11]_i_20_n_0 ),
+       (.I0(\MemoryAddress_reg_n_0_[7] ),
+        .I1(\MemoryAddress_reg_n_0_[8] ),
         .O(\waveXAddress[7][11]_i_6_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
     \waveXAddress[7][11]_i_7 
        (.I0(\MemoryAddress_reg_n_0_[11] ),
+        .I1(\MemoryAddress_reg_n_0_[10] ),
         .O(\waveXAddress[7][11]_i_7_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \waveXAddress[7][11]_i_8 
-       (.I0(\MemoryAddress_reg_n_0_[9] ),
-        .O(\waveXAddress[7][11]_i_8_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \waveXAddress[7][4]_i_2 
@@ -40160,7 +37902,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[0] ),
         .Q(\waveYAddress[0] [0]),
-        .S(\waveXAddress[0][11]_i_1_n_0 ));
+        .S(\waveXAddress[0][10]_i_1_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][10] 
@@ -40168,7 +37910,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[10] ),
         .Q(\waveYAddress[0] [10]),
-        .R(\waveXAddress[0][11]_i_1_n_0 ));
+        .R(\waveXAddress[0][10]_i_1_n_0 ));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][11] 
@@ -40176,7 +37918,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[11] ),
         .Q(\waveYAddress[0] [11]),
-        .S(\waveXAddress[0][11]_i_1_n_0 ));
+        .S(\waveXAddress[0][10]_i_1_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][1] 
@@ -40184,7 +37926,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[1] ),
         .Q(\waveYAddress[0] [1]),
-        .R(\waveXAddress[0][11]_i_1_n_0 ));
+        .R(\waveXAddress[0][10]_i_1_n_0 ));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][2] 
@@ -40192,7 +37934,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[2] ),
         .Q(\waveYAddress[0] [2]),
-        .S(\waveXAddress[0][11]_i_1_n_0 ));
+        .S(\waveXAddress[0][10]_i_1_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][3] 
@@ -40200,7 +37942,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[3] ),
         .Q(\waveYAddress[0] [3]),
-        .R(\waveXAddress[0][11]_i_1_n_0 ));
+        .R(\waveXAddress[0][10]_i_1_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][4] 
@@ -40208,7 +37950,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[4] ),
         .Q(\waveYAddress[0] [4]),
-        .R(\waveXAddress[0][11]_i_1_n_0 ));
+        .R(\waveXAddress[0][10]_i_1_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][5] 
@@ -40216,7 +37958,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[5] ),
         .Q(\waveYAddress[0] [5]),
-        .R(\waveXAddress[0][11]_i_1_n_0 ));
+        .R(\waveXAddress[0][10]_i_1_n_0 ));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][6] 
@@ -40224,7 +37966,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[6] ),
         .Q(\waveYAddress[0] [6]),
-        .S(\waveXAddress[0][11]_i_1_n_0 ));
+        .S(\waveXAddress[0][10]_i_1_n_0 ));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][7] 
@@ -40232,7 +37974,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[7] ),
         .Q(\waveYAddress[0] [7]),
-        .S(\waveXAddress[0][11]_i_1_n_0 ));
+        .S(\waveXAddress[0][10]_i_1_n_0 ));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][8] 
@@ -40240,7 +37982,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[8] ),
         .Q(\waveYAddress[0] [8]),
-        .S(\waveXAddress[0][11]_i_1_n_0 ));
+        .S(\waveXAddress[0][10]_i_1_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[0][9] 
@@ -40248,7 +37990,7 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .CE(1'b1),
         .D(\MemoryAddress_reg_n_0_[9] ),
         .Q(\waveYAddress[0] [9]),
-        .R(\waveXAddress[0][11]_i_1_n_0 ));
+        .R(\waveXAddress[0][10]_i_1_n_0 ));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[1][0] 
@@ -40622,17 +38364,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     \waveXAddress_reg[4][3] 
        (.C(clk1Mhz),
         .CE(1'b1),
-        .D(\waveXAddress_reg[4][3]_i_1_n_7 ),
+        .D(\waveRefAddress_reg[4][6]_i_1_n_7 ),
         .Q(\waveXAddress_reg[4][11]_0 [0]),
         .R(\waveRefAddress[4][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[4][3]_i_1 
-       (.CI(1'b0),
-        .CO({\waveXAddress_reg[4][3]_i_1_n_0 ,\waveXAddress_reg[4][3]_i_1_n_1 ,\waveXAddress_reg[4][3]_i_1_n_2 ,\waveXAddress_reg[4][3]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[6] ,\MemoryAddress_reg_n_0_[5] ,\MemoryAddress_reg_n_0_[4] ,1'b0}),
-        .O({\waveXAddress_reg[4][3]_i_1_n_4 ,\waveXAddress_reg[4][3]_i_1_n_5 ,\waveXAddress_reg[4][3]_i_1_n_6 ,\waveXAddress_reg[4][3]_i_1_n_7 }),
-        .S({\waveXAddress[4][3]_i_2_n_0 ,\waveXAddress[4][3]_i_3_n_0 ,\waveXAddress[4][3]_i_4_n_0 ,\MemoryAddress_reg_n_0_[3] }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[4][4] 
@@ -40726,17 +38460,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     \waveXAddress_reg[5][1] 
        (.C(clk1Mhz),
         .CE(1'b1),
-        .D(\waveXAddress_reg[5][1]_i_1_n_7 ),
+        .D(\waveRefAddress_reg[1][4]_i_1_n_7 ),
         .Q(\waveXAddress_reg[5][11]_0 [0]),
         .R(\waveRefAddress[5][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[5][1]_i_1 
-       (.CI(1'b0),
-        .CO({\waveXAddress_reg[5][1]_i_1_n_0 ,\waveXAddress_reg[5][1]_i_1_n_1 ,\waveXAddress_reg[5][1]_i_1_n_2 ,\waveXAddress_reg[5][1]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[4] ,\MemoryAddress_reg_n_0_[3] ,\MemoryAddress_reg_n_0_[2] ,1'b0}),
-        .O({\waveXAddress_reg[5][1]_i_1_n_4 ,\waveXAddress_reg[5][1]_i_1_n_5 ,\waveXAddress_reg[5][1]_i_1_n_6 ,\waveXAddress_reg[5][1]_i_1_n_7 }),
-        .S({\waveXAddress[5][1]_i_2_n_0 ,\waveXAddress[5][1]_i_3_n_0 ,\waveXAddress[5][1]_i_4_n_0 ,\MemoryAddress_reg_n_0_[1] }));
   FDSE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[5][2] 
@@ -40846,17 +38572,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
     \waveXAddress_reg[6][2] 
        (.C(clk1Mhz),
         .CE(1'b1),
-        .D(\waveXAddress_reg[6][2]_i_1_n_7 ),
+        .D(\waveRefAddress_reg[2][5]_i_1_n_7 ),
         .Q(\waveXAddress_reg[6][11]_0 [0]),
         .S(\waveRefAddress[6][11]_i_1_n_0 ));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[6][2]_i_1 
-       (.CI(1'b0),
-        .CO({\waveXAddress_reg[6][2]_i_1_n_0 ,\waveXAddress_reg[6][2]_i_1_n_1 ,\waveXAddress_reg[6][2]_i_1_n_2 ,\waveXAddress_reg[6][2]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[5] ,\MemoryAddress_reg_n_0_[4] ,\MemoryAddress_reg_n_0_[3] ,1'b0}),
-        .O({\waveXAddress_reg[6][2]_i_1_n_4 ,\waveXAddress_reg[6][2]_i_1_n_5 ,\waveXAddress_reg[6][2]_i_1_n_6 ,\waveXAddress_reg[6][2]_i_1_n_7 }),
-        .S({\waveXAddress[6][2]_i_2_n_0 ,\waveXAddress[6][2]_i_3_n_0 ,\waveXAddress[6][2]_i_4_n_0 ,\MemoryAddress_reg_n_0_[2] }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[6][3] 
@@ -40954,77 +38672,13 @@ module MicroBlaze_Wrapper_XCorr_0_0_XCorr_waveParser
         .Q(\waveXAddress_reg[7][11]_0 [11]),
         .S(\waveXAddress[7][11]_i_1_n_0 ));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_10 
-       (.CI(1'b0),
-        .CO({\waveXAddress_reg[7][11]_i_10_n_0 ,\waveXAddress_reg[7][11]_i_10_n_1 ,\waveXAddress_reg[7][11]_i_10_n_2 ,\waveXAddress_reg[7][11]_i_10_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\MemoryAddress_reg_n_0_[2] ,1'b0}),
-        .O({\waveXAddress_reg[7][11]_i_10_n_4 ,\waveXAddress_reg[7][11]_i_10_n_5 ,\waveXAddress_reg[7][11]_i_10_n_6 ,\NLW_waveXAddress_reg[7][11]_i_10_O_UNCONNECTED [0]}),
-        .S({\MemoryAddress_reg_n_0_[4] ,\MemoryAddress_reg_n_0_[3] ,\waveXAddress[7][11]_i_24_n_0 ,\MemoryAddress_reg_n_0_[1] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_16 
-       (.CI(\waveXAddress_reg[7][11]_i_4_n_0 ),
-        .CO({\waveXAddress_reg[7][11]_i_16_n_0 ,\waveXAddress_reg[7][11]_i_16_n_1 ,\waveXAddress_reg[7][11]_i_16_n_2 ,\waveXAddress_reg[7][11]_i_16_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[16] ,\MemoryAddress_reg_n_0_[15] ,1'b0,\MemoryAddress_reg_n_0_[13] }),
-        .O({\waveXAddress_reg[7][11]_i_16_n_4 ,\waveXAddress_reg[7][11]_i_16_n_5 ,\waveXAddress_reg[7][11]_i_16_n_6 ,\waveXAddress_reg[7][11]_i_16_n_7 }),
-        .S({\waveXAddress[7][11]_i_27_n_0 ,\waveXAddress[7][11]_i_28_n_0 ,\MemoryAddress_reg_n_0_[14] ,\waveXAddress[7][11]_i_29_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_17 
-       (.CI(\waveXAddress_reg[7][11]_i_16_n_0 ),
-        .CO({\waveXAddress_reg[7][11]_i_17_n_0 ,\waveXAddress_reg[7][11]_i_17_n_1 ,\waveXAddress_reg[7][11]_i_17_n_2 ,\waveXAddress_reg[7][11]_i_17_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[20] ,\MemoryAddress_reg_n_0_[19] ,\MemoryAddress_reg_n_0_[18] ,\MemoryAddress_reg_n_0_[17] }),
-        .O({\waveXAddress_reg[7][11]_i_17_n_4 ,\waveXAddress_reg[7][11]_i_17_n_5 ,\waveXAddress_reg[7][11]_i_17_n_6 ,\waveXAddress_reg[7][11]_i_17_n_7 }),
-        .S({\waveXAddress[7][11]_i_30_n_0 ,\waveXAddress[7][11]_i_31_n_0 ,\waveXAddress[7][11]_i_32_n_0 ,\waveXAddress[7][11]_i_33_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_18 
-       (.CI(\waveXAddress_reg[7][11]_i_17_n_0 ),
-        .CO({\waveXAddress_reg[7][11]_i_18_n_0 ,\waveXAddress_reg[7][11]_i_18_n_1 ,\waveXAddress_reg[7][11]_i_18_n_2 ,\waveXAddress_reg[7][11]_i_18_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[24] ,\MemoryAddress_reg_n_0_[23] ,\MemoryAddress_reg_n_0_[22] ,\MemoryAddress_reg_n_0_[21] }),
-        .O({\waveXAddress_reg[7][11]_i_18_n_4 ,\waveXAddress_reg[7][11]_i_18_n_5 ,\waveXAddress_reg[7][11]_i_18_n_6 ,\waveXAddress_reg[7][11]_i_18_n_7 }),
-        .S({\waveXAddress[7][11]_i_34_n_0 ,\waveXAddress[7][11]_i_35_n_0 ,\waveXAddress[7][11]_i_36_n_0 ,\waveXAddress[7][11]_i_37_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \waveXAddress_reg[7][11]_i_2 
        (.CI(\waveXAddress_reg[7][8]_i_1_n_0 ),
         .CO({\NLW_waveXAddress_reg[7][11]_i_2_CO_UNCONNECTED [3:2],\waveXAddress_reg[7][11]_i_2_n_2 ,\waveXAddress_reg[7][11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,\MemoryAddress_reg_n_0_[9] }),
         .O({\NLW_waveXAddress_reg[7][11]_i_2_O_UNCONNECTED [3],\waveXAddress_reg[7][11]_i_2_n_5 ,\waveXAddress_reg[7][11]_i_2_n_6 ,\waveXAddress_reg[7][11]_i_2_n_7 }),
-        .S({1'b0,\waveXAddress[7][11]_i_7_n_0 ,\MemoryAddress_reg_n_0_[10] ,\waveXAddress[7][11]_i_8_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_25 
-       (.CI(\waveXAddress_reg[7][11]_i_26_n_0 ),
-        .CO({\NLW_waveXAddress_reg[7][11]_i_25_CO_UNCONNECTED [3:2],\waveXAddress_reg[7][11]_i_25_n_2 ,\waveXAddress_reg[7][11]_i_25_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\MemoryAddress_reg_n_0_[30] ,\MemoryAddress_reg_n_0_[29] }),
-        .O({\NLW_waveXAddress_reg[7][11]_i_25_O_UNCONNECTED [3],\waveXAddress_reg[7][11]_i_25_n_5 ,\waveXAddress_reg[7][11]_i_25_n_6 ,\waveXAddress_reg[7][11]_i_25_n_7 }),
-        .S({1'b0,\waveXAddress[7][11]_i_40_n_0 ,\waveXAddress[7][11]_i_41_n_0 ,\waveXAddress[7][11]_i_42_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_26 
-       (.CI(\waveXAddress_reg[7][11]_i_18_n_0 ),
-        .CO({\waveXAddress_reg[7][11]_i_26_n_0 ,\waveXAddress_reg[7][11]_i_26_n_1 ,\waveXAddress_reg[7][11]_i_26_n_2 ,\waveXAddress_reg[7][11]_i_26_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[28] ,\MemoryAddress_reg_n_0_[27] ,\MemoryAddress_reg_n_0_[26] ,\MemoryAddress_reg_n_0_[25] }),
-        .O({\waveXAddress_reg[7][11]_i_26_n_4 ,\waveXAddress_reg[7][11]_i_26_n_5 ,\waveXAddress_reg[7][11]_i_26_n_6 ,\waveXAddress_reg[7][11]_i_26_n_7 }),
-        .S({\waveXAddress[7][11]_i_43_n_0 ,\waveXAddress[7][11]_i_44_n_0 ,\waveXAddress[7][11]_i_45_n_0 ,\waveXAddress[7][11]_i_46_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_4 
-       (.CI(\waveXAddress_reg[7][11]_i_9_n_0 ),
-        .CO({\waveXAddress_reg[7][11]_i_4_n_0 ,\waveXAddress_reg[7][11]_i_4_n_1 ,\waveXAddress_reg[7][11]_i_4_n_2 ,\waveXAddress_reg[7][11]_i_4_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[12] ,\MemoryAddress_reg_n_0_[11] ,1'b0,\MemoryAddress_reg_n_0_[9] }),
-        .O({\waveXAddress_reg[7][11]_i_4_n_4 ,\waveXAddress_reg[7][11]_i_4_n_5 ,\waveXAddress_reg[7][11]_i_4_n_6 ,\waveXAddress_reg[7][11]_i_4_n_7 }),
-        .S({\waveXAddress[7][11]_i_12_n_0 ,\waveXAddress[7][11]_i_13_n_0 ,\MemoryAddress_reg_n_0_[10] ,\waveXAddress[7][11]_i_14_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \waveXAddress_reg[7][11]_i_9 
-       (.CI(\waveXAddress_reg[7][11]_i_10_n_0 ),
-        .CO({\waveXAddress_reg[7][11]_i_9_n_0 ,\waveXAddress_reg[7][11]_i_9_n_1 ,\waveXAddress_reg[7][11]_i_9_n_2 ,\waveXAddress_reg[7][11]_i_9_n_3 }),
-        .CYINIT(1'b0),
-        .DI({\MemoryAddress_reg_n_0_[8] ,\MemoryAddress_reg_n_0_[7] ,1'b0,\MemoryAddress_reg_n_0_[5] }),
-        .O({\waveXAddress_reg[7][11]_i_9_n_4 ,\waveXAddress_reg[7][11]_i_9_n_5 ,\waveXAddress_reg[7][11]_i_9_n_6 ,\waveXAddress_reg[7][11]_i_9_n_7 }),
-        .S({\waveXAddress[7][11]_i_21_n_0 ,\waveXAddress[7][11]_i_22_n_0 ,\MemoryAddress_reg_n_0_[6] ,\waveXAddress[7][11]_i_23_n_0 }));
+        .S({1'b0,\waveXAddress[7][11]_i_4_n_0 ,\MemoryAddress_reg_n_0_[10] ,\waveXAddress[7][11]_i_5_n_0 }));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \waveXAddress_reg[7][1] 
@@ -41328,9 +38982,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_topXCorr
   wire [11:2]\waceRefAddressWire[1]_39 ;
   wire [11:0]\waceRefAddressWire[2]_4 ;
   wire [11:2]\waceRefAddressWire[3]_40 ;
-  wire [11:0]\waceRefAddressWire[4]_3 ;
+  wire [11:0]\waceRefAddressWire[4]_2 ;
   wire [11:1]\waceRefAddressWire[5]_41 ;
-  wire [11:0]\waceRefAddressWire[6]_2 ;
+  wire [11:0]\waceRefAddressWire[6]_3 ;
   wire [11:0]\waceYAddressWire[0]_1 ;
   wire [11:0]\waceYAddressWire[1]_7 ;
   wire [11:3]\waceYAddressWire[2]_42 ;
@@ -41459,9 +39113,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_topXCorr
         .\waveRefAddress[1] ({\waceRefAddressWire[1]_39 ,\waceYAddressWire[1]_7 [1:0]}),
         .\waveRefAddress[2] (\waceRefAddressWire[2]_4 ),
         .\waveRefAddress[3] ({\waceRefAddressWire[3]_40 ,\waceYAddressWire[3]_6 [1:0]}),
-        .\waveRefAddress[4] (\waceRefAddressWire[4]_3 ),
+        .\waveRefAddress[4] (\waceRefAddressWire[4]_2 ),
         .\waveRefAddress[5] ({\waceRefAddressWire[5]_41 ,\waceYAddressWire[5]_5 [0]}),
-        .\waveRefAddress[6] (\waceRefAddressWire[6]_2 ),
+        .\waveRefAddress[6] (\waceRefAddressWire[6]_3 ),
         .\waveRefOutRam[0]_0 (\waveRefOutRam[0]_0 ),
         .\waveRef_reg[1]_0 (\waveRefOutRam[1]_8 ),
         .\waveRef_reg[2]_1 (\waveRefOutRam[2]_9 ),
@@ -41531,9 +39185,9 @@ module MicroBlaze_Wrapper_XCorr_0_0_topXCorr
         .\waveRefAddress[1] ({\waceRefAddressWire[1]_39 ,\waceYAddressWire[1]_7 [1:0]}),
         .\waveRefAddress[2] (\waceRefAddressWire[2]_4 ),
         .\waveRefAddress[3] ({\waceRefAddressWire[3]_40 ,\waceYAddressWire[3]_6 [1:0]}),
-        .\waveRefAddress[4] (\waceRefAddressWire[4]_3 ),
+        .\waveRefAddress[4] (\waceRefAddressWire[4]_2 ),
         .\waveRefAddress[5] ({\waceRefAddressWire[5]_41 ,\waceYAddressWire[5]_5 [0]}),
-        .\waveRefAddress[6] (\waceRefAddressWire[6]_2 ),
+        .\waveRefAddress[6] (\waceRefAddressWire[6]_3 ),
         .\waveXAddress_reg[2][11]_0 (\waceYAddressWire[2]_42 ),
         .\waveXAddress_reg[3][11]_0 (\waceYAddressWire[3]_6 [11:2]),
         .\waveXAddress_reg[4][11]_0 (\waceYAddressWire[4]_43 ),

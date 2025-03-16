@@ -8,7 +8,7 @@
 #include "xuartps.h"  // Include the UART header for receiving data
 
 #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID  // Adjust this to your UART instance
-#define MAX_BUFFER_SIZE  4  // "test" is 4 characters long
+#define MAX_BUFFER_SIZE  1  // "test" is 4 characters long//118
 
 XUartPs Uart_Ps;  // UART instance
 u8 ReceivedData[MAX_BUFFER_SIZE];  // Buffer for receiving data
@@ -24,33 +24,64 @@ int main() {
 
 	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
-	xil_printf("by James Williamsom v:0.1\n");
+	xil_printf("by James Williamsom v:0.2\n");
+	int state = 0;
 	int maxTime;
 	int maxTime2;
-	int state = 0;
+	int messageLength = 12;
+	char message[messageLength];
 	while(1){
 
 		 // Receive 4 bytes of data (enough to hold "test")
 		u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
 
-		        // If 4 bytes are received, compare with "test"
-		        if (bytesReceived == MAX_BUFFER_SIZE &&
-		            ReceivedData[0] == 't' &&
-		            ReceivedData[1] == 'e' &&
-		            ReceivedData[2] == 's' &&
-		            ReceivedData[3] == 't') {
-		            // Stop printing "Hello World" if "test" is received
-		            break;
+		        // checks state
+
+
+		if (bytesReceived > 0) {
+		    xil_printf("received");
+		    message[0] = ReceivedData[0];
+		    if (ReceivedData[0] == '{') {
+		        xil_printf("{");
+		        int i = 1;
+		        while (i < messageLength) {
+
+		            u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
+
+		            if (bytesReceived > 0) {
+
+		                message[i] = ReceivedData[0];
+		                xil_printf("%c", message[i]);
+		                i++;
+		            }
 		        }
 
 
+		        for (int j = 0; j < i; j++) {
+		            xil_printf("%c", message[j]);
+		        }
 
-		if (state == 1){
+		        //{"state":[0]
+		        if (message[10]=='0'){
+		        	state=0;
+		        	xil_printf("state is 0");
+		        }
+		        if (message[10]=='1'){
+		        	state=1;
+		        	xil_printf("state is 1");
+		        }
+
+		    }
+		}
+
+
+
+		if (state == 0){
 
 
 
 		}
-		if (state == 0){
+		if (state == 1){
 			maxTime = delayGetter(maxTime);
 			maxTime2 = delayGetter2(maxTime2);
 			double i = maxTime;
@@ -61,6 +92,7 @@ int main() {
 			solver(i, j, solution);
 			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, solution[0], solution[1]);
 		}
+
 	}
 	cleanup_platform();
 	return 0;
@@ -107,7 +139,6 @@ int delayGetter2 (int delay){
 
 	int i = 1;
 	int maxTime;
-	int MaxSignal = 0;
 	int data = 0;
 
 	while (i < 4000) {

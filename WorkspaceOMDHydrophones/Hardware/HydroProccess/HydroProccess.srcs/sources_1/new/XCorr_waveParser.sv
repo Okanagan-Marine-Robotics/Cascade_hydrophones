@@ -30,9 +30,9 @@ module XCorr_waveParser(
     end
 	
 	for(int i = 0;i<=7;i++)begin
-	   waveXAddress [i] <=((MemoryAddress-XCORRsize*i<=XCORRsize)&&(MemoryAddress-XCORRsize*i>0))?MemoryAddress-XCORRsize*i:2501;
-	   waveYAddress [i] <=((MemoryAddress-XCORRsize*i<=XCORRsize)&&(MemoryAddress-XCORRsize*i>0))?MemoryAddress-XCORRsize*i:2501;
-	   waveRefAddress [i] <=((MemoryAddress-XCORRsize*i<=XCORRsize)&&(MemoryAddress-XCORRsize*i>0))?MemoryAddress-XCORRsize*i:2501;
+	   waveXAddress [i] <=((MemoryAddress<=XCORRsize+XCORRsize*i)&&(MemoryAddress>0+XCORRsize*i))?MemoryAddress-XCORRsize*i:2501;
+	   waveYAddress [i] <=((MemoryAddress<=XCORRsize+XCORRsize*i)&&(MemoryAddress>0+XCORRsize*i))?MemoryAddress-XCORRsize*i:2501;
+	   waveRefAddress [i] <=((MemoryAddress<=XCORRsize+XCORRsize*i)&&(MemoryAddress>0+XCORRsize*i))?MemoryAddress-XCORRsize*i:2501;
     end
   	 
 	end

@@ -20,7 +20,7 @@ module XCorr_BramMux(
         (waveRefAddress [5]-2500*i>=1&&waveRefAddress [3]-2500*i<=2500)?waveRefAddress [3]-2500*i:
         (waveRefAddress [6]-2500*i>=1&&waveRefAddress [3]-2500*i<=2500)?waveRefAddress [3]-2500*i:
         (waveRefAddress [7]-2500*i>=1&&waveRefAddress [3]-2500*i<=2500)?waveRefAddress [3]-2500*i:0;
-    end    
+    end  
     for(int i = 0;i<=7;i++)begin
         if((waveRefAddress [i]>=1)&&(waveRefAddress [i]<=XCORRsize))Ref0[i]=waveRef[0];
         else if ((waveRefAddress [i]>=XCORRsize+1)&&(waveRefAddress [i]<=XCORRsize*2))Ref0[i]=waveRef[1];
