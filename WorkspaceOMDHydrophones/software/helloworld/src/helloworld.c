@@ -28,7 +28,8 @@ int main() {
 	int state = 0;
 	int maxTime;
 	int maxTime2;
-	int messageLength = 12;
+	int messageLength = 61;
+	int offset = 0;
 	char message[messageLength];
 	while(1){
 
@@ -39,7 +40,7 @@ int main() {
 
 
 		if (bytesReceived > 0) {
-		    xil_printf("received");
+		    xil_printf("received:");
 		    message[0] = ReceivedData[0];
 		    if (ReceivedData[0] == '{') {
 		        xil_printf("{");
@@ -56,7 +57,7 @@ int main() {
 		            }
 		        }
 
-
+		        //sends back message
 		        for (int j = 0; j < i; j++) {
 		            xil_printf("%c", message[j]);
 		        }
@@ -64,12 +65,37 @@ int main() {
 		        //{"state":[0]
 		        if (message[10]=='0'){
 		        	state=0;
-		        	xil_printf("state is 0");
+		        	xil_printf("state is 0\n");
 		        }
 		        if (message[10]=='1'){
 		        	state=1;
-		        	xil_printf("state is 1");
+		        	xil_printf("state is 1\n");
+		       }
+
+		        //sets offset
+		        offset = 0;
+		        for (int i = 27;i>21;i--){
+		        	offset = offset + pow(10, 27-i)*(message[i]-'0');
 		        }
+
+		        xil_printf("offset = %d\n", offset);
+
+
+		       int test1 = 0;
+		       for (int i = 43;i>=39;i--){
+		       	   test1 = test1 + pow(10, 43-i)*(message[i]-'0');
+		       	   xil_printf("test1 = %d\n", test1);
+		       }
+
+		        xil_printf("test1 = %d\n", test1);
+
+		        int test2 = 0;
+		        for (int i = 58;i>=54;i--){
+		        	test2 = test2 + pow(10, 58-i)*(message[i]-'0');
+		        	xil_printf("test2 = %d\n", test2);
+		        }
+
+		        xil_printf("test2 = %d\n", test2);
 
 		    }
 		}

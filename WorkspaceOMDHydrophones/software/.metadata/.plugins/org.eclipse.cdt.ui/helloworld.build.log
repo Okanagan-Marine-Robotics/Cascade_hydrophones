@@ -1,4 +1,4 @@
-05:23:15 **** Incremental Build of configuration Debug for project helloworld ****
+01:36:14 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -16,18 +16,18 @@ In file included from ../src/platform.h:36,
     5 | #define UART_DEVICE_ID 0
       | 
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:85:35: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
-   85 |                         maxTime = delayGetter(maxTime);
+../src/helloworld.c:111:35: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
+  111 |                         maxTime = delayGetter(maxTime);
       |                                   ^~~~~~~~~~~
-../src/helloworld.c:86:36: warning: implicit declaration of function 'delayGetter2' [-Wimplicit-function-declaration]
-   86 |                         maxTime2 = delayGetter2(maxTime2);
+../src/helloworld.c:112:36: warning: implicit declaration of function 'delayGetter2' [-Wimplicit-function-declaration]
+  112 |                         maxTime2 = delayGetter2(maxTime2);
       |                                    ^~~~~~~~~~~~
-../src/helloworld.c:92:25: warning: implicit declaration of function 'solver' [-Wimplicit-function-declaration]
-   92 |                         solver(i, j, solution);
+../src/helloworld.c:118:25: warning: implicit declaration of function 'solver' [-Wimplicit-function-declaration]
+  118 |                         solver(i, j, solution);
       |                         ^~~~~~
 ../src/helloworld.c: In function 'delayGetter':
-../src/helloworld.c:111:13: warning: unused variable 'MaxSignal' [-Wunused-variable]
-  111 |         int MaxSignal = 0;
+../src/helloworld.c:137:13: warning: unused variable 'MaxSignal' [-Wunused-variable]
+  137 |         int MaxSignal = 0;
       |             ^~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
@@ -39,9 +39,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  69195	   2636	  22712	  94543	  1714f	helloworld.elf
+  77803	   2636	  22712	 103151	  192ef	helloworld.elf
 'Finished building: helloworld.elf.size'
 ' '
 
-05:23:16 Build Finished (took 711ms)
+01:36:15 Build Finished (took 723ms)
 

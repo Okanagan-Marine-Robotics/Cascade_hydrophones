@@ -347,3 +347,30 @@ timestamp=[2025-03-16 05:17:36], mode=BUILD, duration=0:00:00.785, duration_ms=7
 timestamp=[2025-03-16 05:19:25], mode=BUILD, duration=0:00:00.725, duration_ms=725, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-03-16 05:21:54], mode=BUILD, duration=0:00:00.775, duration_ms=775, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-03-16 05:23:16], mode=BUILD, duration=0:00:00.717, duration_ms=717, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:22:33], mode=WORKBENCH_START, duration=0:00:05.846, duration_ms=5846, data={}
+timestamp=[2025-03-19 00:22:33], mode=WORKBENCH_UI_INIT, duration=0:00:00.488, duration_ms=488, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MicroBlaze_wrapper,RemoteSystemsTempFiles,helloworld,helloworld_system}
+timestamp=[2025-03-19 00:22:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.950, duration_ms=950, data={}
+timestamp=[2025-03-19 00:35:24], mode=BUILD, duration=0:00:03.742, duration_ms=3742, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:43:41], mode=BUILD, duration=0:00:00.286, duration_ms=286, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:48:35], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:49:07], mode=BUILD, duration=0:00:00.298, duration_ms=298, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:49:32], mode=BUILD, duration=0:00:00.776, duration_ms=776, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:51:19], mode=BUILD, duration=0:00:00.794, duration_ms=794, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:52:42], mode=BUILD, duration=0:00:00.354, duration_ms=354, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:54:26], mode=BUILD, duration=0:00:00.784, duration_ms=784, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:54:53], mode=BUILD, duration=0:00:00.280, duration_ms=280, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:55:59], mode=BUILD, duration=0:00:00.779, duration_ms=779, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:57:39], mode=BUILD, duration=0:00:00.769, duration_ms=769, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 00:58:21], mode=BUILD, duration=0:00:00.711, duration_ms=711, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:01:56], mode=BUILD, duration=0:00:00.789, duration_ms=789, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:03:01], mode=BUILD, duration=0:00:00.719, duration_ms=719, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:03:40], mode=BUILD, duration=0:00:00.721, duration_ms=721, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:21:58], mode=BUILD, duration=0:00:00.352, duration_ms=352, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:22:42], mode=BUILD, duration=0:00:00.766, duration_ms=766, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:23:26], mode=BUILD, duration=0:00:00.279, duration_ms=279, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:23:35], mode=BUILD, duration=0:00:00.286, duration_ms=286, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:30:42], mode=BUILD, duration=0:00:00.726, duration_ms=726, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:32:36], mode=BUILD, duration=0:00:00.791, duration_ms=791, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:33:15], mode=BUILD, duration=0:00:00.769, duration_ms=769, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:35:25], mode=BUILD, duration=0:00:00.787, duration_ms=787, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 01:36:15], mode=BUILD, duration=0:00:00.728, duration_ms=728, data={name=helloworld, configuration=Debug, clean_build=false}
