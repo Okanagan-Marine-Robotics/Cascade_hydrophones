@@ -30,6 +30,8 @@ int main() {
 	int maxTime2;
 	int messageLength = 61;
 	int offset = 0;
+	int test1 = 0;
+	int test2 = 0;
 	char message[messageLength];
 	while(1){
 
@@ -38,7 +40,7 @@ int main() {
 
 		        // checks state
 
-
+		//message json {"state":[0]"offset":[0000000]"test1":[00000]"test2":[00000]
 		if (bytesReceived > 0) {
 		    xil_printf("received:");
 		    message[0] = ReceivedData[0];
@@ -81,18 +83,16 @@ int main() {
 		        xil_printf("offset = %d\n", offset);
 
 
-		       int test1 = 0;
+		       test1 = 0;
 		       for (int i = 43;i>=39;i--){
 		       	   test1 = test1 + pow(10, 43-i)*(message[i]-'0');
-		       	   xil_printf("test1 = %d\n", test1);
 		       }
 
 		        xil_printf("test1 = %d\n", test1);
 
-		        int test2 = 0;
+		       test2 = 0;
 		        for (int i = 58;i>=54;i--){
 		        	test2 = test2 + pow(10, 58-i)*(message[i]-'0');
-		        	xil_printf("test2 = %d\n", test2);
 		        }
 
 		        xil_printf("test2 = %d\n", test2);
@@ -108,8 +108,8 @@ int main() {
 
 		}
 		if (state == 1){
-			maxTime = delayGetter(maxTime);
-			maxTime2 = delayGetter2(maxTime2);
+			maxTime = delayGetter(maxTime,test1);
+			maxTime2 = delayGetter2(maxTime2,test2);
 			double i = maxTime;
 			double j = maxTime2;
 			double solution[2];
@@ -127,7 +127,7 @@ int main() {
 
 
 
-int delayGetter (int delay){
+int delayGetter (int delay,int test1){
 
 	XGpio Gpio;
 	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
@@ -138,7 +138,7 @@ int delayGetter (int delay){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio, 1, 100);
+    	XGpio_DiscreteWrite(&Gpio, 1, test1);
 
      	data = XGpio_DiscreteRead(&Gpio, 2);
 
@@ -158,7 +158,7 @@ int delayGetter (int delay){
 
 
 
-int delayGetter2 (int delay){
+int delayGetter2 (int delay, int test2){
 
 	XGpio Gpio1;
 	XGpio_Initialize(&Gpio1, XPAR_AXI_GPIO_1_DEVICE_ID);
@@ -168,7 +168,7 @@ int delayGetter2 (int delay){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio1, 1, 10);
+    	XGpio_DiscreteWrite(&Gpio1, 1, test2);
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 
