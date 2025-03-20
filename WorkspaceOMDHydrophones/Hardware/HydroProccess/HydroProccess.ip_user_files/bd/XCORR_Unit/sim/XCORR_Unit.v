@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Fri Mar 14 15:59:04 2025
+//Date        : Thu Mar 20 01:36:32 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target XCORR_Unit.bd
 //Design      : XCORR_Unit
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "XCORR_Unit,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=XCORR_Unit,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "XCORR_Unit.hwdef" *) 
+(* CORE_GENERATION_INFO = "XCORR_Unit,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=XCORR_Unit,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "XCORR_Unit.hwdef" *) 
 module XCORR_Unit
    (clk,
     clk1Mhz);
@@ -27,6 +27,7 @@ module XCORR_Unit
   wire clk1Mhz;
   wire [31:0]xlconstant_0_dout;
   wire [31:0]xlconstant_1_dout;
+  wire [31:0]xlconstant_2_dout;
   wire [31:0]xlslice_0_Dout;
   wire [31:0]xlslice_1_Dout;
 
@@ -51,6 +52,7 @@ module XCORR_Unit
        (.clk(clk),
         .clk1Mhz(clk1Mhz),
         .count(Wrapper_XCorr_0_count),
+        .offset(xlconstant_2_dout),
         .wave(SineWaveGen_1_wave),
         .wave1(SineWaveGen_2_wave),
         .waveRef(SineWaveGen_0_wave),
@@ -60,6 +62,8 @@ module XCORR_Unit
        (.dout(xlconstant_0_dout));
   XCORR_Unit_xlconstant_1_0 xlconstant_1
        (.dout(xlconstant_1_dout));
+  XCORR_Unit_xlconstant_2_0 xlconstant_2
+       (.dout(xlconstant_2_dout));
   XCORR_Unit_xlslice_0_0 xlslice_0
        (.Din(Wrapper_XCorr_0_xcorr),
         .Dout(xlslice_0_Dout));

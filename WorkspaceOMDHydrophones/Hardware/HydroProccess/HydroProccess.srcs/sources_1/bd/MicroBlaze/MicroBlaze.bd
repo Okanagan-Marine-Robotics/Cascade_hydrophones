@@ -7,8 +7,7 @@
       "name": "MicroBlaze",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "AddressFixer_0": "",
@@ -34,7 +33,7 @@
       "xlslice_1": "",
       "Wrapper_XCorr_0": "",
       "SineWaveGen_2": "",
-      "xlconstant_0": ""
+      "axi_gpio_2": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1798,34 +1797,10 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "clk1Mhz": {
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "default_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "default_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_clk_vip_0_0_clk_out",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "waveRef": {
             "direction": "I",
@@ -1840,6 +1815,11 @@
           "wave1": {
             "direction": "I",
             "left": "11",
+            "right": "0"
+          },
+          "offset": {
+            "direction": "I",
+            "left": "31",
             "right": "0"
           },
           "xcorr": {
@@ -1900,18 +1880,24 @@
           }
         }
       },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "MicroBlaze_xlconstant_0_0",
-        "xci_path": "ip\\MicroBlaze_xlconstant_0_0\\MicroBlaze_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0",
+      "axi_gpio_2": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "ip_revision": "35",
+        "xci_name": "MicroBlaze_axi_gpio_2_0",
+        "xci_path": "ip\\MicroBlaze_axi_gpio_2_0\\MicroBlaze_axi_gpio_2_0.xci",
+        "inst_hier_path": "axi_gpio_2",
         "parameters": {
-          "CONST_VAL": {
+          "C_ALL_INPUTS": {
             "value": "0"
           },
-          "CONST_WIDTH": {
-            "value": "32"
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
           }
         }
       }
@@ -2060,6 +2046,18 @@
           "SineWaveGen_1/delay"
         ]
       },
+      "axi_gpio_2_gpio2_io_o": {
+        "ports": [
+          "axi_gpio_2/gpio2_io_o",
+          "SineWaveGen_2/delay"
+        ]
+      },
+      "axi_gpio_2_gpio_io_o": {
+        "ports": [
+          "axi_gpio_2/gpio_io_o",
+          "Wrapper_XCorr_0/offset"
+        ]
+      },
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
@@ -2101,12 +2099,6 @@
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "proc_sys_reset_0/ext_reset_in"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "SineWaveGen_2/delay"
         ]
       },
       "xlconstant_1_dout": {

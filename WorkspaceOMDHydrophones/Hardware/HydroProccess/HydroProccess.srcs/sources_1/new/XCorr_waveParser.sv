@@ -12,22 +12,26 @@ module XCorr_waveParser(
 	output reg [11:0] waveYAddress [0:7],
 	input clk1Mhz,
 	input clk,
+	input [31:0] offset,
 	output reg resetsignal = 0
 	);
 	
 	parameter XCORRsize = 2500;
 
-	reg [31:0] MemoryAddress = 10010;
-    
+	reg [31:0] MemoryAddress = 20010;
+    reg [31:0] counter = 20010;
+    reg [31:0] offsetReg = 20010;
 	always @(negedge clk1Mhz)begin
 	 
-	if (MemoryAddress == 0) begin MemoryAddress<=2000000;
+	if (counter == 0 + offsetReg) begin counter<=2000000 + offsetReg;
 	resetsignal <=1;
 	end
 	else begin
-	   MemoryAddress <= MemoryAddress - 1;
+	   counter <= counter - 1;
 	   resetsignal <=0;
     end
+	offsetReg <= offset;
+	MemoryAddress <= counter - offsetReg;
 	
 	for(int i = 0;i<=7;i++)begin
 	   waveXAddress [i] <=((MemoryAddress<=XCORRsize+XCORRsize*i)&&(MemoryAddress>0+XCORRsize*i))?MemoryAddress-XCORRsize*i:2501;

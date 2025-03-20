@@ -19,7 +19,8 @@
       "xlconstant_1": "",
       "xlslice_0": "",
       "xlslice_1": "",
-      "MaximumFinder_0": ""
+      "MaximumFinder_0": "",
+      "xlconstant_2": ""
     },
     "ports": {
       "clk": {
@@ -133,6 +134,11 @@
           "wave1": {
             "direction": "I",
             "left": "11",
+            "right": "0"
+          },
+          "offset": {
+            "direction": "I",
+            "left": "31",
             "right": "0"
           },
           "xcorr": {
@@ -308,6 +314,21 @@
             "right": "0"
           }
         }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "XCORR_Unit_xlconstant_2_0",
+        "xci_path": "ip\\XCORR_Unit_xlconstant_2_0\\XCORR_Unit_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "20000"
+          },
+          "CONST_WIDTH": {
+            "value": "32"
+          }
+        }
       }
     },
     "nets": {
@@ -359,8 +380,8 @@
       "clk_1": {
         "ports": [
           "clk",
-          "Wrapper_XCorr_0/clk",
-          "MaximumFinder_0/clk"
+          "MaximumFinder_0/clk",
+          "Wrapper_XCorr_0/clk"
         ]
       },
       "xlconstant_0_dout": {
@@ -374,6 +395,12 @@
         "ports": [
           "xlconstant_1/dout",
           "SineWaveGen_2/delay"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "Wrapper_XCorr_0/offset"
         ]
       },
       "xlslice_0_Dout": {
