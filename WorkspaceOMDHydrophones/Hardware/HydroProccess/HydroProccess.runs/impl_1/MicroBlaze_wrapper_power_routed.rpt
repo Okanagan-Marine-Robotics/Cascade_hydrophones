@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Fri Mar 14 18:03:40 2025
+| Date             : Sat Mar 22 19:16:34 2025
 | Host             : James running 64-bit major release  (build 9200)
 | Command          : report_power -file MicroBlaze_wrapper_power_routed.rpt -pb MicroBlaze_wrapper_power_summary_routed.pb -rpx MicroBlaze_wrapper_power_routed.rpx
 | Design           : MicroBlaze_wrapper
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.028 |        7 |       --- |             --- |
-| Slice Logic             |     0.014 |     7701 |       --- |             --- |
-|   LUT as Logic          |     0.012 |     3418 |     17600 |           19.42 |
-|   CARRY4                |     0.001 |      582 |      4400 |           13.23 |
-|   Register              |    <0.001 |     2729 |     35200 |            7.75 |
-|   Others                |     0.000 |      379 |       --- |             --- |
+| Slice Logic             |     0.015 |     8241 |       --- |             --- |
+|   LUT as Logic          |     0.013 |     3638 |     17600 |           20.67 |
+|   CARRY4                |     0.001 |      601 |      4400 |           13.66 |
+|   Register              |    <0.001 |     2997 |     35200 |            8.51 |
+|   Others                |     0.000 |      417 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        2 |      6000 |            0.03 |
-| Signals                 |     0.037 |     7329 |       --- |             --- |
+| Signals                 |     0.037 |     7692 |       --- |             --- |
 | Block RAM               |     0.133 |     34.5 |        60 |           57.50 |
 | MMCM                    |     0.123 |        1 |         2 |           50.00 |
 | DSPs                    |     0.038 |       22 |        80 |           27.50 |
@@ -156,18 +156,20 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| MicroBlaze_wrapper       |     1.657 |
-|   MicroBlaze_i           |     1.657 |
+| MicroBlaze_wrapper       |     1.658 |
+|   MicroBlaze_i           |     1.658 |
 |     MaximumFinder_0      |     0.002 |
 |       inst               |     0.002 |
-|     Wrapper_XCorr_0      |     0.219 |
-|       inst               |     0.219 |
+|     Wrapper_XCorr_0      |     0.217 |
+|       inst               |     0.217 |
 |     axi_gpio_0           |     0.005 |
 |       U0                 |     0.005 |
 |     axi_gpio_1           |     0.005 |
 |       U0                 |     0.005 |
-|     axi_smc              |     0.014 |
-|       inst               |     0.014 |
+|     axi_gpio_2           |     0.003 |
+|       U0                 |     0.003 |
+|     axi_smc              |     0.015 |
+|       inst               |     0.015 |
 |     clk_wiz_0            |     0.124 |
 |       inst               |     0.124 |
 |     processing_system7_0 |     1.285 |

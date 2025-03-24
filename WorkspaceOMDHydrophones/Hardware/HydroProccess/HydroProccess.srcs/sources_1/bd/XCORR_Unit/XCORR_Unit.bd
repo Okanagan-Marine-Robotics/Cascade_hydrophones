@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2CC38FD68A89CD25",
+      "boundary_crc": "0x2CC38FD6862A5CDE",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/XCORR_Unit",
       "name": "XCORR_Unit",
@@ -20,7 +20,9 @@
       "xlslice_0": "",
       "xlslice_1": "",
       "MaximumFinder_0": "",
-      "xlconstant_2": ""
+      "xlconstant_2": "",
+      "counter_1_to_20000_0": "",
+      "WaveBuffForSoftware_0": ""
     },
     "ports": {
       "clk": {
@@ -329,13 +331,95 @@
             "value": "32"
           }
         }
+      },
+      "counter_1_to_20000_0": {
+        "vlnv": "xilinx.com:module_ref:counter_1_to_20000:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_counter_1_to_20000_0_0",
+        "xci_path": "ip\\XCORR_Unit_counter_1_to_20000_0_0\\XCORR_Unit_counter_1_to_20000_0_0.xci",
+        "inst_hier_path": "counter_1_to_20000_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter_1_to_20000",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "XCORR_Unit_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "count": {
+            "direction": "O",
+            "left": "14",
+            "right": "0"
+          }
+        }
+      },
+      "WaveBuffForSoftware_0": {
+        "vlnv": "xilinx.com:module_ref:WaveBuffForSoftware:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_WaveBuffForSoftware_0_0",
+        "xci_path": "ip\\XCORR_Unit_WaveBuffForSoftware_0_0\\XCORR_Unit_WaveBuffForSoftware_0_0.xci",
+        "inst_hier_path": "WaveBuffForSoftware_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "WaveBuffForSoftware",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "addr": {
+            "direction": "I",
+            "left": "14",
+            "right": "0"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "offset": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "XCORR_Unit_clk",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
       }
     },
     "nets": {
       "SineWaveGen_0_wave": {
         "ports": [
           "SineWaveGen_0/wave",
-          "Wrapper_XCorr_0/waveRef"
+          "Wrapper_XCorr_0/waveRef",
+          "WaveBuffForSoftware_0/data_in"
         ]
       },
       "SineWaveGen_1_wave": {
@@ -374,7 +458,9 @@
           "SineWaveGen_0/clk1Mhz",
           "SineWaveGen_1/clk1Mhz",
           "SineWaveGen_2/clk1Mhz",
-          "Wrapper_XCorr_0/clk1Mhz"
+          "Wrapper_XCorr_0/clk1Mhz",
+          "WaveBuffForSoftware_0/clk",
+          "counter_1_to_20000_0/clk"
         ]
       },
       "clk_1": {
@@ -382,6 +468,12 @@
           "clk",
           "MaximumFinder_0/clk",
           "Wrapper_XCorr_0/clk"
+        ]
+      },
+      "counter_1_to_20000_0_count": {
+        "ports": [
+          "counter_1_to_20000_0/count",
+          "WaveBuffForSoftware_0/addr"
         ]
       },
       "xlconstant_0_dout": {
@@ -400,7 +492,8 @@
       "xlconstant_2_dout": {
         "ports": [
           "xlconstant_2/dout",
-          "Wrapper_XCorr_0/offset"
+          "Wrapper_XCorr_0/offset",
+          "WaveBuffForSoftware_0/offset"
         ]
       },
       "xlslice_0_Dout": {

@@ -55,7 +55,10 @@ vlog -work xil_defaultlib  -incr -v2k5 "+incdir+C:/Xilinx/Vivado/2024.2/data/xil
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlslice_0_0/sim/XCORR_Unit_xlslice_0_0.v" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlslice_1_0/sim/XCORR_Unit_xlslice_1_0.v" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_MaximumFinder_0_0/sim/XCORR_Unit_MaximumFinder_0_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_2_0/sim/XCORR_Unit_xlconstant_2_0.v" \
 "../../../bd/XCORR_Unit/sim/XCORR_Unit.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_counter_1_to_20000_0_0/sim/XCORR_Unit_counter_1_to_20000_0_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_WaveBuffForSoftware_0_0/sim/XCORR_Unit_WaveBuffForSoftware_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

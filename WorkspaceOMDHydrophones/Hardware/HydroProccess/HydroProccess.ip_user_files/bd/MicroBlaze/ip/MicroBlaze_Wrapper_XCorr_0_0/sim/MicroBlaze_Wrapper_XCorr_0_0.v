@@ -47,22 +47,47 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:ip:xlconstant:1.1
-// IP Revision: 9
+// IP VLNV: xilinx.com:module_ref:Wrapper_XCorr:1.0
+// IP Revision: 1
 
 `timescale 1ns/1ps
 
+(* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
-module MicroBlaze_xlconstant_0_0 (
-  dout
+module MicroBlaze_Wrapper_XCorr_0_0 (
+  clk,
+  clk1Mhz,
+  waveRef,
+  wave,
+  wave1,
+  offset,
+  xcorr,
+  xcorr1,
+  count
 );
 
-output wire [31 : 0] dout;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+input wire clk;
+input wire clk1Mhz;
+input wire [11 : 0] waveRef;
+input wire [11 : 0] wave;
+input wire [11 : 0] wave1;
+input wire [31 : 0] offset;
+output wire [35 : 0] xcorr;
+output wire [35 : 0] xcorr1;
+output wire [15 : 0] count;
 
-  xlconstant_v1_1_9_xlconstant #(
-    .CONST_WIDTH(32),
-    .CONST_VAL(32'H00000000)
-  ) inst (
-    .dout(dout)
+  Wrapper_XCorr inst (
+    .clk(clk),
+    .clk1Mhz(clk1Mhz),
+    .waveRef(waveRef),
+    .wave(wave),
+    .wave1(wave1),
+    .offset(offset),
+    .xcorr(xcorr),
+    .xcorr1(xcorr1),
+    .count(count)
   );
 endmodule

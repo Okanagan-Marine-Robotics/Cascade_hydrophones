@@ -20,7 +20,7 @@ module XCorr_waveParser(
 
 	reg [31:0] MemoryAddress = 20010;
     reg [31:0] counter = 20010;
-    reg [31:0] offsetReg = 20010;
+    reg [31:0] offsetReg = 0;
 	always @(negedge clk1Mhz)begin
 	 
 	if (counter == 0 + offsetReg) begin counter<=2000000 + offsetReg;
@@ -30,7 +30,7 @@ module XCorr_waveParser(
 	   counter <= counter - 1;
 	   resetsignal <=0;
     end
-	offsetReg <= offset;
+	//offsetReg <= offset;
 	MemoryAddress <= counter - offsetReg;
 	
 	for(int i = 0;i<=7;i++)begin

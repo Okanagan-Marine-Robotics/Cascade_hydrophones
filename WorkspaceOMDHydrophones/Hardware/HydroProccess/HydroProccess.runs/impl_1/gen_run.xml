@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1742000446">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1742696098">
   <File Type="REPORTS-TCL" Name="MicroBlaze_wrapper_reports.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="MicroBlaze_wrapper_power_summary_routed.pb"/>
   <File Type="BITSTR-MMI" Name="MicroBlaze_wrapper.mmi"/>
@@ -154,6 +154,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/Wrapper_XCorr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/WaveToSoftware.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -364,6 +371,22 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/sinewavegenForFilter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RamBreakout.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="MicroBlaze_wrapper"/>
@@ -411,11 +434,11 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_1_0"/>
@@ -423,6 +446,8 @@
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SineWaveGen_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SineWaveGen_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_AddressFixer_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Wrapper_XCorr_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_MaximumFinder_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Wrapper_XCorr_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_WaveToSoftware_0_0"/>
 </GenRun>
