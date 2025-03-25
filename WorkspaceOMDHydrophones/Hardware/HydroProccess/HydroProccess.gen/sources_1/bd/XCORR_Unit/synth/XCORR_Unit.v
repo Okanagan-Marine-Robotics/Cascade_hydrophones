@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Mon Mar 24 01:49:01 2025
+//Date        : Tue Mar 25 16:40:51 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target XCORR_Unit.bd
 //Design      : XCORR_Unit
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "XCORR_Unit,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=XCORR_Unit,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "XCORR_Unit.hwdef" *) 
+(* CORE_GENERATION_INFO = "XCORR_Unit,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=XCORR_Unit,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "XCORR_Unit.hwdef" *) 
 module XCORR_Unit
    (clk,
     clk1Mhz);
@@ -25,7 +25,6 @@ module XCORR_Unit
   wire [35:0]Wrapper_XCorr_0_xcorr1;
   wire clk;
   wire clk1Mhz;
-  wire [14:0]counter_1_to_20000_0_count;
   wire [31:0]xlconstant_0_dout;
   wire [31:0]xlconstant_1_dout;
   wire [31:0]xlconstant_2_dout;
@@ -49,11 +48,6 @@ module XCORR_Unit
        (.clk1Mhz(clk1Mhz),
         .delay(xlconstant_1_dout),
         .wave(SineWaveGen_2_wave));
-  XCORR_Unit_WaveBuffForSoftware_0_0 WaveBuffForSoftware_0
-       (.addr(counter_1_to_20000_0_count),
-        .clk(clk1Mhz),
-        .data_in(SineWaveGen_0_wave),
-        .offset(xlconstant_2_dout));
   XCORR_Unit_Wrapper_XCorr_0_0 Wrapper_XCorr_0
        (.clk(clk),
         .clk1Mhz(clk1Mhz),
@@ -64,10 +58,6 @@ module XCORR_Unit
         .waveRef(SineWaveGen_0_wave),
         .xcorr(Wrapper_XCorr_0_xcorr),
         .xcorr1(Wrapper_XCorr_0_xcorr1));
-  XCORR_Unit_counter_1_to_20000_0_0 counter_1_to_20000_0
-       (.clk(clk1Mhz),
-        .count(counter_1_to_20000_0_count),
-        .rst(1'b0));
   XCORR_Unit_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
   XCORR_Unit_xlconstant_1_0 xlconstant_1

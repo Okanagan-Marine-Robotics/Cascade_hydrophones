@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xDBF9E2241F093FB7",
+      "boundary_crc": "0xB8FAE22E4BEC26C4",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze",
       "name": "MicroBlaze",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2"
+      "tool_version": "2024.2",
+      "validated": "true"
     },
     "design_tree": {
       "AddressFixer_0": "",
@@ -33,10 +34,7 @@
       "xlslice_1": "",
       "Wrapper_XCorr_0": "",
       "SineWaveGen_2": "",
-      "axi_gpio_2": "",
-      "WaveToSoftware_0": "",
-      "WaveBuffForSoftware_0": "",
-      "counter_1_to_20000_0": ""
+      "axi_gpio_2": ""
     },
     "interface_ports": {
       "DDR": {
@@ -167,54 +165,15 @@
             "right": "0"
           }
         }
-      },
-      "FIXED_IO": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:display_processing_system7:fixedio:1.0",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "MIO": {
-            "physical_name": "FIXED_IO_mio",
-            "direction": "IO",
-            "left": "53",
-            "right": "0"
-          },
-          "DDR_VRN": {
-            "physical_name": "FIXED_IO_ddr_vrn",
-            "direction": "IO"
-          },
-          "DDR_VRP": {
-            "physical_name": "FIXED_IO_ddr_vrp",
-            "direction": "IO"
-          },
-          "PS_SRSTB": {
-            "physical_name": "FIXED_IO_ps_srstb",
-            "direction": "IO"
-          },
-          "PS_CLK": {
-            "physical_name": "FIXED_IO_ps_clk",
-            "direction": "IO"
-          },
-          "PS_PORB": {
-            "physical_name": "FIXED_IO_ps_porb",
-            "direction": "IO"
-          }
-        }
       }
     },
     "ports": {
-      "led_green": {
+      "led_red": {
         "direction": "O",
         "left": "0",
         "right": "0"
       },
-      "led_red": {
+      "led_green": {
         "direction": "O",
         "left": "0",
         "right": "0"
@@ -1146,7 +1105,7 @@
         "inst_hier_path": "axi_smc",
         "parameters": {
           "NUM_MI": {
-            "value": "3"
+            "value": "4"
           },
           "NUM_SI": {
             "value": "1"
@@ -1168,7 +1127,8 @@
             "bridges": [
               "M00_AXI",
               "M01_AXI",
-              "M02_AXI"
+              "M02_AXI",
+              "M03_AXI"
             ]
           },
           "M00_AXI": {
@@ -1222,6 +1182,31 @@
             }
           },
           "M02_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "NUM_READ_OUTSTANDING": {
+                "value": "8"
+              },
+              "NUM_READ_THREADS": {
+                "value": "1"
+              },
+              "NUM_WRITE_OUTSTANDING": {
+                "value": "8"
+              },
+              "NUM_WRITE_THREADS": {
+                "value": "1"
+              },
+              "RUSER_BITS_PER_BYTE": {
+                "value": "0"
+              },
+              "WUSER_BITS_PER_BYTE": {
+                "value": "0"
+              }
+            }
+          },
+          "M03_AXI": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -1660,7 +1645,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "1"
+            "value": "0"
           }
         }
       },
@@ -1672,7 +1657,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "1"
+            "value": "0"
           }
         }
       },
@@ -1940,131 +1925,23 @@
         "xci_path": "ip\\MicroBlaze_axi_gpio_2_0\\MicroBlaze_axi_gpio_2_0.xci",
         "inst_hier_path": "axi_gpio_2",
         "parameters": {
-          "C_ALL_INPUTS": {
-            "value": "0"
-          },
-          "C_ALL_OUTPUTS": {
-            "value": "1"
-          },
           "C_ALL_OUTPUTS_2": {
             "value": "1"
           },
+          "C_DOUT_DEFAULT": {
+            "value": "0x00000000"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "32"
+          },
           "C_IS_DUAL": {
             "value": "1"
-          }
-        }
-      },
-      "WaveToSoftware_0": {
-        "vlnv": "xilinx.com:module_ref:WaveToSoftware:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_WaveToSoftware_0_0",
-        "xci_path": "ip\\MicroBlaze_WaveToSoftware_0_0\\MicroBlaze_WaveToSoftware_0_0.xci",
-        "inst_hier_path": "WaveToSoftware_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "WaveToSoftware",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "addr": {
-            "direction": "I",
-            "left": "13",
-            "right": "0"
           },
-          "data_in": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
+          "GPIO_BOARD_INTERFACE": {
+            "value": "Custom"
           },
-          "data_out": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          }
-        }
-      },
-      "WaveBuffForSoftware_0": {
-        "vlnv": "xilinx.com:module_ref:WaveBuffForSoftware:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_WaveBuffForSoftware_0_0",
-        "xci_path": "ip\\MicroBlaze_WaveBuffForSoftware_0_0\\MicroBlaze_WaveBuffForSoftware_0_0.xci",
-        "inst_hier_path": "WaveBuffForSoftware_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "WaveBuffForSoftware",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "addr": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "data_in": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "offset": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "clk": {
-            "type": "clk",
-            "direction": "I"
-          }
-        }
-      },
-      "counter_1_to_20000_0": {
-        "vlnv": "xilinx.com:module_ref:counter_1_to_20000:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_counter_1_to_20000_0_0",
-        "xci_path": "ip\\MicroBlaze_counter_1_to_20000_0_0\\MicroBlaze_counter_1_to_20000_0_0.xci",
-        "inst_hier_path": "counter_1_to_20000_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "counter_1_to_20000",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rst",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "count": {
-            "direction": "O",
-            "left": "14",
-            "right": "0"
+          "USE_BOARD_FLOW": {
+            "value": "true"
           }
         }
       }
@@ -2094,12 +1971,6 @@
           "processing_system7_0/DDR"
         ]
       },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
           "processing_system7_0/M_AXI_GP0",
@@ -2111,8 +1982,7 @@
       "AddressFixer_0_address": {
         "ports": [
           "AddressFixer_0/address",
-          "MaximumFinder_0/address",
-          "WaveToSoftware_0/addr"
+          "MaximumFinder_0/address"
         ]
       },
       "MaximumFinder_0_tmax": {
@@ -2139,9 +2009,7 @@
       "SPI_ADC_Master_0_wave": {
         "ports": [
           "SPI_ADC_Master_0/wave",
-          "Wrapper_XCorr_0/waveRef",
-          "WaveToSoftware_0/data_in",
-          "WaveBuffForSoftware_0/data_in"
+          "Wrapper_XCorr_0/waveRef"
         ]
       },
       "SPI_ADC_Master_1_wave": {
@@ -2245,12 +2113,6 @@
           "Serializer_2/clk16MHz"
         ]
       },
-      "counter_1_to_20000_0_count": {
-        "ports": [
-          "counter_1_to_20000_0/count",
-          "WaveBuffForSoftware_0/addr"
-        ]
-      },
       "microblaze_0_Clk": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
@@ -2267,10 +2129,7 @@
           "AddressFixer_0/clk",
           "MaximumFinder_0/clk",
           "Wrapper_XCorr_0/clk",
-          "axi_gpio_2/s_axi_aclk",
-          "WaveToSoftware_0/clk",
-          "WaveBuffForSoftware_0/clk",
-          "counter_1_to_20000_0/clk"
+          "axi_gpio_2/s_axi_aclk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -2291,13 +2150,13 @@
       "xlconstant_1_dout": {
         "ports": [
           "xlconstant_1/dout",
-          "led_green"
+          "led_red"
         ]
       },
       "xlconstant_2_dout": {
         "ports": [
           "xlconstant_2/dout",
-          "led_red"
+          "led_green"
         ]
       },
       "xlslice_0_Dout": {

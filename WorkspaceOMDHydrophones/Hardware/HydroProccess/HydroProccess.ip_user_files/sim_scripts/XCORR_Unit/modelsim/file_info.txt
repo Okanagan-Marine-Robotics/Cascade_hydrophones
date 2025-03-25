@@ -24,6 +24,4 @@ XCORR_Unit_xlslice_1_0.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_
 XCORR_Unit_MaximumFinder_0_0.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_Unit_MaximumFinder_0_0/sim/XCORR_Unit_MaximumFinder_0_0.v,
 XCORR_Unit_xlconstant_2_0.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_2_0/sim/XCORR_Unit_xlconstant_2_0.v,
 XCORR_Unit.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/sim/XCORR_Unit.v,
-XCORR_Unit_counter_1_to_20000_0_0.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_Unit_counter_1_to_20000_0_0/sim/XCORR_Unit_counter_1_to_20000_0_0.v,
-XCORR_Unit_WaveBuffForSoftware_0_0.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_Unit_WaveBuffForSoftware_0_0/sim/XCORR_Unit_WaveBuffForSoftware_0_0.v,
 glbl.v,Verilog,xil_defaultlib,glbl.v

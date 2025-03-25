@@ -10,8 +10,6 @@ verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/includ
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_MaximumFinder_0_0/sim/XCORR_Unit_MaximumFinder_0_0.v" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_2_0/sim/XCORR_Unit_xlconstant_2_0.v" \
 "../../../bd/XCORR_Unit/sim/XCORR_Unit.v" \
-"../../../bd/XCORR_Unit/ip/XCORR_Unit_counter_1_to_20000_0_0/sim/XCORR_Unit_counter_1_to_20000_0_0.v" \
-"../../../bd/XCORR_Unit/ip/XCORR_Unit_WaveBuffForSoftware_0_0/sim/XCORR_Unit_WaveBuffForSoftware_0_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 
