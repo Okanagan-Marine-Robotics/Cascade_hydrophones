@@ -42,7 +42,7 @@ int main() {
 
 		//message json {"state":[0]"offset":[0000000]"test1":[00000]"test2":[00000]
 		if (bytesReceived > 0) {
-		    xil_printf("received:");
+		    //xil_printf("received:");
 		    message[0] = ReceivedData[0];
 		    if (ReceivedData[0] == '{') {
 		        xil_printf("{");
@@ -54,24 +54,24 @@ int main() {
 		            if (bytesReceived > 0) {
 
 		                message[i] = ReceivedData[0];
-		                xil_printf("%c", message[i]);
+		                //xil_printf("%c", message[i]);
 		                i++;
 		            }
 		        }
 
 		        //sends back message
 		        for (int j = 0; j < i; j++) {
-		            xil_printf("%c", message[j]);
+		            //xil_printf("%c", message[j]);
 		        }
 
 		        //{"state":[0]
 		        if (message[10]=='0'){
-		        	state=0;
-		        	xil_printf("state is 0\n");
+		        	//state=0;
+		        	//xil_printf("state is 0\n");
 		        }
 		        if (message[10]=='1'){
 		        	state=1;
-		        	xil_printf("state is 1\n");
+		        	//xil_printf("state is 1\n");
 		       }
 
 		        //sets offset
@@ -80,7 +80,7 @@ int main() {
 		        	offset = offset + pow(10, 27-i)*(message[i]-'0');
 		        }
 
-		        xil_printf("offset = %d\n", offset);
+		        //xil_printf("offset = %d\n", offset);
 
 
 		       test1 = 0;
@@ -88,14 +88,14 @@ int main() {
 		       	   test1 = test1 + pow(10, 43-i)*(message[i]-'0');
 		       }
 
-		        xil_printf("test1 = %d\n", test1);
+		        //xil_printf("test1 = %d\n", test1);
 
 		       test2 = 0;
 		        for (int i = 58;i>=54;i--){
 		        	test2 = test2 + pow(10, 58-i)*(message[i]-'0');
 		        }
 
-		        xil_printf("test2 = %d\n", test2);
+		        //xil_printf("test2 = %d\n", test2);
 
 		    }
 		}
@@ -107,7 +107,7 @@ int main() {
 
 
 		}
-		if (state == 1){
+		//if (state == 1){
 			maxTime = delayGetter(maxTime,test1);
 			maxTime2 = delayGetter2(maxTime2,test2);
 			double i = maxTime;
@@ -115,9 +115,19 @@ int main() {
 			double solution[2];
 
 			// Call solver
-			solver(i, j, solution);
-			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, solution[0], solution[1]);
-		}
+
+				double t1 = maxTime;
+			    double t2 = maxTime2;
+			    double x = 1;
+			    double y = 1;
+			    double p = tan(asin(((1500.*(t1/1000000.))/(0.5))));
+			    double q = tan(asin(((1500.*(t2/1000000.))/(0.5))));
+			    x=(-0.25-0.25*(p))/(p*q-1.);
+			    y=(x-0.25)/p;
+
+			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
+			usleep(500000);
+		//}
 
 	}
 	cleanup_platform();
@@ -138,7 +148,7 @@ int delayGetter (int delay,int test1){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio, 1, 100);
+    	XGpio_DiscreteWrite(&Gpio, 1, test1);
 
      	data = XGpio_DiscreteRead(&Gpio, 2);
 
@@ -157,7 +167,7 @@ int delayGetter (int delay,int test1){
 	}
 			XGpio Gpio2;
 	    	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_2_DEVICE_ID);
-	    	XGpio_DiscreteWrite(&Gpio2, 1, 1000);
+	    	XGpio_DiscreteWrite(&Gpio2, 1, 0);
 	    	XGpio_DiscreteWrite(&Gpio2, 2, 0);
 	//xil_printf("%d\n", MaxSignal);
 	return maxTime;
@@ -177,7 +187,7 @@ int delayGetter2 (int delay, int test2){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio1, 1, 0);
+    	XGpio_DiscreteWrite(&Gpio1, 1, test2);
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 

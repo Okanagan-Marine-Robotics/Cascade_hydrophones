@@ -1,4 +1,4 @@
-16:54:14 **** Incremental Build of configuration Debug for project helloworld ****
+22:14:06 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -22,26 +22,35 @@ In file included from ../src/platform.h:36,
 ../src/helloworld.c:112:36: warning: implicit declaration of function 'delayGetter2' [-Wimplicit-function-declaration]
   112 |                         maxTime2 = delayGetter2(maxTime2,test2);
       |                                    ^~~~~~~~~~~~
-../src/helloworld.c:118:25: warning: implicit declaration of function 'solver' [-Wimplicit-function-declaration]
-  118 |                         solver(i, j, solution);
+../src/helloworld.c:129:25: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  129 |                         usleep(500000);
       |                         ^~~~~~
+../src/helloworld.c:115:32: warning: unused variable 'solution' [-Wunused-variable]
+  115 |                         double solution[2];
+      |                                ^~~~~~~~
+../src/helloworld.c:114:32: warning: unused variable 'j' [-Wunused-variable]
+  114 |                         double j = maxTime2;
+      |                                ^
+../src/helloworld.c:113:32: warning: unused variable 'i' [-Wunused-variable]
+  113 |                         double i = maxTime;
+      |                                ^
 ../src/helloworld.c: In function 'delayGetter':
-../src/helloworld.c:137:13: warning: unused variable 'MaxSignal' [-Wunused-variable]
-  137 |         int MaxSignal = 0;
+../src/helloworld.c:147:13: warning: unused variable 'MaxSignal' [-Wunused-variable]
+  147 |         int MaxSignal = 0;
       |             ^~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: helloworld.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "helloworld.elf"  ./src/computeFiniteDifferences.o ./src/finDiffEvalAndChkErr.o ./src/fsolve.o ./src/helloworld.o ./src/linearLeastSquares.o ./src/platform.o ./src/rtGetInf.o ./src/rtGetNaN.o ./src/rt_nonfinite.o ./src/solver.o ./src/solver_initialize.o ./src/solver_terminate.o ./src/xnrm2.o ./src/xzlarf.o ./src/xzlarfg.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: helloworld.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  77931	   2652	  22712	 103295	  1937f	helloworld.elf
+  69075	   2612	  22712	  94399	  170bf	helloworld.elf
 'Finished building: helloworld.elf.size'
 ' '
 
-16:54:15 Build Finished (took 760ms)
+22:14:08 Build Finished (took 2s.198ms)
 
