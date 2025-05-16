@@ -5,10 +5,11 @@
 #include "xil_types.h"
 #include "math.h"
 #include <stdio.h>
+#include <string.h>
 #include "xuartps.h"  // Include the UART header for receiving data
 
 #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID  // Adjust this to your UART instance
-#define MAX_BUFFER_SIZE  1  // "test" is 4 characters long//118
+#define MAX_BUFFER_SIZE 64  // "test" is 4 characters long//118
 
 XUartPs Uart_Ps;  // UART instance
 u8 ReceivedData[MAX_BUFFER_SIZE];  // Buffer for receiving data
@@ -39,7 +40,7 @@ int main() {
 		u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
 
 		        // checks state
-
+/*
 		//message json {"state":[0]"offset":[0000000]"test1":[00000]"test2":[00000]
 		if (bytesReceived > 0) {
 		    //xil_printf("received:");
@@ -99,7 +100,7 @@ int main() {
 
 		    }
 		}
-
+*/
 
 
 		if (state == 0){
@@ -124,8 +125,8 @@ int main() {
 			    double q = tan(asin(((1500.*(t2/1000000.))/(0.5))));
 			    x=(-0.25-0.25*(p))/(p*q-1.);
 			    y=(x-0.25)/p;
-
-			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
+			printf("%s\n", ReceivedData);
+			//printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
 			usleep(500000);
 		//}
 

@@ -1,4 +1,4 @@
-22:14:06 **** Incremental Build of configuration Debug for project helloworld ****
+19:56:54 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,8 +7,8 @@ make --no-print-directory main-build
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/sw/MicroBlaze_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:10: warning: "UART_DEVICE_ID" redefined
-   10 | #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID  // Adjust this to your UART instance
+../src/helloworld.c:11: warning: "UART_DEVICE_ID" redefined
+   11 | #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID  // Adjust this to your UART instance
       | 
 In file included from ../src/platform.h:36,
                  from ../src/helloworld.c:1:
@@ -16,27 +16,39 @@ In file included from ../src/platform.h:36,
     5 | #define UART_DEVICE_ID 0
       | 
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:111:35: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
-  111 |                         maxTime = delayGetter(maxTime,test1);
+../src/helloworld.c:112:35: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
+  112 |                         maxTime = delayGetter(maxTime,test1);
       |                                   ^~~~~~~~~~~
-../src/helloworld.c:112:36: warning: implicit declaration of function 'delayGetter2' [-Wimplicit-function-declaration]
-  112 |                         maxTime2 = delayGetter2(maxTime2,test2);
+../src/helloworld.c:113:36: warning: implicit declaration of function 'delayGetter2' [-Wimplicit-function-declaration]
+  113 |                         maxTime2 = delayGetter2(maxTime2,test2);
       |                                    ^~~~~~~~~~~~
-../src/helloworld.c:129:25: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
-  129 |                         usleep(500000);
+../src/helloworld.c:130:25: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  130 |                         usleep(500000);
       |                         ^~~~~~
-../src/helloworld.c:115:32: warning: unused variable 'solution' [-Wunused-variable]
-  115 |                         double solution[2];
+../src/helloworld.c:123:36: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+  123 |                             double y = 1;
+      |                                    ^
+../src/helloworld.c:116:32: warning: unused variable 'solution' [-Wunused-variable]
+  116 |                         double solution[2];
       |                                ^~~~~~~~
-../src/helloworld.c:114:32: warning: unused variable 'j' [-Wunused-variable]
-  114 |                         double j = maxTime2;
+../src/helloworld.c:115:32: warning: unused variable 'j' [-Wunused-variable]
+  115 |                         double j = maxTime2;
       |                                ^
-../src/helloworld.c:113:32: warning: unused variable 'i' [-Wunused-variable]
-  113 |                         double i = maxTime;
+../src/helloworld.c:114:32: warning: unused variable 'i' [-Wunused-variable]
+  114 |                         double i = maxTime;
       |                                ^
+../src/helloworld.c:40:21: warning: unused variable 'bytesReceived' [-Wunused-variable]
+   40 |                 u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
+      |                     ^~~~~~~~~~~~~
+../src/helloworld.c:36:14: warning: unused variable 'message' [-Wunused-variable]
+   36 |         char message[messageLength];
+      |              ^~~~~~~
+../src/helloworld.c:33:13: warning: unused variable 'offset' [-Wunused-variable]
+   33 |         int offset = 0;
+      |             ^~~~~~
 ../src/helloworld.c: In function 'delayGetter':
-../src/helloworld.c:147:13: warning: unused variable 'MaxSignal' [-Wunused-variable]
-  147 |         int MaxSignal = 0;
+../src/helloworld.c:148:13: warning: unused variable 'MaxSignal' [-Wunused-variable]
+  148 |         int MaxSignal = 0;
       |             ^~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
@@ -48,9 +60,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  69075	   2612	  22712	  94399	  170bf	helloworld.elf
+  40242	   2248	  22776	  65266	   fef2	helloworld.elf
 'Finished building: helloworld.elf.size'
 ' '
 
-22:14:08 Build Finished (took 2s.198ms)
+19:56:55 Build Finished (took 720ms)
 
