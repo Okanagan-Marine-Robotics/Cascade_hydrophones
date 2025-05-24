@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Tue Mar 25 16:40:51 2025
+//Date        : Thu May 22 22:29:48 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target XCORR_Unit.bd
 //Design      : XCORR_Unit
@@ -21,8 +21,8 @@ module XCORR_Unit
   wire [11:0]SineWaveGen_1_wave;
   wire [11:0]SineWaveGen_2_wave;
   wire [15:0]Wrapper_XCorr_0_count;
-  wire [35:0]Wrapper_XCorr_0_xcorr;
-  wire [35:0]Wrapper_XCorr_0_xcorr1;
+  wire [63:0]Wrapper_XCorr_0_xcorr;
+  wire [63:0]Wrapper_XCorr_0_xcorr1;
   wire clk;
   wire clk1Mhz;
   wire [31:0]xlconstant_0_dout;
@@ -65,9 +65,9 @@ module XCORR_Unit
   XCORR_Unit_xlconstant_2_0 xlconstant_2
        (.dout(xlconstant_2_dout));
   XCORR_Unit_xlslice_0_0 xlslice_0
-       (.Din(Wrapper_XCorr_0_xcorr),
+       (.Din(Wrapper_XCorr_0_xcorr[35:0]),
         .Dout(xlslice_0_Dout));
   XCORR_Unit_xlslice_1_0 xlslice_1
-       (.Din(Wrapper_XCorr_0_xcorr1),
+       (.Din(Wrapper_XCorr_0_xcorr1[35:0]),
         .Dout(xlslice_1_Dout));
 endmodule

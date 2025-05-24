@@ -451,8 +451,8 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_Serializer_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_clk1Mhz_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="MicroBlaze_SPI_ADC_Master_0_1"/>

@@ -143,12 +143,12 @@
           },
           "xcorr": {
             "direction": "O",
-            "left": "35",
+            "left": "63",
             "right": "0"
           },
           "xcorr1": {
             "direction": "O",
-            "left": "35",
+            "left": "63",
             "right": "0"
           },
           "count": {
@@ -220,7 +220,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "1000"
+            "value": "0"
           },
           "CONST_WIDTH": {
             "value": "32"
@@ -323,7 +323,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "20000"
+            "value": "0"
           },
           "CONST_WIDTH": {
             "value": "32"

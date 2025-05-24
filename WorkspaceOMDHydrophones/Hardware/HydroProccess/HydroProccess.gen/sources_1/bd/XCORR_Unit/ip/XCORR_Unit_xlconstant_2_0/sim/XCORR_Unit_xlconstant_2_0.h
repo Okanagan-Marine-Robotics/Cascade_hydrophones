@@ -54,7 +54,7 @@
 #include "systemc.h"
 class XCORR_Unit_xlconstant_2_0 : public sc_module {
   public:
-xlconstant_v1_1_9<32,20000> mod;
+xlconstant_v1_1_9<32,0> mod;
   sc_out< sc_bv<32> > dout;
 XCORR_Unit_xlconstant_2_0 (sc_core::sc_module_name name);
   };

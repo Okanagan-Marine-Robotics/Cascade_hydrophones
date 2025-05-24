@@ -75,8 +75,8 @@ input wire [11 : 0] waveRef;
 input wire [11 : 0] wave;
 input wire [11 : 0] wave1;
 input wire [31 : 0] offset;
-output wire [35 : 0] xcorr;
-output wire [35 : 0] xcorr1;
+output wire [63 : 0] xcorr;
+output wire [63 : 0] xcorr1;
 output wire [15 : 0] count;
 
   Wrapper_XCorr inst (

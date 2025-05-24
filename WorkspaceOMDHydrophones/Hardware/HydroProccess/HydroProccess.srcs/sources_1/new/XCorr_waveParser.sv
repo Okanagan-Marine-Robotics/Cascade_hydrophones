@@ -7,9 +7,9 @@ module XCorr_waveParser(
 	output signed [11:0] bufferRef,
 	output signed [11:0] buffer,
 	output signed [11:0] buffer1,
-	output reg [13:0] waveRefAddress [0:7],
-	output reg [11:0] waveXAddress [0:7],
-	output reg [11:0] waveYAddress [0:7],
+	output reg [13:0] waveRefAddress [0:11],
+	output reg [11:0] waveXAddress [0:11],
+	output reg [11:0] waveYAddress [0:11],
 	input clk1Mhz,
 	input clk,
 	input [31:0] offset,
@@ -19,7 +19,6 @@ module XCorr_waveParser(
 	parameter XCORRsize = 2500;
 
 	reg [31:0] MemoryAddress = 10010;
-    reg [31:0] counter = 20010;
     reg [31:0] offsetReg = 0;
 	always @(negedge clk1Mhz)begin
 	 
@@ -33,7 +32,7 @@ module XCorr_waveParser(
 	offsetReg <= offset;
 	///MemoryAddress <= counter - offsetReg;
 	
-	for(int i = 0;i<=7;i++)begin
+	for(int i = 0;i<=11;i++)begin
 	   waveXAddress [i] <=((MemoryAddress-offsetReg<=XCORRsize+XCORRsize*i)&&(MemoryAddress-offsetReg>0+XCORRsize*i))?MemoryAddress-XCORRsize*i-offsetReg:2501;
 	   waveYAddress [i] <=((MemoryAddress-offsetReg<=XCORRsize+XCORRsize*i)&&(MemoryAddress-offsetReg>0+XCORRsize*i))?MemoryAddress-XCORRsize*i-offsetReg:2501;
 	   waveRefAddress [i] <=((MemoryAddress-offsetReg<=XCORRsize+XCORRsize*i)&&(MemoryAddress-offsetReg>0+XCORRsize*i))?MemoryAddress-XCORRsize*i-offsetReg:2501;

@@ -7,20 +7,20 @@ input [11:0] waveRef,
 input [11:0] wave,
 input [11:0] wave1,
 input [31:0] offset,
-output signed [35:0] xcorr,
-output signed [35:0] xcorr1,
+output signed [63:0] xcorr,
+output signed [63:0] xcorr1,
 output signed [15:0] count
     );
     
     wire signed [11:0] bufferwire [0:2];
-    wire [13:0] waceRefAddressWire [0:7];
-    wire [11:0] waceXAddressWire[0:7];
-    wire [11:0] waceYAddressWire[0:7];
-    wire [13:0] RefAddress_outMux[0:7];
-    wire signed [11:0] waveRefOutRam[0:7];
-    wire signed [11:0] waveRefIntoXCorr[0:7],waveXIntoXCorr[0:7],waveYIntoYCorr[0:7];
-    wire [13:0] waveRefOutXCorr[0:7];
-    wire [11:0] waveXOutXCorr[0:7],waveYOutXCorr[0:7];
+    wire [13:0] waceRefAddressWire [0:11];
+    wire [11:0] waceXAddressWire[0:11];
+    wire [11:0] waceYAddressWire[0:11];
+    wire [13:0] RefAddress_outMux[0:11];
+    wire signed [11:0] waveRefOutRam[0:11];
+    wire signed [11:0] waveRefIntoXCorr[0:11],waveXIntoXCorr[0:11],waveYIntoYCorr[0:11];
+    wire [13:0] waveRefOutXCorr[0:11];
+    wire [11:0] waveXOutXCorr[0:11],waveYOutXCorr[0:11];
    XCorr_waveParser waveParser (
         .clk(clk),
         .clk1Mhz(clk1Mhz),
