@@ -3,8 +3,8 @@
 module XCorr_BramMux(
     input signed [11:0] waveRef[0:11],
 	output reg signed [11:0] Ref0 [0:11],
-	input [13:0] waveRefAddress [0:11],
-	output reg [13:0] RefAddress [0:11],
+	input [15:0] waveRefAddress [0:11],
+	output reg [15:0] RefAddress [0:11],
 	input clk
     );
    

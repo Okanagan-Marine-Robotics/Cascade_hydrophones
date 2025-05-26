@@ -13,13 +13,13 @@ output signed [15:0] count
     );
     
     wire signed [11:0] bufferwire [0:2];
-    wire [13:0] waceRefAddressWire [0:11];
+    wire [15:0] waceRefAddressWire [0:11];
     wire [11:0] waceXAddressWire[0:11];
     wire [11:0] waceYAddressWire[0:11];
-    wire [13:0] RefAddress_outMux[0:11];
+    wire [15:0] RefAddress_outMux[0:11];
     wire signed [11:0] waveRefOutRam[0:11];
     wire signed [11:0] waveRefIntoXCorr[0:11],waveXIntoXCorr[0:11],waveYIntoYCorr[0:11];
-    wire [13:0] waveRefOutXCorr[0:11];
+    wire [15:0] waveRefOutXCorr[0:11];
     wire [11:0] waveXOutXCorr[0:11],waveYOutXCorr[0:11];
    XCorr_waveParser waveParser (
         .clk(clk),

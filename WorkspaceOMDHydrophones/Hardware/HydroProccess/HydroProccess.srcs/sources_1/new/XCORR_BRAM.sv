@@ -8,7 +8,7 @@ module XCORR_BRAM(
     input [11:0] inWave2,
     input [11:0] inWave3,
     
-    input [13:0] waveRefAddress[0:11],
+    input [15:0] waveRefAddress[0:11],
 	input[11:0] waveXAddress[0:11],
 	input[11:0] waveYAddress[0:11],
 
@@ -16,7 +16,7 @@ module XCORR_BRAM(
 	output reg signed [11:0] waveX [0:11],
 	output reg signed [11:0] waveY [0:11],
 	
-	input[13:0] waveRefAddressB [0:11],
+	input[15:0] waveRefAddressB [0:11],
 	input[11:0] waveXAddressB [0:11],
 	input[11:0] waveYAddressB [0:11]
     );

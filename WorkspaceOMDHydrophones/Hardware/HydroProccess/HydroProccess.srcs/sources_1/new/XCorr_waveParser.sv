@@ -7,7 +7,7 @@ module XCorr_waveParser(
 	output signed [11:0] bufferRef,
 	output signed [11:0] buffer,
 	output signed [11:0] buffer1,
-	output reg [13:0] waveRefAddress [0:11],
+	output reg [15:0] waveRefAddress [0:11],
 	output reg [11:0] waveXAddress [0:11],
 	output reg [11:0] waveYAddress [0:11],
 	input clk1Mhz,

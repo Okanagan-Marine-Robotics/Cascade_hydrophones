@@ -1,0 +1,725 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun May 25 23:08:22 2025
+# Process ID         : 21156
+# Current directory  : C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_Wrapper_XCorr_0_0_synth_1
+# Command line       : vivado.exe -log MicroBlaze_Wrapper_XCorr_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlaze_Wrapper_XCorr_0_0.tcl
+# Log file           : C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_Wrapper_XCorr_0_0_synth_1/MicroBlaze_Wrapper_XCorr_0_0.vds
+# Journal file       : C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_Wrapper_XCorr_0_0_synth_1\vivado.jou
+# Running On         : James
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16788 MB
+# Swap memory        : 1686 MB
+# Total Virtual      : 18474 MB
+# Available Virtual  : 1131 MB
+#-----------------------------------------------------------
+source MicroBlaze_Wrapper_XCorr_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip 
+Command: synth_design -top MicroBlaze_Wrapper_XCorr_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21852
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.785 ; gain = 466.781
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9448] extra semicolon in $unit (global) scope [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:124]
+INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_Wrapper_XCorr_0_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/synth/MicroBlaze_Wrapper_XCorr_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Wrapper_XCorr' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/Wrapper_XCorr.v:4]
+INFO: [Synth 8-6157] synthesizing module 'topXCorr' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/topXCorr.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'XCorr_waveParser' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'XCorr_waveParser' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'XCORR_BRAM' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_BRAM.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'XCORR_BRAM' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_BRAM.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'XCorr_BramMux' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_BramMux.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'XCorr_BramMux' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_BramMux.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'XCORR_SV' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'XCORR_SV' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'topXCorr' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/topXCorr.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wrapper_XCorr' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/Wrapper_XCorr.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_Wrapper_XCorr_0_0' (0#1) [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/synth/MicroBlaze_Wrapper_XCorr_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[0] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[1] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[2] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[3] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[4] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[5] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[6] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[7] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[8] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[9] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[10] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[11] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCorr_waveParser.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[1] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[2] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[3] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[4] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[5] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[6] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[7] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[8] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[9] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[10] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveXAddress_reg[11] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:67]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[0] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[1] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[2] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[3] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[4] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[5] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[6] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[7] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[8] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[9] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[10] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-6014] Unused sequential element waveYAddress_reg[11] was removed.  [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/XCORR_SV.sv:68]
+WARNING: [Synth 8-7129] Port clk1Mhz in module XCORR_SV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[0][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[0][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[0][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[0][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[1][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[1][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[1][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[1][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[2][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[2][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[2][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[2][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[3][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[3][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[3][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[3][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[4][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[4][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[4][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[4][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[5][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[5][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[5][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[5][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[6][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[6][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[6][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[6][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[7][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[7][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[7][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[7][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[8][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[8][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[8][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[8][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[9][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[9][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[9][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[9][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[10][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[10][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[10][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[10][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[11][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[11][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[11][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddress[11][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[0][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[0][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[0][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[0][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[1][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[1][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[1][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[1][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[2][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[2][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[2][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[2][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[3][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[3][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[3][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[3][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[4][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[4][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[4][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[4][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[5][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[5][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[5][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[5][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[6][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[6][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[6][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[6][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[7][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[7][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[7][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[7][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[8][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[8][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[8][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[8][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[9][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[9][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[9][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[9][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[10][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[10][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[10][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[10][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[11][15] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[11][14] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[11][13] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waveRefAddressB[11][12] in module XCORR_BRAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module XCorr_waveParser is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1249.023 ; gain = 657.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1249.023 ; gain = 657.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1249.023 ; gain = 657.020
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1249.023 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1331.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1331.953 ; gain = 0.031
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1331.953 ; gain = 739.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1331.953 ; gain = 739.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1331.953 ; gain = 739.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1331.953 ; gain = 739.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 12    
+	   6 Input   64 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 133   
+	   2 Input   16 Bit       Adders := 133   
+	   3 Input   16 Bit       Adders := 23    
+	   3 Input   12 Bit       Adders := 12    
++---Registers : 
+	               64 Bit    Registers := 16    
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 36    
+	               12 Bit    Registers := 61    
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              29K Bit	(2502 X 12 bit)          RAMs := 36    
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP temp3_reg, operation Mode is: (A*B)'.
+DSP Report: register temp3_reg is absorbed into DSP temp3_reg.
+DSP Report: operator temp30 is absorbed into DSP temp3_reg.
+DSP Report: Generating DSP temp2_reg, operation Mode is: (A*B)'.
+DSP Report: register temp2_reg is absorbed into DSP temp2_reg.
+DSP Report: operator temp20 is absorbed into DSP temp2_reg.
+DSP Report: Generating DSP temp5_reg, operation Mode is: (A*B)'.
+DSP Report: register temp5_reg is absorbed into DSP temp5_reg.
+DSP Report: operator temp50 is absorbed into DSP temp5_reg.
+DSP Report: Generating DSP temp4_reg, operation Mode is: (A*B)'.
+DSP Report: register temp4_reg is absorbed into DSP temp4_reg.
+DSP Report: operator temp40 is absorbed into DSP temp4_reg.
+DSP Report: Generating DSP temp7_reg, operation Mode is: (A*B)'.
+DSP Report: register temp7_reg is absorbed into DSP temp7_reg.
+DSP Report: operator temp70 is absorbed into DSP temp7_reg.
+DSP Report: Generating DSP temp6_reg, operation Mode is: (A*B)'.
+DSP Report: register temp6_reg is absorbed into DSP temp6_reg.
+DSP Report: operator temp60 is absorbed into DSP temp6_reg.
+DSP Report: Generating DSP temp9_reg, operation Mode is: (A*B)'.
+DSP Report: register temp9_reg is absorbed into DSP temp9_reg.
+DSP Report: operator temp90 is absorbed into DSP temp9_reg.
+DSP Report: Generating DSP temp8_reg, operation Mode is: (A*B)'.
+DSP Report: register temp8_reg is absorbed into DSP temp8_reg.
+DSP Report: operator temp80 is absorbed into DSP temp8_reg.
+DSP Report: Generating DSP temp11_reg, operation Mode is: (A*B)'.
+DSP Report: register temp11_reg is absorbed into DSP temp11_reg.
+DSP Report: operator temp110 is absorbed into DSP temp11_reg.
+DSP Report: Generating DSP temp10_reg, operation Mode is: (A*B)'.
+DSP Report: register temp10_reg is absorbed into DSP temp10_reg.
+DSP Report: operator temp100 is absorbed into DSP temp10_reg.
+DSP Report: Generating DSP temp1_reg, operation Mode is: (A*B)'.
+DSP Report: register temp1_reg is absorbed into DSP temp1_reg.
+DSP Report: operator temp10 is absorbed into DSP temp1_reg.
+DSP Report: Generating DSP temp0_reg, operation Mode is: (A*B)'.
+DSP Report: register temp0_reg is absorbed into DSP temp0_reg.
+DSP Report: operator temp00 is absorbed into DSP temp0_reg.
+DSP Report: Generating DSP temp03_reg, operation Mode is: (A*B)'.
+DSP Report: register temp03_reg is absorbed into DSP temp03_reg.
+DSP Report: operator temp030 is absorbed into DSP temp03_reg.
+DSP Report: Generating DSP temp02_reg, operation Mode is: (A*B)'.
+DSP Report: register temp02_reg is absorbed into DSP temp02_reg.
+DSP Report: operator temp020 is absorbed into DSP temp02_reg.
+DSP Report: Generating DSP temp05_reg, operation Mode is: (A*B)'.
+DSP Report: register temp05_reg is absorbed into DSP temp05_reg.
+DSP Report: operator temp050 is absorbed into DSP temp05_reg.
+DSP Report: Generating DSP temp04_reg, operation Mode is: (A*B)'.
+DSP Report: register temp04_reg is absorbed into DSP temp04_reg.
+DSP Report: operator temp040 is absorbed into DSP temp04_reg.
+DSP Report: Generating DSP temp07_reg, operation Mode is: (A*B)'.
+DSP Report: register temp07_reg is absorbed into DSP temp07_reg.
+DSP Report: operator temp070 is absorbed into DSP temp07_reg.
+DSP Report: Generating DSP temp06_reg, operation Mode is: (A*B)'.
+DSP Report: register temp06_reg is absorbed into DSP temp06_reg.
+DSP Report: operator temp060 is absorbed into DSP temp06_reg.
+DSP Report: Generating DSP temp09_reg, operation Mode is: (A*B)'.
+DSP Report: register temp09_reg is absorbed into DSP temp09_reg.
+DSP Report: operator temp090 is absorbed into DSP temp09_reg.
+DSP Report: Generating DSP temp08_reg, operation Mode is: (A*B)'.
+DSP Report: register temp08_reg is absorbed into DSP temp08_reg.
+DSP Report: operator temp080 is absorbed into DSP temp08_reg.
+DSP Report: Generating DSP temp011_reg, operation Mode is: (A*B)'.
+DSP Report: register temp011_reg is absorbed into DSP temp011_reg.
+DSP Report: operator temp0110 is absorbed into DSP temp011_reg.
+DSP Report: Generating DSP temp010_reg, operation Mode is: (A*B)'.
+DSP Report: register temp010_reg is absorbed into DSP temp010_reg.
+DSP Report: operator temp0100 is absorbed into DSP temp010_reg.
+DSP Report: Generating DSP temp01_reg, operation Mode is: (A*B)'.
+DSP Report: register temp01_reg is absorbed into DSP temp01_reg.
+DSP Report: operator temp010 is absorbed into DSP temp01_reg.
+DSP Report: Generating DSP temp00_reg, operation Mode is: (A*B)'.
+DSP Report: register temp00_reg is absorbed into DSP temp00_reg.
+DSP Report: operator temp000 is absorbed into DSP temp00_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1468.672 ; gain = 876.668
+---------------------------------------------------------------------------------
+ Sort Area is topXCorr__GC0 temp00_reg_d : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp010_reg_f : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp011_reg_10 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp01_reg_e : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp02_reg_17 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp03_reg_18 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp04_reg_15 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp05_reg_16 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp06_reg_13 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp07_reg_14 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp08_reg_11 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp09_reg_12 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp0_reg_0 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp10_reg_3 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp11_reg_4 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp1_reg_2 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp2_reg_b : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp3_reg_c : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp4_reg_9 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp5_reg_a : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp6_reg_7 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp7_reg_8 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp8_reg_5 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is topXCorr__GC0 temp9_reg_6 : 0 0 : 1076 1076 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                  | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram1_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram2_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram3_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram4_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram01_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram02_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram03_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram04_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram001_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram002_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram003_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram004_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram5_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram6_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram7_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram8_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram05_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram06_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram07_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram08_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram005_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram006_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram007_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram008_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram9_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram10_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram11_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram12_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram09_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram010_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram011_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram012_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram009_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram0010_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram0011_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram0012_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++-----------------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|XCORR_SV    | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1479.434 ; gain = 887.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1479.434 ; gain = 887.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                  | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram1_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram2_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram3_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram4_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram01_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram02_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram03_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram04_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram001_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram002_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram003_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram004_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram5_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram6_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram7_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram8_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram05_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram06_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram07_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram08_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram005_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram006_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram007_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram008_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram9_reg    | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram10_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram11_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram12_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram09_reg   | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram010_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram011_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram012_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram009_reg  | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram0010_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram0011_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|MicroBlaze_Wrapper_XCorr_0_0 | bram/Ram0012_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++-----------------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram1_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram1_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram2_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram2_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram3_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram3_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram4_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram4_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram01_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram01_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram02_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram02_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram03_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram03_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram04_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram04_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram001_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram001_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram002_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram002_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram003_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram003_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram004_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram004_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram5_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram5_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram6_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram6_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram7_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram7_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram8_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram8_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram05_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram05_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram06_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram06_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram07_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram07_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram08_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram08_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram005_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram005_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram006_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram006_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram007_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram007_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram008_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram008_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram9_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram9_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram10_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram10_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram11_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram11_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram12_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram12_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram09_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram09_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram010_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram010_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram011_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram011_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram012_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram012_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram009_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram009_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram0010_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram0010_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram0011_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram0011_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram0012_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/main/bram/Ram0012_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1699.629 ; gain = 1107.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.562 ; gain = 1123.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.562 ; gain = 1123.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.562 ; gain = 1123.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.562 ; gain = 1123.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.719 ; gain = 1123.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.719 ; gain = 1123.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|XCORR_SV    | (A*B)'      | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  1303|
+|2     |DSP48E1  |    24|
+|3     |LUT1     |  1850|
+|4     |LUT2     |  1381|
+|5     |LUT3     |   354|
+|6     |LUT4     |   720|
+|7     |LUT5     |   511|
+|8     |LUT6     |  2254|
+|9     |MUXF7    |     2|
+|10    |RAMB18E1 |    36|
+|11    |RAMB36E1 |    36|
+|12    |FDRE     |  1413|
+|13    |FDSE     |   147|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.719 ; gain = 1123.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1715.719 ; gain = 1040.785
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1715.719 ; gain = 1123.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1724.848 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1401 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'MicroBlaze_Wrapper_XCorr_0_0' is not ideal for floorplanning, since the cellview 'XCORR_SV' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 168 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1728.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 22cc461
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 1728.992 ; gain = 1345.285
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1728.992 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_Wrapper_XCorr_0_0_synth_1/MicroBlaze_Wrapper_XCorr_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file MicroBlaze_Wrapper_XCorr_0_0_utilization_synth.rpt -pb MicroBlaze_Wrapper_XCorr_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 25 23:09:21 2025...
