@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun May 25 23:09:20 2025
+// Date        : Sun Jun  8 02:02:57 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/MicroBlaze_Wrapper_XCorr_0_0_stub.v
@@ -18,7 +18,7 @@
 (* IP_DEFINITION_SOURCE = "module_ref" *) (* X_CORE_INFO = "Wrapper_XCorr,Vivado 2024.2" *) 
 module MicroBlaze_Wrapper_XCorr_0_0(clk, clk1Mhz, waveRef, wave, wave1, offset, xcorr, 
   xcorr1, count)
-/* synthesis syn_black_box black_box_pad_pin="waveRef[11:0],wave[11:0],wave1[11:0],offset[31:0],xcorr[63:0],xcorr1[63:0],count[15:0]" */
+/* synthesis syn_black_box black_box_pad_pin="waveRef[11:0],wave[11:0],wave1[11:0],offset[31:0],xcorr[35:0],xcorr1[35:0],count[15:0]" */
 /* synthesis syn_force_seq_prim="clk" */
 /* synthesis syn_force_seq_prim="clk1Mhz" */;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
@@ -27,7 +27,7 @@ module MicroBlaze_Wrapper_XCorr_0_0(clk, clk1Mhz, waveRef, wave, wave1, offset, 
   input [11:0]wave;
   input [11:0]wave1;
   input [31:0]offset;
-  output [63:0]xcorr;
-  output [63:0]xcorr1;
+  output [35:0]xcorr;
+  output [35:0]xcorr1;
   output [15:0]count;
 endmodule

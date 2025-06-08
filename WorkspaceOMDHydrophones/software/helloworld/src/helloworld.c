@@ -32,7 +32,7 @@ int main() {
 	int messageLength = 61;
 	int offset = 0;
 	int test1 = 0;
-	int test2 = 0;
+	int test2 = 10;
 	char message[messageLength];
 	while(1){
 
@@ -125,8 +125,8 @@ int main() {
 			    double q = tan(asin(((1500.*(t2/1000000.))/(0.5))));
 			    x=(-0.25-0.25*(p))/(p*q-1.);
 			    y=(x-0.25)/p;
-			printf("%s\n", ReceivedData);
-			//printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
+			//printf("%s\n", ReceivedData);
+			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
 			usleep(500000);
 		//}
 
@@ -149,7 +149,7 @@ int delayGetter (int delay,int test1){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio, 1, test1);
+    	XGpio_DiscreteWrite(&Gpio, 1, 10);
 
      	data = XGpio_DiscreteRead(&Gpio, 2);
 
@@ -188,7 +188,7 @@ int delayGetter2 (int delay, int test2){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio1, 1, test2);
+    	XGpio_DiscreteWrite(&Gpio1, 1, 0);
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 

@@ -56,6 +56,7 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vi
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlslice_1_0/sim/XCORR_Unit_xlslice_1_0.v" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_MaximumFinder_0_0/sim/XCORR_Unit_MaximumFinder_0_0.v" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_2_0/sim/XCORR_Unit_xlconstant_2_0.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_WaveCaptureUnit_0_0/sim/XCORR_Unit_WaveCaptureUnit_0_0.v" \
 "../../../bd/XCORR_Unit/sim/XCORR_Unit.v" \
 
 vlog -work xil_defaultlib \

@@ -7,8 +7,7 @@
       "name": "XCORR_Unit",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "SineWaveGen_0": "",
@@ -20,34 +19,13 @@
       "xlslice_0": "",
       "xlslice_1": "",
       "MaximumFinder_0": "",
-      "xlconstant_2": ""
+      "xlconstant_2": "",
+      "WaveCaptureUnit_0": ""
     },
     "ports": {
       "clk": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "XCORR_Unit_clk",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "clk1Mhz": {
         "direction": "I"
@@ -143,12 +121,12 @@
           },
           "xcorr": {
             "direction": "O",
-            "left": "63",
+            "left": "35",
             "right": "0"
           },
           "xcorr1": {
             "direction": "O",
-            "left": "63",
+            "left": "35",
             "right": "0"
           },
           "count": {
@@ -290,18 +268,12 @@
           },
           "address": {
             "direction": "I",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "XCORR_Unit_clk",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "tmax": {
             "direction": "O",
@@ -329,12 +301,60 @@
             "value": "32"
           }
         }
+      },
+      "WaveCaptureUnit_0": {
+        "vlnv": "xilinx.com:module_ref:WaveCaptureUnit:1.0",
+        "ip_revision": "1",
+        "xci_name": "XCORR_Unit_WaveCaptureUnit_0_0",
+        "xci_path": "ip\\XCORR_Unit_WaveCaptureUnit_0_0\\XCORR_Unit_WaveCaptureUnit_0_0.xci",
+        "inst_hier_path": "WaveCaptureUnit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "WaveCaptureUnit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "WaveRef": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "WaveRefOut": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Address_B": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "XCORR_Unit_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk1Mhz": {
+            "direction": "I"
+          },
+          "offset": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
       "SineWaveGen_0_wave": {
         "ports": [
           "SineWaveGen_0/wave",
+          "WaveCaptureUnit_0/WaveRef",
           "Wrapper_XCorr_0/waveRef"
         ]
       },
@@ -374,14 +394,16 @@
           "SineWaveGen_0/clk1Mhz",
           "SineWaveGen_1/clk1Mhz",
           "SineWaveGen_2/clk1Mhz",
+          "WaveCaptureUnit_0/clk1Mhz",
           "Wrapper_XCorr_0/clk1Mhz"
         ]
       },
       "clk_1": {
         "ports": [
           "clk",
-          "MaximumFinder_0/clk",
-          "Wrapper_XCorr_0/clk"
+          "WaveCaptureUnit_0/clk",
+          "Wrapper_XCorr_0/clk",
+          "MaximumFinder_0/clk"
         ]
       },
       "xlconstant_0_dout": {
@@ -400,6 +422,7 @@
       "xlconstant_2_dout": {
         "ports": [
           "xlconstant_2/dout",
+          "WaveCaptureUnit_0/offset",
           "Wrapper_XCorr_0/offset"
         ]
       },

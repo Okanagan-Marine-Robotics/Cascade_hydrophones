@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun May 25 23:09:20 2025
+-- Date        : Sun Jun  8 02:02:57 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/MicroBlaze_Wrapper_XCorr_0_0_stub.vhdl
@@ -21,8 +21,8 @@ entity MicroBlaze_Wrapper_XCorr_0_0 is
     wave : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wave1 : in STD_LOGIC_VECTOR ( 11 downto 0 );
     offset : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    xcorr : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    xcorr1 : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    xcorr : out STD_LOGIC_VECTOR ( 35 downto 0 );
+    xcorr1 : out STD_LOGIC_VECTOR ( 35 downto 0 );
     count : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
 
@@ -40,7 +40,7 @@ architecture stub of MicroBlaze_Wrapper_XCorr_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "clk,clk1Mhz,waveRef[11:0],wave[11:0],wave1[11:0],offset[31:0],xcorr[63:0],xcorr1[63:0],count[15:0]";
+  attribute black_box_pad_pin of stub : architecture is "clk,clk1Mhz,waveRef[11:0],wave[11:0],wave1[11:0],offset[31:0],xcorr[35:0],xcorr1[35:0],count[15:0]";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_MODE : string;

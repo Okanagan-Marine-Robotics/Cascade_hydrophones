@@ -56,6 +56,10 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "MicroBlaze_Wrapper_XCorr_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_param bd.open.in_stealth_mode 1
+set_param xicom.use_bs_reader 1
+set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/mref

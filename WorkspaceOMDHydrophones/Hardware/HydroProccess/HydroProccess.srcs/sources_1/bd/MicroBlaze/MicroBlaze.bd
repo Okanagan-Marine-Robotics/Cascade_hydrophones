@@ -11,7 +11,6 @@
       "validated": "true"
     },
     "design_tree": {
-      "AddressFixer_0": "",
       "axi_gpio_0": "",
       "axi_gpio_1": "",
       "processing_system7_0": "",
@@ -180,44 +179,6 @@
       }
     },
     "components": {
-      "AddressFixer_0": {
-        "vlnv": "xilinx.com:module_ref:AddressFixer:1.0",
-        "ip_revision": "1",
-        "xci_name": "MicroBlaze_AddressFixer_0_0",
-        "xci_path": "ip\\MicroBlaze_AddressFixer_0_0\\MicroBlaze_AddressFixer_0_0.xci",
-        "inst_hier_path": "AddressFixer_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "AddressFixer",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "counter": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "address": {
-            "direction": "O",
-            "left": "13",
-            "right": "0"
-          }
-        }
-      },
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "35",
@@ -1645,7 +1606,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -1657,7 +1618,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -1685,7 +1646,7 @@
           },
           "address": {
             "direction": "I",
-            "left": "13",
+            "left": "15",
             "right": "0"
           },
           "clk": {
@@ -1862,12 +1823,12 @@
           },
           "xcorr": {
             "direction": "O",
-            "left": "63",
+            "left": "35",
             "right": "0"
           },
           "xcorr1": {
             "direction": "O",
-            "left": "63",
+            "left": "35",
             "right": "0"
           },
           "count": {
@@ -1979,12 +1940,6 @@
       }
     },
     "nets": {
-      "AddressFixer_0_address": {
-        "ports": [
-          "AddressFixer_0/address",
-          "MaximumFinder_0/address"
-        ]
-      },
       "MaximumFinder_0_tmax": {
         "ports": [
           "MaximumFinder_0/tmax",
@@ -2063,7 +2018,7 @@
       "Wrapper_XCorr_0_count": {
         "ports": [
           "Wrapper_XCorr_0/count",
-          "AddressFixer_0/counter"
+          "MaximumFinder_0/address"
         ]
       },
       "Wrapper_XCorr_0_xcorr": {
@@ -2126,10 +2081,9 @@
           "SPI_ADC_Master_0/clk",
           "SPI_ADC_Master_1/clk",
           "SPI_ADC_Master_2/clk",
-          "AddressFixer_0/clk",
-          "MaximumFinder_0/clk",
           "axi_gpio_2/s_axi_aclk",
-          "Wrapper_XCorr_0/clk"
+          "Wrapper_XCorr_0/clk",
+          "MaximumFinder_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

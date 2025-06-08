@@ -6,9 +6,6 @@
 # Block Designs: bd/MicroBlaze/MicroBlaze.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze || ORIG_REF_NAME==MicroBlaze} -quiet] -quiet
 
-# IP: bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/MicroBlaze_AddressFixer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_AddressFixer_0_0 || ORIG_REF_NAME==MicroBlaze_AddressFixer_0_0} -quiet] -quiet
-
 # IP: bd/MicroBlaze/ip/MicroBlaze_axi_gpio_0_0/MicroBlaze_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MicroBlaze_axi_gpio_0_0 || ORIG_REF_NAME==MicroBlaze_axi_gpio_0_0} -quiet] -quiet
 

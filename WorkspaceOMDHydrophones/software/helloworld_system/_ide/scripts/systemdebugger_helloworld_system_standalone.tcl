@@ -22,8 +22,4 @@ targets -set -nocase -filter {name =~"APU*"}
 source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
 ps7_init
 ps7_post_config
-targets -set -nocase -filter {name =~ "*A9*#0"}
-dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "*A9*#0"}
-con

@@ -11,8 +11,8 @@ module XCORR_SV(
 	output reg [11:0] waveXAddress[0:11],
 	output reg [11:0] waveYAddress[0:11],
 
-	output reg signed [63:0] xcorr,
-	output reg signed [63:0] xcorr1,
+	output reg signed [35:0] xcorr,
+	output reg signed [35:0] xcorr1,
 	output reg clkcorr = 0,
 	output reg signed [15:0] count = -29999,
 	input reset
@@ -20,15 +20,15 @@ module XCORR_SV(
     parameter lengthOfXCorr = 30000;
 	parameter XCORRsize = 2500;
 	
- 	reg signed [63:0] product = 0;
- 	reg signed [63:0] product1 = 0;
+ 	reg signed [35:0] product = 0;
+ 	reg signed [35:0] product1 = 0;
 	 
  	reg signed [15:0] countMulti = 0;
     
-    reg signed [63:0] product_stage1 = 0, product_stage2 = 0, product_stage3 = 0,product_stage4 = 0, product_stage5 = 0, product_stage6 = 0, product_stage7 = 0;
-    reg signed [63:0] product1_stage1 = 0, product1_stage2= 0 , product1_stage3 = 0,product1_stage4 = 0, product1_stage5= 0 , product1_stage6 = 0, product1_stage7 = 0;
-    reg signed [63:0] temp0 = 0, temp1 = 0, temp2 = 0, temp3 = 0,temp4 = 0, temp5 = 0, temp6 = 0, temp7 = 0,temp8 = 0,temp9 = 0,temp10 = 0,temp11 = 0;
-    reg signed [63:0] temp00 = 0, temp01 = 0, temp02 = 0, temp03 = 0,temp04 = 0, temp05 = 0, temp06 = 0, temp07 = 0,temp08 = 0,temp09 = 0,temp010 = 0,temp011 = 0;
+    reg signed [35:0] product_stage1 = 0, product_stage2 = 0, product_stage3 = 0,product_stage4 = 0, product_stage5 = 0, product_stage6 = 0, product_stage7 = 0;
+    reg signed [35:0] product1_stage1 = 0, product1_stage2= 0 , product1_stage3 = 0,product1_stage4 = 0, product1_stage5= 0 , product1_stage6 = 0, product1_stage7 = 0;
+    reg signed [35:0] temp0 = 0, temp1 = 0, temp2 = 0, temp3 = 0,temp4 = 0, temp5 = 0, temp6 = 0, temp7 = 0,temp8 = 0,temp9 = 0,temp10 = 0,temp11 = 0;
+    reg signed [35:0] temp00 = 0, temp01 = 0, temp02 = 0, temp03 = 0,temp04 = 0, temp05 = 0, temp06 = 0, temp07 = 0,temp08 = 0,temp09 = 0,temp010 = 0,temp011 = 0;
 
 always @(negedge clk)begin
 

@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Fri Mar 14 16:01:41 2025
+// Date        : Sun Jun  8 02:34:29 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_MaximumFinder_0_0/MicroBlaze_MaximumFinder_0_0_sim_netlist.v
@@ -25,59 +25,52 @@ module MicroBlaze_MaximumFinder_0_0
     tmax1);
   input [31:0]XCORR;
   input [31:0]XCORR1;
-  input [13:0]address;
+  input [15:0]address;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   output [31:0]tmax;
   output [31:0]tmax1;
 
-  wire \<const0> ;
   wire [31:0]XCORR;
   wire [31:0]XCORR1;
-  wire [13:0]address;
+  wire [15:0]address;
   wire clk;
-  wire [13:0]\^tmax ;
-  wire [13:0]\^tmax1 ;
+  wire [15:0]\^tmax ;
+  wire [15:0]\^tmax1 ;
 
-  assign tmax[31] = \<const0> ;
-  assign tmax[30] = \<const0> ;
-  assign tmax[29] = \<const0> ;
-  assign tmax[28] = \<const0> ;
-  assign tmax[27] = \<const0> ;
-  assign tmax[26] = \<const0> ;
-  assign tmax[25] = \<const0> ;
-  assign tmax[24] = \<const0> ;
-  assign tmax[23] = \<const0> ;
-  assign tmax[22] = \<const0> ;
-  assign tmax[21] = \<const0> ;
-  assign tmax[20] = \<const0> ;
-  assign tmax[19] = \<const0> ;
-  assign tmax[18] = \<const0> ;
-  assign tmax[17] = \<const0> ;
-  assign tmax[16] = \<const0> ;
-  assign tmax[15] = \<const0> ;
-  assign tmax[14] = \<const0> ;
-  assign tmax[13:0] = \^tmax [13:0];
-  assign tmax1[31] = \<const0> ;
-  assign tmax1[30] = \<const0> ;
-  assign tmax1[29] = \<const0> ;
-  assign tmax1[28] = \<const0> ;
-  assign tmax1[27] = \<const0> ;
-  assign tmax1[26] = \<const0> ;
-  assign tmax1[25] = \<const0> ;
-  assign tmax1[24] = \<const0> ;
-  assign tmax1[23] = \<const0> ;
-  assign tmax1[22] = \<const0> ;
-  assign tmax1[21] = \<const0> ;
-  assign tmax1[20] = \<const0> ;
-  assign tmax1[19] = \<const0> ;
-  assign tmax1[18] = \<const0> ;
-  assign tmax1[17] = \<const0> ;
-  assign tmax1[16] = \<const0> ;
-  assign tmax1[15] = \<const0> ;
-  assign tmax1[14] = \<const0> ;
-  assign tmax1[13:0] = \^tmax1 [13:0];
-  GND GND
-       (.G(\<const0> ));
+  assign tmax[31] = \^tmax [15];
+  assign tmax[30] = \^tmax [15];
+  assign tmax[29] = \^tmax [15];
+  assign tmax[28] = \^tmax [15];
+  assign tmax[27] = \^tmax [15];
+  assign tmax[26] = \^tmax [15];
+  assign tmax[25] = \^tmax [15];
+  assign tmax[24] = \^tmax [15];
+  assign tmax[23] = \^tmax [15];
+  assign tmax[22] = \^tmax [15];
+  assign tmax[21] = \^tmax [15];
+  assign tmax[20] = \^tmax [15];
+  assign tmax[19] = \^tmax [15];
+  assign tmax[18] = \^tmax [15];
+  assign tmax[17] = \^tmax [15];
+  assign tmax[16] = \^tmax [15];
+  assign tmax[15:0] = \^tmax [15:0];
+  assign tmax1[31] = \^tmax1 [15];
+  assign tmax1[30] = \^tmax1 [15];
+  assign tmax1[29] = \^tmax1 [15];
+  assign tmax1[28] = \^tmax1 [15];
+  assign tmax1[27] = \^tmax1 [15];
+  assign tmax1[26] = \^tmax1 [15];
+  assign tmax1[25] = \^tmax1 [15];
+  assign tmax1[24] = \^tmax1 [15];
+  assign tmax1[23] = \^tmax1 [15];
+  assign tmax1[22] = \^tmax1 [15];
+  assign tmax1[21] = \^tmax1 [15];
+  assign tmax1[20] = \^tmax1 [15];
+  assign tmax1[19] = \^tmax1 [15];
+  assign tmax1[18] = \^tmax1 [15];
+  assign tmax1[17] = \^tmax1 [15];
+  assign tmax1[16] = \^tmax1 [15];
+  assign tmax1[15:0] = \^tmax1 [15:0];
   MicroBlaze_MaximumFinder_0_0_MaximumFinder inst
        (.XCORR(XCORR),
         .XCORR1(XCORR1),
@@ -95,18 +88,18 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     clk,
     address,
     XCORR1);
-  output [13:0]tmax;
-  output [13:0]tmax1;
+  output [15:0]tmax;
+  output [15:0]tmax1;
   input [31:0]XCORR;
   input clk;
-  input [13:0]address;
+  input [15:0]address;
   input [31:0]XCORR1;
 
   wire [31:0]XCORR;
   wire [31:0]XCORR1;
-  wire [13:0]address;
-  wire [13:0]addressMax;
-  wire [13:0]addressMax1;
+  wire [15:0]address;
+  wire [15:0]addressMax;
+  wire [15:0]addressMax1;
   wire clk;
   wire i__carry__0_i_1_n_0;
   wire i__carry__0_i_2_n_0;
@@ -208,12 +201,13 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
   wire \max1_inferred__0/i__carry_n_1 ;
   wire \max1_inferred__0/i__carry_n_2 ;
   wire \max1_inferred__0/i__carry_n_3 ;
-  wire [13:0]tmax;
-  wire [13:0]tmax1;
-  wire \tmax[13]_i_1_n_0 ;
-  wire \tmax[13]_i_2_n_0 ;
-  wire \tmax[13]_i_3_n_0 ;
-  wire \tmax[13]_i_4_n_0 ;
+  wire [15:0]tmax;
+  wire [15:0]tmax1;
+  wire \tmax[15]_i_2_n_0 ;
+  wire \tmax[15]_i_3_n_0 ;
+  wire \tmax[15]_i_4_n_0 ;
+  wire \tmax[15]_i_5_n_0 ;
+  wire tmax_0;
   wire [3:0]NLW_max11_carry_O_UNCONNECTED;
   wire [3:0]NLW_max11_carry__0_O_UNCONNECTED;
   wire [3:0]NLW_max11_carry__1_O_UNCONNECTED;
@@ -223,11 +217,14 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
   wire [3:0]\NLW_max1_inferred__0/i__carry__1_O_UNCONNECTED ;
   wire [3:0]\NLW_max1_inferred__0/i__carry__2_O_UNCONNECTED ;
 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \addressMax1[13]_i_1 
-       (.I0(\tmax[13]_i_2_n_0 ),
-        .I1(max11),
+  LUT5 #(
+    .INIT(32'hFFFE0000)) 
+    \addressMax1[15]_i_1 
+       (.I0(\tmax[15]_i_2_n_0 ),
+        .I1(\tmax[15]_i_3_n_0 ),
+        .I2(\tmax[15]_i_4_n_0 ),
+        .I3(\tmax[15]_i_5_n_0 ),
+        .I4(max11),
         .O(max10));
   FDRE #(
     .INIT(1'b0),
@@ -273,6 +270,24 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10),
         .D(address[13]),
         .Q(addressMax1[13]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
+    \addressMax1_reg[14] 
+       (.C(clk),
+        .CE(max10),
+        .D(address[14]),
+        .Q(addressMax1[14]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
+    \addressMax1_reg[15] 
+       (.C(clk),
+        .CE(max10),
+        .D(address[15]),
+        .Q(addressMax1[15]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0),
@@ -355,11 +370,14 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .D(address[9]),
         .Q(addressMax1[9]),
         .R(1'b0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \addressMax[13]_i_1 
-       (.I0(\tmax[13]_i_2_n_0 ),
-        .I1(max10_in),
+  LUT5 #(
+    .INIT(32'hFFFE0000)) 
+    \addressMax[15]_i_1 
+       (.I0(\tmax[15]_i_2_n_0 ),
+        .I1(\tmax[15]_i_3_n_0 ),
+        .I2(\tmax[15]_i_4_n_0 ),
+        .I3(\tmax[15]_i_5_n_0 ),
+        .I4(max10_in),
         .O(max0));
   FDRE #(
     .INIT(1'b0),
@@ -405,6 +423,24 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max0),
         .D(address[13]),
         .Q(addressMax[13]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
+    \addressMax_reg[14] 
+       (.C(clk),
+        .CE(max0),
+        .D(address[14]),
+        .Q(addressMax[14]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0),
+    .IS_C_INVERTED(1'b1)) 
+    \addressMax_reg[15] 
+       (.C(clk),
+        .CE(max0),
+        .D(address[15]),
+        .Q(addressMax[15]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0),
@@ -1071,7 +1107,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[0]),
         .Q(max1[0]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1080,7 +1116,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[10]),
         .Q(max1[10]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1089,7 +1125,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[11]),
         .Q(max1[11]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1098,7 +1134,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[12]),
         .Q(max1[12]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1107,7 +1143,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[13]),
         .Q(max1[13]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1116,7 +1152,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[14]),
         .Q(max1[14]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1125,7 +1161,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[15]),
         .Q(max1[15]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1134,7 +1170,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[16]),
         .Q(max1[16]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1143,7 +1179,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[17]),
         .Q(max1[17]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1152,7 +1188,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[18]),
         .Q(max1[18]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1161,7 +1197,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[19]),
         .Q(max1[19]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1170,7 +1206,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[1]),
         .Q(max1[1]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1179,7 +1215,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[20]),
         .Q(max1[20]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1188,7 +1224,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[21]),
         .Q(max1[21]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1197,7 +1233,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[22]),
         .Q(max1[22]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1206,7 +1242,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[23]),
         .Q(max1[23]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1215,7 +1251,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[24]),
         .Q(max1[24]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1224,7 +1260,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[25]),
         .Q(max1[25]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1233,7 +1269,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[26]),
         .Q(max1[26]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1242,7 +1278,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[27]),
         .Q(max1[27]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1251,7 +1287,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[28]),
         .Q(max1[28]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1260,7 +1296,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[29]),
         .Q(max1[29]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1269,7 +1305,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[2]),
         .Q(max1[2]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1278,7 +1314,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[30]),
         .Q(max1[30]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1287,7 +1323,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[31]),
         .Q(max1[31]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1296,7 +1332,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[3]),
         .Q(max1[3]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1305,7 +1341,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[4]),
         .Q(max1[4]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1314,7 +1350,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[5]),
         .Q(max1[5]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1323,7 +1359,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[6]),
         .Q(max1[6]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1332,7 +1368,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[7]),
         .Q(max1[7]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1341,7 +1377,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[8]),
         .Q(max1[8]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1350,7 +1386,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max11),
         .D(XCORR1[9]),
         .Q(max1[9]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1359,7 +1395,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[0]),
         .Q(max[0]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1368,7 +1404,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[10]),
         .Q(max[10]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1377,7 +1413,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[11]),
         .Q(max[11]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1386,7 +1422,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[12]),
         .Q(max[12]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1395,7 +1431,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[13]),
         .Q(max[13]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1404,7 +1440,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[14]),
         .Q(max[14]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1413,7 +1449,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[15]),
         .Q(max[15]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1422,7 +1458,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[16]),
         .Q(max[16]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1431,7 +1467,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[17]),
         .Q(max[17]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1440,7 +1476,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[18]),
         .Q(max[18]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1449,7 +1485,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[19]),
         .Q(max[19]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1458,7 +1494,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[1]),
         .Q(max[1]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1467,7 +1503,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[20]),
         .Q(max[20]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1476,7 +1512,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[21]),
         .Q(max[21]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1485,7 +1521,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[22]),
         .Q(max[22]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1494,7 +1530,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[23]),
         .Q(max[23]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1503,7 +1539,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[24]),
         .Q(max[24]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1512,7 +1548,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[25]),
         .Q(max[25]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1521,7 +1557,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[26]),
         .Q(max[26]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1530,7 +1566,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[27]),
         .Q(max[27]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1539,7 +1575,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[28]),
         .Q(max[28]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1548,7 +1584,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[29]),
         .Q(max[29]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1557,7 +1593,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[2]),
         .Q(max[2]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1566,7 +1602,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[30]),
         .Q(max[30]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1575,7 +1611,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[31]),
         .Q(max[31]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1584,7 +1620,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[3]),
         .Q(max[3]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1593,7 +1629,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[4]),
         .Q(max[4]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1602,7 +1638,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[5]),
         .Q(max[5]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1611,7 +1647,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[6]),
         .Q(max[6]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1620,7 +1656,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[7]),
         .Q(max[7]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1629,7 +1665,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[8]),
         .Q(max[8]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -1638,12 +1674,12 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
         .CE(max10_in),
         .D(XCORR[9]),
         .Q(max[9]),
-        .R(\tmax[13]_i_1_n_0 ));
+        .R(tmax_0));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[0] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[0]),
         .Q(tmax1[0]),
         .R(1'b0));
@@ -1651,7 +1687,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[10] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[10]),
         .Q(tmax1[10]),
         .R(1'b0));
@@ -1659,7 +1695,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[11] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[11]),
         .Q(tmax1[11]),
         .R(1'b0));
@@ -1667,7 +1703,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[12] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[12]),
         .Q(tmax1[12]),
         .R(1'b0));
@@ -1675,15 +1711,31 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[13] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[13]),
         .Q(tmax1[13]),
         .R(1'b0));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
+    \tmax1_reg[14] 
+       (.C(clk),
+        .CE(tmax_0),
+        .D(addressMax1[14]),
+        .Q(tmax1[14]),
+        .R(1'b0));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \tmax1_reg[15] 
+       (.C(clk),
+        .CE(tmax_0),
+        .D(addressMax1[15]),
+        .Q(tmax1[15]),
+        .R(1'b0));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[1] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[1]),
         .Q(tmax1[1]),
         .R(1'b0));
@@ -1691,7 +1743,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[2] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[2]),
         .Q(tmax1[2]),
         .R(1'b0));
@@ -1699,7 +1751,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[3] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[3]),
         .Q(tmax1[3]),
         .R(1'b0));
@@ -1707,7 +1759,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[4] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[4]),
         .Q(tmax1[4]),
         .R(1'b0));
@@ -1715,7 +1767,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[5] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[5]),
         .Q(tmax1[5]),
         .R(1'b0));
@@ -1723,7 +1775,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[6] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[6]),
         .Q(tmax1[6]),
         .R(1'b0));
@@ -1731,7 +1783,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[7] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[7]),
         .Q(tmax1[7]),
         .R(1'b0));
@@ -1739,7 +1791,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[8] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[8]),
         .Q(tmax1[8]),
         .R(1'b0));
@@ -1747,48 +1799,55 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax1_reg[9] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax1[9]),
         .Q(tmax1[9]),
         .R(1'b0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \tmax[13]_i_1 
-       (.I0(\tmax[13]_i_2_n_0 ),
-        .O(\tmax[13]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFBFFF)) 
-    \tmax[13]_i_2 
-       (.I0(\tmax[13]_i_3_n_0 ),
-        .I1(address[3]),
-        .I2(address[2]),
-        .I3(address[4]),
-        .I4(address[5]),
-        .I5(\tmax[13]_i_4_n_0 ),
-        .O(\tmax[13]_i_2_n_0 ));
   LUT4 #(
-    .INIT(16'hDFFF)) 
-    \tmax[13]_i_3 
-       (.I0(address[7]),
-        .I1(address[6]),
-        .I2(address[9]),
-        .I3(address[8]),
-        .O(\tmax[13]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hEFFFFFFFFFFFFFFF)) 
-    \tmax[13]_i_4 
-       (.I0(address[12]),
-        .I1(address[13]),
+    .INIT(16'h0001)) 
+    \tmax[15]_i_1 
+       (.I0(\tmax[15]_i_2_n_0 ),
+        .I1(\tmax[15]_i_3_n_0 ),
+        .I2(\tmax[15]_i_4_n_0 ),
+        .I3(\tmax[15]_i_5_n_0 ),
+        .O(tmax_0));
+  LUT4 #(
+    .INIT(16'hFFF7)) 
+    \tmax[15]_i_2 
+       (.I0(address[5]),
+        .I1(address[4]),
+        .I2(address[7]),
+        .I3(address[6]),
+        .O(\tmax[15]_i_2_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \tmax[15]_i_3 
+       (.I0(address[1]),
+        .I1(address[0]),
+        .I2(address[3]),
+        .I3(address[2]),
+        .O(\tmax[15]_i_3_n_0 ));
+  LUT4 #(
+    .INIT(16'hFF7F)) 
+    \tmax[15]_i_4 
+       (.I0(address[13]),
+        .I1(address[12]),
+        .I2(address[14]),
+        .I3(address[15]),
+        .O(\tmax[15]_i_4_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFDF)) 
+    \tmax[15]_i_5 
+       (.I0(address[8]),
+        .I1(address[9]),
         .I2(address[10]),
         .I3(address[11]),
-        .I4(address[1]),
-        .I5(address[0]),
-        .O(\tmax[13]_i_4_n_0 ));
+        .O(\tmax[15]_i_5_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[0] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[0]),
         .Q(tmax[0]),
         .R(1'b0));
@@ -1796,7 +1855,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[10] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[10]),
         .Q(tmax[10]),
         .R(1'b0));
@@ -1804,7 +1863,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[11] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[11]),
         .Q(tmax[11]),
         .R(1'b0));
@@ -1812,7 +1871,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[12] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[12]),
         .Q(tmax[12]),
         .R(1'b0));
@@ -1820,15 +1879,31 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[13] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[13]),
         .Q(tmax[13]),
         .R(1'b0));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
+    \tmax_reg[14] 
+       (.C(clk),
+        .CE(tmax_0),
+        .D(addressMax[14]),
+        .Q(tmax[14]),
+        .R(1'b0));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    \tmax_reg[15] 
+       (.C(clk),
+        .CE(tmax_0),
+        .D(addressMax[15]),
+        .Q(tmax[15]),
+        .R(1'b0));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
     \tmax_reg[1] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[1]),
         .Q(tmax[1]),
         .R(1'b0));
@@ -1836,7 +1911,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[2] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[2]),
         .Q(tmax[2]),
         .R(1'b0));
@@ -1844,7 +1919,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[3] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[3]),
         .Q(tmax[3]),
         .R(1'b0));
@@ -1852,7 +1927,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[4] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[4]),
         .Q(tmax[4]),
         .R(1'b0));
@@ -1860,7 +1935,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[5] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[5]),
         .Q(tmax[5]),
         .R(1'b0));
@@ -1868,7 +1943,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[6] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[6]),
         .Q(tmax[6]),
         .R(1'b0));
@@ -1876,7 +1951,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[7] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[7]),
         .Q(tmax[7]),
         .R(1'b0));
@@ -1884,7 +1959,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[8] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[8]),
         .Q(tmax[8]),
         .R(1'b0));
@@ -1892,7 +1967,7 @@ module MicroBlaze_MaximumFinder_0_0_MaximumFinder
     .IS_C_INVERTED(1'b1)) 
     \tmax_reg[9] 
        (.C(clk),
-        .CE(\tmax[13]_i_1_n_0 ),
+        .CE(tmax_0),
         .D(addressMax[9]),
         .Q(tmax[9]),
         .R(1'b0));

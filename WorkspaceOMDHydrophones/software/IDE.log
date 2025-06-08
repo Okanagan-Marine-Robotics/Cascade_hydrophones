@@ -12460,3 +12460,1565 @@ con
 
 19:57:04 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld_system\_ide\scripts\systemdebugger_helloworld_system_standalone.tcl'
 21:41:59 INFO  : Disconnected from the channel tcfchan#2.
+01:09:22 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/IDE.log'.
+01:09:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\temp_xsdb_launch_script.tcl
+01:09:27 INFO  : XSCT server has started successfully.
+01:09:27 INFO  : Registering command handlers for Vitis TCF services
+01:09:30 INFO  : Platform repository initialization has completed.
+01:09:33 INFO  : plnx-install-location is set to ''
+01:09:33 INFO  : Successfully done setting XSCT server connection channel  
+01:09:33 INFO  : Successfully done query RDI_DATADIR 
+01:09:33 INFO  : Successfully done setting workspace for the tool. 
+01:09:55 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
+01:10:20 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+01:10:20 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:10:36 INFO  : The hardware specification used by project 'helloworld' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:10:36 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
+01:10:36 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream' in project 'helloworld'.
+01:10:36 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit\ps7_init.tcl' stored in project is removed.
+01:10:40 INFO  : The updated ps init files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit' in project 'helloworld'.
+01:10:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:10:40 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:10:42 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:10:42 INFO  : 'jtag frequency' command is executed.
+01:10:42 INFO  : Context for 'APU' is selected.
+01:10:42 INFO  : System reset is completed.
+01:10:45 INFO  : 'after 3000' command is executed.
+01:10:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:10:46 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:10:46 INFO  : Context for 'APU' is selected.
+01:10:46 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:10:46 INFO  : 'configparams force-mem-access 1' command is executed.
+01:10:46 INFO  : Context for 'APU' is selected.
+01:10:46 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:10:46 INFO  : 'ps7_init' command is executed.
+01:10:46 INFO  : 'ps7_post_config' command is executed.
+01:10:46 INFO  : 'configparams force-mem-access 0' command is executed.
+01:10:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:10:46 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld_system\_ide\scripts\systemdebugger_helloworld_system_standalone.tcl'
+01:12:35 INFO  : Disconnected from the channel tcfchan#2.
+01:13:27 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
+01:13:38 INFO  : Result from executing command 'getProjects': MicroBlaze_wrapper
+01:13:38 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:16:42 INFO  : Hardware specification for platform project 'MicroBlaze_wrapper' is updated.
+01:17:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:17:23 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:17:23 INFO  : 'jtag frequency' command is executed.
+01:17:23 INFO  : Context for 'APU' is selected.
+01:17:23 INFO  : System reset is completed.
+01:17:26 INFO  : 'after 3000' command is executed.
+01:17:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:17:28 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit"
+01:17:28 INFO  : Context for 'APU' is selected.
+01:17:28 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+01:17:28 INFO  : 'configparams force-mem-access 1' command is executed.
+01:17:28 INFO  : Context for 'APU' is selected.
+01:17:28 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:17:28 INFO  : 'ps7_init' command is executed.
+01:17:28 INFO  : 'ps7_post_config' command is executed.
+01:17:28 INFO  : 'configparams force-mem-access 0' command is executed.
+01:17:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:17:28 INFO  : Launch script is exported to file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld_system\_ide\scripts\systemdebugger_helloworld_system_standalone.tcl'
+01:22:55 INFO  : Disconnected from the channel tcfchan#4.
+01:24:14 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/IDE.log'.
+01:24:14 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\temp_xsdb_launch_script.tcl
+01:24:16 INFO  : XSCT server has started successfully.
+01:24:16 INFO  : Successfully done setting XSCT server connection channel  
+01:24:16 INFO  : plnx-install-location is set to ''
+01:24:16 INFO  : Successfully done setting workspace for the tool. 
+01:24:17 INFO  : Registering command handlers for Vitis TCF services
+01:24:17 INFO  : Successfully done query RDI_DATADIR 
+01:24:18 INFO  : Platform repository initialization has completed.
+01:25:32 INFO  : Result from executing command 'getProjects': Test
+01:25:32 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:25:48 INFO  : Result from executing command 'getProjects': Test
+01:25:48 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;Test|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:28:33 INFO  : Result from executing command 'removePlatformRepo': 
+01:29:06 INFO  : Result from executing command 'getProjects': Test
+01:29:07 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:29:23 INFO  : The hardware specification used by project 'helloworld' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:29:24 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
+01:29:24 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream' in project 'helloworld'.
+01:29:24 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit\ps7_init.tcl' stored in project is removed.
+01:29:27 INFO  : The updated ps init files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit' in project 'helloworld'.
+01:30:02 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:30:02 INFO  : Updating application flags with new BSP settings...
+01:30:02 INFO  : Successfully updated application flags for project helloworld.
+01:30:46 INFO  : Hardware specification for platform project 'Test' is updated.
+01:30:57 INFO  : Result from executing command 'getProjects': Test
+01:30:57 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;Test|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:31:50 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:33:13 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:33:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:33:53 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:33:55 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:33:55 INFO  : 'jtag frequency' command is executed.
+01:33:55 INFO  : Context for 'APU' is selected.
+01:33:55 INFO  : System reset is completed.
+01:33:58 INFO  : 'after 3000' command is executed.
+01:33:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:33:59 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:33:59 INFO  : Context for 'APU' is selected.
+01:33:59 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:33:59 INFO  : 'configparams force-mem-access 1' command is executed.
+01:33:59 INFO  : Context for 'APU' is selected.
+01:33:59 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:33:59 INFO  : 'ps7_init' command is executed.
+01:33:59 INFO  : 'ps7_post_config' command is executed.
+01:33:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:34:00 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:34:00 INFO  : 'configparams force-mem-access 0' command is executed.
+01:34:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:34:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:34:00 INFO  : 'con' command is executed.
+01:34:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:34:00 INFO  : Disconnected from the channel tcfchan#7.
+01:35:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:35:17 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:35:18 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:35:18 INFO  : 'jtag frequency' command is executed.
+01:35:18 INFO  : Context for 'APU' is selected.
+01:35:18 INFO  : System reset is completed.
+01:35:21 INFO  : 'after 3000' command is executed.
+01:35:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:35:23 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:35:23 INFO  : Context for 'APU' is selected.
+01:35:23 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:35:23 INFO  : 'configparams force-mem-access 1' command is executed.
+01:35:23 INFO  : Context for 'APU' is selected.
+01:35:23 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:35:23 INFO  : 'ps7_init' command is executed.
+01:35:23 INFO  : 'ps7_post_config' command is executed.
+01:35:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:35:23 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:35:23 INFO  : 'configparams force-mem-access 0' command is executed.
+01:35:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:35:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:35:23 INFO  : 'con' command is executed.
+01:35:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:35:23 INFO  : Disconnected from the channel tcfchan#8.
+01:36:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:36:49 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:36:50 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:36:50 INFO  : 'jtag frequency' command is executed.
+01:36:50 INFO  : Context for 'APU' is selected.
+01:36:50 INFO  : System reset is completed.
+01:36:53 INFO  : 'after 3000' command is executed.
+01:36:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:36:54 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:36:55 INFO  : Context for 'APU' is selected.
+01:36:55 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:36:55 INFO  : 'configparams force-mem-access 1' command is executed.
+01:36:55 INFO  : Context for 'APU' is selected.
+01:36:55 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:36:55 INFO  : 'ps7_init' command is executed.
+01:36:55 INFO  : 'ps7_post_config' command is executed.
+01:36:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:36:55 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:36:55 INFO  : 'configparams force-mem-access 0' command is executed.
+01:36:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:36:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:36:55 INFO  : 'con' command is executed.
+01:36:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:36:55 INFO  : Disconnected from the channel tcfchan#9.
+01:38:16 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:38:24 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:38:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:38:27 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:38:29 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:38:29 INFO  : 'jtag frequency' command is executed.
+01:38:29 INFO  : Context for 'APU' is selected.
+01:38:29 INFO  : System reset is completed.
+01:38:32 INFO  : 'after 3000' command is executed.
+01:38:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:38:33 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:38:33 INFO  : Context for 'APU' is selected.
+01:38:33 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:38:33 INFO  : 'configparams force-mem-access 1' command is executed.
+01:38:33 INFO  : Context for 'APU' is selected.
+01:38:33 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:38:33 INFO  : 'ps7_init' command is executed.
+01:38:33 INFO  : 'ps7_post_config' command is executed.
+01:38:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:38:33 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:38:34 INFO  : 'configparams force-mem-access 0' command is executed.
+01:38:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:38:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:38:34 INFO  : 'con' command is executed.
+01:38:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:38:34 INFO  : Disconnected from the channel tcfchan#10.
+01:40:36 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:40:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:40:38 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:40:40 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:40:40 INFO  : 'jtag frequency' command is executed.
+01:40:40 INFO  : Context for 'APU' is selected.
+01:40:40 INFO  : System reset is completed.
+01:40:43 INFO  : 'after 3000' command is executed.
+01:40:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:40:44 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:40:44 INFO  : Context for 'APU' is selected.
+01:40:44 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:40:44 INFO  : 'configparams force-mem-access 1' command is executed.
+01:40:44 INFO  : Context for 'APU' is selected.
+01:40:44 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:40:44 INFO  : 'ps7_init' command is executed.
+01:40:44 INFO  : 'ps7_post_config' command is executed.
+01:40:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:40:45 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:40:45 INFO  : 'configparams force-mem-access 0' command is executed.
+01:40:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:40:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:40:45 INFO  : 'con' command is executed.
+01:40:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:40:45 INFO  : Disconnected from the channel tcfchan#11.
+01:41:16 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:41:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:41:18 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:41:20 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:41:20 INFO  : 'jtag frequency' command is executed.
+01:41:20 INFO  : Context for 'APU' is selected.
+01:41:20 INFO  : System reset is completed.
+01:41:23 INFO  : 'after 3000' command is executed.
+01:41:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:41:24 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:41:24 INFO  : Context for 'APU' is selected.
+01:41:24 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:41:24 INFO  : 'configparams force-mem-access 1' command is executed.
+01:41:24 INFO  : Context for 'APU' is selected.
+01:41:24 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:41:25 INFO  : 'ps7_init' command is executed.
+01:41:25 INFO  : 'ps7_post_config' command is executed.
+01:41:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:41:25 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:41:25 INFO  : 'configparams force-mem-access 0' command is executed.
+01:41:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:41:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:41:25 INFO  : 'con' command is executed.
+01:41:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:41:25 INFO  : Disconnected from the channel tcfchan#12.
+01:42:35 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:42:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:42:44 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:42:45 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:42:45 INFO  : 'jtag frequency' command is executed.
+01:42:45 INFO  : Context for 'APU' is selected.
+01:42:45 INFO  : System reset is completed.
+01:42:48 INFO  : 'after 3000' command is executed.
+01:42:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:42:50 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:42:50 INFO  : Context for 'APU' is selected.
+01:42:50 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:42:50 INFO  : 'configparams force-mem-access 1' command is executed.
+01:42:50 INFO  : Context for 'APU' is selected.
+01:42:50 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:42:50 INFO  : 'ps7_init' command is executed.
+01:42:50 INFO  : 'ps7_post_config' command is executed.
+01:42:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:42:50 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:42:50 INFO  : 'configparams force-mem-access 0' command is executed.
+01:42:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:42:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:42:50 INFO  : 'con' command is executed.
+01:42:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:42:50 INFO  : Disconnected from the channel tcfchan#13.
+01:43:17 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:43:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:43:32 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:43:35 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:43:35 INFO  : 'jtag frequency' command is executed.
+01:43:35 INFO  : Context for 'APU' is selected.
+01:43:35 INFO  : System reset is completed.
+01:43:38 INFO  : 'after 3000' command is executed.
+01:43:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:43:39 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:43:39 INFO  : Context for 'APU' is selected.
+01:43:39 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:43:39 INFO  : 'configparams force-mem-access 1' command is executed.
+01:43:39 INFO  : Context for 'APU' is selected.
+01:43:39 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:43:40 INFO  : 'ps7_init' command is executed.
+01:43:40 INFO  : 'ps7_post_config' command is executed.
+01:43:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:43:40 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:43:40 INFO  : 'configparams force-mem-access 0' command is executed.
+01:43:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:43:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:43:40 INFO  : 'con' command is executed.
+01:43:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:43:40 INFO  : Disconnected from the channel tcfchan#14.
+01:44:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:44:34 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:44:35 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:44:35 INFO  : 'jtag frequency' command is executed.
+01:44:35 INFO  : Context for 'APU' is selected.
+01:44:35 INFO  : System reset is completed.
+01:44:38 INFO  : 'after 3000' command is executed.
+01:44:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:44:39 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:44:40 INFO  : Context for 'APU' is selected.
+01:44:40 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:44:40 INFO  : 'configparams force-mem-access 1' command is executed.
+01:44:40 INFO  : Context for 'APU' is selected.
+01:44:40 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:44:40 INFO  : 'ps7_init' command is executed.
+01:44:40 INFO  : 'ps7_post_config' command is executed.
+01:44:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:44:40 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:44:40 INFO  : 'configparams force-mem-access 0' command is executed.
+01:44:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:44:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:44:40 INFO  : 'con' command is executed.
+01:44:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:44:40 INFO  : Disconnected from the channel tcfchan#15.
+01:45:23 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:45:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:45:38 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:45:39 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:45:39 INFO  : 'jtag frequency' command is executed.
+01:45:39 INFO  : Context for 'APU' is selected.
+01:45:39 INFO  : System reset is completed.
+01:45:42 INFO  : 'after 3000' command is executed.
+01:45:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:45:44 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:45:44 INFO  : Context for 'APU' is selected.
+01:45:44 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:45:44 INFO  : 'configparams force-mem-access 1' command is executed.
+01:45:44 INFO  : Context for 'APU' is selected.
+01:45:44 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:45:44 INFO  : 'ps7_init' command is executed.
+01:45:44 INFO  : 'ps7_post_config' command is executed.
+01:45:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:45:44 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:45:44 INFO  : 'configparams force-mem-access 0' command is executed.
+01:45:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:45:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:45:44 INFO  : 'con' command is executed.
+01:45:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:45:44 INFO  : Disconnected from the channel tcfchan#16.
+01:46:15 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:46:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:46:17 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:46:19 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:46:19 INFO  : 'jtag frequency' command is executed.
+01:46:19 INFO  : Context for 'APU' is selected.
+01:46:19 INFO  : System reset is completed.
+01:46:22 INFO  : 'after 3000' command is executed.
+01:46:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:46:23 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:46:23 INFO  : Context for 'APU' is selected.
+01:46:23 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:46:23 INFO  : 'configparams force-mem-access 1' command is executed.
+01:46:23 INFO  : Context for 'APU' is selected.
+01:46:23 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:46:23 INFO  : 'ps7_init' command is executed.
+01:46:23 INFO  : 'ps7_post_config' command is executed.
+01:46:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:23 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:46:23 INFO  : 'configparams force-mem-access 0' command is executed.
+01:46:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:46:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:24 INFO  : 'con' command is executed.
+01:46:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:46:24 INFO  : Disconnected from the channel tcfchan#17.
+01:46:50 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:46:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:46:52 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:46:55 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:46:55 INFO  : 'jtag frequency' command is executed.
+01:46:55 INFO  : Context for 'APU' is selected.
+01:46:55 INFO  : System reset is completed.
+01:46:58 INFO  : 'after 3000' command is executed.
+01:46:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:46:59 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:46:59 INFO  : Context for 'APU' is selected.
+01:46:59 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:46:59 INFO  : 'configparams force-mem-access 1' command is executed.
+01:46:59 INFO  : Context for 'APU' is selected.
+01:46:59 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:46:59 INFO  : 'ps7_init' command is executed.
+01:46:59 INFO  : 'ps7_post_config' command is executed.
+01:46:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:59 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:46:59 INFO  : 'configparams force-mem-access 0' command is executed.
+01:46:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:46:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:59 INFO  : 'con' command is executed.
+01:46:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:46:59 INFO  : Disconnected from the channel tcfchan#18.
+01:47:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:47:12 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:47:14 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:47:14 INFO  : 'jtag frequency' command is executed.
+01:47:14 INFO  : Context for 'APU' is selected.
+01:47:14 INFO  : System reset is completed.
+01:47:17 INFO  : 'after 3000' command is executed.
+01:47:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:47:18 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:47:18 INFO  : Context for 'APU' is selected.
+01:47:18 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:47:18 INFO  : 'configparams force-mem-access 1' command is executed.
+01:47:18 INFO  : Context for 'APU' is selected.
+01:47:18 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:47:18 INFO  : 'ps7_init' command is executed.
+01:47:18 INFO  : 'ps7_post_config' command is executed.
+01:47:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:47:19 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:47:19 INFO  : 'configparams force-mem-access 0' command is executed.
+01:47:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:47:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:47:19 INFO  : 'con' command is executed.
+01:47:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:47:19 INFO  : Disconnected from the channel tcfchan#19.
+01:48:12 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:48:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:48:14 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:48:15 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:48:15 INFO  : 'jtag frequency' command is executed.
+01:48:15 INFO  : Context for 'APU' is selected.
+01:48:16 INFO  : System reset is completed.
+01:48:19 INFO  : 'after 3000' command is executed.
+01:48:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:48:20 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:48:20 INFO  : Context for 'APU' is selected.
+01:48:20 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:48:20 INFO  : 'configparams force-mem-access 1' command is executed.
+01:48:20 INFO  : Context for 'APU' is selected.
+01:48:20 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:48:20 INFO  : 'ps7_init' command is executed.
+01:48:20 INFO  : 'ps7_post_config' command is executed.
+01:48:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:48:20 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:48:20 INFO  : 'configparams force-mem-access 0' command is executed.
+01:48:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:48:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:48:20 INFO  : 'con' command is executed.
+01:48:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:48:20 INFO  : Disconnected from the channel tcfchan#20.
+01:49:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:49:45 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:49:48 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:49:48 INFO  : 'jtag frequency' command is executed.
+01:49:48 INFO  : Context for 'APU' is selected.
+01:49:48 INFO  : System reset is completed.
+01:49:51 INFO  : 'after 3000' command is executed.
+01:49:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:49:52 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:49:52 INFO  : Context for 'APU' is selected.
+01:49:52 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:49:52 INFO  : 'configparams force-mem-access 1' command is executed.
+01:49:52 INFO  : Context for 'APU' is selected.
+01:49:52 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:49:53 INFO  : 'ps7_init' command is executed.
+01:49:53 INFO  : 'ps7_post_config' command is executed.
+01:49:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:49:53 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:49:53 INFO  : 'configparams force-mem-access 0' command is executed.
+01:49:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:49:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:49:53 INFO  : 'con' command is executed.
+01:49:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:49:53 INFO  : Disconnected from the channel tcfchan#21.
+01:50:33 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+01:50:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:50:35 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+01:50:37 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+01:50:37 INFO  : 'jtag frequency' command is executed.
+01:50:37 INFO  : Context for 'APU' is selected.
+01:50:37 INFO  : System reset is completed.
+01:50:40 INFO  : 'after 3000' command is executed.
+01:50:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+01:50:41 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+01:50:41 INFO  : Context for 'APU' is selected.
+01:50:41 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+01:50:41 INFO  : 'configparams force-mem-access 1' command is executed.
+01:50:41 INFO  : Context for 'APU' is selected.
+01:50:41 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+01:50:41 INFO  : 'ps7_init' command is executed.
+01:50:41 INFO  : 'ps7_post_config' command is executed.
+01:50:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:50:42 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:50:42 INFO  : 'configparams force-mem-access 0' command is executed.
+01:50:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:50:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:50:42 INFO  : 'con' command is executed.
+01:50:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:50:42 INFO  : Disconnected from the channel tcfchan#22.
+02:08:31 DEBUG : Logs will be stored at 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/IDE.log'.
+02:08:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\temp_xsdb_launch_script.tcl
+02:08:33 INFO  : XSCT server has started successfully.
+02:08:33 INFO  : plnx-install-location is set to ''
+02:08:33 INFO  : Successfully done setting XSCT server connection channel  
+02:08:33 INFO  : Successfully done setting workspace for the tool. 
+02:08:34 INFO  : Successfully done query RDI_DATADIR 
+02:08:34 INFO  : Registering command handlers for Vitis TCF services
+02:08:34 INFO  : Platform repository initialization has completed.
+02:08:53 INFO  : Hardware specification for platform project 'Test' is updated.
+02:09:04 INFO  : Result from executing command 'getProjects': Test
+02:09:04 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;Test|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:09:26 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:09:27 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:09:27 INFO  : 'jtag frequency' command is executed.
+02:09:27 INFO  : Context for 'APU' is selected.
+02:09:27 INFO  : System reset is completed.
+02:09:30 INFO  : 'after 3000' command is executed.
+02:09:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:09:32 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:09:32 INFO  : Context for 'APU' is selected.
+02:09:32 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:09:32 INFO  : 'configparams force-mem-access 1' command is executed.
+02:09:32 INFO  : Context for 'APU' is selected.
+02:09:32 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:09:32 INFO  : 'ps7_init' command is executed.
+02:09:32 INFO  : 'ps7_post_config' command is executed.
+02:09:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:09:32 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:09:32 INFO  : 'configparams force-mem-access 0' command is executed.
+02:09:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:09:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:09:32 INFO  : 'con' command is executed.
+02:09:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:09:32 INFO  : Disconnected from the channel tcfchan#2.
+02:10:09 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:10:09 INFO  : Updating application flags with new BSP settings...
+02:10:09 INFO  : Successfully updated application flags for project helloworld.
+02:10:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:10:11 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:10:13 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:10:13 INFO  : 'jtag frequency' command is executed.
+02:10:13 INFO  : Context for 'APU' is selected.
+02:10:13 INFO  : System reset is completed.
+02:10:16 INFO  : 'after 3000' command is executed.
+02:10:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:10:17 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:10:17 INFO  : Context for 'APU' is selected.
+02:10:17 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:10:17 INFO  : 'configparams force-mem-access 1' command is executed.
+02:10:17 INFO  : Context for 'APU' is selected.
+02:10:17 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:10:18 INFO  : 'ps7_init' command is executed.
+02:10:18 INFO  : 'ps7_post_config' command is executed.
+02:10:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:10:18 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:10:18 INFO  : 'configparams force-mem-access 0' command is executed.
+02:10:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:10:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:10:18 INFO  : 'con' command is executed.
+02:10:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:10:18 INFO  : Disconnected from the channel tcfchan#3.
+02:10:40 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:10:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:10:53 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:10:55 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:10:55 INFO  : 'jtag frequency' command is executed.
+02:10:55 INFO  : Context for 'APU' is selected.
+02:10:55 INFO  : System reset is completed.
+02:10:58 INFO  : 'after 3000' command is executed.
+02:10:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:10:59 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:10:59 INFO  : Context for 'APU' is selected.
+02:10:59 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:10:59 INFO  : 'configparams force-mem-access 1' command is executed.
+02:10:59 INFO  : Context for 'APU' is selected.
+02:10:59 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:11:00 INFO  : 'ps7_init' command is executed.
+02:11:00 INFO  : 'ps7_post_config' command is executed.
+02:11:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:11:00 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:11:00 INFO  : 'configparams force-mem-access 0' command is executed.
+02:11:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:11:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:11:00 INFO  : 'con' command is executed.
+02:11:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:11:00 INFO  : Disconnected from the channel tcfchan#4.
+02:11:18 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:11:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:11:25 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:11:27 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:11:27 INFO  : 'jtag frequency' command is executed.
+02:11:27 INFO  : Context for 'APU' is selected.
+02:11:27 INFO  : System reset is completed.
+02:11:30 INFO  : 'after 3000' command is executed.
+02:11:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:11:31 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:11:31 INFO  : Context for 'APU' is selected.
+02:11:31 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:11:31 INFO  : 'configparams force-mem-access 1' command is executed.
+02:11:31 INFO  : Context for 'APU' is selected.
+02:11:31 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:11:31 INFO  : 'ps7_init' command is executed.
+02:11:31 INFO  : 'ps7_post_config' command is executed.
+02:11:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:11:31 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:11:31 INFO  : 'configparams force-mem-access 0' command is executed.
+02:11:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:11:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:11:31 INFO  : 'con' command is executed.
+02:11:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:11:32 INFO  : Disconnected from the channel tcfchan#5.
+02:11:54 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:11:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:11:57 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:11:59 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:11:59 INFO  : 'jtag frequency' command is executed.
+02:11:59 INFO  : Context for 'APU' is selected.
+02:11:59 INFO  : System reset is completed.
+02:12:02 INFO  : 'after 3000' command is executed.
+02:12:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:12:03 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:12:03 INFO  : Context for 'APU' is selected.
+02:12:03 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:12:03 INFO  : 'configparams force-mem-access 1' command is executed.
+02:12:03 INFO  : Context for 'APU' is selected.
+02:12:03 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:12:03 INFO  : 'ps7_init' command is executed.
+02:12:03 INFO  : 'ps7_post_config' command is executed.
+02:12:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:12:04 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:12:04 INFO  : 'configparams force-mem-access 0' command is executed.
+02:12:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:12:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:12:04 INFO  : 'con' command is executed.
+02:12:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:12:04 INFO  : Disconnected from the channel tcfchan#6.
+02:13:03 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:13:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:13:05 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:13:07 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:13:07 INFO  : 'jtag frequency' command is executed.
+02:13:07 INFO  : Context for 'APU' is selected.
+02:13:07 INFO  : System reset is completed.
+02:13:10 INFO  : 'after 3000' command is executed.
+02:13:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:13:11 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:13:11 INFO  : Context for 'APU' is selected.
+02:13:11 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:13:11 INFO  : 'configparams force-mem-access 1' command is executed.
+02:13:11 INFO  : Context for 'APU' is selected.
+02:13:11 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:13:11 INFO  : 'ps7_init' command is executed.
+02:13:11 INFO  : 'ps7_post_config' command is executed.
+02:13:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:13:11 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:13:12 INFO  : 'configparams force-mem-access 0' command is executed.
+02:13:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:13:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:13:12 INFO  : 'con' command is executed.
+02:13:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:13:12 INFO  : Disconnected from the channel tcfchan#7.
+02:41:00 INFO  : Hardware specification for platform project 'Test' is updated.
+02:41:12 INFO  : Result from executing command 'getProjects': Test
+02:41:12 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;Test|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:41:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:41:49 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:41:52 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:41:52 INFO  : 'jtag frequency' command is executed.
+02:41:52 INFO  : Context for 'APU' is selected.
+02:41:52 INFO  : System reset is completed.
+02:41:55 INFO  : 'after 3000' command is executed.
+02:41:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:41:57 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:41:57 INFO  : Context for 'APU' is selected.
+02:41:57 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:41:57 INFO  : 'configparams force-mem-access 1' command is executed.
+02:41:57 INFO  : Context for 'APU' is selected.
+02:41:57 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:41:57 INFO  : 'ps7_init' command is executed.
+02:41:57 INFO  : 'ps7_post_config' command is executed.
+02:41:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:41:57 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:41:57 INFO  : 'configparams force-mem-access 0' command is executed.
+02:41:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:41:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:41:57 INFO  : 'con' command is executed.
+02:41:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:41:57 INFO  : Disconnected from the channel tcfchan#9.
+02:42:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:42:01 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:42:03 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:42:03 INFO  : 'jtag frequency' command is executed.
+02:42:03 INFO  : Context for 'APU' is selected.
+02:42:03 INFO  : System reset is completed.
+02:42:06 INFO  : 'after 3000' command is executed.
+02:42:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:42:07 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:42:07 INFO  : Context for 'APU' is selected.
+02:42:07 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:42:07 INFO  : 'configparams force-mem-access 1' command is executed.
+02:42:07 INFO  : Context for 'APU' is selected.
+02:42:07 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:42:08 INFO  : 'ps7_init' command is executed.
+02:42:08 INFO  : 'ps7_post_config' command is executed.
+02:42:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:42:08 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:42:08 INFO  : 'configparams force-mem-access 0' command is executed.
+02:42:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:42:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:42:08 INFO  : 'con' command is executed.
+02:42:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:42:08 INFO  : Disconnected from the channel tcfchan#10.
+02:42:44 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:42:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:42:47 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:42:48 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:42:48 INFO  : 'jtag frequency' command is executed.
+02:42:48 INFO  : Context for 'APU' is selected.
+02:42:48 INFO  : System reset is completed.
+02:42:51 INFO  : 'after 3000' command is executed.
+02:42:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:42:52 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit"
+02:42:52 INFO  : Context for 'APU' is selected.
+02:42:52 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa'.
+02:42:52 INFO  : 'configparams force-mem-access 1' command is executed.
+02:42:52 INFO  : Context for 'APU' is selected.
+02:42:52 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:42:53 INFO  : 'ps7_init' command is executed.
+02:42:53 INFO  : 'ps7_post_config' command is executed.
+02:42:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:42:53 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:42:53 INFO  : 'configparams force-mem-access 0' command is executed.
+02:42:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/impl_1/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:42:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:42:53 INFO  : 'con' command is executed.
+02:42:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:42:53 INFO  : Disconnected from the channel tcfchan#11.
+02:43:32 INFO  : Hardware specification for platform project 'Test' is updated.
+02:43:47 INFO  : The hardware specification used by project 'helloworld' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:43:47 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
+02:43:47 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream' in project 'helloworld'.
+02:43:47 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit\ps7_init.tcl' stored in project is removed.
+02:43:50 INFO  : The updated ps init files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit' in project 'helloworld'.
+02:43:59 INFO  : Result from executing command 'getProjects': Test
+02:43:59 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;Test|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:46:39 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:46:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:46:50 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:47:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+02:47:00 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+02:47:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:47:13 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:47:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+02:47:23 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+02:48:12 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+02:48:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:48:30 INFO  : 'fpga -state' command is executed.
+02:48:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:48:31 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:48:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+02:48:33 ERROR : Initialization file is not found. Cannot run initialization.
+02:48:49 INFO  : Result from executing command 'removePlatformRepo': 
+02:48:53 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+02:49:04 INFO  : The hardware specification used by project 'helloworld' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+02:49:05 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream\MicroBlaze_wrapper.bit' stored in project is removed.
+02:49:05 INFO  : The updated bitstream files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\bitstream' in project 'helloworld'.
+02:49:05 INFO  : The file 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit\ps7_init.tcl' stored in project is removed.
+02:49:09 INFO  : The updated ps init files are copied from platform to folder 'C:\Cascade_hydrophones\WorkspaceOMDHydrophones\software\helloworld\_ide\psinit' in project 'helloworld'.
+02:51:32 INFO  : Result from executing command 'getProjects': Test
+02:51:32 INFO  : Result from executing command 'getPlatforms': MicroBlaze_wrapper|C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:51:33 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:51:33 INFO  : Updating application flags with new BSP settings...
+02:51:33 INFO  : Successfully updated application flags for project helloworld.
+02:52:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:52:10 INFO  : 'fpga -state' command is executed.
+02:52:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:52:12 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:52:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+02:52:13 ERROR : Initialization file is not found. Cannot run initialization.
+02:52:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:52:31 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:52:32 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:52:32 INFO  : 'jtag frequency' command is executed.
+02:52:32 INFO  : Context for 'APU' is selected.
+02:52:32 INFO  : System reset is completed.
+02:52:35 INFO  : 'after 3000' command is executed.
+02:52:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:52:37 ERROR : fpga configuration failed. DONE PIN is not HIGH
+02:52:37 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: fpga configuration failed. DONE PIN is not HIGH
+02:52:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+02:52:37 ERROR : fpga configuration failed. DONE PIN is not HIGH
+02:53:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:53:22 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:53:23 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:53:23 INFO  : 'jtag frequency' command is executed.
+02:53:23 INFO  : Context for 'APU' is selected.
+02:53:23 INFO  : System reset is completed.
+02:53:26 INFO  : 'after 3000' command is executed.
+02:53:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:53:29 ERROR : fpga configuration failed. DONE PIN is not HIGH
+02:53:29 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: fpga configuration failed. DONE PIN is not HIGH
+02:53:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+02:53:29 ERROR : fpga configuration failed. DONE PIN is not HIGH
+02:54:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:54:12 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:54:14 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:54:14 INFO  : 'jtag frequency' command is executed.
+02:54:14 INFO  : Context for 'APU' is selected.
+02:54:14 INFO  : System reset is completed.
+02:54:17 INFO  : 'after 3000' command is executed.
+02:54:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:54:18 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit"
+02:54:19 INFO  : Context for 'APU' is selected.
+02:54:19 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+02:54:19 INFO  : 'configparams force-mem-access 1' command is executed.
+02:54:19 INFO  : Context for 'APU' is selected.
+02:54:19 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:54:19 INFO  : 'ps7_init' command is executed.
+02:54:19 INFO  : 'ps7_post_config' command is executed.
+02:54:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:54:19 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:54:19 INFO  : 'configparams force-mem-access 0' command is executed.
+02:54:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:54:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:54:19 INFO  : 'con' command is executed.
+02:54:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:54:19 INFO  : Disconnected from the channel tcfchan#13.
+02:54:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:54:50 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:54:52 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:54:52 INFO  : 'jtag frequency' command is executed.
+02:54:52 INFO  : Context for 'APU' is selected.
+02:54:52 INFO  : System reset is completed.
+02:54:55 INFO  : 'after 3000' command is executed.
+02:54:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:54:56 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit"
+02:54:56 INFO  : Context for 'APU' is selected.
+02:54:56 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+02:54:56 INFO  : 'configparams force-mem-access 1' command is executed.
+02:54:56 INFO  : Context for 'APU' is selected.
+02:54:56 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:54:56 INFO  : 'ps7_init' command is executed.
+02:54:56 INFO  : 'ps7_post_config' command is executed.
+02:54:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:54:57 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:54:57 INFO  : 'configparams force-mem-access 0' command is executed.
+02:54:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:54:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:54:57 INFO  : 'con' command is executed.
+02:54:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:54:57 INFO  : Disconnected from the channel tcfchan#18.
+02:55:08 INFO  : Checking for BSP changes to sync application flags for project 'helloworld'...
+02:55:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:55:15 WARN  : IDE version '2022.2.0' doesn't match hw_server version '2024.2'. Some debug features may not work.
+02:55:17 INFO  : Jtag cable 'Digilent JTAG-SMT2 A30526FBA07A' is selected.
+02:55:17 INFO  : 'jtag frequency' command is executed.
+02:55:17 INFO  : Context for 'APU' is selected.
+02:55:17 INFO  : System reset is completed.
+02:55:20 INFO  : 'after 3000' command is executed.
+02:55:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}' command is executed.
+02:55:21 INFO  : Device configured successfully with "C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit"
+02:55:21 INFO  : Context for 'APU' is selected.
+02:55:21 INFO  : Hardware design and registers information is loaded from 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa'.
+02:55:21 INFO  : 'configparams force-mem-access 1' command is executed.
+02:55:21 INFO  : Context for 'APU' is selected.
+02:55:21 INFO  : Sourcing of 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl' is done.
+02:55:21 INFO  : 'ps7_init' command is executed.
+02:55:21 INFO  : 'ps7_post_config' command is executed.
+02:55:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:55:22 INFO  : The application 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:55:22 INFO  : 'configparams force-mem-access 0' command is executed.
+02:55:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 A30526FBA07A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-A30526FBA07A-13722093-0"}
+fpga -file C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/hw/MicroBlaze_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:55:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:55:22 INFO  : 'con' command is executed.
+02:55:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:55:22 INFO  : Disconnected from the channel tcfchan#19.

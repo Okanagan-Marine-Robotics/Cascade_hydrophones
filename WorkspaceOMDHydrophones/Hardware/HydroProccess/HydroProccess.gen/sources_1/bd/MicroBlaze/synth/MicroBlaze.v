@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Sun May 25 23:08:06 2025
+//Date        : Sun Jun  8 02:33:46 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=23,da_board_cnt=17,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=23,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=12,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=24,da_board_cnt=17,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -47,7 +47,6 @@ module MicroBlaze
   output [0:0]led_green;
   output [0:0]led_red;
 
-  wire [13:0]AddressFixer_0_address;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -76,8 +75,8 @@ module MicroBlaze
   wire [11:0]SineWaveGen_1_wave;
   wire [11:0]SineWaveGen_2_wave;
   wire [15:0]Wrapper_XCorr_0_count;
-  wire [63:0]Wrapper_XCorr_0_xcorr;
-  wire [63:0]Wrapper_XCorr_0_xcorr1;
+  wire [35:0]Wrapper_XCorr_0_xcorr;
+  wire [35:0]Wrapper_XCorr_0_xcorr1;
   wire [31:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
   wire [31:0]axi_gpio_2_gpio2_io_o;
@@ -180,14 +179,10 @@ module MicroBlaze
   wire [31:0]xlslice_0_Dout;
   wire [31:0]xlslice_1_Dout;
 
-  MicroBlaze_AddressFixer_0_0 AddressFixer_0
-       (.address(AddressFixer_0_address),
-        .clk(microblaze_0_Clk),
-        .counter(Wrapper_XCorr_0_count));
   MicroBlaze_MaximumFinder_0_0 MaximumFinder_0
        (.XCORR(xlslice_0_Dout),
         .XCORR1(xlslice_1_Dout),
-        .address(AddressFixer_0_address),
+        .address(Wrapper_XCorr_0_count),
         .clk(microblaze_0_Clk),
         .tmax(MaximumFinder_0_tmax),
         .tmax1(MaximumFinder_0_tmax1));
@@ -490,9 +485,9 @@ module MicroBlaze
   MicroBlaze_xlconstant_2_0 xlconstant_2
        (.dout(led_green));
   MicroBlaze_xlslice_0_0 xlslice_0
-       (.Din(Wrapper_XCorr_0_xcorr[35:0]),
+       (.Din(Wrapper_XCorr_0_xcorr),
         .Dout(xlslice_0_Dout));
   MicroBlaze_xlslice_0_1 xlslice_1
-       (.Din(Wrapper_XCorr_0_xcorr1[35:0]),
+       (.Din(Wrapper_XCorr_0_xcorr1),
         .Dout(xlslice_1_Dout));
 endmodule

@@ -54,7 +54,7 @@
 #include "systemc.h"
 class MicroBlaze_xlconstant_2_0 : public sc_module {
   public:
-xlconstant_v1_1_9<1,0> mod;
+xlconstant_v1_1_9<1,1> mod;
   sc_out< sc_bv<1> > dout;
 MicroBlaze_xlconstant_2_0 (sc_core::sc_module_name name);
   };

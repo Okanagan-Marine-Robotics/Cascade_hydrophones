@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Fri Mar 14 16:01:41 2025
+-- Date        : Sun Jun  8 02:34:29 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_MaximumFinder_0_0/MicroBlaze_MaximumFinder_0_0_stub.vhdl
@@ -17,7 +17,7 @@ entity MicroBlaze_MaximumFinder_0_0 is
   Port ( 
     XCORR : in STD_LOGIC_VECTOR ( 31 downto 0 );
     XCORR1 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    address : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    address : in STD_LOGIC_VECTOR ( 15 downto 0 );
     clk : in STD_LOGIC;
     tmax : out STD_LOGIC_VECTOR ( 31 downto 0 );
     tmax1 : out STD_LOGIC_VECTOR ( 31 downto 0 )
@@ -37,7 +37,7 @@ architecture stub of MicroBlaze_MaximumFinder_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "XCORR[31:0],XCORR1[31:0],address[13:0],clk,tmax[31:0],tmax1[31:0]";
+  attribute black_box_pad_pin of stub : architecture is "XCORR[31:0],XCORR1[31:0],address[15:0],clk,tmax[31:0],tmax1[31:0]";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_MODE : string;
