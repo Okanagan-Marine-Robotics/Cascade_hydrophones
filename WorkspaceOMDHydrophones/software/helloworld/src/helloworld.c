@@ -19,11 +19,13 @@ int main() {
 
 	init_platform();
 
+	xil_printf("helloworld!\n");
+
 	XUartPs_Config *Config = XUartPs_LookupConfig(UART_DEVICE_ID);
 	XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
 
 
-	xil_printf("helloworld!\n");
+
 	xil_printf("Starting Pinger Triangulation System\n");
 	xil_printf("by James Williamsom v:0.2\n");
 	int state = 1;
@@ -125,7 +127,7 @@ int main() {
 			    double q = tan(asin(((1500.*(t2/1000000.))/(0.5))));
 			    x=(-0.25-0.25*(p))/(p*q-1.);
 			    y=(x-0.25)/p;
-			//printf("%s\n", ReceivedData);
+			printf("%s\n", ReceivedData);
 			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
 			usleep(500000);
 		//}
@@ -154,7 +156,7 @@ int delayGetter (int delay,int test1){
      	data = XGpio_DiscreteRead(&Gpio, 2);
 
 
-         	maxTime = data-2002;
+         	maxTime = data-2;
 
 
 
@@ -169,7 +171,7 @@ int delayGetter (int delay,int test1){
 			XGpio Gpio2;
 	    	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_2_DEVICE_ID);
 	    	XGpio_DiscreteWrite(&Gpio2, 1, 0);
-	    	XGpio_DiscreteWrite(&Gpio2, 2, 0);
+	    	XGpio_DiscreteWrite(&Gpio2, 2, 100);
 	//xil_printf("%d\n", MaxSignal);
 	return maxTime;
 }
@@ -188,11 +190,11 @@ int delayGetter2 (int delay, int test2){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio1, 1, 0);
+    	XGpio_DiscreteWrite(&Gpio1, 1, 10);
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 
-     	maxTime = data-2002;
+     	maxTime = data-2;
     	i++;
     	//xil_printf("{\"Data\": %d}\n", data);
 	}

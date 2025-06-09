@@ -57,8 +57,6 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
-set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -129,6 +127,12 @@ set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_43/bd_f84b_m02awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_44/bd_f84b_m02wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_45/bd_f84b_m02bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_47/bd_f84b_m03s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_48/bd_f84b_m03arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_49/bd_f84b_m03rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_50/bd_f84b_m03awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_51/bd_f84b_m03wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_52/bd_f84b_m03bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_board.xdc]
@@ -137,6 +141,9 @@ set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_2_0/MicroBlaze_axi_gpio_2_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_2_0/MicroBlaze_axi_gpio_2_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_2_0/MicroBlaze_axi_gpio_2_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_3_0/MicroBlaze_axi_gpio_3_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_3_0/MicroBlaze_axi_gpio_3_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_axi_gpio_3_0/MicroBlaze_axi_gpio_3_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/MicroBlaze_ooc.xdc]
 
 OPTRACE "Adding files" END { }

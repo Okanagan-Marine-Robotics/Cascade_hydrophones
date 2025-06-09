@@ -33,7 +33,9 @@
       "xlslice_1": "",
       "Wrapper_XCorr_0": "",
       "SineWaveGen_2": "",
-      "axi_gpio_2": ""
+      "axi_gpio_2": "",
+      "WaveCaptureUnit_0": "",
+      "axi_gpio_3": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1606,7 +1608,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "1"
+            "value": "0"
           }
         }
       },
@@ -1618,7 +1620,7 @@
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "1"
+            "value": "0"
           }
         }
       },
@@ -1905,6 +1907,89 @@
             "value": "true"
           }
         }
+      },
+      "WaveCaptureUnit_0": {
+        "vlnv": "xilinx.com:module_ref:WaveCaptureUnit:1.0",
+        "ip_revision": "1",
+        "xci_name": "MicroBlaze_WaveCaptureUnit_0_0",
+        "xci_path": "ip\\MicroBlaze_WaveCaptureUnit_0_0\\MicroBlaze_WaveCaptureUnit_0_0.xci",
+        "inst_hier_path": "WaveCaptureUnit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "WaveCaptureUnit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "WaveRef": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "WaveRefOut": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Address_B": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk1Mhz": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MicroBlaze_clk_vip_0_0_clk_out",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "offset": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "axi_gpio_3": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "ip_revision": "35",
+        "xci_name": "MicroBlaze_axi_gpio_3_0",
+        "xci_path": "ip\\MicroBlaze_axi_gpio_3_0\\MicroBlaze_axi_gpio_3_0.xci",
+        "inst_hier_path": "axi_gpio_3",
+        "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1924,6 +2009,12 @@
         "interface_ports": [
           "axi_smc/M02_AXI",
           "axi_gpio_2/S_AXI"
+        ]
+      },
+      "axi_smc_M03_AXI": {
+        "interface_ports": [
+          "axi_smc/M03_AXI",
+          "axi_gpio_3/S_AXI"
         ]
       },
       "processing_system7_0_DDR": {
@@ -1958,13 +2049,15 @@
           "SineWaveGen_0/clk1Mhz",
           "SineWaveGen_1/clk1Mhz",
           "SineWaveGen_2/clk1Mhz",
-          "Wrapper_XCorr_0/clk1Mhz"
+          "Wrapper_XCorr_0/clk1Mhz",
+          "WaveCaptureUnit_0/clk1Mhz"
         ]
       },
       "SPI_ADC_Master_0_wave": {
         "ports": [
           "SPI_ADC_Master_0/wave",
-          "Wrapper_XCorr_0/waveRef"
+          "Wrapper_XCorr_0/waveRef",
+          "WaveCaptureUnit_0/WaveRef"
         ]
       },
       "SPI_ADC_Master_1_wave": {
@@ -2015,6 +2108,12 @@
           "Serializer_0/waveIn"
         ]
       },
+      "WaveCaptureUnit_0_WaveRefOut": {
+        "ports": [
+          "WaveCaptureUnit_0/WaveRefOut",
+          "axi_gpio_3/gpio_io_i"
+        ]
+      },
       "Wrapper_XCorr_0_count": {
         "ports": [
           "Wrapper_XCorr_0/count",
@@ -2054,7 +2153,14 @@
       "axi_gpio_2_gpio_io_o": {
         "ports": [
           "axi_gpio_2/gpio_io_o",
-          "Wrapper_XCorr_0/offset"
+          "Wrapper_XCorr_0/offset",
+          "WaveCaptureUnit_0/offset"
+        ]
+      },
+      "axi_gpio_3_gpio2_io_o": {
+        "ports": [
+          "axi_gpio_3/gpio2_io_o",
+          "WaveCaptureUnit_0/Address_B"
         ]
       },
       "clk_wiz_0_clk_out1": {
@@ -2083,7 +2189,9 @@
           "SPI_ADC_Master_2/clk",
           "axi_gpio_2/s_axi_aclk",
           "Wrapper_XCorr_0/clk",
-          "MaximumFinder_0/clk"
+          "MaximumFinder_0/clk",
+          "WaveCaptureUnit_0/clk",
+          "axi_gpio_3/s_axi_aclk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -2092,7 +2200,8 @@
           "axi_gpio_0/s_axi_aresetn",
           "axi_gpio_1/s_axi_aresetn",
           "axi_smc/aresetn",
-          "axi_gpio_2/s_axi_aresetn"
+          "axi_gpio_2/s_axi_aresetn",
+          "axi_gpio_3/s_axi_aresetn"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2144,6 +2253,11 @@
               "SEG_axi_gpio_2_Reg": {
                 "address_block": "/axi_gpio_2/S_AXI/Reg",
                 "offset": "0x41220000",
+                "range": "64K"
+              },
+              "SEG_axi_gpio_3_Reg": {
+                "address_block": "/axi_gpio_3/S_AXI/Reg",
+                "offset": "0x41230000",
                 "range": "64K"
               }
             }

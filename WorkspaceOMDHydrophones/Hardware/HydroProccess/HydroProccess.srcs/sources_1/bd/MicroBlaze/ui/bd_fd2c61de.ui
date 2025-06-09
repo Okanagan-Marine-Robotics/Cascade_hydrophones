@@ -1,74 +1,79 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.625",
-   "Default View_TopLeft":"1794,123",
+   "Default View_TopLeft":"1824,-13",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 10 -x 3330 -y 700 -defaultsOSRD
-preplace portBus led_red -pg 1 -lvl 10 -x 3330 -y 530 -defaultsOSRD
-preplace portBus led_green -pg 1 -lvl 10 -x 3330 -y 790 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 930 -y 430 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 930 -y 610 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 3360 -y 700 -defaultsOSRD
+preplace portBus led_red -pg 1 -lvl 10 -x 3360 -y 530 -defaultsOSRD
+preplace portBus led_green -pg 1 -lvl 10 -x 3360 -y 790 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 960 -y 450 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 960 -y 630 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x 120 -y 740 -defaultsOSRD
 preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 120 -y 400 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 2 -x 550 -y 730 -defaultsOSRD
-preplace inst SineWaveGen_0 -pg 1 -lvl 4 -x 1290 -y 400 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 1290 -y 590 -defaultsOSRD
-preplace inst SPI_ADC_Master_0 -pg 1 -lvl 6 -x 2200 -y 200 -defaultsOSRD
-preplace inst Serializer_0 -pg 1 -lvl 5 -x 1590 -y 220 -defaultsOSRD
-preplace inst SPI_ADC_Master_1 -pg 1 -lvl 6 -x 2200 -y 370 -defaultsOSRD
-preplace inst Serializer_1 -pg 1 -lvl 5 -x 1590 -y 340 -defaultsOSRD
-preplace inst SPI_ADC_Master_2 -pg 1 -lvl 6 -x 2200 -y 610 -defaultsOSRD
-preplace inst Serializer_2 -pg 1 -lvl 5 -x 1590 -y 630 -defaultsOSRD
-preplace inst clk1Mhz_0 -pg 1 -lvl 3 -x 930 -y 300 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 9 -x 3160 -y 530 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 9 -x 3160 -y 790 -defaultsOSRD
-preplace inst MaximumFinder_0 -pg 1 -lvl 9 -x 3160 -y 380 -defaultsOSRD
-preplace inst SineWaveGen_1 -pg 1 -lvl 4 -x 1290 -y 700 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 8 -x 2840 -y 60 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 8 -x 2840 -y 160 -defaultsOSRD
-preplace inst Wrapper_XCorr_0 -pg 1 -lvl 7 -x 2530 -y 160 -defaultsOSRD
-preplace inst SineWaveGen_2 -pg 1 -lvl 4 -x 1290 -y 250 -defaultsOSRD
+preplace inst SineWaveGen_0 -pg 1 -lvl 4 -x 1320 -y 400 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 1320 -y 590 -defaultsOSRD
+preplace inst SPI_ADC_Master_0 -pg 1 -lvl 6 -x 2230 -y 200 -defaultsOSRD
+preplace inst Serializer_0 -pg 1 -lvl 5 -x 1620 -y 220 -defaultsOSRD
+preplace inst SPI_ADC_Master_1 -pg 1 -lvl 6 -x 2230 -y 370 -defaultsOSRD
+preplace inst Serializer_1 -pg 1 -lvl 5 -x 1620 -y 340 -defaultsOSRD
+preplace inst SPI_ADC_Master_2 -pg 1 -lvl 6 -x 2230 -y 610 -defaultsOSRD
+preplace inst Serializer_2 -pg 1 -lvl 5 -x 1620 -y 630 -defaultsOSRD
+preplace inst clk1Mhz_0 -pg 1 -lvl 3 -x 960 -y 320 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 9 -x 3190 -y 530 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 9 -x 3190 -y 790 -defaultsOSRD
+preplace inst MaximumFinder_0 -pg 1 -lvl 9 -x 3190 -y 380 -defaultsOSRD
+preplace inst SineWaveGen_1 -pg 1 -lvl 4 -x 1320 -y 700 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 8 -x 2870 -y 60 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 8 -x 2870 -y 160 -defaultsOSRD
+preplace inst Wrapper_XCorr_0 -pg 1 -lvl 7 -x 2560 -y 160 -defaultsOSRD
+preplace inst SineWaveGen_2 -pg 1 -lvl 4 -x 1320 -y 250 -defaultsOSRD
 preplace inst axi_gpio_2 -pg 1 -lvl 2 -x 550 -y 300 -defaultsOSRD
-preplace netloc MaximumFinder_0_tmax 1 3 7 1070J 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 3310
-preplace netloc MaximumFinder_0_tmax1 1 3 7 1150J 520 1420J 700 NJ 700 NJ 700 NJ 700 2940J 690 3300
-preplace netloc Net1 1 3 4 1160 100 NJ 100 NJ 100 2390J
-preplace netloc SPI_ADC_Master_0_wave 1 6 1 2320 150n
-preplace netloc SPI_ADC_Master_1_wave 1 6 1 2390 170n
-preplace netloc SPI_ADC_Master_2_wave 1 6 1 2400 190n
+preplace inst WaveCaptureUnit_0 -pg 1 -lvl 4 -x 1320 -y -120 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 3 -x 960 -y -160 -defaultsOSRD
+preplace netloc MaximumFinder_0_tmax 1 3 7 NJ 480 NJ 480 NJ 480 2430J 470 NJ 470 NJ 470 3340
+preplace netloc MaximumFinder_0_tmax1 1 3 7 1150J 520 1490J 700 NJ 700 NJ 700 NJ 700 2970J 690 3330
+preplace netloc Net1 1 3 4 1140 100 NJ 100 NJ 100 2370J
+preplace netloc SPI_ADC_Master_0_wave 1 3 4 1160 0 N 0 N 0 2350
+preplace netloc SPI_ADC_Master_1_wave 1 6 1 2370 170n
+preplace netloc SPI_ADC_Master_2_wave 1 6 1 2420 190n
 preplace netloc Serializer_0_MISO 1 5 1 N 220
-preplace netloc Serializer_1_MISO 1 5 1 1700 340n
+preplace netloc Serializer_1_MISO 1 5 1 1730 340n
 preplace netloc Serializer_2_MISO 1 5 1 N 630
-preplace netloc SineWaveGen_0_wave 1 4 1 1420 350n
-preplace netloc SineWaveGen_1_wave 1 4 1 1410 640n
-preplace netloc SineWaveGen_2_wave 1 4 1 1420 230n
-preplace netloc Wrapper_XCorr_0_xcorr 1 7 1 2660J 60n
+preplace netloc SineWaveGen_0_wave 1 4 1 1490 350n
+preplace netloc SineWaveGen_1_wave 1 4 1 1480 640n
+preplace netloc SineWaveGen_2_wave 1 4 1 1490 230n
+preplace netloc Wrapper_XCorr_0_count 1 7 2 2690 390 NJ
+preplace netloc Wrapper_XCorr_0_xcorr 1 7 1 2690J 60n
 preplace netloc Wrapper_XCorr_0_xcorr1 1 7 1 NJ 160
-preplace netloc axi_gpio_0_gpio_io_o 1 3 1 1070 410n
-preplace netloc axi_gpio_1_gpio_io_o 1 3 1 1140 600n
-preplace netloc axi_gpio_2_gpio2_io_o 1 2 2 790 240 1070J
-preplace netloc axi_gpio_2_gpio_io_o 1 2 5 690 110 NJ 110 NJ 110 NJ 110 2330J
-preplace netloc clk_wiz_0_clk_out1 1 4 2 1480 150 2070
-preplace netloc microblaze_0_Clk 1 0 9 -100 290 380 210 770 710 1130 510 NJ 510 2080 120 2380 410 N 410 N
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 400 450 780
+preplace netloc axi_gpio_0_gpio_io_o 1 3 1 1100 410n
+preplace netloc axi_gpio_1_gpio_io_o 1 3 1 1100 620n
+preplace netloc axi_gpio_2_gpio2_io_o 1 2 2 710 260 NJ
+preplace netloc axi_gpio_2_gpio_io_o 1 2 5 690 110 1130J 110 NJ 110 NJ 110 2360J
+preplace netloc clk_wiz_0_clk_out1 1 4 2 1510 150 2100
+preplace netloc microblaze_0_Clk 1 0 9 -100 290 400 210 790 -250 1120 490 NJ 490 2110 120 2410 410 N 410 N
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 390 200 800
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -90 300 330
 preplace netloc xlconstant_1_dout 1 9 1 N 530
 preplace netloc xlconstant_2_dout 1 9 1 N 790
-preplace netloc xlslice_0_Dout 1 8 1 2950 60n
-preplace netloc xlslice_1_Dout 1 8 1 2940 160n
-preplace netloc Wrapper_XCorr_0_count 1 7 2 2660 390 NJ
-preplace netloc axi_smc_M00_AXI 1 2 1 700 410n
-preplace netloc axi_smc_M01_AXI 1 2 1 790 590n
+preplace netloc xlslice_0_Dout 1 8 1 2980 60n
+preplace netloc xlslice_1_Dout 1 8 1 2970 160n
+preplace netloc WaveCaptureUnit_0_WaveRefOut 1 3 2 1100 -220 1490
+preplace netloc axi_gpio_3_gpio2_io_o 1 3 1 1100 -140n
+preplace netloc axi_smc_M00_AXI 1 2 1 810 430n
+preplace netloc axi_smc_M01_AXI 1 2 1 820 610n
 preplace netloc axi_smc_M02_AXI 1 1 2 410 390 690
-preplace netloc processing_system7_0_DDR 1 1 9 390J 640 710J 700 1170J 530 NJ 530 NJ 530 NJ 530 NJ 530 2950J 700 NJ
+preplace netloc processing_system7_0_DDR 1 1 9 340J 540 NJ 540 1160J 530 NJ 530 NJ 530 NJ 530 NJ 530 2980J 700 NJ
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 410 710n
-levelinfo -pg 1 -120 120 550 930 1290 1590 2200 2530 2840 3160 3330
-pagesize -pg 1 -db -bbox -sgen -120 -290 3480 1080
+preplace netloc axi_smc_M03_AXI 1 2 1 700 -180n
+levelinfo -pg 1 -120 120 550 960 1320 1620 2230 2560 2870 3190 3360
+pagesize -pg 1 -db -bbox -sgen -120 -290 3500 1080
 "
 }
 {
-   "da_axi4_cnt":"24",
+   "da_axi4_cnt":"25",
    "da_board_cnt":"17",
    "da_bram_cntlr_cnt":"1",
    "da_clkrst_cnt":"17",

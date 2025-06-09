@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun Jun  8 02:37:14 2025
+| Date         : Sun Jun  8 21:17:50 2025
 | Host         : James running 64-bit major release  (build 9200)
 | Command      : report_drc -file MicroBlaze_wrapper_drc_routed.rpt -pb MicroBlaze_wrapper_drc_routed.pb -rpx MicroBlaze_wrapper_drc_routed.rpx
 | Design       : MicroBlaze_wrapper
@@ -24,19 +24,17 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 101
+             Checks found: 84
 +-----------+----------+----------------------------+--------+
 | Rule      | Severity | Description                | Checks |
 +-----------+----------+----------------------------+--------+
 | DPIP-1    | Warning  | Input pipelining           | 64     |
-| DPOP-1    | Warning  | PREG Output pipelining     | 7      |
-| PDRC-132  | Warning  | SLICE_PairEqSame_A6A5_WARN | 3      |
-| PDRC-134  | Warning  | SLICE_PairEqSame_B6B5_WARN | 4      |
-| PDRC-136  | Warning  | SLICE_PairEqSame_C6C5_WARN | 6      |
-| PDRC-138  | Warning  | SLICE_PairEqSame_D6D5_WARN | 9      |
-| PDRC-140  | Warning  | SLICE_PairEqSame_A6A5_WARN | 1      |
-| PDRC-144  | Warning  | SLICE_PairEqSame_C6C5_WARN | 1      |
-| PDRC-146  | Warning  | SLICE_PairEqSame_D6D5_WARN | 5      |
+| DPOP-1    | Warning  | PREG Output pipelining     | 8      |
+| PDRC-134  | Warning  | SLICE_PairEqSame_B6B5_WARN | 2      |
+| PDRC-136  | Warning  | SLICE_PairEqSame_C6C5_WARN | 2      |
+| PDRC-138  | Warning  | SLICE_PairEqSame_D6D5_WARN | 3      |
+| PDRC-142  | Warning  | SLICE_PairEqSame_B6B5_WARN | 1      |
+| PDRC-146  | Warning  | SLICE_PairEqSame_D6D5_WARN | 3      |
 | RTSTAT-10 | Warning  | No routable loads          | 1      |
 +-----------+----------+----------------------------+--------+
 
@@ -369,152 +367,77 @@ Related violations: <none>
 
 DPOP-1#2 Warning
 PREG Output pipelining  
-DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70 output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage5_reg output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage5_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#3 Warning
 PREG Output pipelining  
-DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70__0 output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70 output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#4 Warning
 PREG Output pipelining  
-DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage1_reg output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage1_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70__0 output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product1_stage70__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#5 Warning
 PREG Output pipelining  
-DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage5_reg output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage5_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage1_reg output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage1_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#6 Warning
 PREG Output pipelining  
-DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage70 output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage70/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage5_reg output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage5_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#7 Warning
 PREG Output pipelining  
+DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage70 output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage70/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
 DSP MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage70__0 output MicroBlaze_i/Wrapper_XCorr_0/inst/main/XCORR/product_stage70__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-PDRC-132#1 Warning
-SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X14Y64 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-132#2 Warning
-SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X18Y68 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-132#3 Warning
-SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X21Y54 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-134#1 Warning
 SLICE_PairEqSame_B6B5_WARN  
-Luts B6LUT and B5LUT in use in site SLICE_X14Y64 with different equations without A6 pin connected to Global Logic High.
+Luts B6LUT and B5LUT in use in site SLICE_X3Y42 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-134#2 Warning
 SLICE_PairEqSame_B6B5_WARN  
-Luts B6LUT and B5LUT in use in site SLICE_X18Y68 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-134#3 Warning
-SLICE_PairEqSame_B6B5_WARN  
-Luts B6LUT and B5LUT in use in site SLICE_X1Y71 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-134#4 Warning
-SLICE_PairEqSame_B6B5_WARN  
-Luts B6LUT and B5LUT in use in site SLICE_X35Y44 with different equations without A6 pin connected to Global Logic High.
+Luts B6LUT and B5LUT in use in site SLICE_X41Y57 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-136#1 Warning
 SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X14Y64 with different equations without A6 pin connected to Global Logic High.
+Luts C6LUT and C5LUT in use in site SLICE_X11Y52 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-136#2 Warning
 SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X18Y63 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-136#3 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X18Y68 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-136#4 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X1Y71 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-136#5 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X29Y44 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-136#6 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X35Y44 with different equations without A6 pin connected to Global Logic High.
+Luts C6LUT and C5LUT in use in site SLICE_X3Y42 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-138#1 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X14Y64 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X13Y54 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-138#2 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X18Y49 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X41Y81 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-138#3 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X18Y63 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X7Y98 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
-PDRC-138#4 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X18Y68 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-138#5 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X23Y43 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-138#6 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X26Y51 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-138#7 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X2Y48 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-138#8 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X33Y39 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-138#9 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X35Y39 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-140#1 Warning
-SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X20Y63 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-144#1 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X10Y79 with different equations without A6 pin connected to Global Logic High.
+PDRC-142#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X32Y66 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-146#1 Warning
@@ -524,42 +447,32 @@ Related violations: <none>
 
 PDRC-146#2 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X24Y46 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X30Y76 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-146#3 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X24Y61 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-146#4 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X30Y50 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-146#5 Warning
-SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X4Y48 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X6Y81 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-20 net(s) have no routable loads. The problem bus(es) and/or net(s) are MicroBlaze_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe,
+25 net(s) have no routable loads. The problem bus(es) and/or net(s) are MicroBlaze_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe,
 MicroBlaze_i/axi_smc/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
+MicroBlaze_i/axi_smc/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
+MicroBlaze_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe,
 MicroBlaze_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
 MicroBlaze_i/axi_smc/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
 MicroBlaze_i/axi_smc/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/m02_nodes/m02_ar_node/inst/mi_handler_m_sc_areset_pipe,
 MicroBlaze_i/axi_smc/inst/m02_nodes/m02_b_node/inst/mi_handler_m_sc_areset_pipe,
 MicroBlaze_i/axi_smc/inst/m02_nodes/m02_r_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe,
-MicroBlaze_i/axi_smc/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe
- (the first 15 of 20 listed nets/buses).
+MicroBlaze_i/axi_smc/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe,
+MicroBlaze_i/axi_smc/inst/m03_nodes/m03_ar_node/inst/mi_handler_m_sc_areset_pipe,
+MicroBlaze_i/axi_smc/inst/m03_nodes/m03_b_node/inst/mi_handler_m_sc_areset_pipe,
+MicroBlaze_i/axi_smc/inst/m03_nodes/m03_r_node/inst/mi_handler_m_sc_areset_pipe,
+MicroBlaze_i/axi_smc/inst/m03_nodes/m03_w_node/inst/mi_handler_m_sc_areset_pipe,
+MicroBlaze_i/axi_smc/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe
+ (the first 15 of 25 listed nets/buses).
 Related violations: <none>
 
 

@@ -1,10 +1,10 @@
-02:51:35 **** Build of configuration Debug for project helloworld_system ****
+21:20:27 **** Incremental Build of configuration Debug for project helloworld_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 56118 C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif
-sdcard_gen --xpfm C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/MicroBlaze_wrapper/export/MicroBlaze_wrapper/MicroBlaze_wrapper.xpfm --sys_config MicroBlaze_wrapper --bif C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif --bitstream C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit --elf C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf,ps7_cortexa9_0
+generate_system_bif.bat 57459 C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm standalone_domain C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif
+sdcard_gen --xpfm C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm --sys_config Test --bif C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif --bitstream C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit --elf C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
 Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-02:51:38 Build Finished (took 3s.882ms)
+21:20:31 Build Finished (took 3s.830ms)
 
