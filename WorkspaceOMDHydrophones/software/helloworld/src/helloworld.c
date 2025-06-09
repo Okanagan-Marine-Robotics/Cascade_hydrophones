@@ -13,22 +13,23 @@
 
 XUartPs Uart_Ps;  // UART instance
 u8 ReceivedData[MAX_BUFFER_SIZE];  // Buffer for receiving data
-
+int p=0;
 
 int main() {
 
 	init_platform();
 
-	xil_printf("helloworld!\n");
+
 
 	XUartPs_Config *Config = XUartPs_LookupConfig(UART_DEVICE_ID);
 	XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
 
 
-
+	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
 	xil_printf("by James Williamsom v:0.2\n");
-	int state = 1;
+	int state = 0;
+
 	int maxTime;
 	int maxTime2;
 	int messageLength = 61;
@@ -103,14 +104,20 @@ int main() {
 		    }
 		}
 */
-
-
+		XGpio Gpio3;
+		XGpio_Initialize(&Gpio3, XPAR_AXI_GPIO_3_DEVICE_ID);
 		if (state == 0){
 
+			int wave=0;
+			while (p<=2047) {
 
-
+			XGpio_DiscreteWrite(&Gpio3, 2, p);
+			wave = XGpio_DiscreteRead(&Gpio3, 1);
+			printf("%d\n", wave);
+			p++;
+			}
 		}
-		//if (state == 1){
+		if (state == 1){
 			maxTime = delayGetter(maxTime,test1);
 			maxTime2 = delayGetter2(maxTime2,test2);
 			double i = maxTime;
@@ -130,7 +137,7 @@ int main() {
 			printf("%s\n", ReceivedData);
 			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
 			usleep(500000);
-		//}
+		}
 
 	}
 	cleanup_platform();
