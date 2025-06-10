@@ -28,82 +28,42 @@ int main() {
 	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
 	xil_printf("by James Williamsom v:0.2\n");
-	int state = 0;
+	int state = 1;
 
 	int maxTime;
 	int maxTime2;
-	int messageLength = 61;
+	int messageLength = 64;
 	int offset = 0;
 	int test1 = 0;
 	int test2 = 10;
 	char message[messageLength];
 	while(1){
 
-		 // Receive 4 bytes of data (enough to hold "test")
 		u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
-
-		        // checks state
-/*
-		//message json {"state":[0]"offset":[0000000]"test1":[00000]"test2":[00000]
-		if (bytesReceived > 0) {
-		    //xil_printf("received:");
-		    message[0] = ReceivedData[0];
-		    if (ReceivedData[0] == '{') {
-		        xil_printf("{");
-		        int i = 1;
-		        while (i < messageLength) {
-
-		            u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
-
-		            if (bytesReceived > 0) {
-
-		                message[i] = ReceivedData[0];
-		                //xil_printf("%c", message[i]);
-		                i++;
-		            }
-		        }
-
-		        //sends back message
-		        for (int j = 0; j < i; j++) {
-		            //xil_printf("%c", message[j]);
-		        }
-
-		        //{"state":[0]
-		        if (message[10]=='0'){
-		        	//state=0;
-		        	//xil_printf("state is 0\n");
-		        }
-		        if (message[10]=='1'){
-		        	state=1;
-		        	//xil_printf("state is 1\n");
-		       }
-
-		        //sets offset
-		        offset = 0;
-		        for (int i = 27;i>21;i--){
-		        	offset = offset + pow(10, 27-i)*(message[i]-'0');
-		        }
-
-		        //xil_printf("offset = %d\n", offset);
-
-
-		       test1 = 0;
-		       for (int i = 43;i>=39;i--){
-		       	   test1 = test1 + pow(10, 43-i)*(message[i]-'0');
-		       }
-
-		        //xil_printf("test1 = %d\n", test1);
-
-		       test2 = 0;
-		        for (int i = 58;i>=54;i--){
-		        	test2 = test2 + pow(10, 58-i)*(message[i]-'0');
-		        }
-
-		        //xil_printf("test2 = %d\n", test2);
-
-		    }
+		int j = 0;
+		int instruction;
+		int instructionValue;
+		while (messageLength>j){
+		if (ReceivedData[j]=='<') {
+			j++;
+			instruction = ReceivedData[j] - 48;
+			j++;
+			j++;
+			int n = 0;
+			while (ReceivedData[j] != '>' && j < messageLength){
+				message[n] = ReceivedData[j];
+				j++;
+				n++;
+			}
+			message[n] = '\0';
+			instructionValue = atoi(message);
+			printf("instruction %d\n",instruction);
+			printf("instructionValue %d\n",instructionValue);
+			}
+		j++;
 		}
-*/
+
+		printf("%s\n", ReceivedData);
 		XGpio Gpio3;
 		XGpio_Initialize(&Gpio3, XPAR_AXI_GPIO_3_DEVICE_ID);
 		if (state == 0){
@@ -120,8 +80,6 @@ int main() {
 		if (state == 1){
 			maxTime = delayGetter(maxTime,test1);
 			maxTime2 = delayGetter2(maxTime2,test2);
-			double i = maxTime;
-			double j = maxTime2;
 			double solution[2];
 
 			// Call solver
@@ -134,11 +92,11 @@ int main() {
 			    double q = tan(asin(((1500.*(t2/1000000.))/(0.5))));
 			    x=(-0.25-0.25*(p))/(p*q-1.);
 			    y=(x-0.25)/p;
-			printf("%s\n", ReceivedData);
-			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
-			usleep(500000);
-		}
 
+			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
+
+		}
+		usleep(2000000);
 	}
 	cleanup_platform();
 	return 0;
