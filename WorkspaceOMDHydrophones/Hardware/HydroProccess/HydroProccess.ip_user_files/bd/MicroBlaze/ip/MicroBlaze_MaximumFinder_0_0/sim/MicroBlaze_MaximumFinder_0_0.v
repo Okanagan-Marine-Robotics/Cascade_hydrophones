@@ -65,7 +65,7 @@ module MicroBlaze_MaximumFinder_0_0 (
 
 input wire [31 : 0] XCORR;
 input wire [31 : 0] XCORR1;
-input wire [13 : 0] address;
+input wire [15 : 0] address;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)

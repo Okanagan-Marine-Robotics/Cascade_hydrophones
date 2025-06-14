@@ -28,7 +28,7 @@ int main() {
 	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
 	xil_printf("by James Williamsom v:0.2\n");
-	int state = 1;
+	int state = 0;
 
 	int maxTime;
 	int maxTime2;
@@ -38,7 +38,7 @@ int main() {
 	int test2 = 10;
 	char message[messageLength];
 	while(1){
-
+/*
 		u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
 		int j = 0;
 		int instruction;
@@ -47,36 +47,42 @@ int main() {
 		if (ReceivedData[j]=='<') {
 			j++;
 			instruction = ReceivedData[j] - 48;
+			ReceivedData[j]=0;
 			j++;
 			j++;
 			int n = 0;
 			while (ReceivedData[j] != '>' && j < messageLength){
 				message[n] = ReceivedData[j];
+				ReceivedData[j]=0;
 				j++;
 				n++;
 			}
 			message[n] = '\0';
 			instructionValue = atoi(message);
-			printf("instruction %d\n",instruction);
-			printf("instructionValue %d\n",instructionValue);
 			}
 		j++;
 		}
 
-		printf("%s\n", ReceivedData);
+		if (instruction==0){state = instructionValue;}
+		else if (instruction==1) {test1=instructionValue;}
+		else if (instruction==2) {test2=instructionValue;}
+		*/
+
+		//printf("%s", ReceivedData);
 		XGpio Gpio3;
 		XGpio_Initialize(&Gpio3, XPAR_AXI_GPIO_3_DEVICE_ID);
-		if (state == 0){
+		//if (state == 0){
 
 			int wave=0;
 			while (p<=2047) {
 
 			XGpio_DiscreteWrite(&Gpio3, 2, p);
 			wave = XGpio_DiscreteRead(&Gpio3, 1);
-			printf("%d\n", wave);
+			printf("{time:%d, amplitude:%d}\n", p,wave);
 			p++;
 			}
-		}
+			p=0;
+		//}
 		if (state == 1){
 			maxTime = delayGetter(maxTime,test1);
 			maxTime2 = delayGetter2(maxTime2,test2);
@@ -110,29 +116,16 @@ int delayGetter (int delay,int test1){
 	XGpio Gpio;
 	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
 
-	int i = 1;
 	int maxTime;
-	int MaxSignal = 0;
 	int data = 0;
 
-	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio, 1, 10);
+    	XGpio_DiscreteWrite(&Gpio, 1, test1);
 
      	data = XGpio_DiscreteRead(&Gpio, 2);
 
 
          	maxTime = data-2;
 
-
-
-    	i++;
-    	//xil_printf("{\"Data\": %d}\n", data);
-
-
-
-
-
-	}
 			XGpio Gpio2;
 	    	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_2_DEVICE_ID);
 	    	XGpio_DiscreteWrite(&Gpio2, 1, 0);
@@ -155,7 +148,7 @@ int delayGetter2 (int delay, int test2){
 	int data = 0;
 
 	while (i < 4000) {
-    	XGpio_DiscreteWrite(&Gpio1, 1, 10);
+    	XGpio_DiscreteWrite(&Gpio1, 1, test2);
 
      	data = XGpio_DiscreteRead(&Gpio1, 2);
 
