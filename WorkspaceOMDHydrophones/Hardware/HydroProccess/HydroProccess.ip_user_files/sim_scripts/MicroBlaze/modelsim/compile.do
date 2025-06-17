@@ -3,11 +3,11 @@ vlib modelsim_lib/msim
 
 vlib modelsim_lib/msim/xilinx_vip
 vlib modelsim_lib/msim/xpm
-vlib modelsim_lib/msim/xil_defaultlib
 vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vlib modelsim_lib/msim/lib_cdc_v1_0_3
 vlib modelsim_lib/msim/interrupt_control_v3_1_5
 vlib modelsim_lib/msim/axi_gpio_v2_0_35
+vlib modelsim_lib/msim/xil_defaultlib
 vlib modelsim_lib/msim/axi_infrastructure_v1_1_0
 vlib modelsim_lib/msim/axi_vip_v1_1_19
 vlib modelsim_lib/msim/processing_system7_vip_v1_0_21
@@ -19,11 +19,11 @@ vlib modelsim_lib/msim/xlslice_v1_0_4
 
 vmap xilinx_vip modelsim_lib/msim/xilinx_vip
 vmap xpm modelsim_lib/msim/xpm
-vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
 vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vmap lib_cdc_v1_0_3 modelsim_lib/msim/lib_cdc_v1_0_3
 vmap interrupt_control_v3_1_5 modelsim_lib/msim/interrupt_control_v3_1_5
 vmap axi_gpio_v2_0_35 modelsim_lib/msim/axi_gpio_v2_0_35
+vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
 vmap axi_infrastructure_v1_1_0 modelsim_lib/msim/axi_infrastructure_v1_1_0
 vmap axi_vip_v1_1_19 modelsim_lib/msim/axi_vip_v1_1_19
 vmap processing_system7_vip_v1_0_21 modelsim_lib/msim/processing_system7_vip_v1_0_21
@@ -51,13 +51,6 @@ vlog -work xpm  -incr -mfcu  -sv -L axi_vip_v1_1_19 -L smartconnect_v1_0 -L proc
 
 vcom -work xpm  -93  \
 "C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd" \
-
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/86fe/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/f0b6/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0127/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3cbc" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/sim/MicroBlaze_BlockRam_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_CC_0_0/sim/MicroBlaze_CC_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/sim/MicroBlaze_BRAMMUX_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/sim/MicroBlaze_waveParser_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/sim/MicroBlaze_AddressFixer_0_0.v" \
 
 vcom -work axi_lite_ipif_v3_0_4  -93  \
 "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -183,6 +176,20 @@ vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_19 -L smartconnect_v
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_37/sim/bd_f84b_m01wn_0.sv" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_38/sim/bd_f84b_m01bn_0.sv" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_39/sim/bd_f84b_m01e_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_40/sim/bd_f84b_m02s2a_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_41/sim/bd_f84b_m02arn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_42/sim/bd_f84b_m02rn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_43/sim/bd_f84b_m02awn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_44/sim/bd_f84b_m02wn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_45/sim/bd_f84b_m02bn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_46/sim/bd_f84b_m02e_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_47/sim/bd_f84b_m03s2a_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_48/sim/bd_f84b_m03arn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_49/sim/bd_f84b_m03rn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_50/sim/bd_f84b_m03awn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_51/sim/bd_f84b_m03wn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_52/sim/bd_f84b_m03bn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_53/sim/bd_f84b_m03e_0.sv" \
 
 vlog -work axi_register_slice_v2_1_33  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/86fe/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/f0b6/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0127/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3cbc" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v" \
@@ -210,6 +217,19 @@ vlog -work xlslice_v1_0_4  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/s
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/86fe/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/f0b6/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0127/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3cbc" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/sim/MicroBlaze_xlslice_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_1/sim/MicroBlaze_xlslice_0_1.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/sim/MicroBlaze_Wrapper_XCorr_0_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_2_0/sim/MicroBlaze_SineWaveGen_2_0.v" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_gpio_2_0/sim/MicroBlaze_axi_gpio_2_0.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/86fe/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/f0b6/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0127/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3cbc" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_WaveCaptureUnit_0_0/sim/MicroBlaze_WaveCaptureUnit_0_0.v" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_gpio_3_0/sim/MicroBlaze_axi_gpio_3_0.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/86fe/hdl" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/f0b6/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0127/hdl/verilog" "+incdir+../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3cbc" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 
 vlog -work xil_defaultlib \

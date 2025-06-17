@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun Jun  8 02:34:29 2025
+-- Date        : Sun Jun 15 23:36:44 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_MaximumFinder_0_0/MicroBlaze_MaximumFinder_0_0_sim_netlist.vhdl
@@ -1422,7 +1422,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max1(0),
       R => tmax_0
     );
-\max1_reg[10]\: unisim.vcomponents.FDRE
+\max1_reg[10]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1432,9 +1432,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(10),
       Q => max1(10),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[11]\: unisim.vcomponents.FDRE
+\max1_reg[11]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1444,7 +1444,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(11),
       Q => max1(11),
-      R => tmax_0
+      S => tmax_0
     );
 \max1_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -1482,7 +1482,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max1(14),
       R => tmax_0
     );
-\max1_reg[15]\: unisim.vcomponents.FDRE
+\max1_reg[15]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1492,9 +1492,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(15),
       Q => max1(15),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[16]\: unisim.vcomponents.FDRE
+\max1_reg[16]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1504,9 +1504,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(16),
       Q => max1(16),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[17]\: unisim.vcomponents.FDRE
+\max1_reg[17]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1516,9 +1516,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(17),
       Q => max1(17),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[18]\: unisim.vcomponents.FDRE
+\max1_reg[18]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1528,9 +1528,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(18),
       Q => max1(18),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[19]\: unisim.vcomponents.FDRE
+\max1_reg[19]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1540,7 +1540,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(19),
       Q => max1(19),
-      R => tmax_0
+      S => tmax_0
     );
 \max1_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -1554,7 +1554,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max1(1),
       R => tmax_0
     );
-\max1_reg[20]\: unisim.vcomponents.FDRE
+\max1_reg[20]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1564,9 +1564,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(20),
       Q => max1(20),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[21]\: unisim.vcomponents.FDRE
+\max1_reg[21]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1576,9 +1576,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(21),
       Q => max1(21),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[22]\: unisim.vcomponents.FDRE
+\max1_reg[22]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1588,9 +1588,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(22),
       Q => max1(22),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[23]\: unisim.vcomponents.FDRE
+\max1_reg[23]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1600,9 +1600,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(23),
       Q => max1(23),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[24]\: unisim.vcomponents.FDRE
+\max1_reg[24]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1612,9 +1612,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(24),
       Q => max1(24),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[25]\: unisim.vcomponents.FDRE
+\max1_reg[25]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1624,9 +1624,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(25),
       Q => max1(25),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[26]\: unisim.vcomponents.FDRE
+\max1_reg[26]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1636,9 +1636,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(26),
       Q => max1(26),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[27]\: unisim.vcomponents.FDRE
+\max1_reg[27]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1648,9 +1648,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(27),
       Q => max1(27),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[28]\: unisim.vcomponents.FDRE
+\max1_reg[28]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1660,9 +1660,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(28),
       Q => max1(28),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[29]\: unisim.vcomponents.FDRE
+\max1_reg[29]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1672,7 +1672,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(29),
       Q => max1(29),
-      R => tmax_0
+      S => tmax_0
     );
 \max1_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -1686,7 +1686,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max1(2),
       R => tmax_0
     );
-\max1_reg[30]\: unisim.vcomponents.FDRE
+\max1_reg[30]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1696,9 +1696,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(30),
       Q => max1(30),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[31]\: unisim.vcomponents.FDRE
+\max1_reg[31]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1708,9 +1708,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(31),
       Q => max1(31),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[3]\: unisim.vcomponents.FDRE
+\max1_reg[3]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1720,9 +1720,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(3),
       Q => max1(3),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[4]\: unisim.vcomponents.FDRE
+\max1_reg[4]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1732,9 +1732,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(4),
       Q => max1(4),
-      R => tmax_0
+      S => tmax_0
     );
-\max1_reg[5]\: unisim.vcomponents.FDRE
+\max1_reg[5]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1744,7 +1744,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(5),
       Q => max1(5),
-      R => tmax_0
+      S => tmax_0
     );
 \max1_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -1758,7 +1758,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max1(6),
       R => tmax_0
     );
-\max1_reg[7]\: unisim.vcomponents.FDRE
+\max1_reg[7]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1768,7 +1768,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(7),
       Q => max1(7),
-      R => tmax_0
+      S => tmax_0
     );
 \max1_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -1782,7 +1782,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max1(8),
       R => tmax_0
     );
-\max1_reg[9]\: unisim.vcomponents.FDRE
+\max1_reg[9]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1792,7 +1792,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max11,
       D => XCORR1(9),
       Q => max1(9),
-      R => tmax_0
+      S => tmax_0
     );
 \max_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -1806,7 +1806,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max(0),
       R => tmax_0
     );
-\max_reg[10]\: unisim.vcomponents.FDRE
+\max_reg[10]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1816,9 +1816,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(10),
       Q => max(10),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[11]\: unisim.vcomponents.FDRE
+\max_reg[11]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1828,7 +1828,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(11),
       Q => max(11),
-      R => tmax_0
+      S => tmax_0
     );
 \max_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -1866,7 +1866,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max(14),
       R => tmax_0
     );
-\max_reg[15]\: unisim.vcomponents.FDRE
+\max_reg[15]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1876,9 +1876,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(15),
       Q => max(15),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[16]\: unisim.vcomponents.FDRE
+\max_reg[16]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1888,9 +1888,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(16),
       Q => max(16),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[17]\: unisim.vcomponents.FDRE
+\max_reg[17]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1900,9 +1900,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(17),
       Q => max(17),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[18]\: unisim.vcomponents.FDRE
+\max_reg[18]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1912,9 +1912,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(18),
       Q => max(18),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[19]\: unisim.vcomponents.FDRE
+\max_reg[19]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1924,7 +1924,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(19),
       Q => max(19),
-      R => tmax_0
+      S => tmax_0
     );
 \max_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -1938,7 +1938,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max(1),
       R => tmax_0
     );
-\max_reg[20]\: unisim.vcomponents.FDRE
+\max_reg[20]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1948,9 +1948,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(20),
       Q => max(20),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[21]\: unisim.vcomponents.FDRE
+\max_reg[21]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1960,9 +1960,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(21),
       Q => max(21),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[22]\: unisim.vcomponents.FDRE
+\max_reg[22]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1972,9 +1972,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(22),
       Q => max(22),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[23]\: unisim.vcomponents.FDRE
+\max_reg[23]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1984,9 +1984,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(23),
       Q => max(23),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[24]\: unisim.vcomponents.FDRE
+\max_reg[24]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -1996,9 +1996,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(24),
       Q => max(24),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[25]\: unisim.vcomponents.FDRE
+\max_reg[25]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2008,9 +2008,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(25),
       Q => max(25),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[26]\: unisim.vcomponents.FDRE
+\max_reg[26]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2020,9 +2020,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(26),
       Q => max(26),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[27]\: unisim.vcomponents.FDRE
+\max_reg[27]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2032,9 +2032,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(27),
       Q => max(27),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[28]\: unisim.vcomponents.FDRE
+\max_reg[28]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2044,9 +2044,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(28),
       Q => max(28),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[29]\: unisim.vcomponents.FDRE
+\max_reg[29]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2056,7 +2056,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(29),
       Q => max(29),
-      R => tmax_0
+      S => tmax_0
     );
 \max_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -2070,7 +2070,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max(2),
       R => tmax_0
     );
-\max_reg[30]\: unisim.vcomponents.FDRE
+\max_reg[30]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2080,9 +2080,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(30),
       Q => max(30),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[31]\: unisim.vcomponents.FDRE
+\max_reg[31]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2092,9 +2092,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(31),
       Q => max(31),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[3]\: unisim.vcomponents.FDRE
+\max_reg[3]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2104,9 +2104,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(3),
       Q => max(3),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[4]\: unisim.vcomponents.FDRE
+\max_reg[4]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2116,9 +2116,9 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(4),
       Q => max(4),
-      R => tmax_0
+      S => tmax_0
     );
-\max_reg[5]\: unisim.vcomponents.FDRE
+\max_reg[5]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2128,7 +2128,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(5),
       Q => max(5),
-      R => tmax_0
+      S => tmax_0
     );
 \max_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -2142,7 +2142,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max(6),
       R => tmax_0
     );
-\max_reg[7]\: unisim.vcomponents.FDRE
+\max_reg[7]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2152,7 +2152,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(7),
       Q => max(7),
-      R => tmax_0
+      S => tmax_0
     );
 \max_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -2166,7 +2166,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       Q => max(8),
       R => tmax_0
     );
-\max_reg[9]\: unisim.vcomponents.FDRE
+\max_reg[9]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '0',
       IS_C_INVERTED => '1'
@@ -2176,7 +2176,7 @@ max11_carry_i_8: unisim.vcomponents.LUT4
       CE => max10_in,
       D => XCORR(9),
       Q => max(9),
-      R => tmax_0
+      S => tmax_0
     );
 \tmax1_reg[0]\: unisim.vcomponents.FDRE
     generic map(

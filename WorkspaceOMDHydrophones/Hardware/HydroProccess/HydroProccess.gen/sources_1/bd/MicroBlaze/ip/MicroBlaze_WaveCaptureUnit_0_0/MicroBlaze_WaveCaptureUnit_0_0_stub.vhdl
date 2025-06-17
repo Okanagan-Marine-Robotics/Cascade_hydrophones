@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun Jun  8 20:33:03 2025
+-- Date        : Mon Jun 16 22:51:58 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_WaveCaptureUnit_0_0/MicroBlaze_WaveCaptureUnit_0_0_stub.vhdl
@@ -16,7 +16,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity MicroBlaze_WaveCaptureUnit_0_0 is
   Port ( 
     WaveRef : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    WaveRefOut : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    WaveRefOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
     Address_B : in STD_LOGIC_VECTOR ( 10 downto 0 );
     clk : in STD_LOGIC;
     clk1Mhz : in STD_LOGIC;
@@ -37,7 +37,7 @@ architecture stub of MicroBlaze_WaveCaptureUnit_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "WaveRef[11:0],WaveRefOut[11:0],Address_B[10:0],clk,clk1Mhz,offset[31:0]";
+  attribute black_box_pad_pin of stub : architecture is "WaveRef[11:0],WaveRefOut[31:0],Address_B[10:0],clk,clk1Mhz,offset[31:0]";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_MODE : string;

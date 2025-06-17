@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Sun Jun  8 21:13:52 2025
+//Date        : Mon Jun 16 22:51:14 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -74,7 +74,7 @@ module MicroBlaze
   wire [11:0]SineWaveGen_0_wave;
   wire [11:0]SineWaveGen_1_wave;
   wire [11:0]SineWaveGen_2_wave;
-  wire [11:0]WaveCaptureUnit_0_WaveRefOut;
+  wire [31:0]WaveCaptureUnit_0_WaveRefOut;
   wire [15:0]Wrapper_XCorr_0_count;
   wire [35:0]Wrapper_XCorr_0_xcorr;
   wire [35:0]Wrapper_XCorr_0_xcorr1;
@@ -329,7 +329,7 @@ module MicroBlaze
         .s_axi_wvalid(axi_smc_M02_AXI_WVALID));
   MicroBlaze_axi_gpio_3_0 axi_gpio_3
        (.gpio2_io_o(axi_gpio_3_gpio2_io_o),
-        .gpio_io_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,WaveCaptureUnit_0_WaveRefOut}),
+        .gpio_io_i(WaveCaptureUnit_0_WaveRefOut),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(axi_smc_M03_AXI_ARADDR),
         .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),

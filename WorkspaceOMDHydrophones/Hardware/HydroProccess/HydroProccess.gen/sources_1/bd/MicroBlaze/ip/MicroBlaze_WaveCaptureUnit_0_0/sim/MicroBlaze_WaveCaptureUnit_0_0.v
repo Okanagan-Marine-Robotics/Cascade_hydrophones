@@ -64,7 +64,7 @@ module MicroBlaze_WaveCaptureUnit_0_0 (
 );
 
 input wire [11 : 0] WaveRef;
-output wire [11 : 0] WaveRefOut;
+output wire [31 : 0] WaveRefOut;
 input wire [10 : 0] Address_B;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)

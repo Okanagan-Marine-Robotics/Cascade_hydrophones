@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun Jun  8 20:33:03 2025
+-- Date        : Mon Jun 16 22:51:58 2025
 -- Host        : James running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_WaveCaptureUnit_0_0/MicroBlaze_WaveCaptureUnit_0_0_sim_netlist.vhdl
@@ -31,7 +31,7 @@ end MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit;
 
 architecture STRUCTURE of MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit is
   signal Address_A11 : STD_LOGIC_VECTOR ( 10 downto 0 );
-  signal Address_A111 : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal Address_A111 : STD_LOGIC_VECTOR ( 31 downto 15 );
   signal \Address_A111_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \Address_A111_carry__0_i_2_n_0\ : STD_LOGIC;
   signal \Address_A111_carry__0_i_3_n_0\ : STD_LOGIC;
@@ -110,11 +110,6 @@ architecture STRUCTURE of MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit is
   signal \Address_A11[10]_i_2_n_0\ : STD_LOGIC;
   signal \Address_A11[10]_i_3_n_0\ : STD_LOGIC;
   signal \Address_A11[10]_i_4_n_0\ : STD_LOGIC;
-  signal \Address_A11[10]_i_5_n_0\ : STD_LOGIC;
-  signal \Address_A11[10]_i_6_n_0\ : STD_LOGIC;
-  signal \Address_A11[10]_i_7_n_0\ : STD_LOGIC;
-  signal \Address_A11[10]_i_8_n_0\ : STD_LOGIC;
-  signal \Address_A11[10]_i_9_n_0\ : STD_LOGIC;
   signal MemoryAddress : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal MemoryAddress0 : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \MemoryAddress0_carry__0_i_1_n_0\ : STD_LOGIC;
@@ -186,6 +181,7 @@ architecture STRUCTURE of MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit is
   signal \MemoryAddress[31]_i_7_n_0\ : STD_LOGIC;
   signal offsetReg : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal p_0_in : STD_LOGIC;
+  signal NLW_Address_A111_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_Address_A111_carry__6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_MemoryAddress0_carry__6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_MemoryAddress0_carry__6_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
@@ -210,9 +206,6 @@ architecture STRUCTURE of MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit is
   attribute ADDER_THRESHOLD of \Address_A111_carry__4\ : label is 35;
   attribute ADDER_THRESHOLD of \Address_A111_carry__5\ : label is 35;
   attribute ADDER_THRESHOLD of \Address_A111_carry__6\ : label is 35;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Address_A11[10]_i_7\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \Address_A11[10]_i_9\ : label is "soft_lutpair0";
   attribute ADDER_THRESHOLD of MemoryAddress0_carry : label is 35;
   attribute ADDER_THRESHOLD of \MemoryAddress0_carry__0\ : label is 35;
   attribute ADDER_THRESHOLD of \MemoryAddress0_carry__1\ : label is 35;
@@ -221,8 +214,9 @@ architecture STRUCTURE of MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit is
   attribute ADDER_THRESHOLD of \MemoryAddress0_carry__4\ : label is 35;
   attribute ADDER_THRESHOLD of \MemoryAddress0_carry__5\ : label is 35;
   attribute ADDER_THRESHOLD of \MemoryAddress0_carry__6\ : label is 35;
-  attribute SOFT_HLUTNM of \MemoryAddress[0]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \MemoryAddress[31]_i_2\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \MemoryAddress[0]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \MemoryAddress[31]_i_2\ : label is "soft_lutpair0";
   attribute \MEM.PORTA.DATA_BIT_LAYOUT\ : string;
   attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of Ram_reg : label is "p0_d12";
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ : string;
@@ -259,7 +253,7 @@ Address_A111_carry: unisim.vcomponents.CARRY4
       CO(0) => Address_A111_carry_n_3,
       CYINIT => '1',
       DI(3 downto 0) => MemoryAddress(3 downto 0),
-      O(3 downto 0) => Address_A111(3 downto 0),
+      O(3 downto 0) => NLW_Address_A111_carry_O_UNCONNECTED(3 downto 0),
       S(3) => Address_A111_carry_i_1_n_0,
       S(2) => Address_A111_carry_i_2_n_0,
       S(1) => Address_A111_carry_i_3_n_0,
@@ -668,116 +662,53 @@ Address_A111_carry_i_4: unisim.vcomponents.LUT2
       I1 => offsetReg(0),
       O => Address_A111_carry_i_4_n_0
     );
-\Address_A11[10]_i_1\: unisim.vcomponents.LUT6
+\Address_A11[10]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
+      INIT => X"FFFFFFFE"
     )
         port map (
       I0 => \Address_A11[10]_i_2_n_0\,
-      I1 => Address_A111(15),
-      I2 => \Address_A11[10]_i_3_n_0\,
-      I3 => \Address_A11[10]_i_4_n_0\,
-      I4 => \Address_A11[10]_i_5_n_0\,
-      I5 => \Address_A11[10]_i_6_n_0\,
+      I1 => Address_A111(17),
+      I2 => Address_A111(16),
+      I3 => \Address_A11[10]_i_3_n_0\,
+      I4 => \Address_A11[10]_i_4_n_0\,
       O => \Address_A11[10]_i_1_n_0\
     );
-\Address_A11[10]_i_2\: unisim.vcomponents.LUT6
+\Address_A11[10]_i_2\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
+      INIT => X"FE"
     )
         port map (
-      I0 => Address_A111(26),
-      I1 => Address_A111(27),
-      I2 => Address_A111(24),
-      I3 => Address_A111(25),
-      I4 => Address_A111(23),
-      I5 => Address_A111(22),
+      I0 => Address_A111(19),
+      I1 => Address_A111(18),
+      I2 => Address_A111(15),
       O => \Address_A11[10]_i_2_n_0\
     );
 \Address_A11[10]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FEAA0000EEAA0000"
+      INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
-      I0 => \Address_A111_carry__1_n_6\,
-      I1 => \Address_A111_carry__0_n_4\,
-      I2 => \Address_A111_carry__0_n_6\,
-      I3 => \Address_A111_carry__1_n_7\,
-      I4 => \Address_A11[10]_i_7_n_0\,
-      I5 => \Address_A111_carry__0_n_5\,
+      I0 => Address_A111(30),
+      I1 => Address_A111(31),
+      I2 => Address_A111(28),
+      I3 => Address_A111(29),
+      I4 => Address_A111(27),
+      I5 => Address_A111(26),
       O => \Address_A11[10]_i_3_n_0\
     );
 \Address_A11[10]_i_4\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFF0000FF800000"
-    )
-        port map (
-      I0 => \Address_A11[10]_i_8_n_0\,
-      I1 => \Address_A111_carry__0_n_5\,
-      I2 => \Address_A111_carry__1_n_7\,
-      I3 => \Address_A111_carry__1_n_4\,
-      I4 => \Address_A11[10]_i_7_n_0\,
-      I5 => \Address_A111_carry__1_n_5\,
-      O => \Address_A11[10]_i_4_n_0\
-    );
-\Address_A11[10]_i_5\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFF8"
-    )
-        port map (
-      I0 => \Address_A11[10]_i_9_n_0\,
-      I1 => \Address_A111_carry__0_n_7\,
-      I2 => Address_A111(30),
-      I3 => Address_A111(31),
-      I4 => Address_A111(29),
-      I5 => Address_A111(28),
-      O => \Address_A11[10]_i_5_n_0\
-    );
-\Address_A11[10]_i_6\: unisim.vcomponents.LUT6
-    generic map(
       INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
-      I0 => Address_A111(20),
-      I1 => Address_A111(21),
-      I2 => Address_A111(18),
-      I3 => Address_A111(19),
-      I4 => Address_A111(17),
-      I5 => Address_A111(16),
-      O => \Address_A11[10]_i_6_n_0\
-    );
-\Address_A11[10]_i_7\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \Address_A111_carry__2_n_6\,
-      I1 => \Address_A111_carry__2_n_7\,
-      I2 => \Address_A111_carry__2_n_5\,
-      O => \Address_A11[10]_i_7_n_0\
-    );
-\Address_A11[10]_i_8\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FE00"
-    )
-        port map (
-      I0 => Address_A111(0),
-      I1 => Address_A111(1),
-      I2 => Address_A111(2),
-      I3 => Address_A111(3),
-      O => \Address_A11[10]_i_8_n_0\
-    );
-\Address_A11[10]_i_9\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"80000000"
-    )
-        port map (
-      I0 => \Address_A111_carry__1_n_7\,
-      I1 => \Address_A111_carry__2_n_6\,
-      I2 => \Address_A111_carry__2_n_7\,
-      I3 => \Address_A111_carry__2_n_5\,
-      I4 => \Address_A111_carry__0_n_5\,
-      O => \Address_A11[10]_i_9_n_0\
+      I0 => Address_A111(24),
+      I1 => Address_A111(25),
+      I2 => Address_A111(22),
+      I3 => Address_A111(23),
+      I4 => Address_A111(21),
+      I5 => Address_A111(20),
+      O => \Address_A11[10]_i_4_n_0\
     );
 \Address_A11_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -1821,7 +1752,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(0),
       Q => offsetReg(0),
@@ -1833,7 +1764,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(10),
       Q => offsetReg(10),
@@ -1845,7 +1776,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(11),
       Q => offsetReg(11),
@@ -1857,7 +1788,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(12),
       Q => offsetReg(12),
@@ -1869,7 +1800,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(13),
       Q => offsetReg(13),
@@ -1881,7 +1812,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(14),
       Q => offsetReg(14),
@@ -1893,7 +1824,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(15),
       Q => offsetReg(15),
@@ -1905,7 +1836,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(16),
       Q => offsetReg(16),
@@ -1917,7 +1848,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(17),
       Q => offsetReg(17),
@@ -1929,7 +1860,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(18),
       Q => offsetReg(18),
@@ -1941,7 +1872,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(19),
       Q => offsetReg(19),
@@ -1953,7 +1884,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(1),
       Q => offsetReg(1),
@@ -1965,7 +1896,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(20),
       Q => offsetReg(20),
@@ -1977,7 +1908,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(21),
       Q => offsetReg(21),
@@ -1989,7 +1920,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(22),
       Q => offsetReg(22),
@@ -2001,7 +1932,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(23),
       Q => offsetReg(23),
@@ -2013,7 +1944,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(24),
       Q => offsetReg(24),
@@ -2025,7 +1956,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(25),
       Q => offsetReg(25),
@@ -2037,7 +1968,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(26),
       Q => offsetReg(26),
@@ -2049,7 +1980,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(27),
       Q => offsetReg(27),
@@ -2061,7 +1992,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(28),
       Q => offsetReg(28),
@@ -2073,7 +2004,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(29),
       Q => offsetReg(29),
@@ -2085,7 +2016,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(2),
       Q => offsetReg(2),
@@ -2097,7 +2028,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(30),
       Q => offsetReg(30),
@@ -2109,7 +2040,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(31),
       Q => offsetReg(31),
@@ -2121,7 +2052,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(3),
       Q => offsetReg(3),
@@ -2133,7 +2064,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(4),
       Q => offsetReg(4),
@@ -2145,7 +2076,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(5),
       Q => offsetReg(5),
@@ -2157,7 +2088,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(6),
       Q => offsetReg(6),
@@ -2169,7 +2100,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(7),
       Q => offsetReg(7),
@@ -2181,7 +2112,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(8),
       Q => offsetReg(8),
@@ -2193,7 +2124,7 @@ Ram_reg: unisim.vcomponents.RAMB36E1
       IS_C_INVERTED => '1'
     )
         port map (
-      C => clk1Mhz,
+      C => clk,
       CE => '1',
       D => offset(9),
       Q => offsetReg(9),
@@ -2207,7 +2138,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity MicroBlaze_WaveCaptureUnit_0_0 is
   port (
     WaveRef : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    WaveRefOut : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    WaveRefOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
     Address_B : in STD_LOGIC_VECTOR ( 10 downto 0 );
     clk : in STD_LOGIC;
     clk1Mhz : in STD_LOGIC;
@@ -2226,6 +2157,8 @@ entity MicroBlaze_WaveCaptureUnit_0_0 is
 end MicroBlaze_WaveCaptureUnit_0_0;
 
 architecture STRUCTURE of MicroBlaze_WaveCaptureUnit_0_0 is
+  signal \<const0>\ : STD_LOGIC;
+  signal \^waverefout\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_MODE : string;
@@ -2233,12 +2166,37 @@ architecture STRUCTURE of MicroBlaze_WaveCaptureUnit_0_0 is
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 begin
+  WaveRefOut(31) <= \<const0>\;
+  WaveRefOut(30) <= \<const0>\;
+  WaveRefOut(29) <= \<const0>\;
+  WaveRefOut(28) <= \<const0>\;
+  WaveRefOut(27) <= \<const0>\;
+  WaveRefOut(26) <= \<const0>\;
+  WaveRefOut(25) <= \<const0>\;
+  WaveRefOut(24) <= \<const0>\;
+  WaveRefOut(23) <= \<const0>\;
+  WaveRefOut(22) <= \<const0>\;
+  WaveRefOut(21) <= \<const0>\;
+  WaveRefOut(20) <= \<const0>\;
+  WaveRefOut(19) <= \<const0>\;
+  WaveRefOut(18) <= \<const0>\;
+  WaveRefOut(17) <= \<const0>\;
+  WaveRefOut(16) <= \<const0>\;
+  WaveRefOut(15) <= \<const0>\;
+  WaveRefOut(14) <= \<const0>\;
+  WaveRefOut(13) <= \<const0>\;
+  WaveRefOut(12) <= \<const0>\;
+  WaveRefOut(11 downto 0) <= \^waverefout\(11 downto 0);
+GND: unisim.vcomponents.GND
+     port map (
+      G => \<const0>\
+    );
 inst: entity work.MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
      port map (
       Address_B(10 downto 0) => Address_B(10 downto 0),
       Ram_reg_0 => clk,
       WaveRef(11 downto 0) => WaveRef(11 downto 0),
-      WaveRefOut(11 downto 0) => WaveRefOut(11 downto 0),
+      WaveRefOut(11 downto 0) => \^waverefout\(11 downto 0),
       clk => clk,
       clk1Mhz => clk1Mhz,
       offset(31 downto 0) => offset(31 downto 0)

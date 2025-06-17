@@ -1,4 +1,4 @@
-01:33:31 **** Incremental Build of configuration Debug for project helloworld ****
+00:09:43 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -22,12 +22,12 @@ In file included from ../src/platform.h:36,
 ../src/helloworld.c:88:36: warning: implicit declaration of function 'delayGetter2' [-Wimplicit-function-declaration]
    88 |                         maxTime2 = delayGetter2(maxTime2,test2);
       |                                    ^~~~~~~~~~~~
-../src/helloworld.c:89:32: warning: unused variable 'solution' [-Wunused-variable]
-   89 |                         double solution[2];
-      |                                ^~~~~~~~
 ../src/helloworld.c:105:17: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
   105 |                 usleep(2000000);
       |                 ^~~~~~
+../src/helloworld.c:89:32: warning: unused variable 'solution' [-Wunused-variable]
+   89 |                         double solution[2];
+      |                                ^~~~~~~~
 ../src/helloworld.c:39:14: warning: unused variable 'message' [-Wunused-variable]
    39 |         char message[messageLength];
       |              ^~~~~~~
@@ -44,9 +44,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  60403	   2628	  22776	  85807	  14f2f	helloworld.elf
+  60467	   2628	  22776	  85871	  14f6f	helloworld.elf
 'Finished building: helloworld.elf.size'
 ' '
 
-01:33:32 Build Finished (took 656ms)
+00:09:44 Build Finished (took 655ms)
 

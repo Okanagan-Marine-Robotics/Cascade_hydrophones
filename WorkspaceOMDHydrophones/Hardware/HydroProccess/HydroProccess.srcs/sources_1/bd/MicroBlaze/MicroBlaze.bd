@@ -7,8 +7,7 @@
       "name": "MicroBlaze",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "axi_gpio_0": "",
@@ -1608,7 +1607,7 @@
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
-            "value": "0"
+            "value": "1"
           }
         }
       },
@@ -1927,7 +1926,7 @@
           },
           "WaveRefOut": {
             "direction": "O",
-            "left": "11",
+            "left": "31",
             "right": "0"
           },
           "Address_B": {
@@ -2189,9 +2188,9 @@
           "SPI_ADC_Master_2/clk",
           "axi_gpio_2/s_axi_aclk",
           "Wrapper_XCorr_0/clk",
+          "axi_gpio_3/s_axi_aclk",
           "MaximumFinder_0/clk",
-          "WaveCaptureUnit_0/clk",
-          "axi_gpio_3/s_axi_aclk"
+          "WaveCaptureUnit_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

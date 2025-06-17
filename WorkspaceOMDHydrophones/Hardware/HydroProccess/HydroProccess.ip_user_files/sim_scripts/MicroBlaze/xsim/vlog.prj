@@ -1,9 +1,4 @@
 verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/86fe/hdl" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/f0b6/hdl/verilog" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0127/hdl/verilog" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3cbc" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_BlockRam_0_0/sim/MicroBlaze_BlockRam_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_CC_0_0/sim/MicroBlaze_CC_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_BRAMMUX_0_0/sim/MicroBlaze_BRAMMUX_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_waveParser_0_0/sim/MicroBlaze_waveParser_0_0.v" \
-"../../../bd/MicroBlaze/ip/MicroBlaze_AddressFixer_0_0/sim/MicroBlaze_AddressFixer_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_processing_system7_0_0/sim/MicroBlaze_processing_system7_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/sim/bd_f84b.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_0/sim/bd_f84b_one_0.v" \
@@ -47,6 +42,20 @@ sv xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_37/sim/bd_f84b_m01wn_0.sv" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_38/sim/bd_f84b_m01bn_0.sv" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_39/sim/bd_f84b_m01e_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_40/sim/bd_f84b_m02s2a_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_41/sim/bd_f84b_m02arn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_42/sim/bd_f84b_m02rn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_43/sim/bd_f84b_m02awn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_44/sim/bd_f84b_m02wn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_45/sim/bd_f84b_m02bn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_46/sim/bd_f84b_m02e_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_47/sim/bd_f84b_m03s2a_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_48/sim/bd_f84b_m03arn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_49/sim/bd_f84b_m03rn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_50/sim/bd_f84b_m03awn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_51/sim/bd_f84b_m03wn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_52/sim/bd_f84b_m03bn_0.sv" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/bd_0/ip/ip_53/sim/bd_f84b_m03e_0.sv" \
 
 verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/ec67/hdl" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/86fe/hdl" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/f0b6/hdl/verilog" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/0127/hdl/verilog" --include "../../../../HydroProccess.gen/sources_1/bd/MicroBlaze/ipshared/3cbc" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_axi_smc_0/sim/MicroBlaze_axi_smc_0.v" \
@@ -66,6 +75,9 @@ verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/includ
 "../../../bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_0_1/sim/MicroBlaze_SineWaveGen_0_1.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_0/sim/MicroBlaze_xlslice_0_0.v" \
 "../../../bd/MicroBlaze/ip/MicroBlaze_xlslice_0_1/sim/MicroBlaze_xlslice_0_1.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_Wrapper_XCorr_0_0/sim/MicroBlaze_Wrapper_XCorr_0_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_SineWaveGen_2_0/sim/MicroBlaze_SineWaveGen_2_0.v" \
+"../../../bd/MicroBlaze/ip/MicroBlaze_WaveCaptureUnit_0_0/sim/MicroBlaze_WaveCaptureUnit_0_0.v" \
 "../../../bd/MicroBlaze/sim/MicroBlaze.v" \
 
 verilog xil_defaultlib "glbl.v"

@@ -1,1 +1,1 @@
---incr --debug typical --relax --mt 2  -L xil_defaultlib -L xlconstant_v1_1_9 -L xlslice_v1_0_4 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot XCORR_Unit xil_defaultlib.XCORR_Unit xil_defaultlib.glbl -log elaborate.log
+--incr --debug typical --relax --mt 2  -L xil_defaultlib -L xlconstant_v1_1_9 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot XCORR_Unit xil_defaultlib.XCORR_Unit xil_defaultlib.glbl -log elaborate.log

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jun  8 21:14:02 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jun 16 22:51:21 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="miner.ebang.com.cn:ebaz4205:part0:1.0" DEVICE="7z010" NAME="MicroBlaze" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -432,7 +432,7 @@
             <CONNECTION INSTANCE="SPI_ADC_Master_0" PORT="wave"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="11" NAME="WaveRefOut" RIGHT="0" SIGIS="undef" SIGNAME="WaveCaptureUnit_0_WaveRefOut">
+        <PORT DIR="O" LEFT="31" NAME="WaveRefOut" RIGHT="0" SIGIS="undef" SIGNAME="WaveCaptureUnit_0_WaveRefOut">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_3" PORT="gpio_io_i"/>
           </CONNECTIONS>
@@ -4535,9 +4535,9 @@
             <CONNECTION INSTANCE="SPI_ADC_Master_2" PORT="clk"/>
             <CONNECTION INSTANCE="axi_gpio_2" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="Wrapper_XCorr_0" PORT="clk"/>
+            <CONNECTION INSTANCE="axi_gpio_3" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="MaximumFinder_0" PORT="clk"/>
             <CONNECTION INSTANCE="WaveCaptureUnit_0" PORT="clk"/>
-            <CONNECTION INSTANCE="axi_gpio_3" PORT="s_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">

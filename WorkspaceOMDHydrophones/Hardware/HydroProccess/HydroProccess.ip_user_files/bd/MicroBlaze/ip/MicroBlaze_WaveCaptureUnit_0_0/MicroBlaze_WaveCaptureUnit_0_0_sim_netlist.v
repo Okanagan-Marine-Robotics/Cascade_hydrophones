@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun Jun  8 20:33:03 2025
+// Date        : Mon Jun 16 22:51:58 2025
 // Host        : James running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_WaveCaptureUnit_0_0/MicroBlaze_WaveCaptureUnit_0_0_sim_netlist.v
@@ -24,24 +24,48 @@ module MicroBlaze_WaveCaptureUnit_0_0
     clk1Mhz,
     offset);
   input [11:0]WaveRef;
-  output [11:0]WaveRefOut;
+  output [31:0]WaveRefOut;
   input [10:0]Address_B;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN MicroBlaze_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   input clk1Mhz;
   input [31:0]offset;
 
+  wire \<const0> ;
   wire [10:0]Address_B;
   wire [11:0]WaveRef;
-  wire [11:0]WaveRefOut;
+  wire [11:0]\^WaveRefOut ;
   wire clk;
   wire clk1Mhz;
   wire [31:0]offset;
 
+  assign WaveRefOut[31] = \<const0> ;
+  assign WaveRefOut[30] = \<const0> ;
+  assign WaveRefOut[29] = \<const0> ;
+  assign WaveRefOut[28] = \<const0> ;
+  assign WaveRefOut[27] = \<const0> ;
+  assign WaveRefOut[26] = \<const0> ;
+  assign WaveRefOut[25] = \<const0> ;
+  assign WaveRefOut[24] = \<const0> ;
+  assign WaveRefOut[23] = \<const0> ;
+  assign WaveRefOut[22] = \<const0> ;
+  assign WaveRefOut[21] = \<const0> ;
+  assign WaveRefOut[20] = \<const0> ;
+  assign WaveRefOut[19] = \<const0> ;
+  assign WaveRefOut[18] = \<const0> ;
+  assign WaveRefOut[17] = \<const0> ;
+  assign WaveRefOut[16] = \<const0> ;
+  assign WaveRefOut[15] = \<const0> ;
+  assign WaveRefOut[14] = \<const0> ;
+  assign WaveRefOut[13] = \<const0> ;
+  assign WaveRefOut[12] = \<const0> ;
+  assign WaveRefOut[11:0] = \^WaveRefOut [11:0];
+  GND GND
+       (.G(\<const0> ));
   MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit inst
        (.Address_B(Address_B),
         .Ram_reg_0(clk),
         .WaveRef(WaveRef),
-        .WaveRefOut(WaveRefOut),
+        .WaveRefOut(\^WaveRefOut ),
         .clk(clk),
         .clk1Mhz(clk1Mhz),
         .offset(offset));
@@ -65,7 +89,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
   input clk1Mhz;
 
   wire [10:0]Address_A11;
-  wire [31:0]Address_A111;
+  wire [31:15]Address_A111;
   wire Address_A111_carry__0_i_1_n_0;
   wire Address_A111_carry__0_i_2_n_0;
   wire Address_A111_carry__0_i_3_n_0;
@@ -144,11 +168,6 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
   wire \Address_A11[10]_i_2_n_0 ;
   wire \Address_A11[10]_i_3_n_0 ;
   wire \Address_A11[10]_i_4_n_0 ;
-  wire \Address_A11[10]_i_5_n_0 ;
-  wire \Address_A11[10]_i_6_n_0 ;
-  wire \Address_A11[10]_i_7_n_0 ;
-  wire \Address_A11[10]_i_8_n_0 ;
-  wire \Address_A11[10]_i_9_n_0 ;
   wire [10:0]Address_B;
   wire [31:0]MemoryAddress;
   wire [31:0]MemoryAddress0;
@@ -227,6 +246,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
   wire [31:0]offset;
   wire [31:0]offsetReg;
   wire p_0_in;
+  wire [3:0]NLW_Address_A111_carry_O_UNCONNECTED;
   wire [3:3]NLW_Address_A111_carry__6_CO_UNCONNECTED;
   wire [3:2]NLW_MemoryAddress0_carry__6_CO_UNCONNECTED;
   wire [3:3]NLW_MemoryAddress0_carry__6_O_UNCONNECTED;
@@ -249,7 +269,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
         .CO({Address_A111_carry_n_0,Address_A111_carry_n_1,Address_A111_carry_n_2,Address_A111_carry_n_3}),
         .CYINIT(1'b1),
         .DI(MemoryAddress[3:0]),
-        .O(Address_A111[3:0]),
+        .O(NLW_Address_A111_carry_O_UNCONNECTED[3:0]),
         .S({Address_A111_carry_i_1_n_0,Address_A111_carry_i_2_n_0,Address_A111_carry_i_3_n_0,Address_A111_carry_i_4_n_0}));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 Address_A111_carry__0
@@ -499,92 +519,42 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
        (.I0(MemoryAddress[0]),
         .I1(offsetReg[0]),
         .O(Address_A111_carry_i_4_n_0));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \Address_A11[10]_i_1 
        (.I0(\Address_A11[10]_i_2_n_0 ),
-        .I1(Address_A111[15]),
-        .I2(\Address_A11[10]_i_3_n_0 ),
-        .I3(\Address_A11[10]_i_4_n_0 ),
-        .I4(\Address_A11[10]_i_5_n_0 ),
-        .I5(\Address_A11[10]_i_6_n_0 ),
+        .I1(Address_A111[17]),
+        .I2(Address_A111[16]),
+        .I3(\Address_A11[10]_i_3_n_0 ),
+        .I4(\Address_A11[10]_i_4_n_0 ),
         .O(\Address_A11[10]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+  LUT3 #(
+    .INIT(8'hFE)) 
     \Address_A11[10]_i_2 
-       (.I0(Address_A111[26]),
-        .I1(Address_A111[27]),
-        .I2(Address_A111[24]),
-        .I3(Address_A111[25]),
-        .I4(Address_A111[23]),
-        .I5(Address_A111[22]),
+       (.I0(Address_A111[19]),
+        .I1(Address_A111[18]),
+        .I2(Address_A111[15]),
         .O(\Address_A11[10]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFEAA0000EEAA0000)) 
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
     \Address_A11[10]_i_3 
-       (.I0(Address_A111_carry__1_n_6),
-        .I1(Address_A111_carry__0_n_4),
-        .I2(Address_A111_carry__0_n_6),
-        .I3(Address_A111_carry__1_n_7),
-        .I4(\Address_A11[10]_i_7_n_0 ),
-        .I5(Address_A111_carry__0_n_5),
+       (.I0(Address_A111[30]),
+        .I1(Address_A111[31]),
+        .I2(Address_A111[28]),
+        .I3(Address_A111[29]),
+        .I4(Address_A111[27]),
+        .I5(Address_A111[26]),
         .O(\Address_A11[10]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFF0000FF800000)) 
-    \Address_A11[10]_i_4 
-       (.I0(\Address_A11[10]_i_8_n_0 ),
-        .I1(Address_A111_carry__0_n_5),
-        .I2(Address_A111_carry__1_n_7),
-        .I3(Address_A111_carry__1_n_4),
-        .I4(\Address_A11[10]_i_7_n_0 ),
-        .I5(Address_A111_carry__1_n_5),
-        .O(\Address_A11[10]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFF8)) 
-    \Address_A11[10]_i_5 
-       (.I0(\Address_A11[10]_i_9_n_0 ),
-        .I1(Address_A111_carry__0_n_7),
-        .I2(Address_A111[30]),
-        .I3(Address_A111[31]),
-        .I4(Address_A111[29]),
-        .I5(Address_A111[28]),
-        .O(\Address_A11[10]_i_5_n_0 ));
-  LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \Address_A11[10]_i_6 
-       (.I0(Address_A111[20]),
-        .I1(Address_A111[21]),
-        .I2(Address_A111[18]),
-        .I3(Address_A111[19]),
-        .I4(Address_A111[17]),
-        .I5(Address_A111[16]),
-        .O(\Address_A11[10]_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
-    \Address_A11[10]_i_7 
-       (.I0(Address_A111_carry__2_n_6),
-        .I1(Address_A111_carry__2_n_7),
-        .I2(Address_A111_carry__2_n_5),
-        .O(\Address_A11[10]_i_7_n_0 ));
-  LUT4 #(
-    .INIT(16'hFE00)) 
-    \Address_A11[10]_i_8 
-       (.I0(Address_A111[0]),
-        .I1(Address_A111[1]),
-        .I2(Address_A111[2]),
-        .I3(Address_A111[3]),
-        .O(\Address_A11[10]_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'h80000000)) 
-    \Address_A11[10]_i_9 
-       (.I0(Address_A111_carry__1_n_7),
-        .I1(Address_A111_carry__2_n_6),
-        .I2(Address_A111_carry__2_n_7),
-        .I3(Address_A111_carry__2_n_5),
-        .I4(Address_A111_carry__0_n_5),
-        .O(\Address_A11[10]_i_9_n_0 ));
+    \Address_A11[10]_i_4 
+       (.I0(Address_A111[24]),
+        .I1(Address_A111[25]),
+        .I2(Address_A111[22]),
+        .I3(Address_A111[23]),
+        .I4(Address_A111[21]),
+        .I5(Address_A111[20]),
+        .O(\Address_A11[10]_i_4_n_0 ));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     \Address_A11_reg[0] 
@@ -892,7 +862,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     MemoryAddress0_carry_i_4
        (.I0(MemoryAddress[1]),
         .O(MemoryAddress0_carry_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \MemoryAddress[0]_i_1 
@@ -908,7 +878,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
         .I4(\MemoryAddress[31]_i_6_n_0 ),
         .I5(\MemoryAddress[31]_i_7_n_0 ),
         .O(p_0_in));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \MemoryAddress[31]_i_2 
@@ -1328,7 +1298,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[0] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[0]),
         .Q(offsetReg[0]),
@@ -1337,7 +1307,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[10] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[10]),
         .Q(offsetReg[10]),
@@ -1346,7 +1316,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[11] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[11]),
         .Q(offsetReg[11]),
@@ -1355,7 +1325,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[12] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[12]),
         .Q(offsetReg[12]),
@@ -1364,7 +1334,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[13] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[13]),
         .Q(offsetReg[13]),
@@ -1373,7 +1343,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[14] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[14]),
         .Q(offsetReg[14]),
@@ -1382,7 +1352,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[15] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[15]),
         .Q(offsetReg[15]),
@@ -1391,7 +1361,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[16] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[16]),
         .Q(offsetReg[16]),
@@ -1400,7 +1370,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[17] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[17]),
         .Q(offsetReg[17]),
@@ -1409,7 +1379,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[18] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[18]),
         .Q(offsetReg[18]),
@@ -1418,7 +1388,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[19] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[19]),
         .Q(offsetReg[19]),
@@ -1427,7 +1397,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[1] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[1]),
         .Q(offsetReg[1]),
@@ -1436,7 +1406,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[20] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[20]),
         .Q(offsetReg[20]),
@@ -1445,7 +1415,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[21] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[21]),
         .Q(offsetReg[21]),
@@ -1454,7 +1424,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[22] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[22]),
         .Q(offsetReg[22]),
@@ -1463,7 +1433,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[23] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[23]),
         .Q(offsetReg[23]),
@@ -1472,7 +1442,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[24] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[24]),
         .Q(offsetReg[24]),
@@ -1481,7 +1451,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[25] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[25]),
         .Q(offsetReg[25]),
@@ -1490,7 +1460,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[26] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[26]),
         .Q(offsetReg[26]),
@@ -1499,7 +1469,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[27] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[27]),
         .Q(offsetReg[27]),
@@ -1508,7 +1478,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[28] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[28]),
         .Q(offsetReg[28]),
@@ -1517,7 +1487,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[29] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[29]),
         .Q(offsetReg[29]),
@@ -1526,7 +1496,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[2] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[2]),
         .Q(offsetReg[2]),
@@ -1535,7 +1505,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[30] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[30]),
         .Q(offsetReg[30]),
@@ -1544,7 +1514,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[31] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[31]),
         .Q(offsetReg[31]),
@@ -1553,7 +1523,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[3] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[3]),
         .Q(offsetReg[3]),
@@ -1562,7 +1532,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[4] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[4]),
         .Q(offsetReg[4]),
@@ -1571,7 +1541,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[5] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[5]),
         .Q(offsetReg[5]),
@@ -1580,7 +1550,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[6] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[6]),
         .Q(offsetReg[6]),
@@ -1589,7 +1559,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[7] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[7]),
         .Q(offsetReg[7]),
@@ -1598,7 +1568,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[8] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[8]),
         .Q(offsetReg[8]),
@@ -1607,7 +1577,7 @@ module MicroBlaze_WaveCaptureUnit_0_0_WaveCaptureUnit
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
     \offsetReg_reg[9] 
-       (.C(clk1Mhz),
+       (.C(clk),
         .CE(1'b1),
         .D(offset[9]),
         .Q(offsetReg[9]),

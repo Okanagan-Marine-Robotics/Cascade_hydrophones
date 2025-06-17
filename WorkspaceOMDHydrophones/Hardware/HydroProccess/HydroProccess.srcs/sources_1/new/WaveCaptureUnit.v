@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module WaveCaptureUnit(
-    input [11:0] WaveRef,
-    output reg [11:0] WaveRefOut,
+    input signed [11:0] WaveRef,
+    output reg signed [31:0] WaveRefOut,
     input [10:0] Address_B,
     input clk,
     input clk1Mhz,
@@ -15,9 +15,10 @@ module WaveCaptureUnit(
     
     
     always @(negedge clk) begin
-        Address_A11<=(MemoryAddress-offsetReg>=0&&MemoryAddress-offsetReg<=29000)?MemoryAddress-offsetReg>>4:0;
+        Address_A11<=(((MemoryAddress-offsetReg)>>4)>=0&&((MemoryAddress-offsetReg)>>4)<=2047)?((MemoryAddress-offsetReg)>>4):0;
         Ram [Address_A11] <= WaveRef; 
-        WaveRefOut <= Ram[Address_B];       
+        WaveRefOut <= Ram[Address_B]; 
+        offsetReg <= offset;      
     end
     
     
@@ -28,6 +29,5 @@ module WaveCaptureUnit(
 	else begin
 	   MemoryAddress <= MemoryAddress - 1;
     end
-    offsetReg <= offset;
     end
 endmodule

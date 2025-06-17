@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sun Jun  8 20:32:38 2025
+  **** Start of session at: Mon Jun 16 22:51:30 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -25,57 +25,57 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16208
+INFO: [Synth 8-7075] Helper process launched with PID 19732
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1060.422 ; gain = 467.301
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1059.695 ; gain = 466.734
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'MicroBlaze_WaveCaptureUnit_0_0' [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_WaveCaptureUnit_0_0/synth/MicroBlaze_WaveCaptureUnit_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'WaveCaptureUnit' [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/WaveCaptureUnit.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'WaveCaptureUnit' (0#1) [C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.srcs/sources_1/new/WaveCaptureUnit.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'MicroBlaze_WaveCaptureUnit_0_0' (0#1) [c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_WaveCaptureUnit_0_0/synth/MicroBlaze_WaveCaptureUnit_0_0.v:53]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1170.578 ; gain = 577.457
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1169.301 ; gain = 576.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1170.578 ; gain = 577.457
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1169.301 ; gain = 576.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1170.578 ; gain = 577.457
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1169.301 ; gain = 576.340
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1170.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1169.301 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1170.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1233.184 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1170.578 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1233.199 ; gain = 0.016
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1170.578 ; gain = 577.457
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.199 ; gain = 640.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1170.578 ; gain = 577.457
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.199 ; gain = 640.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1170.578 ; gain = 577.457
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.199 ; gain = 640.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1170.578 ; gain = 577.457
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1233.199 ; gain = 640.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -86,7 +86,7 @@ Detailed RTL Component Info :
 	   3 Input   32 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 2     
-	               12 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
 +---RAMs : 
 	              24K Bit	(2048 X 12 bit)          RAMs := 1     
 ---------------------------------------------------------------------------------
@@ -105,8 +105,28 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[31] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[30] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[29] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[28] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[27] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[26] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[25] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[24] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[23] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[22] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[21] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[20] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[19] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[18] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[17] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[16] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[15] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[14] driven by constant 0
+INFO: [Synth 8-3917] design MicroBlaze_WaveCaptureUnit_0_0 has port WaveRefOut[13] driven by constant 0
+INFO: [Synth 8-5784] Optimized 1 bits of RAM "inst/Ram_reg" due to constant propagation. Old ram width 13 bits, new ram width 12 bits.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1209.516 ; gain = 616.395
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1233.199 ; gain = 640.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -116,7 +136,7 @@ Block RAM: Preliminary Mapping Report (see note below)
 +-------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                    | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|MicroBlaze_WaveCaptureUnit_0_0 | inst/Ram_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|MicroBlaze_WaveCaptureUnit_0_0 | inst/Ram_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 13(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 +-------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
@@ -127,13 +147,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1355.844 ; gain = 762.723
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1370.684 ; gain = 777.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1355.992 ; gain = 762.871
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1370.758 ; gain = 777.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -143,7 +163,7 @@ Block RAM: Final Mapping Report
 +-------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                    | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|MicroBlaze_WaveCaptureUnit_0_0 | inst/Ram_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|MicroBlaze_WaveCaptureUnit_0_0 | inst/Ram_reg | 2 K x 12(READ_FIRST)   | W |   | 2 K x 13(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 +-------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -154,7 +174,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance inst/Ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.203 ; gain = 773.082
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1380.832 ; gain = 787.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -172,37 +192,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1597.727 ; gain = 1004.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1597.727 ; gain = 1004.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1597.727 ; gain = 1004.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1597.727 ; gain = 1004.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1598.762 ; gain = 1005.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1598.762 ; gain = 1005.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -222,35 +242,34 @@ Report Cell Usage:
 |2     |LUT1     |    33|
 |3     |LUT2     |    33|
 |4     |LUT3     |     1|
-|5     |LUT4     |     1|
-|6     |LUT5     |     1|
-|7     |LUT6     |    12|
-|8     |RAMB36E1 |     1|
-|9     |FDRE     |    68|
-|10    |FDSE     |     7|
+|5     |LUT5     |     1|
+|6     |LUT6     |     8|
+|7     |RAMB36E1 |     1|
+|8     |FDRE     |    68|
+|9     |FDSE     |     7|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1598.762 ; gain = 1005.801
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1582.832 ; gain = 989.711
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1582.832 ; gain = 989.711
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1598.762 ; gain = 941.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1598.762 ; gain = 1005.801
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1582.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1598.762 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1582.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1598.762 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 381105c7
+Synth Design complete | Checksum: 1a33355
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+43 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1582.832 ; gain = 1199.391
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1582.832 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1598.762 ; gain = 1214.469
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1598.762 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.runs/MicroBlaze_WaveCaptureUnit_0_0_synth_1/MicroBlaze_WaveCaptureUnit_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file MicroBlaze_WaveCaptureUnit_0_0_utilization_synth.rpt -pb MicroBlaze_WaveCaptureUnit_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  8 20:33:03 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 16 22:51:58 2025...

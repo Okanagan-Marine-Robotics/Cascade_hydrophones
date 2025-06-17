@@ -34,8 +34,8 @@ int main() {
 	int maxTime2;
 	int messageLength = 64;
 	int offset = 0;
-	int test1 = 0;
-	int test2 = 10;
+	int test1 = 30000;
+	int test2 = 30000;
 	char message[messageLength];
 	while(1){
 /*
@@ -71,7 +71,7 @@ int main() {
 		//printf("%s", ReceivedData);
 		XGpio Gpio3;
 		XGpio_Initialize(&Gpio3, XPAR_AXI_GPIO_3_DEVICE_ID);
-		//if (state == 0){
+		if (state == 0){
 
 			int wave=0;
 			while (p<=2047) {
@@ -82,8 +82,8 @@ int main() {
 			p++;
 			}
 			p=0;
-		//}
-		if (state == 1){
+		}
+
 			maxTime = delayGetter(maxTime,test1);
 			maxTime2 = delayGetter2(maxTime2,test2);
 			double solution[2];
@@ -98,7 +98,7 @@ int main() {
 			    double q = tan(asin(((1500.*(t2/1000000.))/(0.5))));
 			    x=(-0.25-0.25*(p))/(p*q-1.);
 			    y=(x-0.25)/p;
-
+		if (state == 1){
 			printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
 
 		}
@@ -128,8 +128,8 @@ int delayGetter (int delay,int test1){
 
 			XGpio Gpio2;
 	    	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_2_DEVICE_ID);
-	    	XGpio_DiscreteWrite(&Gpio2, 1, 0);
-	    	XGpio_DiscreteWrite(&Gpio2, 2, 100);
+	    	XGpio_DiscreteWrite(&Gpio2, 1, 1997000);
+	    	XGpio_DiscreteWrite(&Gpio2, 2, 0);
 	//xil_printf("%d\n", MaxSignal);
 	return maxTime;
 }

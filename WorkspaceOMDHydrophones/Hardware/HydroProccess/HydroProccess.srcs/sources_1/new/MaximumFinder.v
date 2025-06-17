@@ -5,8 +5,8 @@ module MaximumFinder(
     input signed [31:0] XCORR1,
     input signed [15:0] address,
     input clk,
-    output reg [31:0] tmax,
-    output reg [31:0] tmax1
+    output reg signed [31:0] tmax,
+    output reg signed [31:0] tmax1
     );
     
     reg signed [31:0] max =0;
@@ -27,8 +27,8 @@ module MaximumFinder(
         if (address == 30000)begin
             tmax <= addressMax;
             tmax1 <= addressMax1;
-            max <=0;
-            max1 <=0;
+            max <=-29000;
+            max1 <=-29000;
         end
     end
 endmodule
