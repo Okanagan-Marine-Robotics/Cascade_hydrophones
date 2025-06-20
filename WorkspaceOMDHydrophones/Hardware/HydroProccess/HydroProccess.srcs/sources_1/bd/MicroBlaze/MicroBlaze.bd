@@ -1652,17 +1652,7 @@
           },
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "200000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "MicroBlaze_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "tmax": {
             "direction": "O",
@@ -2189,8 +2179,8 @@
           "axi_gpio_2/s_axi_aclk",
           "Wrapper_XCorr_0/clk",
           "axi_gpio_3/s_axi_aclk",
-          "MaximumFinder_0/clk",
-          "WaveCaptureUnit_0/clk"
+          "WaveCaptureUnit_0/clk",
+          "MaximumFinder_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

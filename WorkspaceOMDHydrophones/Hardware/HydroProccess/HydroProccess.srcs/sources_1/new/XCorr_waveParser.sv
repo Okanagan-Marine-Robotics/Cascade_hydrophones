@@ -18,7 +18,7 @@ module XCorr_waveParser(
 	
 	parameter XCORRsize = 2500;
 
-	reg [31:0] MemoryAddress = 10010;
+	reg [31:0] MemoryAddress = 30010;
     reg [31:0] offsetReg = 0;
 	always @(negedge clk1Mhz)begin
 	 
