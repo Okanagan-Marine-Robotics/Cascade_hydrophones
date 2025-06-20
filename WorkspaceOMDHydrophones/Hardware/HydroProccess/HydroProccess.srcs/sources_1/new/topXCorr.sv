@@ -21,6 +21,7 @@ output signed [15:0] count
     wire signed [11:0] waveRefIntoXCorr[0:11],waveXIntoXCorr[0:11],waveYIntoYCorr[0:11];
     wire [15:0] waveRefOutXCorr[0:11];
     wire [11:0] waveXOutXCorr[0:11],waveYOutXCorr[0:11];
+    wire reset;
    XCorr_waveParser waveParser (
         .clk(clk),
         .clk1Mhz(clk1Mhz),
@@ -33,7 +34,8 @@ output signed [15:0] count
         .waveRefAddress(waceRefAddressWire),
         .waveXAddress(waceXAddressWire),
         .waveYAddress(waceYAddressWire),
-        .offset(offset)
+        .offset(offset),
+        .resetsignal(reset)
    );
     
     XCORR_BRAM bram(
@@ -72,7 +74,8 @@ output signed [15:0] count
         .waveYAddress(waveYOutXCorr),
         .xcorr(xcorr),
         .xcorr1(xcorr1),
-        .count(count)
+        .count(count),
+        .reset(reset)
     );
 
 endmodule

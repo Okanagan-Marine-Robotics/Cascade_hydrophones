@@ -34,12 +34,12 @@ module SineWaveGenSim(
             end
             
            // $random % 16
-           randval = $random % 16;
+           randval = $random % 256;
            wave = ((ram[counter] + randval > 2047)&&ram[counter]>0) ? 11'd2047 : ram[counter] + randval;
 
         
         end
-        else wave = $random % 16;
+        else wave = $random % 256;
     
     
         

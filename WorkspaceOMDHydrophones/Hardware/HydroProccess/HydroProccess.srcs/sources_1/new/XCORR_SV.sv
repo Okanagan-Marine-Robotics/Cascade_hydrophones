@@ -14,7 +14,7 @@ module XCORR_SV(
 	output reg signed [35:0] xcorr,
 	output reg signed [35:0] xcorr1,
 	output reg clkcorr = 0,
-	output reg signed [15:0] count = -29999,
+	output reg signed [15:0] count = -9999,
 	input reset
 	);
     parameter lengthOfXCorr = 30000;
@@ -34,7 +34,7 @@ always @(negedge clk)begin
 
 if (reset ==1) begin
    countMulti <= 1; 
-   count <= -29999;
+   count <= -999;
 end
 else begin
         if (countMulti!=XCORRsize)begin
@@ -49,13 +49,13 @@ else begin
     	end
     	
     if (countMulti==1)begin
-	   if (count <= lengthOfXCorr) begin
+	   if (count <= 1000) begin
     
     	count <= count + 1;
    	 
 	end
 	else begin
-    	count <= -29999;
+    	count <= -999;
 	end
    	 
     
