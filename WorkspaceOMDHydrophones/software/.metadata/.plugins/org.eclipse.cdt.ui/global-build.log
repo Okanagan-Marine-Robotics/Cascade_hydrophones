@@ -1,6 +1,6 @@
 Nothing to build in platform 'Test'
 
-00:09:43 **** Incremental Build of configuration Debug for project helloworld ****
+18:28:46 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step

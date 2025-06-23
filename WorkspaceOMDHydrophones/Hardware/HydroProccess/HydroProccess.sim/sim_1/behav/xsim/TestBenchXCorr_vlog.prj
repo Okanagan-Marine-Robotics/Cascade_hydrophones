@@ -23,6 +23,7 @@ verilog xil_defaultlib  --include "../../../../HydroProccess.gen/sources_1/bd/Mi
 "../../../../HydroProccess.ip_user_files/bd/XCORR_Unit/ip/XCORR_Unit_MaximumFinder_0_0/sim/XCORR_Unit_MaximumFinder_0_0.v" \
 "../../../../HydroProccess.ip_user_files/bd/XCORR_Unit/ip/XCORR_Unit_xlslice_0_0/sim/XCORR_Unit_xlslice_0_0.v" \
 "../../../../HydroProccess.ip_user_files/bd/XCORR_Unit/ip/XCORR_Unit_xlslice_0_1/sim/XCORR_Unit_xlslice_0_1.v" \
+"../../../../HydroProccess.ip_user_files/bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_0_1/sim/XCORR_Unit_xlconstant_0_1.v" \
 "../../../../HydroProccess.ip_user_files/bd/XCORR_Unit/sim/XCORR_Unit.v" \
 "../../../../HydroProccess.gen/sources_1/bd/XCORR_Unit/hdl/XCORR_Unit_wrapper.v" \
 

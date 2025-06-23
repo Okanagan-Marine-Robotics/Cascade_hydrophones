@@ -16,15 +16,15 @@ module MaximumFinder(
 
     
     always @(negedge clk)begin
-        if (XCORR > max && address != 30000)begin
+        if (XCORR > max && address != 1000)begin
             max <= XCORR;
             addressMax <= address;
         end
-        if (XCORR1 > max1 && address != 30000)begin
+        if (XCORR1 > max1 && address != 1000)begin
             max1 <= XCORR1;
             addressMax1 <= address;
         end
-        if (address == 30000)begin
+        if (address == 1000)begin
             tmax <= addressMax;
             tmax1 <= addressMax1;
             max <=-29000;

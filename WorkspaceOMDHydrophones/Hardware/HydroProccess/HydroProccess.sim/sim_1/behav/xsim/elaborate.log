@@ -26,6 +26,7 @@ Compiling module xil_defaultlib.Wrapper_XCorr
 Compiling module xil_defaultlib.XCORR_Unit_Wrapper_XCorr_0_0
 Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
 Compiling module xil_defaultlib.XCORR_Unit_xlconstant_0_0
+Compiling module xil_defaultlib.XCORR_Unit_xlconstant_0_1
 Compiling module xil_defaultlib.XCORR_Unit_xlconstant_2_0
 Compiling module xlslice_v1_0_4.xlslice_v1_0_4_xlslice(DIN_WIDTH...
 Compiling module xil_defaultlib.XCORR_Unit_xlslice_0_0

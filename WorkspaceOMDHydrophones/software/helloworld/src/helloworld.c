@@ -28,14 +28,14 @@ int main() {
 	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
 	xil_printf("by James Williamsom v:0.2\n");
-	int state = 0;
+	int state = 1;
 
 	int maxTime;
 	int maxTime2;
 	int messageLength = 64;
 	int offset = 0;
-	int test1 = 30000;
-	int test2 = 30000;
+	int test1 = 10;
+	int test2 = 100;
 	char message[messageLength];
 	while(1){
 /*
@@ -128,8 +128,8 @@ int delayGetter (int delay,int test1){
 
 			XGpio Gpio2;
 	    	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_2_DEVICE_ID);
-	    	XGpio_DiscreteWrite(&Gpio2, 1, 1997000);
-	    	XGpio_DiscreteWrite(&Gpio2, 2, 0);
+	    	XGpio_DiscreteWrite(&Gpio2, 1, 100000);
+	    	XGpio_DiscreteWrite(&Gpio2, 2, 10);
 	//xil_printf("%d\n", MaxSignal);
 	return maxTime;
 }

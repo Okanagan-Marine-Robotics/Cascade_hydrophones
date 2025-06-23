@@ -51,6 +51,7 @@ vlog -work xlslice_v1_0_4  -incr -mfcu  "+incdir+C:/Xilinx/Vivado/2024.2/data/xi
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlslice_0_0/sim/XCORR_Unit_xlslice_0_0.v" \
 "../../../bd/XCORR_Unit/ip/XCORR_Unit_xlslice_0_1/sim/XCORR_Unit_xlslice_0_1.v" \
+"../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_0_1/sim/XCORR_Unit_xlconstant_0_1.v" \
 "../../../bd/XCORR_Unit/sim/XCORR_Unit.v" \
 
 vlog -work xil_defaultlib \

@@ -23,5 +23,6 @@ XCORR_Unit_MaximumFinder_0_0.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/
 xlslice_v1_0_vl_rfs.v,verilog,xlslice_v1_0_4,../../../../HydroProccess.gen/sources_1/bd/XCORR_Unit/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v,
 XCORR_Unit_xlslice_0_0.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_Unit_xlslice_0_0/sim/XCORR_Unit_xlslice_0_0.v,
 XCORR_Unit_xlslice_0_1.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_Unit_xlslice_0_1/sim/XCORR_Unit_xlslice_0_1.v,
+XCORR_Unit_xlconstant_0_1.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/ip/XCORR_Unit_xlconstant_0_1/sim/XCORR_Unit_xlconstant_0_1.v,
 XCORR_Unit.v,verilog,xil_defaultlib,../../../bd/XCORR_Unit/sim/XCORR_Unit.v,
 glbl.v,Verilog,xil_defaultlib,glbl.v

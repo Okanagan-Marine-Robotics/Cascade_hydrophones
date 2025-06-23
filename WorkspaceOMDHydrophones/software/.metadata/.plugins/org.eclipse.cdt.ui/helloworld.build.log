@@ -1,4 +1,4 @@
-00:09:43 **** Incremental Build of configuration Debug for project helloworld ****
+18:28:46 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -48,5 +48,5 @@ arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
 'Finished building: helloworld.elf.size'
 ' '
 
-00:09:44 Build Finished (took 655ms)
+18:28:47 Build Finished (took 1s.420ms)
 
