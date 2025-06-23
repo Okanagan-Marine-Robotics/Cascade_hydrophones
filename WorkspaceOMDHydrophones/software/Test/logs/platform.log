@@ -16183,3 +16183,248 @@ TRACE::2025-06-22.18:19:28::SCWMssOS::DEBUG:  swdes dump  C:/Cascade_hydrophones
 C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2025-06-22.18:19:28::SCWMssOS::Sw design exists and opened at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:52:58::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:52:58::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:52:58::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:52:58::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:52:58::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:52:58::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:52:58::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened new HwDB with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWReader::Active system found as  Test
+TRACE::2025-06-22.23:53:00::SCWReader::Handling sysconfig Test
+TRACE::2025-06-22.23:53:00::SCWDomain::checking for install qemu data   : 
+TRACE::2025-06-22.23:53:00::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-06-22.23:53:00::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWMssOS::Checking the sw design at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-06-22.23:53:00::SCWMssOS::No sw design opened at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::mss exists loading the mss file  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::Opened the sw design from mss  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::Adding the swdes entry C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-06-22.23:53:00::SCWMssOS::updating the scw layer about changes
+TRACE::2025-06-22.23:53:00::SCWMssOS::Opened the sw design.  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWMssOS::Checking the sw design at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::DEBUG:  swdes dump  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-22.23:53:00::SCWMssOS::Sw design exists and opened at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS:: library already available in sw design:  xilffs:4.8
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWMssOS::Checking the sw design at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::DEBUG:  swdes dump  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-22.23:53:00::SCWMssOS::Sw design exists and opened at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2025-06-22.23:53:00::SCWMssOS::Saving the mss changes C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-06-22.23:53:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-06-22.23:53:00::SCWMssOS::Commit changes completed.
+TRACE::2025-06-22.23:53:00::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-06-22.23:53:00::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWMssOS::Checking the sw design at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::DEBUG:  swdes dump  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-22.23:53:00::SCWMssOS::Sw design exists and opened at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWReader::No isolation master present  
+TRACE::2025-06-22.23:53:00::SCWDomain::checking for install qemu data   : 
+TRACE::2025-06-22.23:53:00::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-06-22.23:53:00::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWMssOS::Checking the sw design at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::DEBUG:  swdes dump  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-22.23:53:00::SCWMssOS::No sw design opened at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::mss exists loading the mss file  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::Opened the sw design from mss  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::Adding the swdes entry C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2025-06-22.23:53:00::SCWMssOS::updating the scw layer about changes
+TRACE::2025-06-22.23:53:00::SCWMssOS::Opened the sw design.  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::Saving the mss changes C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-06-22.23:53:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-06-22.23:53:00::SCWMssOS::Commit changes completed.
+TRACE::2025-06-22.23:53:00::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-06-22.23:53:00::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to open the hw design at C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA given C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA absoulate path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform::DSA directory C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Platform Path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/hw/MicroBlaze_wrapper.xsa
+TRACE::2025-06-22.23:53:00::SCWPlatform:: Unique name xilinx:cmod-s7-25::0.0
+TRACE::2025-06-22.23:53:00::SCWPlatform::Trying to set the existing hwdb with name MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Opened existing hwdb MicroBlaze_wrapper_7
+TRACE::2025-06-22.23:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-22.23:53:00::SCWMssOS::Checking the sw design at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWMssOS::DEBUG:  swdes dump  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-22.23:53:00::SCWMssOS::Sw design exists and opened at  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-06-22.23:53:00::SCWReader::No isolation master present  
+TRACE::2025-06-22.23:53:01::SCWBDomain::System Command Ran  C:&  cd  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl & make clean
+TRACE::2025-06-22.23:53:01::SCWBDomain::rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+TRACE::2025-06-22.23:53:01::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::System Command Ran  C:&  cd  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/zynq_fsbl/zynq_fsbl_bsp & make clean
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_17/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/nandps_v2_7/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s clean 
+
+TRACE::2025-06-22.23:53:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_8/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWBDomain::rm -f ps7_cortexa9_0/lib/libxil.a
+
+TRACE::2025-06-22.23:53:02::SCWMssOS::cleaning the bsp 
+TRACE::2025-06-22.23:53:02::SCWMssOS::System Command Ran  C: & cd  C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/ps7_cortexa9_0/standalone_domain/bsp & make clean 
+TRACE::2025-06-22.23:53:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
+
+TRACE::2025-06-22.23:53:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_17/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/nandps_v2_7/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s clean 
+
+TRACE::2025-06-22.23:53:03::SCWMssOS::rm -f ps7_cortexa9_0/lib/libxil.a
+

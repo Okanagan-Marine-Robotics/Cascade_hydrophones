@@ -1,0 +1,11 @@
+void waveCaptureUnit(){
+int wave=0;
+			while (p<=2047) {
+
+			XGpio_DiscreteWrite(&Gpio3, 2, p);
+			wave = XGpio_DiscreteRead(&Gpio3, 1);
+			printf("{time:%d, amplitude:%d}\n", p,wave);
+			p++;
+			}
+			p=0;
+}
