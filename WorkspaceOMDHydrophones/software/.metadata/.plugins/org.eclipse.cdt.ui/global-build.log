@@ -1,51 +1,53 @@
 Nothing to build in platform 'Test'
 
-18:28:46 **** Incremental Build of configuration Debug for project helloworld ****
+23:39:42 **** Incremental Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
+'Building file: ../src/xcorr.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:11: warning: "UART_DEVICE_ID" redefined
-   11 | #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID  // Adjust this to your UART instance
-      | 
-In file included from ../src/platform.h:36,
-                 from ../src/helloworld.c:1:
-../src/platform_config.h:5: note: this is the location of the previous definition
-    5 | #define UART_DEVICE_ID 0
-      | 
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:87:35: warning: implicit declaration of function 'delayGetter' [-Wimplicit-function-declaration]
-   87 |                         maxTime = delayGetter(maxTime,test1);
-      |                                   ^~~~~~~~~~~
-../src/helloworld.c:88:36: warning: implicit declaration of function 'delayGetter2' [-Wimplicit-function-declaration]
-   88 |                         maxTime2 = delayGetter2(maxTime2,test2);
-      |                                    ^~~~~~~~~~~~
-../src/helloworld.c:105:17: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
-  105 |                 usleep(2000000);
-      |                 ^~~~~~
-../src/helloworld.c:89:32: warning: unused variable 'solution' [-Wunused-variable]
-   89 |                         double solution[2];
-      |                                ^~~~~~~~
-../src/helloworld.c:39:14: warning: unused variable 'message' [-Wunused-variable]
-   39 |         char message[messageLength];
-      |              ^~~~~~~
-../src/helloworld.c:36:13: warning: unused variable 'offset' [-Wunused-variable]
-   36 |         int offset = 0;
-      |             ^~~~~~
-'Finished building: ../src/helloworld.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xcorr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bspinclude/include -MMD -MP -MF"src/xcorr.d" -MT"src/xcorr.o" -o "src/xcorr.o" "../src/xcorr.c"
+../src/xcorr.c: In function 'xcorr':
+../src/xcorr.c:15:16: warning: implicit declaration of function 'tan' [-Wimplicit-function-declaration]
+   15 |     double p = tan(asin(((1500.*(t1/1000000.))/(0.5))));
+      |                ^~~
+../src/xcorr.c:3:1: note: include '<math.h>' or provide a declaration of 'tan'
+    2 | #include "xcorrDriver.h"
+  +++ |+#include <math.h>
+    3 | 
+../src/xcorr.c:15:16: warning: incompatible implicit declaration of built-in function 'tan' [-Wbuiltin-declaration-mismatch]
+   15 |     double p = tan(asin(((1500.*(t1/1000000.))/(0.5))));
+      |                ^~~
+../src/xcorr.c:15:16: note: include '<math.h>' or provide a declaration of 'tan'
+../src/xcorr.c:15:20: warning: implicit declaration of function 'asin' [-Wimplicit-function-declaration]
+   15 |     double p = tan(asin(((1500.*(t1/1000000.))/(0.5))));
+      |                    ^~~~
+../src/xcorr.c:15:20: note: include '<math.h>' or provide a declaration of 'asin'
+../src/xcorr.c:15:20: warning: incompatible implicit declaration of built-in function 'asin' [-Wbuiltin-declaration-mismatch]
+../src/xcorr.c:15:20: note: include '<math.h>' or provide a declaration of 'asin'
+../src/xcorr.c:19:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   19 |     printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
+      |     ^~~~~~
+../src/xcorr.c:3:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    2 | #include "xcorrDriver.h"
+  +++ |+#include <stdio.h>
+    3 | 
+../src/xcorr.c:19:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   19 |     printf("{delayX: {%d},delayY: {%d},x: {%f},y: {%f}}\n",maxTime, maxTime2, x, y);
+      |     ^~~~~~
+../src/xcorr.c:19:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+'Finished building: ../src/xcorr.c'
 ' '
 'Building target: helloworld.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bsplib/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bsplib/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o ./src/xcorr.o ./src/xcorrDriver.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: helloworld.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  60467	   2628	  22776	  85871	  14f6f	helloworld.elf
+  60403	   2628	  22776	  85807	  14f2f	helloworld.elf
 'Finished building: helloworld.elf.size'
 ' '
