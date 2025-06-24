@@ -8,6 +8,9 @@
 #include <string.h>
 
 int p=0;
+int state = 2;
+int test1 = 0;
+int test2 = 0;
 
 int main() {
 
@@ -16,9 +19,9 @@ int main() {
 
 	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
-	xil_printf("by James Williamsom v:0.3\n");
+	xil_printf("by James Williamsom v:0.4\n");
 
-	int state = 2;
+
 
 	while(1){
 
@@ -34,8 +37,8 @@ int main() {
 
 		}
 
-		uartHandler();
-		usleep(20000);
+		uartHandler(&state, &test1, &test2);
+		usleep(2000000);
 	}
 	cleanup_platform();
 	return 0;

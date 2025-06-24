@@ -15,38 +15,52 @@ void uart_init() {
 }
 
 
-void uartHandler() {
+void uartHandler(int *state, int *test1, int *test2) {
 		int messageLength = 64;
 		char message[messageLength];
 			u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
+			usleep(2000);
 			int j = 0;
 			int instruction;
 			int instructionValue;
-			while (messageLength>j){
-			if (ReceivedData[j]=='<') {
-				j++;
-				instruction = ReceivedData[j] - 48;
-				ReceivedData[j]=0;
-				j++;
-				j++;
-				int n = 0;
-				while (ReceivedData[j] != '>' && j < messageLength){
-					message[n] = ReceivedData[j];
-					ReceivedData[j]=0;
-					j++;
-					n++;
-				}
-				message[n] = '\0';
-				instructionValue = atoi(message);
-				}
-			j++;
-			}
+
 		if (bytesReceived!=0){
+
+			while (messageLength>j){
+						if (ReceivedData[j]=='<') {
+							j++;
+							instruction = ReceivedData[j] - 48;
+							j++;
+							j++;
+							int n = 0;
+							while (ReceivedData[j] != '>' && j < messageLength){
+								message[n] = ReceivedData[j];
+								j++;
+								n++;
+							}
+							message[n] = '\0';
+							instructionValue = atoi(message);
+							}
+						j++;
+						}
+
 			xil_printf("Received: %s\n", ReceivedData);
+
+			if (instruction==0) {
+				*state = instructionValue;
+				xil_printf("State %d\n", *state);
+			}
+			else if (instruction==1) {
+				*test1=instructionValue;
+				xil_printf("test1 %d\n", *test1);
+			}
+			else if (instruction==2) {
+				*test2=instructionValue;
+				xil_printf("test2 %d\n", *test2);
+			}
 
 			for (int i = 0; i < MAX_BUFFER_SIZE; i++) {
 				ReceivedData[i] = 0;
 			}
-
 		}
 }

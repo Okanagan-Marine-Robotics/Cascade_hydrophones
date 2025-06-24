@@ -1,7 +1,7 @@
 #ifndef UARTHANDLER_H
 #define UARTHANDLER_H
 
-void uartHandler();
+void uartHandler(int *state, int *test1, int *test2);
 void uart_init();
 
 #endif
