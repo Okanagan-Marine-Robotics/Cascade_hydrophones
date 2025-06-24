@@ -1,0 +1,14 @@
+#include "xgpio.h"
+void waveCaptureUnit(){
+	int p = 0;
+	XGpio Gpio3;
+	XGpio_Initialize(&Gpio3, XPAR_AXI_GPIO_3_DEVICE_ID);
+	int wave=0;
+	while (p<=2047) {
+		XGpio_DiscreteWrite(&Gpio3, 2, p);
+		wave = XGpio_DiscreteRead(&Gpio3, 1);
+		printf("{time:%d, amplitude:%d}\n", p,wave);
+		p++;
+	}
+	p=0;
+}

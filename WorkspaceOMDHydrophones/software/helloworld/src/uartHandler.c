@@ -1,0 +1,52 @@
+#include "xuartps.h"
+#include "xil_printf.h"
+#include <stdlib.h>
+#include "uartHandler.h"
+
+#define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
+#define MAX_BUFFER_SIZE 64
+
+XUartPs Uart_Ps;
+u8 ReceivedData[MAX_BUFFER_SIZE];
+
+void uart_init() {
+    XUartPs_Config *Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+    XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+}
+
+
+void uartHandler() {
+		int messageLength = 64;
+		char message[messageLength];
+			u32 bytesReceived = XUartPs_Recv(&Uart_Ps, ReceivedData, MAX_BUFFER_SIZE);
+			int j = 0;
+			int instruction;
+			int instructionValue;
+			while (messageLength>j){
+			if (ReceivedData[j]=='<') {
+				j++;
+				instruction = ReceivedData[j] - 48;
+				ReceivedData[j]=0;
+				j++;
+				j++;
+				int n = 0;
+				while (ReceivedData[j] != '>' && j < messageLength){
+					message[n] = ReceivedData[j];
+					ReceivedData[j]=0;
+					j++;
+					n++;
+				}
+				message[n] = '\0';
+				instructionValue = atoi(message);
+				}
+			j++;
+			}
+		if (bytesReceived!=0){
+			xil_printf("Received: %s\n", ReceivedData);
+
+			for (int i = 0; i < MAX_BUFFER_SIZE; i++) {
+				ReceivedData[i] = 0;
+			}
+
+		}
+}

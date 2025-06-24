@@ -57,3 +57,4 @@ platform active {Test}
 platform config -updatehw {C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
 platform generate -domains 
 platform clean
+platform generate

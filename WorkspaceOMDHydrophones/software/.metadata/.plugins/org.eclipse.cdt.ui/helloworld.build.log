@@ -1,7 +1,32 @@
-23:53:04 **** Clean-only build of configuration Debug for project helloworld ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o ./src/waveCaptureUnit.o ./src/xcorr.o ./src/xcorrDriver.o  ./src/helloworld.d ./src/platform.d ./src/waveCaptureUnit.d ./src/xcorr.d ./src/xcorrDriver.d  helloworld.elf.size  helloworld.elf
+20:34:18 **** Incremental Build of configuration Debug for project helloworld ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/uartHandler.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartHandler.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bspinclude/include -MMD -MP -MF"src/uartHandler.d" -MT"src/uartHandler.o" -o "src/uartHandler.o" "../src/uartHandler.c"
+../src/uartHandler.c: In function 'uartHandler':
+../src/uartHandler.c:24:29: warning: variable 'instructionValue' set but not used [-Wunused-but-set-variable]
+   24 |                         int instructionValue;
+      |                             ^~~~~~~~~~~~~~~~
+../src/uartHandler.c:23:29: warning: variable 'instruction' set but not used [-Wunused-but-set-variable]
+   23 |                         int instruction;
+      |                             ^~~~~~~~~~~
+'Finished building: ../src/uartHandler.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bsplib/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o ./src/uartHandler.o ./src/waveCaptureUnit.o ./src/xcorr.o ./src/xcorrDriver.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61379	   2628	  22776	  86783	  152ff	helloworld.elf
+'Finished building: helloworld.elf.size'
 ' '
 
-23:53:04 Build Finished (took 194ms)
+20:34:19 Build Finished (took 1s.359ms)
 
