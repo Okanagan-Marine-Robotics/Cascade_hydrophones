@@ -2,13 +2,13 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sat Feb 15 02:06:18 2025
+-- Date        : Sun Aug  3 00:17:47 2025
 -- Host        : James running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top MicroBlaze_clk_wiz_0_0 -prefix
---               MicroBlaze_clk_wiz_0_0_ MicroBlaze_clk_wiz_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_stub.vhdl
 -- Design      : MicroBlaze_clk_wiz_0_0
 -- Purpose     : Stub declaration of top-level module interface
--- Device      : xc7z010clg400-1
+-- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

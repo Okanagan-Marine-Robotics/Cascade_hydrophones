@@ -1,41 +1,10 @@
-21:16:51 **** Incremental Build of configuration Debug for project helloworld ****
+20:05:30 **** Build of configuration Debug for project helloworld ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:18:9: warning: implicit declaration of function 'uart_init' [-Wimplicit-function-declaration]
-   18 |         uart_init();
-      |         ^~~~~~~~~
-../src/helloworld.c:32:25: warning: implicit declaration of function 'waveCaptureUnit' [-Wimplicit-function-declaration]
-   32 |                         waveCaptureUnit();
-      |                         ^~~~~~~~~~~~~~~
-../src/helloworld.c:36:25: warning: implicit declaration of function 'xcorr' [-Wimplicit-function-declaration]
-   36 |                         xcorr();
-      |                         ^~~~~
-../src/helloworld.c:40:17: warning: implicit declaration of function 'uartHandler' [-Wimplicit-function-declaration]
-   40 |                 uartHandler(&state, &test1, &test2);
-      |                 ^~~~~~~~~~~
-../src/helloworld.c:41:17: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
-   41 |                 usleep(2000000);
-      |                 ^~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: helloworld.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Xlinker -lm -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/sw/Test/standalone_domain/bsplib/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o ./src/uartHandler.o ./src/waveCaptureUnit.o ./src/xcorr.o ./src/xcorrDriver.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: helloworld.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  61539	   2636	  22792	  86967	  153b7	helloworld.elf
-'Finished building: helloworld.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-21:16:52 Build Finished (took 1s.421ms)
+20:05:30 Build Finished (took 220ms)
 

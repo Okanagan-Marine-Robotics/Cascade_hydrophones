@@ -8,7 +8,7 @@
 #include <string.h>
 
 int p=0;
-int state = 2;
+int state = 1;
 int test1 = 0;
 int test2 = 0;
 
@@ -19,7 +19,7 @@ int main() {
 
 	xil_printf("helloworld!\n");
 	xil_printf("Starting Pinger Triangulation System\n");
-	xil_printf("by James Williamsom v:0.4\n");
+	xil_printf("by James Williamsom v:0.5\n");
 
 
 

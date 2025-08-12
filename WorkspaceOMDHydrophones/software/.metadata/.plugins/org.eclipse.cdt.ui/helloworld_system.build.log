@@ -1,10 +1,10 @@
-01:07:34 **** Incremental Build of configuration Debug for project helloworld_system ****
+01:04:13 **** Incremental Build of configuration Debug for project helloworld_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 54678 C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm standalone_domain C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif
-sdcard_gen --xpfm C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Test/export/Test/Test.xpfm --sys_config Test --bif C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif --bitstream C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit --elf C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf,ps7_cortexa9_0
+generate_system_bif.bat 55598 C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Zynq7020/export/Zynq7020/Zynq7020.xpfm standalone_domain C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif
+sdcard_gen --xpfm C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Zynq7020/export/Zynq7020/Zynq7020.xpfm --sys_config Zynq7020 --bif C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/system.bif --bitstream C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit --elf C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
 Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-01:07:42 Build Finished (took 8s.2ms)
+01:04:17 Build Finished (took 3s.787ms)
 

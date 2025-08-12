@@ -56,10 +56,12 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "MicroBlaze_axi_gpio_2_0_synth_1" START { ROLLUP_AUTO }
+set_param bd.open.in_stealth_mode 1
+set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z010clg400-1
+create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -70,7 +72,7 @@ set_property parent.project_path C:/Cascade_hydrophones/WorkspaceOMDHydrophones/
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part miner.ebang.com.cn:ebaz4205:part0:1.0 [current_project]
+set_property board_part myir.com:mys-7z020:part0:2.1 [current_project]
 set_property ip_output_repo c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -101,7 +103,7 @@ if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top MicroBlaze_axi_gpio_2_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+synth_design -top MicroBlaze_axi_gpio_2_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
 OPTRACE "Write IP Cache" START { }
 

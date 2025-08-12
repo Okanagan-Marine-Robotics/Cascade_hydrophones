@@ -2,27 +2,27 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sat Feb 15 02:06:18 2025
+-- Date        : Sun Aug  3 00:17:47 2025
 -- Host        : James running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top MicroBlaze_clk_wiz_0_0 -prefix
---               MicroBlaze_clk_wiz_0_0_ MicroBlaze_clk_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : MicroBlaze_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7z010clg400-1
+-- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity MicroBlaze_clk_wiz_0_0_MicroBlaze_clk_wiz_0_0_clk_wiz is
+entity MicroBlaze_clk_wiz_0_0_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-end MicroBlaze_clk_wiz_0_0_MicroBlaze_clk_wiz_0_0_clk_wiz;
+end MicroBlaze_clk_wiz_0_0_clk_wiz;
 
-architecture STRUCTURE of MicroBlaze_clk_wiz_0_0_MicroBlaze_clk_wiz_0_0_clk_wiz is
+architecture STRUCTURE of MicroBlaze_clk_wiz_0_0_clk_wiz is
   signal clk_in1_MicroBlaze_clk_wiz_0_0 : STD_LOGIC;
   signal clk_out1_MicroBlaze_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_MicroBlaze_clk_wiz_0_0 : STD_LOGIC;
@@ -176,7 +176,7 @@ end MicroBlaze_clk_wiz_0_0;
 
 architecture STRUCTURE of MicroBlaze_clk_wiz_0_0 is
 begin
-inst: entity work.MicroBlaze_clk_wiz_0_0_MicroBlaze_clk_wiz_0_0_clk_wiz
+inst: entity work.MicroBlaze_clk_wiz_0_0_clk_wiz
      port map (
       clk_in1 => clk_in1,
       clk_out1 => clk_out1

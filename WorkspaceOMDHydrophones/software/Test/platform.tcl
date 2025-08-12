@@ -58,3 +58,4 @@ platform config -updatehw {C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardwa
 platform generate -domains 
 platform clean
 platform generate
+platform generate -domains standalone_domain,zynq_fsbl 

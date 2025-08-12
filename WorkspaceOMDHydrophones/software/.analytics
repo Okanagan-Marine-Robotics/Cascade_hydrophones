@@ -856,3 +856,46 @@ timestamp=[2025-06-23 21:12:07], mode=BUILD, duration=0:00:00.425, duration_ms=4
 timestamp=[2025-06-23 21:12:53], mode=BUILD, duration=0:00:00.353, duration_ms=353, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-06-23 21:15:23], mode=BUILD, duration=0:00:01.433, duration_ms=1433, data={name=helloworld, configuration=Debug, clean_build=false}
 timestamp=[2025-06-23 21:16:52], mode=BUILD, duration=0:00:01.431, duration_ms=1431, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:30:59], mode=WORKBENCH_START, duration=0:00:07.297, duration_ms=7297, data={}
+timestamp=[2025-08-03 00:31:00], mode=WORKBENCH_UI_INIT, duration=0:00:01.232, duration_ms=1232, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test,helloworld,helloworld_system}
+timestamp=[2025-08-03 00:31:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.971, duration_ms=971, data={}
+timestamp=[2025-08-03 00:33:58], mode=PLATFORM_CREATION, duration=0:00:10.246, duration_ms=10246, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2025-08-03 00:34:19], mode=PLATFORM_GENERATION, duration=0:00:12.146, duration_ms=12146, data={name=Zynq7020}
+timestamp=[2025-08-03 00:35:01], mode=PLATFORM_GENERATION, duration=0:00:10.918, duration_ms=10918, data={name=Test}
+timestamp=[2025-08-03 00:35:04], mode=BUILD, duration=0:00:02.114, duration_ms=2114, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:35:08], mode=BUILD, duration=0:00:04.218, duration_ms=4218, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:35:24], mode=MISC, duration=0:00:02.927, duration_ms=2927, data={name=helloworld_system, type=bif_creation}
+timestamp=[2025-08-03 00:36:01], mode=BUILD, duration=0:00:00.306, duration_ms=306, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:36:05], mode=BUILD, duration=0:00:03.710, duration_ms=3710, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:52:39], mode=BUILD, duration=0:00:01.755, duration_ms=1755, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:53:32], mode=BUILD, duration=0:00:00.309, duration_ms=309, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:53:37], mode=BUILD, duration=0:00:03.799, duration_ms=3799, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:56:10], mode=WORKBENCH_START, duration=0:00:06.591, duration_ms=6591, data={}
+timestamp=[2025-08-03 00:56:11], mode=WORKBENCH_UI_INIT, duration=0:00:00.887, duration_ms=887, data={editors_count=0, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test,Zynq7020,helloworld,helloworld_system}
+timestamp=[2025-08-03 00:56:11], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.808, duration_ms=808, data={}
+timestamp=[2025-08-03 00:56:22], mode=PLATFORM_GENERATION, duration=0:00:07.827, duration_ms=7827, data={name=Zynq7020}
+timestamp=[2025-08-03 00:57:58], mode=BUILD, duration=0:00:01.816, duration_ms=1816, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:58:02], mode=BUILD, duration=0:00:04.034, duration_ms=4034, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:58:24], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:58:28], mode=BUILD, duration=0:00:03.797, duration_ms=3797, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:58:42], mode=PLATFORM_GENERATION, duration=0:00:04.364, duration_ms=4364, data={name=Zynq7020}
+timestamp=[2025-08-03 00:58:42], mode=BUILD, duration=0:00:00.248, duration_ms=248, data={name=helloworld, configuration=Debug, clean_build=true}
+timestamp=[2025-08-03 00:58:42], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=helloworld_system, configuration=Debug, clean_build=true}
+timestamp=[2025-08-03 00:59:05], mode=PLATFORM_GENERATION, duration=0:00:17.243, duration_ms=17243, data={name=Zynq7020}
+timestamp=[2025-08-03 00:59:07], mode=BUILD, duration=0:00:01.881, duration_ms=1881, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:59:11], mode=BUILD, duration=0:00:03.743, duration_ms=3743, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:59:14], mode=BUILD, duration=0:00:00.309, duration_ms=309, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 00:59:18], mode=BUILD, duration=0:00:03.730, duration_ms=3730, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 01:02:07], mode=BUILD, duration=0:00:00.871, duration_ms=871, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 01:02:51], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 01:03:35], mode=PLATFORM_GENERATION, duration=0:00:02.196, duration_ms=2196, data={name=Zynq7020}
+timestamp=[2025-08-03 01:04:13], mode=BUILD, duration=0:00:00.312, duration_ms=312, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 01:04:17], mode=BUILD, duration=0:00:03.791, duration_ms=3791, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-03 02:30:09], mode=WORKBENCH_START, duration=0:00:07.021, duration_ms=7021, data={}
+timestamp=[2025-08-03 02:30:10], mode=WORKBENCH_UI_INIT, duration=0:00:01.078, duration_ms=1078, data={editors_count=1, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test,Zynq7020,helloworld,helloworld_system}
+timestamp=[2025-08-03 02:30:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.508, duration_ms=2508, data={}
+timestamp=[2025-08-11 20:04:52], mode=WORKBENCH_START, duration=0:00:13.761, duration_ms=13761, data={}
+timestamp=[2025-08-11 20:04:54], mode=WORKBENCH_UI_INIT, duration=0:00:01.490, duration_ms=1490, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test,Zynq7020,helloworld,helloworld_system}
+timestamp=[2025-08-11 20:04:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.258, duration_ms=3258, data={}
+timestamp=[2025-08-11 20:05:29], mode=PLATFORM_GENERATION, duration=0:00:12.741, duration_ms=12741, data={name=Zynq7020}
+timestamp=[2025-08-11 20:05:31], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=helloworld, configuration=Debug, clean_build=false}

@@ -2,14 +2,14 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sat Feb 15 02:06:18 2025
+// Date        : Sun Aug  3 00:17:47 2025
 // Host        : James running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top MicroBlaze_clk_wiz_0_0 -prefix
-//               MicroBlaze_clk_wiz_0_0_ MicroBlaze_clk_wiz_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               c:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/HydroProccess.gen/sources_1/bd/MicroBlaze/ip/MicroBlaze_clk_wiz_0_0/MicroBlaze_clk_wiz_0_0_sim_netlist.v
 // Design      : MicroBlaze_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7z010clg400-1
+// Device      : xc7z020clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
@@ -23,12 +23,12 @@ module MicroBlaze_clk_wiz_0_0
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
 
-  MicroBlaze_clk_wiz_0_0_MicroBlaze_clk_wiz_0_0_clk_wiz inst
+  MicroBlaze_clk_wiz_0_0_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1));
 endmodule
 
-module MicroBlaze_clk_wiz_0_0_MicroBlaze_clk_wiz_0_0_clk_wiz
+module MicroBlaze_clk_wiz_0_0_clk_wiz
    (clk_out1,
     clk_in1);
   output clk_out1;

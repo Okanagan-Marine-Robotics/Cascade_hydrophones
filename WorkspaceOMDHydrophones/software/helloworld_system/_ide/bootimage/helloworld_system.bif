@@ -1,0 +1,12 @@
+/* C:/Users/james/AppData/Local/Temp/bootgen_helloworld_system17367925379255434722/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*Zynq7020*/
+the_ROM_image:
+{
+ [bootloader] C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Zynq7020/export/Zynq7020/sw/Zynq7020/boot/fsbl.elf
+ C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/_ide/bitstream/MicroBlaze_wrapper.bit
+ C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld/Debug/helloworld.elf
+}

@@ -21,8 +21,12 @@ module MicroBlaze (
   DDR_dq,
   DDR_dqs_n,
   DDR_dqs_p,
-  led_red,
-  led_green
+  FIXED_IO_mio,
+  FIXED_IO_ddr_vrn,
+  FIXED_IO_ddr_vrp,
+  FIXED_IO_ps_srstb,
+  FIXED_IO_ps_clk,
+  FIXED_IO_ps_porb
 );
 
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *)
@@ -57,10 +61,20 @@ module MicroBlaze (
   inout [3:0]DDR_dqs_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR DQS_P" *)
   inout [3:0]DDR_dqs_p;
-  (* X_INTERFACE_IGNORE = "true" *)
-  output [0:0]led_red;
-  (* X_INTERFACE_IGNORE = "true" *)
-  output [0:0]led_green;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO" *)
+  (* X_INTERFACE_MODE = "master FIXED_IO" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false" *)
+  inout [53:0]FIXED_IO_mio;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN" *)
+  inout FIXED_IO_ddr_vrn;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP" *)
+  inout FIXED_IO_ddr_vrp;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *)
+  inout FIXED_IO_ps_srstb;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *)
+  inout FIXED_IO_ps_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *)
+  inout FIXED_IO_ps_porb;
 
   // stub module has no contents
 

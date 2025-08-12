@@ -1,6 +1,0 @@
-#ifndef UART_HANDLER_H
-#define UART_HANDLER_H
-
-void uartHandler();
-
-#endif // UART_HANDLER_H

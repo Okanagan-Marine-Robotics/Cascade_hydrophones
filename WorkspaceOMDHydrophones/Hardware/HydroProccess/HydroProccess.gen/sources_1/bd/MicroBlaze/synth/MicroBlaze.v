@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Sun Jun 22 17:58:11 2025
+//Date        : Sun Aug  3 00:25:06 2025
 //Host        : James running 64-bit major release  (build 9200)
 //Command     : generate_target MicroBlaze.bd
 //Design      : MicroBlaze
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=25,numReposBlks=25,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=25,da_board_cnt=17,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "MicroBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MicroBlaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=23,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=29,da_board_cnt=17,da_bram_cntlr_cnt=1,da_clkrst_cnt=17,da_mb_cnt=6,da_ps7_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MicroBlaze.hwdef" *) 
 module MicroBlaze
    (DDR_addr,
     DDR_ba,
@@ -27,8 +27,12 @@ module MicroBlaze
     DDR_ras_n,
     DDR_reset_n,
     DDR_we_n,
-    led_green,
-    led_red);
+    FIXED_IO_ddr_vrn,
+    FIXED_IO_ddr_vrp,
+    FIXED_IO_mio,
+    FIXED_IO_ps_clk,
+    FIXED_IO_ps_porb,
+    FIXED_IO_ps_srstb);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -44,8 +48,12 @@ module MicroBlaze
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR RAS_N" *) inout DDR_ras_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR RESET_N" *) inout DDR_reset_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR WE_N" *) inout DDR_we_n;
-  output [0:0]led_green;
-  output [0:0]led_red;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false" *) inout FIXED_IO_ddr_vrn;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP" *) inout FIXED_IO_ddr_vrp;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO" *) inout [53:0]FIXED_IO_mio;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -62,6 +70,12 @@ module MicroBlaze
   wire DDR_ras_n;
   wire DDR_reset_n;
   wire DDR_we_n;
+  wire FIXED_IO_ddr_vrn;
+  wire FIXED_IO_ddr_vrp;
+  wire [53:0]FIXED_IO_mio;
+  wire FIXED_IO_ps_clk;
+  wire FIXED_IO_ps_porb;
+  wire FIXED_IO_ps_srstb;
   wire [31:0]MaximumFinder_0_tmax;
   wire [31:0]MaximumFinder_0_tmax1;
   wire Net1;
@@ -152,10 +166,7 @@ module MicroBlaze
   wire [3:0]axi_smc_M03_AXI_WSTRB;
   wire axi_smc_M03_AXI_WVALID;
   wire clk_wiz_0_clk_out1;
-  wire [0:0]led_green;
-  wire [0:0]led_red;
-  wire microblaze_0_Clk;
-  wire [0:0]proc_sys_reset_0_peripheral_aresetn;
+  wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
@@ -195,6 +206,7 @@ module MicroBlaze
   wire processing_system7_0_M_AXI_GP0_WREADY;
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
+  wire [0:0]rst_ps7_0_200M_peripheral_aresetn;
   wire [31:0]xlslice_0_Dout;
   wire [31:0]xlslice_1_Dout;
 
@@ -202,22 +214,22 @@ module MicroBlaze
        (.XCORR(xlslice_0_Dout),
         .XCORR1(xlslice_1_Dout),
         .address(Wrapper_XCorr_0_count),
-        .clk(microblaze_0_Clk),
+        .clk(processing_system7_0_FCLK_CLK0),
         .tmax(MaximumFinder_0_tmax),
         .tmax1(MaximumFinder_0_tmax1));
   MicroBlaze_SPI_ADC_Master_0_1 SPI_ADC_Master_0
        (.MISO(Serializer_0_MISO),
-        .clk(microblaze_0_Clk),
+        .clk(processing_system7_0_FCLK_CLK0),
         .clk16MHz(clk_wiz_0_clk_out1),
         .wave(SPI_ADC_Master_0_wave));
   MicroBlaze_SPI_ADC_Master_1_0 SPI_ADC_Master_1
        (.MISO(Serializer_1_MISO),
-        .clk(microblaze_0_Clk),
+        .clk(processing_system7_0_FCLK_CLK0),
         .clk16MHz(clk_wiz_0_clk_out1),
         .wave(SPI_ADC_Master_1_wave));
   MicroBlaze_SPI_ADC_Master_2_0 SPI_ADC_Master_2
        (.MISO(Serializer_2_MISO),
-        .clk(microblaze_0_Clk),
+        .clk(processing_system7_0_FCLK_CLK0),
         .clk16MHz(clk_wiz_0_clk_out1),
         .wave(SPI_ADC_Master_2_wave));
   MicroBlaze_Serializer_0_0 Serializer_0
@@ -248,11 +260,11 @@ module MicroBlaze
        (.Address_B(axi_gpio_3_gpio2_io_o[10:0]),
         .WaveRef(SPI_ADC_Master_0_wave),
         .WaveRefOut(WaveCaptureUnit_0_WaveRefOut),
-        .clk(microblaze_0_Clk),
+        .clk(processing_system7_0_FCLK_CLK0),
         .clk1Mhz(Net1),
         .offset(axi_gpio_2_gpio_io_o));
   MicroBlaze_Wrapper_XCorr_0_0 Wrapper_XCorr_0
-       (.clk(microblaze_0_Clk),
+       (.clk(processing_system7_0_FCLK_CLK0),
         .clk1Mhz(Net1),
         .count(Wrapper_XCorr_0_count),
         .offset(axi_gpio_2_gpio_io_o),
@@ -264,9 +276,9 @@ module MicroBlaze
   MicroBlaze_axi_gpio_0_0 axi_gpio_0
        (.gpio2_io_i(MaximumFinder_0_tmax),
         .gpio_io_o(axi_gpio_0_gpio_io_o),
-        .s_axi_aclk(microblaze_0_Clk),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M00_AXI_ARADDR),
-        .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
+        .s_axi_aresetn(rst_ps7_0_200M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M00_AXI_ARREADY),
         .s_axi_arvalid(axi_smc_M00_AXI_ARVALID),
         .s_axi_awaddr(axi_smc_M00_AXI_AWADDR),
@@ -286,9 +298,9 @@ module MicroBlaze
   MicroBlaze_axi_gpio_0_1 axi_gpio_1
        (.gpio2_io_i(MaximumFinder_0_tmax1),
         .gpio_io_o(axi_gpio_1_gpio_io_o),
-        .s_axi_aclk(microblaze_0_Clk),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M01_AXI_ARADDR),
-        .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
+        .s_axi_aresetn(rst_ps7_0_200M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M01_AXI_ARREADY),
         .s_axi_arvalid(axi_smc_M01_AXI_ARVALID),
         .s_axi_awaddr(axi_smc_M01_AXI_AWADDR),
@@ -308,9 +320,9 @@ module MicroBlaze
   MicroBlaze_axi_gpio_2_0 axi_gpio_2
        (.gpio2_io_o(axi_gpio_2_gpio2_io_o),
         .gpio_io_o(axi_gpio_2_gpio_io_o),
-        .s_axi_aclk(microblaze_0_Clk),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M02_AXI_ARADDR),
-        .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
+        .s_axi_aresetn(rst_ps7_0_200M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M02_AXI_ARREADY),
         .s_axi_arvalid(axi_smc_M02_AXI_ARVALID),
         .s_axi_awaddr(axi_smc_M02_AXI_AWADDR),
@@ -330,9 +342,9 @@ module MicroBlaze
   MicroBlaze_axi_gpio_3_0 axi_gpio_3
        (.gpio2_io_o(axi_gpio_3_gpio2_io_o),
         .gpio_io_i(WaveCaptureUnit_0_WaveRefOut),
-        .s_axi_aclk(microblaze_0_Clk),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M03_AXI_ARADDR),
-        .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
+        .s_axi_aresetn(rst_ps7_0_200M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M03_AXI_ARREADY),
         .s_axi_arvalid(axi_smc_M03_AXI_ARVALID),
         .s_axi_awaddr(axi_smc_M03_AXI_AWADDR),
@@ -349,7 +361,7 @@ module MicroBlaze
         .s_axi_wready(axi_smc_M03_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M03_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M03_AXI_WVALID));
-  MicroBlaze_axi_smc_0 axi_smc
+  MicroBlaze_axi_smc_1 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arready(axi_smc_M00_AXI_ARREADY),
         .M00_AXI_arvalid(axi_smc_M00_AXI_ARVALID),
@@ -456,22 +468,15 @@ module MicroBlaze
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID),
-        .aclk(microblaze_0_Clk),
-        .aresetn(proc_sys_reset_0_peripheral_aresetn));
+        .aclk(processing_system7_0_FCLK_CLK0),
+        .aresetn(rst_ps7_0_200M_peripheral_aresetn));
   MicroBlaze_clk1Mhz_0_1 clk1Mhz_0
-       (.clk(microblaze_0_Clk),
+       (.clk(processing_system7_0_FCLK_CLK0),
         .clk1Mhz(Net1));
   MicroBlaze_clk_wiz_0_0 clk_wiz_0
-       (.clk_in1(microblaze_0_Clk),
+       (.clk_in1(processing_system7_0_FCLK_CLK0),
         .clk_out1(clk_wiz_0_clk_out1));
-  MicroBlaze_proc_sys_reset_0_0 proc_sys_reset_0
-       (.aux_reset_in(1'b1),
-        .dcm_locked(1'b1),
-        .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
-        .mb_debug_sys_rst(1'b0),
-        .peripheral_aresetn(proc_sys_reset_0_peripheral_aresetn),
-        .slowest_sync_clk(microblaze_0_Clk));
-  MicroBlaze_processing_system7_0_0 processing_system7_0
+  MicroBlaze_processing_system7_0_1 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),
         .DDR_CAS_n(DDR_cas_n),
@@ -486,19 +491,15 @@ module MicroBlaze
         .DDR_DRSTB(DDR_reset_n),
         .DDR_ODT(DDR_odt),
         .DDR_RAS_n(DDR_ras_n),
+        .DDR_VRN(FIXED_IO_ddr_vrn),
+        .DDR_VRP(FIXED_IO_ddr_vrp),
         .DDR_WEB(DDR_we_n),
-        .ENET0_EXT_INTIN(1'b0),
-        .ENET0_GMII_COL(1'b0),
-        .ENET0_GMII_CRS(1'b0),
-        .ENET0_GMII_RXD({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .ENET0_GMII_RX_CLK(1'b0),
-        .ENET0_GMII_RX_DV(1'b0),
-        .ENET0_GMII_RX_ER(1'b0),
-        .ENET0_GMII_TX_CLK(1'b0),
-        .ENET0_MDIO_I(1'b0),
-        .FCLK_CLK0(microblaze_0_Clk),
+        .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
-        .M_AXI_GP0_ACLK(microblaze_0_Clk),
+        .I2C0_SCL_I(1'b0),
+        .I2C0_SDA_I(1'b0),
+        .MIO(FIXED_IO_mio),
+        .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
         .M_AXI_GP0_ARBURST(processing_system7_0_M_AXI_GP0_ARBURST),
         .M_AXI_GP0_ARCACHE(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -536,11 +537,48 @@ module MicroBlaze
         .M_AXI_GP0_WLAST(processing_system7_0_M_AXI_GP0_WLAST),
         .M_AXI_GP0_WREADY(processing_system7_0_M_AXI_GP0_WREADY),
         .M_AXI_GP0_WSTRB(processing_system7_0_M_AXI_GP0_WSTRB),
-        .M_AXI_GP0_WVALID(processing_system7_0_M_AXI_GP0_WVALID));
-  MicroBlaze_xlconstant_1_0 xlconstant_1
-       (.dout(led_red));
-  MicroBlaze_xlconstant_2_0 xlconstant_2
-       (.dout(led_green));
+        .M_AXI_GP0_WVALID(processing_system7_0_M_AXI_GP0_WVALID),
+        .PS_CLK(FIXED_IO_ps_clk),
+        .PS_PORB(FIXED_IO_ps_porb),
+        .PS_SRSTB(FIXED_IO_ps_srstb),
+        .S_AXI_HP0_ACLK(processing_system7_0_FCLK_CLK0),
+        .S_AXI_HP0_ARADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARBURST({1'b0,1'b1}),
+        .S_AXI_HP0_ARCACHE({1'b0,1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_ARID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARLEN({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARLOCK({1'b0,1'b0}),
+        .S_AXI_HP0_ARPROT({1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARQOS({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARSIZE({1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_ARVALID(1'b0),
+        .S_AXI_HP0_AWADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWBURST({1'b0,1'b1}),
+        .S_AXI_HP0_AWCACHE({1'b0,1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_AWID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWLEN({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWLOCK({1'b0,1'b0}),
+        .S_AXI_HP0_AWPROT({1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWQOS({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWSIZE({1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_AWVALID(1'b0),
+        .S_AXI_HP0_BREADY(1'b0),
+        .S_AXI_HP0_RDISSUECAP1_EN(1'b0),
+        .S_AXI_HP0_RREADY(1'b0),
+        .S_AXI_HP0_WDATA({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_WID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_WLAST(1'b0),
+        .S_AXI_HP0_WRISSUECAP1_EN(1'b0),
+        .S_AXI_HP0_WSTRB({1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
+        .S_AXI_HP0_WVALID(1'b0),
+        .USB0_VBUS_PWRFAULT(1'b0));
+  MicroBlaze_rst_ps7_0_200M_0 rst_ps7_0_200M
+       (.aux_reset_in(1'b1),
+        .dcm_locked(1'b1),
+        .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
+        .mb_debug_sys_rst(1'b0),
+        .peripheral_aresetn(rst_ps7_0_200M_peripheral_aresetn),
+        .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
   MicroBlaze_xlslice_0_0 xlslice_0
        (.Din(Wrapper_XCorr_0_xcorr),
         .Dout(xlslice_0_Dout));
