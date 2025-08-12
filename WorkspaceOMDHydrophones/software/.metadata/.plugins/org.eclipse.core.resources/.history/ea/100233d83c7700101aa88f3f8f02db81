@@ -1,0 +1,48 @@
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_types.h"
+#include "math.h"
+#include <stdio.h>
+#include <string.h>
+
+int p=0;
+int state = 1;
+int test1 = 10;
+int test2 = 79;
+int test3 = 10;
+int maxTime = 0;
+int maxTime2 = 2;
+
+int main() {
+
+	init_platform();
+	uart_init();
+
+	xil_printf("helloworld!\n");
+	xil_printf("Starting Pinger Triangulation System\n");
+	xil_printf("by James Williamsom v:0.5\n");
+
+
+
+	while(1){
+
+
+
+		if (state == 0){
+
+			waveCaptureUnit();
+
+		}else if (state == 1) {
+
+			xcorr(*test1, *test2, *test3);
+
+		}
+
+		uartHandler(&state, &test1, &test2);
+		usleep(2000000);
+	}
+	cleanup_platform();
+	return 0;
+}

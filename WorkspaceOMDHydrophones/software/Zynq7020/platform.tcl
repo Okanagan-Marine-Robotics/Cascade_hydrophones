@@ -31,3 +31,8 @@ platform generate
 platform active {Zynq7020}
 platform generate -domains 
 platform generate
+platform active {Zynq7020}
+platform config -updatehw {C:/Cascade_hydrophones/WorkspaceOMDHydrophones/Hardware/HydroProccess/MicroBlaze_wrapper.xsa}
+platform generate -domains 
+bsp reload
+platform generate -domains 

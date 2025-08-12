@@ -899,3 +899,19 @@ timestamp=[2025-08-11 20:04:54], mode=WORKBENCH_UI_INIT, duration=0:00:01.490, d
 timestamp=[2025-08-11 20:04:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.258, duration_ms=3258, data={}
 timestamp=[2025-08-11 20:05:29], mode=PLATFORM_GENERATION, duration=0:00:12.741, duration_ms=12741, data={name=Zynq7020}
 timestamp=[2025-08-11 20:05:31], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 20:55:49], mode=PLATFORM_GENERATION, duration=0:00:09.613, duration_ms=9613, data={name=Zynq7020}
+timestamp=[2025-08-11 20:58:45], mode=BUILD, duration=0:00:02.238, duration_ms=2238, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 20:58:49], mode=BUILD, duration=0:00:04.057, duration_ms=4057, data={name=helloworld_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 21:03:11], mode=APP_CREATION, duration=0:00:04.517, duration_ms=4517, data={name=xgpiops_polled_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=Zynq7020, application_type=application}
+timestamp=[2025-08-11 21:03:33], mode=PLATFORM_GENERATION, duration=0:00:01.991, duration_ms=1991, data={name=Zynq7020}
+timestamp=[2025-08-11 21:03:34], mode=BUILD, duration=0:00:00.806, duration_ms=806, data={name=xgpiops_polled_example_1, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 21:03:38], mode=BUILD, duration=0:00:03.657, duration_ms=3657, data={name=xgpiops_polled_example_1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 21:13:17], mode=BUILD, duration=0:00:00.744, duration_ms=744, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 21:17:27], mode=BUILD, duration=0:00:00.693, duration_ms=693, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 22:12:26], mode=BUILD, duration=0:00:00.335, duration_ms=335, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 22:15:15], mode=BUILD, duration=0:00:00.344, duration_ms=344, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 22:15:39], mode=BUILD, duration=0:00:00.959, duration_ms=959, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 22:17:50], mode=BUILD, duration=0:00:00.711, duration_ms=711, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 22:20:08], mode=BUILD, duration=0:00:00.681, duration_ms=681, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 22:22:04], mode=BUILD, duration=0:00:00.330, duration_ms=330, data={name=helloworld, configuration=Debug, clean_build=false}
+timestamp=[2025-08-11 22:26:06], mode=BUILD, duration=0:00:00.918, duration_ms=918, data={name=helloworld, configuration=Debug, clean_build=false}

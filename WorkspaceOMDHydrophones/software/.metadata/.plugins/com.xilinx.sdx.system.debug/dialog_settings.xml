@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="helloworld_system-imgFile" value="C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/helloworld_system/_ide/bootimage/BOOT.bin"/>
+	<item key="helloworld_system-offSet" value=""/>
+	<item key="helloworld_system-initFile" value="C:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Zynq7020/export/Zynq7020/sw/Zynq7020/boot/fsbl.elf"/>
+	<item key="helloworld_system-flashType" value="qspi-x4-single"/>
+	<item key="helloworld_system-verifyFlash" value="true"/>
+	<item key="helloworld_system-blankCheck" value="true"/>
+	<item key="helloworld_system-device" value="Digilent JTAG-SMT2 A30526FBA07A/3-xc7z020"/>
+	<item key="helloworld_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="helloworld_system"/>
+</section>

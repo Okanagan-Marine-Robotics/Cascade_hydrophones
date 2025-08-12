@@ -9,8 +9,11 @@
 
 int p=0;
 int state = 1;
-int test1 = 0;
-int test2 = 0;
+int test1 = 10;
+int test2 = 79;
+int test3 = 10;
+int maxTime = 0;
+int maxTime2 = 2;
 
 int main() {
 
@@ -33,7 +36,7 @@ int main() {
 
 		}else if (state == 1) {
 
-			xcorr();
+			xcorr(test1, test2, test3);
 
 		}
 

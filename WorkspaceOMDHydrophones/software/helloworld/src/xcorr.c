@@ -1,12 +1,10 @@
 
 #include "xcorrDriver.h"
 
-void xcorr (){
+void xcorr (int test1, int test2, int test3){
+	xil_printf("Before xcorr: test1=%d, test2=%d, test3=%d\n", test1, test2, test3);
 	int maxTime;
 	int maxTime2;
-	int test1 = 10;
-	int test2 = 100;
-	int test3 = 0;
 	xcorrDriver (&maxTime, &maxTime2, test1, test2, test3);
 	double t1 = maxTime;
     double t2 = maxTime2;

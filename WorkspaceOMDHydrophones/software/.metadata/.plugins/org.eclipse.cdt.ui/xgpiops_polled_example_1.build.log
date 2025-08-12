@@ -1,0 +1,25 @@
+21:03:33 **** Build of configuration Debug for project xgpiops_polled_example_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/xgpiops_polled_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpiops_polled_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Zynq7020/export/Zynq7020/sw/Zynq7020/standalone_domain/bspinclude/include -MMD -MP -MF"src/xgpiops_polled_example.d" -MT"src/xgpiops_polled_example.o" -o "src/xgpiops_polled_example.o" "../src/xgpiops_polled_example.c"
+'Finished building: ../src/xgpiops_polled_example.c'
+' '
+'Building target: xgpiops_polled_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Cascade_hydrophones/WorkspaceOMDHydrophones/software/Zynq7020/export/Zynq7020/sw/Zynq7020/standalone_domain/bsplib/lib -o "xgpiops_polled_example_1.elf"  ./src/xgpiops_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xgpiops_polled_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size xgpiops_polled_example_1.elf  |tee "xgpiops_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26173	   1152	  22632	  49957	   c325	xgpiops_polled_example_1.elf
+'Finished building: xgpiops_polled_example_1.elf.size'
+' '
+
+21:03:34 Build Finished (took 797ms)
+
